@@ -1,65 +1,103 @@
 <!DOCTYPE html>
 <html>
-<title>the meech</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
 <style>
-.mySlides {display:none}
-.demo {cursor:pointer}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 </style>
+</head>
 <body>
 
-<div class="w3-container">
-  <h2>Slideshow Indicators</h2>
-  <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
-</div>
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
 
-<div class="w3-content" style="max-width:1200px">
-  <img class="mySlides" src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" style="width:100%">
-  <img class="mySlides" src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" style="width:100%">
-  <img class="mySlides" src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" style="width:100%">
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" style="width:100%" onclick="currentDiv(1)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" style="width:100%" onclick="currentDiv(2)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" style="width:100%" onclick="currentDiv(3)">
-    </div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
   </div>
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
-</script>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
 
 </body>
 </html>
