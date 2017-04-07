@@ -2,12 +2,44 @@
 <html>
 <head>
 <style>
+ul {
+    list-style-type: none;
+    margin: 0 5px 0 5px;
+    padding: 0;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    font-family: calibri, helvetica;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #ff0099;
+}
+
 div.gallery {
-    border: 1px solid #ccc;
+    border: 2px solid #777;
+    border-radius: 5px 5px 5px 5px;
 }
 
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 2px solid #ff0099;
+     border-radius: 5px 5px 5px 5px;
 }
 
 div.gallery img {
@@ -17,6 +49,7 @@ div.gallery img {
 
 div.desc {
     padding: 15px;
+    font-family: calibri, helvetica;
     text-align: center;
 }
 
@@ -50,14 +83,22 @@ div.desc {
 }
 </style>
 </head>
-<body>
 
-<h2>Responsive Image Gallery</h2>
-<h4>Resize the browser window to see the effect.</h4>
+<body>
+<div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#">Spiral Group Inc. &#124; 773.648.0476 &#124; Info@SpiralGroup.org&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+</ul>
+</div>
+<br><br>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="index.html">
+    <a target="_blank" href="img_fjords.jpg">
       <img src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" alt="Trolltunga Norway" width="300" height="200">
     </a>
     <div class="desc">Add a description of the image here</div>
@@ -84,7 +125,7 @@ div.desc {
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
+    <a target="_blank" href="index.html">
       <img src="https://cloud.githubusercontent.com/assets/25410880/24280338/3d8fe83a-1026-11e7-9243-07e4ece90aa9.jpg" alt="Mountains" width="300" height="200">
     </a>
     <div class="desc">Add a description of the image here</div>
@@ -93,9 +134,10 @@ div.desc {
 
 <div class="clearfix"></div>
 
-<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+<div class="desc" style="padding:9px;">
+  <p align="justify">This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).<br><br>
+  
+You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
 </div>
 
 </body>
