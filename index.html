@@ -74,6 +74,50 @@ li a:hover:not(.active) {
     border-radius: 3px;
   } 
  
+ div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+}
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
  .button {
     background-color: #f08080; 
     border: none;
@@ -99,7 +143,56 @@ li a:hover:not(.active) {
     </head>
     
     <body>
-  <div>
+ 
+ <h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+ 
+ 
+ <div>
 <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#contact">Contact</a></li>
@@ -538,7 +631,7 @@ Upon successful completion of the course, the certificate of completion will be 
       <div class="panel-heading">
         <h4 class="panel-title" align="left">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-          <i class="fa fa-print" style="font-size:25px;color:#000000;"></i>&nbsp;&nbsp;<font size="2.99em;"><b>PRINT YOUR CERTIFICATES</b></font></a></h4></div>
+          <i class="fa fa-print" style="font-size:25px;color:#000000;"></i>&nbsp;&nbsp;<font size="2.99em;"><b>PRINT YOUR SERVSAFE&REG; CERTIFICATES</b></font></a></h4></div>
 <div id="collapse7" class="panel-collapse collapse">
 <div class="panel-body" style="font-family:calibri;font-size:16px;letter-spacing:.25px;">
 <p align="justify">E-Certificates Are Available for All Courses<br><br>
@@ -584,5 +677,57 @@ A. If a regulatory agency is indicating they won’t accept an eCertificate, ple
   </div>
    </div>
    </div>
+
+<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" align="left">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+          <i class="fa fa-print" style="font-size:25px;color:#000000;"></i>&nbsp;&nbsp;<font size="2.99em;"><b>PRINT YOUR SPIRAL GROUP CERTIFICATES</b></font></a></h4></div>
+<div id="collapse8" class="panel-collapse collapse">
+<div class="panel-body" style="font-family:calibri;font-size:16px;letter-spacing:.25px;">
+<p align="justify">E-Certificates Are Available for All Courses<br><br>
+
+<img src="https://cloud.githubusercontent.com/assets/25410880/24280339/3d99887c-1026-11e7-9b5c-6039ce4180df.jpg" width="235" height="340" style="border-radius:3px; border:3px solid black;"><br><br>
+
+HOW TO PRINT YOUR CERTIFICATE
+To look up your score and/or print your certificate yourself please follow the directions below please make sure you have your exam session number.  If you have misplaced your number please email us at info@westernfoodsafety.com or call our office at (866) 920-6456.
+
+1.  Click here to go to the Servsafe website.
+2.  Create an online profile or log into your account.
+3.  Under the tab "Students" click "Check Your Exam Score". 
+4.  Once you have verified your score is available and you have passed, click the tab "My Account" in the top right corner.
+5.  Locate and click on the menu option "My Certificates".
+6.  You will now be able to view and print your certificate or request one be mailed from Servsafe for a $10 fee.
+
+ Q. What’s an eCertificate?
+A. It’s an 8.5” x 11” electronic (PDF) version of your certificate that you can download or print yourself. It looks exactly the same as a printed certificate, however it’s available to you immediately, to print at your convenience, once your exam is graded and scores are available on our website.
+ 
+Q. How do I get a certificate sent directly to me?
+A. Go to ServSafe.com, under the Students tab select “Certificates”, log in or create a profile, and you’ll see an option to order your certificate. There’s a $10 fee to have a certificate printed and sent to you via the USPS.
+ 
+Q. What if I don’t have an email address?
+A. When you register on our website, you’ll see an option to create a free email account.
+ 
+Q. Why do I need to pay for a certificate?
+A. There is no charge to print/reprint eCertificates from ServSafe.com. There is a $10 shipping and handling fee to have a certificate mailed to you.
+ 
+Q. How often can I print or download my certificate?
+A. You’ll have unlimited access to print and download your certificate until it expires.
+ 
+Q. How can I share my certificate information with other people?
+A. Go to ServSafe.com, under the Students tab select “Certificates”, log in or create a profile and you’ll see an option to enter an email address and share your certificate information. A link to your certificate will be sent to the address you entered. The recipient will have three days to view your certificate. After that time you’ll need to repeat this process to send a new link.
+ 
+Q. Can my manager verify that I have a certificate?
+A. Yes. Along with eCertificates, we now have a Certificate Look Up tool available. By entering a name and the type of certificate, you can validate if someone is currently certified. This can be especially helpful for current or future employers and regulatory agencies.
+ 
+Q. How do I get my certificate if I don’t have a computer at home?
+A. We recommend using a computer at work or the local library. Your instructor/proctor also has access to print your certificate. In the future we plan to have both our eCertificates and Certificate Look Up tool compatible with mobile devices.
+ 
+Q. What if my jurisdiction won’t accept an eCertificate?
+A. If a regulatory agency is indicating they won’t accept an eCertificate, please contact our Customer Care Department at ServiceCenter@restaurant.org or 1.800.765.2122.</p>
+  </div>
+   </div>
+   </div>
+   
  </body>
 </html>
