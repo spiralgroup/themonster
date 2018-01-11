@@ -109,6 +109,64 @@ heading {
 .verticalLine {
   border-right: solid #000000;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+h3 {
+    font-family: Brownilla New, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: bold;
+ }   
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #ffffff;
+    }
+
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 </style>
 </head>
 
@@ -129,19 +187,25 @@ heading {
 </nav>
 
 <hr/>
-<br>
-<center>
-<div class="w3-container">
-<div class="w3-row">
-<div class="w3-col" style="width:32%"><a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><p><img src="https://user-images.githubusercontent.com/25410880/27764750-2929feca-5e6f-11e7-89a3-3793603ba8bf.jpg"></p></a></div>
 
-<div class="w3-col" style="width:2%"><p>&nbsp;</p></div>
-
-<div class="w3-col" style="width:32%"><a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><p><img src="https://user-images.githubusercontent.com/25410880/27764748-292634de-5e6f-11e7-83ea-b2b40d7202c3.jpg"></p></a></div>
-
-<div class="w3-col" style="width:2%"><p>&nbsp;</p></div>
-
-<div class="w3-col" style="width:32%"><a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><p><img src="https://user-images.githubusercontent.com/25410880/27764749-2927a3a0-5e6f-11e7-9aae-c9f4242a28d1.jpg"></p></a></div></div></div>
+<!-- Portfolio Gallery Grid -->
+<div class="row" style="width:99%">
+  <div class="column">
+    <div class="content">
+      <a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><img src="https://user-images.githubusercontent.com/25410880/27764750-2929feca-5e6f-11e7-89a3-3793603ba8bf.jpg"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><img src="https://user-images.githubusercontent.com/25410880/27764748-292634de-5e6f-11e7-83ea-b2b40d7202c3.jpg"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><img src="https://user-images.githubusercontent.com/25410880/27764749-2927a3a0-5e6f-11e7-9aae-c9f4242a28d1.jpg"></a>
+    </div>
+  </div>
+</div>
 <hr></hr>
 
 <p align="center" style="font-family:calibri;font-size:19px;letter-spacing:2px;">
