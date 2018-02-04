@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Spiral Group, Inc. &#124; Job Seeker Tools & Resources</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/lib/w3-colors-food.css">
+ <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
+<link rel="stylesheet" href="/lib/w3-colors-2017.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">	
+.navbar {
+  border-radius: 0; 
+  background-color:#e6e6e6;
+  padding: 0;
+}
+.navbar .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus  {
+  background-color: #f2f2f2;
+  color:#f2f2f2;
+  padding: 0;
+}
+.navbar-brand,
+.navbar-nav > li > a  { 
+  padding: 0;
+  margin: 0;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a  {
+  color: #000000;
+  padding: 20px 20px 20px 9px;
+} 
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus ,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000000;background-color: #f2f2f2;
+  padding: 20px 20px 20px 9px;
+} 
+.navbar-default .navbar-nav > .dropdown > a .caret{
+ 
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+}
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: roboto,sans-serif;
+    letter-spacing: 1px;
+    font-size: 11.50px;
+}
+li a:hover {
+   border-radius: 4px;
+   color: #ffffff;
+}
+#accordion {
+ max-width:100%;
+}
+ 
+ w3-table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+}
+th1, td1 {
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+img {
+    border-radius: 8px; 
+    max-width: 100%;
+    height: auto;
+    border:1px solid;
+    border-color:#ffffff;
+}
+heading {
+    border-radius: 4px; 
+    max-width: 100%;
+    height: 100%;
+    border:1px solid;
+    border-color:#f2f2f2;
+}
+.verticalLine {
+  border-right: solid #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+h3 {
+    font-family: Brownilla New, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: bold;
+ }   
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    }
+
+.column1 {
+    float: left;
+    width: 33.3%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #ff9900;
+padding: 5px 0 10px 0;
+    border-radius: 4px;
+}
+
+.content1 {
+    background-color: #778899;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+
+@media (max-width: 800px) {
+    .column1 {
+        width: 33.3%;
+        margin: 10px;
+        height: auto;
+    }
+
+@media (max-width: 500px) {
+    .column1 {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+}
+</style>
+</head>
+
+<body style="background-color:#f2f2f2">
+<center>
+<div class="w3-container w3-round-medium w3-panel w3-card" style="width:98%;background-color:#ffffff">
+    <nav class="navbar navbar-default" style="width:100%;background-color:#ffffff;padding:0;border-color:#ffffff">
+     <p class="navbar-text" style="font-family:calibri;font-size:20px;letter-spacing:1px;">
+<i class="fa fa-mortar-board" style="font-size:27px;color:#778899"></i><b><a href="https://spiralgroup.github.io/themonster/enrollment-application.html" style="color:#000000"> SPIRAL GROUP, INC.</a></b></p>
+   <ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f2f2f2">
+                 <li><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><span class="glyphicon glyphicon-folder-close" style="color:#778899"></span> Small Business Solutions</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><span class="glyphicon glyphicon-compressed" style="color:#778899"></span> Compliance & Risk Mitigation</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><span class="glyphicon glyphicon-certificate" style="color:#778899"></span> ServSafe&reg; Certifications</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/job-seekers.html"><span class="glyphicon glyphicon-blackboard" style="color:#778899"></span> Job Seekers</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><span class="glyphicon glyphicon-gift" style="color:#778899"></span> Free Phone Consultation</a></li>
+
+</ul>
+</nav>
+<hr/>
+
+<p align="center" style="font-family:calibri;font-size:28px;letter-spacing:3px;">
+<font color="#778899">JOB SEEKER TOOLS & RESOURCES</font></p>
+<p align="center" style="font-family:euphemia;letter-spacing:2.5px;"><font size="1.5">Shaping Today's Job Seekers for Employers of Choice.&trade;</font></p>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row" style="width:99%">
+  <div class="column">
+    <div class="content">
+      <br><i class="fa fa-desktop" style="font-size:190px;color:#778899"></i>
+      <h3>CAREER DEVELOPMENT</h3>
+         </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <br><i class="fa fa-briefcase" style="font-size:190px;color:#778899"></i>
+      <h3><b>PROFESSIONAL DEVELOPMENT</b></h3>
+         </div>
+     </div>
+  <div class="column">
+    <div class="content">
+      <br><i class="fa fa-drivers-license" style="font-size:190px;color:#778899"></i>
+      <h3><b>DOCUMENT PREPARATION</b></h3>
+         </div>
+    </div>
+  <div class="column">
+    <div class="content">
+      <br><i class="fa fa-thumbs-o-up" style="font-size:190px;color:#778899"></i>
+      <h3><b>INTERVIEW PREPARATION</b></h3>
+         </div>
+  </div>
+  </div>
+<hr></hr>
+
+<p align="center" style="font-family:calibri;font-size:19px;letter-spacing:2px;">
+<font color="#778899"><b>LEARN HOW TO COMPETE IN TODAY'S JOB MARKET.</b></font></p>
+
+
+<p align="justify" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+Spiral Group's Online Employment Preparation Training Program was designed to teach Job Seekers how to compete in today’s labor market. Participants learn how to set realistic occupational goals; how to conduct occupational research; and how to develop a positive personal brand. As a Training Services Provider, our main goal is to help Job Seekers improve their organizational, decision-making, customer service, and soft skills. Upon successful completion of this program, participants are deemed <b>JOB READY</b> and receive a <b>Certificate of Completion</b> that can be used alongside their other self-marketing materials.</p>
+
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+
+<p align="center" style="font-family:calibri;font-size:19px;letter-spacing:2px;">
+<font color="#FF9900"><b><a href="https://spiralgroup.github.io/themonster/enrollment-application.html">ENROLL IN OUR ONLINE TRAINING PROGRAM TODAY.</a></b></font>
+
+<p align="justify" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+Job Seekers who enroll in Spiral Group's training program will receive our <b>EMPLOYMENT PREPARATION TOOL-KIT&reg;</b> for only $39.99. Using this tool-kit, along with the Interview Preparation Resources below, Job Seekers will learn how to make effective use of the skills they already possess and how to communicate these to potential employers. We also offer instruction in telephone etiquette and how to request references from individuals who can attest to a Job Seeker's character and employability.</p>
+
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+
+<p align="center" style="font-family:calibri;font-size:19px;color:#c71585;letter-spacing:2px;"><b>SHAPING TODAY'S JOB SEEKERS FOR EMPLOYERS OF CHOICE.&trade;</b></p>
+
+<p align="justify" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+Although anyone having a desire to improve their skills can benefit from this training program, it was originally designed for those with criminal histories. <a href="https://github.com/spiralgroup/themonster/files/1648828/Michelle.A.Jones.Functional.Resume.pdf">Michelle A. Jones</a> [a twice convicted felon] is the Founder of Spiral Group, Inc. The not for profit organization provides Employment Preparation Training for persons who are willing to make a commitment to positive change. Our goal is to assist returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism. We are dedicated to helping this population of job seekers overcome many obstacles to employment by improving their organizational, time-management, decision-making, interviewing, and soft skills.</p>
+
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+
+<p align="center" style="font-family:calibri;font-size:19px;color:#778899;letter-spacing:2px;"><b>MAKE SURE THIS PROGRAM IS WHAT YOU NEED.</b></p>
+<p align="justify" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+Before purchasing the <b>Employment Preparation Tool-Kit&reg;</b>, review the contents below to be sure it's what you require as a Job Seeker. It's not wise to invest in materials and courses if you don't absolutely need them; especially if you are unemployed. However, if you believe it's wise to invest in this program and materials, <a href="https://spiralgroup.github.io/themonster/enrollment-application.html">then click here to begin the 4-Step Enrollment Process</a>; it takes less than 10 minutes. The Program Administrator is available (773.242.0705 or tech.support@spiralgroup.org) to assist if you encounter technical difficulties, if you have questions about the training modules, or if you need guidance with completing the homework assignments.</p>
+
+<center>
+<div class="panel-group" id="accordion" style="width:100%">
+  <div class="panel panel-default" style="background-color:#ffffff">
+   <div class="panel-heading w3-round-medium" style="background-color:#f2f2f2">
+       <h4 class="panel-title" align="left">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-family:calibri;font-size:16px;letter-spacing:1px;">
+          <span class="glyphicon glyphicon-blackboard" style="font-size:13px;color:#808080;"></span> <b>EMPLOYMENT PREPARATION TOOL-KIT&reg; CONTENTS</b></a>
+          </h4></div>
+<div id="collapse1" class="panel-collapse collapse">
+<div class="panel-body" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;"><b>0 &#124; ORIENTATION COURSE</b><br>Investing in your Professional Development is time spent improving your Self, overall. Taking responsibility for your life, circumstances, and career path will tend to be automatic. You will begin employment seeking activities with confidence.<br><br>
+
+<b>1 &#124; PROFESSIONAL DEVELOPMENT COURSE</b><br>
+This course is comprised wholly of Soft Skills modules&#151;critical thinking, handling workplace conflict, the art of active listening, mindful decision-making, customer service basics, body language, etc. Developing this skill-set is crucial for promoting one’s success in the workplace.<br><br>	
+
+<b>2 &#124; CAREER DEVELOPMENT COURSE</b><br>
+In this course, participants learn how to conduct occupational research, set occupational goals, and how to begin the process of creating a positive personal brand. There’s also an introduction to entrepreneurship so that interested participants can begin the process of becoming small business owners.<br><br>
+
+<b>3 &#124; DOCUMENT PREPARATION COURSE</b><br>
+This course was designed to teach Job Seekers how to develop their own self-marketing materials&#151;resume, cover letter, job reference page, etc. We believe that creating their own documents allows Job Seekers to know who they are, the skills they possess, and what they can offer an employer. This process promotes self-reliance and confidence.<br><br>
+		
+<b>4 &#124; STRATEGIC INTERVIEW PREPARATION COURSE</b><br>
+In this course, we engage participants in modules such as, telephone etiquette for job seekers, strategic interview preparation, appropriate interview attire, and following up after the interview. This course also includes the module <b>'Landing a Job with a Criminal Record'</b>; it is intended to serve as a guide so that the chances of landing a job with a criminal history may increase.<br><br>
+		
+<b>5 &#124; PERFORMANCE MANAGEMENT COURSE</b><br>
+This course is presented from the perspective that our 'job-ready' participants have acquired employment by convincing the hiring manager of their  exceptional capabiities; their high levels of professionalism; their ability to execute the duties of the position; and how they will begin to benefit their new employer as soon as they are allowed to contribute to the organization. This course was designed to teach students how to deliver on their promises.</p>
+
+<hr></hr>
+
+<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>AFTER COMPLETING THIS TRAINING PROGRAM, THE JOB SEEKER SHOULD BE ABLE TO:</b><br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Understand what it means to be <b>JOB READY</b>.<br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Demonstrate critical thinking, active listening, mindful decision-making, customer service, telephone, and appropriate body language skills.<br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Conduct occupational and employer research.<br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Begin the process of creating a positive personal brand.<br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Develop their own self-marketing materials&#151;resume, cover letter, job reference page, etc.<br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Understand who they are as a candidate and what they can offer an employer.<br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Address their criminal past with poise, ease, and tact.<br>
+<span class="glyphicon glyphicon-blackboard" style="font-size:13px;"></span> Follow up appropriately after any job interview.</p>
+<hr></hr>
+
+<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>WHO SHOULD ENROLL</b><br>
+Job Seekers of all kinds, especially those who have criminal histories.</p>
+
+<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>COURSE DELIVERY</b><br>
+Online &#124; Call 773-242-0705 if you require course delivery in a classroom setting.</p>
+
+<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>COURSE DURATION</b><br>
+20+ Hours</p>
+
+<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>COST</b><br>
+$39.99</p>
+
+<p align="left">
+<a href="https://spiralgroup.github.io/themonster/enrollment-application.html"><b>CLICK TO BEGIN THE 4-STEP ENROLLMENT PROCESS.</b></a><br><br>
+Alternatively, if you don't want to enroll in our program, then you can just download our <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9TOIRrTkELh_GjXVf3Xunib1k-XbDYf-2uwSNErjPDwHSbw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Employment Preparation Tool-Kit&reg; for <b>FREE</b> by clicking here.</a> Unfortunately, however, if you choose this method, we cannot offer a <b>'Certificate of Completion'</b> for completing the courses and homework assignments contained within, nor can we provide any technical, email, or phone support at this time.</p>
+</div>
+</div>
+</div>
+
+ <div class="panel panel-default" style="background-color:#ffffff">
+   <div class="panel-heading w3-round-medium" style="background-color:#f2f2f2">
+       <h4 class="panel-title" align="left">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-family:calibri;font-size:16px;letter-spacing:1px;">
+          <span class="glyphicon glyphicon-blackboard" style="font-size:13px;color:#808080;"></span> <b>INTERVIEW PREPARATION RESOURCES</b></a>
+          </h4></div>
+<div id="collapse2" class="panel-collapse collapse">
+<div class="panel-body" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;"><b>OVERVIEW</b><br>In this section, we present the Job Seeker with videos by <a href="http://jobspeaker.com">JobSpeaker</a>. The company helps Job Seekers prepare for their job search using a series of 9 short videos (approximately 1.5 - 4 minutes each) that focus on helping them prepare for job interviews.<br>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row" style="width:99%">
+  <div class="column1">
+    <div class="content1" style="padding:1px;">
+    <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/7D1RcWS0ce0?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">Interview Best Practices</font></p>
+              </div>
+  </div>
+  <div class="column1">
+       <div class="content1" style="padding:1px;">
+     <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/m5kR7TPAkSw?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">Tell Me About Yourself...</font></p>
+         </div>
+     </div>
+     
+     <div class="column1">
+       <div class="content1" style="padding:1px;">
+     <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/QiLDMXOH8bI?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">What's Your Greatest Strength?</font></p>
+         </div>
+     </div>
+</div>
+
+<hr></hr>
+
+<div class="row" style="width:99%">
+  <div class="column1">
+     <div class="content1" style="padding:1px;">
+     <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/i4LKoegE8P0?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">What's Your Greatest Weakness?</font></p>
+         </div>
+  </div>
+  <div class="column1">
+     <div class="content1" style="padding:1px;">
+     <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/H25RnmslChI?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">Handling A Difficult Situation</font></p>
+         </div>
+     </div>
+     
+     <div class="column1">
+   <div class="content1" style="padding:1px;">
+     <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/FKiJZbsWMME?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">Where Do You See Yourself In 5 Years?</font></p>
+         </div>
+     </div>
+</div>
+
+<hr></hr>
+
+<div class="row" style="width:99%">
+  <div class="column1">
+    <div class="content1" style="padding:1px;">
+   <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/SIaL36HsbbY?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">How To Handle Salary Questions</font></p>
+         </div>
+  </div>
+  <div class="column1">
+    <div class="content1" style="padding:1px;">
+    <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/iETGNw9kunI?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">Why Should We Hire You?</font></p>
+         </div>
+     </div>
+     
+     <div class="column1">
+    <div class="content1" style="padding:1px;">
+    <p align="center"><iframe style="width:100%;" src="https://www.youtube.com/embed/vbTZgIPYr8Y?rel=0&amp;showinfo=0" frameborder="0" height="300" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <font color="#ffffff">Do You Have Any Questions for Us?</font></p>
+         </div>
+     </div>
+     </div>
+     </div>
+</div>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-default w3-padding-small" style="width:100%;border-color:#f2f2f2;background-color:#f2f2f2">
+<table align="center">
+<tr>
+<td align="center">
+  <ul class="nav navbar-nav navbar-navbar">
+      <li><a href="https://spiralgroup.org"><i class="fa fa-mortar-board" style="font-size:16px"></i> <font color="#000000">Spiral Group, Inc. &copy; 2017</font></a></li>
+      <li><a href="https://spiralgroup.org"><span class="glyphicon glyphicon-shopping-cart" style="font-size:13px"></span> Online Catalog</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/health-code-violations.html"><span class="glyphicon glyphicon-edit" style="font-size:13px"></span> Health Code Violations</a></li>
+     <li><a href="https://spiralgroup.github.io/themonster/contact.html"><span class="glyphicon glyphicon-phone" style="font-size:13px"></span> Contact Us</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/the-monster.html"><i class="fa fa-optin-monster" style="font-size:14px"></i> Website Design and Maintenance by The Monster</a></li>
+      </ul>
+</td>
+</tr>
+</table>
+</nav>
+</body>
+</html>
