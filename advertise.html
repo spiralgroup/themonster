@@ -14,39 +14,45 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
 <style type="text/css">	
 .navbar {
-  border-radius: 0; 
-  background-color:#e6e6e6;
-  padding: 0;
+  border: 0; 
+  background-color: #ffffff;
+  padding: 30px 0 0 0;
 }
 .navbar .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus  {
   background-color: #f5f5f5;
-  color:#f5f5f5;
+  color: #000000;
   padding: 0;
-}
+  border: 0;
+  }
 .navbar-brand,
 .navbar-nav > li > a  { 
   padding: 0;
   margin: 0;
-}
+  border: 0;
+ }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a  {
   color: #000000;
-  padding: 20px 20px 20px 9px;
+  padding: 5px 20px 20px 9px;
+  border: 0;
 } 
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus ,
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #585858;background-color: #e6e6e6;
-  padding: 20px 20px 20px 9px;
-} 
+.navbar-default .navbar-nav > li > a:focus
+{
+  color: #585858;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 5px 20px 20px 9px;
+  border: 0;
+  } 
 .navbar-default .navbar-nav > .dropdown > a .caret{
  
 }
@@ -59,6 +65,7 @@
 .navbar-default .navbar-nav > .open > a:focus {
   color: #ffffff;
   background-color: #ffffff;
+  border: 0;
 }
 .navbar-default .navbar-nav > .open > a .caret,
 .navbar-default .navbar-nav > .open > a:hover .caret,
@@ -70,43 +77,27 @@ li a {
     text-align: center;
     padding: 0;
     margin: 0;
-    font-family: roboto,sans-serif;
+    font-family: ubuntu;
     letter-spacing: 1px;
     font-size: 11.50px;
 }
 li a:hover {
-   border-radius: 4px;
+   border: 0;
    color: #ffffff;
 }
-#accordion {
- max-width:100%;
-}
- 
+
  w3-table {
     border-collapse: collapse;
     width: 100%;
     padding: 0;
     margin: 0;
+    background-color: #000000;
 }
 
-th1, td1 {
-    padding: 5px 0 0 0;
-    text-align: left;
-}
 img {
     border-radius: 4px; 
     max-width: 100%;
     height: auto;
-}
-heading {
-    border-radius: 4px; 
-    max-width: 100%;
-    height: 100%;
-    border:1px solid;
-    border-color:#f2f2f2;
-}
-.verticalLine {
-  border-right: solid #000000;
 }
 
 * {
@@ -127,7 +118,6 @@ h3 {
     font-size: 11.5px;
     letter-spacing: 1px;
     color: #f2f2f2;
-    font-weight: bold;
  }   
 
 .row {
@@ -136,12 +126,12 @@ h3 {
 
 .row,
 .row > .column {
-    padding: 10px;
+    padding: 0 10px 10px 10px;
 }
 
 .column {
     float: left;
-    width: 22%;
+    width: 25%;
 }
 
 body, html {
@@ -151,7 +141,7 @@ body, html {
 
 .hero-image {
   background-image: url("https://user-images.githubusercontent.com/25410880/36029276-89757948-0d70-11e8-9ecf-0b9202625820.png");
-  height: 90%;
+  height: 40%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,6 +161,7 @@ body, html {
   border: none;
   outline: 0;
   display: inline-block;
+  position: relative;
   padding: 10px 25px;
   color: black;
   background-color: #ddd;
@@ -181,11 +172,6 @@ body, html {
 .hero-text button:hover {
   background-color: #555;
   color: white;
-}
- 
-.column1 {
-    float: center;
-    width: 100%;
 }
 
 .row:after {
@@ -199,7 +185,6 @@ body, html {
     margin: 0;
     border-radius: 4px;
 }
-
 
 @media (max-width: 800px) {
     .column {
@@ -217,10 +202,14 @@ body, html {
 
 <body>
 <div class="hero-image">
-  <div class="hero-text">
-    
- <p align="center" style="font-family:nova slim;font-size:52px;letter-spacing:2px;color:#f2f2f2;">
-spiralgroup.org</p>
+
+<center>
+<div class="hero-text">
+<p align="center" style="font-family:nova slim;font-size:61px;letter-spacing:3px;color:#f2f2f2;">spiralgroup.org</p>
+
+<p align="center" style="font-family:nova slim;font-size:13px;letter-spacing:1.5px;color:#f2f2f2;">
+affordable advertising for small businesses &#124; only $15 a month</p>
+
         </div>
       </div>
     </div>
@@ -228,18 +217,18 @@ spiralgroup.org</p>
 </div>
 
 <div style="background-color:#585858;">
-<p align="center" style="font-family:nova slim;font-size:20px;letter-spacing:1px;color:#f2f2f2;"><br>Browse Chicagoland Businesses by Category</p>
+<p align="center" style="font-family:nova slim;font-size:18px;letter-spacing:1px;color:#f2f2f2;"><br>Browse Businesses by Category<br></p>
 
 <center>
 <!-- Grid 1-->
-<div style="background-color:#585858;padding:0 0 100px 120px;">
-<div class="row" style="width:99%">
+<div style="background-color:#585858;">
+<div class="row" style="width:71%">
 <div class="column">
-    <div class="content" style="padding:0 0 2px 0;">
+<div class="content" style="padding:0 0 2px 0;">
 <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>Restaurants</b></p>
+<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
+ <b>restaurants</b></p>
      </div>
   </div>
   
@@ -247,8 +236,8 @@ spiralgroup.org</p>
     <div class="content" style="padding:0 0 2px 0;">
 <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031197-efca2836-0d77-11e8-930d-ace5894c40f8.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>Shopping</b></p>
+<p style="font-family:ubuntu;font-size:15px;letter-spacing:1.5px;color:#585858;">
+<b>shopping</b></p>
     </div>
   </div>
     
@@ -256,8 +245,8 @@ spiralgroup.org</p>
    <div class="content" style="padding:0 0 2px 0;">
    <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>Night Life</b></p>
+<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
+ <b>night life</b></p>
     </div>
   </div>
   
@@ -265,19 +254,21 @@ spiralgroup.org</p>
     <div class="content" style="padding:0 0 2px 0;">
 <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>Beauty & Spas</b></p></div>
-  </div></div>
+<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
+ <b>beauty & spas</b></p>
+ </div>
+ </div>
+</div>
 
 <center>
 <!-- Grid 2-->
-<div class="row" style="width:99%">
+<div class="row" style="width:71%">
   <div class="column">
     <div class="content" style="padding:0 0 2px 0;">
 <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>Automotive</b></p>
+<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
+ <b>automotive</b></p>
      </div>
   </div>
   
@@ -285,8 +276,8 @@ spiralgroup.org</p>
     <div class="content" style="padding:0 0 2px 0;">
 <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031197-efca2836-0d77-11e8-930d-ace5894c40f8.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>Home Services</b></p>
+<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
+ <b>home services</b></p>
     </div>
   </div>
     
@@ -294,39 +285,43 @@ spiralgroup.org</p>
    <div class="content" style="padding:0 0 2px 0;">
    <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>Health & Fitness</b></p>
+<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
+ <b>health & fitness</b></p>
     </div>
   </div>
   
   <div class="column">
-    <div class="content" style="padding:0 0 2px 0;">
+    <div class="content" style="padding:0 0 1px 0;">
 <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" style="width:100%;" border="0"></a></p>
 
-<p style="font-family:brownilla new, sans-serif;font-size:13px;letter-spacing:1px;">
- <b>More Categories</b></p>
+<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
+ <b>b2b service providers</b></p>
  </div>
  </div>
- </div>
- </div>
- </div>
+</div>
+
+<div class="row" style="width:70%">
+</div>
+</div>
+</div>
 
 <center>
-
-
-<nav class="navbar navbar-default w3-padding-small" style="width:100%;">
+<div class="w3-container">
 <table align="center">
 <tr>
 <td align="center">
+<nav class="navbar navbar-default" style="width:100%;">
   <ul class="nav navbar-nav navbar-navbar">
-      <li><a href="https://spiralgroup.org"><span class="glyphicon glyphicon-home" style="font-size:13px"></span> Ad Choices</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-gift" style="font-size:13px"></span> Community Outreach</a></li>
+      <li><a href="https://spiralgroup.org"><span class="glyphicon glyphicon-search" style="font-size:13px"></span> About</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-hdd" style="font-size:13px"></span> Submit Your Business</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/the-monster.html"><i class="fa fa-folder" style="font-size:14px"></i> Small Business Solutions</a></li>
+       <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-gift" style="font-size:13px"></span> Community Outreach</a></li>
      <li><a href="https://spiralgroup.github.io/themonster/contact.html"><span class="glyphicon glyphicon-phone" style="font-size:13px"></span> Contact</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/the-monster.html"><i class="fa fa-umbrella" style="font-size:14px"></i> Powered by The Monster</a></li>
-      </ul>
+            </ul>
+      </nav>
 </td>
 </tr>
 </table>
-</nav>
+</div>
 </body>
 </html>
