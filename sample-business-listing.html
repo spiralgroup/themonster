@@ -17,7 +17,7 @@
 <style type="text/css">	
 .navbar {
   border: 0; 
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 30px 0 0 0;
 }
 .navbar .navbar-nav > .active > a,
@@ -196,6 +196,22 @@ body, html {
     border-radius: 4px;
 }
 
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+    background-color: #666;
+    color: white;
+}
+
 @media (max-width: 800px) {
     .column {
         width: 100%;
@@ -221,10 +237,9 @@ body, html {
 affordable advertising for small businesses &#124; only $15 a month</p>
 </div>
 </div>
-
     
-<div style="background-color:#ffffff;">
-<p align="center" style="font-family:nova slim;font-size:18px;letter-spacing:1px;color:#585858;"><br>Category &#124; Restaurants</p></div></div>
+<div style="background-color:#d3d3d3;">
+<p align="center" style="font-family:kaushan script;font-size:22px;letter-spacing:1px;color:#585858;">Restaurants</p></div></div></div></div>
 
 <center>
  <div style="background-color:#ffffff;">
@@ -265,117 +280,40 @@ There are 3 ways to become a valued Community Partner &#151; 1. Advertise with U
   </div>
   </div>
 
-<div class="w3-container" style="background-color:#ffffff;">  
-<hr style="width:100%;height:1px;border-width:0;background-color:#d3d3d3">
-<!-- begin wwww.htmlcommentbox.com -->
-<div id="HCB_comment_box" style="width:50%;float:left;"><a href="http://www.htmlcommentbox.com">Guestbook</a> is loading comments...</div>
-<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={comments_header:'Test'};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24O%2FQA9JlLMuYfulTkcFEvG%2F"+"&opts=17823&num=5&ts=1525292104805");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-<!-- end www.htmlcommentbox.com -->
+<div class="w3-container" style="background-color:#ffffff;width:100%;">
 </div>
 </div>
 
-<div class="pagination" style="background-color:#f2f2f2;">
-page...
-  <a href="https://spiralgroup.org">1</a>
-  <a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1">2</a>
-  <a href="https://spiralgroup.org">1</a>
-  <a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1">2</a>
-  <a href="https://spiralgroup.org">1</a>
-  <a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1">2</a>
-  <a href="https://spiralgroup.org">1</a>
-  <a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1">2</a>
+<div class="pagination" style="background-color:#ffffff;width:100%;">
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+<div id="myDIV">
+  <button class="btn">1</button>
+  <button class="btn active">2</button>
+  <button class="btn">3</button>
+  <button class="btn">4</button>
+  <button class="btn">5</button>
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+</div>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
   
-  
-   <div style="background-color:#f2f2f2;">
+   <div style="background-color:#ffffff;">
 <p align="center" style="font-family:nova slim;font-size:18px;letter-spacing:1px;color:#585858;"><br>Browse Businesses by Category<br></p>
 
-  <div style="background-color:#585858;">
-  <div class="row" style="width:70%;padding:30px 0 0 0;">
-<div class="column">
-<div class="content" style="padding:0 0 2px 0;">
-<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
- <b>restaurants</b></p>
-     </div>
-  </div>
-
-  <div class="column">
-    <div class="content" style="padding:0 0 2px 0;">
-<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031197-efca2836-0d77-11e8-930d-ace5894c40f8.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:15px;letter-spacing:1.5px;color:#585858;">
-<b>shopping</b></p>
-    </div>
-  </div>
-    
-  <div class="column">
-   <div class="content" style="padding:0 0 2px 0;">
-   <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
- <b>night life</b></p>
-    </div>
-  </div>
   
-  <div class="column">
-    <div class="content" style="padding:0 0 2px 0;">
-<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
- <b>beauty & spas</b></p>
- </div>
- </div>
-</div>
-
 <center>
-<!-- Grid 2-->
-<div class="row" style="width:70%;padding:10px 0 0 0;">
-  <div class="column">
-    <div class="content" style="padding:0 0 2px 0;">
-<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
- <b>automotive</b></p>
-     </div>
-  </div>
-  
-  <div class="column">
-    <div class="content" style="padding:0 0 2px 0;">
-<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031197-efca2836-0d77-11e8-930d-ace5894c40f8.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
- <b>home services</b></p>
-    </div>
-  </div>
-    
-  <div class="column">
-   <div class="content" style="padding:0 0 2px 0;">
-   <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
- <b>health & fitness</b></p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="content" style="padding:0 0 1px 0;">
-<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" style="width:100%;" border="0"></a></p>
-
-<p style="font-family:ubuntu;font-size:14px;letter-spacing:1.5px;color:#585858;">
- <b>b2b service providers</b></p>
- </div>
- </div>
-</div>
-
-<div class="row" style="width:70%">
-</div>
-</div>
-</div>
-
-<center>
-<div class="w3-container" style="background-color:#f2f2f2;">
+<div class="w3-container" style="background-color:#ffffff;">
 <table align="center">
 <tr>
 <td align="center">
