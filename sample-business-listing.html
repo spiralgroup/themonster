@@ -123,23 +123,10 @@ h3 {
 }
 
 .column {
-    float: right;
-    width: 22%;
-    background-color: #585858;
-    margin: 10px;
-}
-
-.column1 {
     float: left;
-    width: 50%;
-    background-color: #585858;
-      margin: 10px;
-}
-
-.column2 {
-    float: left;
-    width: 100%;
-    background-color: #585858;
+    width: 99%;
+    background-color: #e6e6e6;
+    margin: 1px;
 }
 
 .row:after {
@@ -158,34 +145,26 @@ h3 {
     content: "";
     display: table;
     clear: both;
-}
+} 
 
-
-.button {
-    width: 43%;
-    background-color: #4CAF50; /* Green */
-    border-radius: 4px;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
+.button a {
     display: inline-block;
-    font-family: ubuntu;
-    font-size: 12px;
-    margin: 2px;
-    cursor: pointer;
 }
 
-.button1 { 
-    color: #f2f2f2; 
- }
- 
- .button2 {
-    background-color: #f2f2f2; 
-    color: #585858; 
- }
- 
- 
+.button a {
+    font-family: ubuntu;
+    color: #ffffff;
+    background-color: #585858;
+    padding: 8px 16px;
+    width: 95%;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button a:hover:not(.active) {background-color: red;}
+
 .content {
     background-color: #585858;
     margin: 0;
@@ -204,6 +183,47 @@ h3 {
         width: 100%;
     }
 }
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.columna {
+    float: left;
+    width: 73%;
+    margin: 2px;
+}
+
+.columnb {
+    float: right;
+    width: 25%;
+    margin: 2px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #7fffd4;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.content1 {
+    background-color: #7fffd4;
+    padding: 2px;
+    border-radius: 4px;
+    max-width: 800px;
+}
+
 </style>
 </head>
 
@@ -214,9 +234,9 @@ h3 {
      <p class="navbar-text" style="font-family:nova slim;font-size:21px;letter-spacing:2px;">
 <a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#585858"><b>spiralgroup.org</b></a></p>
    <ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f2f2f2">
-                 <li><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><span class="glyphicon glyphicon-folder-close" style="color:#ff0099"></span> Submit Your Business</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><span class="glyphicon glyphicon-compressed" style="color:#ff0099"></span> Small Business Solutions</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><span class="glyphicon glyphicon-certificate" style="color:#ff0099"></span> About</a></li>
+                 <li><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><span class="glyphicon glyphicon-folder-close" style="color:red"></span> Submit Your Business</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><span class="glyphicon glyphicon-compressed" style="color:red"></span> Small Business Solutions</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><span class="glyphicon glyphicon-certificate" style="color:red"></span> About</a></li>
 </ul>
 </nav>
 <hr style="width:100%;height:1px;border-width:0;background-color:#dddddd">
@@ -226,74 +246,140 @@ h3 {
 <p align="center" style="font-family:kaushan script;font-size:42px;letter-spacing:1px;color:#585858;">
 Restaurants</p>
 
-<p align="center" style="font-family:nova slim;font-size:14px;letter-spacing:1.5px;color:#ff0099;">
+<p align="center" style="font-family:nova slim;font-size:14px;letter-spacing:1.5px;color:red;">
 affordable advertising for small businesses &#124; only $15 a month</p>
 </div>
+</div>
 
-<center>
-<div class="w3-container" style="width:100%;background-color:#e6e6e6;">
-<div class="w3-row" style="width:100%;background-color:#e6e6e6;">
-<div class="w3-col" style="width:100%;background-color:#e6e6e6;"><br>
-  <div class="content w3-panel w3-border w3-card w3-round-medium" style="background-color:#ffffff;width:84%;"> 
- 
-<a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/35863039-82057552-0b1b-11e8-9129-1b478c1a9830.png" style="width:33%;"></a>
+<!-- Portfolio Gallery Grid -->
+<div class="row" style="width:100%">
+  <div class="columna">
+<div class="content w3-panel w3-border w3-card w3-round-medium w3-padding" style="background-color:#ffffff;width:100%;"> 
+<a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/35862985-7963ff22-0b1b-11e8-9c3b-c271c330ea0f.png" style="width:33%;"></a>
 
 <p align="center" style="font-family:tw cen mt condensed;font-size:18px;color:#000000;letter-spacing:1px;">5615 West Race St. &nbsp; Chicago, IL 60644 &nbsp; 773-242-0705 &nbsp; <a href="https://spiralgroup.org">SpiralGroup.org</a></p>
 <hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
 <p align="justify" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.50px;">
-<b>DESCRIPTION</b><br>
+<b>FROM THE BUSINESS</b><br>
 Did you know about our Community Partners Program? Through our CPP, we're building mutually beneficial and strategic alliances. Support us in our mission while adding value to your company’s marketing and brand-building efforts. <br><br>
 
 <b>HOURS</b><br>
 Call us at 773-242-0705.<br><br>
 
 <b>COMMUNITY PARTNERS PROGRAM</b><br>
-There are 3 ways to become a valued Community Partner &#151; 1. Advertise with Us. Purchasing Ad Space automatically enrolls your company in our CPP. 2. In-Kind Resources. The kinds of products and services we can use that would allow us to continue providing free access to our premium online content to Job Seekers who qualify. <a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"> Click here to learn more about our <font color="#ff0066">Community Outreach Program.</font></a> 3. Marketing & Advertising Support. We're seeking advertising opportunities that will allow us to share our mission. Apply to become a <a href="https://spiralgroup.github.io/themonster/community-partner-application.html"><font color="#ff0066">Community Partner</font> now.</a></p>
+There are 3 ways to become a valued Community Partner &#151; 1. Advertise with Us. Purchasing Ad Space automatically enrolls your company in our CPP. 2. In-Kind Resources. The kinds of products and services we can use that would allow us to continue providing free access to our premium online content to Job Seekers who qualify. We're seeking advertising opportunities that will allow us to share our mission. Apply to become a <a href="https://spiralgroup.github.io/themonster/community-partner-application.html"><font color="#ff0066">Community Partner</font> now. llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</a></p>
 
-<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
-<p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.50px;">
-<b>PHOTOS</b><br>
-<center><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:22%;"> &nbsp; <img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" style="width:22%;"> &nbsp; <img src="https://user-images.githubusercontent.com/25410880/36029369-ee1166be-0d70-11e8-9c64-0f2da9ee7771.png" style="width:22%;"> &nbsp; <img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:22%;"></center></p>
+<hr style="width:100%;height:1px;border-width:0;background-color:#f5f5f5">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:21%;"> &nbsp; <img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" style="width:21%;"> &nbsp; <img src="https://user-images.githubusercontent.com/25410880/36029369-ee1166be-0d70-11e8-9c64-0f2da9ee7771.png" style="width:21%;"> &nbsp; <img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:21%;"></p>
+</div>
   </div>
-  </div>
-  </div>
-  <br>
+ 
+ <div class="columnb">
+ <div class="content w3-panel w3-border w3-card w3-round-medium" style="background-color:#ffffff;width:100%;">
+<div class="w3-table" style="width:100%;background-color:#ffffff;">
+<div class="button" style="padding:6px 0 0 0">
+<a href="https://spiralgroup.org">Share</a></div>
 
-<center>
-<div class="content w3-panel" style="background-color:#e6e6e6;width:100%;"> 
-<button class="button button2">Green</button>
-<button class="button button2">Blue</button>
-<button class="button button2">Red</button>
-<button class="button button2">Gray</button>
-<button class="button button2">Black</button>
-<button class="button button2">Black</button>
-<hr style="width:84%;height:1px;border-width:0;background-color:#f2f2f2">
+<div class="button">
+<a href="https://spiralgroup.org">View Menu</a></div>
+
+<div class="button">
+<a href="https://spiralgroup.org">Submit Review</a></div>
+
+<div class="button">
+<a href="https://spiralgroup.org">Get Directions</a></div>
+
+<div class="button">
+<a href="https://spiralgroup.org">Purchase Gift Certificates</a></div>
+
+<div class="button" style="padding:0 0 5px 0">
+<a href="https://spiralgroup.org">Send Message to the Business</a>
+</div>
+</div>
+</div>
+<hr style="width:100%;height:1px;border-width:0;background-color:#e6e6e6">
+
+</div>
+
+<p align="center" style="font-family:calibri;font-size:14px;color:red;letter-spacing:2px;">more business info</p>
+
+<div class="columnb">
+ <div class="content w3-panel w3-border w3-card w3-round-medium" style="background-color:#ffffff;width:100%;">
+<div class="w3-table" style="width:100%;background-color:#ffffff;">
+<div class="button" style="padding:6px 0 0 0">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Delivery</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Take Out</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Accepts Credit Cards</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Parking</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Wheelchair Accessible</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Outdoor Seating</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Wi-Fi</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Has TV</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Serves Alcohol</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Caters</a></div>
+
+<div class="button">
+<a href=""><span class="glyphicon glyphicon-thumbs-up" style="font-size:13px"></span> &nbsp; Gender Neutral Restrooms</a></div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="w3-container">
-<p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>more restaurants</p>
+<p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>more in this category</p>
 <div class="w3-bar">
   <a href="#" class="w3-button">«</a>
-  <a href="#" class="w3-button w3-blue">1</a>
+  <a href="#" class="w3-button w3-grey">1</a>
   <a href="#" class="w3-button">2</a>
   <a href="#" class="w3-button">3</a>
   <a href="#" class="w3-button">4</a>
   <a href="#" class="w3-button">»</a>
 </div>
 </div>
-<hr style="width:84%;height:1px;border-width:0;background-color:#f2f2f2">
+<hr style="width:100%;height:1px;border-width:0;background-color:#f2f2f2">
 
-<center>
-<div class="content w3-panel" style="background-color:#e6e6e6;width:100%;">
-<p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>browse businesses by category</p>
+<p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>browse other categories</p>
 
-<button class="button button1 w3-blue">Green</button>
-<button class="button button1 w3-green">Blue</button>
-<button class="button button1 w3-light-blue">Red</button>
-<button class="button button1 w3-yellow">Gray</button>
-<button class="button button1 w3-red">Black</button>
-<button class="button button1 w3-grey">Black</button>
-</div>
+<div class="w3-table w3-padding-xlarge" style="width:100%;background-color:#e6e6e6;">
+<tr>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+<td>&nbsp;</td>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+<td>&nbsp;</td>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+<td>&nbsp;</td>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+</tr>
+
+<tr><hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2"></tr>
+
+<tr>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+<td>&nbsp;</td>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+<td>&nbsp;</td>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+<td>&nbsp;</td>
+<td style="width:20%"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:20%"></td>
+</tr>
 </div>
 </div>
 </div>
