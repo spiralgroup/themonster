@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-<title>Spiral Group, Inc. &#124; Sample Small Business Listing</title>
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Food Sense | Plant-Based Eating At Its Best</title>
+<meta name="description" content="A unique resource for thoughtful, food-loving eaters and home cooks who have a palate for plant-based eating - for themselves or their loved ones; three days a week, or every day of the year." />
+<meta name="author" content="Julie Shah Lamba" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/lib/w3-colors-food.css">
- <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
+<!-- CSS -->
+<link rel="stylesheet" media="screen, print" href="/-/css/basic.css" />
+<!--[if gte IE 7]><!-->
+<link rel="stylesheet" media="screen" href="/-/css/screen.css" />
+<!--<![endif]-->
 <link rel="stylesheet" href="/lib/w3-colors-2017.css">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|BenchNine|Berkshire+Swash|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style type="text/css">	
+<style type="text/css">
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 0 12px 0;
+    font-size: 13px;
+    width: 20%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    height: 300px;
+    border-radius: 2px;
+}
+
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+
+
 .navbar {
   border-radius: 0; 
   background-color:#ffffff;
@@ -81,22 +128,47 @@ img {
     max-width: 100%;
     height: auto;
 }
-heading {
-    border-radius: 4px; 
-    max-width: 100%;
-    height: 100%;
-    border:1px solid;
-    border-color:#f2f2f2;
-}
-.verticalLine {
-  border-right: solid #000000;
-}
 
 * {
     box-sizing: border-box;
 }
+.sidenav {
+    height: 75%;
+    width: 178px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.sidenav a {
+    padding: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
 .main {
+    margin-left: 174px; /* Same as the width of the sidenav */
+    font-size: 12px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding: 10px;}
+    .sidenav a {font-size: 12px;}
+}
+
+
+.main1 {
     max-width: 800px;
     margin: 0;
 }
@@ -124,7 +196,7 @@ h3 {
 
 .column {
     float: left;
-    width: 99%;
+    width: 49%;
     background-color: #e6e6e6;
     margin: 1px;
 }
@@ -156,13 +228,14 @@ h3 {
     font-size: 13px;
     color: #ffffff;
     background-color: #585858;
-    padding: 4px 1px 4px 1px;
-    width: 23%;
-    height: 40px;
+    padding: 2px;
+    margin: 0;
+    width: 100%;
+    height: 30px;
     text-decoration: none;
     transition: background-color .3s;
-    border: 1px solid #ddd;
     border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
 .buttona:hover:not(.active) {background-color: red;}
@@ -211,32 +284,12 @@ h3 {
 
 .buttonc:hover:not(.active) {background-color: #00bfff;}
 
-.content {
-    background-color: #585858;
-    margin: 0;
-    border-radius: 4px;
-}
 }
 
 @media (max-width: 800px) {
     .column {
         width: 100%;
     }
-}
-
-@media (max-width: 800px) {
-    .column {
-        width: 100%;
-    }
-}
-
-.row {
-    margin: 8px -16px;
-}
-
-.row,
-.row > .column {
-    padding: 8px;
 }
 
 .columna {
@@ -256,26 +309,13 @@ h3 {
     display: table;
     clear: both;
 }
-
-.content {
-    background-color: #7fffd4;
-    padding: 2px;
-    border-radius: 4px;
-}
-
-.content1 {
-    background-color: #7fffd4;
-    padding: 2px;
-    border-radius: 4px;
-    max-width: 800px;
-}
-
 </style>
 </head>
 
 <body style="background-color:#f2f2f2">
+<div class="main">
 <center>
-<div class="w3-container w3-round-medium w3-panel w3-card" style="width:98%;background-color:#e6e6e6;padding:15px;">
+<div class="w3-container w3-round-medium w3-panel w3-card" style="width:100%;background-color:#e6e6e6;padding:15px;">
     <nav class="navbar navbar-default" style="width:100%;background-color:#e6e6e6;padding:0;border-color:#e6e6e6">
      <p class="navbar-text" style="font-family:nova slim;font-size:21px;letter-spacing:2px;">
 <a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#585858"><b>spiralgroup.org</b></a></p>
@@ -285,63 +325,76 @@ h3 {
       <li><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><span class="glyphicon glyphicon-certificate" style="color:red"></span> About</a></li>
 </ul>
 </nav>
-<hr style="width:100%;height:1px;border-width:0;background-color:#dddddd">
- <center>
-  <div class="w3-container" style="width:100%;">
-<div class="w3-row">
+
+<hr style="width:100%;height:1px;border-width:0;background-color:#e6e6e6">
+
 <p align="center" style="font-family:kaushan script;font-size:42px;letter-spacing:1px;color:#585858;">
 Restaurants</p>
 
 <p align="center" style="font-family:nova slim;font-size:14px;letter-spacing:1.5px;color:red;">
 affordable advertising for small businesses &#124; only $15 a month</p>
+
+<hr style="width:100%;height:1px;border-width:0;background-color:#e6e6e6">
+
+<div class="sidenav">
+ <a href="#about"><button class="buttona">Share</button></a>
+ <a href="#about"><button class="buttona">Share</button></a>
+ <a href="#about"><button class="buttona">Share</button></a>
+ <a href="#about"><button class="buttona">Share</button></a>
 </div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="w3-row">
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
 </div>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row" style="width:99%">
-  <div class="columna">
-<div class="content w3-panel w3-border w3-card w3-round-medium w3-padding" style="background-color:#ffffff;width:100%;padding:0 10px 28px 10px;margin:10px 0 0 0;"> 
-<a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/35862985-7963ff22-0b1b-11e8-9c3b-c271c330ea0f.png" style="width:33%;"></a>
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
 
-<p align="center" style="font-family:tw cen mt condensed;font-size:18px;color:#000000;letter-spacing:1px;">5615 West Race St. &nbsp; Chicago, IL 60644 &nbsp; 773-242-0705 &nbsp; <a href="https://spiralgroup.org">SpiralGroup.org</a></p>
-<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
-<p align="justify" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.50px;">
-<b>FROM THE BUSINESS</b><br>
-Did you know about our Community Partners Program? Through our CPP, we're building mutually beneficial and strategic alliances. Support us in our mission while adding value to your company’s marketing and brand-building efforts. <br><br>
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
 
-<b>HOURS</b><br>
-Call us at 773-242-0705.<br><br>
+<div id="Oslo" class="tabcontent">
+  <h3>Oslo</h3>
+  <p>Oslo is the capital of Norway.</p>
+</div>
 
-<b>COMMUNITY PARTNERS PROGRAM</b><br>
-There are 3 ways to become a valued Community Partner &#151; 1. Advertise with Us. Purchasing Ad Space automatically enrolls your company in our CPP. 2. In-Kind Resources. The kinds of products and services we can use that would allow us to continue providing free access to our premium online content to Job Seekers who qualify. We're seeking advertising opportunities that will allow us to share our mission. Apply to become a <a href="https://spiralgroup.github.io/themonster/community-partner-application.html"><font color="#ff0066">Community Partner</font> now.</a></p>
+<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
 
-<hr style="width:100%;height:1px;border-width:0;background-color:#f5f5f5">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" style="width:22.5%;">&nbsp;<img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" style="width:22.5%;">&nbsp;<img src="https://user-images.githubusercontent.com/25410880/36029369-ee1166be-0d70-11e8-9c64-0f2da9ee7771.png" style="width:22.5%;">&nbsp;<img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:22.5%;"></p>
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
 
-<p align="center" style="font-family:calibri;font-size:20px;color:red;letter-spacing:2px;"><br>amenities</p>
-<div class="w3-table w3-padding-xlarge" style="width:100%;background-color:#ffffff;">
-<tr>
-<td style="width:23%"><button class="buttona">Share</button></td>
-
-<td style="width:23%"><button class="buttona">Leave Review</button></td>
-
-<td style="width:23%"><button class="buttona">Gift Cards</button></td>
-
-<td style="width:23%"><button class="buttona">Send Message</button></td>
-</tr>
-
-<tr>
-<td style="width:23%"><button class="buttona">test</button></td>
-
-<td style="width:23%"><button class="buttona">test</button></td>
-
-<td style="width:23%"><button class="buttona">test</button></td>
-
-<td style="width:23%"><button class="buttona">test</button></td>
-</tr>
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+ 
 
 <hr style="width:100%;height:1px;border-width:0;background-color:#ffffff">
-</div>
 
 <p align="center" style="font-family:calibri;font-size:20px;color:red;letter-spacing:2px;">more business info</p>
 <div class="w3-table w3-padding-xlarge" style="width:100%;background-color:#ffffff;">
@@ -364,9 +417,6 @@ There are 3 ways to become a valued Community Partner &#151; 1. Advertise with U
 
 <td style="width:23%"><button class="buttonb">test</button></td>
 </tr>
-</div>
-</div>
-</div>
 
 <div class="w3-container">
 <p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>more in this category</p>
@@ -377,7 +427,6 @@ There are 3 ways to become a valued Community Partner &#151; 1. Advertise with U
   <a href="#" class="w3-button">3</a>
   <a href="#" class="w3-button">4</a>
   <a href="#" class="w3-button">»</a>
-</div>
 </div>
 </div>
 
@@ -412,10 +461,6 @@ There are 3 ways to become a valued Community Partner &#151; 1. Advertise with U
 </table>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <center>
 <div class="w3-container" style="background-color:#f2f2f2;">
@@ -434,7 +479,6 @@ There are 3 ways to become a valued Community Partner &#151; 1. Advertise with U
 </td>
 </tr>
 </table>
-</div>
 </div>
 </body>
 </html>
