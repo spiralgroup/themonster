@@ -28,40 +28,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style type="text/css">
-body {font-family: "Lato", sans-serif;}
-
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 12px 0 12px 0;
-    font-size: 13px;
-    width: 20%;
+body
 }
-
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
-    height: 300px;
-    border-radius: 2px;
-}
-
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
-
-
 .navbar {
   border-radius: 0; 
   background-color:#ffffff;
@@ -82,22 +50,15 @@ body {font-family: "Lato", sans-serif;}
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a  {
   color: #000000;
-  padding: 20px 20px 20px 9px;
+   padding: 20px 20px 20px 9px;
 } 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus ,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #000000;background-color: #ffffff;
+  color: #000000;background-color: #f2f2f2;
   padding: 20px 20px 20px 9px;
 } 
-.navbar-default .navbar-nav > .dropdown > a .caret{
- 
-}
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-  
-}
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -124,67 +85,18 @@ li a:hover {
 }
  
 img {
-    border-radius: 4px; 
     max-width: 100%;
     height: auto;
 }
 
 * {
-    box-sizing: border-box;
-}
-.sidenav {
-    height: 75%;
-    width: 178px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    overflow-x: hidden;
-    padding: 10px;
-}
-
-.sidenav a {
-    padding: 6px;
-    text-decoration: none;
-    font-size: 12px;
-    color: #818181;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.main {
-    margin-left: 174px; /* Same as the width of the sidenav */
-    font-size: 12px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding: 10px;}
-    .sidenav a {font-size: 12px;}
-}
+    box-sizing: border-box;}
 
 
-.main1 {
-    max-width: 800px;
-    margin: 0;
-}
-
-h1 {
-    font-size: 50px;
-}
-
-h3 {
-    font-family: Brownilla New, sans-serif;
-    font-size: 11.5px;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-    font-weight: bold;
- }   
-
+@media screen and (max-height: 450px) 
+{
+   
+   
 .row {
     margin: 8px -16px;
 }
@@ -219,6 +131,20 @@ h3 {
     clear: both;
 } 
 
+
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-family: Brownilla New, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    font-weight: bold;
+ }
+ 
 .buttona {
     display: inline-block;
 }
@@ -226,64 +152,76 @@ h3 {
 .buttona {
     font-family: ubuntu;
     font-size: 13px;
-    color: #ffffff;
+    color: #000;
+    background-color: #fff;
+    padding: 2px;
+    margin: 0;
+    width: 85%;
+    height: 38px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.buttona:hover:not(.active) {background-color: #ddd;}
+ 
+
+.buttonb {
+    display: inline-block;
+}
+
+.buttonb {
+    font-family: ubuntu;
+    font-size: 13.5px;
+    color: #fff;
     background-color: #585858;
     padding: 2px;
     margin: 0;
     width: 100%;
-    height: 30px;
+    height: 43px;
     text-decoration: none;
     transition: background-color .3s;
     border-radius: 4px;
     border: 1px solid #ddd;
 }
 
-.buttona:hover:not(.active) {background-color: red;}
+.buttonb:hover:not(.active) {background-color: #c0c0c0;}
 
-
-.buttonb {
-    display: inline-block;
-}
-
-.buttonb {
-    font-family: ubuntu;
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 0 12px 0;
     font-size: 13px;
-    color: #ffffff;
-    background-color: #008b8b;
-    padding: 4px 1px 4px 1px;
-    width: 23%;
-    height: 40px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    width: 25.0%;
+    border: 1px solid;
+    border-color: #d3d3d3;
 }
 
-.buttonb:hover:not(.active) {background-color: #585858;}
-
-
-.buttonc {
-    display: inline-block;
+.tablink:hover {
+    background-color: #777;
 }
 
-.buttonc {
-    font-family: arial narrow;
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: #585858;
-    background-color: #d3d3d3;
-    padding: 3px;
-    width: 22.5%;
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 8px;
+    text-align: center;
     height: 100%;
-    margin: 3px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
+    border: 1px solid;
     border-radius: 4px;
+    border-color: #f2f2f2;
 }
 
-.buttonc:hover:not(.active) {background-color: #00bfff;}
-
+#Advertise {background-color:#D8BFD8;}
+#Photos {background-color:green;}
+#Promos {background-color:blue;}
+#Partners {background-color:orange;}
 }
 
 @media (max-width: 800px) {
@@ -292,86 +230,163 @@ h3 {
     }
 }
 
-.columna {
-    float: center;
-    width: 100%;
-    margin: 0;
+
+.sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    float: left;
+    overflow-x: hidden;
+    padding: 5px 0 0 5px;
 }
 
-.columnb {
-    float: right;
-    width: 25%;
-    margin: 2px;
+.sidenav a {
+    padding: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: red;
+}
+
+.main {
+    margin: 0 0 0 220px;
+    font-size: 12px;
+    padding: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding: 10px;}
+    .sidenav a {font-size: 12px;}
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #000;
+  padding: 12px 0 2px 0;
+  color: #f2f2f2;
+  font-family: nova slim;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-</style>
-</head>
 
-<body style="background-color:#f2f2f2">
-<div class="main">
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 12.50%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+   
+<script type="text/javascript" data-cfasync="false" src="//apps.shareaholic.com/assets/pub/shareaholic.js" data-shr-siteid="2cfc3badfea4ac997be7fc4dcc616e2c" async="async"></script>
+
+</head>
+</style>
 <center>
-<div class="w3-container w3-round-medium w3-panel w3-card" style="width:100%;background-color:#e6e6e6;padding:15px;">
-    <nav class="navbar navbar-default" style="width:100%;background-color:#e6e6e6;padding:0;border-color:#e6e6e6">
-     <p class="navbar-text" style="font-family:nova slim;font-size:21px;letter-spacing:2px;">
-<a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#585858"><b>spiralgroup.org</b></a></p>
-   <ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f2f2f2">
-                 <li><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><span class="glyphicon glyphicon-folder-close" style="color:red"></span> Submit Your Business</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><span class="glyphicon glyphicon-compressed" style="color:red"></span> Small Business Solutions</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><span class="glyphicon glyphicon-certificate" style="color:red"></span> About</a></li>
+<div class="main">
+<body style="background-color:#ffffff">
+<div class="sidenav">
+<a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/35863078-895d7f16-0b1b-11e8-9d86-e43b2ac95659.png" style="width:73%;"></a>
+
+ <a href="#about"><button class="buttona">Who We Are</button></a>
+ <a href="#about"><button class="buttona">Online Catalog</button></a>
+ <a href="#about"><button class="buttona">Gift Cards</button></a>
+ <a href="#about"><button class="buttona">Deals &#124; Promos</button></a>
+ <a href="#about"><button class="buttona">Photo Gallery</button></a>
+ <a href="#about"><button class="buttona">Contact Us</button></a>
+ <a href="#about"><button class="buttona">View All Categories</button></a>
+</div>
+
+<div class="w3-container w3-round-medium w3-panel w3-card" style="width:96%;background-color:#e6e6e6;padding:3px 0 20px 0;">
+    <nav class="navbar navbar-default" style="width:90.5%;background-color:#e6e6e6;padding:0;border-color:#e6e6e6">
+     <p class="navbar-text" style="font-family:nova slim;font-size:23px;letter-spacing:2px;">
+<a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#585858;"><b>spiralgroup.org</b></a></p>
+<ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f2f2f2">
+                 <li><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><span class="glyphicon glyphicon-folder-close" style="color:#808080"></span> Submit Your Business</a></li>
 </ul>
 </nav>
 
-<hr style="width:100%;height:1px;border-width:0;background-color:#e6e6e6">
-
-<p align="center" style="font-family:kaushan script;font-size:42px;letter-spacing:1px;color:#585858;">
-Restaurants</p>
-
-<p align="center" style="font-family:nova slim;font-size:14px;letter-spacing:1.5px;color:red;">
-affordable advertising for small businesses &#124; only $15 a month</p>
-
-<hr style="width:100%;height:1px;border-width:0;background-color:#e6e6e6">
-
-<div class="sidenav">
- <a href="#about"><button class="buttona">Share</button></a>
- <a href="#about"><button class="buttona">Share</button></a>
- <a href="#about"><button class="buttona">Share</button></a>
- <a href="#about"><button class="buttona">Share</button></a>
-</div>
-
 <center>
-<div class="w3-container" style="width:100%;">
+<div class="w3-container" style="width:93.5%">
 <div class="w3-row">
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="Advertise" class="tabcontent">
+<p align="justify" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.50px;">
+Pay only $15 a month for a small business listing when you commit to a 1-year contract.<br><br>
+Each listing includes a company logo, contact information, complete description of your products and services, hours of operation, and a link to your business website.</p>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="Photos" class="tabcontent">
   <h3>Paris</h3>
   <p>Paris is the capital of France.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="Promos" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
-<div id="Oslo" class="tabcontent">
+<div id="Partners" class="tabcontent">
   <h3>Oslo</h3>
   <p>Oslo is the capital of Norway.</p>
 </div>
 
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+<button class="tablink" onclick="openCity('Advertise', this, '#D8BFD8')" id="defaultOpen">Advertise</button>
+<button class="tablink" onclick="openCity('Photos', this, 'green')">Photos</button>
+<button class="tablink" onclick="openCity('Promos', this, 'blue')">Promos</button>
+<button class="tablink" onclick="openCity('Partners', this, 'orange')">Partners</button>
 
 <script>
 function openCity(cityName,elmnt,color) {
@@ -392,93 +407,43 @@ function openCity(cityName,elmnt,color) {
 document.getElementById("defaultOpen").click();
 </script>
 </div>
+</div> 
+
+<hr style="width:95%;height:10px;border-width:0;background-color:#e6e6e6">
+
+ <p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>browse all business categories</p>
  
-
-<hr style="width:100%;height:1px;border-width:0;background-color:#ffffff">
-
-<p align="center" style="font-family:calibri;font-size:20px;color:red;letter-spacing:2px;">more business info</p>
-<div class="w3-table w3-padding-xlarge" style="width:100%;background-color:#ffffff;">
-<tr>
-<td style="width:23%"><button class="buttonb">Share</button></td>
-
-<td style="width:23%"><button class="buttonb">Your Feedback</button></td>
-
-<td style="width:23%"><button class="buttonb">Gift Cards</button></td>
-
-<td style="width:23%"><button class="buttonb">Send Message</button></td>
-</tr>
-
-<tr>
-<td style="width:23%"><button class="buttonb">test</button></td>
-
-<td style="width:23%"><button class="buttonb">test</button></td>
-
-<td style="width:23%"><button class="buttonb">test</button></td>
-
-<td style="width:23%"><button class="buttonb">test</button></td>
-</tr>
-
-<div class="w3-container">
-<p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>more in this category</p>
-<div class="w3-bar">
-  <a href="#" class="w3-button">«</a>
-  <a href="#" class="w3-button w3-grey">1</a>
-  <a href="#" class="w3-button">2</a>
-  <a href="#" class="w3-button">3</a>
-  <a href="#" class="w3-button">4</a>
-  <a href="#" class="w3-button">»</a>
-</div>
-</div>
-
-<hr style="width:100%;height:1px;border-width:0;background-color:#e6e6e6">
-
-<div class="content w3-panel w3-border w3-card w3-round-medium" style="background-color:#d3d3d3;width:98%;margin:0 0 10px 0;"> 
-<div class="w3-table" style="width:98%;background-color:#ffffff;padding:0 0 28px 0;">
-<tr>
-<td><p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>browse other categories</p></td></tr>
-<tr>
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">Eateries</button></td>
-
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">Shopping</button></td>
-
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">Nite Life</button></td>
-
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">Automotive</button></td>
-</tr>
-
-<tr>
-<td><hr style="width:100%;height:1px;border-width:0;background-color:#ffffff"></td></tr>
-
-<tr>
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">Fitness</button></td>
-
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">Beauty</button></td>
-
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">tet</button></td>
-
-<td style="width:23%"><button class="buttonc"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" style="width:100%;">tet</button></td>
-</tr>
-</table>
-</div>
-</div>
-
 <center>
-<div class="w3-container" style="background-color:#f2f2f2;">
+<table class="w3-table" style="width:90%;font-family:arial narrow;font-size:14px;">
+    <tr>
+    <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
+    <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
+    <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
+    </tr>
+      
+ <tr>
+   <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
+   <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
+   <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
+   </tr>
+ </table>
+</div>
+ 
+<center>
+<nav class="navbar navbar-default w3-padding-small" style="width:90.5%;border-color:#ffffff;background-color:#ffffff">
 <table align="center">
 <tr>
 <td align="center">
-<nav class="navbar navbar-default" style="width:100%;background-color:#f2f2f2;border-color:#f2f2f2;">
   <ul class="nav navbar-nav navbar-navbar">
-      <li><a href="https://spiralgroup.org"><span class="glyphicon glyphicon-search" style="font-size:13px"></span> About</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-hdd" style="font-size:13px"></span> Submit Your Business</a></li>
-      <li><a href="https://spiralgroup.github.io/themonster/the-monster.html"><i class="fa fa-folder" style="font-size:14px"></i> Small Business Solutions</a></li>
-       <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-gift" style="font-size:13px"></span> Community Outreach</a></li>
-     <li><a href="https://spiralgroup.github.io/themonster/contact.html"><span class="glyphicon glyphicon-phone" style="font-size:13px"></span> Contact</a></li>
-            </ul>
-      </nav>
+      <li><a href="https://spiralgroup.org"><span class="glyphicon glyphicon-home" style="font-size:13px"></span> Home</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-gift" style="font-size:13px"></span> Community Outreach</a></li>
+          <li><a href="https://spiralgroup.github.io/themonster/contact.html"><span class="glyphicon glyphicon-phone" style="font-size:13px"></span> Contact</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/the-monster.html"><i class="fa fa-umbrella" style="font-size:14px"></i> Web Design-The Monster</a></li>
+      </ul>
 </td>
 </tr>
 </table>
-</div>
+</nav>
+</main>
 </body>
 </html>
