@@ -22,18 +22,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style type="text/css">
-body
-}
 .navbar {
   border-radius: 0; 
-  background-color:#ffffff;
+  background-color:#e6e6e6;
   padding: 0;
 }
 .navbar .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus  {
-  background-color: #f5f5f5;
-  color:#f5f5f5;
+  background-color: #f2f2f2;
+  color:#f2f2f2;
   padding: 0;
 }
 .navbar-brand,
@@ -44,15 +42,22 @@ body
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a  {
   color: #000000;
-   padding: 20px 20px 20px 9px;
+  padding: 20px 20px 20px 9px;
 } 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus ,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #000000;background-color: #f2f2f2;
+  color: #000000;background-color: #d3d3d3;
   padding: 20px 20px 20px 9px;
 } 
+.navbar-default .navbar-nav > .dropdown > a .caret{
+ 
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  
+}
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -72,20 +77,64 @@ li a {
     font-family: roboto,sans-serif;
     letter-spacing: 1px;
     font-size: 11.50px;
-}
+  }
 li a:hover {
    border-radius: 4px;
    color: #ffffff;
 }
+#accordion {
+ max-width:100%;
+}
  
+ w3-table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1 1 1 0px;
+    margin: 1 1 1 0px;
+}
+th, td {
+    text-align: left;
+}
+
 img {
+    border-radius: 4px; 
     max-width: 100%;
     height: auto;
+    }
+heading {
+    border-radius: 4px; 
+    max-width: 100%;
+    height: 100%;
+    border:1px solid;
+    border-color:#f2f2f2;
+}
+.verticalLine {
+  border-right: solid #000000;
 }
 
 * {
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-family: kaushan script;
+	font-size: 42px;
+	color: #585858;
+	letter-spacing: 1px;
+}
+
+h3 {
+    font-family: ubuntu;
+    font-size: 11.5px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: bold;
+ }   
 
 .row {
     margin: 8px -16px;
@@ -93,14 +142,12 @@ img {
 
 .row,
 .row > .column {
-    padding: 4px;
+    padding: 8px;
 }
 
 .column {
     float: left;
-    width: 49%;
-    background-color: #e6e6e6;
-    margin: 1px;
+    width: 25%;
 }
 
 .row:after {
@@ -110,17 +157,29 @@ img {
 }
 
 .content {
-    background-color: #585858;
-    margin: 0;
+    background-color: #cccc66;
+    padding: 2px;
     border-radius: 4px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-} 
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
 
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;}
 
 
 h1 {
@@ -132,7 +191,6 @@ h3 {
     font-size: 11.5px;
     letter-spacing: 1.5px;
     color: #ffffff;
-    font-weight: bold;
  }
  
 .buttona {
@@ -178,49 +236,6 @@ h3 {
 
 .buttonb:hover:not(.active) {background-color: #c0c0c0;}
 
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 12px 0 12px 0;
-    font-size: 13px;
-    width: 25.0%;
-    border: 1px solid;
-    border-color: #d3d3d3;
-}
-
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 8px;
-    text-align: center;
-    height: 100%;
-    border: 1px solid;
-    border-radius: 4px;
-    border-color: #f2f2f2;
-}
-
-#Advertise {background-color:#D8BFD8;}
-#Photos {background-color:green;}
-#Promos {background-color:blue;}
-#Partners {background-color:orange;}
-}
-
-@media (max-width: 800px) {
-    .column {
-        width: 100%;
-    }
-}
-
-
 .sidenav {
     height: 100%;
     width: 220px;
@@ -250,75 +265,6 @@ h3 {
     margin: 0 0 0 260px;
     font-size: 12px;
     padding: 0;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding: 10px;}
-    .sidenav a {font-size: 12px;}
-}
-
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #000;
-  padding: 12px 0 2px 0;
-  color: #f2f2f2;
-  font-family: nova slim;
-  font-size: 18px;
-  letter-spacing: 2px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 12.50%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
 
 </style>
@@ -357,65 +303,158 @@ Pay only $15 a month for a small business listing when you commit to a 1-year co
 Each listing includes a company logo, contact information, complete description of your products and services, hours of operation, and a link to your business website.</p>
 </div>
 
-<div id="Photos" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<hr />
+<center><h1>Online Catalog</h1></center>
+<p align="center" style="font-family:euphemia;color:#999900;letter-spacing:2px;"><font size="1.5">Click the image of the item you'd like to purchase, and be taken to our secure PayPal&reg; page to complete your transaction.</font></p>
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+<p align="center" style="font-family:calibri;font-size:17px;letter-spacing:1px;">
+<font color="#585858">Category &#124; Small Business Solutions</font></p>
+
+<div class="row" style="width:99%">
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>OPERATIONAL ASSESSMENTS</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$379.98 Each</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="Q3YX37X22FUB8">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34708933-0eeaa810-f4e3-11e7-8004-00d5929fce67.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>STRATEGIC MANAGEMENT PLANS</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">Free with Each Assessment</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="A4AGPXHZRJJW4">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636116-b3ea7462-f268-11e7-9da9-e31261ebc114.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>MYSTERY SHOP PROGRAMS</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$99.00 Each</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="D2DXWFU64GFKU">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636115-b3cdf6a2-f268-11e7-946d-dcefab43b3c9.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>MOCK HEALTH INSPECTIONS</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$129.99 Each</p>
+</div>
+</div></div>
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+<p align="center" style="font-family:calibri;font-size:17px;letter-spacing:1px;">
+<font color="#585858">Category &#124; HR Compliance & Risk Mitigation Tools</font></p>
+<div class="row" style="width:99%">
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="XNP2T4P246BNE">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636117-b4080626-f268-11e7-9849-63be1cb30c7f.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>EMPLOYMENT DISCRIMINATION COURSE</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$45.00 Per Person</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="784Z3CU4VDGBA">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636120-b46e8b9e-f268-11e7-8982-07aa1ef2d7b2.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>WORKPLACE ETHICS COURSE</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$45.00 Per Person</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9FEXTHE2V3YR2">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636113-b391dc76-f268-11e7-8b8c-d9277d941319.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>WORKPLACE HARASSMENT COURSE</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$65.00 Per Person</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="LNUQNRHA8NP5U">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636118-b4268b78-f268-11e7-814a-6c7ba3a79b29.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>WORKPLACE DIVERSITY COURSE</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$25.00 Per Person</p>
+</div>
+</div>
+</div>
+<hr style="width:50%;height:1px;border-width:0;background-color:#f2f2f2">
+<p align="center" style="font-family:calibri;font-size:17px;letter-spacing:1px;">
+<font color="#585858">Category &#124; Employment Preparation Training & ServSafe&reg; Courses</font></p>
+<div class="row" style="width:99%">
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="GWKRD2XUWH5BE">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636119-b4517a40-f268-11e7-9ef8-b1db97fe5554.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>EMPLOYMENT PREPARATION TOOL-KIT&reg;</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$39.99 Per Access</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NM6SGLZTRSRAJ">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636121-b4970e98-f268-11e7-8a18-51059054c7c2.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>SERVSAFE&REG; FOOD HANDLER COURSE</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$12.00 Per Person</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="B6C7TJN84FCC6">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636122-b4c87ee2-f268-11e7-829a-35661ffcc5f3.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>SERVSAFE&reg; FSSMC COURSE & EXAM</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$99.00 Per Person</p>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NH7CFMPNKS2FY">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34636123-b4e556ca-f268-11e7-8aeb-f814d3e946b5.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+<h3><b>SERVSAFE&REG; FSSMC EXAM ONLY</b></h3>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;font-weight:bold;">$79.00 Per Person</p>
+</div>
 </div>
 
-<div id="Promos" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
 </div>
 
-<div id="Partners" class="tabcontent">
-  <h3>Oslo</h3>
-  <p>Oslo is the capital of Norway.</p>
-</div>
-
-<button class="tablink" onclick="openCity('Advertise', this, '#D8BFD8')" id="defaultOpen">Advertise</button>
-<button class="tablink" onclick="openCity('Photos', this, 'green')">Photos</button>
-<button class="tablink" onclick="openCity('Promos', this, 'blue')">Promos</button>
-<button class="tablink" onclick="openCity('Partners', this, 'orange')">Partners</button>
-
-<script>
-function openCity(cityName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(cityName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-</div>
-</div> 
-
-<hr style="width:95%;height:10px;border-width:0;background-color:#e6e6e6">
-
- <p align="center" style="font-family:calibri;font-size:20px;color:#585858;letter-spacing:2px;"><br>browse all business categories</p>
- 
-<center>
-<table class="w3-table" style="width:90%;font-family:arial narrow;font-size:14px;">
-    <tr>
-    <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
-    <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
-    <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
-    </tr>
-      
- <tr>
-   <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
-   <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
-   <td style="width33.3%"><button class="buttonb"><span class="glyphicon glyphicon-check" style="font-size:14px;"></span> Small Business Solutions</button></td>
-   </tr>
- </table>
 </div>
  
 <center>
