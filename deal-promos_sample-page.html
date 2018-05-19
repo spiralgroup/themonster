@@ -15,9 +15,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="/lib/w3-colors-food.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
-<link rel="stylesheet" href="/lib/w3-colors-2017.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Wellfleet">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|BenchNine|Berkshire+Swash|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -136,6 +140,7 @@ h3 {
     font-weight: bold;
  }   
 
+
 .row {
     margin: 8px -16px;
 }
@@ -183,15 +188,41 @@ img {
 
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 h3 {
     font-family: ubuntu;
-    font-size: 12.5px;
+    font-size: 11px;
     letter-spacing: 1px;
-    color: #000;"
+    color: #f2f2f2;
  }
+ 
+ .row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #cccc66;
+    padding: 2px;
+    border-radius: 4px;
+}
  
 .buttona {
     display: inline-block;
@@ -267,9 +298,17 @@ h3 {
     padding: 0;
 }
 
+
+* {box-sizing: border-box;}
+body {font-family: ubuntu;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
     .navbar {
-      margin-bottom: 50px;
+      margin-bottom: 0;
       border-radius: 0;
     }
    
@@ -281,18 +320,20 @@ h3 {
 </style>
 <script type="text/javascript" data-cfasync="false" src="//apps.shareaholic.com/assets/pub/shareaholic.js" data-shr-siteid="2cfc3badfea4ac997be7fc4dcc616e2c" async="async"></script>
 </head>
+
 <center>
 <div class="main">
 <body style="background-color:#ffffff">
 <div class="sidenav">
-<a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/35863078-895d7f16-0b1b-11e8-9d86-e43b2ac95659.png" style="width:73%;"></a>
+<a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40163592-d24b449c-597c-11e8-9e5d-a9d157f52a8e.png" style="width:73%;"></a>
 
  <a href="#about"><button class="buttona">Who We Are</button></a>
- <a href="#about"><button class="buttona">Online Catalog</button></a>
- <a href="#about"><button class="buttona">Gift Cards</button></a>
- <a href="#about"><button class="buttona">Deals &#124; Promos</button></a>
+ <a href="#about"><button class="buttona">Our Products & Services</button></a>
+ <a href="#about"><button class="buttona">Promotional Offers</button></a>
+ <a href="#about"><button class="buttona">E-Gift Cards</button></a>
  <a href="#about"><button class="buttona">Photo Gallery</button></a>
- <a href="#about"><button class="buttona">Contact Us</button></a>
+ <a href="#about"><button class="buttona">Contact Us</button>
+ <a href="#about"><button class="buttona">More In This Category</button></a>
  <a href="#about"><button class="buttona">View All Categories</button></a>
 </div>
 
@@ -307,74 +348,82 @@ h3 {
 
 <center>
 <div class="w3-container" style="width:99.5%">
-<p align="center" style="font-family:euphemia;color:#999900;letter-spacing:2px;"><font size="1.5">Pay only $15 a month for a small business listing when you commit to a 1-year contract. <a href="https://spiralgroup.github.io/themonster/sample-business-listing.html">Click here to view sample business listing.</a></font></p><br>
+<div class="w3-row">
 
+<hr />
+<center><h1>Promotional Offers</h1></center>
+<p align="center" style="font-family:euphemia;color:#999900;letter-spacing:2px;"><font size="1.5">Save even more when you combine offers.</font></p>
+<hr style="width:55%;height:1px;border-width:0;background-color:#d3d3d3">
+
+<div class="w3-container" style="width:96%">
 <div class="row">
     <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">50% DISCOUNT ON ALL HR TOOLS</div>
+      <div class="panel panel-success" style="background-color:#8FBC8F;padding:0;">
+        <div class="panel-heading" style="font-family:ubuntu;font-size:12px;letter-spacing:1px;font-weight:bold;">SMALL BUSINESS TOOLS</div>
         <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" class="img-responsive" style="width:100%" alt="Image"></div>
-       <div class="panel-footer" style="padding:5px 2px">Buy 50 mobiles and get a gift card<br>
-        Promo Code: SG-MS0001 &#124; Exp: 01-02-18</div>
+        <div class="panel-heading" style="padding:8px 0 5px 0;"><font face="ubuntu" font size="2" font color="#585858">25% off an Operational Assessment.<br>
+        Promo Code: SG-OPS. Expires: 09-07-18</font></div>
       </div>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-danger">
-         <div class="panel-heading">50% DISCOUNT ON ALL HR TOOLS</div>
-        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36029411-133942b8-0d71-11e8-9fc7-a234c06ffb6e.png" class="img-responsive" style="width:100%" alt="Image"></div>
-       <div class="panel-footer" style="padding:5px 2px">Buy 50 mobiles and get a gift card<br>
-        Promo Code: SG-MS0001 &#124; Exp: 01-02-18</div>
+    
+     <div class="col-sm-4">
+      <div class="panel panel-primary" style="background-color:#b0e0e6;padding:0;">
+        <div class="panel-heading" style="font-family:ubuntu;font-size:12px;letter-spacing:1px;font-weight:bold;">SMALL BUSINESS TOOLS</div>
+        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading" style="padding:8px 0 5px 0;"><font face="ubuntu" font size="2" font color="#f2f2f2">$25 off our Mystery Shop Services.<br>
+        Promo Code: SG-MSS. Expires: 09-07-18</font></div>
       </div>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-success">
-         <div class="panel-heading">50% DISCOUNT ON ALL HR TOOLS</div>
-        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36029369-ee1166be-0d70-11e8-9c64-0f2da9ee7771.png" class="img-responsive" style="width:100%" alt="Image"></div>
-      <div class="panel-footer" style="padding:5px 2px">Buy 50 mobiles and get a gift card<br>
-        Promo Code: SG-MS0001 &#124; Exp: 01-02-18</div>
-      </div>
-    </div>
-  </div>
-</div><br>
-
-<div class="w3-container" style="width:99.5%">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">50% DISCOUNT ON ALL HR TOOLS</div>
-        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028046-974e673c-0d6b-11e8-9667-1b5fbdf79d5f.png" class="img-responsive" style="width:100%" alt="Image"></div>
-      <div class="panel-footer" style="padding:5px 2px">Buy 50 mobiles and get a gift card<br>
-        Promo Code: SG-MS0001 &#124; Exp: 01-02-18</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-danger">
-         <div class="panel-heading">50% DISCOUNT ON ALL HR TOOLS</div>
-        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028065-9a3f2558-0d6b-11e8-8225-f2916d1645c3.png" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer" style="padding:5px 2px">Buy 50 mobiles and get a gift card<br>
-        Promo Code: SG-MS0001 &#124; Exp: 01-02-18</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-success">
-         <div class="panel-heading">EVERY FRIDAY IS BLACK FRIDAY</div>
-        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028050-97c1b28c-0d6b-11e8-819a-c6e5dada2b17.png" class="img-responsive" style="width:100%" alt="Image"></div>
-      <div class="panel-footer" style="padding:5px 2px">Buy 50 mobiles and get a gift card<br>
-        Promo Code: SG-MS0001 &#124; Exp: 01-02-18</div>
+    
+     <div class="col-sm-4">
+      <div class="panel panel-danger" style="background-color:#db7093;padding:0;">
+        <div class="panel-heading" style="font-family:ubuntu;font-size:12px;letter-spacing:1px;font-weight:bold;">SMALL BUSINESS TOOLS</div>
+        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading" style="padding:8px 0 5px 0;"><font face="ubuntu" font size="2" font color="#585858">$15 off our Premium Ad Services.<br>
+        Promo Code: SG-PAD. Expires: 09-01-18</font></div>
       </div>
     </div>
   </div>
 </div>
 
-<hr />
+<div class="w3-container" style="width:96%">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-success" style="background-color:#8FBC8F;padding:0;">
+        <div class="panel-heading" style="font-family:ubuntu;font-size:12px;letter-spacing:1px;font-weight:bold;">SMALL BUSINESS &#124; HR TOOLS</div>
+        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading" style="padding:8px 0 5px 0;"><font face="ubuntu" font size="2" font color="#585858">10% off our Workplace Harassment Course.<br>
+        Promo Code: SG-WPH. Expires: 09-09-18</font></div>
+      </div>
+    </div>
+    
+     <div class="col-sm-4">
+      <div class="panel panel-primary" style="background-color:#b0e0e6;padding:0;">
+        <div class="panel-heading" style="font-family:ubuntu;font-size:12px;letter-spacing:1px;"><b>SERVSAFE</b>&reg; <b>COURSES</b></div>
+        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading" style="padding:8px 0 5px 0;"><font face="ubuntu" font size="2" font color="#f2f2f2"><span class="glyphicon glyphicon-certificate" style="color:#f2f2f2;font-size:10px;"></span> 10% off our FSSMC Courses & Exams.<br>
+        Promo Code: SG-FSSMC. Expires: 09-09-18</font></div>
+      </div>
+    </div>
+    
+     <div class="col-sm-4">
+      <div class="panel panel-danger" style="background-color:#db7093;padding:0;">
+        <div class="panel-heading" style="font-family:ubuntu;font-size:12px;letter-spacing:1px;font-weight:bold;">NEW EMPLOYEE ONBOARDING</div>
+        <div class="panel-body"><img src="https://user-images.githubusercontent.com/25410880/36028047-9773566e-0d6b-11e8-8997-aad49d47eb0f.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-heading" style="padding:8px 0 5px 0;"><font face="ubuntu" font size="2" font color="#585858">Free EP Tool-Kit w/ any purchase&#151;$40 value.<br>
+        Promo Code: SG-FREE. Expires: 09-09-18</font></div>
+      </div>
+    </div>
+    
+<center>
+<hr style="width:100%;height:1px;border-width:0;background-color:#f2f2f2">
 
-<footer class="container-fluid text-center" style="background-color:#e6e6e6">
-  <p>Online Store Copyright</p>  
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">&nbsp;
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
-</footer>
+<p align="justify" style="font-family:calibri;font-size:11.5px;color:#000000;letter-spacing:.50px;">
+<span class="glyphicon glyphicon-certificate" style="color:#585858;font-size:10px;"></span> ServSafe&reg; is a food and beverage safety training and certificate program administered by the National Restaurant Association. The program is accredited by ANSI and the Conference for Food Protection. Michelle Jones is a Certified ServSafe&reg; Instructor and Registered Examination Proctor with over 25 years' experience in the foodservice industry as an hourly worker, general manager, trainer, and busines operations consultant. Spiral Group, Inc., provides onsite training for Illinois Food Service Workers and Managers.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <center>
