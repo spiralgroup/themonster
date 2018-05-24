@@ -26,6 +26,7 @@
   border-radius: 0; 
   background-color:#e6e6e6;
   padding: 0;
+  margin: 0;
 }
 .navbar .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -33,6 +34,7 @@
   background-color: #f2f2f2;
   color:#f2f2f2;
   padding: 0;
+  margin: 0;
 }
 .navbar-brand,
 .navbar-nav > li > a  { 
@@ -82,25 +84,13 @@ li a:hover {
    border-radius: 4px;
    color: #ffffff;
 }
-#accordion {
- max-width:100%;
-}
- 
- w3-table {
-    border-collapse: collapse;
-    width: 100%;
-    padding: 1 1 1 0px;
-    margin: 1 1 1 0px;
-}
-th, td {
-    text-align: left;
-}
 
 img {
     border-radius: 4px; 
     max-width: 100%;
     height: auto;
     }
+    
 heading {
     border-radius: 4px; 
     max-width: 100%;
@@ -108,23 +98,12 @@ heading {
     border:1px solid;
     border-color:#f2f2f2;
 }
-.verticalLine {
-  border-right: solid #000000;
-}
 
-* {
-    box-sizing: border-box;
-}
-
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
 
 h1 {
     font-family: kaushan script;
-	font-size: 42px;
-	color: #585858;
+	font-size: 38px;
+	color: #ff9900;
 	letter-spacing: 1px;
 }
 
@@ -135,16 +114,7 @@ h3 {
     color: #000000;
     font-weight: bold;
  }   
-
-.row {
-    margin: 8px -16px;
-}
-
-.row,
-.row > .column {
-    padding: 8px;
-}
-
+   
 .column {
     float: left;
     width: 50%;
@@ -181,35 +151,26 @@ h3 {
     border-radius: 4px;
 }
 
-@media (max-width: 900px) {
-    .column {
-        width: 50%;
-    }
+.fa:hover {
+    opacity: 0.8;
 }
 
-@media (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
 img {
     max-width: 100%;
     height: auto;
-}
-
-* {
-    box-sizing: border-box;}
-
-
-h1 {
-    font-size: 30px;
 }
 
 h3 {
     font-family: ubuntu;
     font-size: 10px;
     letter-spacing: 1px;
-    color: #000;"
+    color: #fff;
  }
  
 .buttona {
@@ -218,20 +179,22 @@ h3 {
 
 .buttona {
     font-family: ubuntu;
-    font-size: 13px;
-    color: #000;
-    background-color: #fff;
-    padding: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #d3d3d3;
+    padding: 1px;
     margin: 0;
-    width: 85%;
+    width: 88%;
     height: 38px;
     text-decoration: none;
+    letter-spacing: 1px;
     transition: background-color .3s;
     border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 1px solid #e6e6e6;
 }
 
-.buttona:hover:not(.active) {background-color: #ddd;}
+.buttona:hover:not(.active) {background-color: #e6e6e6;}
  
 
 .buttonb {
@@ -255,21 +218,49 @@ h3 {
 
 .buttonb:hover:not(.active) {background-color: #c0c0c0;}
 
+#accordion {
+ max-width:100%;
+ margin: 0;
+}
+ 
+ w3-table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+th1, td1 {
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+img {
+    border-radius: 8px; 
+    max-width: 100%;
+    height: auto;
+    border:1px solid;
+    border-color:#ffffff;
+}
+
 .sidenav {
     height: 100%;
-    width: 220px;
+    width: 204px;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 23px;
-    background-color: #ffffff;
+    top: 10px;
+    left: 12px;
+    background-color: #FFF;
     float: right;
     overflow-x: hidden;
     padding: 5px 0 0 5px;
 }
 
 .sidenav a {
-    padding: 4px;
+    padding: 2px;
     text-decoration: none;
     font-size: 12px;
     color: #818181;
@@ -277,97 +268,150 @@ h3 {
 }
 
 .sidenav a:hover {
-    color: red;
+    color: "";
 }
 
 .main {
-    margin: 0 0 0 260px;
-    font-size: 12px;
+    max-width: 1000px;
+    margin: 1px 0 0 214px;
     padding: 0;
+    float: center;
 }
 
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 0 10px 10px 10px;
+}
+
+.row,
+.row > .column1 {
+    padding: 4px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .column1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .column1 {
+        width: 100%;
+    }
+}
 </style>
-<script type="text/javascript" data-cfasync="false" src="//apps.shareaholic.com/assets/pub/shareaholic.js" data-shr-siteid="2cfc3badfea4ac997be7fc4dcc616e2c" async="async"></script>
+
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b0676cbacd3680011c1afa4&product=inline-share-buttons' async='async'></script>
+
 </head>
 <center>
 <div class="main">
-<body style="background-color:#ffffff">
+<body style="background-color:#FFF">
 <div class="sidenav">
-<a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40163592-d24b449c-597c-11e8-9e5d-a9d157f52a8e.png" style="width:73%;"></a>
+ <a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttona">ABOUT</button></a>
+ <a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><button class="buttona">SMALL BUSINESS TOOLS</button></a>
+ <a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><button class="buttona">HR COMPLIANCE TOOLS</button></a>
+ <a href="https://spiralgroup.github.io/themonster/job-seekers.html"><button class="buttona">EP TOOL-KIT</button></a>
+ <a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><button class="buttona">SERVSAFE PRODUCTS</button></a>
+ <a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><button class="buttona">FREE CONSULTATION</button></a>
 
- <a href="#about"><button class="buttona">Who We Are</button></a>
- <a href="#about"><button class="buttona">Our Products & Services</button></a>
- <a href="#about"><button class="buttona">Promotional Offers</button></a>
- <a href="#about"><button class="buttona">Gift Vouchers</button></a>
- <a href="#about"><button class="buttona">Photo Gallery</button></a>
- <a href="#about"><button class="buttona">Contact Us</button>
- <a href="#about"><button class="buttona">More In This Category</button></a>
- <a href="#about"><button class="buttona">View All Categories</button></a>
+<br>
+
+<a href="https://spiralgroup.org"><button class="buttona">ONLINE CATALOG</button></a>
+<a href="https://spiralgroup.github.io/themonster/small-biz-gift-vouchers.html"><button class="buttona">GIFT VOUCHERS</button></a>
+<a href="https://spiralgroup.github.io/themonster/promotional-offers.html"><button class="buttona">PROMOTIONAL OFFERS</button></a>
+<a href="https://spiralgroup.github.io/themonster/become-a-community-partner.html"><button class="buttona">BECOME A PARTNER</button></a>
+<br>
+<div class="sharethis-inline-share-buttons"></div>
 </div>
 
-<div class="w3-container w3-round-medium w3-panel w3-card" style="width:96%;background-color:#e6e6e6;padding:3px 0 10px 0;">
-    <nav class="navbar navbar-default" style="width:90.5%;background-color:#e6e6e6;padding:0;border-color:#e6e6e6">
-     <p class="navbar-text" style="font-family:nova slim;font-size:23px;letter-spacing:2px;">
+<div class="w3-container" style="width:100%;background-color:#fff;padding:2px 12px 2px 2px;margin:6px;">
+    <nav class="navbar navbar-default" style="width:96%;background-color:#fff;padding:0;margin:0;border-color:#fff">
+     <p class="navbar-text" style="font-family:nova slim;font-size:23px;letter-spacing:3px;">
 <a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#585858;"><b>spiralgroup.org</b></a></p>
 <ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f2f2f2">
-                 <li><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><span class="glyphicon glyphicon-folder-close" style="color:#999900"></span> Submit Your Business</a></li>
+                 <li><a href="https://spiralgroup.github.io/themonster/advertise.html"><span class="glyphicon glyphicon-thumbs-up" style="color:#ff9900;font-size:15px;"></span> Advertise With Us</a></li>
 </ul>
 </nav>
 
-<center>
-<div class="w3-container" style="width:99.5%">
-<div class="w3-row">
+<hr style="width:100%;height:2px;border-width:0;background-color:#f5f5f5">
 
-<hr />
+<center>
+<div class="w3-container" style="width:100%;padding:3px;">
+
 <center><h1>Gift Vouchers</h1></center>
-<p align="center" style="font-family:euphemia;color:#999900;letter-spacing:2px;"><font size="1.5">The Perfect Gift for the Small Business Owner in Your Life.</font></p>
-<hr style="width:55%;height:1px;border-width:0;background-color:#d3d3d3">
+
+<p align="center" style="font-family:calibri;font-size:17px;letter-spacing:1px;color:#585858;">
+The Perfect Gift for the Small Business Owner in Your Life.</p>
 
 <center>
 <div class="row" style="width:99%">
 <div class="column">
 <div class="content1">
-<p align="center" style="font-family:nova slim;font-size:35px;color:#cccc66;letter-spacing:1px;">$100&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;" border="0"></p>
+<p align="center" style="font-family:nova slim;font-size:35px;color:#cccc66;letter-spacing:1px;">$100&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;border:0;"></p>
 <h3><font color="#cccc66">Redeemable for any Spiral Group, Inc. product or service. No expiration.</font></h3>
 </div>
 </div>
 
 <div class="column">
 <div class="content">
-<p align="center" style="font-family:nova slim;font-size:35px;color:#585858;letter-spacing:1px;">$200&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;" border="0"></p>
+<p align="center" style="font-family:nova slim;font-size:35px;color:#585858;letter-spacing:1px;">$200&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;border:0;"></p>
 <h3>Redeemable for any Spiral Group, Inc. product or service. No expiration.</h3>
 </div>
 </div>
 </div>
 
+
 <center>
-<div class="row" style="width:99%">
+<div class="row" style="width:100%">
 <div class="column">
 <div class="content2">
-<p align="center" style="font-family:nova slim;font-size:35px;color:#f2f2f2;letter-spacing:1px;">$300&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;" border="0"></p>
+<p align="center" style="font-family:nova slim;font-size:35px;color:#f2f2f2;letter-spacing:1px;">$300&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;border:0;"></p>
 <h3><font color="#f2f2f2">Redeemable for any Spiral Group, Inc. product or service. No expiration.</font></h3>
 </div>
 </div>
 
 <div class="column">
 <div class="content3">
-<p align="center" style="font-family:nova slim;font-size:35px;color:#585858;letter-spacing:1px;">$400&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;" border="0"></p>
+<p align="center" style="font-family:nova slim;font-size:35px;color:#585858;letter-spacing:1px;">$400&nbsp;<img src="https://cloud.githubusercontent.com/assets/25410880/24279261/27ff5dd6-101f-11e7-9fdc-debcf77b0c7e.png" style="width:50%;border:0;"></p>
 <h3>Redeemable for any Spiral Group, Inc. product or service. No expiration.</h3>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
- 
+
 <center>
-<nav class="navbar navbar-default w3-padding-small" style="width:90.5%;border-color:#ffffff;background-color:#ffffff">
+<div class="w3-container" style="width:100%;padding:3px;">
+<nav class="navbar navbar-default" style="width:90.5%;border-color:#ffffff;background-color:#ffffff">
 <table align="center">
 <tr>
 <td align="center">
   <ul class="nav navbar-nav navbar-navbar">
       <li><a href="https://spiralgroup.org"><span class="glyphicon glyphicon-home" style="font-size:13px"></span> Home</a></li>
       <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-gift" style="font-size:13px"></span> Community Outreach</a></li>
+     <li><a href="https://spiralgroup.github.io/themonster/health-code-violations.html"><span class="glyphicon glyphicon-edit" style="font-size:13px"></span> Health Code Violations</a></li>
           <li><a href="https://spiralgroup.github.io/themonster/contact.html"><span class="glyphicon glyphicon-phone" style="font-size:13px"></span> Contact</a></li>
       <li><a href="https://spiralgroup.github.io/themonster/the-monster.html"><i class="fa fa-umbrella" style="font-size:14px"></i> Web Design-The Monster</a></li>
       </ul>
