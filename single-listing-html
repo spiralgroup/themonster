@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Spiral Group, Inc. &#124; Small Business Listing</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/lib/w3-colors-food.css">
+ <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
+<link rel="stylesheet" href="/lib/w3-colors-2017.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|BenchNine|Berkshire+Swash|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">	
+.navbar {
+  border-radius: 0; 
+  background-color:#fff;
+  padding: 0;
+}
+.navbar .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus  {
+  background-color: #f2f2f2;
+  color:#585858;
+  padding: 0;
+}
+.navbar-brand,
+.navbar-nav > li > a  { 
+  padding: 0;
+  margin: 0;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a  {
+  color: #000;
+  padding: 20px 20px 20px 9px;
+} 
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus ,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000;background-color: #FFEFD5;
+  padding: 20px 20px 20px 9px;
+} 
+.navbar-default .navbar-nav > .dropdown > a .caret{
+ 
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+}
+li a {
+    display: block;
+    color: #585858;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: roboto,sans-serif;
+    letter-spacing: 1px;
+    font-size: 11.50px;
+  }
+li a:hover {
+   border-radius: 4px;
+   color: #585858;
+}
+
+
+ w3-table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+img {
+    border-radius: 4px; 
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 0 0 255px;
+}
+
+h1 {
+    font-family: kaushan script;
+	font-size: 42px;
+	color: #FF9900;
+	letter-spacing: 1px;
+}
+
+h3 {
+    font-family: Brownilla New, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 1px;
+    color: #f2f2f2;
+ }   
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 0 10px 10px 10px;
+}
+
+.column1 {
+    background-color: #ffefd5;
+    float: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: center;
+    width: 100%;
+    margin: 0;
+    padding: 4px;
+    display: inline;
+}
+
+.content {
+width: 100%;
+background-color: #fff;
+padding: 8px;
+margin: 0;
+border-radius: 2px;
+}
+
+
+.buttona {
+    display: inline-block;
+}
+
+.buttona {
+    font-family: ubuntu;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #d3d3d3;
+    padding: 1px;
+    margin: 0;
+    width: 88%;
+    height: 38px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background-color .3s;
+    border-radius: 4px;
+    border: 1px solid #ffF;
+}
+
+.buttona:hover:not(.active) {background-color: #e6e6e6;}
+ 
+ 
+.buttonb {
+    display: inline-block;
+}
+
+.buttonb {
+    font-family: calibri;
+    font-size: 16px;
+    color: #000;
+    background-color: #f5f5f5;
+    padding: 18px;
+    margin: 5px;
+    width: 100%;
+    height: default;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 0;
+    text-align: left;
+    letter-spacing: .50px;
+}
+
+.buttonb:hover:not(.active) {background-color: #ffefd5;}
+
+
+.buttonc {
+    display: inline-block;
+}
+
+.buttonc {
+    font-family: calibri;
+    font-size: 16px;
+    color: #000;
+    background-color: #f0f8ff;
+    padding: 18px;
+    margin: 5px;
+    width: 100%;
+    height: default;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 0;
+    text-align: left;
+    letter-spacing: .50px;
+}
+
+.buttonc:hover:not(.active) {background-color: #ffefd5;}
+
+
+
+.buttond {
+    display: inline-block;
+}
+
+.buttond {
+    font-family: calibri;
+    font-size: 16px;
+    color: #000;
+    background-color: #e6e6fa;
+    padding: 18px;
+    margin: 5px;
+    width: 100%;
+    height: default;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 0;
+    text-align: left;
+    letter-spacing: .50px;
+}
+
+.buttond:hover:not(.active) {background-color: #ffefd5;}
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 204px;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: 12px;
+    background-color: #FfF;
+    float: right;
+    overflow-x: hidden;
+    padding: 5px 0 0 5px;
+}
+
+.sidenav a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: "";
+}
+
+.main {
+    max-width: 1000px;
+    margin: 1px 0 0 214px;
+    padding: 0;
+    float: center;
+}
+
+
+@media (max-width: 800px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 800px) {
+    .column {
+        width: 100%;
+        float: center;
+}
+}
+</style>
+
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b0676cbacd3680011c1afa4&product=inline-share-buttons' async='async'></script>
+
+</head>
+
+<center>
+<div class="main">
+<body style="background-color:#ffffff">
+<div class="sidenav">
+ <a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttona">ABOUT</button></a>
+ <a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><button class="buttona">SMALL BUSINESS TOOLS</button></a>
+ <a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><button class="buttona">HR COMPLIANCE TOOLS</button></a>
+ <a href="https://spiralgroup.github.io/themonster/job-seekers.html"><button class="buttona">EP TOOL-KIT</button></a>
+ <a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><button class="buttona">SERVSAFE PRODUCTS</button></a>
+ <a href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html"><button class="buttona">FREE CONSULTATION</button></a>
+
+<br>
+
+<a href="https://spiralgroup.org"><button class="buttona">ONLINE CATALOG</button></a>
+<a href="https://spiralgroup.github.io/themonster/small-biz-gift-vouchers.html"><button class="buttona">GIFT VOUCHERS</button></a>
+<a href="https://spiralgroup.github.io/themonster/special-offers.html"><button class="buttona">SPECIAL OFFERS</button></a>
+<a href="https://spiralgroup.github.io/themonster/become-a-community-partner.html"><button class="buttona">BECOME A PARTNER</button></a>
+<br>
+<div class="sharethis-inline-share-buttons"></div>
+</div>
+
+<div class="w3-container" style="width:100%;background-color:#fff;padding:2px 12px 2px 2px;margin:6px;">
+    <nav class="navbar navbar-default" style="width:96%;background-color:#fff;padding:0;margin:0;border-color:#fff">
+     <p class="navbar-text" style="font-family:nova slim;font-size:23px;letter-spacing:3px;">
+<a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#ff9900;"><b>spiralgroup.org</b></a></p>
+<ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f2f2f2">
+                 <li><a href="https://spiralgroup.github.io/themonster/advertise.html"><span class="glyphicon glyphicon-edit" style="color:#ff4500;font-size:13px;"></span> Advertise With Us</a></li>
+</ul>
+</nav>
+
+<hr style="width:100%;height:1px;border-width:0;background-color:#f5f5f5">
+
+<center>
+<div class="w3-container" style="width:93%;padding:0;background-color:#fff;">
+<p align="center" style="font-family:nova slim;font-size:16px;letter-spacing:1px;">affordable advertising for small businesses <font color="#ff4500"><b>&#124;</b></font> only $15 a month</p></div>
+
+<div class="w3-panel w3-card w3-round-medium" style="width:100%;background-color:#ffF;padding:2px;"><br>
+
+<center><h1>Food & Drink</h1></center>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;background-color:#fff;">
+<hr style="width:75%;height:1px;border-width:0;background-color:#f5f5f5">
+
+<div>
+<a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttonb"><b>BUSINESS NAME HERE</b><br>
+<span class="glyphicon glyphicon-edit" style="font-size:13px"></span> If you've offered to purchase ServSafe&reg; training products and are new to their website, then you'll have to create a NEW PROFILE in order to complete your transaction. They honor tax-exempt organizations. Please see "If You Are A Tax Exempt Entity" below.</button></a>
+</div>
+
+<div>
+<a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttonc"><b>BUSINESS NAME HERE</b><br>
+<span class="glyphicon glyphicon-edit" style="font-size:13px"></span> If you've offered to purchase ServSafe&reg; training products and are new to their website, then you'll have to create a NEW PROFILE in order to complete your transaction. They honor tax-exempt organizations. Please see "If You Are A Tax Exempt Entity" below.</button></a>
+</div>
+
+<div>
+<a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttond"><b>BUSINESS NAME HERE</b><br>
+<span class="glyphicon glyphicon-edit" style="font-size:13px"></span> If you've offered to purchase ServSafe&reg; training products and are new to their website, then you'll have to create a NEW PROFILE in order to complete your transaction. They honor tax-exempt organizations. Please see "If You Are A Tax Exempt Entity" below.</button></a>
+</div>
+
+<div>
+<a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttonb"><b>BUSINESS NAME HERE</b><br>
+<span class="glyphicon glyphicon-edit" style="font-size:13px"></span> If you've offered to purchase ServSafe&reg; training products and are new to their website, then you'll have to create a NEW PROFILE in order to complete your transaction. They honor tax-exempt organizations. Please see "If You Are A Tax Exempt Entity" below. &nbsp;<span class="glyphicon glyphicon-edit" style="font-size:13px"></span> <b>MORE</b></button></a>
+</div>
+
+<div>
+<a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttonc"><b>BUSINESS NAME HERE</b><br>
+<span class="glyphicon glyphicon-edit" style="font-size:13px"></span> If you've offered to purchase ServSafe&reg; training products and are new to their website, then you'll have to create a NEW PROFILE in order to complete your transaction. They honor tax-exempt organizations. Please see "If You Are A Tax Exempt Entity" below.</button></a>
+</div>
+
+<div>
+<a href="https://spiralgroup.github.io/themonster/our-ministry.html"><button class="buttond"><b>BUSINESS NAME HERE</b><br>
+<span class="glyphicon glyphicon-edit" style="font-size:13px"></span> If you've offered to purchase ServSafe&reg; training products and are new to their website, then you'll have to create a NEW PROFILE in order to complete your transaction. They honor tax-exempt organizations. Please see "If You Are A Tax Exempt Entity" below.</button></a>
+</div>
+</div>
+
+
+<center>
+<div class="w3-container" style="width:100%;padding:3px;">
+<nav class="navbar navbar-default" style="width:90.5%;border-color:#fff;background-color:#fff;">
+<table align="center">
+<tr>
+<td align="center">
+  <ul class="nav navbar-nav navbar-navbar">
+      <li><a href="https://spiralgroup.org"><span class="glyphicon glyphicon-home" style="font-size:13px"></span> Home</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span class="glyphicon glyphicon-gift" style="font-size:13px"></span> Community Outreach</a></li>
+     <li><a href="https://spiralgroup.github.io/themonster/health-code-violations.html"><span class="glyphicon glyphicon-edit" style="font-size:13px"></span> Health Code Violations</a></li>
+          <li><a href="https://spiralgroup.github.io/themonster/contact.html"><span class="glyphicon glyphicon-phone" style="font-size:13px"></span> Contact</a></li>
+      <li><a href="https://spiralgroup.github.io/themonster/the-monster.html"><i class="fa fa-umbrella" style="font-size:14px"></i> Web Design-The Monster</a></li>
+      </ul>
+</td>
+</tr>
+</table>
+</nav>
+</body>
+</html>
