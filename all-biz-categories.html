@@ -2,36 +2,30 @@
 <html lang="en-us">
 <head>
 <title>Spiral Group, Inc. &#124; Small Business Listing</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="/lib/w3-colors-food.css">
-<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
+ <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
 <link rel="stylesheet" href="/lib/w3-colors-2017.css">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|BenchNine|Berkshire+Swash|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style type="text/css">
-* {
-    box-sizing: border-box;
-}
-
+<style type="text/css">	
 .navbar {
   border-radius: 0; 
   background-color:#fff;
   padding: 0;
-  margin: 0;
 }
 .navbar .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus  {
   background-color: #f2f2f2;
-  color:#585858;
+  color:#000000;
   padding: 0;
-  margin: 0;
 }
 .navbar-brand,
 .navbar-nav > li > a  { 
@@ -40,17 +34,15 @@
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a  {
-  color: #000;
-  padding: 20px;
-  margin: 0;
+  color: #000000;
+  padding: 15px;
 } 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus ,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #000;background-color: #FFEFD5;
-  padding: 20px;
-  margin: 0;
+  color: #000000;background-color: #ffffff;
+  padding: 15px;
 } 
 .navbar-default .navbar-nav > .dropdown > a .caret{
  
@@ -71,7 +63,7 @@
 }
 li a {
     display: block;
-    color: #585858;
+    color: #000000;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -81,7 +73,26 @@ li a {
   }
 li a:hover {
    border-radius: 4px;
-   color: #585858;
+   color: #000000;
+}
+
+
+ w3-table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+img {
+    border-radius: 4px; 
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .zoom {
@@ -99,149 +110,284 @@ li a:hover {
     transform: scale(1.01); 
 }
 
-.table, th, td {
-    padding: 0;
-    border-radius: 4px;
-}
 
 h1 {
-    font-family: kaushan script;
-	font-size: 42px;
-	font-color: #ff9900;
-	letter-spacing: 2px;
+    font-size: 50px;
 }
 
-h2 {
+h3 {
+    font-family: Brownilla New, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 1px;
+    color: #f2f2f2;
+ }   
+
+.row {
+    margin: 4px -8px;
+}
+
+.row,
+.row > .column {
+    padding: 4px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: center;
+    width: 24%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.content {
+padding: 0;
+margin: 0;}
+
+@media (max-width: 1000px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 1000px) {
+    .column {
+        width: 100%;
+        float: center;
+}
+}
+
+.pagination {
+width: 100%;
+    float: center;
+    padding: 11px;
+    background-color: #d8bfd8;
+    margin: 8px 0 0 0;
+    display: inline-block;
+}
+
+.pagination a {
 font-family: ubuntu;
-font-size: 11.5px;
-letter-spacing: 1.50px;
-text-decoration: none;
-text-align: center;
-font-weight: bold;
+font-size: 12.5px;
+    color: #f2f2f2;
+    letter-spacing: 1px;
+    float: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color: #000000;
+    border-radius: 5px;
+    margin: 0;
+}
+/* Style the active/current link */
+.pagination a.active {
+    background-color: #f2f2f2;
+    color: #585858;
 }
 
-@media screen and (max-width: 1000px) {
-    .h3 {
-        font-size:16px;
-    }
-}
+.pagination a:hover:not(.active) {background-color:#48d1cc;
+                                  border-color:#48d1cc;
+                                  color:#000000;}
 
-
-@media screen and (max-width: 1000px) {
-    .img {
-        width:50%;
-    }
-}
 </style>
 
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b0676cbacd3680011c1afa4&product=inline-share-buttons' async='async'></script>
 
 </head>
-<body style="background:#ffefd5;color:#585858;">
 
-<div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:200px" id="mySidebar">
-  <div class="w3-bar w3-dark-grey">
-  <span class="w3-bar-item w3-padding-10">Menu</span>
+<div class="w3-sidebar w3-card-4 w3-animate-left" style="width:200px;background-color:#f5f5f5;" id="mySidebar">
+  <div class="w3-bar" style="background-color:#f5f5f5;">
+  <span class="w3-bar-item w3-padding-10" style="font-family:calibri;font-size:18px;color:#585858;letter-spacing:1px;">Welcome...</span>
   <button onclick="w3_close()"
-  class="w3-bar-item w3-button w3-right w3-padding-10" title="Click to Close Menu">&times;</button>
+  class="w3-bar-item w3-button w3-right w3-padding-10" title="Click to Close Menu"><font color="#585858">&times;</font></button>
   </div>
-  <div class="w3-bar-block">
-  <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;background-color:#ffefd5;">HOME</a>
-  <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">ABOUT</a>
-  <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">SMALL BUSINESS TOOLS</a>
-   <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">HR COMPLIANCE TOOLS</a>
-    <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">EP TOOL-KIT</a>
-     <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">SERVSAFE PRODUCTS</a>
-      <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">FREE CONSULTATION</a><br>
-      <div class="sharethis-inline-share-buttons"></div>
+ <br>
+  <div class="sharethis-inline-share-buttons"></div>
       <br>
-       <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">ONLINE CATALOG</a>
+      
+  <div class="w3-bar-block">
+    <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;"> LIST YOUR BUSINESS</a><br>
+    
+  <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">FREE CONSULTATION</a>
+  <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">ONLINE CATALOG</a>
       <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">GIFT VOUCHERS</a>
       <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">SPECIAL OFFERS</a>
       <a class="w3-bar-item w3-button" href="https://spiralgroup.org" style="font-family:ubuntu;font-size:10px;letter-spacing:1px;font-weight:bold;">BECOME A PARTNER</a>
 </div>
 </div>
 
-<div id="main" style="margin-left:200px;background-color:#ff9900;">
+<body style="background-color:#f5f5f5;">
+<div id="main" style="margin-left:200px;background-color:#f5f5f5;">
 
 <div class="w3-container w3-display-container" style="padding:2px;margin:0;">
-  <span title="Click to Open Menu" style="display:none" id="openNav" class="w3-button w3-round-small w3-transparent w3-display-topleft w3-large" onclick="w3_open()">&#9776;</span>
+  <span title="Click to Open Menu" style="display:none" id="openNav" class="w3-button w3-round-small w3-transparent w3-display-topleft w3-large" onclick="w3_open()"><font color="#a9a9a9">&#9776;</font></span>
 </div>  
 
-<div style="width:100%;padding:0;margin:0;"><center>
-<div class="w3-container" style="width:100%;background-color:#ff9900;padding:0 40px 8px 40px;margin:0;">
-   <nav class="navbar navbar-default" style="width:96%;background-color:#ff9900;padding:0;margin:0;border-color:#ff9900">
-     <p class="navbar-text" style="font-family:nova slim;font-size:23px;letter-spacing:3px;">
-<a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#ffffff;"><b>spiralgroup.org</b></a></p>
-<ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f2f2f2">
-                 <li><a href="https://spiralgroup.github.io/themonster/advertise.html"><span class="glyphicon glyphicon-edit" style="color:#ff4500;font-size:13px;"></span> Advertise With Us</a></li>
+<center>
+<center>
+<div style="width:100%;padding:0;margin:0;background-color:#f5f5f5;"><center>
+<div class="w3-container" style="width:99%;background-color:#f5f5f5;padding:0 42px 0 40px;margin:0;">
+   <nav class="navbar navbar-default" style="width:96%;background-color:#f5f5f5;padding:0;margin:0;border-color:#f5f5f5">
+
+     <p class="navbar-text" style="font-family:kaushan script;font-size:32px;letter-spacing:2px;"><a href="https://goo.gl/forms/naRmNTJDuXkvT3ot1" style="color:#a0522d;">spiralgroup.org</a></p>
+     
+<ul class="nav navbar-nav navbar-right w3-padding-medium w3-border-bottom-color-#f5f5f5">
+
+ <li><a href="https://spiralgroup.github.io/themonster/advertise.html" style="font-family:ubuntu;font-size:12px;letter-spacing:1.5px;color:#000000;"><b>advertise <font size="4"><font color="#999900">&#9749;</font></font> only $15 a month</b></a></li>
 </ul>
 </nav>
 
-<div>
-<center><h2><font color="#ffffff">affordable advertising for small businesses &#124; only $15 per month</font></h2><br>
-
-<h1><font color="#ffefd5">All Categories</font></h1><br>
-
-<table style="width:100%;padding:0;margin:0;">
-<tr>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="w3-pale-red zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-</tr>
-
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td class="w3-pale-green zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="w3-yellow zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-</tr>
-
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-</tr>
-
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-<td class="zoom" style="width:33%;padding:4px 4px 4px 4px;margin:0;background-color:#ffefd5;border-bottom:1px solid #f5f5f5;"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/36031199-f03aa700-0d77-11e8-8026-f49927dc551c.png" style="width:100%;"></a>
-<h2>food & drink</h2></td>
-</tr>
-</table>
+<div style="width:100%;background-color:#f5f5f5;padding:0;margin:0;"><br>
+</div></div>
 <br>
+<div class="w3-panel w3-card w3-round-medium" style="width:98%;background-color:#000000;padding:2px;margin:0 0 14px 0;border-radius:4px;">
+<p align="center" style="font-family:ubuntu;font-size:17.5px;color:#f2f2f2;letter-spacing:1.5px;"><font size="5"><b>&#9749;</b></font> Browse by Category</p>
+
+<div style="background-color:#d8bfd8;padding:4px 7px 0 7px;margin:0 1px 0 1px;border-radius:4px 4px 0 0;">
+<center>
+<!-- Grid 1-->
+<div class="row" style="width:99%;padding:0;margin:5px 0 0 0;">
+<center>
+<!-- Grid 1-->
+<div class="row" style="width:100%">
+<div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589195-3cec1fa0-61b7-11e8-8e54-e834170077ba.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:12.5px;letter-spacing:1px;color:#000000;padding:1px;">
+ <b>automotive</b></p>
+     </div>
+  </div>
+  
+  <div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40700685-98b187e2-63a8-11e8-954f-98e5c9097ff6.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:12.5px;letter-spacing:1px;color:#000000;padding:1px;">
+ <b>b2b services</b></p>
+    </div>
+  </div>
+    
+  <div class="column">
+   <div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+   <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40700139-3e4f0128-63a6-11e8-8591-a80718801ef3.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:12.5px;letter-spacing:1px;color:#000000;padding:1px;">
+<b>beauty & spas</b></p>
+    </div>
+  </div>
+  
+  <div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40700691-997f5bfe-63a8-11e8-8c4a-18da5d81942f.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:12.5px;letter-spacing:1px;color:#000000;padding:1px;">
+ <b>entertainment</b></p>
+ </div>
+ </div>
 </div>
 
-<nav class="navbar navbar-default" style="width:100%;border-color:#ff9900;background-color:#ff9900;">
+<center>
+<!-- Grid 2-->
+<div class="row" style="width:100%">
+  <div class="column">
+ <div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+ <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589199-3e3925f6-61b7-11e8-826c-8fa02323e141.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:12.5px;letter-spacing:1px;color:#000000;padding:1px;">
+ <b>food & drink</b></p>
+     </div>
+  </div>
+  
+  <div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589228-9eb707ae-61b7-11e8-8c5d-15e3e123416b.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:11.5px;letter-spacing:1.5px;color:#000000;padding:1px;">
+ <b>health & fitness</b></p>
+    </div>
+  </div>
+    
+  <div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+   <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589229-9f24d6ee-61b7-11e8-9846-3d99c863cd94.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:11.5px;letter-spacing:1.5px;color:#000000;padding:1px;">
+<b>home services</b></p>
+    </div>
+  </div>
+  
+  <div class="column">
+  <div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589230-9f8e033a-61b7-11e8-8241-5f0c4c932bf8.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:11.5px;letter-spacing:1.5px;color:#000000;padding:1px;">
+ <b>hotels & lodging</b></p>
+ </div>
+ </div> 
+</div>
+
+<center>
+<!-- Grid 3-->
+<div class="row" style="width:100%">
+  <div class="column">
+  <div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589231-9fed45b6-61b7-11e8-9316-0d41d666a970.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:11.5px;letter-spacing:1.5px;color:#000000;padding:1px;">
+ <b>nite life</b></p>
+     </div>
+  </div>
+  
+  <div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40697483-63257b16-6398-11e8-90ff-799b8a5a9641.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:11.5px;letter-spacing:1.5px;color:#000000;padding:1px;">
+ <b>online learning</b></p>
+    </div>
+  </div>
+    
+  <div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+   <p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40700690-994abd04-63a8-11e8-9e07-fa0561049a39.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:11.5px;letter-spacing:1.5px;color:#000000;padding:1px;">
+<b>religion</b></p>
+    </div>
+  </div>
+  
+  <div class="column">
+<div class="content w3-card" style="padding:0 0 2px 0;background-color:#f2f2f2;border:1px solid #f2f2f2;border-radius:4px;">
+<p align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40637265-c9963d62-62d1-11e8-80ab-d4c476ec6cea.png" style="width:100%;" border="0"></a></p>
+
+<p style="font-family:ubuntu;font-size:11.5px;letter-spacing:1.5px;color:#000000;padding:1px;">
+ <b>shopping</b></p>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;background-color:#d8bfd8;padding:13px 0 13px 0;">
+<p style="font-family:ubuntu;font-size:13.5px;letter-spacing:1.5px;color:#000000;padding:1.5px;"><b>Showcase your business in 4 easy steps.</b>
+ </div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<nav class="navbar navbar-default" style="width:98%;background-color:#f5f5f5;border:1px solid #f5f5f5;">
 <table align="center">
 <tr>
 <td align="center">
@@ -256,7 +402,6 @@ font-weight: bold;
 </tr>
 </table>
 </nav>
-</div>
 
 <script>
 function w3_open() {
@@ -279,4 +424,4 @@ function w3_close() {
 </script>
 
 </body>
-</html> 
+</html>
