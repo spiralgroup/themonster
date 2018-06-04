@@ -4,6 +4,7 @@
 <title>Spiral Group, Inc. &#124; Small Business Listing</title>
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="56351160455-c570ptgsu3e0oh49tn0q09c95q10kj3h.apps.googleusercontent.com">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|BenchNine|Berkshire+Swash|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <style type="text/css">
 .navbar {
@@ -372,7 +374,8 @@ font-family: kaushan script;
 <center>
 <div class="w3-container w3-panel" style="width:98%;background-color:transparent;padding:2px;margin:0 0 24px 0;border-radius:4px;"><br>
 <p align="center" style="font-family:ubuntu;font-size:15.5px;color:#228b22;letter-spacing:1.5px;">
-      <h3>Showcase your business in 4 easy steps.</h3>
+      <h3>Showcase your business in 4 easy steps.</h3><br>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 </div>
 
 <center>
@@ -523,6 +526,18 @@ font-family: kaushan script;
 
 </div>
 </div>
+
+
+
+<script>
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
 
 <script>
 window.onscroll = function() {myFunction()};
