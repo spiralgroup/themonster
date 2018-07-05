@@ -70,9 +70,9 @@ nav ul li {display:block; position:absolute; top:0; width:12%; margin:0 0.25%;
 -o-transition:0.5s;
 transition:0.5s;
 }
-nav ul li a {display:block; width:100%; font-family:ubuntu; font-size:12px; text-decoration:none; text-align:center; height:30px; background-color:transparent; color:#fff; white-space:nowrap; border-radius:4px;
-box-shadow:0 10px 5px -10px #ffffff;
-font:calibri 12px/20px 'Calibri';
+nav ul li a {display:block; width:100%; font-family:calibri; font-size:12px; letter-spacing:.5px; text-decoration:none; text-align:center; height:21px; background-color:transparent; color:#fff; white-space:nowrap;
+box-shadow:0 10px 2px -10px #ffffff;
+font:calibri 12px/10px 'Calibri';
 }
 nav ul li a:hover {
 background-color:transparent;
@@ -343,7 +343,7 @@ h3 a:hover {
 
 .row,
 .row > .column2 {
-    padding: 0 33px 0 33px;
+    padding: 0 23px 0 23px;
 }
 
 .row:after {
@@ -366,7 +366,7 @@ h3 a:hover {
 }
 
 .row {
-    margin: 8px -16px;
+    margin: 1px -16px;
 }
 
 .row,
@@ -417,26 +417,13 @@ body, html {
     margin: 0;
 }
 
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
-       }
-}
-
 .bg-img {
     background-image: url("https://user-images.githubusercontent.com/25410880/42121271-6fa8e1f6-7bf9-11e8-9c0d-fa81dce08066.jpg");
     min-height: 768px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #585858;
 }
 
 .container1 {
@@ -461,23 +448,26 @@ body, html {
 
 .btn1 {
     background-color: #ffffff;
-    color: #585858;
-    font-size: 12px;
-    font-family: ubuntu;
-    padding: 4px;
+    color: #000000;
+    font-size: 11.5px;
+    font-family: calibri;
+    padding: 10px 10px 8px 10px;
     margin: 0;
-    border: none;
+    border: 2px solid #ffffff;
     border-radius: 4px;
     cursor: pointer;
-    opacity: 0.9;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .btn1:hover {
-    opacity: 1;
-    background-color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
     color: #ffffff;
 }
+
+
+
 
 .btn2 {
     background-color: #585858;
@@ -570,25 +560,24 @@ body, html {
 .topnav71 {
   overflow: hidden;
   background-color: transparent;
-  padding: 6px 10px 13px 10px;
+  padding: 0;
   width: 100%;
   margin: 0;
 }
 
 .topnav71 a {
   float: center;
-  font-family: roboto,sans-serif;
+  font-family: calibri;
   color: #ffffff;
   text-align: right;
-  padding: 0 1px 4px 1px;
+  padding: 0;
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 1.5px;
-  margin: 0 8px 0 8px;
+  margin: 0;
 }
 
 .topnav71 a:hover {
-  border-bottom: 2px solid #ffffff;
   text-decoration: none;
 }
 
@@ -623,11 +612,10 @@ body, html {
     background-color: transparent;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
 }
 .row,
 .row > .columna {
-    padding: 1px;
+    padding: 0;
 }
 
 @media (max-width: 900px) {
@@ -644,14 +632,9 @@ body, html {
        }
 }
 
-.row,
-.row > .column2 {
-    padding: 0 33px 0 33px;
-}
-
 .column2 {
     width: 32.5%;
-    margin: 10px;
+    margin: 0 10px 0 10px;
     padding: 0;
     display: inline-block;
     float: center;
@@ -709,10 +692,10 @@ body, html {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    padding: 10px 30px;
-    margin: 2px 0 20px 0;
-    font-size: 15px;
-    letter-spacing: .5px;
+    padding: 10px 25px;
+    margin: 0 2px 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
     display: inline-block;
 }
 
@@ -804,14 +787,14 @@ body, html {
 <div style="width:100%;padding:0;margin:0;">
 <nav>
 <ul>
-<li><a style="text-decoration:none;" href="#url">Marketing Solutions</a></li>
-<li><a style="text-decoration:none;" href="#url">Showcase Demo</a></li>
-<li><a style="text-decoration:none;" href="#url">Plans & Pricing</a></li>
-<li><a style="text-decoration:none;" href="#url">How It Works</a></li>
-<li><a style="text-decoration:none;" href="#url">Operational Tools</a></li>
-<li><a style="text-decoration:none;" href="#url">Resources</a></li>
 <li><a style="text-decoration:none;" href="#url">Sign In</a></li>
-<li><a style="text-decoration:none;" href="#url">Free Consultation</a></li>
+<li><a style="text-decoration:none;" href="#marketing-solutions">Marketing Solutions</a></li>
+<li><a style="text-decoration:none;" href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html">Showcase Demo</a></li>
+<li><a style="text-decoration:none;" href="#how-it-works">How It Works</a></li>
+<li><a style="text-decoration:none;" href="#plans-pricing">Plans & Pricing</a></li>
+<li><a style="text-decoration:none;" href="#free-consultation">Free Consultation</a></li>
+<li><a style="text-decoration:none;" href="#marketability">Are You Ready?</a></li>
+<li><a style="text-decoration:none;" href="#resources">Resources</a></li>
 </ul>
 </nav>
 </div>
@@ -828,15 +811,15 @@ SpiralGroup.org</p>
 </div>
 
 <center>
-<div id="discover" class="w3-container w3-panel w3-white" style="width:100%;padding:20px 20px 0 20px;margin:0;">
+<div id="marketing-solutions" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">Marketing Solutions</p>
 
 <!-- Grid 1-->
 <center>
-<div class="w3-container w3-panel w3-pale-blue" style="width:100%;padding:0;margin:0;">
-<div class="row w3-card w3-round w3-pale-blue" style="width:100%;padding:0;margin:0;border-radius:4px 4px 0 0;">
+<div class="w3-container w3-panel w3-pale-red" style="width:100%;padding:0;margin:0;">
+<div class="row w3-card w3-pale-red" style="width:100%;padding:0;margin:0;">
 <div class="columna" style="padding:0;margin:0;">
-<div class="contenta w3-pale-blue" style="padding:20px 20px 10px 20px;margin:0;">
+<div class="contenta w3-pale-red" style="padding:13px 15px 7px 20px;margin:0;">
 <p align="left" style="font-family:ubuntu;font-size:20px;color:#000000;letter-spacing:.5px;">Small Business Showcase</p>
 
 <p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">Looking for affordable Online Marketing Solutions to connect with local customers and showcase your brand?<br><br>
@@ -845,52 +828,26 @@ Choose up to 8 user-friendly, fully functional web pages to showcase and sell yo
 
 Showcase plans start at only $12.99 per month, when you choose our <b>Simple Start</b> Annual Plan.<br><br>
 
-<p align="left"><a class="w3-button" href="#plans_pricing" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">SHOWCASE DEMO</a></p></div></div>
+<p align="left"><a class="w3-button w3-pale-blue" href="#plans_pricing" style="font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">SHOWCASE DEMO</a></p></div></div>
 
 <div class="columna" style="padding:0;margin:0;">
-<div class="contenta w3-pale-blue" style="padding:20px 0 0 0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/42121300-69d715ee-7bfa-11e8-9f1e-53d2e7a5d816.png" style="width:75%;"></div></div>
+<div class="contenta w3-pale-red" style="padding:20px 0 0 0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/42121300-69d715ee-7bfa-11e8-9f1e-53d2e7a5d816.png" style="width:87.5%;"></div></div>
 </div>
 </div>
 </div>
 
 <center>
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
-<div id="discover" class="w3-container w3-panel" style="width:100%;padding:38px 25px 25px 25px;margin:0;">
+<div class="row w3-pale-blue" style="width:100%;padding:0;margin:0;">
+<div id="discover" class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:17px;color:#000000;letter-spacing:1.5px;">
-Plans starting at only $12.99 per month, when you choose our Simple Start <b>Annual</b> Plan.</p>
+Pay only $12.99 a month when you choose our Simple Start <b>Annual</b> Plan.</p>
 </div></div></div>
 
-
 <center>
-<div id="discover" class="w3-container w3-panel w3-white" style="width:100%;padding:20px 20px 0 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">Get Started</p>
+<div id="how-it-works" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">How It Works</p>
 
-<center>
-<div class="w3-container w3-panel w3-card w3-brown w3-round" style="width:100%;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="row" style="width:100%;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="columna" style="padding:0;margin:0;">
-<div class="contenta" style="padding:30px 20px 20px 20px;margin:0;">
-<p align="left" style="font-family:ubuntu;font-size:20px;color:#ffffff;letter-spacing:.5px;">Start Now</p>
-
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#ffffff;letter-spacing:1px;">Discover a beautiful way to grow with SpiralGroup’s Online Marketing Solutions for small business.<br><br>
-
-Recruit new employees, sell e-gift cards, display your company-related photos, and offer discounts on your products & services.<br><br>
-
-Choose any Annual Plan, and we'll waive the $25 initial Set-Up fee.</p><br>
-
-<p align="left"><a class="w3-button" href="#plans_pricing" style="background-color:#ffffff;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#000000;border-radius:4px;padding:14px;margin:0;text-decoration:none;">CHOOSE YOUR PLAN</a></p>
-</div>
-</div>
-<div class="columna w3-brown" style="padding:0;margin:0;">
-<div class="contenta" style="padding:0 12px 0 0;margin:0;background-color:#ffffff;">
-<img src="https://user-images.githubusercontent.com/25410880/42121375-f38106a0-7bfb-11e8-89dd-1a099e4e32bc.jpg" style="width:100%;"></div></div></div>
-
-<center>
-<div class="row w3-black" style="width:100%;padding:0;margin:0;">
-<div id="discover" class="w3-container w3-panel" style="width:100%;padding:38px 25px 25px 25px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1px;">Go live in 72 hours.</p>
-</p></div></div></div>
 
 <div class="w3-container w3-panel w3-card w3-green" style="width:100%;padding:0;margin:0;border-raius:4px 4px 0 0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
@@ -901,7 +858,7 @@ Choose any Annual Plan, and we'll waive the $25 initial Set-Up fee.</p><br>
 </div>
 
 <br><br><br><br>
-<p align="center" style="font-family:ubuntu;font-size:22px;color:#ffffff;letter-spacing:2px;">How It Works</p>
+<p align="center" style="font-family:ubuntu;font-size:20px;color:#ffffff;letter-spacing:1px;">Six Steps</p>
 
 <div class="tablink" onclick="openTablink('Step1', this, 'dodgerblue')" id="defaultOpen">1</div>
 <div class="tablink" onclick="openTablink('Step2', this, 'dodgerblue')">2</div>
@@ -924,7 +881,7 @@ Choose any Annual Plan, and we'll waive the $25 initial Set-Up fee.</p><br>
 <center>
 <div class="column3" style="padding:0;margin:0;">
 <div class="content w3-panel w3-green" style="padding:10px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:15px;color:#ffffff;letter-spacing:1.5px;">Step 2. Choose a Business Category</p>
+<p align="center" style="font-family:ubuntu;font-size:15px;color:#ffffff;letter-spacing:1.5px;">Step 2. Choose Business Category</p>
 </div>
 </div>
 </div>
@@ -934,7 +891,7 @@ Choose any Annual Plan, and we'll waive the $25 initial Set-Up fee.</p><br>
 <center>
 <div class="column3" style="padding:0;margin:0;">
 <div class="content w3-panel w3-green" style="padding:10px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:15px;color:#ffffff;letter-spacing:1.5px;">Step 3. Provide Your Business Information</p> 
+<p align="center" style="font-family:ubuntu;font-size:15px;color:#ffffff;letter-spacing:1.5px;">Step 3. Input Your Business Info</p> 
 </div>
 </div>
 </div>
@@ -994,20 +951,92 @@ function openTablink(TablinkName,elmnt,color) {
 
 document.getElementById("defaultOpen").click();
 </script>
-   
-<center>
-<div id="discover" class="w3-container w3-panel w3-white" style="width:100%;padding:20px 20px 0 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">Plans & Pricing</p></div>
+
 
 <center>
-<div id="ort" class="w3-container w3-panel" style="width:100%;padding:20px 0 0 0;margin:0;background-color:#ffffff;">
+<div class="row w3-blue" style="width:100%;padding:0;margin:0;">
+<div id="discover" class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1px;">Let our custom pages showcase your brand.</p>
+</p></div></div></div></div>
+
+
+
+<center>
+<div id="discover" class="w3-container w3-panel" style="width:100%;padding:30px 20px 0 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">Get Started</p>
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row w3-card w3-round-medium" style="width:100%;padding:0;margin:0;">
+<div class="columna w3-white" style="padding:0;margin:0;">
+<div class="contenta w3-white" style="padding:13px 15px 7px 20px;margin:0;">
+<p align="left" style="font-family:ubuntu;font-size:20px;color:#000000;letter-spacing:.5px;">Start Now</p>
+
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">Discover a beautiful way to grow with SpiralGroup’s Online Marketing Solutions for small business. With our Small Business Showcase pages, you can reach more local buyers of your products and services.<br><br>
+
+Use our showcase pages to recruit, hire, and train employees, sell digital gift cards, display your company-related photos, offer discounts on your products & services, and more.<br><br>
+
+Choose any Annual Plan, and we'll waive the $25 initial Set-Up fee.</p><br>
+
+<p align="left"><a class="w3-button w3-brown" href="#plans_pricing" style="font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+<div class="columna" style="padding:0;margin:0;">
+<div class="contenta" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/42121375-f38106a0-7bfb-11e8-89dd-1a099e4e32bc.jpg" style="width:99.7%;"></div></div></div></div></div>
+
+<center>
+<div class="row w3-brown" style="width:100%;padding:0;margin:0;">
+<div id="discover" class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1px;">Go live in 72 hours.</p>
+</p></div></div></div></div>
+
+
+
+<center>
+<div id="marketability" class="w3-container w3-panel" style="width:100%;padding:30px 20px 0 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">Marketability</p>
+
+<center>
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="row w3-card w3-round-medium w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="columna w3-light-grey" style="padding:0;margin:0;">
+<div class="contenta w3-light-grey" style="padding:13px 15px 7px 20px;margin:0;">
+<p align="left" style="font-family:ubuntu;font-size:20px;color:#000000;letter-spacing:.5px;">Business Preparedness Checklist</p>
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">Is your business prepared to further its reach and welcome new customers? Your staff motivated, well-trained, certifiable, and well-versed in your products and services? How would you rate your customer service? All systems in good working order?  What are your competitors doing? <br><br>
+
+What is your mindset toward doing the work that would incline your business to become more profitable and adapt to the changing demands of business growth and development? <br><br>
+
+<p align="left"><a class="w3-button w3-pink" href="#plans_pricing" style="font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">ASSESSMENT TOOLS</a></p>
+</div>
+</div>
+<div class="columna w3-light-grey" style="padding:20px 0 0 0;margin:0;">
+<div class="contenta w3-light-grey" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/42121306-6da46992-7bfa-11e8-8b1c-23305c4859ab.png" style="width:100%;"></div></div></div></div></div>
+
+<center>
+<div class="row w3-pink" style="width:100%;padding:0;margin:0;">
+<div id="discover" class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1px;">Let's determine your level of growth preparedness in a 30-minute phone session.</p>
+</p></div></div></div></div>
+
+
+
+
+
+<center>
+<div id="plans-pricing" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">Plans & Pricing</p></div></div>
+
+<center>
+<div id="ort" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;background-color:#ffffff;">
 <div class="tablink1" onclick="openTab('Monthly', this,'#bbb')"><font color="#ffffff">Monthly</font></div>
 <div class="tablink1" onclick="openTab('Annually', this, '#bbb')" id="defaultOpen1"><font color="#ffffff">Annually</font></div>
 
 <div id="Monthly" class="tabcontent1 w3-card" style="padding:10px 0 0 0;margin:0 20px 10px 20px;">
 <center>
 <div class="column2" style="padding:8px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 12px 0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 11px 0;">
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:1.5px;">SIMPLE START</p>
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:.5px;">$14.99 <font size="2"><font color="#228b22"> /mo</font></font> &nbsp; <i class="material-icons" style="vertical-align:middle;color:#585858;text-shadow:2px 2px 2px #cccccc;font-size:20px;">settings</i> <font size="2"><font color="#585858">Plus $25 Initial Set-Up Fee</font></font></p>
 
@@ -1041,7 +1070,7 @@ document.getElementById("defaultOpen").click();
 </div>
 
 <div class="column2" style="padding:8px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 22px 0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 11px 0;">
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:1.5px;">BUSINESS ESSENTIALS</p>
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:.5px;">$17.99 <font size="2"><font color="#228b22"> /mo</font></font> &nbsp; <i class="material-icons" style="vertical-align:middle;color:#585858;text-shadow:2px 2px 2px #cccccc;font-size:20px;">settings</i> <font size="2"><font color="#585858">Plus $25 Initial Set-Up Fee</font></font></p>
 
@@ -1075,7 +1104,7 @@ document.getElementById("defaultOpen").click();
 </div>
 
 <div class="column2" style="padding:8px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 22px 0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 11px 0;">
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:1.5px;">BUSINESS PREMIUM</p>
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:.5px;">$21.99 <font size="2"><font color="#228b22"> /mo</font></font> &nbsp; <i class="material-icons" style="vertical-align:middle;color:#585858;text-shadow:2px 2px 2px #cccccc;font-size:20px;">settings</i> <font size="2"><font color="#585858">Plus $25 Initial Set-Up Fee</font></font></p>
 
@@ -1110,7 +1139,7 @@ document.getElementById("defaultOpen").click();
 <div id="Annually" class="tabcontent1 w3-card" style="padding:10px 0 0 0;margin:0 20px 10px 20px;">
 <center>
 <div class="column2" style="padding:8px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 22px 0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 11px 0;">
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:1.5px;">SIMPLE START</p>
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:.5px;">$12.99 <font size="2"><font color="#228b22"> /mo</font></font> &nbsp; <i class="material-icons" style="vertical-align:middle;color:#585858;text-shadow:2px 2px 2px #cccccc;font-size:20px;">payment</i> <font size="2"><font color="#585858">$155.88 Paid Annually</font></font></p>
 
@@ -1143,7 +1172,7 @@ document.getElementById("defaultOpen").click();
 </div>
 
 <div class="column2" style="padding:8px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 22px 0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 11px 0;">
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:1.5px;">BUSINESS ESSENTIALS</p>
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:.5px;">$15.99 <font size="2"><font color="#228b22"> /mo</font></font> &nbsp; <i class="material-icons" style="vertical-align:middle;color:#585858;text-shadow:2px 2px 2px #cccccc;font-size:20px;">payment</i> <font size="2"><font color="#585858">$191.88 Paid Annually</font></font></p>
 
@@ -1176,7 +1205,7 @@ document.getElementById("defaultOpen").click();
 </div>
 
 <div class="column2" style="padding:8px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 22px 0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:0 0 11px 0;">
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:1.5px;">BUSINESS PREMIUM</p>
 <p align="center" style="font-family:ubuntu;font-size:16.5px;color:#000000;letter-spacing:.5px;">$19.99 <font size="2"><font color="#228b22"> /mo</font></font> &nbsp; <i class="material-icons" style="vertical-align:middle;color:#585858;text-shadow:2px 2px 2px #cccccc;font-size:20px;">payment</i> <font size="2"><font color="#585858">$239.88 Paid Annually</font></font></p>
 
@@ -1229,7 +1258,7 @@ document.getElementById("defaultOpen1").click();
 </div>
 </div>
 
-<div id="discover" class="w3-container w3-panel w3-white" style="width:100%;padding:20px 20px 0 20px;margin:0;">
+<div id="free-consultation" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;">Many Possibilities</p>
 
 <!-- Grid 1-->
@@ -1241,16 +1270,17 @@ document.getElementById("defaultOpen1").click();
 
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/42197592-851855c6-7e51-11e8-83f2-55db0d79cd77.png" style="width:36%;"></p>
 
-<p align="center"><a class="w3-button" href="#plans_pricing" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+<p align="center"><a class="w3-button" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
 </div>
 </div></div></div></div>
 
+
+
 <!-- Grid 2-->
 <center>
-<div id="ort" class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:40px 25px 40px 25px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:22px;color:#ffffff;letter-spacing:2.5px;">OPERATIONAL READINESS TOOLS</p>
+<div id="assessment-tools" class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
-We have more ways than ever to help your small business reach its potential.</p></div>
+We have more ways than ever to help you reach your goals.</p></div>
 
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
@@ -1260,11 +1290,11 @@ We have more ways than ever to help your small business reach its potential.</p>
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">create</i></p>
 <p class="topic" align="left" style="font-family:ubuntu;font-size:18.5px;color:#000000;letter-spacing:1.5px;">Business Assessments</p>
 
-<p align="left" style="color:#000000;letter-spacing:.5px;">Your company has more growth potential than realized. If you want to grow and stabilize your company and discover ways to work more efficiently, our Business Assessment can help you achieve your objectives.<br><br>
+<p align="left" style="color:#000000;letter-spacing:.5px;">Your company has more growth potential than realized. If you want to grow and stabilize your company and discover ways to work more efficiently, our Business Assessment can help you achieve your goals.<br><br>
 
 Schedule a free phone session with a Business Operations Consultant.</p><br><br>
 
-<p align="left"><a class="w3-button" href="#plans_pricing" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
 </div>
 </div>
 
@@ -1275,9 +1305,9 @@ Schedule a free phone session with a Business Operations Consultant.</p><br><br>
 
 <p align="left" style="color:#000000;letter-spacing:.5px;">We help you prepare for a City of Chicago Health Department inspection by working closely with you to ensure food safety. We develop systems that increase your chances of receiving a higher grade.<br><br>
 
-Let's discuss the benefits of a Mock Health Inspection for your food service operation.<br><br>
+Let's discuss the benefits of increasing food safety awareness among your workforce.<br><br>
 
-<p align="left"><a class="w3-button" href="#plans_pricing" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
 </div>
 </div>
 
@@ -1288,56 +1318,55 @@ Let's discuss the benefits of a Mock Health Inspection for your food service ope
 
 <p align="left" style="color:#000000;letter-spacing:.5px;">We can evaluate how your company delivers its products and services. Let us anonymously visit or call your locations to answer questionnaires designed to provide you with a customer's view of your operations.<br><br>
 
-Let our team customize a program that provides the insights you need to maintain Operational Excellence.<br><br>
+We can customize a program that provides the insights you need to maintain Operational Excellence.<br><br>
 
-<p align="left"><a class="w3-button" href="#plans_pricing" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
 </div>
 </div>
 </div>
 
 <!-- Grid 2-->
 <center>
-<div id="ort" class="w3-container w3-panel w3-card w3-dark-grey" style="width:100%;padding:40px 25px 40px 25px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:22px;color:#ffffff;letter-spacing:2.5px;">FEATURED RESOURCES</p>
+<div id="resources" class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
-We help you attract the kind of customer your business deserves.</p></div>
+Attract the kind of customer your business deserves.</p></div>
 
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
 <div class="column2" style="padding:0 14px 0 14px;margin:0;">
 <div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#585858;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
 <p class="topic" align="left" style="font-family:ubuntu;font-size:18.5px;color:#000000;letter-spacing:1.5px;">How to Promote Your Business Inexpensively</p>
 
 <p align="left" style="color:#000000;letter-spacing:.5px;">by Susan Ward<br><br>
 You promote your business by getting the word out. The first axiom of business promotion is that you have to do this consciously. You can't rely on other people to do it for you, no matter how great your product or service is...</p>
 
-<p align="right"><i class="material-icons" style="color:#585858;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</i></p>
+<p align="right"><i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</i></p>
 </div>
 </div>
 
 <div class="column2" style="padding:0 14px 0 14px;margin:0;">
 <div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#585858;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
 <p class="topic" align="left" style="font-family:ubuntu;font-size:18.5px;color:#000000;letter-spacing:1.5px;">How to Promote Your Business Inexpensively</p>
 
 <p align="left" style="color:#000000;letter-spacing:.5px;">by Susan Ward<br><br>
 You promote your business by getting the word out. The first axiom of business promotion is that you have to do this consciously. You can't rely on other people to do it for you, no matter how great your product or service is...</p>
 
-<p align="right"><i class="material-icons" style="color:#585858;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</i></p>
+<p align="right"><i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</i></p>
 </div>
 </div>
 
 <div class="column2" style="padding:0 14px 0 14px;margin:0;">
 <div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#585858;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
 <p class="topic" align="left" style="font-family:ubuntu;font-size:18.5px;color:#000000;letter-spacing:1.5px;">How to Promote Your Business Inexpensively</p>
 
 <p id="solutions" align="left" style="color:#000000;letter-spacing:.5px;">by Susan Ward<br><br>
 You promote your business by getting the word out. The first axiom of business promotion is that you have to do this consciously. You can't rely on other people to do it for you, no matter how great your product or service is...</p>
 
-<p align="right"><i class="material-icons" style="color:#585858;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</i></p>
+<p align="right"><i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</i></p>
 </div>
 </div>
 </div>
@@ -1352,7 +1381,7 @@ You promote your business by getting the word out. The first axiom of business p
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-52746336-1');ga('send','pageview');
     </script>
-<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:80%;">
+<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:83%;">
 </div>
 
 <script>
@@ -1368,19 +1397,18 @@ function myFunction7() {
 
 <center>
 
-<div class="w3-container w3-panel w3-blue" style="width:100%;padding:32px 22px 22px 22px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:2px;">
+<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 22px 22px 22px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:22px;color:#ffffff;letter-spacing:2px;">
 Ready to Grow with SpiralGroup?</p>
 
-<p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist, 8 a.m.–6 p.m. (CST) Mon–Fri.</p>
+<p align="center" style="font-family:ubuntu;font-size:16px;letter-spacing:1px;color:#ffffff;">Talk to a SpiralGroup Specialist.</p>
+<p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;color:#ffffff;">Sun - Sat, 8am – 6pm</p>
 
-<p align="center" style="font-family:ubuntu;font-size:19px;letter-spacing:1px;color:#000000;">Call (773) 242-0705.</p></div>
+<p align="center" style="font-family:ubuntu;font-size:16px;letter-spacing:1px;color:#ffffff;">773 242-0705</p></div>
 
-<div class="topnav71 w3-blue" style="width:100%;padding:0 12px 23px 12px;margin:0;">
-   <a href="#contact">Free Consultation</a>
-    <a href="#news">Showcase Demo</a>
-    <a href="#home">Choose Your Plan</a> 
-  </div>
-
+<div class="topnav71 w3-blue" style="width:100%;padding:0 0 20px 0;margin:0;">
+<a><button class="btn1" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html">SHOWCASE DEMO</button></a> &nbsp; 
+<a><button class="btn1" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html">WORKFORCE TRAINING</button></a> &nbsp; 
+<a><button class="btn1" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html">FREE RESOURCES</button></a></div>
 </body>
 </html>
