@@ -23,24 +23,8 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <style type="text/css">
-
-li a {
-    display: inline;
-    color: #ffffff;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-family: brownilla new,sans-serif;
-    letter-spacing: .5px;
-    font-size: 11.5px;
-}
-li a:hover {
-   border-radius: 2px;
-   color: #ffffff;
-}
-
 img {
-    border-radius: 4px; 
+    border-radius: 2px; 
     max-width: 100%;
     height: auto;
 }
@@ -49,43 +33,30 @@ img {
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 27px;
-    font-family: kaushan script;
-    color: #585858;
-    letter-spacing: 1.25px;
-    float: center;
+.row,
+.row > .column2 {
+    padding: 0;
+    margin: 0;
 }
 
-h3 {
-    font-family: ubuntu;
-    font-size: 12.5px;
-    letter-spacing: 1px;
-    color: #ffa500;
- }   
-
-
-h3 a:hover {
-  border-bottom: 2px solid #000000;
-  text-decoration: none;
-}
-
-
-.row {
-    margin: 8px -16px;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .row,
 .row > .column {
-    padding: 8px;
+    padding: 0;
+    margin: 0;
 }
 
 .column {
-    width: 23%;
+    width: 25%;
     padding: 0;
     margin: 0;
     display: inline-block;
-    float: center;
+    float: left;
 }
 
 .row:after {
@@ -96,17 +67,17 @@ h3 a:hover {
 
 .content {
     background-color: #ffffff;
-    padding: 0 0 2px 0;
-    border-radius: 4px;
+    padding: 0;
+    margin: 0;
 }
 body, html {
     height: 100%;
     margin: 0;
 }
   
-.column1 {
-    float: center;
-    width: 74.6%;
+.column2 {
+    float: left;
+    width: 75%;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -126,37 +97,19 @@ body, html {
 }
 }
 
-.pagination {
-width: 100%;
-    float: center;
-    padding: 11px;
-    background-color: #d8bfd8;
-    margin: 8px 0 0 0;
-    display: inline-block;
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
 }
 
-.pagination a {
-font-family: ubuntu;
-font-size: 12.5px;
-    color: #f2f2f2;
-    letter-spacing: 1px;
-    float: center;
-    padding: 8px 10px;
-    text-decoration: none;
-    transition: background-color .3s;
-    background-color: #000000;
-    border-radius: 5px;
-    margin: 0;
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
 }
-/* Style the active/current link */
-.pagination a.active {
-    background-color: #f2f2f2;
-    color: #585858;
 }
-
-.pagination a:hover:not(.active) {background-color:#48d1cc;
-                                  border-color:#48d1cc;
-                                  color:#000000;}
 
 .top-container {
   background-color: #d3d3d3;
@@ -323,29 +276,9 @@ font-size: 12.5px;
     background-color: transparent;
 }
 
-
-.btn1 {
-    background-color: #ff0099;
-    color: #ffffff;
-    font-size: 15px;
-    font-family: ubuntu;
-    letter-spacing: 1px;
-    padding: 10px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 50%;
-    opacity: 0.9;
-}
-
-.btn1:hover {
-    opacity: 1;
-    background-color: #ffffff;
-    color: #ff0099;
-}
 </style>
 </head>
-<body style="background-color:#f1f1f1;padding:0;margin:0;">
+<body style="background-color:#ffffff;padding:0;margin:0;">
 <div class="top-container" style="width:100%;padding:.25px;margin:0 0 0 0;">
  </div>
 
@@ -365,181 +298,292 @@ font-size: 12.5px;
 </div>
 </div>
 
-<center>
-<div class="w3-container w3-panel w3-pale-red" style="width:100%;padding:58px 20px 48px 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:18.5px;color:#000000;letter-spacing:1.5px;">
-We have more ways than ever to help your small business reach its potential.</p>
-</div>
 
 <center>
-<div class="w3-container w3-card w3-black" style="width:100%;padding:20px 10px 5px 10px;margin:0;">
-<p style="width:100%;font-family:ubuntu;font-size:18.5px;letter-spacing:1.75px;color:#ffffff;padding:1.5px;">Our Products & Services</p></div></div>
-
+<div id="how-it-works" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 15px 0 15px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:22px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Products & Services</p>
 
 <center>
-<div style="background-color:#ffffff;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-top:8px solid #f1f1f1;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;border-bottom:8px solid #f1f1f1;">
+
 <center>
+
 <!-- Grid 1-->
-<div class="row" style="width:100%;padding:0;margin:0 0 10px 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px;margin:0;">
+<div class="row" style="width:100%;padding:4px;margin:0;">
 <center>
-<!-- Grid 1-->
-
-<div class="row" style="width:100%">     
-<p align="center" style="font-family:ubuntu;font-size:12.5px;color:#000000;letter-spacing:1.5px;"><i class="material-icons" style="color:#585858;size:12px;">touch_app</i>Tap the image of the item you'd like to purchase, and be taken to our secure PayPal&reg; page to complete your transaction.</p><br>
-
-<center>
-<div class="row" style="width:100%;margin:0 0 50px 0;">
-<p align="center"><a style="font-family:ubuntu;font-size:15.5px;letter-spacing:1.5px;color:#000000;" href="https://spiralgroup.github.io/themonster/small-business-solutions.html">Operational Readiness Tools</a></p>
-
-<div class="column">
-<div class="content w3-card w3-light-grey">
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
 <input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 </form>
-<h3><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><font color="#000000">OPERATIONAL ASSESSMENTS</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$379.98 Each</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="Q3YX37X22FUB8">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34708933-0eeaa810-f4e3-11e7-8004-00d5929fce67.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><font color="#000000">STRATEGIC MANAGEMENT PLANS</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">Free with Each Assessment</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="A4AGPXHZRJJW4">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636116-b3ea7462-f268-11e7-9da9-e31261ebc114.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><font color="#000000">MYSTERY SHOP PROGRAMS</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$99.00 Each</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="D2DXWFU64GFKU">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636115-b3cdf6a2-f268-11e7-946d-dcefab43b3c9.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/small-business-solutions.html"><font color="#000000">MOCK HEALTH INSPECTIONS</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$129.99 Each</p>
-</div>
 </div>
 </div>
 
-<div class="row" style="width:100%;margin:0 0 50px 0;">
-<p align="center"><a style="font-family:ubuntu;font-size:15.5px;letter-spacing:1.5px;color:#000000;" href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html">Online Courses &#124; Workforce Training</a></p>
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
 
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XNP2T4P246BNE">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636117-b4080626-f268-11e7-9849-63be1cb30c7f.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><font color="#000000">DISCRIMINATION COURSE</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$45.00 Per Person</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="784Z3CU4VDGBA">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636120-b46e8b9e-f268-11e7-8982-07aa1ef2d7b2.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><font color="#000000">WORKPLACE ETHICS COURSE</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$45.00 Per Person</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="9FEXTHE2V3YR2">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636113-b391dc76-f268-11e7-8b8c-d9277d941319.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><font color="#000000">WORKPLACE HARASSMENT COURSE</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$65.00 Per Person</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="LNUQNRHA8NP5U">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636118-b4268b78-f268-11e7-814a-6c7ba3a79b29.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/compliance-and-risk-mitigation.html"><font color="#000000">WORKPLACE DIVERSITY COURSE</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$25.00 Per Person</p>
-</div>
-</div>
-</div>
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
 
-<div class="row" style="width:100%;margin:0 0 50px 0;">
-<p align="center"><a style="font-family:ubuntu;font-size:15.5px;letter-spacing:1.5px;color:#000000;" href="https://spiralgroup.github.io/themonster/servsafe-certifications.html">Performance Management & ServSafe&reg; Courses</a></p>
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
 
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="GWKRD2XUWH5BE">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636119-b4517a40-f268-11e7-9ef8-b1db97fe5554.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/job-seekers.html"><font color="#000000">EP TOOL-KIT&reg;</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$39.99 Per Access</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="NM6SGLZTRSRAJ">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636121-b4970e98-f268-11e7-8a18-51059054c7c2.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><font color="#000000">SERVSAFE&REG; FOOD HANDLER COURSE</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$12.00 Per Person</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="B6C7TJN84FCC6">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636122-b4c87ee2-f268-11e7-829a-35661ffcc5f3.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><font color="#000000">SERVSAFE&REG; FSSMC COURSE & EXAM</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$99.00 Per Person</p>
-</div>
-</div>
-<div class="column">
-<div class="content w3-card w3-light-grey">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="NH7CFMPNKS2FY">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/34636123-b4e556ca-f268-11e7-8aeb-f814d3e946b5.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-<h3><a href="https://spiralgroup.github.io/themonster/servsafe-certifications.html"><font color="#000000">SERVSAFE&REG; FSSMC EXAM ONLY</font></a></h3>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1.5px;">$79.00 Per Person</p>
-</div>
-</div>
-</div>
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
 </div>
 </div>
 </div>
 </div>
 
-<div class="w3-container" style="width:100%;background-color:#f1f1f1;padding:20px;margin:0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div></div>
+
+
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
+<center>
+<div class="row" style="width:100%;padding:4px;margin:0;">
+<div class="column" style="padding:4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/34635242-d4076a42-f25a-11e7-836e-6226243d5a49.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<center>
+<div class="column2" style="padding:0;margin:0;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
+
+<p align="left" style="font-family:roboto,sans-serif;font-size:14px;color:#000000;letter-spacing:1px;">If your goal is to grow and stabilize your company, or discover ways to work more efficiently, our Business Assessment can help you determine the best ways to achieve your goals.<br><br>
+
+The cost of a Business Operations Assessment is $379.98, which includes a Strategic Management Plan. To learn more, schedule a complimentary phone session with an Operations Consultant.</p><br>
+
+<p align="left"><a class="w3-button w3-pink" href="https://spiralgroup.github.io/themonster/free-small_business-phone-consultation.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;background-color:#ff0099;padding:20px;margin:50px 0 0 0;">
 <p style="font-family:ubuntu;font-size:16.5px;letter-spacing:1.75px;color:#000000;padding:1.5px;">Ready to Grow with SpiralGroup?</p>
 
 <p style="font-family:ubuntu;font-size:12.5px;letter-spacing:1.5px;color:#000000;padding:1.5px;">Talk to a SpiralGroup Specialist, 8 a.m.–6 p.m. (CST) Mon–Fri. <b>Call (773) 242-0705</b>.</p>
