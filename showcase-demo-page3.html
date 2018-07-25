@@ -32,7 +32,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -309,33 +309,55 @@ img {
 position: fixed;
 }
 
+.bar1, .bar2, .bar3 {
+    width: 26px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
 </style>
 </head>
 
 
 <body style="background-color:#ffffff;padding:0;margin:0;">
-<nav class="navbar navbar-default" style="width:100%;opacity:.97;border:none;">
-  <div class="container-fluid w3-card" style="width:100%;">
+<nav class="navbar navbar-default" style="width:100%;opacity:.97;border:none;padding:0;margin:0;">
+  <div class="container-fluid" style="width:100%;box-shadow:0 2px 8px #ddd;border-radius:0 0 4px 4px;">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar w3-dark-grey"></span>
         <span class="icon-bar w3-dark-grey"></span>
         <span class="icon-bar w3-dark-grey"></span>                        
       </button>
-      <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:kaushan script;font-size:20px;color:#585858;letter-spacing:.75px;">SpiralGroup.org</a>
+      
+       <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Marketing Solutions</span>  
+                      
+            <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#999900;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:calibri;size:15px;letter-spacing:.5px;">About</a></li>
-        <li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:calibri;size:15px;letter-spacing:.5px;">Our Products & Services</a></li>        
-        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:calibri;size:15px;letter-spacing:.5px;">E-Gift Cards</a></li>
-        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html" style="font-family:calibri;size:15px;letter-spacing:.5px;">Special Offers</a></li>
-        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page6.html" style="font-family:calibri;size:15px;letter-spacing:.5px;">Photo Gallery</a></li>
-        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:calibri;size:15px;letter-spacing:.5px;">Join Our Team</a></li>        
-        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;size:15px;letter-spacing:.5px;">Contact</a></li>
+        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About</a></li>
+        <li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Products & Services</a></li>        
+        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">E-Gift Cards</a></li>
+        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li>
+        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page6.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Photo Gallery</a></li>
+        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Join Our Team</a></li>        
+        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Contact</a></li>
         </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" style="font-family:calibri;size:15px;letter-spacing:.5px;"><span class="glyphicon glyphicon-edit" style="font-size:13px;color:#585858;"></span> Sign In</a></li>
+        <li><a href="#"><i class="fas fa-sign-in-alt" style="font-size:16px;color:#a9a9a9;vertical-align:bottom;text-shadow:0 1px 2px #cccccc;"></i></a></li>
       </ul>
       </div>
 </div>
@@ -350,24 +372,24 @@ position: fixed;
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Products & Services</p>
 
 <center>
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:2px;margin:0;border-top:1px solid #f1f1f1;border-radius:4px 4px 0 0;">
+<div class="w3-container w3-panel w3-card" style="width:100%;padding:2px;margin:0;border-top:3px solid #f1f1f1;border-bottom:3px solid #f1f1f1;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 
 <center>
-<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;border-bottom:1px solid #f1f1f1;">
-<div id="discover" class="w3-container w3-panel" style="width:100%;padding:10px 10px 0 10px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
+<div id="discover" class="w3-container w3-panel" style="width:100%;padding:15px 10px 0 10px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:16px;color:#000000;letter-spacing:.25px;text-shadow:0 1px 2px #cccccc;">
 Operational Assessment Tools</p>
 <p align="center" style="font-family:ubuntu;font-size:12px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Tap an image to make a purchase.</p></div></div></div>
 
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;border-radius:0;">
-<div class="row" style="width:100%;padding:0;margin:10px 0 0 0;border-bottom:4px solid #ffffff;">
+<div class="row" style="width:100%;padding:0;margin:0 0 10px 0;">
 
 <!-- Grid 1-->
 <center>
 <div class="row" style="width:100%;padding:4px;margin:0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
+<div class="content w3-panel w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:3px;box-shadow:0 2px 8px #ddd;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
@@ -378,22 +400,20 @@ Operational Assessment Tools</p>
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENT</p>
 
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:1px;">
-The Business Operational Assessment allows us to develop systems that support the needs of your business. We evaluate your level of operational readiness so that we can create a Strategic Management Plan, which will guide us in the direction of achieving your goals.<br><br>
-
-With your Strategic Management Plan, we help you establish lean processes that reduce costs, increase profitability, and improve overall workforce productivity.</p>
+The Business Operational Assessment allows us to develop systems that support the needs of your business. We evaluate your level of operational readiness so that we can create a Strategic Management Plan, which will guide us in the direction of achieving your goals. With your S-M-P, we help you establish lean processes that reduce costs, increase profitability, and improve overall workforce productivity.</p>
 
 <center>
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-family:calibri;font-size:12px;color:#585858;letter-spacing:.5px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
-<div id="collapse1" class="panel-collapse collapse" style="border:0;">
+<div id="collapse1" class="panel-collapse collapse" style="border-color:none;">
 <div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WHAT COMPONENTS COMPRISE A BUSINESS ASSESSMENT?</p>
 
@@ -421,7 +441,7 @@ The cost is $379.98</p><br>
 <center>
 <div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
+<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;box-shadow:0 2px 8px #ddd;border-radius:3px;">
    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="Q3YX37X22FUB8">
@@ -432,23 +452,22 @@ The cost is $379.98</p><br>
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">S-M-P</p>
 
-<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">The Strategic Management Plan [S-M-P] is comprised of specific recommendations on how to correctly formulate, implement, and evaluate your business systems. It transforms the Operational Assessment into steps that will move your business in a direction that encourages Operational Excellence.<br><br>
+<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">The Strategic Management Plan [S-M-P] is comprised of specific recommendations on how to correctly formulate, implement, and evaluate your business systems. It transforms the Business Assessment into steps that will move your business in a direction that encourages Operational Excellence. If your goal is to grow and stabilize your company, or discover ways to work more efficiently, the Strategic Management Plan can help define the steps you need to take to accomplish this.</p>
 
-If your goal is to grow and stabilize your company, the Strategic Management Plan can provide timing and direction. Want to work more efficiently? This plan can help you define the steps you need to take to accomplish this.</p>
+<center>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:24px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:1px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
 
 <div id="collapse2" class="panel-collapse collapse" style="border:0;">
 <div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
-<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">
-HOW MUCH FOR A STRATEGIC MANAGEMENT PLAN?</p>
+<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">HOW MUCH FOR A STRATEGIC MANAGEMENT PLAN?</p>
 
 <p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;border:0;">
 The cost is included with the Business Assessment. You also receive 3 months of Implementation Support. Special terms and conditions may apply.</p><br>
@@ -465,7 +484,7 @@ The cost is included with the Business Assessment. You also receive 3 months of 
 <center>
 <div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
+<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;box-shadow:0 2px 8px #ddd;border-radius:3px;">
    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="A4AGPXHZRJJW4">
@@ -476,18 +495,17 @@ The cost is included with the Business Assessment. You also receive 3 months of 
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MYSTERY SHOP PROGRAM</p>
 
-<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">This program allows you to evaluate how your company delivers its products and services. You’ve developed a set of guidelines that drive operational excellence, but you can’t be at your business 24 hours a day to make sure these standards are being met by every person that comprises your workforce (including vendors).<br><br>
+<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">This program allows you to evaluate how your company delivers its products and services. You’ve developed a set of guidelines that drive operational excellence, but you can’t be at your business 24 hours a day to make sure these standards are being met by every person that comprises your workforce (including vendors). We will anonymously visit and/or call your locations to answer questionnaires designed to provide you with a customer's view of your entire operation.</p>
 
-We will anonymously visit and/or call your locations to answer questionnaires designed to provide you with a customer's view of your entire operation.</p>
-
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:1px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
+<center>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:24px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
 <div id="collapse3" class="panel-collapse collapse" style="border:0;">
 <div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
@@ -540,7 +558,7 @@ OUR INSIGHTS INCLUDE</p>
 <center>
 <div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
+<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;box-shadow:0 2px 8px #ddd;border-radius:3px;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="D2DXWFU64GFKU">
@@ -551,22 +569,24 @@ OUR INSIGHTS INCLUDE</p>
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MOCK HEALTH INSPECTION</p>
 
-<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">Every organization in the food industry is subject to regular public health inspections conducted by local government health departments. These inspections are designed to measure a food establishment's level of sanitation. If conditions are found to be unsanitary, they can pose serious health risks to your customers.<br><br>
+<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">Every organization in the food industry is subject to regular public health inspections conducted by local government health departments. These inspections are designed to measure a food establishment's level of sanitation. If conditions are found to be unsanitary, they can pose serious health risks to your customers. We have the knowledge, skill-set, and credentials to prepare you for an official City of Chicago Health Department Inspection.</p>
 
-Why choose SpiralGroup? Because we have the knowledge, skill-set, and credentials to prepare you for an official City of Chicago Health Department Inspection.</p>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse4"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:1px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
 
 <div id="collapse4" class="panel-collapse collapse" style="border:0;">
-<div class="panel-body" style="width:100%;margin:0;padding:0;">
-<p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;"><br>
+<div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
+<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">
+WHY CHOOSE SPIRALGROUP?</p>
+
+<p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;">
 We work closely with you to ensure food safety, while reviewing your last health inspection report. We develop systems that increase your chances of receiving a higher grade. During the inspection, we train your food service workers on how to prevent health code violations. <a href="https://spiralgroup.github.io/themonster/health-code-violations.html">See videos of some of our favorite eateries facing major Health Code Violations</a>.</p><br>
 
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">
@@ -585,25 +605,31 @@ HOW MUCH FOR A MOCK HEALTH INSPECTION?</p>
 </div>
 </div>
 </div>
+</div>
+
+
 
 <center>
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:2px;margin:0;border-top:1px solid #f1f1f1;border-radius:4px;">
+<div id="how-it-works" class="w3-container w3-panel" style="width:98%;background-color:transparent;padding:30px 20px 0 20px;margin:0;">
+
+<center>
+<div class="w3-container w3-panel w3-card" style="width:100%;padding:2px;margin:0;border-top:3px solid #f1f1f1;border-bottom:3px solid #f1f1f1;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;border-bottom:1px solid #f1f1f1;border-radius:4px">
-<div id="discover" class="w3-container w3-panel" style="width:100%;padding:10px 10px 0 10px;margin:0;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
+<div id="discover" class="w3-container w3-panel" style="width:100%;padding:15px 10px 0 10px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:16px;color:#000000;letter-spacing:.25px;text-shadow:0 1px 2px #cccccc;">
 HR Solutions</p>
 <p align="center" style="font-family:ubuntu;font-size:12px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Tap an image to make a purchase.</p></div></div></div>
 
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;border-radius:0;">
+<div class="row" style="width:100%;padding:0;margin:0 0 10px 0;">
 
-
-<!-- Grid 2-->
+<!-- Grid 1-->
 <center>
 <div class="row" style="width:100%;padding:4px;margin:0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
+<div class="content w3-panel w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;box-shadow:0 2px 8px #ddd;border-radius:3px;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="XNP2T4P246BNE">
@@ -614,22 +640,22 @@ HR Solutions</p>
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">EMPLOYMENT DISCRIMINATION</p>
 
-<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">Discriminatory Employment Practices include biased behavior in recruiting, hiring, job assignment, compensation, promotion, testing, training, apprenticeships, internships, and termination processes.<br><br>
+<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">Discriminatory Employment Practices include biased behavior in recruiting, hiring, job assignment, compensation, promotion, testing, training, apprenticeships, internships, and termination processes.
 
-Employment discrimination occurs silently in the beliefs, attitudes, and values that one applies in his mind toward a job candidate. Although discriminatory words may never be uttered, the person prone to discriminate will deploy non-discriminatory tactics in order to 'legally' reject an otherwise qualified job seeker.</p>
+Employment discrimination occurs silently in the beliefs, attitudes, and values that one applies in his mind toward a job candidate. Although discriminatory words may never be uttered, the person prone to discriminate will use non-discriminatory tactics to 'legally' reject an otherwise qualified job seeker.</p>
 
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:1px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse5"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
 <div id="collapse5" class="panel-collapse collapse" style="border:0;">
-<div class="panel-body" style="width:100%;margin:0;padding:0;">
-<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;"><br>
+<div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
+<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">
 AT THE END OF THIS COURSE, EMPLOYERS SHOULD BE ABLE TO</p>
 
 <p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;">
@@ -666,8 +692,8 @@ AT THE END OF THIS COURSE, EMPLOYERS SHOULD BE ABLE TO</p>
 <center>
 <div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
-  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;box-shadow:0 2px 8px #ddd;border-radius:3px;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="784Z3CU4VDGBA">
 <input type="image" src="https://user-images.githubusercontent.com/25410880/43028149-1f4b09f6-8c4c-11e8-8d6f-d9cd72df3e3b.png" style="width:100%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -677,22 +703,20 @@ AT THE END OF THIS COURSE, EMPLOYERS SHOULD BE ABLE TO</p>
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WORKPLACE ETHICS</p>
 
-<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">It's a fact that most of your employees will have an understanding of conduct that is improper in the workplace, but some workplace issues go beyond a mere common-sense-understanding. Some legal requirements may not be obvious to your workforce, or may run counter to their cultural norms.<br><br>
+<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">Most of your employees will have an understanding of conduct that is improper, but some workplace issues go beyond a mere common-sense-understanding. Some legal requirements may not be obvious to your workforce, or may run counter to their cultural norms. This online course outlines the rules to being professional in the workplace through the use of Soft Skills. Using this training module, we can help educate and legally ensure that every member of your team puts these skills to use.</p>
 
-This online course outlines the rules to being professional in the workplace through the use of Soft Skills. Using this training module, we can help educate and legally ensure that every member of your team puts these skills to use.</p>
-
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:1px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse6"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
 <div id="collapse6" class="panel-collapse collapse" style="border:0;">
-<div class="panel-body" style="width:100%;margin:0;padding:0;">
-<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;"><br>
+<div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
+<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">
 AT THE END OF THIS COURSE, YOUR EMPLOYEES SHOULD BE ABLE TO</p>
 
 <p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;">
@@ -725,7 +749,7 @@ AT THE END OF THIS COURSE, YOUR EMPLOYEES SHOULD BE ABLE TO</p>
 <center>
 <div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
+<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;box-shadow:0 2px 8px #ddd;border-radius:3px;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="9FEXTHE2V3YR2">
@@ -736,24 +760,19 @@ AT THE END OF THIS COURSE, YOUR EMPLOYEES SHOULD BE ABLE TO</p>
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WORKPLACE HARASSMENT</p>
 
-<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">The EEOC defines harassment as unwelcome verbal, physical, and sexual behavior. Harassing conduct includes offensive jokes, slurs, name calling, physical assaults or threats, intimidation, ridicule, insults, offensive pictures, and more. The harasser can be a supervisor, co-worker, customer, vendor, etc. The victim doesn't even have to be the person being harassed. It can be anyone adversely affected by harassing behavior.<br><br>
+<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">The EEOC defines harassment as unwelcome verbal, physical, and sexual behavior. Harassing conduct includes offensive jokes, slurs, name calling, physical assaults or threats, intimidation, ridicule, insults, offensive pictures, and more. The harasser can be a supervisor, co-worker, customer, vendor, etc. The victim doesn't even have to be the person being harassed. It can be anyone adversely affected by harassing behavior. In this course, students learn how to recognize and address harassment.</p>
 
-In this online course, students learn how to recognize and professionally address harassment.</p>
-
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:1px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse7"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
 <div id="collapse7" class="panel-collapse collapse" style="border:0;">
-<div class="panel-body" style="width:100%;margin:0;padding:0;">
-<p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;"><br>
-We encourage students to begin analyzing their own behavior to make sure it's appropriate at all times. We also teach prevention methods that keep the workplace free from harassment.</p>
-
+<div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">AT THE END OF THIS COURSE, STUDENTS SHOULD BE ABLE TO</p>
 
 <p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;">
@@ -792,7 +811,7 @@ We encourage students to begin analyzing their own behavior to make sure it's ap
 <center>
 <div class="row" style="width:100%;padding:4px;margin:10px 0 0 0;">
 <div class="column" style="padding:4px 4px 0 4px;margin:0;">
-<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;border-radius:4px;">
+<div class="content w3-panel w3-card w3-white" style="padding:5px 5px 0 5px;margin:0;box-shadow:0 2px 8px #ddd;border-radius:3px;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="LNUQNRHA8NP5U">
@@ -803,23 +822,20 @@ We encourage students to begin analyzing their own behavior to make sure it's ap
 
 <center>
 <div class="column2" style="padding:0;margin:0;">
-<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 2px 2px #ddd;">
+<div class="content w3-panel w3-white" style="padding:8px;margin:4px;box-shadow:0 1px 5px #f1f1f1;">
 <p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WORKPLACE DIVERSITY</p>
 
-<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">If your assumptions about certain groups of people are either based on what you've heard from others, or what you've learned through the media, then it is quite possible that those assumptions are incorrect. Sometimes, the beliefs we hold are merely the result of cultural conditioning.<br><br>
+<p align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;">If your assumptions about certain groups of people are either based on what you've heard from others, or what you've learned through the media, then it is quite possible that those assumptions are incorrect. Sometimes, the beliefs we hold are merely the result of cultural conditioning. In this course, workplace professionals are encouraged to begin accepting that we can all work to become more aware of how our inner thoughts, feelings, and assumptions affect our beliefs, actions, and even our inactions.</p>
 
-In this course, workplace professionals are encouraged to begin accepting that we can all work to become more aware of how our inner thoughts, feelings, and assumptions affect our beliefs, actions, and even our inactions.</p>
-
-<div class="panel-group" id="accordion" style="width:100%;padding:5px;margin:0;border:0;">
-<h4 class="panel-title" align="right" style="border:0;">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:1px;border:0;">
-<i class="fas fa-folder" style="font-size:16px;color:#585858;"></i></a>
-</h4></div>
+<div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapse8"> 
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+</div></a>
+</div>
 
 <div id="collapse8" class="panel-collapse collapse" style="border:0;">
-<div class="panel-body" style="width:100%;margin:0;padding:0;">
-
-<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;"><br>
+<div class="panel-body" style="width:100%;margin:0;padding:0;"><br>
+<p class="topic" align="left" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">
 AT THE END OF THIS COURSE, WORKPLACE PROFESSIONALS SHOULD BE ABLE TO</p>
 
 <p align="left" style="font-family:calibri;font-size:15px;letter-spacing:.50px;">
@@ -855,6 +871,13 @@ AT THE END OF THIS COURSE, WORKPLACE PROFESSIONALS SHOULD BE ABLE TO</p>
 </div>
 </div>
 </div>
+</div>
+
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
 
 
 <center>
