@@ -38,6 +38,146 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <style type="text/css">
+.box {
+				-webkit-animation-name: movingBox;
+				-webkit-animation-duration: 2300ms;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-direction: alternate;
+
+				-moz-animation-name: movingBox;
+				-moz-animation-duration: 2300ms;
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-direction: alternate;
+
+				-ms-animation-name: movingBox;
+				-ms-animation-duration: 2300ms;
+				-ms-animation-iteration-count: infinite;
+				-ms-animation-direction: alternate;
+
+				-o-animation-name: movingBox;
+				-o-animation-duration: 2300ms;
+				-o-animation-iteration-count: infinite;
+				-o-animation-direction: alternate;
+
+				animation-name: movingBox;
+				animation-duration: 2300ms;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+
+				width: 20px;
+				height: 4px;
+				background: #f1f1f1;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+			}
+
+			@-webkit-keyframes movingBox {
+			  0% {
+			    -webkit-transform: -webkit-translate(0, 0);
+			    transform: translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -webkit-transform: -webkit-translate(100px, 100px);
+			    transform: translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -webkit-transform: -webkit-translate(30px, 30px);
+			    transform: translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-moz-keyframes movingBox {
+			  0% {
+			    -moz-transform: -moz-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -moz-transform: -moz-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -moz-transform: -moz-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-ms-keyframes movingBox {
+			  0% {
+			    -ms-transform: -ms-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -ms-transform: -ms-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -ms-transform: -ms-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-o-keyframes movingBox {
+			  0% {
+			    -o-transform: -o-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -o-transform: -o-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -o-transform: -o-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@keyframes movingBox {
+			  0% {
+			    transform: translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    transform: translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    transform: translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
 img {
     border-radius: 2px; 
     max-width: 100%;
@@ -90,7 +230,7 @@ img {
 .container1 {
     position: absolute;
     top: 310px;
-    left: 10px;
+    left: 20px;
     margin: 0;
     max-width: 700px;
     padding: 0;
@@ -170,12 +310,6 @@ function onSignIn(googleUser) {
 </div>
 </nav>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -205,8 +339,6 @@ Ready to Grow with SpiralGroup?</p>
 <p align="center" style="font-family:ubuntu;font-size:16px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun - Sat, 8am – 8pm</p>
 
 <p align="center" style="font-family:ubuntu;font-size:16px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
-</div>
-</div>
 </div>
 </body>
 </html>
