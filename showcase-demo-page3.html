@@ -308,33 +308,13 @@ img {
 .navbar {
 position: fixed;
 }
-
-.bar1, .bar2, .bar3 {
-    width: 26px;
-    height: 2px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
 </style>
 </head>
 
 
 <body style="background-color:#ffffff;padding:0;margin:0;">
 <nav class="navbar navbar-default" style="width:100%;opacity:.97;border:none;padding:0;margin:0;">
-  <div class="container-fluid" style="width:100%;box-shadow:0 2px 8px #ddd;border-radius:0 0 4px 4px;">
+ <div class="container-fluid" style="width:100%;border-radius:0 0 4px 4px;">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar w3-dark-grey"></span>
@@ -344,7 +324,7 @@ position: fixed;
       
        <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Marketing Solutions</span>  
                       
-            <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#999900;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
+            <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -356,8 +336,20 @@ position: fixed;
         <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Join Our Team</a></li>        
         <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Contact</a></li>
         </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fas fa-sign-in-alt" style="font-size:16px;color:#a9a9a9;vertical-align:bottom;text-shadow:0 1px 2px #cccccc;"></i></a></li>
+        
+      <ul class="nav navbar-nav navbar-right w3-padding-small">    
+      <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/community-partner-application.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 18px;margin:2px 4px 2px 4px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">Become A Partner</a></li>
+         <li><a class="g-signin2 w3-button w3-light-grey w3-border w3-round" data-onsuccess="onSignIn" style="padding:0;margin:2px 4px 2px 4px;"></a></li>
+            
+            <script type="64686edc7e9b07b35ed0fc0f-">
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>            
       </ul>
       </div>
 </div>
@@ -409,7 +401,7 @@ The Business Operational Assessment allows us to develop systems that support th
 <center>
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
@@ -460,7 +452,7 @@ The cost is $379.98</p><br>
 <center>
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:24px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:24px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
@@ -503,7 +495,7 @@ The cost is included with the Business Assessment. You also receive 3 months of 
 <center>
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:24px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:24px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
@@ -576,7 +568,7 @@ OUR INSIGHTS INCLUDE</p>
 
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
@@ -649,7 +641,7 @@ Employment discrimination occurs silently in the beliefs, attitudes, and values 
 
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
@@ -710,7 +702,7 @@ AT THE END OF THIS COURSE, EMPLOYERS SHOULD BE ABLE TO</p>
 
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse6"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
@@ -767,7 +759,7 @@ AT THE END OF THIS COURSE, YOUR EMPLOYEES SHOULD BE ABLE TO</p>
 
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse7"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
@@ -829,7 +821,7 @@ AT THE END OF THIS COURSE, YOUR EMPLOYEES SHOULD BE ABLE TO</p>
 
 <div class="panel-group" id="accordion" style="width:100%;padding:0;margin:0;">
 <a data-toggle="collapse" data-parent="#accordion" href="#collapse8"> 
-<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">more</button>
+<div style="float:right;"><button class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:.5px;color:#ffffff;border-radius:4px;padding:8px 18px;margin:20px 0 0 0;text-decoration:none;">learn more</button>
 </div></a>
 </div>
 
