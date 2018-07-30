@@ -36,147 +36,6 @@
 <style>
 
 
-.box {
-				-webkit-animation-name: movingBox;
-				-webkit-animation-duration: 2300ms;
-				-webkit-animation-iteration-count: infinite;
-				-webkit-animation-direction: alternate;
-
-				-moz-animation-name: movingBox;
-				-moz-animation-duration: 2300ms;
-				-moz-animation-iteration-count: infinite;
-				-moz-animation-direction: alternate;
-
-				-ms-animation-name: movingBox;
-				-ms-animation-duration: 2300ms;
-				-ms-animation-iteration-count: infinite;
-				-ms-animation-direction: alternate;
-
-				-o-animation-name: movingBox;
-				-o-animation-duration: 2300ms;
-				-o-animation-iteration-count: infinite;
-				-o-animation-direction: alternate;
-
-				animation-name: movingBox;
-				animation-duration: 2300ms;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-
-				width: 20px;
-				height: 4px;
-				background: #f1f1f1;
-				box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-			}
-
-			@-webkit-keyframes movingBox {
-			  0% {
-			    -webkit-transform: -webkit-translate(0, 0);
-			    transform: translate(0, 0);
-			    opacity: 0.3;
-			  }
-
-			  25% {
-			    opacity: 0.9;
-			  }
-
-			  50% {
-			    -webkit-transform: -webkit-translate(100px, 100px);
-			    transform: translate(100px, 100px);
-			    opacity: 0.2;
-			  }
-
-			  100% {
-			    -webkit-transform: -webkit-translate(30px, 30px);
-			    transform: translate(30px, 30px);
-			    opacity: 0.8;
-			  }
-			}
-
-			@-moz-keyframes movingBox {
-			  0% {
-			    -moz-transform: -moz-translate(0, 0);
-			    opacity: 0.3;
-			  }
-
-			  25% {
-			    opacity: 0.9;
-			  }
-
-			  50% {
-			    -moz-transform: -moz-translate(100px, 100px);
-			    opacity: 0.2;
-			  }
-
-			  100% {
-			    -moz-transform: -moz-translate(30px, 30px);
-			    opacity: 0.8;
-			  }
-			}
-
-			@-ms-keyframes movingBox {
-			  0% {
-			    -ms-transform: -ms-translate(0, 0);
-			    opacity: 0.3;
-			  }
-
-			  25% {
-			    opacity: 0.9;
-			  }
-
-			  50% {
-			    -ms-transform: -ms-translate(100px, 100px);
-			    opacity: 0.2;
-			  }
-
-			  100% {
-			    -ms-transform: -ms-translate(30px, 30px);
-			    opacity: 0.8;
-			  }
-			}
-
-			@-o-keyframes movingBox {
-			  0% {
-			    -o-transform: -o-translate(0, 0);
-			    opacity: 0.3;
-			  }
-
-			  25% {
-			    opacity: 0.9;
-			  }
-
-			  50% {
-			    -o-transform: -o-translate(100px, 100px);
-			    opacity: 0.2;
-			  }
-
-			  100% {
-			    -o-transform: -o-translate(30px, 30px);
-			    opacity: 0.8;
-			  }
-			}
-
-			@keyframes movingBox {
-			  0% {
-			    transform: translate(0, 0);
-			    opacity: 0.3;
-			  }
-
-			  25% {
-			    opacity: 0.9;
-			  }
-
-			  50% {
-			    transform: translate(100px, 100px);
-			    opacity: 0.2;
-			  }
-
-			  100% {
-			    transform: translate(30px, 30px);
-			    opacity: 0.8;
-			  }
-			}
-
-
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -282,46 +141,6 @@ body, html {
     background-color: transparent;
 }
 
-.btn1 {
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 11.5px;
-    font-family: calibri;
-    padding: 10px 10px 8px 10px;
-    margin: 0;
-    border: 2px solid #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-.btn1:hover {
-    background-color: #000000;
-    border-color: #000000;
-    color: #ffffff;
-}
-
-
-
-
-.btn2 {
-    background-color: #585858;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: ubuntu;
-    padding: 9px;
-    margin: 4px;
-    border: 2px solid #585858;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.btn2 a:hover {
-    opacity: 1;
-    background-color: #585858;
-    color: #ffffff;
-}
 
 .header {
   padding: 0;
@@ -331,112 +150,6 @@ body, html {
   display: block;
 }
 
-.topnav7 {
-  overflow: hidden;
-  background-color: transparent;
-  padding: 6px 10px 13px 10px;
-  width: 100%;
-  margin: 0;
-  float: center;
-}
-
-.topnav7 a {
-  float: center;
-  font-family: roboto,sans-serif;
-  color: #ffffff;
-  text-align: right;
- padding: 0 1px 4px 1px;
-  text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin: 0 6px 0 6px;
-}
-
-.topnav7 a:hover {
-  border-bottom: 2px solid #ffffff;
-  text-decoration: none;
-}
-
-.active {
-  background-color: transparent;
-  color: white;
-}
-
-
-.topnav7 .icon {
-  display: none;
-  padding: 8px 5px 0 5px;
-  margin: 0 6px 0 6px;
-}
-
-@media screen and (max-width: 1000px) {
-  .topnav7 a:not(:first-child) {display: none;}
-  .topnav7 a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .topnav7.responsive {position: relative;}
-  .topnav7.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .topnav7.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-
-.topnav71 {
-  overflow: hidden;
-  background-color: transparent;
-  padding: 0;
-  width: 100%;
-  margin: 0;
-}
-
-.topnav71 a {
-  float: center;
-  font-family: roboto,sans-serif;
-  color: #ffffff;
-  text-align: right;
-  padding: 0;
-  text-decoration: none;
-  font-size: 13px;
-  letter-spacing: .5px;
-  margin: 5px;
-}
-
-.topnav71 a:hover {
- border-bottom: 2px solid #ffffff;
-  text-decoration: none;
-}
-
-
-@media screen and (max-width: 1000px) {
-  .topnav71 a:not(:first-child) {display: none;}
-}
-
-@media screen and (max-width: 1000px) {
-  .topnav71.responsive {position: relative;}
-  .topnav71.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .topnav71.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 .columna {
     width: 50%;
@@ -631,7 +344,7 @@ body, html {
 </style>
 </head>
 <body style="background-color:#ffffff;padding:0;margin:0;">
-<div class="top-container" style="width:100%;padding:0;margin:0;">
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #585858;">
 <div class="bg-img" style="width:100%;padding:0;margin:0;">
  </div>
 <div class="container1">
@@ -726,24 +439,6 @@ body, html {
 </div>
 </div>
 </div>
-<script>
-function openTablink(TablinkName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(TablinkName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-
-document.getElementById("defaultOpen").click();
-</script>
 
 <br><br>
 <p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;padding:10px 10px 15px 10px;margin:0;">Go live within 72 hours of completing these steps.</p>
@@ -978,7 +673,29 @@ document.getElementById("defaultOpen").click();
 </div>
 </div>
 </div>
-<script type="e15b27296dd8c7b3eb2a8e38-text/javascript">
+
+
+<script>
+function openTablink(TablinkName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(TablinkName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<script>
 function openTab(tabName,elmnt,color) {
     var i, tabcontent1, tablink1;
     tabcontent1 = document.getElementsByClassName("tabcontent1");
@@ -998,19 +715,8 @@ document.getElementById("defaultOpen1").click();
 </div>
 </div>
 
-
-
-
 <center>
-<div class="box"></div>
-<script type="e15b27296dd8c7b3eb2a8e38-text/javascript">
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-52746336-1');ga('send','pageview');
-    </script>
+
 <img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:83%;">
 </div>
 
