@@ -202,43 +202,13 @@ img {
 
 .row,
 .row > .column {
-    padding: 0;
-    margin: 0;
-}
-
-.column {
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    float: left;
-}
-
-.column3 {
-    width: 49%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    float: left;
+    padding: 0 2.5px;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
-
-.content {
-    background-color: #ffffff;
-    padding: 0;
-    margin: 0;
-}
-.column2 {
-    float: left;
-    width: 75%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
 }
 
 @media (max-width: 900px) {
@@ -299,22 +269,10 @@ img {
 ::-webkit-scrollbar-thumb:hover {
     background: #d2d2d2; 
 }
+
 * {box-sizing: border-box;}
 .mySlides {display: none;}
-.mySlides1 {display: none;}
 img {vertical-align: middle;}
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.slideshow-container1 {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
 .text {
   color: #585858;
@@ -327,46 +285,8 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 1px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active {
   background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 8.2s;
-  animation-name: fade;
-  animation-duration: 8.2s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-	
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-.container {
-  width: 100%;
-  top: 250px;
-  float: center;
 }
 
 .mySlides {
@@ -375,16 +295,6 @@ img {vertical-align: middle;}
 
 .cursor {
   cursor: pointer;
-}
-
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 11px;
-  padding: 0;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .caption-container {
@@ -399,8 +309,6 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-
-/* Six columns side by side */
 .column {
   float: left;
   width: 12.499%;
@@ -409,7 +317,6 @@ img {vertical-align: middle;}
   display: inline;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
   border-radius: 1px;
@@ -422,8 +329,6 @@ img {vertical-align: middle;}
   }
 </style>
 </head>
-
-
 <body style="background-color:#ffffff;padding:0;margin:0;">
 <nav class="navbar navbar-default" style="width:100%;opacity:.97;border:none;padding:0;margin:0;">
  <div class="container-fluid" style="width:100%;border-radius:0 0 4px 4px;">
@@ -456,13 +361,10 @@ img {vertical-align: middle;}
       </div>
 </div>
 </nav>
-</div>
-</div>
-</div>
-</div>
+
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:98%;padding:30px 20px 0 20px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:90%;padding:30px 20px 0 20px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Photo Gallery</p>
 
 <!-- Grid 1-->
@@ -524,7 +426,7 @@ img {vertical-align: middle;}
       <img class="demo cursor" src="https://user-images.githubusercontent.com/25410880/40637238-a6d0b06e-62d1-11e8-8e93-ac16699bd64c.png" style="width:100%" onclick="currentSlide(3)" alt="Picture 3">
     </div>
     <div class="column">
-      <img class="demo cursor" src="https://user-images.githubusercontent.com/25410880/40697483-63257b16-6398-11e8-90ff-799b8a5a9641.png" style="width:100%" onclick="currentSlide(4)" alt="SpiralGroup.org Web Developer">
+      <img class="demo cursor" src="https://user-images.githubusercontent.com/25410880/40697483-63257b16-6398-11e8-90ff-799b8a5a9641.png" style="width:100%" onclick="currentSlide(4)" alt="Our Web Developer">
       </div>         
   
    <div class="column">
@@ -549,7 +451,6 @@ img {vertical-align: middle;}
 </div>
 </div>
 </div>
-	</div>
 </div>
 </div>
 	
@@ -602,9 +503,10 @@ function showSlides(n) {
 <p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:1px;">
 Ready to Grow with SpiralGroup?</p>
 
-<p align="center" style="font-family:ubuntu;font-size:16px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+<p align="center" style="font-family:ubuntu;font-size:14.5px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
 
-<p align="center" style="font-family:ubuntu;font-size:16px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:14.5px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
+</div>
 </div>
 </body>
 </html>
