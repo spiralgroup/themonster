@@ -178,116 +178,6 @@
 			  }
 			}
 
-img {
-    border-radius: 2px; 
-    max-width: 100%;
-    height: auto;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.row,
-.row > .column2 {
-    padding: 0;
-    margin: 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row,
-.row > .column {
-    padding: 0;
-    margin: 0;
-}
-
-.column {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    float: center;
-}
-
-.column3 {
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    float: left;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.content {
-    background-color: #ffffff;
-    padding: 0;
-    margin: 0;
-}
-.column2 {
-    float: left;
-    width: 75%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
-}
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;}
-
-}
-
-@media (max-width: 900px) {
-    .column3 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column3 {
-        width: 100%;
-        float: center;
-}
-}
-
-#accordion {
- max-width:100%;
- border: 0;
-}
-
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -308,6 +198,43 @@ img {
 .navbar {
 position: fixed;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+ }
+
 </style>
 </head>
 
@@ -353,20 +280,121 @@ position: fixed;
 <p align="center" style="padding:0;font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Get In Touch</p>
 
 <center>
-<div class="row" style="width:90%;padding:0;margin:0;background-color:transparent;">
+<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="CENTER" style="font-family:calibri;font-size:11px;letter-spacing:1.25px;color:#585858;0;text-shadow:0 1px 2px #cccccc;">ALLOW VISITORS TO CONTACT YOU.</p>
 
-<div class="w3-container w3-panel" style="width:98%;padding:10px 0 0 0;margin:0;">
-
-<!-- Grid 1-->
+<div class="w3-container w3-panel" style="width:100%;padding:8px 0 0 0;margin:0;">
 <center>
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 12px #f1f1f1;border-radius:4px;">
-<div class="column" style="padding:8px 0 0 0;margin:0;">
-<div class="content w3-panel" style="padding:0;margin:0;">
-<p align="center">
-<script type="text/javascript" defer src="//www.123formbuilder.com/embed/3274718.js" data-role="form" data-default-width="1000px"></script></p>
-	</div></div></div></div></div></div></div></div>
+<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+
+<div class="w3-container w3-panel" style="width:100%;padding:15px;margin:0;box-shadow:0 2px 66px #f1f1f1;border-radius:4px;">
+
+<div class="row">
+   <div class="column">
+    <div class="card">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/44305462-7ffa9680-a345-11e8-8ac8-34d538c7d481.png" style="width:50%;"></p><br>
+    
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
+Want to learn more about how SpiralGroup can help grow your Small Business?</p>
+<button type="button" class="w3-button w3-green" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal">Contact Sales</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <p align="center" class="modal-title" style="font-family:ubuntu;font-size:19px;letter-spacing:.50px;">Contact Sales</p>
+        </div>
+        <div class="modal-body">
+          <p align="justify" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>CONTACT US</b><br>
+If you have any questions about our Returns and Refunds Policy, please contact us either by phone (773-242-0705), or email (tech.support@spiralgroup.org).</p>
+
+<p><script type="text/javascript" defer src="//www.123formbuilder.com/embed/3274718.js" data-role="form" data-default-width="500px"></script></p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+        
+    <div class="column">
+    <div class="card">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/44305462-7ffa9680-a345-11e8-8ac8-34d538c7d481.png" style="width:50%;"></p><br>    
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
+Want to learn more about how SpiralGroup can help grow your Small Business?</p>
+<button type="button" class="w3-button w3-green" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal">Contact Sales</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <p align="center" class="modal-title" style="font-family:ubuntu;font-size:19px;letter-spacing:.50px;">Contact Sales</p>
+        </div>
+        <div class="modal-body">
+          <p align="justify" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>CONTACT US</b><br>
+If you have any questions about our Returns and Refunds Policy, please contact us either by phone (773-242-0705), or email (tech.support@spiralgroup.org).</p>
+
+<p><script type="text/javascript" defer src="//www.123formbuilder.com/embed/3274718.js" data-role="form" data-default-width="500px"></script></p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+
+ <div class="column">
+    <div class="card">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/44305462-7ffa9680-a345-11e8-8ac8-34d538c7d481.png" style="width:50%;"></p><br>    
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
+Want to learn more about how SpiralGroup can help grow your Small Business?</p>
+<button type="button" class="w3-button w3-green" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal">Contact Sales</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <p align="center" class="modal-title" style="font-family:ubuntu;font-size:19px;letter-spacing:.50px;">Contact Sales</p>
+        </div>
+        <div class="modal-body">
+          <p align="justify" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<b>CONTACT US</b><br>
+If you have any questions about our Returns and Refunds Policy, please contact us either by phone (773-242-0705), or email (tech.support@spiralgroup.org).</p>
+
+<p><script type="text/javascript" defer src="//www.123formbuilder.com/embed/3274718.js" data-role="form" data-default-width="500px"></script></p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 <center>
 <div class="box"></div>
@@ -378,18 +406,16 @@ position: fixed;
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-52746336-1');ga('send','pageview');
     </script>
-<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:83%;">
+<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:33%;">
 
 <center>
 <div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
-Ready to Grow with SpiralGroup?</p>
+Help Us Improve.</p>
 
 <p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
 
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Call 773 242-0705</p>
-</div>
-</div>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
 </div>
 </body>
 </html>
