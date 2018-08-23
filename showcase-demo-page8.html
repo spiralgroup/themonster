@@ -219,21 +219,12 @@ position: fixed;
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
  }
+}
 
 </style>
 </head>
@@ -276,28 +267,19 @@ position: fixed;
 </div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:98%;padding:80px 20px 0 20px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:80px 10px 0 10px;margin:0;">
 <p align="center" style="padding:0;font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Get In Touch</p>
 
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-
-<div class="w3-container w3-panel" style="width:100%;padding:8px 0 0 0;margin:0;">
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-
-<div class="w3-container w3-panel" style="width:100%;padding:15px;margin:0;box-shadow:0 2px 66px #f1f1f1;border-radius:4px;">
+<div class="w3-container w3-panel" style="width:100%;padding:4px;margin:0;">
 
 <div class="row">
    <div class="column">
-    <div class="card">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/44305460-7ec96980-a345-11e8-81cd-d817d174d272.png" style="width:80%;"></p><br>
+    <div class="w3-card w3-white w3-round" style="padding:1px 1px 10px 1px;box-shadow:0 2px 2px #f1f1f1;">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/40700097-08146d0a-63a6-11e8-917c-febfc86e2db1.png" style="width:100%;"></p>
     
 <p align="center" style="font-family:calibri,helvetica;font-size:14px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
-Want to learn more about our Small Business Solutions, and how we can help your organization?</p>
-<button type="button" class="w3-button w3-green" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal">CONTACT SALES</button>
+Learn more about how we can help your organization.</p>
+<button type="button" class="w3-button w3-pink" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal">CONTACT SALES</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -321,11 +303,11 @@ Want to learn more about our Small Business Solutions, and how we can help your 
 </div>
         
     <div class="column">
-    <div class="card">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/44305462-7ffa9680-a345-11e8-8ac8-34d538c7d481.png" style="width:55.9%;"></p><br>    
+<div class="w3-card w3-white w3-round" style="padding:1px 1px 10px 1px;box-shadow:0 2px 2px #f1f1f1;">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/40700093-0750e4ca-63a6-11e8-9803-a2d82567c8f2.png" style="width:100%;"></p>    
 <p align="center" style="font-family:calibri,helvetica;font-size:14px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
-Schedule a Free, 30-Minute Phone Session with a Small Business Operations Consultant.</p>
-<button type="button" class="w3-button w3-green" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal1">FREE CONSULTATION</button>
+Schedule a Free Phone Consultation.</p>
+<button type="button" class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal1">FREE CONSULTATION</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal1" role="dialog">
@@ -349,11 +331,11 @@ Schedule a Free, 30-Minute Phone Session with a Small Business Operations Consul
 </div>
 
  <div class="column">
-    <div class="card">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/44305461-7ffa9680-a345-11e8-97f8-8502998c4f2c.png" style="width:80%;"></p><br>    
+<div class="w3-card w3-white w3-round" style="padding:1px 1px 10px 1px;box-shadow:0 2px 2px #f1f1f1;">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/40700096-07eae0fc-63a6-11e8-9cc5-ffca0cdc5d05.png" style="width:100%;"></p>    
 <p align="center" style="font-family:calibri,helvetica;font-size:14px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
-Partner with us. Spiral Group, Inc. is a non-profit organization, and we need your support.</p>
-<button type="button" class="w3-button w3-green" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal2">BECOME A PARTNER</button>
+Partner with us. We need your support.</p>
+<button type="button" class="w3-button w3-blue" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" data-toggle="modal" data-target="#myModal2">BECOME A PARTNER</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal2" role="dialog">
@@ -388,7 +370,6 @@ Partner with us. Spiral Group, Inc. is a non-profit organization, and we need yo
 </div>
 </div>
 </div>
-
 
 <center>
 <div class="box"></div>
