@@ -9,7 +9,7 @@
 <!--<![endif]-->
 
 <head>
-<title>Introduction</title>
+<title>Merchant Agreement</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-signin-client_id" content="56351160455-c570ptgsu3e0oh49tn0q09c95q10kj3h.apps.googleusercontent.com">
@@ -38,16 +38,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <style type="text/css">
-img {
-    border-radius: 2px; 
-    max-width: 100%;
-    height: auto;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -65,57 +55,76 @@ img {
     background: #d2d2d2; 
 }
 
-.top-container {
-  background-color: transparent;
-  padding: 0 0 0 1px;
-  margin: 4px;
-  text-align: left;
-  float: left;
+
+* {
+  box-sizing: border-box;
 }
 
-
-.bg-img {
-    /* The image used */
-    background-image: url("https://user-images.githubusercontent.com/25410880/43352434-5bac948c-91f1-11e8-8be4-70130440d3c0.png");
-    min-height: 700px;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container1 {
-    position: absolute;
-    top: 360px;
-    left: 0;
-    margin: 0;
-    min-width: 100%;
+.column {
+    width: 100%;
+    background-color: #ffffff;
     padding: 0;
-    background-color: transparent;
+    margin: 0;
+    display: inline-block;
+    float: left;
 }
-.header {
-  padding: 0;
-  background: #ffffff;
-  color: #585858;
-  margin: 0;
-  float: left;
-  display: block;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+}
 }
 </style>
 </head>
 
-<body style="background-color:#ffffff;padding:0;margin:0;">
-<div class="top-container" style="width:100%;padding:0;margin:0 0 0 0;">
-<div class="bg-img" style="width:100%;padding:0;margin:0;">
- </div>
-<div class="container1">
-<p align="center" style="font-size:44px;font-family:kaushan script;color:black;letter-spacing:1.5px;text-shadow:0 1px 2px #c0c0c0;">SpiralGroup.org</p>
-<p align="center" style="font-family:ubuntu;font-size:21px;color:black;letter-spacing:1px;text-shadow:0 1px 2px #c0c0c0;">Online Marketing Solutions</p>
-<p align="center"><a class="w3-button w3-yellow" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:calibri;font-size:18px;letter-spacing:.5px;border-radius:4px;padding:8px 18px;margin:2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">Come Inside</a></p>
-</div>
-</div>
-<div class="header" id="myHeader" style="width:100%;margin:0;padding:0;opacity:.95;border-bottom:50px solid #a9a9a9;">
-</div>
+
+<body style="background-color:#000000;padding:0;margin:0;">
+<nav class="navbar navbar-inverse" style="width:100%;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <span class="navbar-toggle" style="border:0;font-size:11px;color:#ffffff;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Marketing Solutions</span> 
+      <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html" style="font-family:nova slim;font-size:17px;color:#ffffff;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
+    </div>
+       
+       <ul class="nav navbar-nav navbar-right">    
+        <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 18px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">Come Inside</a></li>
+      </ul>
+    </div>
+</nav>
+    
+
+<div class="w3-container">
+ <center>
+<div class="row" style="width:100%;">
+   <div class="column">
+    <div class="content" style="padding:0;margin:0;">
+   <iframe style="width:100%;" src="https://spiralgroup.github.io/themonster/intro_video.mp4" frameborder="0" height="437" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+  </div>
+  </div>  
 </body>
 </html>
