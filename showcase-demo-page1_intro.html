@@ -38,6 +38,145 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <style type="text/css">
+.box {
+				-webkit-animation-name: movingBox;
+				-webkit-animation-duration: 2300ms;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-direction: alternate;
+
+				-moz-animation-name: movingBox;
+				-moz-animation-duration: 2300ms;
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-direction: alternate;
+
+				-ms-animation-name: movingBox;
+				-ms-animation-duration: 2300ms;
+				-ms-animation-iteration-count: infinite;
+				-ms-animation-direction: alternate;
+
+				-o-animation-name: movingBox;
+				-o-animation-duration: 2300ms;
+				-o-animation-iteration-count: infinite;
+				-o-animation-direction: alternate;
+
+				animation-name: movingBox;
+				animation-duration: 2300ms;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+
+				width: 20px;
+				height: 4px;
+				background: #f1f1f1;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+			}
+
+			@-webkit-keyframes movingBox {
+			  0% {
+			    -webkit-transform: -webkit-translate(0, 0);
+			    transform: translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -webkit-transform: -webkit-translate(100px, 100px);
+			    transform: translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -webkit-transform: -webkit-translate(30px, 30px);
+			    transform: translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-moz-keyframes movingBox {
+			  0% {
+			    -moz-transform: -moz-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -moz-transform: -moz-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -moz-transform: -moz-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-ms-keyframes movingBox {
+			  0% {
+			    -ms-transform: -ms-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -ms-transform: -ms-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -ms-transform: -ms-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-o-keyframes movingBox {
+			  0% {
+			    -o-transform: -o-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -o-transform: -o-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -o-transform: -o-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@keyframes movingBox {
+			  0% {
+			    transform: translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    transform: translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    transform: translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -90,7 +229,6 @@
 </style>
 </head>
 
-
 <body style="background-color:#000000;padding:0;margin:0;">
 <nav class="navbar navbar-inverse" style="width:100%;">
   <div class="container-fluid">
@@ -100,14 +238,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-toggle" style="border:0;font-size:11px;color:#ffffff;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Marketing Solutions</span> 
+      <span class="navbar-toggle" style="border:0;font-size:11px;color:#ffffff;padding:11px 0 0 0;background-color:transparent;">Are You Ready?</span> 
       <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html" style="font-family:nova slim;font-size:17px;color:#ffffff;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
-       
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+                    </ul>
+         
+                 
        <ul class="nav navbar-nav navbar-right">    
-        <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 18px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">Come Inside</a></li>
-      </ul>
+        <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 18px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">Come Inside</a></li>
+        </ul>
     </div>
+  </div>
 </nav>
 
 <div class="w3-container">
@@ -121,5 +264,28 @@
   </div>
   </div>
   </div>
+<center>
+<div class="box"></div>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-52746336-1');ga('send','pageview');
+    </script>
+<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:33%;">
+
+<center>
+<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
+Showcase Your Small Business.</p>
+
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+
+<p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
+</div>
+</div>
+</div>
 </body>
 </html>
