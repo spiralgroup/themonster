@@ -9,7 +9,7 @@
 <!--<![endif]-->
 
 <head>
-<title>Merchant Agreement</title>
+<title>Assessment Tools</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-signin-client_id" content="56351160455-c570ptgsu3e0oh49tn0q09c95q10kj3h.apps.googleusercontent.com">
@@ -38,6 +38,184 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <style type="text/css">
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 27px;
+    font-family: kaushan script;
+    color: #585858;
+    letter-spacing: 1.25px;
+    float: center;
+}
+
+h3 {
+    font-family: ubuntu;
+    font-size: 16.5px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: left;
+ }   
+
+h3 a:hover {
+  border-bottom: 2px solid #000000;
+  text-decoration: none;
+}
+
+.row,
+.row > .column2 {
+    padding: 0 23px 0 23px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin: 1px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 1px;
+}
+
+.columna {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.contenta {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+.row,
+.row > .columna {
+    padding: 1px;
+}
+
+@media (max-width: 900px) {
+    .columna {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .columna {
+        width: 100%;
+        float: center;
+       }
+}
+
+.content {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+.columna {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.contenta {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.row,
+.row > .columna {
+    padding: 0;
+}
+
+@media (max-width: 900px) {
+    .columna {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .columna {
+        width: 100%;
+        float: center;
+       }
+}
+
+.column2 {
+    width: 32.5%;
+    margin: 0 10px 0 10px;
+    padding: 0;
+    display: inline-block;
+    float: center;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
+.row,
+.row > .column3 {
+    padding: 0 33px 0 33px;
+}
+
+.column3 {
+    width: 50%;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+       }
+}
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -55,19 +233,93 @@
     background: #d2d2d2; 
 }
 
-
-* {
-  box-sizing: border-box;
-}
-
 .navbar {
 position: fixed;
 }
+.mySlides {display:none;}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+ font-family: ubuntu;
+ letter-spacing: 1px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 58px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "brand": {
+    "@type": "Thing",
+    "name": "SpiralGroup.org"
+  },
+  "name": "Small Business Showcase",
+  "image": "https://user-images.githubusercontent.com/25410880/43629673-ede16696-96cb-11e8-8ad6-a888929d85a5.png",
+  "description": "Small Business Showcase Plans Starting at Only $13.79 per Month.",
+  "productId": "upc:SGSHOWCASE",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency" : "USD",
+    "lowPrice": "12.99",
+    "highPrice": "239.88",
+    "itemCondition": "new"
+  }
+}
+
+</script>
 </head>
 
+<body style="background-color:#ffffff;padding:0;margin:0;">  
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
 
-<body style="background-color:#ffffff;padding:0;margin:0;">
 <nav class="navbar navbar-default" style="width:100%;">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -76,7 +328,7 @@ position: fixed;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Marketing Solutions</span> 
+      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Assessment Tools</span> 
       <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -84,6 +336,7 @@ position: fixed;
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Products & Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
+	   <li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Solutions</a></li>
             <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Operational Assessment Tools</a></li>
             <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SG Gift Card</a></li>
             <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li>
@@ -100,189 +353,210 @@ position: fixed;
     </div>
   </div>
 </nav>
-    
+</div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides animate-right">
+ <img src="https://user-images.githubusercontent.com/25410880/46927855-a8c9a000-d005-11e8-8165-f64a738ac2a9.png" style="width:100%">
+  <div class="text">The Meech Rules</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/46927855-a8c9a000-d005-11e8-8165-f64a738ac2a9.png" style="width:100%">
+  <div class="text">We have more ways than ever to prepare you to achieve your objectives.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/46927855-a8c9a000-d005-11e8-8165-f64a738ac2a9.png" style="width:100%">
+  <div class="text">Test Caption Three</div>
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:80px 10px 0 10px;margin:0;">
-<p align="center" style="padding:0;font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 2px 2px #cccccc;">Merchant Agreement</p>
-
-<div class="w3-container w3-panel" style="width:100%;padding:12px 12px 0 12px;margin:0;">
-
-<div class="row w3-light-grey" style="width:100%;box-shadow:0 2px 2px #f1f1f1;border-radius:4px;padding:10px;margin:0;">
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-This is a contract between you and Spiral Group, Inc. which governs your use of the Small Business Showcase Pages Merchant Service. This Merchant Agreement is effective October 7, 2018 and may be amended at any time by posting the revised version on our website.<br><br>
-
-We are a not for profit organization; therefore, in exchange for the Small Business Showcase Pages Merchant Service we provide under this Agreement, we ask you to agree to the following:<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Enroll your Small Business into our <a href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html">Community Partners Program</a>.<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Provide monetary support to Help Us Reduce Recidivism either via our GoFundMe Campaign, or by authorizing us to deduct $5 from your sales proceeds per payout period (once every 30 days). Monies go toward the purchase of job ready documentation for individuals who may have lost these items due to incarceration &#151; birth certificates, high school diplomas, GED certificates, high school and college transcripts, government issued ID cards, website maintenance, and advertising and promotional efforts. <a href="https://www.gofundme.com/help-us-reduce-recidivism">Click here to learn more about our "Help Us Reduce Recidivism" GoFundMe Campaign</a>.</p>
-
-<hr />
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-<b>Applying for Small Business Showcase Pages.</b> For a business to begin using this service, it must be organized and operating in the State of Illinois.<br><br>
-
-Your Small Business Showcase Pages will allow you to:<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Sell your products and services online.<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Connect with local customers and increase brand awareness<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Book appointments<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Provide price quotes<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Receive customer feedback<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Display your company-related photos<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Offer discounts<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Onboard new employees<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Train your workforce<br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> And More.</p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-By accepting our terms, you agree to all the terms and conditions of this Agreement. You additionally represent that you are lawfully able to enter into this Agreement on your own behalf. Alternatively, if you are entering into this Agreement on behalf of a legal entity, you are indicating that you have the authority to bind such entity and that this Agreement is fully binding upon the entity.<br><br>
-
-You agree that throughout the Term of this Agreement that you have all requisite right, power, and authority to enter into this Merchant Agreement, perform your obligations, and grant the rights, licenses, and authorizations in this contract; that you are duly organized, validly existing, and in good standing under the laws of your jurisdiction of formation; and that you are duly qualified to do business and are in good standing in each jurisdiction where the conduct of your business, provision of Products and/or Services, or the ownership of your property requires such qualification.<br><br>
-
-If you are unable to fulfill your obligations under this Agreement, you agree to immediately notify Spiral Group, Inc., via e-mail and telephone, and take prompt action to remediate such failure.<br><br>
-
-To use the Spiral Group, Inc. Small Business Showcase Pages Merchant Service, you must complete the registration process via our online order form, which will require you to provide your legal name, business names, business mailing address, business telephone number, business e-mail address, and bank account information so that deposits to your account can be made. In addition, you are responsible for keeping your business mailing address, telephone number(s), e-mail address, and any other contact information up-to-date by contacting us, via e-mail and telephone, with information changes.<br><br>
-
-Spiral Group, Inc. shall determine, in its sole discretion, all aspects of the Spiral Group, Inc. Small Business Showcase Pages Merchant Services. This includes whether to cease providing any or all aspects of it; change its appearance; or alter its functionality.</p>
-
-<hr>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-<b>Small Business Showcase Pages.</b> As part of the Spiral Group, Inc. Small Business Showcase Pages Merchant Service, you are able to submit details for each Product and/or Service you offer for sale through your Small Business Showcase Pages. Although you may submit to us the Products and/or Services you want listed on your Small Business Showcase Pages &#151; via our online order form &#151; we reserve the right to reject any Product and/or Service you submit to us for listing. We also reserve the right to redact any Product and/or Service description you provide. If you discover any mistake, inconsistency, or typographical error in your listing, then please let us know [merchant-services@spiralgroup.org and 773-242-0705].<br><br>
-
-<b>Product and Services Information.</b> There is certain information about your Products and/or Services that we require you to provide as part of the listing process. You agree that such information is accurate. You are responsible for contacting your SpiralGroup Specialist to update all Products and/or Services information to ensure it remains accurate and complete at all times.<br><br>
-
-<b>Prohibited Products & Services.</b> You shall not provide any illegal or counterfeit Products and/or Services to be listed. Your Products and/or Services shall not violate Applicable Law &#151; this includes packaging, marking, and labeling; and shall not contain any pornographic, hate-related, violent content, or content that promotes discrimination based on race, sex, religion, nationality, disability, sexual orientation, or age. Additionally, we will not include any website links or honor requests that any website link of this kind be used on any Small Business Showcase Page. Because we allow you to sell your Products and/or Services via our PayPal&reg; Merchant Account, you also agree to adhere to <a href="https://www.paypal.com/us/webapps/mpp/ua/acceptableuse-full">PayPal's Acceptable Use Policy [Prohibited Activities Section]</a>.<br><br>
-
-<b>Online Terms.</b> All Products and/or Services will be advertised and sold in accordance with our Terms of Sale. It is your responsibility to routinely monitor and review the Online Terms to ensure your compliance with this Agreement.<br><br>
-
-<b>Order Processing.</b> We will process all sales of your Products and/or Services made through our website using PayPal&reg; and collect the Sales Proceeds on your behalf. <a href="https://www.paypal.com/us/webapps/mpp/ua/userAgreement-full#seller-protection">Click here to review the details of PayPal's Seller Protection Program</a>.<br><br>
-
-<b>Ineligible Items & Transactions.</b> Your sale is not eligible for coverage under PayPal’s Seller Protection program if:<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> It involves intangible, non-physical, items, including digital goods, and services.  Digital goods are delivered and used in an electronic format, like a song delivered online or through a mobile application.<br><br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> The buyer claims (either with us or their card issuer) that the item you sent isn’t what was ordered (referred to as a "Significantly Not as Described" claim).<br><br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> It involves an item that PayPal determines, in its sole discretion, is a counterfeit item.<br><br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> It involves an item that you deliver in person, including in connection with a payment made in your store location.<br><br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> It involves items equivalent to cash, including gift cards.<br><br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> It involves a donation.<br><br>
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> It relates to the purchase of a financial product or investment of any kind.<br><br>
-
-<b>Sales and Fulfillment.</b> You understand that you are solely responsible for and bear all risks of loss associated with all aspects of fulfilling your transactions, including sourcing, order retrieval, packaging products for shipment and delivery, and complying with all the information provided to the Purchaser regarding your Products and/or Services at the time of sale.<br><br>
-
-<b>In-Store Pick-Up.</b> In-Store Pick-Up purchases allow us to promote your physical retail store to local customers as a convenient pickup location for their purchases. Any inventory items that we list on your Small Business Showcase Pages must be immediately available for customer pick-up during your supported business hours. You must provide us with the complete address, hours and dates of operation, valid telephone number(s), e-mail address, special instructions regarding product pick-ups, and any exceptions. If any information related to an In-Store Pick-Up changes, you must promptly notify us, via e-mail and telephone, of such changes. If a Pick-Up Only Eligible Product is not picked up within seven (7) days, we will issue a full refund to the Purchaser.<br><br>
-
-<b>Product Delivery.</b> You are solely responsible for the Shipping and Handling for each of the Products listed on your Small Business Showcase Pages. For each transaction that you are shipping to the Purchaser, you must ship and deliver the products by the expected ship date and provide us with the shipping information including a tracking number. In the event a Purchaser is unsuccessful in their attepmts to track their item(s) or if they are unable to contact you, we will provide shipment tracking information to said Purchaser.<br><br>
-
-<b>Establishing Proof of Deivery or Proof of Shipment.</b> <a href="https://www.paypal.com/us/webapps/mpp/ua/userAgreement-full#spp-proof-delivery">Click here for details</a>.<br><br>
-
-<b>Signature Confirmation.</b> <a href="https://www.paypal.com/us/webapps/mpp/ua/userAgreement-full#table-purchase-protection-signature-conf">Click here for details</a>.<br><br>
-
-<b>Your Choice of Carrier and Shipment Options.</b> <a href="https://www.paypal.com/us/webapps/mpp/ua/userAgreement-full#table-purchase-protection-signature-conf">Click here for details</a>.<br><br>
-
-<b>Delivery Errors, Non-Conformities, Recalls.</b> You are solely responsible for correcting any delivery error or non-conformity of your Products and/or Services, including non-performance, non-delivery, mis-delivery, theft, mistakes in picking and/or packing your Product, or other mistake or act in connection with the fulfillment of your transactions.<br><br>
-
-<b>Refunds, Reversals, and Chargebacks.</b> <a href="https://www.paypal.com/us/webapps/mpp/ua/userAgreement-full#refunds-reversals-chargebacks">Click here for details</a>.<br><br>
-
-<b>Chargeback Fees</b> <a href="https://www.paypal.com/us/webapps/mpp/ua/userAgreement-full#chargeback-fees">Click here for details</a>.<br><br>
-
-<b>Defects & Product Recalls</b> You are also solely responsible for any legal notifications, refunds, replacements, or similar obligations, for defects in your Products and/or Services, including any public or private recalls, and will notify us, via e-mail and telephone, as soon as you have knowledge of any defects and/or potential recalls. You will also make reasonable efforts to work with any governmental agency to issue any notifications, refunds, replacements, or undertake any similar obligations, to the extent required by Applicable Law, and to notify customers of the same in a timely manner.<br><br>
-
-<b>Customer Service.</b> You are solely responsible for all customer service related to the Products and/or Services listed on your Small Business Showcase Pages, as well as your performance or non-performance of any of your obligations under this Agreement. You shall use all commercially reasonable efforts to respond to all customer complaints and inquiries submitted through your Spiral Group, Inc. Small Business Showcase Pages within 48 hours and submit to us, via e-mail and telephone, all customer complaints, inquiries, and your resolutions.<br><br>
-
-<b>Payment Terms.</b> Payments will be calculated twice a month, once for the period of time from the 1st-15th and again for the period of time from the 16th through the end of the applicable month. We will process payment thirty (30) days after the end of each Pay Period, provided that you understand that such remittance may be delayed if you change your bank account. Additionally, you authorize Spiral Group, Inc. to withhold fees from all Sales Proceeds you may owe to Spiral Group, Inc.<br><br>
-
-<b>Payment Method.</b> All payments to you will be remitted to your bank account through a banking network or by other means specified by us. All amounts contemplated under this Agreement shall be in U.S. Dollars. You agree to authorize Spiral Group, Inc. to initiate ACH [Automated Clearing House, an electronic banking network often used for direct deposit] credit transaction entries to your bank account. Only in the event of an error, you authorize Spiral Group, Inc. to initiate debit entry adjustments to your bank account to the extent necessary to correct any error. ACH payments may take up to five (5) business days to become available in your bank account after processing.<br><br>
-
-Furthermore, Spiral Group, Inc. shall have no obligation to advance amounts that have been paid to Spiral Group, Inc. by a Purchaser until you have complied with your obligations under this Agreement. If we reasonably believe that you have breached any provision of this Agreement, we may offset, delay, withhold, or suspend future payments to you.<br><br>
-
-<b>Transaction Limits.</b> You understand and agree that Spiral Group, Inc. may, in its sole discretion, impose transaction limits on some or all Purchasers using the Spiral Group, Inc. Small Business Showcase Pages Merchant Service, which may relate to either the number of transactions during a period of time or the cumulative value of purchases during a period of time.<br><br>
-
-<b>The Term of this Agreement.</b> This Agreement shall commence on the date you complete online registration, via our online order form, for use of the Spiral Group, Inc. Small Business Showcase Pages Merchant Service and will end when terminated in accordance with this Agreement.<br><br>
-
-<b>Termination.</b> Spiral Group, Inc. may terminate this Agreement at any time for any reason. Equally, you may terminate this Agreement at any time for any reason by contacting Spiral Group, Inc. via e-mail and telephone.<br><br>
-
-<b>Effect of Termination.</b> Termination of this Agreement or suspension of the Spiral Group, Inc. Small Business Showcase Pages Merchant Service shall not affect your obligations pertaining to your transactions, including fulfillment, delivery, returns, refunds, and/or recalls. Termination or suspension of the Spiral Group, Inc. Small Business Showcase Pages Merchant Service will not terminate or suspend any other service provided by Spiral Group, Inc. unless explicitly provided. Upon termination, all provisions of this Agreement intended or required to survive the termination or expiration of this Agreement in order to achieve its full effect, shall survive termination.<br><br>
-
-<b>Indemnification.</b> You must indemnify Spiral Group, Inc. for actions related to your Small Business Showcase Pages and your use of the Merchant Service. You agree to defend, indemnify, and hold Spiral Group, Inc. harmless from any claim or demand (including attorneys’ fees) made or incurred by any third party due to or arising out of your breach of this user Agreement, your improper use of the Spiral Group, Inc. Small Business Showcase Pages Merchant Service, your violation of any law or the rights of a third party and/or the actions or in-actions of any third party to whom you grant permissions to submit their Products and /or Services for listing on your Small Business Showcase Pages.<br><br>
-
-<b>Limitation of Liability.</b> Spiral Group, Inc.'s liability is limited with respect to your Small Business Showcase Pages Merchant Service. In no event shall we be liable for lost profits or loss of money; nor shall we be liable for loss of goodwill, reputation, or other intangible losses or any special, indirect, or consequential damages resulting directly or indirectly from the following:<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Your use of, or your inability to use, our websites, software, systems (including any networks and servers used to provide any of the Spiral Group, Inc. Small Business Showcase Pages Merchant Services) operated by us or on our behalf, or any of the Spiral Group, Inc. Services.<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Delays or disruptions in our websites, software, systems (including any networks and servers used to provide any of the Spiral Group, Inc. Small Business Showcase Pages Merchant Services) operated by us or on our behalf or any of the Spiral Group, Inc. Services.<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Viruses or other malicious software obtained by accessing our websites, software, systems (including any networks and servers used to provide any of the Spiral Group, Inc. Services) operated by us or on our behalf or any of the Spiral Group, Inc. Services, or any website or service linked to our websites.<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Glitches, bugs, errors, or inaccuracies of any kind in our websites, software, systems (including any networks and servers used to provide any of the Spiral Group, Inc. Services) operated by us or on our behalf, or any of the Spiral Group, Inc. Services, or in the information and graphics obtained from them.<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> The content, actions, or in-actions of third parties.<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> A suspension or other action taken with respect to your Spiral Group, Inc. Small Business Showcase Pages Merchant Service account.<br><br>
-
-<i class="fa fa-edit" style="font-size:11px;color:#585858"></i> Your need to modify your practices, content, or behavior, or your loss of or inability to do business, as a result of changes to this Merchant Agreement or Spiral Group, Inc. policies, or any special, incidental, or consequential damages (including damages for loss of data or loss of business) arising out of or in connection with our websites, software, systems (including any networks and servers used to provide the Spiral Group, Inc. Small Business Showcase Pages Merchant Services) operated by us or on our behalf, or this Merchant Agreement (however arising, including negligence), unless and to the extent prohibited by law. Our liability to you is limited to the actual amount of direct damages.<br><br> 
-
-<b>Disclaimer of Warranty and Release.</b> The Spiral Group, Inc. Small Business Showcase Pages Merchant Services are provided "AS-IS" and without any representation or warranty, whether express, implied, or statutory. Spiral Group, Inc. specifically disclaims any implied warranties of title, merchantability, fitness for a particular purpose, and non-infringement. Spiral Group, Inc. does not have any control over the Products and/or Services you, as a merchant, provide, and cannot ensure that any buyer will actually complete a transaction or is authorized to do so.<br><br>
-
-Although we will make reasonable efforts to ensure that your Small Business Showcase Pages are always operable and secure, we do not guarantee continuous and uninterrupted service. Nor do we guarantee secure access to any part of the Small Business Showcase Pages and operation of our websites, software, or systems operated by us or on our behalf, as any of these can be interfered with by numerous factors outside our control.<br><br>
-
-<b>Communications Between You & Us.</b> Spiral Group, Inc. may communicate with you about your Small Business Showcase Pages Merchant Service electronically. You will be considered to have received a communication from us, if it’s delivered electronically, 24 hours after the time we post it to our website and e-mail it to you. You will be considered to have received a communication from us, if it’s delivered by U.S. Postal Mail, 3 Business Days after we send it. Unless you're communicating with us about a matter where we've specified another notice address, written notices to Spiral Group, Inc. must be sent by electronic mail to: merchant-services@spiralgroup.org.<br><br>
-
-You understand and agree that, to the extent permitted by law, Spiral Group, Inc. may, without further notice or warning, monitor or record telephone conversations you or anyone acting on your behalf has with Spiral Group, Inc. or its agents for quality control and training purposes or for our own protection. You acknowledge and understand that while your communications with Spiral Group, Inc. may be overheard, monitored, or recorded, not all telephone lines or calls may be recorded by Spiral Group, Inc., and Spiral Group, Inc. does not guarantee that recordings of any particular telephone calls will be retained or retrievable.<br><br>
-
-<b>Rights &#124; Suspension & Termination Rights</b>. Spiral Group, Inc., in its sole discretion, reserves the right to suspend or terminate this Merchant Agreement and access to or use of our websites, software, and/or systems (including any networks and servers used to provide any of the Spiral Group, Inc. Small Business Showcase Pages Merchant Services) operated by us or on our behalf for any reason and at any time upon notice to you and upon termination of this Merchant Agreement.<br><br>
-
-<b>Taxes & Information Reporting</b> Our fees do not include any Taxes, levies, duties, or similar governmental assessments of any nature. It is your responsibility to determine what, if any, Taxes apply to the payments you make or receive, and it is solely your responsibility to assess, collect, report, and remit the correct Taxes to the appropriate authority. Spiral Group, Inc. is not responsible for determining whether any Taxes apply to your transactions, or for calculating, collecting, reporting, or remitting Taxes arising from any transaction. You acknowledge that we may make certain reports to Tax authorities regarding transactions that we process.<br><br>
-
-<b>Remittance.</b> We will remit to you any Taxes collected through our website as a result of your sales for you to submit to the appropriate Taxing authority. You agree to accept the amounts we remit to you as full satisfaction of our obligations, per your calculations at the time of completing the online order form for the Small Business Showcase Pages Merchant Service. Alternatively, Spiral Group, Inc. may, in its sole discretion, elect to collect Taxes from the Purchaser and remit Taxes directly to the appropriate Taxing authorities. If this election is made, Spiral Group, Inc. will specify the rate and Taxability applied to the Products and/or Services sold. Spiral Group, Inc. agrees to notify you if this election is made. Therefore, you agree to indemnify Spiral Group, Inc. of any Taxes, penalties, or interest that may be assessed upon Spiral Group, Inc. in connection with this Agreement.<br><br>
-
-<b>Post-Order Tax-Only Refunds &#124; Exempt Transactions.</b> If a Purchaser seeks a post-order Tax-only refund related to an exemption for Products and/or Services you fulfilled, you are responsible for both calculating and issuing refunds of all Taxes and other transaction-based charges.<br><br>
-
-<b>Transaction Taxes.</b> If applicable, Spiral Group, Inc. will calculate your Transaction Taxes using your most current business mailing address. You bear sole financial responsibility for any and all sales, use, excise, general, GST, or other similar Taxes, including any interest penalties and additions related thereto, imposed on or arising from the transactions contemplated by this Merchant Agreement between Spiral Group, Inc. and you. <br><br>
-
-<b>Tax Levies.</b> In the event Spiral Group, Inc. receives written notice of a validly issued state or federal Tax levy related to past-due Taxes that you owe, Spiral Group, Inc. may, in accordance with Applicable Law, deduct such amounts from payments due to you. Spiral Group, Inc. may be required by Tax authorities to withhold Taxes on your behalf. Therefore, Spiral Group, Inc. reserves the right to deduct any such Taxes from amounts due to you and remit them to the appropriate Tax authority. Spiral Group, Inc. may also be required to report the withholding Tax payments to the Tax authorities. Spiral Group, Inc. shall provide evidence of payment of withholding Taxes to you no later than sixty (60) days after payment of the withholding Taxes.<br><br>
-
-<b>Cooperation.</b> You and Spiral Group, Inc. agree to reasonably, and in good faith, cooperate and assist each other in determining and administering each party's collection and remittance responsibilities in connection with this Merchant Agreement and with any and all audits and/or reviews administered by Taxing authorities that may arise in connection with this Merchant Agreement.<br><br>
-
-<b>Confidential Information.</b> You shall take reasonable precautions to protect all Confidential Information and will only disclose Confidential Information to Third Party Merchants and your employees on a need-to-know basis. If you become aware of any unauthorized use or disclosure of Confidential Information, you shall promptly and fully notify Spiral Group, Inc. of all facts known to you concerning such unauthorized use or disclosure and shall cooperate with Spiral Group, Inc. so that Spiral Group, Inc. may seek a protective order or other appropriate remedies to protect such Confidential Information.<br><br>
-
-Furthermore, you will bear all associated expenses incurred by Spiral Group, Inc. to comply with Applicable Law (including any data breach laws) or arising from any unauthorized access or acquisition of Confidential Information while the same is in your possession. Upon Spiral Group, Inc.'s written request, you shall return to Spiral Group, Inc. all Confidential Information in your possession or control. You acknowledge and agree that a breach of your confidentiality obligations under this Merchant Agreement will entitle Spiral Group, Inc. to injunctive relief and a decree for specific performance and any other relief allowed under Applicable Law. Without limiting the foregoing, you agree that you shall not issue any press release or other public statement or make any social media posting relating to your relationship with Spiral Group, Inc. or this Merchant Agreement without the express prior written consent of Spiral Group, Inc.<br><br>
-
-<b>Spiral Group, Inc. IP [Intellectual Property].</b> You acknowledge and agree that Spiral Group, Inc. owns all rights, title, and interest in and to the Spiral Group, Inc. Websites, Spiral Group, Inc. Small Business Showcase Pages Merchant Service, the Spiral Group, Inc. name, logos, trademarks, domain name, all data collected through or from the Spiral Group, Inc. Small Business Showcase Pages Merchant Service (including Customer Data), and any software, technology, or tools used by Spiral Group, Inc. to promote, market, sell, generate, or distribute the Products and/or Services.<br><br>
-
-<b>Customer Data.</b> You may use Customer Data for the sole purpose of fulfilling your obligations under this Merchant Agreement (including shipping Products to Purchasers). You expressly agree that Spiral Group, Inc. owns all Customer Data and that any Customer Data that may be provided, hereunder, is being provided solely to fulfill your obligations and may not be used to enhance a file or list owned by you, any third party merchant, or any third party. You represent, warrant, and covenant that you will not, nor will you permit any third party merchant to resell, broker, or otherwise disclose any Customer Data to any third party, in whole or in part, for any purpose whatsoever. You agree that you will not copy or otherwise reproduce any Customer Data other than for the purpose of fulfilling your obligations in accordance with this Merchant Agreement.<br><br>
-
-Your use of Customer Data does not apply to any data supplied by a Purchaser directly to you, provided that you handle and use such Customer Data in compliance with Applicable Law and your posted privacy policy.<br><br>
-
-You shall immediately notify Spiral Group, Inc., via e-mail and telephone, if you become aware of, or suspect, any unauthorized access to, or use of, Customer Data and shall cooperate with us in the investigation of such unauthorized access or use and the mitigation of any damages related thereto. You shall bear all associated expenses incurred by Spiral Group, Inc. to comply with Applicable Law related to such unauthorized access or use, including any data breach laws while such data is in your reasonable possession or control. Upon termination or expiration of this Merchant Agreement, you shall, as directed by Spiral Group, Inc., either destroy or return to us all Customer Data in your possession.<br><br>
-
-<b>Feedback and Other Information.</b> If you provide Spiral Group, Inc. or any of our affiliates with feedback, suggestions, reviews, modifications, data, images, text, or other information or content, then you irrevocably assign to Spiral Group, Inc. all rights, title, and interest in and to feedback.<br><br>
-
-<b>Dispute Resolution &#124; Binding Arbitration.</b> Except as specifically stated herein, any dispute or claim between you and Spiral Group, Inc. arising out of, or relating in any way to, this Agreement shall be resolved exclusively by final, binding arbitration. By virtue of the Merchant Agreement to arbitrate, merchant (you) and Spiral Group, Inc. are each giving up the right to go to court and have a dispute heard by a judge or jury (except as otherwise set forth in this Merchant Agreement).<br><br>
-
-The provisions shall constitute yours and Spiral Group, Inc.'s written Agreement to arbitrate disputes under the Federal Arbitration Act. The arbitration will be administered by the American Arbitration Association and conducted before a single arbitrator pursuant to its applicable rules, including those applicable to Commercial Disputes. To begin an arbitration proceeding, you or Spiral Group, Inc. must comply with the limitations provision set forth in this Agreement and submit the dispute by making a demand for arbitration as detailed at http://www.adr.org.<br><br>
-
-<b>Class Action Waiver.</b> You and Spiral Group, Inc. each agree that disputes shall be arbitrated only on an individual basis and not in a class, consolidated, or representative action. Thus, both parties agree to arbitrate a dispute on an individual basis and waives the right to participate in a class action.<br><br>
-
-<b>Injunctive Relief.</b> Notwithstanding anything to the contrary in this Merchant Agreement, either party may bring suit in court seeking an injunction or other equitable relief arising out of or relating to claims that the other party's conduct may cause the other irreparable injury.<br><br>
-
-<b>Attorneys' Fees.</b> In the event Spiral Group, Inc. is the prevailing party in any dispute, subject to any exceptions in this Merchant Agreement, you shall pay to Spiral Group, Inc. all reasonable attorneys' fees and costs incurred by Spiral Group, Inc., including fees and costs on appeal.<br><br>
-
-<b>Marketing & Market Research.</b> Spiral Group, Inc. may communicate with you regarding products, services, and promotions that may be of interest to you. This may include e-mail or other communications. Spiral Group, Inc. may also solicit your opinion for market research purposes.<br><br>
-
-<b>Notices.</b> When you use the Spiral Group, Inc. Small Business Showcase Pages Merchant Service or send e-mails to Spiral Group, Inc., you are communicating with us electronically and consent to receive electronic communications related to your use of the Spiral Group, Inc. Small Business Showcase Pages Merchant Service. We will communicate with you by e-mail and/or by posting notices on the Spiral Group, Inc. websites. You agree that all agreements, notices, disclosures, and other communications that are provided to you electronically satisfy any legal requirement that such communications be in writing. Notices from us will be considered delivered to you and effective when sent to the e-mail address you provide through the Spiral Group, Inc. Small Business Showcase Pages Merchant Service Order Form or from which you otherwise e-mail us. You must send all notices and other communications relating to Spiral Group, Inc. Small Business Showcase Pages Merchant Service to merchant-services@spiralgroup.org.<br><br>
-
-<b>Relationship of the Parties.</b> Nothing in this Merchant Agreement is to be construed to create a partnership, joint venture, franchise, or agency relationship between Spiral Group, Inc. and you. Neither party may bind the other in any way whatsoever to anyone, except in accordance with the provisions of this contract.<br><br>
-
-<b>Waiver & Severability.</b> Any waiver of a provision of this Merchant Agreement shall not be deemed to waive or render consent to any subsequent similar act. Therefore, Spiral Group, Inc.'s failure to or delay in exercising a right, whether single or repeated, shall not be deemed to be a waiver of that right. If any provision of this Merchant Agreement should be held to be unenforceable or invalid, the validity and enforceability of the remaining provisions of this Merchant Agreement are not affected.<br><br>
-
-<b>Assignment.</b> You are not authorized to transfer or assign any rights or obligations under this Merchant Agreement, whether by operation of law or otherwise, without Spiral Group, Inc.'s prior written consent. However, Spiral Group, Inc. is authorized to transfer or assign this Merchant Agreement to a present or future affiliate or pursuant to a merger, consolidation, reorganization, or sale of all or substantially all the assets or business to which this Merchant Agreement relates, or by operation of law, without notice to you.<br><br>
-
-<b>Delegation.</b> If you delegate any obligation under this Merchant Agreement to a third party, you shall ensure that such third party has reviewed and agreed to uphold each term of this Merchant Agreement in full, including confidentiality obligations. You acknowledge and agree that you shall be fully liable for any non-compliance on the part of a third party. Before you disclose Confidential Information to a third party, such third party must sign a confidentiality agreement that requires it to protect the Confidential Information in the same manner specified in this Merchant Agreement.<br><br>
-
-<b>Disclaimer of Warranties.</b> Except as expressly stated in this Merchant Agreement, <b>Spiral Group, Inc. makes no other warranties, express or implied, and hereby disclaims all implied warranties, including any warranty of merchantability, warranty of fitness for a particular purpose,  or non-infringement. Spiral Group, Inc. and its affiliates do not warrant or guarantee that the services offered on or through the Spiral Group, Inc. Small Business Showcase Pages Merchant Service shall be uninterrupted or error-free; or that the promotion of your Products and/or Services will result in any revenue or profit for you.</b></p>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Introduction</p>
+<div class="row w3-card w3-pale-red" style="background-color:transparent;width:100%;padding:10px 0 0 0;margin:0;">
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row w3-pale-red" style="width:100%;padding:0;margin:0;">
+<div class="columna w3-pale-red" style="padding:0;margin:0;">
+<div class="contenta w3-pale-red" style="padding:8px 20px 0 20px;margin:0;">
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">WHAT WOULD YOU DO IF YOU HAD A CLEAR PICTURE OF HOW YOUR COMPANY WAS PERFORMING IN THE MARKETPLACE?<br><br>
+
+Determining the strengths of your business, its opportunities for growth and development, and how it performs against competitors doesn’t have to be an arduous undertaking.<br><br>
+
+Spiral Group's Business Assessments are designed to answer specific questions that progressive small business leaders need to know concerning every aspect of their operation.</p>
+<p align="left"><a class="w3-button w3-pale-blue" href="#how-it-works" style="font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin-top:15px;text-decoration:none;">CHECK IT OUT</a></p></div></div>
+<div class="columna w3-pale-red" style="padding:0;margin:0;">
+<div class="contenta w3-pale-red" style="padding:5px 0 0 0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/42121300-69d715ee-7bfa-11e8-9f1e-53d2e7a5d816.png" style="width:85.5%;vertical-align:top;" alt="sg1"></div></div>
 </div>
 </div>
+</div>
+</div>
+
+<center>
+<div class="row w3-pale-blue" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#000000;letter-spacing:1.5px;">
+Each Business Assessment Includes an In-Depth Strategic Management Plan.</p>
+</div></div></div>
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:30px 20px 0 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Realize Your Potential</p>
+<div class="row w3-card w3-light-grey" style="width:100%;padding:10px 0 0 0;margin:0;">
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="columna" style="padding:0;margin:0;">
+<div class="contenta w3-light-grey" style="padding:8px 20px 0 20px;margin:0;">
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">THIS IS A PROFITABLE TIME FOR MANY SMALL BUSINESSES.<br><br>
+
+Major corporations and consumers value companies that can meet their specialized needs. This is a great time for entrepreneurs to take advantage of opportunities to solve many stressful problems that . We work with you to build a company that can support the specialized needs of this growing market.<br><br>
+
+We work with you to reduce costs, improve efficiency, and outsource non-core services so that you can go to market with consistent and useful offerings. Whether your goal is to grow your company, or to discover ways to work more efficiently, our Small Business solutions can enable your organization to achieve its objectives.<br><br>
+
+<p align="left"><a class="w3-button w3-pale-green" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+<div class="columna w3-light-grey" style="padding:0;margin:0;">
+<div class="contenta w3-light-grey" style="padding:0;margin:0;"><img src="https://user-images.githubusercontent.com/25410880/42197592-851855c6-7e51-11e8-83f2-55db0d79cd77.png"style="width:80%;" alt="sg3"></div></div></div></div></div></div>
+
+<center>
+<div class="row w3-pale-green" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#000000;letter-spacing:1px;">Let's determine your level of growth preparedness in a 30-minute phone session.</p></div></div></div></div>
+
+<center>
+<div id="get-started" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Get Started</p>
+<center>
+<div class="w3-container w3-panel w3-pale-blue" style="width:100%;padding:0;margin:0;">
+<div class="row w3-card w3-pale-blue" style="width:100%;padding:0;margin:0;border-radius:4px 4px 0 0;">
+<div class="columna" style="width:100%;padding:0;margin:0;">
+<div class="contenta w3-pale-blue" style="padding:30px 20px 15px 20px;margin:0;">
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/42197592-851855c6-7e51-11e8-83f2-55db0d79cd77.png" style="width:36%;" alt="sg6"></p>
+<p align="center"><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">LET'S GET STARTED</a></p>
+</div>
+</div></div></div></div>
+
+<center>
+<div id="assessment-tools" class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
+We have more ways than ever to prepare you to achieve your objectives.</p></div>
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
+<div class="column2" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">create</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENTS</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">Your company has more growth potential than realized. If you want to grow and stabilize your company and discover ways to work more efficiently, our Business Assessment can help you achieve your goals.<br><br>
+Schedule a free phone session with a Business Operations Consultant.</p><br><br>
+<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+<div class="column2" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_paste</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MOCK HEALTH INSPECTIONS</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">We help you prepare for a City of Chicago Health Department inspection by working closely with you to ensure food safety. We develop systems that increase your chances of receiving a higher grade.<br><br>
+Let's discuss the benefits of increasing food safety awareness among your workforce.<br><br>
+<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+<div class="column2" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MYSTERY SHOP SERVICES</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">We can evaluate how your company delivers its products and services. Let us anonymously visit or call your locations to answer questionnaires designed to provide you with a customer's view of your operations.<br><br>
+We can customize a program that provides the insights you need to maintain Operational Excellence.<br><br>
+<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+<center>
+<div id="resources" class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
+Attract the kind of customer and employee your business deserves.</p></div>
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
+<div class="column2" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">HOW TO PROMOTE YOUR BUSINESS</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;"><font size="2"><b>BY SUSAN WARD</b></font></p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">
+You promote your business by getting the word out. The first axiom of business promotion is that you have to do this consciously. You can't rely on other people to do it for you, no matter how great your product or service is...</p>
+<p align="right">
+<a href="https://www.thebalancesmb.com/budget-friendly-business-promotion-2948441" i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</a></p>
+</div>
+</div>
+<div class="column2" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">NEED A BUSINESS CONSULTANT?</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;"><font size="2"><b>BY SUSAN WARD</b></font></p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">
+By nature most small business owners are hands-on DIY types that prefer to be involved in every aspect of their business, from deciding on the type of coffee machine to doing the company tax returns...</p>
+<p align="right">
+<a href="https://www.thebalancesmb.com/small-business-consulting-4140676" i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</a></p>
+</div>
+</div>
+<div class="column2" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">AFFORDABLE EMPLOYEE PERKS</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;"><font size="2"><b>BY SUSAN WARD</b></font></p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">
+Small businesses often can’t compete with the salaries or benefits that larger businesses or government employers can provide. But they can make up a lot of ground by offering perks to make working at their small business...</p>
+<p align="right">
+<a href="https://www.thebalancesmb.com/affordable-employee-perks-2948200" i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</a></p>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
+Ready to Grow with SpiralGroup?</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000);
+}
+</script>
 </body>
 </html>
