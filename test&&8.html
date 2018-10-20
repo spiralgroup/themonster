@@ -38,34 +38,153 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <style type="text/css">
+.box {
+				-webkit-animation-name: movingBox;
+				-webkit-animation-duration: 2300ms;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-direction: alternate;
+
+				-moz-animation-name: movingBox;
+				-moz-animation-duration: 2300ms;
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-direction: alternate;
+
+				-ms-animation-name: movingBox;
+				-ms-animation-duration: 2300ms;
+				-ms-animation-iteration-count: infinite;
+				-ms-animation-direction: alternate;
+
+				-o-animation-name: movingBox;
+				-o-animation-duration: 2300ms;
+				-o-animation-iteration-count: infinite;
+				-o-animation-direction: alternate;
+
+				animation-name: movingBox;
+				animation-duration: 2300ms;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+
+				width: 20px;
+				height: 4px;
+				background: #f1f1f1;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+			}
+
+			@-webkit-keyframes movingBox {
+			  0% {
+			    -webkit-transform: -webkit-translate(0, 0);
+			    transform: translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -webkit-transform: -webkit-translate(100px, 100px);
+			    transform: translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -webkit-transform: -webkit-translate(30px, 30px);
+			    transform: translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-moz-keyframes movingBox {
+			  0% {
+			    -moz-transform: -moz-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -moz-transform: -moz-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -moz-transform: -moz-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-ms-keyframes movingBox {
+			  0% {
+			    -ms-transform: -ms-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -ms-transform: -ms-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -ms-transform: -ms-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@-o-keyframes movingBox {
+			  0% {
+			    -o-transform: -o-translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    -o-transform: -o-translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    -o-transform: -o-translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
+			@keyframes movingBox {
+			  0% {
+			    transform: translate(0, 0);
+			    opacity: 0.3;
+			  }
+
+			  25% {
+			    opacity: 0.9;
+			  }
+
+			  50% {
+			    transform: translate(100px, 100px);
+			    opacity: 0.2;
+			  }
+
+			  100% {
+			    transform: translate(30px, 30px);
+			    opacity: 0.8;
+			  }
+			}
+
 * {
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 27px;
-    font-family: kaushan script;
-    color: #585858;
-    letter-spacing: 1.25px;
-    float: center;
-}
-
-h3 {
-    font-family: ubuntu;
-    font-size: 16.5px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    text-align: left;
- }   
-
-h3 a:hover {
-  border-bottom: 2px solid #000000;
-  text-decoration: none;
-}
-
 .row,
 .row > .column2 {
-    padding: 0 23px 0 23px;
+    padding: 0 13px 0 13px;
 }
 
 .row:after {
@@ -75,17 +194,12 @@ h3 a:hover {
 }
 
 .column {
-    width: 50%;
+    width: 100%;
     float: left;
     padding: 0;
     margin: 0;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .row {
     margin: 1px -16px;
@@ -95,39 +209,6 @@ h3 a:hover {
 .row > .column {
     padding: 1px;
 }
-
-.columna {
-    width: 50%;
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
-.contenta {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    border-radius: 2px;
-}
-.row,
-.row > .columna {
-    padding: 1px;
-}
-
-@media (max-width: 900px) {
-    .columna {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .columna {
-        width: 100%;
-        float: center;
-       }
-}
-
 .content {
     background-color: transparent;
     padding: 0;
@@ -135,40 +216,10 @@ h3 a:hover {
     border-radius: 2px;
 }
 
-.columna {
-    width: 50%;
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
-.contenta {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-.row,
-.row > .columna {
-    padding: 0;
-}
-
-@media (max-width: 900px) {
-    .columna {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .columna {
-        width: 100%;
-        float: center;
-       }
-}
 
 .column2 {
-    width: 32.5%;
-    margin: 0 10px 0 10px;
+    width: 33.0%;
+    margin: 0 1px 0 1px;
     padding: 0;
     display: inline-block;
     float: center;
@@ -216,6 +267,21 @@ h3 a:hover {
        }
 }
 
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -233,9 +299,37 @@ h3 a:hover {
     background: #d2d2d2; 
 }
 
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: ubuntu;
+  color: #ffffff;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 13px;
+margin: 0 5px 0 5px;
+}
+
+.nab a:hover {
+  color: white;
+}
+
+.topnav1 a:hover {
+  border-bottom: 2px solid #ffffff;
+  text-decoration: none;
+}
+
 .navbar {
 position: fixed;
 }
+
 .mySlides {display:none;}
 
 img {vertical-align: middle;}
@@ -247,11 +341,11 @@ img {vertical-align: middle;}
 }
 
 .text {
-  color: #f2f2f2;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 18px;
  font-family: ubuntu;
- letter-spacing: 1px;
-  padding: 8px 12px;
+ letter-spacing: .75px;
+   padding: 8px 12px;
   position: absolute;
   bottom: 58px;
   width: 100%;
@@ -289,9 +383,51 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+div.example {
+  background-color: transparent;
+  padding: 0;
 }
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 30px;
+    text-shadow: 3px 1px 3px #000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 17px;
+    text-shadow: 3px 1px 3px #000000;
+  }
+}
+
+
+div.example1 {
+  background-color: transparent;
+  padding: 0;
+}
+
+@media screen and (min-width: 601px) {
+  div.example1 {
+  font-family: kaushan script;
+    font-size: 74px;
+    letter-spacing: .5px;
+    color: #ff0000;
+    text-shadow: 0 1px 2px #585858;
+       }
+}
+
+@media screen and (max-width: 600px) {
+  div.example1 {
+   font-family: kaushan script;
+    font-size: 40px;
+    letter-spacing: .5px;
+    color: #ff0000;
+    text-shadow: 0 1px 2px #585858;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -315,12 +451,14 @@ img {vertical-align: middle;}
 }
 
 </script>
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc6999cddd6040011604ac8&product=social-ab' async='async'></script>
+
 </head>
 
 <body style="background-color:#ffffff;padding:0;margin:0;">  
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
 
-<nav class="navbar navbar-default" style="width:100%;">
+<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -328,7 +466,7 @@ img {vertical-align: middle;}
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Assessment Tools</span> 
+      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">What We Do</span> 
       <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -343,7 +481,7 @@ img {vertical-align: middle;}
              <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Free EP Tool-Kit&reg;</a></li>
           </ul>
          
-            <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Company Profile</a></li>
+            <li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Company Profile</a></li>
       </ul>
       
        <ul class="nav navbar-nav navbar-right">    
@@ -356,21 +494,26 @@ img {vertical-align: middle;}
 </div>
 
 
-<div class="slideshow-container">
+<div class="slideshow-container w3-card w3-light-grey" style="width:100%;padding:0;margin:0;">
 
-<div class="mySlides animate-right">
- <img src="https://user-images.githubusercontent.com/25410880/46927855-a8c9a000-d005-11e8-8165-f64a738ac2a9.png" style="width:100%">
-  <div class="text">The Meech Rules</div>
+<div class="mySlides animate-up">
+   <img src="https://user-images.githubusercontent.com/25410880/47245786-bba6f080-d3c8-11e8-9e8b-d07535cd4921.png" style="width:100%">
+  <div class="text example">HOW IS YOUR COMPANY PERFORMING?</div>
 </div>
 
 <div class="mySlides animate-right">
-   <img src="https://user-images.githubusercontent.com/25410880/46927855-a8c9a000-d005-11e8-8165-f64a738ac2a9.png" style="width:100%">
-  <div class="text">We have more ways than ever to prepare you to achieve your objectives.</div>
+ <img src="https://user-images.githubusercontent.com/25410880/47245786-bba6f080-d3c8-11e8-9e8b-d07535cd4921.png" style="width:100%;">
+  <div class="text example">IS IT PREPARED TO TAKE ON NEW CLIENTS?</div>
 </div>
 
 <div class="mySlides animate-right">
-   <img src="https://user-images.githubusercontent.com/25410880/46927855-a8c9a000-d005-11e8-8165-f64a738ac2a9.png" style="width:100%">
-  <div class="text">Test Caption Three</div>
+   <img src="https://user-images.githubusercontent.com/25410880/47245786-bba6f080-d3c8-11e8-9e8b-d07535cd4921.png" style="width:100%">
+  <div class="text example">WE CAN HELP YOU ACHIEVE YOUR GOALS.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47245786-bba6f080-d3c8-11e8-9e8b-d07535cd4921.png" style="width:100%">
+  <div class="text example1">spiralgroup.org</div>
 </div>
 </div>
 
@@ -380,162 +523,307 @@ img {vertical-align: middle;}
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Introduction</p>
-<div class="row w3-card w3-pale-red" style="background-color:transparent;width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 5px 0 5px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">What We Do</p>
+
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row w3-pale-red" style="width:100%;padding:0;margin:0;">
-<div class="columna w3-pale-red" style="padding:0;margin:0;">
-<div class="contenta w3-pale-red" style="padding:8px 20px 0 20px;margin:0;">
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">WHAT WOULD YOU DO IF YOU HAD A CLEAR PICTURE OF HOW YOUR COMPANY WAS PERFORMING IN THE MARKETPLACE?<br><br>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:12px 0 22px 0;">
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">create</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENTS</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">If you want to grow and stabilize your company and discover ways to work more efficiently, our Business Assessment can help you achieve your goals.<br><br>
 
-Determining the strengths of your business, its opportunities for growth and development, and how it performs against competitors doesn’t have to be an arduous undertaking.<br><br>
+<a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
+</div>
+</div>
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_paste</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MOCK HEALTH INSPECTIONS</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">We help you prepare for a City of Chicago Health Department inspection and develop systems that increase your chances of receiving a higher grade.<br><br>
 
-Spiral Group's Business Assessments are designed to answer specific questions that progressive small business leaders need to know concerning every aspect of their operation.</p>
-<p align="left"><a class="w3-button w3-pale-blue" href="#how-it-works" style="font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin-top:15px;text-decoration:none;">CHECK IT OUT</a></p></div></div>
-<div class="columna w3-pale-red" style="padding:0;margin:0;">
-<div class="contenta w3-pale-red" style="padding:5px 0 0 0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/42121300-69d715ee-7bfa-11e8-9f1e-53d2e7a5d816.png" style="width:85.5%;vertical-align:top;" alt="sg1"></div></div>
+<a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
+</div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MYSTERY SHOP SERVICES</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">We anonymously evaluate how your company delivers its products and services to provide you with a customer's view of your operations.<br><br>
+
+<a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
 </div>
 </div>
 </div>
 </div>
+</div>
 
 <center>
-<div class="row w3-pale-blue" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:17px;color:#000000;letter-spacing:1.5px;">
-Each Business Assessment Includes an In-Depth Strategic Management Plan.</p>
-</div></div></div>
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
+Local Marketing Services.</p></div></div></div>
+
+<div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
+<div class="column" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">ONLINE MARKETING SERVICES &#124; WEB DEVELOPMENT</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">You can use this space to announce jobs you’re seeking to fill and the benefits. Advertising with us provides the opportunity for you to reach some of the best candidates in the market.
+preparing for growth.
+-----------------------------------
+Growing your small business can be very exciting. If you don’t have a plan in place to keep pace with that growth it can also be very stressful. In our next few posts we are going to talk about some of the challenges that can arise as your company grows and provide some tips to help you prepare. You started your small business with a plan to succeed, now is the time to plan to exceed your expectations. Get ready to grow! And if you need help with growing pains, check out our free online inventory system. It's the best free online inventory system available and can handle nearly any inventory need that small businesses may have.
+
+Simple economics tells us that business success is based on supply and demand. In the beginning when there was little demand for your product or service you were probably able to handle supply on your own. As demand for your business grows there are several areas of your business that will have to grow as well to enable you to continue to meet your supply needs.
+
+Areas that need to grow with your small business:
+
+Inventory - Increased demand must be met with increased supply (hint: let our free online inventory system help!)
+Employees - Handling order increases may require hiring more staff
+Location - Your growing business can quickly outgrow your current location
+Infrastructure - From production to point of sale, you may need to update or upgrade your equipment
+Marketing - Build on the momentum you have going with improved marketing strategy
+Funding - “It takes money to make money”
+Vision - Your business goals can grow and change with your business
+marketing tool that can benefit your company. 
+
+ we will help you develop a plan for growing your small business. As you read this series, you will be able to identify the areas within your own business that need the most attention and create a plan that will allow you to continuously meet those needs. Watching your small business take off should be an exciting time and it is well worth celebrating. If you are prepared to handle that growth. you’ll be able to enjoy the experience more. Keep checking back with us as we continue this series full of helpful tips. And why not go ahead and get started using our free online inventory system today? It's awesome, mobile ready and super easy to use.
+-------------------------------------------
+
+Accomplish a multitude of marketing tasks in this section. Provide links to your Restaurant Menus & Flyers. Announce Fundraisers, Community Events, Workshops, and more.
+
+
+Your Small Business Showcase Pages will allow you to:
+
+ Sell your products and services online.
+ Connect with local customers and increase brand awareness
+ Book appointments
+ Provide price quotes
+ Receive customer feedback
+ Display your company-related photos
+ Offer discounts
+ Onboard new employees
+ Train your workforce
+ And More.
+
+WEBSITE DESIGN & DEVELOPMENT
+A restaurant or foodservice brand’s website is the cornerstone of their digital marketing effort. A modern web presence needs to be mobile-friendly, optimized for search engines, communicate the brand’s message and personality as well as perform marketing functions like driving registrations to marketing platforms or online ordering systems. MPP’s digital team are experts in modern web development and can design, develop and manage an effective website for your brand.
+
+
+Did you know about our Community Partners Program? Through our CPP, we're building mutually beneficial and strategic alliances. Support us in our mission while adding value to your company’s marketing and brand-building efforts. 
+
+the website can serve as an extension of your business card, with information about you, your business, and services offered. Most important, your website should detail your background, experience, and other credentials to give you credibility and give potential customers more confidence when deciding whether or not to deal with you.
+
+The first step is to decide what your website is going to do for you. It may be fairly static (i.e., no new content added periodically) and simply provide more information to potential clients about your services and credentials if they want to check you out online. Or, you may want to use it for information about your company and provide articles or information you've written to provide useful information to clients and potential clients.
+
+
+Many people dream of having their own online store, because let’s be honest, there’s nothing that beats making your dream come true! Online stores are a huge success across the globe, so don’t wait any longer. Grab this great opportunity!
+
+ 
+
+Not a tech whizz?
+Do terms like ‘HTML’ and ‘coding’ make your skin crawl? Don’t worry, you’re not alone! Luckily you don’t need any technical knowledge to set up your online store nowadays. Our system is, dare we say, entirely dummy-proof!
+
+ 
+
+Make sure you have a plan
+The key to a successful online store is usually a well-thought-out plan. But where do you start? We’ve made a little overview for you. And once you’ve set the wheels in motion, you can always rely on our Support team for additional help!
+
+Decide which product(s) you’d like to sell
+What’s an online store without products? Nothing of course! So first things first, consider what you’d like to sell. Are you keen on offering a niche product and do you aim to become the absolute expert in that field? Or would you rather offer a wide, varied range of different product types? Whatever you choose to do, always try to stand out!
+
+
+start adding your products accompanied by a detailed product description and clear product photos. Also highlight your bestsellers, for example in a photo slideshow. Last but not least, decide on the payment methods to offer to your customers. All payment methods are available to all of our customers,
+
+---------------------------------------------------
+
+Total dedication
+We offer so more than an online store builder. You can count on us for dedicated support! Our caring support team is always here to help our online merchants on their way to success. 
+
+ 
+
+Easy-to-use
+Not everyone has technical skills. With that in mind, we’ve created a dummy-proof solution. Moreover, feedback from our users allows us to make our software ever more user-friendly.
+
+ 
+
+Fun factor
+For many people, having their own online store is a dream come true. And we’re here to make it happen. The road to online success may be long, but we'd like to make it fun as well.
+
+COMMUNITY PARTNERS PROGRAM
+There are 3 ways to become a valued Community Partner — 1. Advertise with Us. Purchasing Ad Space automatically enrolls your company in our CPP. 2. In-Kind Resources. The kinds of products and services we can use that would allow us to continue providing free access to our premium online content to Job Seekers who qualify. Click here to learn more about our Community Outreach Program. 3. Apply to become a Community Partner now.
+
+Have you seen our Small Business Solutions for the Food Service Industry? We offer Operational Assessments and Strategic Management Plans, customized Mystery Shop Programs, Mock Health Inspections, and ServSafe® training & certificates. We help restaurateurs establish lean systems and processes, reduce operating costs, increase food safety awareness, and improve employee productivity.
+
+Yours isn't a food establishment? Most of our business solutions can be used across multiple industries. Click here to sign up for a free phone session to discover how.
+
+Check out our Yelp page for special discounts on our products and services.
+
+Among our solutions is the Strategic Management Plan. It transforms the Operational Assessment into steps that will move your business in a direction that increases profitability and encourages excellence among your workforce.
+
+Did you know about our Compliance and Risk Mitigation Tools? We help detect violations that could lead to legal liability for your company. Some legal requirements may not be obvious to your workforce.
+
+Let us train your workforce on their compliance and ethical responsibilities, and receive 25% off our Compliance & Risk Mitigation Tools.
+
+If you're seeking affordable Small Business Solutions and HR Tools, then we've got you covered. Let us help you formulate and implement a strategy that supports the needs of your market, and helps your business achieve its objectives.
+
+
+<br><br>
+
+<a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:30px 20px 0 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Realize Your Potential</p>
-<div class="row w3-card w3-light-grey" style="width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 10px 70px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
+Who We Are.</p></div></div></div>
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="columna" style="padding:0;margin:0;">
-<div class="contenta w3-light-grey" style="padding:8px 20px 0 20px;margin:0;">
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">THIS IS A PROFITABLE TIME FOR MANY SMALL BUSINESSES.<br><br>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
+<div class="column" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">create</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">SPIRAL GROUP, INC.</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">
+Spiral Group, Inc. is a not for profit organization providing free Employment Preparation and Performance Management Training for those willing to make a commitment to positive change. The company’s goal is to assist returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism. We're dedicated to helping this population of job seekers overcome many obstacles to employment by improving their organizational, time-management, decision-making, interviewing, and soft skills.<br><br>
 
-Major corporations and consumers value companies that can meet their specialized needs. This is a great time for entrepreneurs to take advantage of opportunities to solve many stressful problems that . We work with you to build a company that can support the specialized needs of this growing market.<br><br>
+
+
+THE RETURNING CITIZEN.<br>
+
+Michelle Jones, our Founder, began the process of seeking meaningful and gainful employment as soon as her release from the Logan Correctional facility in August 2014. she began creating her own job readiness training program in late September 2015. And because she had been enrolled in three well-known job readiness training programs, she knew that she would not make the same mistakes she encountered by administrators and instructors of these programs when building Spiral Group.<br><br>
+
+Her goal was to develop training modules pertinent to employment preparation and shorten the length of job readiness training, considerably. After many months of painstaking research; the development and subsequent revision of training modules; and the creation of a comprehensive website, in April 2016, Spiral Group, Inc. and SpiralGroup.org were born.<br><br>
+
+MORE ABOUT MICHELLE<br>
+
+Michelle Jones is a Certified ServSafe® Instructor and Registered Examination Proctor with over 25 years' experience in the foodservice industry as an hourly worker, general manager, trainer, and busines operations consultant. Spiral Group, Inc., provides onsite training for Illinois Food Service Workers and Managers.<br><br>
+
+Michelle has over twenty years’ experience (1984-2005) in the hospitality industry as an hourly worker, cashier supervisor, assistant manager, general manager, training manager, and franchise business operations consultant. She has worked with the following organizations: Subway, Portillo’s, Quiznos, Dock’s Great Fish, Burger King, Chili’s, Target, and Jeepers. She opened her first business, RMRC (Restaurant Materials Resource Center), in 1999 where she designed business documents, labels, and posters for the foodservice industry.<br><br>
+
+Michelle is also a web developer and ordained minister. She received her ordination on April 19, 2007.<br><br>
+
+<a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">CHECK ME OUT</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 10px 70px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
+A Profitable Time For Small Business.</p></div>
+<center>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
+<div class="column" style="padding:0 14px 0 14px;margin:0;">
+<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">create</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WHAT WOULD YOU DO?</p>
+<p align="left" style="color:#000000;letter-spacing:.5px;">
+WHAT WOULD YOU DO IF YOU HAD A CLEAR PICTURE OF HOW YOUR COMPANY WAS PERFORMING IN THE MARKETPLACE? Major corporations and consumers value companies that can meet their specialized needs. This is a great time for entrepreneurs to take advantage of opportunities to solve many stressful problems that . We work with you to build a company that can support the specialized needs of this growing market.<br><br>
 
 We work with you to reduce costs, improve efficiency, and outsource non-core services so that you can go to market with consistent and useful offerings. Whether your goal is to grow your company, or to discover ways to work more efficiently, our Small Business solutions can enable your organization to achieve its objectives.<br><br>
 
-<p align="left"><a class="w3-button w3-pale-green" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
-</div>
-</div>
-<div class="columna w3-light-grey" style="padding:0;margin:0;">
-<div class="contenta w3-light-grey" style="padding:0;margin:0;"><img src="https://user-images.githubusercontent.com/25410880/42197592-851855c6-7e51-11e8-83f2-55db0d79cd77.png"style="width:80%;" alt="sg3"></div></div></div></div></div></div>
+Determining the strengths of your business, its opportunities for growth, and how it performs against competitors doesn't have to be challenging.<br><br>
 
-<center>
-<div class="row w3-pale-green" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:17px;color:#000000;letter-spacing:1px;">Let's determine your level of growth preparedness in a 30-minute phone session.</p></div></div></div></div>
+According to Google, 97% of consumers use the web to search for local businesses – and if the vast majority of your potential customers are online, you should be, too. Having a strong online presence is a crucial component of your marketing strategy, no matter what size your business is or what industry it belongs to.
 
-<center>
-<div id="get-started" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 20px 0 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Get Started</p>
-<center>
-<div class="w3-container w3-panel w3-pale-blue" style="width:100%;padding:0;margin:0;">
-<div class="row w3-card w3-pale-blue" style="width:100%;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="columna" style="width:100%;padding:0;margin:0;">
-<div class="contenta w3-pale-blue" style="padding:30px 20px 15px 20px;margin:0;">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/42197592-851855c6-7e51-11e8-83f2-55db0d79cd77.png" style="width:36%;" alt="sg6"></p>
-<p align="center"><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">LET'S GET STARTED</a></p>
-</div>
-</div></div></div></div>
+An online presence is important for outbound marketing because it reinforces your brand and what you offer to your target market. Once you’ve communicated with your audience, you’ll need to have a web presence that helps portray why your product or service is so great – because that’s the next stop for the majority of your potential customers.
 
-<center>
-<div id="assessment-tools" class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
-We have more ways than ever to prepare you to achieve your objectives.</p></div>
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
-<div class="column2" style="padding:0 14px 0 14px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">create</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENTS</p>
-<p align="left" style="color:#000000;letter-spacing:.5px;">Your company has more growth potential than realized. If you want to grow and stabilize your company and discover ways to work more efficiently, our Business Assessment can help you achieve your goals.<br><br>
-Schedule a free phone session with a Business Operations Consultant.</p><br><br>
-<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
+It’s also vital for inbound marketing, because quality online content will help attract customers even if they haven’t heard of your brand.
+
+
+your website...
+All businesses, no matter how small, should have a website. It can be extremely basic, but it should contain the fundamental information customers – both existing and potential – need. For example, one frustration I encounter far too often is restaurants that don’t have a website with a current menu, opening hours, location and contact information. I know I’m not alone in that if I can’t find these details, I’m less likely to visit the restaurant – but there’s no reason a business should lose potential customers over something that’s so easy to remedy and costs very little.
+
+If you’re starting from scratch and not sure what your website should include, survey your existing customers. Whether you send out an email asking for their input, or mention it casually while making their coffee, it’s the best way to get the insight you need – people love to be involved and share their opinions.
+
+Search engine optimization
+Once you have a website, it’s vital that it can actually be found by search engines. After all, 89 percent of consumers use search engines to research a product, service or business before making a decision. To take advantage of this, you need to make sure to look at search engine optimization (SEO) for your website.
+
+In case you’re not completely sure what SEO means, how it works, or why it’s important, here’s a quick rundown:
+
+What: The purpose of SEO is to make it easy for search engines to find your website and list it in their ‘organic’ (as opposed to ‘paid’) results.
+Why: People tend to trust search engines, so websites that appear high in results pages are more likely to receive traffic.
+How: Using search-engine friendly methods to improve your website.
+Who: Everyone – anyone who has information that people want to find on the internet should be using SEO techniques.
+When: All the time – SEO is an ongoing process. It’s important to monitor the information on your website and make sure it’s current and correct. Search engines also love new content, which is why starting a blog can do wonders for your SEO.
+Where: Major search engines include Google, Yahoo and Bing. They connect people all over the world to the content they desire, from products to services to information.
+
+Social media
+Social media is an important part of your online presence that improves your chances of generating additional revenue and building customer loyalty. It allows customers, potential customers and other interested parties to engage easily via a channel that plays an important role in their everyday lives.
+
+Although not every social media channel will be relevant to each business, it’s definitely worth looking into your options. For example, Facebook and Twitter will serve a purpose for almost any business – it’s a great place to post news, tips, photos and videos and ask and answer questions.
+
+In addition to Facebook and Twitter, you might find Instagram, Google+, LinkedIn, YouTube, Pinterest, Tumblr, FourSquare helpful. Make sure to research available channels and find out if they will work for you. Instagram, for example, is a photo-sharing network, so it works wonderfully for businesses selling ‘beautiful’ products such as jewelry, food or housewares. It’s important to consider your target demographic – Instagram has around 130–150 million users, over two-thirds of which are women between the ages of 18 and 35. With Instagram, you’ll also need to keep a smartphone handy to properly access your account and engage with your audience.
+
+Once you’ve decided which social media channels to use, get a clear idea of the kind of content you can share. The more compelling and engaging your material is, the more likely your followers will like, comment and share your posts. Engagement is key to promoting your brand – not only will it make you more appealing to existing customers, the more positive social activity that goes on, the higher the chance is that their friends will be exposed to your brand and intrigued by what you have to offer.
+
+When they do this, they’re engaging with your brand and their networks (friends, family, colleagues) are seeing that engagement and may be prompted to check you out for their own needs.
+Our Business Assessments are designed to answer specific questions that progressive small business leaders need to know concerning every aspect of their operation. Each operational assessment includes an in-depth Strategic Management Plan.<br><br>
+
+<a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">GET STARTED</a></p>
 </div>
 </div>
-<div class="column2" style="padding:0 14px 0 14px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_paste</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MOCK HEALTH INSPECTIONS</p>
-<p align="left" style="color:#000000;letter-spacing:.5px;">We help you prepare for a City of Chicago Health Department inspection by working closely with you to ensure food safety. We develop systems that increase your chances of receiving a higher grade.<br><br>
-Let's discuss the benefits of increasing food safety awareness among your workforce.<br><br>
-<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
 </div>
-</div>
-<div class="column2" style="padding:0 14px 0 14px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MYSTERY SHOP SERVICES</p>
-<p align="left" style="color:#000000;letter-spacing:.5px;">We can evaluate how your company delivers its products and services. Let us anonymously visit or call your locations to answer questionnaires designed to provide you with a customer's view of your operations.<br><br>
-We can customize a program that provides the insights you need to maintain Operational Excellence.<br><br>
-<p align="left"><a class="w3-button" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="background-color:#000000;font-family:calibri;font-size:12px;letter-spacing:2.5px;color:#ffffff;border-radius:4px;padding:14px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
-</div>
-</div>
-</div>
-<center>
-<div id="resources" class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:80px 20px 70px 20px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:17px;color:#ffffff;letter-spacing:1.5px;">
-Attract the kind of customer and employee your business deserves.</p></div>
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:32px 0 22px 0;">
-<div class="column2" style="padding:0 14px 0 14px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">HOW TO PROMOTE YOUR BUSINESS</p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;"><font size="2"><b>BY SUSAN WARD</b></font></p>
-<p align="left" style="color:#000000;letter-spacing:.5px;">
-You promote your business by getting the word out. The first axiom of business promotion is that you have to do this consciously. You can't rely on other people to do it for you, no matter how great your product or service is...</p>
-<p align="right">
-<a href="https://www.thebalancesmb.com/budget-friendly-business-promotion-2948441" i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</a></p>
-</div>
-</div>
-<div class="column2" style="padding:0 14px 0 14px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">NEED A BUSINESS CONSULTANT?</p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;"><font size="2"><b>BY SUSAN WARD</b></font></p>
-<p align="left" style="color:#000000;letter-spacing:.5px;">
-By nature most small business owners are hands-on DIY types that prefer to be involved in every aspect of their business, from deciding on the type of coffee machine to doing the company tax returns...</p>
-<p align="right">
-<a href="https://www.thebalancesmb.com/small-business-consulting-4140676" i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</a></p>
-</div>
-</div>
-<div class="column2" style="padding:0 14px 0 14px;margin:0;">
-<div class="content w3-panel w3-white" style="padding:15px 20px 10px 20px;margin:16px 8px 16px 8px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">content_copy</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">AFFORDABLE EMPLOYEE PERKS</p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;"><font size="2"><b>BY SUSAN WARD</b></font></p>
-<p align="left" style="color:#000000;letter-spacing:.5px;">
-Small businesses often can’t compete with the salaries or benefits that larger businesses or government employers can provide. But they can make up a lot of ground by offering perks to make working at their small business...</p>
-<p align="right">
-<a href="https://www.thebalancesmb.com/affordable-employee-perks-2948200" i class="material-icons" style="color:#000000;font-size:39px;text-shadow:2px 2px 2px #cccccc;">arrow_right</a></p>
 </div>
 </div>
 </div>
 
 <center>
-<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
-Ready to Grow with SpiralGroup?</p>
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
+<div class="box"></div>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-52746336-1');ga('send','pageview');
+    </script>
+
+<center>
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:40px 0 0 0;border-radius:2px 2px 0 0;">
+<p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
+Grow with SpiralGroup.</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+<p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;"> Call 773 242-0705</p>
+ <div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
 </div>
+</div>
+</div>
+
+<center>
+<div class="w3-panel w3-black" style="width:100%;padding:0;margin:0;">
+<hr />
+</div>
+
+<div class="nab topnav1" style="width:100%;background-color:#000;padding:0 0 20px 0;margin:0;">
+  <a href="#home">Privacy Statement</a>
+  <a href="#news">Terms of Use</a>
+  <a href="#partners">Partners</a>
+  <a href="#contact">Become A Community Partner</a>
+</div>
+</div>
+
 
 <script>
 var slideIndex = 0;
@@ -555,8 +843,9 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 8000);
+    setTimeout(showSlides, 5000);
 }
 </script>
+
 </body>
 </html>
