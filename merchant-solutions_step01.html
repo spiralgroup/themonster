@@ -20,12 +20,34 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<style type="text/css">
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-<style>
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style type="text/css">
 
 img {
     border-radius: 0; 
@@ -279,6 +301,33 @@ body, html {
   float: left;
   border-bottom: 1px solid #ccc;
 }
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: calibri;
+  color: #ffffff;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 14px;
+margin: 0 5px 0 5px;
+}
+
+.nab a:hover {
+  color: white;
+}
+
+.topnav1 a:hover {
+  border-bottom: 2px solid #585858;
+  text-decoration: none;
+}
+
 
 </style>
 </head>
@@ -298,7 +347,7 @@ body, html {
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <center>
-<div id="step1" class="w3-container w3-panel w3-white" style="width:94%;padding:30px 20px;margin:0;">
+<div id="step1" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 10px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Step 1</p>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;box-shadow:0 2px 6px #f1f1f1;">
 
@@ -306,7 +355,7 @@ body, html {
 
 <center>
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:15px 10px 0 10px;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px;margin:0;border-radius:4px;">
 </div></div></div>
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;border-bottom:10px solid transparent;">
@@ -396,12 +445,12 @@ body, html {
 </div>
 
 <br><br>
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;padding:10px 10px 15px 10px;margin:0;">Go live within 7 days of completing these steps.</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;padding:5px;margin:0;">Pages go live within 7 business days.</p>
 </div>
 
 <div class="row" style="width:100%;padding:10px 0 0 0;margin:0;box-shadow:0 1px 1px #f1f1f1;background-color:transparent;">
 
-<p align="center" style="font-family:ubuntu;font-size:12px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">To learn more about a category, tap the label. To select a category, tap the image. Questions? Call 773 242-0705.</p></div>
+<p align="center" style="font-family:ubuntu;font-size:12px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">To learn more about a category, tap the label. To select a category, tap the image.</p></div>
 
 <div class="row" style="width:100%;padding:18px 12px 2px 12px;margin:0;">
 <div class="column">
@@ -669,16 +718,12 @@ document.getElementById("defaultOpen").click();
 
 
 <center>
-<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:33%;">
-
-<center>
-<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
-Have Questions?</p>
-
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
-
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Call 773 242-0705</p>
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:40px 0 0 0;border-radius:2px 2px 0 0;">
+<p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
+Questions?</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+<p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;">Call 773 242-0705</p>
+</div>
 </div>
 </div>
 </body>
