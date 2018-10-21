@@ -20,12 +20,35 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<style type="text/css">
-<!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-<style>
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style type="text/css">
 
 img {
     border-radius: 0; 
@@ -298,7 +321,7 @@ body, html {
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <center>
-<div id="step6" class="w3-container w3-panel w3-white" style="width:94%;padding:30px 20px;margin:0;">
+<div id="step6" class="w3-container w3-panel w3-white" style="width:100%;padding:30px 10px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Step 6</p>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;box-shadow:0 2px 6px #f1f1f1;">
 
@@ -306,7 +329,7 @@ body, html {
 
 <center>
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:15px 10px 0 10px;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px;margin:0;border-radius:4px;">
 </div></div></div>
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;border-bottom:10px solid transparent;">
@@ -406,13 +429,10 @@ body, html {
 <div class="row" style="width:100%;padding:14px 12px 2px 12px;margin:0;">
 <p align="left" style="font-family:ubuntu;font-size:14px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
 <b>The Next 7 Business Days</b><br>
-During this time period, please be prepared to work closely with us so that we can publish your Small Business Showcase Pages within the next 7 business days.<br><br>
+During this time period, please be prepared to work closely with us so that we can publish your Small Business Showcase pages within the next 7 business days.<br><br>
 
 <b>Verification</b><br>
 We will contact you within 24 hours, using the telephone number you provided to verify the information submitted.<br><br> 
-
-<b>Additional Showcase Items</b><br>
-Be prepared to provide any additional Showcase Items during the Verification process.<br><br>
 
 <b>Our Very Own Small Business Showcase Pages</b><br>
 If you haven't done so already, you're invited to <a href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html">click here to check out our very own Small Business Showcase pages.</a></p>
@@ -445,16 +465,12 @@ document.getElementById("defaultOpen").click();
 
 
 <center>
-<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:33%;">
-
-<center>
-<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
-Have Questions?</p>
-
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
-
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Call 773 242-0705</p>
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:40px 0 0 0;border-radius:2px 2px 0 0;">
+<p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
+Questions?</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+<p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;">Call 773 242-0705</p>
+</div>
 </div>
 </div>
 </body>
