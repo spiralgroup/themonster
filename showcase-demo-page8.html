@@ -37,6 +37,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
 <style type="text/css">
 .box {
 				-webkit-animation-name: movingBox;
@@ -205,14 +206,12 @@ position: fixed;
 
 .column {
   float: left;
-  width: 50%;
-  padding: 0 10px;
+  width: 49%;
+  padding: 0;
+  margin: 0;
 }
 
-.row {margin: 0 -5px;}
-
 .row:after {
-  content: "";
   display: table;
   clear: both;
 }
@@ -221,8 +220,41 @@ position: fixed;
     .column {
         width: 100%;
         float: center;
-        margin: 0 0 10px 0;
- }
+  }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+  }
+}
+
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: calibri;
+  color: #ffffff;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 14px;
+margin: 0 5px 0 5px;
+}
+
+.nab a:hover {
+  color: white;
+}
+
+.topnav1 a:hover {
+  border-bottom: 2px solid #585858;
+  text-decoration: none;
 }
 
 </style>
@@ -264,55 +296,45 @@ position: fixed;
 </nav>
 	
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:100px 10px 0 10px;margin:0;">
-<p align="center" style="padding:0;font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Get In Touch</p>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:100px 12px 0 12px;margin:0;">
+<p align="center" style="padding:0;font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Contact Us</p>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row">
-  <div class="column">
-  <div class="w3-card w3-white w3-round" style="padding:0;box-shadow:0 2px 2px #f1f1f1;">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/40700097-08146d0a-63a6-11e8-917c-febfc86e2db1.png" style="width:100%;"></p></div></div>
- 
-  <div class="column" style="padding:10px;margin:4px 0 0 0;">
-    <div class="w3-card w3-white w3-round" style="padding:10px 10px 4px 10px;box-shadow:0 2px 2px #f1f1f1;">  
-<p align="left" style="padding:0 0 4px 0;margin:0;font-family:calibri,helvetica;font-size:19px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
-<b>SALES</b></p>
-<p align="left" style="padding:0 0 22px 0;margin:0;font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;background-color:#f5f5f5;">
+<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 1px 1px #f1f1f1;border-radius:4px;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/40700097-08146d0a-63a6-11e8-917c-febfc86e2db1.png" style="width:100%;" alt="sg1"></div>
+
+<div class="column" style="padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;">
+GET IN TOUCH WITH SALES</p>
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">
 Learn more about how our Business Solutions can help your company.</p>
 
 <p align="left">
-<button class="w3-button w3-pale-yellow" style="border-radius:4px;padding:10px 14px;"><a href="javascript:void( window.open( 'https://form.jotform.com/82838028547163', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) " style="font-family:calibri,helvetica;font-size:14.5px;color:#000000;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;text-decoration:none;">CONTACT SALES</a></button></p>
-</div>
-</div>
+<button class="w3-button w3-red" style="border-radius:4px;padding:10px 14px;"><a href="javascript:void( window.open( 'https://form.jotform.com/82838028547163', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) " style="font-family:calibri,helvetica;font-size:14.5px;letter-spacing:1px;text-decoration:none;">CONTACT SALES</a></button></p>
 
-<div class="column" style="padding:10px;margin:5px 0 0 0;">
-   <div class="w3-card w3-white w3-round" style="padding:10px 10px 4px 10px;box-shadow:0 2px 2px #f1f1f1;">  
-<p align="left" style="padding:0 0 4px 0;margin:0;font-family:calibri,helvetica;font-size:19px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
-<b>FREE CONSULTATION</b></p>
-<p align="left" style="padding:0 0 22px 0;margin:0;font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
+<hr />
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;">
+GET IN TOUCH WITH SALES</p>
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">
+
 Sign up for a Free Phone Session with an Operations Consultant.</p>
 
 <p align="left">
-<button class="w3-button w3-pale-yellow" style="border-radius:4px;padding:10px 14px;"><a href="javascript:void( window.open( 'https://form.jotform.com/82323651984159', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) " style="font-family:calibri,helvetica;font-size:14.5px;color:#000000;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;text-decoration:none;">FREE CONSULTATION</a></button></p>
-</div>
-</div>
+<button class="w3-button w3-red" style="border-radius:4px;padding:10px 14px;"><a href="javascript:void( window.open( 'https://form.jotform.com/82323651984159', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) " style="font-family:calibri,helvetica;font-size:14.5px;letter-spacing:1px;text-decoration:none;">FREE CONSULTATION</a></button></p>
 
-<div class="column" style="padding:10px;margin:5px 0 0 0;">
-<div class="w3-card w3-white w3-round" style="padding:10px 10px 4px 10px;box-shadow:0 2px 2px #f1f1f1;">  
-<p align="left" style="padding:0 0 4px 0;margin:0;font-family:calibri,helvetica;font-size:19px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
-<b>COMMUNITY PARTNER</b></p>
-<p align="left" style="padding:0 0 22px 0;margin:0;font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">
+<hr />
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;">
+GET IN TOUCH WITH SALES</p>
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;">
+
 Become one of our Community Partners. We need your support.</p>
 
 <p align="left">
-<button class="w3-button w3-pale-yellow" style="border-radius:4px;padding:10px 14px;"><a href="javascript:void( window.open( 'https://form.jotform.com/82838930647166', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) " style="font-family:calibri,helvetica;font-size:14.5px;color:#000000;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;text-decoration:none;">BECOME A PARTNER</a></button></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<button class="w3-button w3-red" style="border-radius:4px;padding:10px 14px;"><a href="javascript:void( window.open( 'https://form.jotform.com/82838930647166', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) " style="font-family:calibri,helvetica;font-size:14.5px;letter-spacing:1px;text-decoration:none;">BECOME A PARTNER</a></button></p>
 </div>
 </div>
 </div>
@@ -329,16 +351,25 @@ Become one of our Community Partners. We need your support.</p>
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-52746336-1');ga('send','pageview');
     </script>
-<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:33%;">
-
 <center>
-<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
-Help Us Improve.</p>
-
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
-
-<p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:70px 0 0 0;border-radius:2px 2px 0 0;">
+<p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
+Give Us Your Feedback.</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+<p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;"> Call 773 242-0705</p>
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
+</div>
+</div>
+</div>
+<center>
+<div class="w3-panel w3-black" style="width:100%;padding:0;margin:0;">
+<hr style="width:100%;height:2px;border-width:0;background-color:#585858">
+</div>
+<div class="nab topnav1" style="width:100%;background-color:#000;padding:0 0 20px 0;margin:0;">
+<a href="#privacy">Privacy Policy</a>
+<a href="#terms">Terms of Use</a>
+<a href="#partners">Partners</a>
+</div>
 </div>
 </body>
 </html>
