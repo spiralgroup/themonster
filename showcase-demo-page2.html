@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" class="no-js">
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
@@ -8,7 +9,7 @@
 <!--<![endif]-->
 
 <head>
-<title>Company Profile</title>
+<title>About Us</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-signin-client_id" content="56351160455-c570ptgsu3e0oh49tn0q09c95q10kj3h.apps.googleusercontent.com">
@@ -177,6 +178,107 @@
 			  }
 			}
 
+* {
+    box-sizing: border-box;
+}
+
+.row,
+.row > .column2 {
+    padding: 0 13px 0 13px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 99%;
+    float: center;
+    padding: 0;
+    margin: 0 1px 0 1px;
+    display: inline-block;
+}
+
+.row,
+.row > .column {
+    padding: 0 13px 0 13px;
+}
+
+.content1 {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+
+.column2 {
+    width: 33.0%;
+    margin: 0 1px 0 1px;
+    padding: 0;
+    display: inline-block;
+    float: center;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
+.row,
+.row > .column3 {
+    padding: 0 33px 0 33px;
+}
+
+.column3 {
+    width: 50%;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -194,28 +296,161 @@
     background: #d2d2d2; 
 }
 
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: calibri;
+  color: #ffffff;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 14px;
+margin: 0 5px 0 5px;
+}
+
+.nab a:hover {
+  color: white;
+}
+
+.topnav1 a:hover {
+  border-bottom: 2px solid #585858;
+  text-decoration: none;
+}
+
 .navbar {
 position: fixed;
 }
 
-* {
-  box-sizing: border-box;
+.mySlides {display:none;}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: 0;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.text {
+  color: #ffffff;
+  font-size: 18px;
+ font-family: ubuntu;
+ letter-spacing: .75px;
+   padding: 8px 12px;
+  position: absolute;
+  bottom: 38px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.example {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 26px;
+    text-shadow: 3px 1px 3px #000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 15px;
+    text-shadow: 3px 1px 3px #000000;
+  }
+}
+
+
+div.example1 {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+  div.example1 {
+  font-family: kaushan script;
+    font-size: 64px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+       }
+}
+
+@media screen and (max-width: 600px) {
+  div.example1 {
+   font-family: kaushan script;
+    font-size: 40px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+  }
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+#more {
+display: none;
+}
+
+#more1 {
+display: none;
 }
 
 .row,
 .row > .column1 {
     padding: 0;
-    margin: 10px 0 10px 0;
+    margin: 5px;
 }
 
 .column1 {
-    width: 32.95%;
+    width: 32%;
     padding: 4px;
     margin: 0 2px 0 2px;
     display: inline-block;
@@ -250,11 +485,36 @@ position: fixed;
 }
 
 </style>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "brand": {
+    "@type": "Thing",
+    "name": "SpiralGroup.org"
+  },
+  "name": "Small Business Showcase",
+  "image": "https://user-images.githubusercontent.com/25410880/43629673-ede16696-96cb-11e8-8ad6-a888929d85a5.png",
+  "description": "Small Business Showcase Plans Starting at Only $13.79 per Month.",
+  "productId": "upc:SGSHOWCASE",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency" : "USD",
+    "lowPrice": "13.79",
+    "highPrice": "254.40",
+    "itemCondition": "new"
+  }
+}
+</script>
+
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc6999cddd6040011604ac8&product=social-ab' async='async'></script>
+
 </head>
 
+<body style="background-color:#ffffff;padding:0;margin:0;">  
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
 
-<body style="background-color:#ffffff;padding:0;margin:0;">
-<nav class="navbar navbar-default" style="width:100%;">
+<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -262,133 +522,287 @@ position: fixed;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Who We Are</span> 
-      <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
+      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">About Us</span> 
+      <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Products & Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
-	   <li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Solutions</a></li>
-            <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Operational Assessment Tools</a></li>
-            <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SG Gift Card</a></li>
-            <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li>
-             <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Free EP Tool-Kit&reg;</a></li>
+	        <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li><br>
+            <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">The SG Gift Card</a></li><br>
+    <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Free EP Tool-Kit&reg;</a></li><br>
+       <li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Solutions</a></li><br>
+      <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Operational Assessment Tools</a></li>
           </ul>
          
-            <li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Company Profile</a></li>
+            <li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About</a></li>
+            <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li>
       </ul>
       
        <ul class="nav navbar-nav navbar-right">    
-        <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 18px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">Contact Us</a></li>
-   <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 18px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">The SG MarketPlace</a></li>
+        <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 14px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">Contact</a></li>
+   <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 14px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">SG MarketPlace</a></li>
       </ul>
     </div>
   </div>
 </nav>
+</div>
+
+
+<div class="slideshow-container w3-card w3-light-grey" style="width:100%;padding:0;margin:0;">
+
+<div class="mySlides animate-right">
+ <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%;">
+  <div class="text example">Are You Ready To Grow Your Small Business?</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+  <div class="text example">We Can Help Your Company Prepare For Growth.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+  <div class="text example1">spiralgroup.org</div>
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:80px 10px 0 10px;margin:0;">
-<p align="center" style="padding:0;font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 2px 2px #cccccc;">Company Profile</p>
-
-<div class="w3-container w3-panel" style="width:100%;padding:12px 12px 0 12px;margin:0;">
-
-<div class="row" style="width:100%;box-shadow:0 2px 2px #f1f1f1;border-radius:4px;padding:10px;margin:0;">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/43552661-6104868a-95b9-11e8-876a-0f9ad9d68c4d.png" style="width:70%;"></p><br>
-    
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-WHAT WOULD YOU DO IF YOU HAD A CLEAR PICTURE OF HOW YOUR COMPANY WAS PERFORMING IN THE MARKETPLACE?</p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-Determining the strengths of your business, its opportunities for growth and development, and how it performs against competitors doesn’t have to be an arduous undertaking. Spiral Group’s Business Operations Assessments are designed to answer specific questions that progressive small business leaders need to know concerning every aspect of their operation.</p><br><br>
-
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-MANY SMALL BUSINESSES HAVE GREATER GROWTH POTENTIAL THAN REALIZED.</p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-Our goal is to help our clients build companies that can support the needs of their markets. We work with our clients to refine infrastructure, establish systems and processes, reduce costs, increase efficiency, outsource non-core services, and go to market with solid, consistent, and useful offerings. We leverage our process to help small business owners assess their current position. We use this data to create a feasible plan of action so that we can assist with building an exceptional company.<br><br>
-
-Our small business solutions are designed and implemented to enable your organization to achieve its objectives. Whether your goal is to grow or stabilize your company, or discover ways to work more efficiently, Spiral Group’s Small Business Operations Assessments will enable your organization to achieve its objectives.</p><br><br>
-
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-THIS IS AN AUSPICIOUS TIME FOR ENTREPRENEURS.</p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-Both major corporations and consumers value small businesses that can adeptly meet their specialized needs. This is a great time for entrepreneurs to take advantage of these profitable opportunities to solve many stressful problems.</p><br><br>
-
-<hr />
-
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-WHO WE ARE.</p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-Spiral Group, Inc. is a not for profit organization providing free Employment Preparation and Performance Management Training for those willing to make a commitment to positive change. The company’s goal is to assist returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism. We're dedicated to helping this population of job seekers overcome many obstacles to employment by improving their organizational, time-management, decision-making, interviewing, and soft skills.</p><br><br>
-
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-THE RETURNING CITIZEN.</p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-Michelle Jones, our Founder, began the process of seeking meaningful and gainful employment as soon as her release from the Logan Correctional facility in August 2014. However, because of the parole restrictions and other prohibitive stipulations set forth by the parole board, her quest for immediate employment was short-lived. The numerous ineffective and time consuming activities required by the parole board caused her to become despondent and she thought about re-offending on a few occasions.<br><br>
-
-<b>The Hardin House</b><br>
-In addition, she was placed in a recovery home due to homelessness. This is a standard practice for people who have been released from jail or prison and have no other housing options -whether or not recovery is required. The first recovery home, Hardin House located on Chicago's southside, was consumed with bedbugs, brown and white cockroaches, lice, mice, rats, and live mold. The ceiling in the bathroom on the first level had caved in while she was a resident there. Causing the contents of the flushed toilet on the second level to drain into the first floor's bathroom.<br><br>
-
-Daily meetings - NA, AA, CA, and PA - were required for everyone to attend. Whether they abused narcotics, alcohol, or cocaine. Even if you had no prior experience as a prostitute, residents had to attend these mandatory meetings and listen to the ridiculously candid testimonies of anyone willing to "anonymously" share their secrets about heinous acts and sycophancy that should be taken to their graves. In addition, the owner of Hardin House, Kathy Hardin, forced all the residents to illegally turn over their link cards (SNAP Benefits) as additional payment for being residents of the government funded recovery program. Needless to say, Michelle had been restricted to a recovery environment that was not at all conducive to recovery. (Kathy Hardin was unable to be found for several hours when Michelle went to retrieve her link card when she exited the program. The day Michelle left, there was over $100 remaining on her link card, when Kathy Hardin finally gave it back, she had depleted the card of its funds.)<br><br>
-
-<b>The Gateway Kedzie House</b><br>
-As a result, on November 2, 2014, just three months after her release, Michelle and her parole agent decided that she be placed in a different recovery environment. One that would allow her to flourish and experience some semblance of recovery from the stalking and electronic harassment she incessantly endured by Joe Soto of Chicago's V103 and Clear Channel, which lead to her 2.5 year incarceration.<br><br>
-
-The place was the Gateway Kedzie House, located on Chicago's northwest side. After exposure to recovery-related activities at the second recovery home, Michelle began rebuilding her life from within and imagining how she could utilize her skills and previous work and life experiences to make a necessary contribution to society. She decided to return to the hospitality industry as either a manager, operations consultant, or trainer. This meant she had to regain the industry’s required certifications. So, she set out to do just that.<br><br>
-
-While a resident at the Gateway Kedzie House, Michelle was encouraged by her peers to seek the support and resources that Re-Entry programs provide. Most of these programs are funded by the government, and are supposed to assist the returning citizen (ex-offender) with successful re-entry back into society. These programs are, according to their mission and vision statements, structured to reduce an ex-offender's inclination toward recidivism by helping them find meaningful and gainful employment and by procuring housing.<br><br>
-
-<b>The Safer Foundation</b><br>
-The first program Michelle attended was a 5-day job readiness training program at the Safer Foundation. Unfortunately, neither did the Safer Foundation assist Michelle with obtaining meaningful employment, nor did they help procure any housing. (Later, Michelle discovered that, according to the Chicago Housing Authority, people who are making attempts to re-enter society after incarceration cannot and will NEVER be able to be housed with their assistance &#151; unless they have been incarcerated for prostitution, drugs, or gun possession.)<br><br>
-
-Michelle soon realized that her previous work experience and skill set had made one of the African-American job readiness instructors employed by the Safer Foundation uncomfortable. Most of Michelle's previous work experience was challenged, negated, and belittled by the instructor. She was adamant about NOT including Michelle's work experience and skill set on the resume she lackadaisically compiled for Michelle. In fact, during one of the classes, the instructor realized that Michelle had more experience than she and made a comment that Michelle could likely execute the duties of her own position if given the opportunity. Not surprisingly, that opportunity &#151; and none like it with the Safer Foundation &#151; was never provided. Nevertheless, since Michelle had lost everything as a result of her incarceration, she used that resume and began to build on it until it reflected her entire skill set and work history.<br><br>
-
-<b>The Tabitha House</b><br>
-Meanwhile, Michelle had to leave the Gateway Kedzie House because the time allotted (four months) by the parole board had come to an end. Michelle, facing homelessness again, was told about a better living environment by an intern instructor she had befriended while enrolled in the three-week job readiness training program at the Michael Barlow Center. [<a href="https://github.com/spiralgroup/themonster/files/2321893/From.Tabitha.House.Resident.Michelle.A.Jones.pdf">CLICK HERE TO READ ABOUT THE ABUSE MICHELLE AND OTHERS ENDURED WHILE A RESIDENT AT TABITHA HOUSE, LOCATED ON CHICAGO'S WEST SIDE.</a>
-
-SOME FAMOUS AND WEALTHY PEOPLE, INCLUDING MAJOR CORPORATIONS, PUBLICLY SUPPORT THIS TABITHA HOUSE WHICH IS AN HSI RECOVERY PROGRAM. FOX 32'S DARLENE HILL IS ONE OF THEM AND SO IS BARACK OBAMA. BY THE WAY, NO ONE EVER DID ANYTHING ABOUT THE ABUSE, AND THE LETTER THAT YOU CAN DOWNLOAD USING THE LINK PROVIDED, WAS SENT TO DONALD DEW, CEO OF HSI.]<br><br>
-
-<b>The Greater Chicago Food Depository</b><br>
-In April 2015, Michelle began her job seeking quest, again. But to no avail. She believed the gaps in her work history, reflected on her resume, disqualified her from the managerial job opportunities for which she applied. As a result, Michelle decided to apply at the Greater Chicago Food Depository's Culinary program so that she could regain her FSSMC. However, Michelle was dismayed again. The African-American female responsible for testing and assisting ex-offenders with entry into this program had conducted an interview with Michelle after she passed the initial exams. She appeared upset and was cynical when discussing Michelle's examination scores &#151; Michelle had passed the exams with flying colors. Apparently, this had never happened before. As a result, Michelle's intelligence was being questioned. During the interview, she had one of her Caucasian, male colleagues join us.<br><br>
-
-Illegally, she began questioning Michelle about why she had been incarcerated, but Michelle discussed the ordeal as best she could. When it was revealed that the so-called victim was Joe Soto of Chicago's V103, she became visibly upset that I would accuse him of stalking me. She asked me why would someone famous choose to stalk someone like me. I told her that she would have to ask him because there is NO way that I would be able to answer any questions regarding the mentality and intentions of another. As a result, she told me that I should submit any documents I may have received from psychiatrists and other mental health providers if The Greater Chicago Food Depository's Culinary Arts program would even consider her as a candidate. The program director told Michelle that her criminal past was a major obstacle. The program that was created to assist ex-offenders. Michelle did not go back to the facility after that conversation.<br><br> 
-
-<b>EDDR Corporation</b><br>
-In June 2015, Michelle enrolled in a different job readiness training program, one that seemed better suited to her career goals &#151; EDDR Corporation &#151; while a resident at HSI's Tabitha House. However, after a few days of attendance, Michelle realized she was becoming disillusioned by these government and corporate funded job readiness training programs. The items highlighted in the program’s flyer, those that piqued her interest, were well out of reach. A pattern of luring ex-offenders into their programs to deliver non-existent services was emerging. Each of the Job Readiness Training programs and Re-Entry Services Providers, whose core services were that of assisting returning citizens with re-entry services, housing, and gainful employment were just a cover for these companies to extract monies and other resources from wealthy persons, the government, and major corporations.<br><br>
-
-Oh well. Michelle decided to simply complete the EDDR Culinary training program to pass time, because none of these organizations were really going to help anyone but themselves. Besides, we never had any culinary training. After approximately two weeks into the program, the instructor resigned due to lack of pay (the government monies on which the program depended to operate were cut). Michelle saw this as a Divine Opportunity, and convinced the program’s executive director to allow her to fill in for the instructor &#151; for free. After three weeks without pay, Michelle began receiving $100 per week as an intern instructor for approximately five weeks. She assisted many of the program’s participants with acquiring their food handler’s certifications by developing a training course and program curriculum. According to their website, EDDR claims to be proficient in the areas of Instructional Design, Change Management, Course Evaluation, Curriculum Development, Project Management, Training Development & Training, Technical Writing, and Research though Goldie (their CEO) never provided any of the items for which they claim to be their areas of specialty to Michelle when she was her intern instructor.<br><br>
-
-<b>The Michael Barlow Center</b><br>
-The Michael Barlow Center, also funded and supported by the government, wealthy persons, and major corporations, was just as unethical and cynical in their approach to assisting ex-offenders re-enter society. Enrollees interested in acquiring their FSSMC credentials had to endure the Culinary Chef's unprofessionalism, mediocre knowledge, and emotional abuse. When disgusted by the extreme unprofessionalism, Michelle brought it to the attention of the persons in charge of that program. The director, a Caucasian female and avid Cubs fan, only suggested that Michelle dismiss herself from the Culinary Arts program so she would no longer have to endure Chef Toni's barbaric and sometimes salacious behavior [she is a gay woman and held large orange carrots in her hand in a lude and lascivious manner while conducting class on two occasions.]<br><br>
-
-Michelle believed that when the director of the program dismissed her claims by offering her the 'solution' of resigning from the program was her way of saying "Chef Toni remains and if you nigg** ex-offenders don't like it, then you can just exit this program." Well, unfortunately, Michelle did just that. Several weeks later, Michelle was told that she could bypass Chef Toni and enroll in the FSSMC program, instead, in an effort to receive the Food Service Sanitation Manager Certification. Although this was the Michael Barlow's Center's way of saving face, this is the course she had wanted to complete all along. So, she took the Director of the MBC up on her offer. Michelle attended the free classes and regained her FSSMC within a few days, for both the city of Chicago and state of Illinois on March 20, 2015. But, being a high achiever, she didn’t stop there. She became a certified ServSafe&reg; Instructor a few months later, and a registered examination proctor many, many months after that.</p><br><br>
-
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-<b>SPIRAL GROUP'S INCEPTION</b></p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-While enrolled as a student in their culinary arts program, Michelle was learning a lot about how EDDR operated and began dreaming of having her own NFP one day. After a mutual decision to depart from the organization that gave her the chance to be an intern instructor, she began creating her own job readiness training program in late September 2015. And because she had been enrolled in three well-known job readiness training programs, she knew that she would not make the same mistakes she encountered by administrators and instructors of these programs when building Spiral Group.<br><br>
-
-Her goal was to develop training modules pertinent to employment preparation and shorten the length of job readiness training, considerably. After many months of painstaking research; the development and subsequent revision of training modules; and the creation of a comprehensive website, in April 2016, Spiral Group, Inc. and SpiralGroup.org were born.</p><br><br>
-
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-<b>MORE ABOUT MICHELLE</b></p>
-
-<p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-Michelle has over twenty years’ experience (1984-2005) in the hospitality industry as an hourly worker, cashier supervisor, assistant manager, general manager, training manager, and franchise business operations consultant. She has worked with the following organizations: Subway, Portillo’s, Quiznos, Dock’s Great Fish, Burger King, Chili’s, Target, and Jeepers. She opened her first business, RMRC (Restaurant Materials Resource Center), in 1999 where she designed business documents, labels, and posters for the foodservice industry.<br><br>
-
-Michelle is also a web developer, mystic, cartomancer, and ordained minister. She received her ordination on April 19, 2007. Since 1994, she has been a student of Astrology, Mysticism, Magic, Mythology, Theosophy, Numerology, Gnosticism, Hermeticism, the Nordic Runes, Egyptian Hieroglyphs, and other Occult Sciences. From 2009-2012, she taught basic lessons in astrology online. Additionally, Michelle has revised a profound work on the Hermetic Teachings, but chose to use a pseudonym.</p><br><br>
-
-<p align="center" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 1px #585858;">
-<b>SONGS THAT INSPIRE MICHELLE</b></p>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 0 0 0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">What We Do</p>
+</div>
+</div>
+</div>
 
 <center>
-<!-- Portfolio Gallery Grid -->
+<div class="w3-container w3-panel w3-card" style="background-color:#f5f5f5;width:100%;padding:50px 10px 40px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#585858;letter-spacing:1.5px;">
+Online Marketing.</p></div></div></div>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:12px 0 22px 0;">
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">SMALL BUSINESS SHOWCASE PAGES</p>
+
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Our Small Business Showcase pages are mobile-friendly and allows you to perform a multitude of business tasks.<br><br>
+
+You can sell your products and services online, book appointments, provide price quotes, receive customer feedback, offer discounts, and create some of the most amazing deals.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">GET STARTED</a></p>
+</div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">THE COMPETITION</p>
+
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Unlike our competitors, you'll never have to worry about building and maintaining your Showcase pages. We do all the work for you.<br><br>
+
+The most progressive Small Business owners know that having a website that showcases their products and services can be a strategic way to begin growing their business.<br><br>
+
+Watching your Small Business grow can be challenging and rewarding. If you are prepared to begin the process of taking the next step toward growth, let's get started.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">GET STARTED</a></p>
+</div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">dvr</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">ONLINE HR SOLUTIONS</p>
+
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+With our Small Business Showcase pages, you will discover a beautiful way to complete a multitude of HR tasks.<br><br>
+
+You can recruit, hire, and onboard new employees. You can even train your entire workforce with our very own online courses, at no additional charge.<br><br>
+
+We work with you to reduce costs, improve efficiency, and outsource non-core services so that you can grow your Small Business while complying with government agencies.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CONTACT SALES</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel w3-card" style="background-color:#f5f5f5;width:100%;padding:50px 10px 40px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#585858;letter-spacing:1.5px;">
+Operational Assessments.</p></div></div></div>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">assessment</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS ASSESSMENTS</p>
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Determining the strengths of your Small Business, its opportunities for growth, and how it performs against competitors doesn't have to be a major challenge.<br><br>
+
+If you want a clear picture of how your company is performing in the marketplace, this assessment can provide you with operational clarity.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#assessment" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
+</div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">assignment</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MOCK HEALTH INSPECTIONS</p>
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+With this tool, we help you prepare for a City of Chicago Health Department Inspection. We work with you to develop systems that would increase your chances of receiving a higher grade.<br><br>
+
+Our MHI includes a Food Safety Management Plan, and is conducted by a certified Food Safety professional. Ideal for restaurateurs.<br><br>  
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#mock" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
+</div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">assignment_ind</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MYSTERY SHOP SERVICES</p>
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Ever wanted to seek the assistance of a professional Mystery Shop Services Provider, but believe that your business is too small? You no longer have to think that way.<br><br>
+
+We'll discretely visit or call your company to assess how it delivers its products and services to your invaluable customers.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#mystery" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 0 0 0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Who We Are</p>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel w3-card" style="background-color:#f5f5f5;width:100%;padding:50px 10px 40px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#585858;letter-spacing:1.5px;">
+A Progressive Small Business.</p></div></div></div>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">toys</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">SPIRAL GROUP, INC.</p>
+
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. We offer affordable business solutions to locally underserved Small Businesses. We're committed to assisting this population of entrepreneurs by providing the tools they need to ensure operational excellence, at affordable rates.<br><br>
+
+We leverage our skills and corporate experience to help clients build reliable companies that can support the needs of their markets. We work to refine operational infrastructure by establishing lean systems and processes, as well as encourage the outsourcing of non-core services. As a result, entrepreneurs can enjoy reduced operating costs and improved workforce productivity.<span id="dots"></span>
+
+<span id="more"><br><br>
+Your Small Business has greater growth potential than you probably realize. Many consumers value Small Businesses that can professionally and consistently meet their specialized needs. This is a great time for entrepreneurs to begin taking advantage of profitable opportunities by spending time making strategic decisions on how to further develop their companies and increasing brand awareness.</span></p>
+
+<p align="left">
+<button onclick="myFunction()" id="myBtn" class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">READ MORE</button></p>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "READ MORE"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "CLOSE"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</div></div>
+
+<div class="column" style="padding:0px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">nature_people</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">THE RETURNING CITIZEN</p>
+
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Michelle Jones is the Founder and CEO of Spiral Group, Inc. She began developing the company after serving a 2.5 year sentence at the Logan Correctional facility in 2014. She initiated the task of rebuilding her life by utilizing her skills and corporate experience in an effort to make a useful and practical contribution to the Small Business Community. In April 2016, she launched this website.<br><br>
+
+Michelle began by developing a free, online <a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><b>Employment Preparation Training</b></a> program for job seekers with criminal histories &#151; those who are willing to commit to positive change. The NFP's goal is to assist returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism. The company is dedicated to helping this population of job seekers overcome many obstacles to employment by improving their organizational, time-management, decision-making, interviewing, and soft skills.<span id="dots1"></span>
+
+<span id="more1"><br><br>
+Along her career path, Michelle has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers. She opened her first business, RMRC (Restaurant Materials Resource Center), in 1999 where she designed business documents, labels, and posters for the food-service industry.<br><br>
+
+She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. Michelle has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant. Michelle is a web developer, attaining webmaster status in 1999. She is also an ordained minister, receiving her ordination on April 19, 2007.</span></p>
+
+<p align="left">
+<button onclick="myFunction1()" id="myBtn1" class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">READ MORE</button></p>
+
+<script>
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "READ MORE"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "CLOSE"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 0 0 0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Music That Inspires</p>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:50px 10px 40px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#585858;letter-spacing:1.5px;">
+MJ &#124; Welshly Arms &#124; Kool Moe Dee</p></div></div></div></div></div>
+
+<center>
+<!-- Video Gallery Grid -->
 <div class="row" style="width:100%;">
   <div class="column1" style="padding:4px;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
     <div class="content1" style="padding:0;margin:0;"> 
@@ -407,9 +821,6 @@ Michelle is also a web developer, mystic, cartomancer, and ordained minister. Sh
          </div>
      </div>
 </div>
-
-
-
 </div></div>
 </div>
 </div>
@@ -436,16 +847,51 @@ Michelle is also a web developer, mystic, cartomancer, and ordained minister. Sh
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-52746336-1');ga('send','pageview');
     </script>
-<img src="https://user-images.githubusercontent.com/25410880/42121342-19f23256-7bfb-11e8-86d3-33fae508026d.png" style="width:33%;">
 
 <center>
-<div class="w3-container w3-panel w3-blue" style="width:100%;padding:18px 4px 8px 4px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:18px;color:#000000;letter-spacing:1px;">
-Ready to Grow with SpiralGroup?</p>
-
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
-
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#000000;"> Call 773 242-0705</p>
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:60px 0 0 0;border-radius:2px 2px 0 0;">
+<p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
+Grow with SpiralGroup.</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
+<p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;"> Call 773 242-0705</p>
+ <div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
 </div>
+</div>
+</div>
+
+<center>
+<div class="w3-panel w3-black" style="width:100%;padding:0;margin:0;">
+<hr style="width:100%;height:2px;border-width:0;background-color:#585858">
+</div>
+
+<div class="nab topnav1" style="width:100%;background-color:#000;padding:0 0 20px 0;margin:0;">
+  <a href="#home">Privacy</a>
+  <a href="#news">Terms</a>
+  <a href="#partners">Partners</a>
+</div>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+}
+</script>
 </body>
 </html>
