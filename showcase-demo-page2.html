@@ -325,6 +325,7 @@ margin: 0 5px 0 5px;
 
 .navbar {
 position: fixed;
+top: 0;
 }
 
 .mySlides {display:none;}
@@ -484,6 +485,37 @@ display: none;
 }
 }
 
+body {
+overflow-x: hidden;
+}
+
+.top-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.header {
+  padding: 0;
+  background: #fff;
+  color: #f1f1f1;
+}
+
+.content {
+  width: 100%;
+  padding: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0;
+  }
+
 </style>
 <script type="application/ld+json">
 {
@@ -508,13 +540,12 @@ display: none;
 </script>
 
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc6999cddd6040011604ac8&product=social-ab' async='async'></script>
-
 </head>
 
-<body style="background-color:#ffffff;padding:0;margin:0;">  
+<body>
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
-
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
+<div class="header" id="myHeader">
+ <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -546,10 +577,9 @@ display: none;
    <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 14px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">SG MarketPlace</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+    </div>
+  </nav>
 </div>
-
 
 <div class="slideshow-container w3-card w3-light-grey" style="width:100%;padding:0;margin:0;">
 
@@ -560,7 +590,7 @@ display: none;
 
 <div class="mySlides animate-right">
    <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
-  <div class="text example">You Deserve Amazing Business Solutions.</div>
+  <div class="text example">We Have Amazing Business Solutions.</div>
 </div>
 
 <div class="mySlides animate-right">
@@ -569,9 +599,7 @@ display: none;
 </div>
 </div>
 
-<br>
-
-<div style="text-align:center">
+<div style="text-align:center;padding:10px 0 0 0;">
   <span class="dot"></span> 
   <span class="dot"></span>
   <span class="dot"></span> 
@@ -581,8 +609,11 @@ display: none;
 </div>
 </div>
 
+
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:40px 0 0 0;margin:0;">
+<div class="content">
+</div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:60px 0 0 0;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">What We Do</p>
 </div>
 </div>
@@ -899,5 +930,21 @@ function showSlides() {
     setTimeout(showSlides, 4000);
 }
 </script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
