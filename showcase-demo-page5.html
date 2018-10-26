@@ -9,7 +9,7 @@
 <!--<![endif]-->
 
 <head>
-<title>Special Offers</title>
+<title>About Us</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-signin-client_id" content="56351160455-c570ptgsu3e0oh49tn0q09c95q10kj3h.apps.googleusercontent.com">
@@ -37,7 +37,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
 <style type="text/css">
 .box {
 				-webkit-animation-name: movingBox;
@@ -179,95 +178,76 @@
 			  }
 			}
 
-img {
-    border-radius: 2px; 
-    max-width: 100%;
-    height: auto;
-}
-
 * {
     box-sizing: border-box;
 }
 
 .row,
 .row > .column2 {
-    padding: 0;
-    margin: 0;
+    padding: 0 13px 0 13px;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.column {
+    width: 100%;
+    float: center;
+    padding: 0;
+    margin: 0 2px 0 2px;
+    display: inline-block;
 }
 
 .row,
 .row > .column {
-    padding: 0;
-    margin: 0;
+    padding: 0 13px 0 13px;
 }
 
-.column {
-    width: 50%;
+.content1 {
+    background-color: transparent;
     padding: 0;
     margin: 0;
+    border-radius: 2px;
+}
+
+
+.column2 {
+    width: 33.0%;
+    margin: 0 1px 0 1px;
+    padding: 0;
     display: inline-block;
-    float: left;
+    float: center;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
+.row,
+.row > .column3 {
+    padding: 0 33px 0 33px;
 }
 
 .column3 {
-    width: 49%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    float: left;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.content {
-    background-color: #ffffff;
-    padding: 0;
-    margin: 0;
-}
-.column2 {
-    float: left;
-    width: 75%;
-    margin: 0;
+    width: 50%;
+    margin: 10px;
     padding: 0;
     display: inline-block;
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
-}
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;}
-
+    float: left;
 }
 
 @media (max-width: 900px) {
@@ -281,7 +261,22 @@ img {
     .column3 {
         width: 100%;
         float: center;
+       }
 }
+
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
 }
 
 ::-webkit-scrollbar {
@@ -299,85 +294,6 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #d2d2d2; 
-}
-* {box-sizing: border-box;}
-.mySlides {display: none;}
-.mySlides1 {display: none;}
-img {vertical-align: middle;}
-
-.slideshow-container {
-  max-width: 1300px;
-  position: relative;
-  margin: auto;
-}
-
-.slideshow-container1 {
-  max-width: 1300px;
-  position: relative;
-  margin: auto;
-}
-
-.text {
-  color: #585858;
-  font-size: 19px;
-  font-family: ubuntu;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
-  height: 5px;
-  width: 5px;
-  margin: 0 1px;
-  background-color: dodgerblue;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-	
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 8.2s;
-  animation-name: fade;
-  animation-duration: 8.2s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-	
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-.bg-img {
-    background-image: url("https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png");
-    min-height: 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #585858;
-}
-
-
-.container1 {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    margin: 0;
-    min-width: 100%;
-    padding: 0;
-    background-color: transparent;
 }
 
 .nab {
@@ -407,6 +323,178 @@ margin: 0 5px 0 5px;
   text-decoration: none;
 }
 
+.navbar {
+position: fixed;
+top: 0;
+}
+
+.mySlides {display:none;}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: 0;
+}
+
+.text {
+color: #fff;
+font-family: ubuntu;
+letter-spacing: .5px;
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+.text1 {
+color: #fff;
+font-family: kaushan script;
+letter-spacing: .5px;
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.example {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 29px;
+    text-shadow: 3px 1px 3px #000000;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 18px;
+    text-shadow: 3px 1px 3px #000000;
+  }
+}
+
+
+div.example1 {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+ div.example1 {
+  font-family: kaushan script;
+    font-size: 64px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+       padding-bottom: 100px;
+       }
+}
+
+@media screen and (max-width: 600px) {
+  div.example1 {
+   font-family: kaushan script;
+    font-size: 39px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+    }
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+#more {
+display: none;
+}
+
+#more1 {
+display: none;
+}
+
+.row,
+.row > .column1 {
+    padding: 0;
+    margin: 5px;
+}
+
+.column1 {
+    width: 32%;
+    padding: 4px;
+    margin: 0 2px 0 2px;
+    display: inline-block;
+    float: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content1 {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+}
+}
+
 body {
 overflow-x: hidden;
 }
@@ -414,7 +502,7 @@ overflow-x: hidden;
 .top-container {
   background-color: #ffffff;
   padding: 0;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .header {
@@ -422,42 +510,50 @@ overflow-x: hidden;
   background: #fff;
   color: #f1f1f1;
 }
- 
-.example1 {
+
+.content {
+  width: 100%;
   padding: 0;
-  margin: 0;
 }
 
-@media screen and (min-width: 601px) {
-.example1 {
-  font-family: kaushan script;
-    font-size: 64px;
-    letter-spacing: .5px;
-    color: #ffffff;
-    text-shadow: 0 1px 2px #000000;
-    }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-.example1 {
-   font-family: kaushan script;
-    font-size: 42px;
-    letter-spacing: .5px;
-    color: #ffffff;
-    text-shadow: 0 1px 2px #000000;
-    }
-}
+.sticky + .content {
+  padding-top: 0;
+  }
 
 </style>
-</head>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "brand": {
+    "@type": "Thing",
+    "name": "SpiralGroup.org"
+  },
+  "name": "Small Business Showcase",
+  "image": "https://user-images.githubusercontent.com/25410880/43629673-ede16696-96cb-11e8-8ad6-a888929d85a5.png",
+  "description": "Small Business Showcase Plans Starting at Only $13.79 per Month.",
+  "productId": "upc:SGSHOWCASE",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency" : "USD",
+    "lowPrice": "13.79",
+    "highPrice": "254.40",
+    "itemCondition": "new"
+  }
+}
+</script>
 
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc6999cddd6040011604ac8&product=social-ab' async='async'></script>
+</head>
 
 <body>
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
-<div class="bg-img" style="width:100%;padding:0;margin:0;">
-</div>
-
-
 <div class="header" id="myHeader">
  <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
@@ -467,7 +563,7 @@ overflow-x: hidden;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Special Offers</span> 
+      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">About Us</span> 
       <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -495,89 +591,142 @@ overflow-x: hidden;
   </nav>
 </div>
 
-<div class="container1">
-<p class="text1 example1" align="center">spiralgroup.org</p>
+<div class="slideshow-container w3-card w3-light-grey" style="width:100%;padding:0;margin:0;">
+
+<div class="mySlides animate-right">
+ <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%;">
+  <div class="text example">Your Small Business Is Amazing.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+  <div class="text example">Buy Amazing Business Solutions.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+  <div class="text1 example1">spiralgroup.org</div>
+</div>
+</div>
+
+<div style="text-align:center;padding:10px 0 0 0;">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
 </div>
 </div>
 
 <center>
-<div class="content1">
+<div class="content">
 </div>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 12px 0 12px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:60px 0 0 0;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Special Offers</p>
+</div>
+</div>
+</div>
+
 <center>
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="CENTER" style="font-family:calibri;font-size:11px;letter-spacing:1.25px;color:#585858;0;text-shadow:0 1px 2px #cccccc;padding:0 0 10px 0;">TAKE ADVANTAGE OF THESE OFFERS.</p>
+<div class="w3-container w3-panel w3-card" style="background-color:#f5f5f5;width:100%;padding:50px 10px 40px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#585858;letter-spacing:1.5px;">
+Take Advantage of These Amazing Deals.</p></div></div></div>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:2px 0 0 0;box-shadow:0 1px 12px #f1f1f1;border-radius:4px;">
-<div class="w3-container w3-panel" style="width:100%;padding:20px 0 20px 0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel" style="padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;margin:0;padding:0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:12px 0 12px 0;">
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-pale-green" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">redeem</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">SMALL BUSINESS SHOWCASE PAGES</p>
 
-<div class="mySlides w3-animate-zoom">
- <div>
-<img src="https://user-images.githubusercontent.com/25410880/43361784-a03f4c64-92a7-11e8-9daf-9f59c6412aeb.png" style="width:80%">
-</div></div>
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Our Small Business Showcase pages are mobile-friendly and allows you to perform a multitude of business tasks.<br><br>
 
-<div class="mySlides w3-animate-zoom">
- <div>
-  <img src="https://user-images.githubusercontent.com/25410880/43361783-a0204990-92a7-11e8-8961-44fa91f0c46b.png" style="width:80%">
-  </div></div>
+You can sell your products and services online, book appointments, provide price quotes, receive customer feedback, offer discounts, and create some of the most amazing deals.<br><br>
 
-<div class="mySlides w3-animate-left">
- <div>
-  <img src="https://user-images.githubusercontent.com/25410880/43361808-ba2d13c6-92a8-11e8-8697-0786f85f4c2b.png" style="width:80%">
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">GET STARTED</a></p>
+</div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-pale-red" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">redeem</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">THE COMPETITION</p>
+
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Unlike our competitors, you'll never have to worry about building and maintaining your Showcase pages. We do all the work for you.<br><br>
+
+The most progressive Small Business owners know that having a website that showcases their products and services can be a strategic way to begin growing their business.<br><br>
+
+Watching your Small Business grow can be challenging and rewarding. If you are prepared to begin the process of taking the next step toward growth, let's get started.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">GET STARTED</a></p>
+</div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-pale-blue" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">redeem</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">ONLINE HR SOLUTIONS</p>
+
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+With our Small Business Showcase pages, you will discover a beautiful way to complete a multitude of HR tasks.<br><br>
+
+You can recruit, hire, and onboard new employees. You can even train your entire workforce with our very own online courses, at no additional charge.<br><br>
+
+We work with you to reduce costs, improve efficiency, and outsource non-core services so that you can grow your Small Business while complying with government agencies.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CONTACT SALES</a></p>
 </div>
 </div>
 </div>
 </div>
+
+<center>
+<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:50px 10px 40px 10px;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#585858;letter-spacing:1.5px;">
+Take Advantage of These Amazing Deals.</p></div></div></div>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:12px 0 12px 0;">
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-pale-green" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">redeem</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">BUSINESS OPERATIONS ASSESSMENT</p>
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Determining the strengths of your Small Business, its opportunities for growth, and how it performs against competitors doesn't have to be a major challenge.<br><br>
+
+If you want a clear picture of how your company is performing in the marketplace, this assessment can provide you with operational clarity.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#assessment" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
+</div>
 </div>
 
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel" style="padding:29px 0 0 0;margin:0;">
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-pale-red" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">redeem</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MOCK HEALTH INSPECTION</p>
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+With this tool, we help you prepare for a City of Chicago Health Department Inspection. We work with you to develop systems that would increase your chances of receiving a higher grade.<br><br>
 
-<div class="slideshow-container1" style="width:100%;margin:0;padding:0;">
+Our MHI includes a Food Safety Management Plan, and is conducted by a certified Food Safety professional. Ideal for restaurateurs.<br><br>  
 
- <div style="text-align:center">
-  <span class="dot w3-dark-grey"></span> 
-  <span class="dot w3-dark-grey"></span> 
-  <span class="dot w3-dark-grey"></span>
-  
-<div class="mySlides1 w3-animate-zoom" style="padding:180px 0 0 0;">
-<div class="text">
-<p align="center" style="font-family:ubuntu;font-size:20px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #585858;">
-Free Consultation</p>
-
-<p align="center" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">
-30-Minute Phone Session<br><br>
-
-<a class="w3-button w3-green" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html">SIGN UP</a></p></div></div></div>
- 
-<div class="mySlides1 w3-animate-zoom" style="padding:180px 0 0 0;">
-<div class="text">
-<p align="center" style="font-family:ubuntu;font-size:20px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #585858;">
-Local Marketing Services</p>
-
-<p align="center" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">
-Plans Starting at $13.79 per Month<br><br>
-
-<a class="w3-button w3-blue" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" href="https://spiralgroup.org">COMPLETE DETAILS</a></p></div></div></div>
-
-<div class="mySlides1 w3-animate-left" style="padding:180px 0 0 0;">
-<div class="text">
-<p align="center" style="font-family:ubuntu;font-size:20px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #585858;">
-Free EP Tool-Kit&reg;</p>
-
-<p align="center" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">
-Ideal for All Job Seekers<br><br>
-
-<a class="w3-button w3-pink" style="font-family:calibri,helvetica;font-size:12.5px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;box-shadow:0 1px 10px #cccccc;border-radius:4px;text-decoration:none;padding:10px 14px;" href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html">GET IT NOW</a></p>
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#mock" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
 </div>
+</div>
+
+<div class="column2" style="padding:0 4px 0 4px;margin:0;">
+<div class="content1 w3-panel w3-pale-blue" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">redeem</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">MYSTERY SHOP PROGRAM</p>
+<p align="left" style="font-family:helvetica;font-size:15px;color:#000000;letter-spacing:1px;">
+Ever wanted to seek the assistance of a professional Mystery Shop Services Provider, but believe that your business is too small? You no longer have to think that way.<br><br>
+
+We'll discreetly visit or call your company to assess how it delivers its products and services to your invaluable customers.<br><br>
+
+<a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#mystery" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CHECK IT OUT</a></p>
 </div>
 </div>
 </div>
@@ -598,60 +747,29 @@ Ideal for All Job Seekers<br><br>
       ga('create','UA-52746336-1');ga('send','pageview');
     </script>
 
-
 <center>
 <div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:60px 0 0 0;border-radius:2px 2px 0 0;">
 <p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
 Have Special Offers Ideas?</p>
 <p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
 <p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;"> Call 773 242-0705</p>
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
+ <div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
 </div>
 </div>
 </div>
+
 <center>
 <div class="w3-panel w3-black" style="width:100%;padding:0;margin:0;">
 <hr style="width:100%;height:2px;border-width:0;background-color:#585858">
 </div>
+
 <div class="nab topnav1" style="width:100%;background-color:#000;padding:0 0 20px 0;margin:0;">
-<a href="#privacy">Privacy Policy</a>
-<a href="#terms">Terms of Use</a>
-<a href="#partners">Partners</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <a href="#home">Privacy</a>
+  <a href="#news">Terms</a>
+  <a href="#partners">Partners</a>
 </div>
 </div>
 
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4010);
-}
-</script>
 
 <script>
 var slideIndex = 0;
@@ -659,7 +777,7 @@ showSlides();
 
 function showSlides() {
     var i;
-    var slides = document.getElementsByClassName("mySlides1");
+    var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
@@ -671,8 +789,24 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4010);
+    setTimeout(showSlides, 4000);
 }
 </script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
