@@ -306,13 +306,13 @@ img {
 img {vertical-align: middle;}
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1300px;
   position: relative;
   margin: auto;
 }
 
 .slideshow-container1 {
-  max-width: 1000px;
+  max-width: 1300px;
   position: relative;
   margin: auto;
 }
@@ -332,7 +332,7 @@ img {vertical-align: middle;}
   height: 5px;
   width: 5px;
   margin: 0 1px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -385,12 +385,44 @@ margin: 0 5px 0 5px;
   text-decoration: none;
 }
 
+body {
+overflow-x: hidden;
+}
+
+.top-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.header {
+  padding: 0;
+  background: #fff;
+  color: #f1f1f1;
+}
+
+.content1 {
+  width: 100%;
+  padding: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content1 {
+  padding-top: 0;
+  }  
 </style>
 </head>
 
 
-<body style="background-color:#ffffff;padding:0;margin:0;">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
+<body>
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<div class="header" id="myHeader">
+ <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -403,7 +435,7 @@ margin: 0 5px 0 5px;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-          <li class="dropdown">
+          <li class="dropdown active">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Products & Services <span class="caret"></span></a>
           <ul class="dropdown-menu">
 	        <li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li><br>
@@ -422,43 +454,24 @@ margin: 0 5px 0 5px;
    <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 14px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">SG MarketPlace</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+    </div>
+  </nav>
+</div>
 
+<center>
+<div class="content1">
+</div>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <center>
-<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
+<div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 0 0 0;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Special Offers</p>
 <center>
-<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
+<div class="row" style="width:98%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="CENTER" style="font-family:calibri;font-size:11px;letter-spacing:1.25px;color:#585858;0;text-shadow:0 1px 2px #cccccc;padding:0 0 10px 0;">CREATE USEFUL & PRACTICAL OFFERS.</p>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<p align="CENTER" style="font-family:calibri;font-size:11px;letter-spacing:1.25px;color:#585858;0;text-shadow:0 1px 2px #cccccc;padding:0 0 10px 0;">TAKE ADVANTAGE OF THESE OFFERS.</p>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:35px 10px 0 10px;margin:0;">
-</div></div></div>
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-bottom:20px solid transparent;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-</div></div></div>
-
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;border-radius:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-
-<!-- Grid 1-->
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:20px 0 0 0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel" style="padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;margin:0;padding:0;">
@@ -481,7 +494,6 @@ margin: 0 5px 0 5px;
 </div>
 </div>
 </div>
-
 
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel" style="padding:29px 0 0 0;margin:0;">
