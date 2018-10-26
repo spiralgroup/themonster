@@ -332,7 +332,7 @@ img {vertical-align: middle;}
   height: 5px;
   width: 5px;
   margin: 0 1px;
-  background-color: #bbb;
+  background-color: dodgerblue;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -358,6 +358,28 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+
+.bg-img {
+    background-image: url("https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png");
+    min-height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #585858;
+}
+
+
+.container1 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+
 .nab {
   overflow: hidden;
   padding: 10px;
@@ -392,7 +414,7 @@ overflow-x: hidden;
 .top-container {
   background-color: #ffffff;
   padding: 0;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 
 .header {
@@ -400,27 +422,42 @@ overflow-x: hidden;
   background: #fff;
   color: #f1f1f1;
 }
-
-.content1 {
-  width: 100%;
+ 
+.example1 {
   padding: 0;
+  margin: 0;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+@media screen and (min-width: 601px) {
+.example1 {
+  font-family: kaushan script;
+    font-size: 64px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+    }
 }
 
-.sticky + .content1 {
-  padding-top: 0;
-  }  
+@media screen and (max-width: 600px) {
+.example1 {
+   font-family: kaushan script;
+    font-size: 42px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+    }
+}
+
 </style>
 </head>
 
 
 <body>
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<div class="bg-img" style="width:100%;padding:0;margin:0;">
+</div>
+
+
 <div class="header" id="myHeader">
  <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
@@ -458,20 +495,26 @@ overflow-x: hidden;
   </nav>
 </div>
 
+<div class="container1">
+<p class="text1 example1" align="center">spiralgroup.org</p>
+</div>
+</div>
+
 <center>
 <div class="content1">
 </div>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <center>
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:30px 12px 0 12px;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Special Offers</p>
 <center>
-<div class="row" style="width:98%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p align="CENTER" style="font-family:calibri;font-size:11px;letter-spacing:1.25px;color:#585858;0;text-shadow:0 1px 2px #cccccc;padding:0 0 10px 0;">TAKE ADVANTAGE OF THESE OFFERS.</p>
 
-<div class="w3-container w3-panel" style="width:100%;padding:20px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:2px 0 0 0;box-shadow:0 1px 12px #f1f1f1;border-radius:4px;">
+<div class="w3-container w3-panel" style="width:100%;padding:20px 0 20px 0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel" style="padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;margin:0;padding:0;">
@@ -501,9 +544,9 @@ overflow-x: hidden;
 <div class="slideshow-container1" style="width:100%;margin:0;padding:0;">
 
  <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
+  <span class="dot w3-dark-grey"></span> 
+  <span class="dot w3-dark-grey"></span> 
+  <span class="dot w3-dark-grey"></span>
   
 <div class="mySlides1 w3-animate-zoom" style="padding:180px 0 0 0;">
 <div class="text">
@@ -544,8 +587,6 @@ Ideal for All Job Seekers<br><br>
 </div>
 </div>
 
-<div class="content w3-panel" style="padding:89px 0 0 0;margin:0;">
-
 <center>
 <div class="box"></div>
     <script>
@@ -559,7 +600,7 @@ Ideal for All Job Seekers<br><br>
 
 
 <center>
-<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:40px 0 0 0;border-radius:2px 2px 0 0;">
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:60px 0 0 0;border-radius:2px 2px 0 0;">
 <p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
 Have Special Offers Ideas?</p>
 <p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
