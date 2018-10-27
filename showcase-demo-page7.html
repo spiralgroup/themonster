@@ -178,6 +178,107 @@
 			  }
 			}
 
+* {
+    box-sizing: border-box;
+}
+
+.row,
+.row > .column2 {
+    padding: 0 13px 0 13px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 100%;
+    float: center;
+    padding: 0;
+    margin: 0 2px 0 2px;
+    display: inline-block;
+}
+
+.row,
+.row > .column {
+    padding: 0 13px 0 13px;
+}
+
+.content1 {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+
+.column2 {
+    width: 33.0%;
+    margin: 0 1px 0 1px;
+    padding: 0;
+    display: inline-block;
+    float: center;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
+.row,
+.row > .column3 {
+    padding: 0 33px 0 33px;
+}
+
+.column3 {
+    width: 50%;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -195,46 +296,6 @@
     background: #d2d2d2; 
 }
 
-.navbar {
-position: fixed;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 100%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 4px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  padding: 16px;
-  text-align: center;
-  border-radius: 4px;
- }
 .nab {
   overflow: hidden;
   padding: 10px;
@@ -261,12 +322,226 @@ margin: 0 5px 0 5px;
   border-bottom: 2px solid #585858;
   text-decoration: none;
 }
+
+.navbar {
+position: fixed;
+top: 0;
+}
+
+.mySlides {display:none;}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: 0;
+}
+
+.text {
+color: #fff;
+font-family: ubuntu;
+letter-spacing: .5px;
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+.text1 {
+color: #fff;
+font-family: kaushan script;
+letter-spacing: .5px;
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.example {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 29px;
+    text-shadow: 0 1px 3px #000;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 18px;
+    text-shadow: 0 1px 3px #000;
+  }
+}
+
+
+div.example1 {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+ div.example1 {
+  font-family: kaushan script;
+    font-size: 64px;
+    letter-spacing: .5px;
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
+       padding-bottom: 100px;
+       }
+}
+
+@media screen and (max-width: 600px) {
+  div.example1 {
+   font-family: kaushan script;
+    font-size: 39px;
+    letter-spacing: .5px;
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
+    }
+}
+
+.content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.row,
+.row > .column1 {
+    padding: 0;
+    margin: 5px;
+}
+
+.column1 {
+    width: 32%;
+    padding: 4px;
+    margin: 0 2px 0 2px;
+    display: inline-block;
+    float: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content1 {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+}
+}
+
+body {
+overflow-x: hidden;
+}
+
+.top-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.header {
+  padding: 0;
+  background: #fff;
+  color: #f1f1f1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0;
+  }
+
 </style>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "brand": {
+    "@type": "Thing",
+    "name": "SpiralGroup.org"
+  },
+  "name": "Small Business Showcase",
+  "image": "https://user-images.githubusercontent.com/25410880/43629673-ede16696-96cb-11e8-8ad6-a888929d85a5.png",
+  "description": "Small Business Showcase Plans Starting at Only $13.79 per Month.",
+  "productId": "upc:SGSHOWCASE",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency" : "USD",
+    "lowPrice": "13.79",
+    "highPrice": "254.40",
+    "itemCondition": "new"
+  }
+}
+</script>
+
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc6999cddd6040011604ac8&product=social-ab' async='async'></script>
 </head>
 
-<body style="background-color:#ffffff;padding:0;margin:0;">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
+<body>
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<div class="header" id="myHeader">
+ <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -274,7 +549,7 @@ margin: 0 5px 0 5px;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Careers</span> 
+      <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Join Our Team</span> 
       <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -298,27 +573,50 @@ margin: 0 5px 0 5px;
    <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 14px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">SG MarketPlace</a></li>
       </ul>
     </div>
-  </div>
-</nav>
-
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:90px 0 0 0;margin:0;">
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;border-radius:4px;border-bottom:1px solid transparent;">
-
-<center>
-<div class="row" style="width:100%;padding:12px;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Join Our Team</p>
-<center>
-
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:1.25px;color:#585858;0;text-shadow:0 1px 2px #cccccc;padding:0 0 10px 0;">UNLOCK YOUR POTENTIAL AS A SPIRALGROUP SPECIALIST.</p>
+    </div>
+  </nav>
 </div>
 
-<div class="w3-container w3-panel w3-pale-red" style="width:100%;padding:0;margin:2px 0 0 0;box-shadow:0 1px 12px #f1f1f1;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/43624677-f908ef54-96b6-11e8-9157-b53bb20c1c83.png" style="width:100%;">
+<div class="slideshow-container w3-card w3-pale-green" style="width:100%;padding:0;margin:0;">
+
+<div class="mySlides animate-right">
+ <img src="https://user-images.githubusercontent.com/25410880/47606191-7abd6600-d9de-11e8-969d-c63089a58bfb.png" style="width:100%;">
+  <div class="text example">Unlock Your Potential.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47606191-7abd6600-d9de-11e8-969d-c63089a58bfb.png" style="width:100%">
+  <div class="text example">Become a SpiralGroup Specialist.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47606191-7abd6600-d9de-11e8-969d-c63089a58bfb.png" style="width:100%">
+  <div class="text1 example1">spiralgroup.org</div>
 </div>
 </div>
+
+<div style="text-align:center;padding:10px 0 0 0;">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+</div>
+
+<center>
+<div class="content">
+</div>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:60px 0 0 0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:20px;color:#585858;letter-spacing:1.5px;text-shadow:0 1px 2px #cccccc;">SPIRALGROUP SPECIALISTS</p>
+<p align="center" style="font-family:ubuntu;font-size:14px;color:#585858;letter-spacing:1px;">
+Join Our Amazing Team.</p>
+</div>
+</div>
+</div>
+	
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 5px 0 5px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0 0 12px 0;">
 </div>
 
 <center>
@@ -328,70 +626,63 @@ margin: 0 5px 0 5px;
 
 <center>
 <div class="row" style="width:100%;padding:0 12px 0 12px;margin:0;">
-<div class="w3-container w3-panel w3-pale-red" style="width:100%;padding:10px;margin:0;box-shadow:0 1px 12px #f1f1f1;border-radius:4px;">
-<p align="center" style="font-family:calibri;font-size:19px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">JOIN OUR TEAM</p>
+<div class="w3-container w3-panel w3-pale-green" style="width:100%;padding:15px 10px 0 10px;margin:0;box-shadow:0 1px 12px #f1f1f1;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">search</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">HAVE WHAT WE'RE SEEKING?</p>
 
 <p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
 We seek energetic, self-motivated, and ambitious people to join our team as Sales Professionals / SpiralGroup Specialists. Persons considered <b>hard to employ</b>, due to a criminal past, are strongly encouraged to apply. Ideal candidates have exceptional service skills and the ability to follow very specific instructions to complete all tasks.</p><br>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:16px;color:#585858;letter-spacing:.5px;">
-<b>YOUR RESPONSIBILITIES</b></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">speaker_notes</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">YOUR RESPONSIBILITIES</p>
 
 <p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
 Identify small businesses that would benefit from our products and services. Contact potential customers and present our products and services in an effort to sell to those customers. Obtain necessary information from customers in an effort to better serve them. If required, set follow-up appointments to close deals.</p><br>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:16px;color:#585858;letter-spacing:.5px;">
-<b>OUR REQUIREMENTS</b></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">supervisor_account</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">OUR REQUIREMENTS</p>
 
 <p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Complete our online Professional Development & Performance Management training courses.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Cell phone and reliable transportation.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Previous experience in sales, customer service, or other related fields.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Ability to build rapport with clients and fellow team members.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Ability to think on your feet to communicate potential returns for customers.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Familiarity with Internet terms and use.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Excellent written and verbal communications skills.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> The ability to work professionally and collaboratively in a team-setting.</p><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Complete our online Professional Development training courses.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Cell phone and reliable transportation.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Previous experience in sales, customer service, or other related fields.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Ability to build rapport with clients and fellow team members.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Ability to think on your feet to communicate potential returns for customers.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Familiarity with Internet terms and use.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Excellent written and verbal communications skills.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> The ability to work professionally and collaboratively in a team-setting.</p><br>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:16px;color:#585858;letter-spacing:.5px;">
-<b>YOUR SALARY</b></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">style</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">YOUR SALARY</p>
 
 <p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
 This is a strictly commission-based sales position. You will be working as an independent contractor. We are launching new products and services that will help drive orders and your commissions. Confident, ethical, and professional Sales Reps earn 23% commission on all products and services sold to new & existing clients.</p><br>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:16px;color:#585858;letter-spacing:.5px;">
-<b>WE'RE DEDICATED TO YOUR SUCCESS</b></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">tag_faces</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WE'RE DEDICATED TO YOUR SUCCESS</p>
 
 <p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
 We know it takes a special person to work in sales. Therefore, we are committed to providing our team members with an enriching and rewarding environment. We provide the resources, training, and support you'll need to serve our clients in the best way possible. While our performance  expectations are high, so is our dedication to your overall success.</p><br>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:16px;color:#585858;letter-spacing:.5px;">
-<b>YOU CAN EXPECT</b></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">card_giftcard</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WHAT YOU CAN EXPECT</p>
 
 <p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Product Knowledge Training.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> HR Compliance & Ethics Training.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Sales Support.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Customer Service & Technical Support.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Comprehensive & Useful Marketing Materials.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> A Professional Profile On Our Website & Business Email Address.<br><br>
-<i class="fa fa-user-edit" style="font-size:13px;color:#585858"></i> Automatic Submission Into Our Community Partners Program.</p><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Product Knowledge Training.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> HR Compliance & Ethics Training.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Sales Support.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Customer Service & Technical Support.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Comprehensive & Useful Marketing Materials.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> A Professional Profile On Our Website & Business Email Address.<br><br>
+<i class="fa fa-certificate" style="font-size:12px;color:#585858"></i> Automatic Submission Into Our Community Partners Program.</p><br>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:16px;color:#585858;letter-spacing:.5px;">
-<b>WORKFORCE DIVERSITY</b></p>
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">wc</i></p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;">WORKFORCE DIVERSITY</p>
+
 <p align="left" style="font-family:ubuntu;font-size:15px;color:#585858;letter-spacing:.5px;">
 Spiral Group, Inc. is an Equal Opportunity Employer committed to workforce diversity. We believe in a diverse and inclusive environment, one that is grounded in our dedication to supporting the Small Business Community. We strongly encourage diversity of thought, background, and experience because we know these are the main ingredients that contribute to a positive and productive workplace.<br><br>
 
 If you think you have what it takes, then submit your most updated resume and targeted cover letter detailing why you'd be a great fit for this position to careers@spiralgroup.org. Once you have submitted your information, contact Michelle Jones at 773 242-0705 to follow-up &#151; Sunday through Saturday, from 8 a.m. to 8 p.m. We look forward to speaking with you soon.</p>
-</div></div>
-</div>
-</div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -409,28 +700,14 @@ If you think you have what it takes, then submit your most updated resume and ta
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-52746336-1');ga('send','pageview');
     </script>
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:40px 0 0 0;margin:0;">
-<center>
-<div class="row" style="width:100%;padding:20px 20px 0 20px;margin:0;">
-   <div class="column2" style="padding:0;margin:0;">
-    <div class="content" style="padding:0;margin:0;">
-   <p align="center">
-   <iframe class='gfm-media-widget' image='0' coinfo='1' width='100%' height='100%' frameborder='0' id='help-us-reduce-recidivism'></iframe></p>
-   </div>
-   </div>
-   </div>
-   </div>
 
 <center>
-<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:60px 0 0 0;border-radius:2px 2px 0 0;">
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:70px 0 0 0;border-radius:2px 2px 0 0;">
 <p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
-Questions?</p>
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a Job Readiness Specialist Sun-Sat, 8am–8pm</p>
+Have Questions?</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
 <p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;"> Call 773 242-0705</p>
- <div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
-</div>
-</div>
+ <div class="sharethis-inline-share-buttons w3-black" style="width:100%;padding:10px 0 0 0;"></div>
 </div>
 
 <center>
@@ -443,6 +720,45 @@ Questions?</p>
   <a href="#news">Terms</a>
   <a href="#partners">Partners</a>
 </div>
-<script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+}
+</script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
