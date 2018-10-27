@@ -9,7 +9,7 @@
 <!--<![endif]-->
 
 <head>
-<title>Assessment Tools</title>
+<title>About Us</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-signin-client_id" content="56351160455-c570ptgsu3e0oh49tn0q09c95q10kj3h.apps.googleusercontent.com">
@@ -37,7 +37,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
 <style type="text/css">
 .box {
 				-webkit-animation-name: movingBox;
@@ -179,6 +178,80 @@
 			  }
 			}
 
+* {
+    box-sizing: border-box;
+}
+
+.row,
+.row > .column2 {
+    padding: 0 13px 0 13px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content1 {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+
+.column2 {
+    width: 33.0%;
+    margin: 0 1px 0 1px;
+    padding: 0;
+    display: inline-block;
+    float: center;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
+.row,
+.row > .column3 {
+    padding: 0 33px 0 33px;
+}
+
+.column3 {
+    width: 50%;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+       }
+}
+
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -194,48 +267,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #d2d2d2; 
-}
-
-.navbar {
-position: fixed;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.column {
-    width: 75%;
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
-.column1 {
-width: 25%;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    border-radius: 2px;
-    float: left;
-}
-.row,
-.row > .column {
-    padding: 1px;
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column1 {
-        width: 100%;
-        float: center;
-       }
 }
 
 .nab {
@@ -265,12 +296,251 @@ margin: 0 5px 0 5px;
   text-decoration: none;
 }
 
+.navbar {
+position: fixed;
+top: 0;
+}
+
+.mySlides {display:none;}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: 0;
+}
+
+.text {
+color: #fff;
+font-family: ubuntu;
+letter-spacing: .5px;
+  position: absolute;
+  bottom: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+.text1 {
+color: #fff;
+font-family: kaushan script;
+letter-spacing: .5px;
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.example {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 29px;
+    text-shadow: 3px 1px 3px #000000;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 18px;
+    text-shadow: 3px 1px 3px #000000;
+  }
+}
+
+
+div.example1 {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+ div.example1 {
+  font-family: kaushan script;
+    font-size: 64px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+       padding-bottom: 100px;
+       }
+}
+
+@media screen and (max-width: 600px) {
+  div.example1 {
+   font-family: kaushan script;
+    font-size: 39px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+    }
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.column {
+    width: 75%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.column1 {
+width: 25%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+    float: left;
+}
+.row,
+.row > .column {
+    padding: 11px;
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+       }
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content1 {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+}
+}
+
+body {
+overflow-x: hidden;
+}
+
+.top-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.header {
+  padding: 0;
+  background: #fff;
+  color: #f1f1f1;
+}
+
+.content {
+  width: 100%;
+  padding: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0;
+  }
+
 </style>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "brand": {
+    "@type": "Thing",
+    "name": "SpiralGroup.org"
+  },
+  "name": "Small Business Showcase",
+  "image": "https://user-images.githubusercontent.com/25410880/43629673-ede16696-96cb-11e8-8ad6-a888929d85a5.png",
+  "description": "Small Business Showcase Plans Starting at Only $13.79 per Month.",
+  "productId": "upc:SGSHOWCASE",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency" : "USD",
+    "lowPrice": "13.79",
+    "highPrice": "254.40",
+    "itemCondition": "new"
+  }
+}
+</script>
+
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc6999cddd6040011604ac8&product=social-ab' async='async'></script>
 </head>
 
-
-<body style="background-color:#ffffff;padding:0;margin:0;">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
+<body>
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<div class="header" id="myHeader">
+ <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 4px 4px;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -302,22 +572,50 @@ margin: 0 5px 0 5px;
    <li><a class="w3-button w3-white w3-border" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:12px;letter-spacing:.5px;border-radius:4px;padding:8px 14px;margin:6px 2px 0 2px;text-decoration:none;text-shadow:0 1px 2px #cccccc;">SG MarketPlace</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+    </div>
+  </nav>
+</div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="slideshow-container w3-card w3-light-grey" style="width:100%;padding:0;margin:0;">
+
+<div class="mySlides animate-right">
+ <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%;">
+  <div class="text example">Your Small Business Is Amazing.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+  <div class="text example">Buy Amazing Business Solutions.</div>
+</div>
+
+<div class="mySlides animate-right">
+   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+  <div class="text1 example1">spiralgroup.org</div>
+</div>
+</div>
+
+<div style="text-align:center;padding:10px 0 0 0;">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+</div>
+
+<div class="content">
+</div>
+
+<div class="w3-container w3-panel" style="width:98%;padding:0 13px 0 13px 0;margin:55px 0 0 0;">
 <center>
 <div class="row" style="width:100%;padding:0;margin:0;background-color:transparent;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:100px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:28px;color:#585858;letter-spacing:2px;text-shadow:0 1px 2px #cccccc;">Assessment Tools</p>
+<p align="center" style="font-family:ubuntu;font-size:17px;color:#585858;letter-spacing:1.5px;">Tap Image to Make a Purchase.</p>
+</div>
+</div>
+</div>
 <center>
-<div class="row" style="width:98%;padding:0;margin:0;background-color:transparent;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="CENTER" style="font-family:calibri;font-size:11px;letter-spacing:1.25px;color:#585858;0;text-shadow:0 1px 2px #cccccc;padding:0 0 10px 0;">TAP AN IMAGE TO MAKE A PURCHASE.</p>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-
-<div id="assessment" class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;background-color:#f5f5f5;">
+<div id="assessment" class="w3-container w3-panel" style="width:98%;padding:0;margin:35px 0 0 0;background-color:#f5f5f5;">
 <div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 1px 1px #f1f1f1;border-radius:4px;">
 <div class="column1" style="padding:0;margin:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -372,7 +670,7 @@ The cost is $379.98</p><br>
 </div></div>
 </div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;background-color:#f5f5f5;">
+<div class="w3-container w3-panel" style="width:98%;padding:0;margin:20px 0 0 0;background-color:#f5f5f5;">
 <div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 1px 1px #f1f1f1;border-radius:4px;">
 <div class="column1" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/44545377-e8999880-a6e2-11e8-9493-8067fd52e572.png" style="width:100%;" alt="sg1"></div>
@@ -414,7 +712,7 @@ The cost is included with the Business Assessment. You also receive 3 months of 
 </div></div>
 </div>
 
-<div id="mystery" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;background-color:#f5f5f5;">
+<div id="mystery" class="w3-container w3-panel" style="width:98%;padding:0;margin:20px 0 0 0;background-color:#f5f5f5;">
 <div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 1px 1px #f1f1f1;border-radius:4px;">
 <div class="column1" style="padding:0;margin:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -491,7 +789,7 @@ We anonymously visit your business to answer questionnaires designed to give you
 </div></div>
 </div>
 
-<div id="mock" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;background-color:#f5f5f5;">
+<div id="mock" class="w3-container w3-panel" style="width:98%;padding:0;margin:20px 0 0 0;background-color:#f5f5f5;">
 <div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 1px 1px #f1f1f1;border-radius:4px;">
 <div class="column1" style="padding:0;margin:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -550,6 +848,10 @@ We work closely with you to ensure food safety, while reviewing your last health
 </div>
 </div>
 
+</div>
+</div>
+</div>
+
 <center>
 <div class="box"></div>
     <script>
@@ -560,25 +862,67 @@ We work closely with you to ensure food safety, while reviewing your last health
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-52746336-1');ga('send','pageview');
     </script>
+
 <center>
-<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:80px 0 0 0;border-radius:2px 2px 0 0;">
+<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:18px 4px 8px 4px;margin:100px 0 0 0;border-radius:2px 2px 0 0;">
 <p align="center" style="font-family:ubuntu;font-size:20px;color:#fff;letter-spacing:1px;">
-Need HR Tools?</p>
-<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to an HR Specialist Sun-Sat, 8am–8pm</p>
+Grow with SpiralGroup.</p>
+<p align="center" style="font-family:ubuntu;font-size:13px;letter-spacing:1px;color:#fff;">Talk to a SpiralGroup Specialist Sun-Sat, 8am–8pm</p>
 <p align="center" style="font-family:ubuntu;font-size:17px;letter-spacing:1px;color:#fff;"> Call 773 242-0705</p>
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
+ <div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 0 0;"></div>
 </div>
 </div>
 </div>
+
 <center>
 <div class="w3-panel w3-black" style="width:100%;padding:0;margin:0;">
 <hr style="width:100%;height:2px;border-width:0;background-color:#585858">
 </div>
+
 <div class="nab topnav1" style="width:100%;background-color:#000;padding:0 0 20px 0;margin:0;">
-<a href="#privacy">Privacy Policy</a>
-<a href="#terms">Terms of Use</a>
-<a href="#partners">Partners</a>
+  <a href="#home">Privacy</a>
+  <a href="#news">Terms</a>
+  <a href="#partners">Partners</a>
 </div>
 </div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+}
+</script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
