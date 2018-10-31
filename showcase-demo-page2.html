@@ -33,7 +33,7 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -340,8 +340,8 @@ img {vertical-align: middle;}
 
 .text {
 color: #fff;
-font-family: ubuntu;
-letter-spacing: .5px;
+font-family: dorsa;
+letter-spacing: 2.5px;
   position: absolute;
   bottom: 36px;
   width: 100%;
@@ -351,7 +351,6 @@ letter-spacing: .5px;
 .text1 {
 color: #fff;
 font-family: kaushan script;
-letter-spacing: .5px;
   position: absolute;
   bottom: 26px;
   width: 100%;
@@ -359,13 +358,62 @@ letter-spacing: .5px;
 }
 
 .dot {
-  height: 7px;
-  width: 7px;
+  height: 6px;
+  width: 6px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+
+div.example {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 89px;
+    text-shadow: 0 1px 3px #000000;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 38px;
+    text-shadow: 0 1px 1px #000000;
+  }
+}
+
+
+div.example1 {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+ div.example1 {
+  font-family: kaushan script;
+    font-size: 59px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+       padding-bottom: 150px;
+       }
+}
+
+@media screen and (max-width: 600px) {
+  div.example1 {
+   font-family: kaushan script;
+    font-size: 39px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #000000;
+    padding-bottom: 15px;
+    }
 }
 
 .active {
@@ -387,55 +435,6 @@ letter-spacing: .5px;
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}
-
-div.example {
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-}
-
-@media screen and (min-width: 601px) {
-  div.example {
-    font-size: 29px;
-    text-shadow: 3px 1px 3px #000000;
-    padding-bottom: 100px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 18px;
-    text-shadow: 3px 1px 3px #000000;
-  }
-}
-
-
-div.example1 {
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-}
-
-@media screen and (min-width: 601px) {
- div.example1 {
-  font-family: kaushan script;
-    font-size: 64px;
-    letter-spacing: .5px;
-    color: #ffffff;
-    text-shadow: 0 1px 2px #000000;
-       padding-bottom: 100px;
-       }
-}
-
-@media screen and (max-width: 600px) {
-  div.example1 {
-   font-family: kaushan script;
-    font-size: 39px;
-    letter-spacing: .5px;
-    color: #ffffff;
-    text-shadow: 0 1px 2px #000000;
-    }
 }
 
 .content {
@@ -594,17 +593,17 @@ overflow-x: hidden;
 <div class="slideshow-container w3-card w3-light-grey" style="width:100%;padding:0;margin:0;">
 
 <div class="mySlides animate-right">
- <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%;">
+ <img src="https://user-images.githubusercontent.com/25410880/47817368-cb5cf800-dd2b-11e8-94de-14814a5adb9a.png" style="width:100%;">
   <div class="text example">Your Small Business Is Amazing.</div>
 </div>
 
 <div class="mySlides animate-right">
-   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+   <img src="https://user-images.githubusercontent.com/25410880/47817368-cb5cf800-dd2b-11e8-94de-14814a5adb9a.png" style="width:100%">
   <div class="text example">Buy Amazing Business Solutions.</div>
 </div>
 
 <div class="mySlides animate-right">
-   <img src="https://user-images.githubusercontent.com/25410880/47255217-52ac9080-d43b-11e8-8e0e-efd3f098a0f3.png" style="width:100%">
+   <img src="https://user-images.githubusercontent.com/25410880/47817368-cb5cf800-dd2b-11e8-94de-14814a5adb9a.png" style="width:100%">
   <div class="text1 example1">spiralgroup.org</div>
 </div>
 </div>
