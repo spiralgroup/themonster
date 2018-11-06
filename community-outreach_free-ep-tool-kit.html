@@ -97,9 +97,6 @@ body, html {
  }
 }
 
-
-.row,
-
 .top-container {
   background-color: #ffffff;
   padding: 0;
@@ -136,6 +133,7 @@ margin: 0 5px 0 5px;
 }
 .navbar {
 position: fixed;
+top: 0;
 }
 
 .mySlides {display:none;}
@@ -147,7 +145,6 @@ img {vertical-align: middle;}
   position: relative;
   margin: 0;
 }
-
 
 .dot {
   height: 6px;
@@ -184,6 +181,10 @@ img {vertical-align: middle;}
   position: fixed;
   top: 0;
   width: 100%;
+}
+	
+body {
+overflow-x: hidden;
 }
 </style>
 </head>
