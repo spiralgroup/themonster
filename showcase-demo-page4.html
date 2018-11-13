@@ -61,7 +61,7 @@ img {
     float: left;
     padding: 0;
     margin: 0;
- }
+  }
 
 .row,
 .row > .column2 {
@@ -83,9 +83,9 @@ img {
     border-radius: 2px;
 }
 body, html {
-    max-width: 1000px;
-    margin: auto;
+    max-width: 1235px;
     height: 100%;
+    margin: auto;
     background-image: linear-gradient(to left, #fff, #fbfbfb);
 }
 
@@ -97,36 +97,6 @@ body, html {
   float: left;
   display: block;
 }
-
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
 .top-container {
   background-color: #ffffff;
   padding: 0;
@@ -144,12 +114,13 @@ body, html {
 
 .nab a {
   float: center;
-  font-family: calibri;
-  color: #ffffff;
+  font-family: calibri,helvetica;
+  letter-spacing: 1px;
+  color: #fbfbfb;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 11px;
 margin: 0 5px 0 5px;
 }
 
@@ -158,13 +129,14 @@ margin: 0 5px 0 5px;
 }
 
 .topnav1 a:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   text-decoration: none;
 }
+
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1000px;
+max-width: 1235px;
 background-color: #f1f1f1;
 }
 
@@ -178,6 +150,7 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
+
 .dot {
   height: 6px;
   width: 6px;
@@ -186,6 +159,35 @@ img {vertical-align: middle;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
 }
 
 .active {
@@ -255,7 +257,7 @@ img {vertical-align: middle;}
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">SG Gift Card</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">SG GiftCard</span>
 <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -281,18 +283,18 @@ img {vertical-align: middle;}
 </nav>
 </div>
 <center>
-<div class="w3-container w3-card" style="width:100%;padding:0 0 15px 0;margin:0;box-shadow:2px 2px 20px #ccc;border-radius:4px;">
+<div class="w3-container w3-card" style="width:100%;padding:0;margin:0;box-shadow:2px 2px 20px #fff;border-radius:4px;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
 <div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48295855-00143200-e445-11e8-9706-79031f45f9ca.png" style="width:100%;height:auto;">
+<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
 <div class="text"></div>
 </div>
 <div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48295856-00143200-e445-11e8-8061-5204cb244003.png" style="width:100%;height:auto;">
+<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
 <div class="text"></div>
 </div>
 <div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48295857-00143200-e445-11e8-8764-1ad55b1d09db.png" style="width:100%;height:auto;">
+<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
 <div class="text"></div>
 </div>
 </div>
@@ -301,23 +303,31 @@ img {vertical-align: middle;}
 <span class="dot"></span>
 <span class="dot"></span>
 </div>
-</div>
 
 <center>
-<div class="content" style="width:100%;">
+<div class="content">
 </div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+the sg giftcard</p>
 
-<div class="w3-container w3-card" style="width:100%;padding:0 0 12px 0;margin:20px 0 0 0;box-shadow:2px 2px 20px #ccc;border-radius:4px 4px 0 0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
-the sg gift card</p>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
+<center>
+<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:20px;color:#585858;">Ideal For The Entrepreneur.</p>
+</div></div></div>
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="column1" style="padding:20px;margin:0;">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/48043490-c0df9b80-e13b-11e8-8399-1ee69aa1eab4.png" style="width:100%;border-radius:4px;"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/48438814-af008880-e739-11e8-810d-e028621c7a58.png" style="width:100%;border-radius:4px;"></p>
 </div>
 
 <div class="column" style="padding:10px 10px 10px 10px;margin:0;">
@@ -328,7 +338,7 @@ the sg gift card</p>
 <table style="width:100%;">
 
 <tr align="center">
-<td style="font-family:calibri;font-size:14px;color:#000000;text-shadow:0 1px 2px #cccccc;padding:5px;"><input type="hidden" name="on0" value="Choose Amount">CHOOSE AMOUNT</td></tr>
+<td style="font-family:calibri;font-size:14px;color:#000000;text-shadow:0 1px 2px #cccccc;padding:10px 5px 5px 5px;"><input type="hidden" name="on0" value="Choose Amount">CHOOSE AMOUNT</td></tr>
 
 <tr align="center"><br>
 <td style="font-family:calibri;font-size:14px;color:#000000;text-shadow:0 1px 2px #cccccc;padding:0;">
@@ -359,20 +369,29 @@ the sg gift card</p>
 </form>
 
 <p align="center" style="padding:10px 0 0 0;font-family:ubuntu;font-size:11px;color:#000000;letter-spacing:.25px;text-shadow:0 1px 2px #cccccc;">
-Redeemable for any SpiralGroup.org Service.</p>
+The Gift of Operational Excellence.</p>
   </div>
 </div></div>
  </div>
-</div></div>
+</div>
+</div>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
+<center>
+<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:20px;color:#585858;">Amazing Gift Ideas.</p>
+</div></div></div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px 12px 0 12px;margin:0;">
-<hr style="width:100%;height:1px;border-width:0;background-color:#f1f1f1;">
-<p align="center" style="font-family:dorsa;font-size:33px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">amazing gift ideas</p>
-
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
   <div class="column2" style="padding:4px;margin:0;">
- <div class="w3-panel" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;">
+ <div class="w3-panel w3-light-grey" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;">
  <p align="center"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#assessment"><img src="https://user-images.githubusercontent.com/25410880/43028144-1e749f56-8c4c-11e8-9170-78fafa2f40dd.png" style="width:100%;" border="0"></a></p>
 
 <p style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;color:#585858;padding:3px 1px 1px 1px;text-shadow:0 1px 2px #cccccc;">
@@ -381,7 +400,7 @@ Business Assessment - $379.98</p>
   </div>
   
   <div class="column2" style="padding:4px;margin:0;">
-<div class="w3-panel" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;">
+<div class="w3-panel w3-light-grey" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;">
 <p align="center"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#mystery"><img src="https://user-images.githubusercontent.com/25410880/43028146-1ebd4800-8c4c-11e8-887b-b2d19699f203.png" style="width:100%;" border="0"></a></p>
 
 <p style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;color:#585858;padding:3px 1px 1px 1px;text-shadow:0 1px 2px #cccccc;">
@@ -390,7 +409,8 @@ Mystery Shop Program - $99.00*</p>
   </div>
     
  <div class="column2" style="padding:4px;margin:0;">
-<div class="w3-panel" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;"><p class="w3-pale-blue" align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/48044747-6bf35380-e142-11e8-864c-cda7326a6509.png" style="width:100%;" border="0"></a></p>
+<div class="w3-panel w3-light-grey" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;">
+<p class="w3-pale-blue" align="center"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/48044747-6bf35380-e142-11e8-864c-cda7326a6509.png" style="width:100%;" border="0"></a></p>
 
 <p style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;color:#585858;padding:3px 1px 1px 1px;text-shadow:0 1px 2px #cccccc;">
 Online Marketing Services</p>
@@ -398,7 +418,7 @@ Online Marketing Services</p>
   </div>
   
  <div class="column2" style="padding:4px;margin:0;">
-<div class="w3-panel" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;">
+<div class="w3-panel w3-light-grey" style="padding:0 0 2px 0;margin:0;box-shadow:0 1px 5px #f1f1f1;border:1px solid #f2f2f2;border-radius:2px;">
 <p align="center"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html#mock"><img src="https://user-images.githubusercontent.com/25410880/43028147-1efc0518-8c4c-11e8-9c35-c2ef92305dc5.png" style="width:100%;" border="0"></a></p>
 
 <p style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;color:#585858;padding:3px 1px 1px 1px;text-shadow:0 1px 2px #cccccc;">
@@ -407,12 +427,7 @@ Mock Health Inspection - $129.99</p>
   </div>
  </div>
  </div>
- </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <script>
 var slideIndex = 0;
 showSlides();
@@ -449,8 +464,8 @@ function myFunction() {
 }
 </script>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0 12px 0 12px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 12px 0 12px;margin:50px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:50px 0 0 0;">
 <div class="row w3-card w3-black" style="width:100%;padding:0;margin:0;border-radius:3px 3px 0 0">
 <center>
 <div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:5px 0 0 0;margin:0;border-radius:3px 3px 0 0">
@@ -458,16 +473,16 @@ function myFunction() {
 
 <p align="center"><a class="w3-button w3-white" style="font-family:calibri,helvetica;font-size:11px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
 
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px;"></div>
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 10px 0;"></div>
 </div>
 </div>
 </div>
 </div>
 <center>
-<div class="nab topnav1 w3-card w3-pink" style="width:100%;padding:10px 0 10px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy Policy</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Terms of Use</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Partners</a>
+<div class="nab topnav1 w3-card w3-pink" style="width:100%;padding:10px 0 10px 0;margin:0;border-radius:2px 2px 0 0;">
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY POLICY</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS OF USE</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PARTNERS</a>
 </div>
 </div>
 </body>
