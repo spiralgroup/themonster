@@ -163,15 +163,15 @@ img {
 }
 
 .column {
-    width: 100%;
+    width: 33%;
     float: left;
     padding: 0;
     margin: 0;
- }
+  }
 
 .row,
 .row > .column {
-    padding: 10px;
+    padding: 0;
     margin: 0;
 }
 
@@ -191,14 +191,14 @@ img {
 
 @media (max-width: 900px) {
     .column {
-        width: 100%;
+        width: 50%;
         float: center;
        }
 }
 
 @media (max-width: 900px) {
     .column {
-        width: 100%;
+        width: 50%;
         float: center;
  }
 }
@@ -295,8 +295,8 @@ img {
 <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-pale-red" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button w3-dark-grey" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
+<li><a class="w3-button w3-dark-grey" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
 </ul>
 </div>
 </div>
@@ -331,7 +331,7 @@ img {
 your brand</p>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
 <div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="row w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
 <center>
@@ -796,13 +796,63 @@ No</p>
 Spiral Group, Inc.<br>
 550 North Pine Avenue<br>
 Chicago, IL 60644<br>
-(773) 242-0705<br><br>
+(773) 242-0705</p><br>
 
 <form action="http://maps.google.com/maps" method="get" target="_blank">
 <input type="hidden" name="daddr" value="550 North Central Avenue, Chicago, IL" />
 <input type="submit" value="get directions" class="w3-button w3-black" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;" />
-</form>
+</form><br>
+
+<p align="center">
+<button onclick="document.getElementById('id77').style.display='block'" class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">Store Hours</button><p>
+
+  <div id="id77" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center">
+        <header class="w3-container">
+        <p align="center" style="font-family:calibri,helvetica;font-size:19px;text-shadow:0 1px 2px #000;padding:22px 0 0 0;">Hours of Operation</p>
+        <span onclick="document.getElementById('id77').style.display='none'" class="w3-button w3-small w3-display-topright" title="Close Modal">&times;</span>
+              </header></div>
+<center>
+       <table class="w3-table-all w3-card-4" style="width:400px;padding:0;margin:0;font-family:calibri,helvetica;font-size:17px;">
+    <tr>
+      <th>Monday</th>
+      <th>9am - 9pm</th>
+               </tr>
+                <tr>
+      <th>Tuesday</th>
+     <th>9am - 9pm</th>
+               </tr>
+                <tr>
+      <th>Wednesday</th>
+       <th>9am - 9pm</th>
+               </tr>
+                <tr>
+      <th>Thursday</th>
+      <th>9am - 9pm</th>
+               </tr>
+                <tr>
+      <th>Friday</th>
+      <th>9am - 9pm</th>
+               </tr>
+       <tr>
+     <th>Saturday</th>
+      <th>9am - 9pm</th>
+          </tr>
+    <tr>
+     <th>Sunday</th>
+      <th>9am - 9pm</th>
+         </tr>
+  </table>
+ 
+   
+      <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:25px 0 0 0;">
+       <p align="center" style="font-family:calibri,helvetica;font-size:14.5px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">YOUR SMALL BUSINESS NAME &#124; 773-123-4567</p>
+       </footer>
+   </div>
 </div>
+  </div>
 </div>
 
 <div class="column1" style="padding:0 4px 0 4px;margin:0;">
@@ -844,14 +894,13 @@ Chicago, IL 60644<br>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:50px 0 0 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:red;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:20px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:black;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
 the sg spotlite</p>
 
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;border-radius:4px;">
 <div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
 <div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
 
