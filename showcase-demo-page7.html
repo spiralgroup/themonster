@@ -61,21 +61,21 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  letter-spacing: 1px;
-  color: #fbfbfb;
+    color: #000;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
-  font-size: 11px;
-margin: 0 5px 0 5px;
+   font-size: 10px;
+margin: 0 3px 0 3px;
+letter-spacing: 1px;
 }
 
 .nab a:hover {
-  color: white;
+  color: black;
+  border-bottom: 1px solid #000;
 }
 
 .topnav1 a:hover {
-  border-bottom: 1px solid #fff;
   text-decoration: none;
 }
 
@@ -83,7 +83,9 @@ margin: 0 5px 0 5px;
 position: fixed;
 top: 0;
 max-width: 1235px;
-background-color: #f1f1f1;
+margin: auto;
+border: none;
+box-shadow: 0 2px 0 #f1f1f1;
 }
 
 .mySlides {display:none;}
@@ -211,58 +213,6 @@ img {
         float: center;
        }
 }
-
-.tablink1 {
-    background-color: #ffffff;
-    font-family: calibri;
-    color: black;
-    float: center;
-    outline: none;
-    border: 2px solid rgb(255, 165, 0);
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 0 2px 8px 0;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    display: inline-block;
-}
-
-.tablink {
-    background-color: #d3d3d3;
-    font-family: ubuntu;
-    color: white;
-    float: center;
-    outline: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 8px 12px;
-    margin: 0 0 8px 0;
-    font-size: 12px;
-    display: inline-block;
-}
-
-.tablink:hover {
-    background-color: #777;
-    color: d3d3d3;
-}
-
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 22px 12px 12px 12px;
-    margin: 0;
-    text-align: center;
-}
-
-#Step1 {background-color:#ffffff;}
-#Step2 {background-color:#ffffff;}
-#Step3 {background-color:#ffffff;}
-#Step4 {background-color:#ffffff;}
-#Step5 {background-color:#ffffff;}
-#Step6 {background-color:#ffffff;}
-
 </style>
 </head>
 <body style="width:100%;">
@@ -274,7 +224,7 @@ img {
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"><span>
+<span class="icon-bar"></span>
 </button>
 <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Careers</span>
 <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
@@ -282,20 +232,19 @@ img {
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav">
 <li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Products & Services <span class="caret"></span></a>
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
 <ul class="dropdown-menu">
+<li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
 <li><a href="https://www.yelp.com/biz_photos/spiral-group-incorporated-chicago" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">The SG Gift Card</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Free EP Tool-Kit&reg;</a></li><br>
-<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Solutions</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Operational Assessment Tools</a></li>
-</ul>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About</a></li>
-<li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li>
-</ul>
+<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Tools</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
+</ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-pink" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
-<li><a class="w3-button w3-black" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button w3-blue" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
+<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
 </ul>
 </div>
 </div>
@@ -325,38 +274,34 @@ img {
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 12px 12px 12px;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 join our team</p>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:12px 0 0 0;border-radius:4px;">
 <div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;border-radius:4px;">
 <center>
-<div class="w3-container w3-panel w3-light-grey" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">Become A SpiralGroup Specialist.</p>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;background-color:#fbfbfb;border-radius:4px;">
+<p align="center" style="font-family:khand medium;font-size:16.5px;color:#000;letter-spacing:.5px;padding:4px;margin:0;">Become A SpiralGroup Specialist.</p>
 </div></div></div>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column w3-pale-red" style="padding:0;margin:0;">
-<div class="content w3-pale-red" style="padding:10px 10px 0 10px;margin:0;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:28px;text-shadow:0 1px 2px #000;vertical-align:bottom;padding:0;margin:0;">search</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">HAVE WHAT WE'RE SEEKING?</p>
+<div class="w3-container w3-panel w3-pale-blue" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="column w3-pale-yellow" style="padding:0;margin:0;">
+<div class="content w3-pale-yellow" style="padding:10px 10px 0 10px;margin:0;">
+<p class="topic" align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">HAVE WHAT WE'RE SEEKING?</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
-We seek energetic, self-motivated, and ambitious people to join our team as Sales Professionals / SpiralGroup Specialists. Persons considered <b>hard to employ</b>, due to a criminal past, are strongly encouraged to apply. Ideal candidates have exceptional service skills and the ability to follow very specific instructions to complete all tasks.</p><br>
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;">
+We seek energetic, self-motivated, and ambitious people to join our team as SpiralGroup Specialists. Persons considered <b>hard to employ</b>, due to a criminal past, are strongly encouraged to apply. Ideal candidates have exceptional service skills and the ability to follow very specific instructions to complete all tasks.</p><br>
 
-<p align="left"><i class="material-icons" style="color:#000000;font-size:28px;text-shadow:0 1px 2px #000;vertical-align:bottom;padding:0;margin:0;">speaker_notes</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">YOUR RESPONSIBILITIES</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">YOUR RESPONSIBILITIES</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;">
 Identify small businesses that would benefit from our products and services. Contact potential customers and present our products and services in an effort to sell to those customers. Obtain necessary information from customers in an effort to better serve them. If required, set follow-up appointments to close deals.</p><br>
 
-<p align="left"><i class="material-icons" style="color:#000000;font-size:28px;text-shadow:0 1px 2px #000;vertical-align:bottom;padding:0;margin:0;">supervisor_account</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">OUR REQUIREMENTS</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">OUR REQUIREMENTS</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;">
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Complete our online Professional Development training courses.<br>
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Cell phone and reliable transportation.<br>
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Previous experience in sales, customer service, or other related fields.<br>
@@ -364,24 +309,21 @@ Identify small businesses that would benefit from our products and services. Con
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Ability to think on your feet to communicate potential returns for customers.<br>
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Familiarity with Internet terms and use.<br>
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Excellent written and verbal communications skills.<br>
-<i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> The ability to work professionally and collaboratively in a team-setting.</p><br>
+<i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Ability to work professionally and collaboratively, in a team-setting and while representing Spiral Group, Inc. publicly.</p><br>
 
-<p align="left"><i class="material-icons" style="color:#000000;font-size:28px;text-shadow:0 1px 2px #000;vertical-align:bottom;padding:0;margin:0;">style</i>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">YOUR SALARY</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">YOUR SALARY</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;">
 This is a strictly commission-based sales position. You will be working as an independent contractor. We are launching new products and services that will help drive orders and your commissions. Confident, ethical, and professional Sales Reps earn 23% commission on all products and services sold to new & existing clients.</p><br>
 
-<p align="left"><i class="material-icons" style="color:#000000;font-size:28px;text-shadow:0 1px 2px #000;vertical-align:bottom;padding:0;margin:0;">tag_faces</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">WE'RE DEDICATED TO YOUR SUCCESS</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">WE'RE DEDICATED TO YOUR SUCCESS</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;">
 We know it takes a special person to work in sales. Therefore, we are committed to providing our team members with an enriching and rewarding environment. We provide the resources, training, and support you'll need to serve our clients in the best way possible. While our performance  expectations are high, so is our dedication to your overall success.</p><br>
 
-<p align="left"><i class="material-icons" style="color:#000000;font-size:28px;text-shadow:0 1px 2px #000;vertical-align:bottom;padding:0;margin:0;">card_giftcard</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">WHAT YOU CAN EXPECT</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">WHAT YOU CAN EXPECT</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;">
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Product Knowledge Training.<br>
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> HR Compliance & Ethics Training.<br>
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Sales Support.<br>
@@ -390,13 +332,22 @@ We know it takes a special person to work in sales. Therefore, we are committed 
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> A Professional Profile On Our Website & Business Email Address.<br>
 <i class="fa fa-certificate" style="font-size:5px;color:#000000;text-shadow:0 1px 2px #000;vertical-align:middle;"></i> Automatic Submission Into Our Community Partners Program.</p><br>
 
-<p align="left"><i class="material-icons" style="color:#000000;font-size:28px;text-shadow:0 1px 2px #000;vertical-align:bottom;padding:0;margin:0;">wc</i></p>
-<p class="topic" align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">WORKFORCE DIVERSITY</p>
+<p class="topic" align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">WORKFORCE DIVERSITY</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;">
 Spiral Group, Inc. is an Equal Opportunity Employer committed to workforce diversity. We believe in a diverse and inclusive environment, one that is grounded in our dedication to supporting the Small Business Community. We strongly encourage diversity of thought, background, and experience because we know these are the main ingredients that contribute to a positive and productive workplace.<br><br>
 
 If you think you have what it takes, then submit your most updated resume and targeted cover letter detailing why you'd be a great fit for this position to careers@spiralgroup.org. Once you have submitted your information, contact Michelle Jones at 773 242-0705 to follow-up within 48 hours. Our hours of operation are: Sunday through Saturday, 8 a.m. to 8 p.m. We look forward to speaking with you soon.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -455,23 +406,25 @@ function openTablink(TablinkName,elmnt,color) {
 document.getElementById("defaultOpen").click();
 </script>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:50px 0 0 0;">
-<div class="row w3-card w3-black" style="width:100%;padding:0;margin:0;border-radius:3px 3px 0 0">
+<div class="row" style="width:100%;padding:0;margin:0;">
 <center>
-<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:5px 0 0 0;margin:0;border-radius:3px 3px 0 0">
-<p align="center" style="font-family:nova slim;font-size:17px;color:#f1f1f1;letter-spacing:.5px;padding:6px 0 3px 0;margin:0;">773 242 0705</p>
-<p align="center"><a class="w3-button w3-white" style="font-family:calibri,helvetica;font-size:11px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 10px 0;"></div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:16px;color:#000000;letter-spacing:.5px;font-weight:bold;padding:0;margin:5px 0 0 0;">773 242-0705</p>
+
+<p align="center"><a class="w3-button w3-red" style="font-family:calibri,helvetica;font-size:11px;letter-spacing:1px;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
+
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:0 0 12px 0;"></div>
 </div>
 </div>
 </div>
-</div>
-<center>
-<div class="nab topnav1 w3-card w3-pink" style="width:100%;padding:10px 0 10px 0;margin:0;border-radius:2px 2px 0 0;">
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY POLICY</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS OF USE</a>
+<center><div class="w3-container w3-panel" style="width:100%;background-color:#f1f1f1;padding:0;margin:0;border-top:1px solid #f1f1f1;">
+<div class="nab topnav1" style="width:100%;padding:2px 0 10px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PARTNERS</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
