@@ -96,21 +96,21 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  letter-spacing: 1px;
-  color: #fbfbfb;
+    color: #000;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
-  font-size: 11px;
-margin: 0 5px 0 5px;
+   font-size: 10px;
+margin: 0 3px 0 3px;
+letter-spacing: 1px;
 }
 
 .nab a:hover {
-  color: white;
+  color: black;
+  border-bottom: 1px solid #000;
 }
 
 .topnav1 a:hover {
-  border-bottom: 1px solid #fff;
   text-decoration: none;
 }
 
@@ -118,7 +118,8 @@ margin: 0 5px 0 5px;
 position: fixed;
 top: 0;
 max-width: 1235px;
-background-color: #f1f1f1;
+margin: auto;
+box-shadow: 0 2px 0 #f1f1f1;
 }
 
 .mySlides {display:none;}
@@ -225,9 +226,35 @@ img {vertical-align: middle;}
  }
 }
 
+.row,
+.row > .column3 {
+    padding: 0 13px 0 13px;
+}
+
+.column3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    float: center;
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+       }
+}
 </style>
 </head>
-<body>
+<body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
@@ -238,26 +265,25 @@ img {vertical-align: middle;}
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Our Brand</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Check Us Out</span>
 <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav">
 <li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Products & Services <span class="caret"></span></a>
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
 <ul class="dropdown-menu">
+<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
 <li><a href="https://www.yelp.com/biz_photos/spiral-group-incorporated-chicago" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">The SG Gift Card</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Free EP Tool-Kit&reg;</a></li><br>
-<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Solutions</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Operational Assessment Tools</a></li>
-</ul>
-<li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About</a></li>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li>
-</ul>
+<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Tools</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
+</ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-pink" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
-<li><a class="w3-button w3-black" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button w3-blue" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
+<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
 </ul>
 </div>
 </div>
@@ -288,27 +314,21 @@ img {vertical-align: middle;}
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 what we do</p>
 
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">Online Marketing.</p>
-</div></div></div>
-
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0;margin:0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">Online Marketing.</p>
+</div>
+</div>
+
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">SMALL BUSINESS SHOWCASE PAGES</p>
 
@@ -324,8 +344,8 @@ Many Small Business owners know that an online presence is a crucial component o
 </div>
 
 
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">dvr</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">ONLINE HR SOLUTIONS</p>
 
@@ -342,19 +362,25 @@ We work with you to reduce costs, improve efficiency, and outsource non-core ser
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:20px 0 0 0;margin:0;background-color:#fff;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">Operational Assessments.</p>
-</div></div>
-
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0;margin:20px 0 0 0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">Operational Assessments.</p>
+</div>
+</div>
+
+<center>
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">assessment</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">BUSINESS OPERATIONS ASSESSMENT</p>
 <p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
@@ -366,8 +392,8 @@ If you want a clear picture of how your company is performing, this assessment c
 </div>
 </div>
 
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">STRATEGIC MANAGEMENT PLAN</p>
 
@@ -380,10 +406,11 @@ There is no additional charge for the Strategic Management Plan. It is inlcuded 
 </div>
 </div>
 </div>
+</div>
 
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">assignment_ind</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">MYSTERY SHOP PROGRAM</p>
 <p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
@@ -395,8 +422,8 @@ We'll discreetly visit or call your company to assess how it delivers its produc
 </div>
 </div>
 
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">assignment</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">MOCK HEALTH INSPECTION</p>
 <p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
@@ -408,33 +435,29 @@ Our MHI includes a Food Safety Management Plan, and is conducted by a certified 
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:20px 0 0 0;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:12px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 who we are</p>
-</div>
-</div>
-</div>
-</div>
 
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">A Progressive Small Business.</p>
-</div></div></div>
-
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0;margin:0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">A Progressive Small Business.</p>
+</div>
+</div>
+
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">toys</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">SPIRAL GROUP, INC.</p>
 
@@ -446,8 +469,8 @@ We leverage our skills and corporate experience to help clients build reliable c
 <a class="w3-button w3-light-grey" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:12px;letter-spacing:1.5px;color:#ffffff;border-radius:4px;padding:12px;margin:0;text-decoration:none;">CONTACT US</a></p>
 </div></div>
 
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">nature_people</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">THE RETURNING CITIZEN</p>
 
@@ -488,27 +511,27 @@ She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examina
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:20px 12px 12px 12px;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:12px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 who are you?</p>
-</div>
-</div>
 
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">Explore Your Potential.</p>
-</div>
-
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0;margin:0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">Explore Your Potential.</p>
+</div>
+</div>
+
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">important_devices</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">YOUR SMALL BUSINESS</p>
 
@@ -522,8 +545,8 @@ This is an auspicious time for entrepreneurs to begin taking advantage of these 
 </div>
 
 
-<div class="column2" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
+<div class="column2" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">THE COMPETITION</p>
 
@@ -536,25 +559,27 @@ The most progressive Small Business owner knows that having a website that showc
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:20px 12px 0 12px;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:12px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 songs that inspire</p>
-</div>
-</div>
 
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 2px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">Check It Out.</p>
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0 0 5px 0;margin:0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
- <div class="column" style="padding:5px;margin:0;">
-<div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">Check It Out.</p>
+</div>
+</div>
+
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+ <div class="column" style="padding:0 5px 5px 5px;margin:0;">
+<div class="content1 w3-panel w3-card" style="padding:5px;margin:0;background-color:#fbfbfb;border-radius:4px;">
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">UNBREAKABLE</p>
     
     <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/wsXrtyp4aBk?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -582,6 +607,7 @@ songs that inspire</p>
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">KOOL MOE DEE</p>
          </div>
      </div></div>
+      </div>
      
      <center>
 <!-- Video Gallery Grid -->
@@ -621,6 +647,7 @@ songs that inspire</p>
 </div>
 </div>
 
+
 <script>
 var slideIndex = 0;
 showSlides();
@@ -657,25 +684,25 @@ function myFunction() {
 }
 </script>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:50px 0 0 0;">
-<div class="row w3-card w3-black" style="width:100%;padding:0;margin:0;border-radius:3px 3px 0 0">
+<div class="row" style="width:100%;padding:0;margin:16px 0 0 0;">
 <center>
-<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:5px 0 0 0;margin:0;border-radius:3px 3px 0 0">
-<p align="center" style="font-family:nova slim;font-size:17px;color:#f1f1f1;letter-spacing:.5px;padding:6px 0 3px 0;margin:0;">773 242 0705</p>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:16px;color:#000000;letter-spacing:.5px;font-weight:bold;padding:0;margin:5px 0 0 0;">773 242-0705</p>
 
-<p align="center"><a class="w3-button w3-white" style="font-family:calibri,helvetica;font-size:11px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
+<p align="center"><a class="w3-button w3-red" style="font-family:calibri,helvetica;font-size:11px;letter-spacing:1px;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
 
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 10px 0;"></div>
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:0 0 12px 0;"></div>
 </div>
 </div>
 </div>
-</div>
-<center>
-<div class="nab topnav1 w3-card w3-pink" style="width:100%;padding:10px 0 10px 0;margin:0;border-radius:2px 2px 0 0;">
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY POLICY</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS OF USE</a>
+<center><div class="w3-container w3-panel" style="width:100%;background-color:#f1f1f1;padding:0;margin:0;border-top:1px solid #f1f1f1;">
+<div class="nab topnav1" style="width:100%;padding:2px 0 10px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PARTNERS</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
