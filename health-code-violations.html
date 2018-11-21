@@ -96,21 +96,21 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  letter-spacing: 1px;
-  color: #fbfbfb;
+    color: #000;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
-  font-size: 11px;
-margin: 0 5px 0 5px;
+   font-size: 10px;
+margin: 0 3px 0 3px;
+letter-spacing: 1px;
 }
 
 .nab a:hover {
-  color: white;
+  color: black;
+  border-bottom: 1px solid #000;
 }
 
 .topnav1 a:hover {
-  border-bottom: 1px solid #fff;
   text-decoration: none;
 }
 
@@ -118,7 +118,8 @@ margin: 0 5px 0 5px;
 position: fixed;
 top: 0;
 max-width: 1235px;
-background-color: #f1f1f1;
+margin: auto;
+box-shadow: 0 2px 0 #f1f1f1;
 }
 
 .mySlides {display:none;}
@@ -182,7 +183,7 @@ img {vertical-align: middle;}
 }
 
 .column2 {
-    width: 25%;
+    width: 100%;
     margin: 0 1px 0 1px;
     padding: 0;
     display: inline-block;
@@ -244,12 +245,39 @@ img {vertical-align: middle;}
  }
 }
 
+
+.row,
+.row > .column4 {
+    padding: 0 13px 0 13px;
+}
+
+.column4 {
+    width: 25%;
+    margin: 0 1px 0 1px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+@media (max-width: 900px) {
+    .column4 {
+        width: 100%;
+        float: left;
+       }
+}
+
+@media (max-width: 900px) {
+    .column4 {
+        width: 100%;
+        float: left;
+ }
+}
 </style>
 </head>
-<body>
+<body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border:none;">
+<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -263,20 +291,19 @@ img {vertical-align: middle;}
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav">
 <li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Products & Services <span class="caret"></span></a>
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
 <ul class="dropdown-menu">
+<li class="active"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
 <li><a href="https://www.yelp.com/biz_photos/spiral-group-incorporated-chicago" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">The SG Gift Card</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Free EP Tool-Kit&reg;</a></li><br>
-<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Solutions</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Operational Assessment Tools</a></li>
-</ul>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About</a></li>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li>
-</ul>
+<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Tools</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
+</ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-pink" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
-<li><a class="w3-button w3-black" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button w3-blue" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
+<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
 </ul>
 </div>
 </div>
@@ -308,184 +335,177 @@ img {vertical-align: middle;}
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 health code violations</p>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#585858;">We're Serious About Food Safety.</p>
-</div></div></div>
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 0 8px 0;margin:0 0 16px 0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
- <div class="column" style="padding:5px;margin:0;">
+<div class="column2" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">We're Serious About Food Safety.</p>
+</div>
+</div>
+
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">2 INVESTIGATORS</p>
-    
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/QFDZHFzoGGU?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
- 
- <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">TASTE OF CHICAGO FOOD VENDORS</p>
-              </div>
-  </div>
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/QFDZHFzoGGU?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-  <div class="column" style="padding:5px;margin:0;">
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">TASTE OF CHICAGO FOOD VENDORS</p></div></div>
+
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p> 
-    
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/XsKzGj0jjgo?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p> 
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/XsKzGj0jjgo?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">GOLDEN CORAL</p>
-         </div>
-     </div>
+</div>
+</div>
  
-  <div class="column" style="padding:5px;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">CNN BUSINESS</p>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">CNN BUSINESS</p>
     
 <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/zBXAJV82744?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">CHIPOTLE I</p>
-         </div>
-     </div></div>
+</div></div></div>
      
      <center>
 <!-- Video Gallery Grid 2-->
 <div class="row" style="width:100%;padding:0;margin:0;">
-     
- <div class="column" style="padding:5px;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p>
-    
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/wwac2ydDi6o?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p>
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/wwac2ydDi6o?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">CHIPOTLE II</p>
-         </div>
-     </div>
+</div>
+</div>
      
-      <div class="column" style="padding:5px;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p>
 
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/RWIqd9PQ164?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/RWIqd9PQ164?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">VEGAS BUFFET</p>
-         </div>
-     </div>
+</div>
+</div>
      
-    <div class="column" style="padding:5px;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DIRTY DINING</p>
     
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/ANjqlfmMEVg?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/ANjqlfmMEVg?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">DENNY'S</p>
-         </div>
-     </div>
+</div>
+</div>
 </div>
 
 <!-- Video Gallery Grid 3 -->
 <div class="row" style="width:100%;padding:0;margin:0;">
-     
- <div class="column" style="padding:5px;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DOES RICHARD HAVE A LAWSUIT?</p>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">DOES RICHARD HAVE A LAWSUIT?</p>
     
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/rDLrXp2KHy0?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/rDLrXp2KHy0?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">WENDY'S</p>
-         </div>
-     </div>
+</div>
+</div>
      
-      <div class="column" style="padding:5px;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">HEALTHINSPECTIONS.COM</p>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">HEALTHINSPECTIONS.COM</p>
 
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/4XjFOEY4nKU?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/4XjFOEY4nKU?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">CHURCH'S CHICKEN</p>
-         </div>
-     </div>
+</div>
+</div>
      
-    <div class="column" style="padding:5px;margin:0;">
+<div class="column" style="padding:5px;margin:0;">
 <div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-    <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">HEALTHINSPECTIONS.COM</p>
+<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">HEALTHINSPECTIONS.COM</p>
     
-    <iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/GW_nUVW3io8?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe style="width:100%;padding:0;margin:0;" src="https://www.youtube.com/embed/GW_nUVW3io8?rel=0&amp;showinfo=0" frameborder="0" height="200" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">VARIOUS EATERIES</p>
-         </div>
-     </div>
 </div>
 </div>
-     </div>
+</div>
+</div>
+</div>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 5px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#585858;">Need A Food Safety MGMT Plan?</p>
-</div></div></div>
-<div class="row w3-pale-red" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
 <div class="column2" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">Need A Food Safety MGMT Plan?</p>
+</div>
+</div>
+
+<div class="row w3-pale-blue" style="width:100%;padding:0;margin:0;">
+<div class="column4 w3-pale-blue" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-pale-blue" style="padding:5px 5px 0 5px;margin:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="D2DXWFU64GFKU">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/43028147-1efc0518-8c4c-11e8-9c35-c2ef92305dc5.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/43028147-1efc0518-8c4c-11e8-9c35-c2ef92305dc5.png" style="width:100%;padding:0;margin:0;border-radius:2px;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 </form>
 </div>
+</div>
 
-<div class="column3 w3-pale-red" style="padding:10px 10px 10px 10px;margin:0;border-radius:0 0 4px 4px;">
+<div class="column3 w3-pale-blue" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-pale-blue" style="padding:10px;margin:0;">
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">MOCK HEALTH INSPECTION</p>
 <p align="left" style="font-family:ubuntu;font-size:13px;color:#000000;letter-spacing:1px;">
 Every organization in the food industry is subject to regular public health inspections conducted by local government health departments. These inspections are designed to measure a food establishment's level of sanitation. We can help you prepare for an official City of Chicago Health Department Inspection, and increase your chances of receiving a higher grade.<br><br>
 
 Once we have completed the Mock Health Inspection, we will develop a Food Safety Management Plan for your food establishment &#151; at no additional charge.<br><br>
 
-<button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-light-grey" style="font-family:calibri;font-size:12px;color:#585858;letter-spacing:1px;border-radius:2px;text-decoration:none;padding:6px 8px;margin:0;float:right;">THE DETAILS</button>
-
-  <div id="id04" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-light-grey"> 
-        <span onclick="document.getElementById('id04').style.display='none'" 
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-      <p align="center" style="font-family:calibri,helvetica;font-size:18.5px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:15px 0 0 0">MOCK HEALTH INSPECTION</p>
-      </header>
-      <div class="w3-container">
+<button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-blue" href="#plans-pricing" style="font-family:calibri;font-size:11px;color:#fff;letter-spacing:1px;border-radius:2px;padding:6px 8px;margin:0 0 0 0;float:right;">LEARN MORE</button>
+<div id="id04" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">WHY YOU SHOULD CHOOSE US</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
        
-<p align="left" style="font-family:calibri;font-size:17px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;"><br>
-We work closely with you to ensure food safety, while reviewing your last health inspection report. We develop systems that increase your chances of receiving a higher grade. During the inspection, we train your food service workers on how to prevent health code violations.<br><br>
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+You should choose us because we are serious about food safety. When you hire us to conduct your Mock Health Inspection, we develop and assist with the implementation of a Food Safety Management system that will likely increase your chances of receiving a higher grade during a follow-up City of Chicago Health Inspection.<br><br>
 
-<p align="left" style="font-family:calibri;font-size:17px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-PRICE<br>
+<b>PRICE</b><br>
 $129.99<br><br>
 
-ORDER ONLINE?<br>
-Yes. Either click or tap on the image when you exit this window to make your purchase.</p><br>
-
-<p align="left" style="font-family:calibri;font-size:17px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+<b>ORDER ONLINE?</b><br>
+Yes. Either click or tap on the image when you exit this window to make your purchase.<br><br>
 
 <a href="https://form.jotform.com/82323651984159">Follow this link to schedule a free consultation so we can discuss the benefits of training your food-service professionals to conduct regular Mock Health Inspections.</a></p>
 
 <hr />
 
-<p align="left" style="font-family:calibri;font-size:17px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
 Michelle Jones, the Founder & CEO of Spiral Group, Inc., is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. Along her career path, she has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers.<br><br>
 
-She has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant.</p><br>
+She has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant.</p>
   
      </div>
-      <footer class="w3-container w3-light-grey" style="padding:13px 0 0 0;">
-       <p align="center" style="font-family:calibri,helvetica;font-size:14.5px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">SPIRAL GROUP, INC. &#124; 773-242-0705</p>
-      </footer>
-    </div>
-  </div>
+  <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div></div>
 </div>
 </div>
@@ -527,25 +547,25 @@ function myFunction() {
 }
 </script>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:20px 0 0 0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:30px 0 0 0;">
-<div class="row w3-card w3-black" style="width:100%;padding:0;margin:0;border-radius:3px 3px 0 0">
+<div class="row" style="width:100%;padding:0;margin:0;">
 <center>
-<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:5px 0 0 0;margin:0;border-radius:3px 3px 0 0">
-<p align="center" style="font-family:nova slim;font-size:17px;color:#f1f1f1;letter-spacing:.5px;padding:6px 0 3px 0;margin:0;">773 242 0705</p>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:16px;color:#000000;letter-spacing:.5px;font-weight:bold;padding:0;margin:16px 0 0 0;">773 242-0705</p>
 
-<p align="center"><a class="w3-button w3-white" style="font-family:calibri,helvetica;font-size:11px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
+<p align="center"><a class="w3-button w3-red" style="font-family:calibri,helvetica;font-size:11px;letter-spacing:1px;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
 
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 10px 0;"></div>
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:0 0 12px 0;"></div>
 </div>
 </div>
 </div>
-</div>
-<center>
-<div class="nab topnav1 w3-card w3-pink" style="width:100%;padding:10px 0 10px 0;margin:0;border-radius:2px 2px 0 0;">
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY POLICY</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS OF USE</a>
+<center><div class="w3-container w3-panel" style="width:100%;background-color:#f1f1f1;padding:0;margin:0;border-top:1px solid #f1f1f1;">
+<div class="nab topnav1" style="width:100%;padding:2px 0 10px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PARTNERS</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
