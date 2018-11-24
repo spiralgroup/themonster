@@ -55,6 +55,13 @@ $(document).ready(function(){
 
 <style type="text/css">
 
+<style type="text/css">
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+}
+
 div.scrollmenu {
     background-color: #fff;
     overflow: auto;
@@ -63,16 +70,16 @@ div.scrollmenu {
 
 div.scrollmenu a {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 12px;
-    margin: 5px 0 5px 0;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     border-radius: 2px;
 }
 
 div.scrollmenu a:hover {
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 
 body, html {
@@ -108,21 +115,21 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  letter-spacing: 1px;
-  color: #fbfbfb;
+    color: #000;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
-  font-size: 11px;
-margin: 0 5px 0 5px;
+   font-size: 10px;
+margin: 0 3px 0 3px;
+letter-spacing: 1px;
 }
 
 .nab a:hover {
-  color: white;
+  color: black;
+  border-bottom: 1px solid #000;
 }
 
 .topnav1 a:hover {
-  border-bottom: 1px solid #fff;
   text-decoration: none;
 }
 
@@ -183,7 +190,7 @@ img {
 }
 
 .column3 {
-    width: 75%;
+    width: 100%;
     float: left;
     padding: 0;
     margin: 0;
@@ -208,6 +215,36 @@ img {
     margin: 0;
     border-radius: 2px;
 }
+
+
+
+.column2 {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+.row,
+.row > .column2 {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
 
 @media (max-width: 900px) {
     .column {
@@ -272,7 +309,7 @@ img {
 }
 
 .column1 {
-    width: 31.5%;
+    width: 32.95%;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -328,13 +365,14 @@ img {
 </ul></ul>
 
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-dark-grey" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT SPIRALGROUP.ORG</a></li>
-<li><a class="w3-button w3-dark-grey" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button w3-blue" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT</a></li>
+<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
 </ul>
 </div>
 </div>
 </nav>
 </div>
+
 <center>
 <div class="w3-container w3-card" style="width:100%;padding:0;margin:0;box-shadow:2px 2px 20px #fff;border-radius:4px;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
@@ -359,174 +397,143 @@ img {
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 get in touch</p>
 
-<!-- row 1 -->
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;border-radius:4px;">
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
-<center>
-<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:12px 0 10px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">Your Company Name Here.</p>
-
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0;margin:0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column1" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:16.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">How Can We Help You?</p>
+</div>
+</div>
+
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="column1" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">dvr</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">GENERAL FEEDBACK</p>
 
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:14px;color:#000000;letter-spacing:.5px;">
 Use this option to submit your reviews, general comments and concerns, or to join our mailing list. We look forward to hearing from you.<br><br>
 
 <a class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">GENERAL FEEDBACK</a></p>
 </div>
 </div>
 
-
-<div class="column1" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">dvr</i></p>
+<div class="column1" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">message</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">REQUEST QUOTE</p>
 
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
-Use this option to request a price quote for our customized products and services. We'll respond with the most competitive price within 2 hours.<br><br>
+<p align="left" style="font-family:calibri,helvetica;font-size:14px;color:#000000;letter-spacing:.5px;">
+Use this option to request a price quote for customized products and specialized services. Response time, approximately 2 hours.<br><br>
 
-<a class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">GENERAL FEEDBACK</a></p>
+<a class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">REQUEST QUOTE</a></p>
 </div>
 </div>
 
-<div class="column1" style="padding:0 4px 0 4px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:16px 2px 16px 2px;box-shadow:0 2px 2px #ddd;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
+
+<div class="column1" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">date_range</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">BOOK APPOINTMENT</p>
 
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+<p align="left" style="font-family:calibri,helvetica;font-size:14px;color:#000000;letter-spacing:.5px;">
 Looking to book an appointment online? Then, use this option and we will do our best to accomodate your scheduling request.<br><br>
 
 <a class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">BOOK APPOINTMENT</a></p>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 12px 12px;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:32px 0 0 0;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+feedback</p>
+<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
 <div class="row w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
 <center>
-<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:12px 0 10px 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:20px;color:#000;">Check Out Our Reviews.</p>
+<div class="scrollmenu w3-white" style="width:100%;padding:0;margin:0;">
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
 
-<div class="scrollmenu" style="padding:0;margin:0;">
-<a class="w3-pale-red" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<p><b>Michelle Jones, Verified Customer</b></p></a>
 
-<a class="w3-pale-green" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
 
-<a class="w3-pale-yellow" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<p><b>Michelle Jones, Verified Customer</b></p></a>
 
-<a class="w3-pale-blue" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
 
-<a class="w3-pale-red" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<p><b>Michelle Jones, Verified Customer</b></p></a>
 
-<a class="w3-pale-green" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
 
-<a class="w3-pale-yellow" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<p><b>Michelle Jones, Verified Customer</b></p></a>
 
-<a class="w3-pale-blue" href="#" style="font-family:courgette;font-size:14px;padding:12px;color:#000000;">
-"I love the customer service they provide.<br>
-Their products are the best!"<br><br>
-<b>Michelle Jones, Verified Customer</b></a>
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p><b>Michelle Jones, Verified Customer</b></p></a>
+
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p><b>Michelle Jones, Verified Customer</b></p></a>
+
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p><b>Michelle Jones, Verified Customer</b></p></a>
+
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p><b>Michelle Jones, Verified Customer</b></p></a>
+
+<a class="w3-pale-red" href="#" style="font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p><b>Michelle Jones, Verified Customer</b></p></a>
+
 </div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="item1" class="row" style="width:100%;padding:0 12px 0 12px;margin:0;border-bottom:4px solid #ffffff;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-get in touch</p>
-
-
-<form action="http://maps.google.com/maps" method="get" target="_blank">
-<input type="hidden" name="daddr" value="550 North Central Avenue, Chicago, IL" />
-<input type="submit" value="get directions" class="w3-button w3-black" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;" />
-</form><br>
-
-<p align="center">
-<button onclick="document.getElementById('id77').style.display='block'" class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">Store Hours</button><p>
-
-  <div id="id77" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
-
-      <div class="w3-center">
-        <header class="w3-container">
-        <p align="center" style="font-family:calibri,helvetica;font-size:19px;text-shadow:0 1px 2px #000;padding:22px 0 0 0;">Hours of Operation</p>
-        <span onclick="document.getElementById('id77').style.display='none'" class="w3-button w3-small w3-display-topright" title="Close Modal">&times;</span>
-              </header></div>
-<center>
-       <table class="w3-table-all w3-card-4" style="max-width:400px;padding:0;margin:0;font-family:calibri,helvetica;font-size:17px;">
-    <tr>
-      <th>Monday</th>
-      <th>9am - 9pm</th>
-               </tr>
-                <tr>
-      <th>Tuesday</th>
-     <th>9am - 9pm</th>
-               </tr>
-                <tr>
-      <th>Wednesday</th>
-       <th>9am - 9pm</th>
-               </tr>
-                <tr>
-      <th>Thursday</th>
-      <th>9am - 9pm</th>
-               </tr>
-                <tr>
-      <th>Friday</th>
-      <th>9am - 9pm</th>
-               </tr>
-       <tr>
-     <th>Saturday</th>
-      <th>9am - 9pm</th>
-          </tr>
-    <tr>
-     <th>Sunday</th>
-      <th>9am - 9pm</th>
-         </tr>
-  </table>
- 
-   
-      <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:25px 0 0 0;">
-       <p align="center" style="font-family:calibri,helvetica;font-size:14.5px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">YOUR SMALL BUSINESS NAME &#124; 773-123-4567</p>
-       </footer>
-   </div>
 </div>
 </div>
 </div>
@@ -535,7 +542,63 @@ get in touch</p>
 </div>
 </div>
 
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
+<hr />
 
+<div class="w3-container w3-panel w3-light-grey" style="width:100%;padding:0;margin:40px 0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-light-grey" style="padding:10px 0 2px 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:16.5px;color:#000;letter-spacing:.5px;padding:0;margin:0;">Available Call-To-Action Options.</p>
+</div>
+</div>
+
+<div class="row w3-light-grey" style="width:100%;padding:0;margin:0;">
+<div class="column" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">description</i></p>
+<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0 0 10px 0;">COMPLETE PRODUCT LIST</p>
+
+<p align="center"><a class="w3-button w3-blue" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;border-radius:2px;text-decoration:none;padding:6px 8px;">VIEW COMPLETE PRODUCT LIST</a></p>
+</div>
+</div>
+
+<div class="column" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">import_contacts</i></p>
+<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0 0 10px 0;">ONLINE MENU</p>
+
+<p align="center"><a class="w3-button w3-blue" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;border-radius:2px;text-decoration:none;padding:6px 8px;">VIEW ONLINE MENU</a></p>
+</div>
+</div>
+
+<div class="column" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">event_seat</i></p>
+<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0 0 10px 0;">ONLINE RESERVATIONS</p>
+
+<p align="center"><a class="w3-button w3-blue" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;border-radius:2px;text-decoration:none;padding:6px 8px;">MAKE A RESERVATION</a></p>
+</div>
+</div>
+
+<div class="column" style="padding:4px 2px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">find_in_page</i></p>
+<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0 0 10px 0;">CITY HEALTH REPORT</p>
+
+<p align="center"><a class="w3-button w3-red" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;border-radius:2px;text-decoration:none;padding:6px 8px;">VIEW HEALTH REPORT</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -576,25 +639,25 @@ function myFunction() {
 }
 </script>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:50px 0 0 0;">
-<div class="row w3-card w3-black" style="width:100%;padding:0;margin:0;border-radius:3px 3px 0 0">
+<div class="row" style="width:100%;padding:0;margin:0;">
 <center>
-<div class="w3-container w3-panel w3-card w3-black" style="width:100%;padding:5px 0 0 0;margin:0;border-radius:3px 3px 0 0">
-<p align="center" style="font-family:nova slim;font-size:17px;color:#f1f1f1;letter-spacing:.5px;padding:6px 0 3px 0;margin:0;">773 242 0705</p>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:16px;color:#000000;letter-spacing:.5px;font-weight:bold;padding:0;margin:5px 0 0 0;">773 242-0705</p>
 
-<p align="center"><a class="w3-button w3-white" style="font-family:calibri,helvetica;font-size:11px;color:#585858;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
+<p align="center"><a class="w3-button w3-red" style="font-family:calibri,helvetica;font-size:11px;letter-spacing:1px;border-radius:2px;text-decoration:none;margin:10px 0 0 0;padding:8px 12px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">SHOWCASE YOUR SMALL BUSINESS</a></p>
 
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:10px 0 10px 0;"></div>
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:0 0 12px 0;"></div>
 </div>
 </div>
 </div>
-</div>
-<center>
-<div class="nab topnav1 w3-card w3-pink" style="width:100%;padding:10px 0 10px 0;margin:0;border-radius:2px 2px 0 0;">
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY POLICY</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS OF USE</a>
+<center><div class="w3-container w3-panel" style="width:100%;background-color:#f1f1f1;padding:0;margin:0;border-top:1px solid #f1f1f1;">
+<div class="nab topnav1" style="width:100%;padding:2px 0 10px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PARTNERS</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
