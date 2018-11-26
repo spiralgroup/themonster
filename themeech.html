@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-us">
 <head>
 <title>Product Page Demo</title>
@@ -287,13 +287,11 @@ img {
 .row,
 .row > .column1 {
     padding: 0;
-    margin: 0;
+    margin: 5px 1px;
 }
 
 .column1 {
     width: 32%;
-    padding: 0;
-    margin: 0;
     display: inline-block;
     float: center;
 }
@@ -317,6 +315,24 @@ img {
         float: center;
 }
 }
+
+.button {
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    font-family: ubuntu;
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #000;
+    display: inline-block;
+    cursor: pointer;
+}
+
 </style>
 </head>
 <body style="width:100%;">
@@ -411,17 +427,14 @@ your products</p>
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:42px 12px 0 12px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 0 10px 0;margin:0 0 20px 0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column3" style="padding:0;margin:0;">
-<div class="content1 w3-panel" style="width:100%;padding:2px;margin:0;">
-</div>
-</div>
+<div class="w3-container w3-panel w3-card" style="background-color:#f2f7ff;width:100%;padding:0;margin:0 0 20px 0;box-shadow:0 1px 20px #cccccc;border-radius:4px;">
 <!-- row 1 -->
-<div id="item1" class="row" style="width:100%;padding:0;margin:0;border-bottom:4px solid #ffffff;">
-<div class="column1" style="background-color:#f2f7ff;padding:5px 5px 15px 5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:100%;"></p>
-<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
+<div class="w3-container w3-panel" style="background-color:#f2f7ff;width:100%;padding:0;margin:0;">
+<div id="item1" class="row" style="background-color:#f2f7ff;width:100%;padding:0;margin:0;border-bottom:2px solid #f2f7ff;">
+<div class="column1" style="padding:0;box-shadow:0 1px 1px 1px #e6e6e6;">
+<img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:100%;">
+<div class="content1 w3-panel" style="background-color:#db7093;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
 <div id="id01" class="w3-modal w3-animate-zoom">
 <div class="w3-modal-content w3-card-4">
@@ -461,10 +474,11 @@ No</p>
 </footer>
 </div>
 </div>
+<a class="w3-button w3-black" style="border:none;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
-<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div>
 
-<div id="item2" class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div id="item2" class="column1" style="padding:1px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
@@ -508,9 +522,11 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div>
+<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div>
 
-<div id="item3" class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+
+<div id="item3" class="column1" style="padding:1;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
@@ -557,8 +573,9 @@ No</p>
 <a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div></div>
 
 <!-- row 2 -->
-<div id="item4" class="row" style="width:100%;padding:0;margin:0;border-bottom:4px solid #ffffff;">
-<div class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div id="item4" class="row" style="background-color:#f2f7ff;width:100%;padding:0;margin:0;border-bottom:4px solid #ffffff;">
+<div class="column1" style="padding:1px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
@@ -602,9 +619,11 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div>
+<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div>
 
-<div id="item5" class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+
+<div id="item5" class="column1" style="padding:1px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
@@ -648,9 +667,11 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div>
+<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div>
 
-<div id="item6" class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+
+<div id="item6" class="column1" style="padding:1;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
@@ -694,11 +715,14 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div>
+<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div></div>
+
+
  
 <!-- row 3 -->
 <div id="item7" class="row" style="width:100%;padding:0;margin:0;border-bottom:4px solid #ffffff;">
-<div class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="column1" style="padding:1px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id07').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
@@ -742,9 +766,11 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div>
+<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div>
 
-<div id="item8" class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+
+<div id="item8" class="column1" style="padding:1px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
@@ -788,9 +814,10 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div>
+<a class="w3-button w3-black" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">BUY NOW</a></div></div>
 
-<div id="item9" class="column1" style="background-color:#f2f7ff;padding:5px;margin:5px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div id="item9" class="column1" style="padding:1px;box-shadow:0 1px 1px 1px #e6e6e6;border-radius:2px;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 <p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;"></p>
 
 <button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-blue" style="border-radius:3px;font-family:calibri;font-size:12px;letter-spacing:1px;padding:6px 8px;text-decoration:none;margin:0;">PRODUCT DESCRIPTION</button>
