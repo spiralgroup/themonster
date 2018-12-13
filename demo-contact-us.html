@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>Demo Webage &#124; Contact Us</title>
+<title>Demo WebPage &#124; Contact Us</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
@@ -15,13 +15,15 @@
 <meta property="og:description" content="Small Business Solutions and HR Tools. Sign up for a free phone session so we can help you formulate and implement a strategy that supports the needs of your market and increases overall profitability." />
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="canonical" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html/" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
@@ -53,9 +55,66 @@ $(document).ready(function(){
 });
 </script>
 
-<style type="text/css">
 
 <style type="text/css">
+.openinghours {
+    font-family:calibri;
+    font-size:14px;
+    color:#000;
+    letter-spacing:.5px;
+   
+    padding:0 2px 0 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+.openinghourscontent h2 {
+    display:block;
+    text-align:center;
+    margin-top:.33em;
+}
+.openinghourscontent button {
+    color:white;
+    font-family:Courier New;
+    font-size:large;
+    background-color:#4679BD;
+    border-radius:4px;
+    width:100%;
+    
+}
+.today {
+    color: dodgerblue;
+}
+.opening-hours-table tr td:first-child {
+  font-weight:bold;
+}
+#open-status {
+    display:block;
+    text-align:center;
+}
+
+.openorclosed:after {
+    content:" open during these hours:";
+}
+.open {
+    color:#fff;
+}
+.open:after {
+    content:" Open";
+    color: #fff;
+    text-shadow:0 1px 1px #585858;
+}
+.closed:after {
+    content:" Closed";
+  color: #000;
+   text-shadow:0 1px 1px #585858;
+}    
+.opening-hours-table tr td {
+    padding:0 5px 5px 5px;
+}
+
 div.scrollmenu {
     background-color: #fff;
     overflow: auto;
@@ -174,10 +233,11 @@ img {
 }
 
 .column {
-    width: 25%;
-    float: left;
+    width: 33%;
+    float: center;
     padding: 0;
     margin: 0;
+    display: inline-block;
   }
 
 .row,
@@ -312,7 +372,7 @@ img {
 }
 
 .column1 {
-    width: 32.95%;
+    width: 24.650%;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -412,7 +472,7 @@ contact us</p>
 </div>
 
 <div class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;">
-<div class="column1" style="padding:1px;margin:0;">
+<div class="column" style="padding:1px;margin:0;">
 <div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">dvr</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">GENERAL FEEDBACK</p>
@@ -424,7 +484,7 @@ Use this option to submit your reviews, general comments and concerns, or to joi
 </div>
 </div>
 
-<div class="column1" style="padding:1px;margin:0;">
+<div class="column" style="padding:1px;margin:0;">
 <div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">message</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">REQUEST QUOTE</p>
@@ -437,7 +497,7 @@ Use this option to request a price quote for customized products and specialized
 </div>
 
 
-<div class="column1" style="padding:1px;margin:0;">
+<div class="column" style="padding:1px;margin:0;">
 <div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
 <p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">date_range</i></p>
 <p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">BOOK APPOINTMENT</p>
@@ -445,13 +505,10 @@ Use this option to request a price quote for customized products and specialized
 <p align="left" style="font-family:calibri,helvetica;font-size:14px;color:#000000;letter-spacing:.5px;">
 Looking to book an appointment online? Then, use this option and we will do our best to accomodate your scheduling request.<br><br>
 
-<a class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">BOOK APPOINTMENT</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<a class="w3-button w3-black" href="https://spiralgroupinc.appointlet.com" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">BOOK APPOINTMENT</a></p>
+ </div>
+</div></div>
+</div></div>
 </div>
 </div>
 </div>
@@ -462,78 +519,187 @@ Looking to book an appointment online? Then, use this option and we will do our 
 </div>
 </div>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 12px 12px;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:32px 0 0 0;margin:0;">
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:38px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-your feedback</p>
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="row w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;background-color:#fff;border-radius:4px;">
-<div class="row" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
+our location</p>
+
+<div class="w3-container w3-panel" style="background-color:#ffebcd;padding:0;margin:0;box-shadow:0 1px 20px #ccc;border-radius:4px;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel" style="background-color:#ffebcd;padding:0;margin:0;">
+</div>
+</div>
+
 <center>
-<div class="scrollmenu w3-white" style="width:100%;padding:0;margin:0;">
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+<div class="row" style="background-color:#ffebcd;padding:0;margin:0;box-shadow:0 1px 20px #ccc;border-radius:4px;">
+  <div class="column3" style="background-color:#ffebcd;padding:10px 0;margin:0;vertical-align:middle;">
+ 
+ <p align="center" style="font-family:calibri;font-size:20px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">SPIRAL GROUP, INC.</p>
+ <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">Online Marketing Solutions</p>
+  </div>
+  </div>
+    
+    <div class="column" style="padding:1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
+  <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
+   <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">ADDRESS</p>
+   <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">550 North Central Avenue, Suite 109<br>
+Chicago, Illinois 60644</p>
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+<input type="hidden" name="daddr" value="550 North Central Avenue, Chicago, IL" />
+<input type="submit" value="get directions" class="w3-button" style="background-color:#ffebcd;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;border-radius:2px;margin:10px 0 0 0;">
+</form>
+</div>
+   </div>
+   
+   <div class="column" style="padding:1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
+    <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">slow_motion_video</i></p>
+      <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">STORE HOURS</p>
+  <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+773-242-0705 &#124; P<br>
+773-242-1234 &#124; F</p>
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+<button onclick="document.getElementById('id77').style.display='block'" class="w3-button" style="background-color:#ffebcd;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;text-decoration:none;border-radius:2px;margin:10px 0 0 0;">view store hours</button>
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+  <div id="id77" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:450px;">
+     <div class="w3-center">
+        <header class="w3-container w3-blue">
+           <p id="open-status" style="font-family:calibri;font-size:18px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:4px 0 3px 0;margin:0;"><large class="openorclosed">We Are</large></p>
+        <span onclick="document.getElementById('id77').style.display='none'" class="w3-button w3-small w3-display-topright" title="Close Modal">&times;</span>
+              </header></div>
+<div class="w3-panel" style="width:100%;background-color:#fff;">
+  
+  <div class="column3" style="background-color:#fff;">
+ <section class="openinghours" style="background-color:#fff;">
+    <div class="openinghourscontent section">
+        <table class="opening-hours-table">
+    
+            <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
+                <td>Monday</td>
+                <td class="opens">08:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
+                <td>Tuesday</td>
+                <td class="opens">08:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
+                <td>Wednesday</td>
+                <td class="opens">08:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+            <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
+                <td>Thursday</td>
+                <td class="opens">08:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+            <tr id="Friday" itemprop="openingHours" title="Open Friday at 9am to 6pm">
+                <td>Friday</td>
+                <td class="opens">08:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+            <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
+                <td>Saturday</td>
+                <td class="opens">08:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+            <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
+                <td>Sunday</td>
+                <td class="opens">08:00</td>
+                <td>-</td>
+                <td class="closes">20:00</td>
+            </tr>
+        </table>
+        </div>
+        </div>
+         </div>
+         </div>
+<div class="column3">
+<img src="https://www.appointletcdn.com/loader/buttons/008DBD.png" data-appointlet-organization="spiralgroupinc"><script src="https://www.appointletcdn.com/loader/loader.min.js" async="" defer=""></script>
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+<script>
+var currentDate = new Date();
+var weekday = [];
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+var currentDay = weekday[currentDate.getDay()];
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+var currentTimeHours = currentDate.getHours();
+currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
+var currentTimeMinutes = currentDate.getMinutes();
+var timeNow = currentTimeHours + "" + currentTimeMinutes;
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //this works at hightlighting today
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+var openTimeHours = openTimeSplit[0];
+openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+var openTimeMinutes = openTimeSplit[1];
+var openTimex = openTimeSplit[0] + openTimeSplit[1];
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+var closeTimeHours = closeTimeSplit[0];
+closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+var closeTimeMinutes = closeTimeSplit[1];
+var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
+if (timeNow >= openTimex && timeNow <= closeTimex) {
+    $(".openorclosed").toggleClass("open");
+} else {
+    $(".openorclosed").toggleClass("closed");
+}
+</script>
+</div>
+</section>
+</div>   
+</div>
+</div>
 
-<p><b>Michelle Jones, Verified Customer</b></p></a>
 
-<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
-<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-<p>"I love the customer service they provide.<br>
-Their products are the best!"</p>
-
-<p><b>Michelle Jones, Verified Customer</b></p></a>
+  <div class="column" style="padding:1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
+    <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">contact_mail</i></p>
+      <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">MAILING LIST</p>
+ <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">Receive E-mail Updates On<br>
+New Products & Special Promotions</p>
+<p align="center" style="padding:0;margin:0;"><a class="w3-button" href="https://form.jotform.com/82323651984159" style="background-color:#ffebcd;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;text-decoration:none;border-radius:2px;margin:10px 0 0 0;">sign up</a></p>
+  </div>
+   </div>
+   </div>
+   
+<div class="row" style="background-color:#ffebcd;padding:0;margin:0;box-shadow:0 1px 20px #ccc;border-radius:4px;">
+  <div class="column3" style="padding:1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:5px;margin:0;border-radius:4px;">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.0981146394124!2d-87.76774368493028!3d41.89074697922122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e334e3476db5b%3A0x63dbabfc44c23541!2s550+N+Central+Ave%2C+Chicago%2C+IL+60644!5e0!3m2!1sen!2sus!4v1544464086017" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  </div>
+  
+  </div>
+</div></div>
+</div></div>
 </div>
 </div>
 </div>
@@ -541,7 +707,7 @@ Their products are the best!"</p>
 </div>
 </div>
 </div>
-</div>
+
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:26px 0 0 0;">
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 12px 12px;margin:0;border-radius:4px;">
@@ -555,51 +721,51 @@ sg marketplace</p>
 
 <center>
 <div class="scrollmenu w3-white" style="width:100%;padding:0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223336-59f87f80-f393-11e8-96aa-82694c2bf84a.png" style="width:80%;"></p>
 <p>AUTOMOTIVE</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223337-5a911600-f393-11e8-8756-84522993a828.png" style="width:80%;"></p>
 <p>B2B</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223338-5b29ac80-f393-11e8-95b9-736056ec0ea0.jpg" style="width:80%;"></p>
 <p>BEAUTY & SPAS</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49225063-f0c73b00-f397-11e8-8833-ff0fd09da567.png" style="width:80%;"></p>
 <p>COACHING SERVICES</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223342-5bc24300-f393-11e8-90f5-ddb352eea2dd.png" style="width:80%;"></p>
 <p>ENTERTAINMENT</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223343-5c5ad980-f393-11e8-8cc3-62a4276f7138.png" style="width:80%;"></p>
 <p>FOOD & DRINK</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223344-5cf37000-f393-11e8-936c-940fe2df4434.png" style="width:80%;"></p>
 <p>HEALTH & FITNESS</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223345-5cf37000-f393-11e8-8550-6af2c09e65d6.png" style="width:80%;"></p>
 <p>HOME SERVICES</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223347-5e249d00-f393-11e8-9055-79ca9e9cf6f4.png" style="width:80%;"></p>
 <p>HOTELS & LODGING</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49223348-5e249d00-f393-11e8-83f7-09b547a5c7f9.png" style="width:80%;"></p>
 <p>NITE LIFE</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49225067-f15fd180-f397-11e8-9b20-7342da0e30c0.png" style="width:80%;"></p>
 <p>ONLINE LEARNING</p></a>
 
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:calibri,helvetica;font-size:15px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49225069-f15fd180-f397-11e8-8e20-59d64275f7fc.png" style="width:80%;"></p>
 <p>SPIRITUAL ENRICHMENT</p></a></div>
 </div>
