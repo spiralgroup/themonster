@@ -62,7 +62,6 @@ $(document).ready(function(){
     font-size:14px;
     color:#000;
     letter-spacing:.5px;
-   
     padding:0 2px 0 2px;
     overflow: hidden;
     display: inline-block;
@@ -70,20 +69,7 @@ $(document).ready(function(){
 .openinghourscontent {
     float:left;
 }
-.openinghourscontent h2 {
-    display:block;
-    text-align:center;
-    margin-top:.33em;
-}
-.openinghourscontent button {
-    color:white;
-    font-family:Courier New;
-    font-size:large;
-    background-color:#4679BD;
-    border-radius:4px;
-    width:100%;
-    
-}
+
 .today {
     color: dodgerblue;
 }
@@ -95,22 +81,10 @@ $(document).ready(function(){
     text-align:center;
 }
 
-.openorclosed:after {
-    content:" open during these hours:";
-}
 .open {
     color:#fff;
 }
-.open:after {
-    content:" Open";
-    color: #fff;
-    text-shadow:0 1px 1px #585858;
-}
-.closed:after {
-    content:" Closed";
-  color: #000;
-   text-shadow:0 1px 1px #585858;
-}    
+    
 .opening-hours-table tr td {
     padding:0 5px 5px 5px;
 }
@@ -276,10 +250,7 @@ img {
     background-color: #ffffff;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
 }
-
-
 
 .column2 {
     width: 50%;
@@ -433,8 +404,11 @@ img {
 </ul>
 </div>
 </div>
-</nav>
 </div>
+</div>
+</nav>
+
+
 
 <center>
 <div class="w3-container w3-card" style="width:100%;padding:0;margin:0;box-shadow:2px 2px 20px #fff;border-radius:4px;">
@@ -571,7 +545,7 @@ For Your Convenience</p>
     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:450px;">
      <div class="w3-center">
         <header class="w3-container w3-blue">
-           <p id="open-status" style="font-family:calibri;font-size:18px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:4px 0 3px 0;margin:0;"><large class="openorclosed">We Are</large></p>
+           <p align="center" style="font-family:calibri;font-size:18px;color:#fff;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:4px 0 3px 0;margin:0;">STORE HOURS</p>
         <span onclick="document.getElementById('id77').style.display='none'" class="w3-button w3-small w3-display-topright" title="Close Modal">&times;</span>
               </header></div>
 <div class="w3-panel" style="width:100%;background-color:#fff;">
@@ -583,45 +557,45 @@ For Your Convenience</p>
     
             <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
                 <td>Monday</td>
-                <td class="opens">08:00</td>
+                <td class="opens">8:00am</td>
                 <td>-</td>
-                <td class="closes">20:00</td>
+                <td class="closes">8:00pm</td>
             </tr>
             <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
                 <td>Tuesday</td>
-                <td class="opens">08:00</td>
+               <td class="opens">8:00am</td>
                 <td>-</td>
-                <td class="closes">20:00</td>
+                <td class="closes">8:00pm</td>
             </tr>
             <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
                 <td>Wednesday</td>
-                <td class="opens">08:00</td>
+                <td class="opens">8:00am</td>
                 <td>-</td>
-                <td class="closes">20:00</td>
+                <td class="closes">8:00pm</td>
             </tr>
             <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
                 <td>Thursday</td>
-                <td class="opens">08:00</td>
+               <td class="opens">8:00am</td>
                 <td>-</td>
-                <td class="closes">20:00</td>
+                <td class="closes">8:00pm</td>
             </tr>
             <tr id="Friday" itemprop="openingHours" title="Open Friday at 9am to 6pm">
                 <td>Friday</td>
-                <td class="opens">08:00</td>
+                <td class="opens">8:00am</td>
                 <td>-</td>
-                <td class="closes">20:00</td>
+                <td class="closes">8:00pm</td>
             </tr>
             <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
                 <td>Saturday</td>
-                <td class="opens">08:00</td>
+               <td class="opens">8:00am</td>
                 <td>-</td>
-                <td class="closes">20:00</td>
+                <td class="closes">8:00pm</td>
             </tr>
             <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
                 <td>Sunday</td>
-                <td class="opens">08:00</td>
+                <td class="opens">8:00am</td>
                 <td>-</td>
-                <td class="closes">20:00</td>
+                <td class="closes">8:00pm</td>
             </tr>
         </table>
         </div>
