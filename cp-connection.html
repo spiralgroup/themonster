@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Community Partners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+    max-width: 1235px;
+    height: 100%;
+    margin: auto;
+    background-image: linear-gradient(to left, #fff, #fbfbfb);
+}
+
+.top-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: calibri,helvetica;
+  color: #000;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 1px #585858;
+}
+
+.nab a:hover {
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
+}
+
+img {
+    border-radius: 0; 
+    max-width: 100%;
+}
+
+.column {
+    width: 33%;
+    float: left;
+    padding: 8px;
+    margin: 0;
+    display: none;
+  }
+
+.row,
+.row > .column {
+    padding: 8px;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 400px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 400px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 0;
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body style="width:100%;">
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;">
+</div>
+</div>
+
+<center>
+<div class="content">
+</div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0 0 38px 0;">
+cp connection</p>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<center>
+<!-- Portfolio Gallery Grid -->
+<div class="row" style="width:100%;padding:0;margin:0;">
+  <div class="column nature" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+      <img src="https://user-images.githubusercontent.com/25410880/49752506-6d45fd80-fc65-11e8-9c63-6c970e2a8b06.png" alt="Mountains" style="width:100%">
+         </div>
+  </div>
+  <div class="column nature" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+    <img src="https://user-images.githubusercontent.com/25410880/50038976-d79ccc00-ffde-11e8-8344-5772f57846d8.png" alt="Lights" style="width:100%">
+         </div>
+  </div>
+  <div class="column nature" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+    <img src="https://user-images.githubusercontent.com/25410880/50038968-d66b9f00-ffde-11e8-84e0-3c9edfdec9ee.png" alt="Nature" style="width:100%">
+         </div>
+  </div>
+  </div>
+  
+  <div class="row" style="width:100%;padding:0;margin:0;">
+  <div class="column cars" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+      <img src="https://user-images.githubusercontent.com/25410880/50038966-d5d30880-ffde-11e8-8403-ed1b1f60017e.png" alt="Car" style="width:100%">
+        </div>
+  </div>
+  <div class="column cars" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+    <img src="https://user-images.githubusercontent.com/25410880/50038967-d5d30880-ffde-11e8-8f5a-c9842772a331.png" alt="Car" style="width:100%">
+        </div>
+  </div>
+  <div class="column cars" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+    <img src="https://user-images.githubusercontent.com/25410880/50038971-d7043580-ffde-11e8-83e0-c655619a3d67.png" alt="Car" style="width:100%">
+         </div>
+  </div>
+  </div>
+  
+   <div class="row" style="width:100%;padding:0;margin:0;">
+   <div class="column people" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+      <img src="https://user-images.githubusercontent.com/25410880/50038969-d66b9f00-ffde-11e8-947d-5ede42f33f4f.png" alt="Car" style="width:100%">
+          </div>
+  </div>
+  <div class="column people" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+    <img src="https://user-images.githubusercontent.com/25410880/50038970-d66b9f00-ffde-11e8-9fca-a8151410eef7.png" alt="Car" style="width:100%">
+         </div>
+  </div>
+  <div class="column people" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+    <div class="content">
+    <img src="https://user-images.githubusercontent.com/25410880/50038973-d7043580-ffde-11e8-9742-b15f4a515ec5.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:20px 12px 0 12px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+partner spotlite</p>
+<center>
+<div class="row" style="padding:0;margin:20px 0 0 0;box-shadow:0 1px 20px #ccc;border-radius:4px;">
+  <div class="column3" style="padding:10px 0;margin:0;">
+   <div id="cp_widget_4e3f3248-4ee7-4791-a708-0344214289e6" style="padding:0;margin:0;">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_4e3f3248-4ee7-4791-a708-0344214289e6"; cpo["_fid"] = "AMLAVbuEZ5-B";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script><noscript><span>New Gallery 2018/12/14</span><span>one</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>two</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1095</span><span>height</span><span> 830</span></noscript>
+</div></div></div></div></div></div>
+
+<div class="row" style="width:100%;padding:0;margin:0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:38px 0 0 0;">773 242-0705</p>
+
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
+</div>
+</div>
+</div>
+<center><div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-top:1px solid #f1f1f1;">
+<div class="nab topnav1" style="width:100%;padding:2px 0 10px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/demo-webpage-portal.html">DEMO PAGES</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PARTNERS</a>
+</div>
+</body>
+</html>
