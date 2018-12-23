@@ -27,33 +27,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
 <script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
+<style type="text/css">
 <style type="text/css">
 div.scrollmenu {
     background-color: #fff;
@@ -309,7 +284,7 @@ img {
 }
 
 .column1 {
-    width: 24.650%;
+    width: 32.5%;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -322,14 +297,14 @@ img {
     clear: both;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 525px) {
     .column1 {
         width: 100%;
         float: center;
  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 525px) {
     .column1 {
         width: 100%;
         float: center;
@@ -337,8 +312,9 @@ img {
 }
 </style>
 </head>
+
 <body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
@@ -346,7 +322,7 @@ img {
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"><span>
+<span class="icon-bar"></span>
 </button>
 <span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Your Tagline</span>
 <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
@@ -465,7 +441,7 @@ meet the team</p>
   <div class="content1 w3-panel" style="background-color:#fff;padding:5px;margin:0;border-radius:4px;">
    <img src="https://user-images.githubusercontent.com/25410880/49532946-8704d080-f872-11e8-9ebe-31fc7735c28a.png" style="width:100%;">
    <p align="center" style="font-family:calibri;font-size:18px;color:#000000;text-shadow:0 1px 1px #585858;padding:0;margin:10px 0 0 0;">MICHELLE JONES</p>
-  <p align="center" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">FOUNDER  & CEO</p>
+  <p align="center" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">FOUNDER & CEO</p>
  
  <p align="center" style="font-size:20px;text-shadow:0 1px 1px #585858;padding:0;margin:5px 0;">
  <a href="#"><i class="fa fa-dribbble"></i></a> 
@@ -491,25 +467,10 @@ meet the team</p>
   
 <div class="column1" style="padding:1px;margin:0;">
   <div class="content1 w3-panel" style="background-color:#fff;padding:5px;margin:0;border-radius:4px;">
-    <img src="https://user-images.githubusercontent.com/25410880/49532943-866c3a00-f872-11e8-9f2e-aae90f86fd9a.png" style="width:100%;">
-   <p align="center" style="font-family:calibri;font-size:18px;color:#000000;text-shadow:0 1px 1px #585858;padding:0;margin:10px 0 0 0;">TEAM MEMBER 3</p>
-  <p align="center" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">TITLE</p>
-  
- <p align="center" style="font-size:20px;text-shadow:0 1px 1px #585858;padding:0;margin:5px 0;">
- <a href="#"><i class="fa fa-dribbble"></i></a> 
- <a href="#"><i class="fa fa-twitter"></i></a> 
- <a href="#"><i class="fa fa-linkedin"></i></a> 
- <a href="#"><i class="fa fa-facebook"></i></a></p>
- </div>
-  </div>
-  
-<div class="column1" style="padding:1px;margin:0;">
-  <div class="content1 w3-panel" style="background-color:#fff;padding:5px;margin:0;border-radius:4px;">
    <img src="https://user-images.githubusercontent.com/25410880/49532942-85d3a380-f872-11e8-846e-899bfbb9ccec.png" style="width:100%;">
-  <p align="center" style="font-family:calibri;font-size:18px;color:#000000;text-shadow:0 1px 1px #585858;padding:0;margin:10px 0 0 0;">TEAM MEMBER 4</p>
+  <p align="center" style="font-family:calibri;font-size:18px;color:#000000;text-shadow:0 1px 1px #585858;padding:0;margin:10px 0 0 0;">TEAM MEMBER 3</p>
   <p align="center" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">TITLE</p>
- 
- 
+  
  <p align="center" style="font-size:20px;text-shadow:0 1px 1px #585858;padding:0;margin:5px 0;">
  <a href="#"><i class="fa fa-dribbble"></i></a> 
  <a href="#"><i class="fa fa-twitter"></i></a> 
@@ -587,10 +548,6 @@ sg marketplace</p>
 <a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f5faff;font-family:khand medium;font-size:15px;letter-spacing:.75px;padding:25px 0 0 0;color:#000000;margin:0;text-shadow:0 1px 1px #000000;">
 <p><img src="https://user-images.githubusercontent.com/25410880/49225069-f15fd180-f397-11e8-8e20-59d64275f7fc.png" style="width:80%;"></p>
 <p>SPIRITUAL ENRICHMENT</p></a></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
