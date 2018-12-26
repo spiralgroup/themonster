@@ -14,7 +14,7 @@ body, html {
     max-width: 1235px;
     height: 100%;
     margin: auto;
-    background-image: linear-gradient(to left, #fff, #fbfbfb);
+    background-image: linear-gradient(to left, #fff, #fff);
 }
 
 .top-container {
@@ -110,25 +110,27 @@ h1 {
 }
 
 .btn {
-  font-family: calibri,helvetica;
+  font-family: ubuntu condensed;
   color: #000;
   text-shadow: 0 1px 1px #585858;
-  font-size: 13px;
+   background-color: transparent;
+  font-size: 12px;
   border: none;
-  border-radius: 2px;
   outline: none;
-  padding: 4px 6px;
-  background-color: #e8effc;
   cursor: pointer;
+  padding: 0;
+  margin: 0 1px;
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: transparent;
+  border-bottom: 2px solid #585858;
 }
 
 .btn.active {
-  background-color: #6495ed;
-  color: white;
+  background-color: transparent;
+  color: black;
+  border-bottom: 2px solid #585858;
 }
 </style>
 </head>
@@ -148,8 +150,8 @@ h1 {
 cp connection</p>
 
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> ALL</button>
-  <button class="btn" onclick="filterSelection('hr')"> HR</button>
+  <button class="btn active" onclick="filterSelection('all')"> ALL ITEMS</button>
+  <button class="btn" onclick="filterSelection('hr tools')"> HR TOOLS</button>
   <button class="btn" onclick="filterSelection('marketing')"> MARKETING</button>
   <button class="btn" onclick="filterSelection('operations')"> OPERATIONS</button>
   
@@ -162,18 +164,18 @@ cp connection</p>
 <center>
 <!-- Portfolio Gallery Grid -->
 <div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column hr" style="border-radius:4px;">
+  <div class="column hr tools" style="border-radius:4px;">
     <div class="content">
       <img src="https://user-images.githubusercontent.com/25410880/49752506-6d45fd80-fc65-11e8-9c63-6c970e2a8b06.png" alt="Mountains" style="width:100%">
       <p align="center">Test</p>
          </div>
   </div>
-  <div class="column hr" style="border-radius:4px;">
+  <div class="column hr tools" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038976-d79ccc00-ffde-11e8-8344-5772f57846d8.png" alt="Lights" style="width:100%">
          </div>
   </div>
-  <div class="column hr" style="border-radius:4px;">
+  <div class="column hr tools" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038968-d66b9f00-ffde-11e8-84e0-3c9edfdec9ee.png" alt="Nature" style="width:100%">
          </div>
