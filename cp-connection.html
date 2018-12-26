@@ -6,11 +6,10 @@
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
-<style>
+<style type="text/css">
 * {
   box-sizing: border-box;
 }
-
 body, html {
     max-width: 1235px;
     height: 100%;
@@ -53,77 +52,89 @@ body, html {
 }
 
 img {
-    border-radius: 0; 
+    border-radius: 2px; 
     max-width: 100%;
 }
 
-.column {
-    width: 33%;
-    float: left;
-    padding: 8px;
-    margin: 0;
-    display: none;
-  }
+.main {
+  max-width: 1235px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
 
 .row,
 .row > .column {
-    padding: 8px;
-    margin: 0;
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 525px) {
     .column {
         width: 100%;
         float: center;
        }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 525px) {
     .column {
         width: 100%;
         float: center;
  }
 }
-
-
-/* Content */
 .content {
   background-color: white;
-  padding: 0;
+  padding: 5px;
 }
 
-
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
+  font-family: calibri,helvetica;
+  color: #000;
+  text-shadow: 0 1px 1px #585858;
+  font-size: 13px;
   border: none;
+  border-radius: 2px;
   outline: none;
-  padding: 8px 10px;
-  background-color: white;
+  padding: 4px 6px;
+  background-color: #e8effc;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: #ccc;
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: #6495ed;
   color: white;
 }
 </style>
 </head>
-<body style="width:100%;">
+<body>
+
+<div class="main">
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;">
@@ -131,33 +142,38 @@ img {
 </div>
 
 <center>
-<div class="content">
-</div>
+
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0 0 38px 0;">
 cp connection</p>
 
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
+  <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+  <button class="btn" onclick="filterSelection('hr')"> HR</button>
+  <button class="btn" onclick="filterSelection('marketing')"> MARKETING</button>
+  <button class="btn" onclick="filterSelection('operations')"> OPERATIONS</button>
+  
 </div>
+
+
+<center>
+<div class="w3-container w3-card" style="background-color:#e8effc;width:100%;padding:1px;margin:20px 0;border-radius:4px;">
 
 <center>
 <!-- Portfolio Gallery Grid -->
 <div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column nature" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+  <div class="column hr" style="border-radius:4px;">
     <div class="content">
       <img src="https://user-images.githubusercontent.com/25410880/49752506-6d45fd80-fc65-11e8-9c63-6c970e2a8b06.png" alt="Mountains" style="width:100%">
+      <p align="center">Test</p>
          </div>
   </div>
-  <div class="column nature" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+  <div class="column hr" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038976-d79ccc00-ffde-11e8-8344-5772f57846d8.png" alt="Lights" style="width:100%">
          </div>
   </div>
-  <div class="column nature" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+  <div class="column hr" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038968-d66b9f00-ffde-11e8-84e0-3c9edfdec9ee.png" alt="Nature" style="width:100%">
          </div>
@@ -165,17 +181,17 @@ cp connection</p>
   </div>
   
   <div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column cars" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+  <div class="column marketing" style="border-radius:4px;">
     <div class="content">
       <img src="https://user-images.githubusercontent.com/25410880/50038966-d5d30880-ffde-11e8-8403-ed1b1f60017e.png" alt="Car" style="width:100%">
         </div>
   </div>
-  <div class="column cars" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+  <div class="column marketing" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038967-d5d30880-ffde-11e8-8f5a-c9842772a331.png" alt="Car" style="width:100%">
         </div>
   </div>
-  <div class="column cars" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+  <div class="column marketing" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038971-d7043580-ffde-11e8-83e0-c655619a3d67.png" alt="Car" style="width:100%">
          </div>
@@ -183,17 +199,17 @@ cp connection</p>
   </div>
   
    <div class="row" style="width:100%;padding:0;margin:0;">
-   <div class="column people" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+   <div class="column operations" style="border-radius:4px;">
     <div class="content">
       <img src="https://user-images.githubusercontent.com/25410880/50038969-d66b9f00-ffde-11e8-947d-5ede42f33f4f.png" alt="Car" style="width:100%">
           </div>
   </div>
-  <div class="column people" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+ <div class="column operations" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038970-d66b9f00-ffde-11e8-9fca-a8151410eef7.png" alt="Car" style="width:100%">
          </div>
   </div>
-  <div class="column people" style="box-shadow:0 1px 2px #ccc;border-radius:4px;">
+ <div class="column operations" style="border-radius:4px;">
     <div class="content">
     <img src="https://user-images.githubusercontent.com/25410880/50038973-d7043580-ffde-11e8-9742-b15f4a515ec5.png" alt="Car" style="width:100%">
     </div>
@@ -202,6 +218,7 @@ cp connection</p>
   </div>
   </div>
 </div>
+
 
 <script>
 filterSelection("all")
@@ -253,7 +270,7 @@ for (var i = 0; i < btns.length; i++) {
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
 partner spotlite</p>
 <center>
-<div class="row" style="padding:0;margin:20px 0 0 0;border-radius:4px;">
+<div class="row" style="padding:0;margin:0;border-radius:4px;">
   <div class="column3" style="padding:10px 0;margin:0;">
  <div id="cp_widget_75c8ed8e-5a78-4cca-8577-35d1fa59cbad">...</div><script type="text/javascript">
 var cpo = []; cpo["_object"] ="cp_widget_75c8ed8e-5a78-4cca-8577-35d1fa59cbad"; cpo["_fid"] = "AMLAVbuEZ5-B";
