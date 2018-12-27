@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>About Us</title>
+<title>Demo Webage &#124; Products & Services</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
@@ -20,48 +20,120 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Khand Medium|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
 <script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 <style type="text/css">
-
-img {
-    border-radius: 0; 
-    max-width: 100%;
-    height: auto;
+.openinghours {
+    font-family:calibri;
+    font-size:14px;
+    color:#000;
+    letter-spacing:.5px;
+    padding:0 2px 0 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
 }
 
-* {
-    box-sizing: border-box;
+.today {
+    color: dodgerblue;
+}
+.opening-hours-table tr td:first-child {
+  font-weight:bold;
+}
+#open-status {
+    display:block;
+    text-align:center;
 }
 
-.column2 {
-    width: 50%;
-    float: left;
+.open {
+    color:#fff;
+}
+    
+.opening-hours-table tr td {
+    padding:0 5px 5px 5px;
+}
+
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
     padding: 0;
-    margin: 0;
- }
-
-.row,
-.row > .column2 {
-    padding: 0 13px 0 13px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.content {
-    background-color: #ffffff;
-    padding: 0;
-    margin: 0;
+    text-decoration: none;
     border-radius: 2px;
 }
+
+div.scrollmenu a:hover {
+    background-color: #fff;
+}
+
+
+div.scrollmenu1 {
+    background-color: #fbfbfb;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu1 a {
+    display: inline;
+    color: white;
+    text-align: left;
+    padding: 0;
+    text-decoration: none;
+}
+
+div.scrollmenu1 a:hover {
+    background-color: #ccc;
+}
+
 
 body, html {
     max-width: 1235px;
@@ -85,7 +157,6 @@ body, html {
   text-align: left;
   float: left;
 }
-
 .nab {
   overflow: hidden;
   padding: 10px;
@@ -106,7 +177,6 @@ body, html {
   text-shadow: 0 1px 1px #585858;
 }
 
-
 .nab a:hover {
   color: black;
   border-bottom: 1px solid #000;
@@ -120,7 +190,7 @@ body, html {
 position: fixed;
 top: 0;
 max-width: 1235px;
-background-color: #f5faff;
+background-color: #ffebcd;
 border: none;
 }
 
@@ -144,6 +214,119 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+img {
+    border-radius: 0; 
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+.row,
+.row > .column {
+    padding: 0;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column2 {
+    width: 25%;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+.row,
+.row > .column2 {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 525px) {
+    .column2 {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 525px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+
+
+.column3 {
+    width: 100%;
+    float: center;
+    padding: 0;
+    margin: 0;
+  }
+
+.row,
+.row > .column3 {
+    padding: 0;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.content {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 525px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 525px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 525px) {
+    .column3 {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 525px) {
+    .column3 {
+        width: 100%;
+        float: center;
+ }
+}
+
 
 .active {
   background-color: #717171;
@@ -172,92 +355,59 @@ img {vertical-align: middle;}
   width: 100%;
 }
 
-.content1 {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    border-radius: 2px;
-}
-
 .row,
-.row > .column {
-    padding: 0 13px 0 13px;
+.row > .column1 {
+    padding: 0;
+    margin: 5px 0;
 }
 
-.column2 {
-    width: 100%;
-    margin: 0 1px 0 1px;
-    padding: 0;
+.column1 {
+    width: 32.7%;
     display: inline-block;
     float: center;
 }
 
-@media (max-width: 900px) {
-    .column2 {
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 525px) {
+    .column1 {
         width: 100%;
         float: center;
  }
 }
 
-@media (max-width: 900px) {
-    .column2 {
+@media (max-width: 525px) {
+    .column1 {
         width: 100%;
         float: center;
-       }
+}
 }
 
-.column {
-    width: 33%;
-    margin: 0 1px 0 1px;
-    padding: 0;
+.button {
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    letter-spacing: .5px;
+    font-family: ubuntu;
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #000;
     display: inline-block;
-    float: center;
+    cursor: pointer;
 }
 
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
-
-.row,
-.row > .column3 {
-    padding: 0 13px 0 13px;
-}
-
-.column3 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: inline;
-    float: center;
-}
-
-@media (max-width: 900px) {
-    .column3 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column3 {
-        width: 100%;
-        float: center;
-       }
-}
 </style>
 </head>
 <body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;">
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
@@ -265,45 +415,46 @@ img {vertical-align: middle;}
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span>
+<span class="icon-bar"><span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Check Us Out</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Your Tagline</span>
 <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav">
 <li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Your Company Menu <span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
-<li class="active"><a href="https://spiralgroup.org/about.htm" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/demo-contact-us.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Contact Us</a></li><br>
 <li><a href="https://www.yelp.com/biz_photos/spiral-group-incorporated-chicago" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">The SG Gift Card</a></li><br>
-<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Tools</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-egift-card.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Company Gift Card</a></li><br>
+<li class="active"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Products & Services</a></li>
 </ul></ul>
+
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button w3-blue" href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CONTACT SG</a></li>
 <li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">MARKETPLACE</a></li>
 </ul>
 </div>
 </div>
 </nav>
 </div>
+
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
 <div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
+<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
 <div class="text"></div>
 </div>
 <div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
+<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
 <div class="text"></div>
 </div>
 <div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
+<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
 <div class="text"></div>
 </div>
 </div>
@@ -317,151 +468,474 @@ img {vertical-align: middle;}
 </div>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-who we are</p>
-</div>
-</div>
-<div class="w3-container w3-panel" style="width:100%;padding:0 12px 38px 12px;margin:0;">
-<div class="w3-container w3-panel w3-card" style="background-color:#e8effc;width:100%;padding:0 12px;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
+your products</p>
+<div class="w3-container w3-panel w3-card" style="background-color:#f2f7ff;width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="row" style="background-color:#f2f7ff;width:100%;padding:0;margin:0;">
 <div class="column3" style="padding:0;margin:0;">
-<div class="content1 w3-panel" style="background-color:#e8effc;padding:0;margin:0;">
+<div class="content1 w3-panel" style="padding:0;margin:0;">
 </div>
 </div>
-<div class="row w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="column2" style="padding:0 2px 4px 2px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">brightness_7</i></p>
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">A PROGRESSIVE SMALL BUSINESS</p>
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
-Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. We offer affordable <a rel="nofollow" style="font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">BUSINESS SOLUTIONS</a> to locally under-served Small Businesses. We're committed to assisting this population of entrepreneurs by providing the business solutions and workforce training tools they need to ensure operational excellence, at affordable rates.<br><br>
-We leverage our skills and many years of corporate experience to help clients build reliable companies that can support the needs of their markets. We work to refine operational infrastructure by establishing lean systems & processes, and the outsourcing of non-core services. As a result, our clients enjoy reduced operating costs and improved workforce productivity.</p><br>
-<p align="right"><a class="w3-button w3-blue" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:11px;letter-spacing:1px;border-radius:2px;padding:6px 8px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
-</div></div>
-</div></div>
-<div class="row w3-white" style="width:100%;padding:0;margin:5px 0 0 0;">
-<div class="column2" style="padding:4px 2px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">nature_people</i></p>
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">THE RETURNING CITIZEN</p>
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
-Michelle Jones is the Founder and CEO of Spiral Group, Inc. She began developing the company after serving a 2.5 year sentence at the Logan Correctional facility in 2014. She initiated the task of rebuilding her life by utilizing her skills and corporate experience in an effort to make a useful and practical contribution to the Small Business Community.<br><br>
-In April 2016, she launched this website. Michelle began by developing a free, online <a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">EMPLOYMENT PREPARATION TRAINING PROGRAM</a> for job seekers with criminal histories &#151; those who are willing to commit to positive change. The NFP's goal is to assist returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism.</p><br>
-<p align="right">
-<button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-blue" style="font-family:calibri;font-size:11px;letter-spacing:1px;border-radius:2px;padding:6px 8px;margin:0;text-decoration:none;">READ MORE</button></p>
-<div id="id02" class="w3-modal w3-animate-zoom">
+
+<div class="content1 w3-panel" style="background-color:#ffebcd;padding:2px 2px 0 2px;margin:0;border-radius:4px;">
+<div class="scrollmenu1" style="background-color:#ffebcd;padding:0 0 2px 0;margin:0;">
+<a href="#item1"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:25%;"></a>
+<a href="#item2"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:25%;"></a>  
+<a href="#item3"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:25%;"></a>
+<a href="#item4"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:25%;"></a>
+<a href="#item5"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:25%;"></a>
+<a href="#item6"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:25%;"></a>
+<a href="#item7"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:25%;"></a>
+<a href="#item8"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:25%;"></a>
+<a href="#item9"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:25%;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:42px 12px 0 12px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-card" style="background-color:#ffebcd;width:100%;padding:1px;margin:0 0 20px 0;border-radius:4px;">
+<!-- row 1 -->
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div id="item1" class="row" style="width:100%;background-color:#ffebcd;padding:0;margin:0;border-bottom:2px solid transparent;">
+<div class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:100%;border-radius:4px;">
+
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+<div id="id01" class="w3-modal w3-animate-zoom">
 <div class="w3-modal-content w3-card-4">
 <header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">TAKING A BREAK</p>
+<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
 </header>
-<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">
-<p align="center" style="padding:12px 0 0 0;">
-<img src="https://user-images.githubusercontent.com/25410880/47863750-5989ba80-ddce-11e8-9329-b17fb33ea7ac.png" style="width:50%;"></p>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:10px 0 0 0;">
-MORE ABOUT SPIRAL GROUP, INC.</p>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
 <p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-The company is dedicated to helping job seekers with criminal histories overcome many obstacles to employment by improving their organizational, time-management, decision-making, interviewing, and soft skills.<br><br>
-Along her career path, Michelle has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers. She has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant.<br><br>
-Michelle opened her first business, RMRC (Restaurant Materials Resource Center), in 1999 where she designed business documents, labels, and posters for the food-service industry.<br><br>
-She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. Michelle has been a web developer since 1999, and an ordained minister since 2007.</p><br>
-</div>
-<footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
 <p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
 </footer>
 </div>
 </div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
+
+
+<div id="item2" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id02').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+  <div id="id02" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
+
+<div id="item3" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id03').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+  <div id="id03" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div></div>
+
+<!-- row 2 -->
+<div id="item4" class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;border-bottom:2px solid transparent;">
+<div class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id04').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+  <div id="id04" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
+
+<div id="item5" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id05').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+  <div id="id05" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
+
+<div id="item6" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id06').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+<div id="id06" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div></div>
+
+ 
+<!-- row 3 -->
+<div id="item7" class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;border-bottom:2px solid transparent;">
+<div class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id07').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+  <div id="id07" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
+
+<div id="item8" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id08').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+ <div id="id08" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
+
+<div id="item9" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id09').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+<div id="id09" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+</header>
+<div class="w3-container" style="width:100%;padding:0 20px;margin:0;">     
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:50%;"></p>
+
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+          <footer class="w3-container w3-light-grey" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div>
+</div></div></div>
+</div></div> </div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 0 12px 0;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
-who are you?</p>
-</div>
-</div>
-<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:0;">
-<div class="w3-container w3-panel w3-card" style="background-color:#e8effc;width:100%;padding:0 12px;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column3" style="padding:0;margin:0;">
-<div class="content1 w3-panel" style="background-color:#e8effc;padding:0;margin:0;">
-</div>
-</div>
-<div class="row w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="column2" style="padding:0 2px 4px 2px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">EXPLORE YOUR POTENTIAL</p>
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
-Your Small Business has greater growth potential than you probably realize. Many consumers and major corporations value Small Businesses that can consistently and affordably meet their specialized needs.<br><br>
-This is an auspicious time for entrepreneurs to begin taking advantage of these profitable opportunities by spending time making strategic decisions on how to further develop their companies so they are prepared to begin the task of increasing brand awareness.</p><br>
-<p align="right">
-<a class="w3-button w3-blue" href="https://form.jotform.com/82323651984159" style="font-family:calibri;font-size:11px;letter-spacing:1px;border-radius:2px;padding:6px 8px;margin:0;text-decoration:none;">FREE CONSULTATION</a></p>
-</div></div>
-</div></div>
-<div class="row w3-white" style="width:100%;padding:0;margin:5px 0 0 0;">
-<div class="column2" style="padding:4px 2px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">android</i></p>
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">THE COMPETITION</p>
-<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
-Unlike our competitors, you'll never have to worry about updating and maintaining your <a rel="nofollow" style="font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">SMALL BUSINESS SHOWCASE WEBPAGES</a>. We do all the work for you. Plans start at only $13.79 per month, and include maintenance and dedicated support.<br><br>
-The most progressive Small Business owner knows that having an online presence that showcases their products and services can be a strategic way to begin increasing brand awareness. If you're prepared to take the step toward progressive growth and development, let's get started.</p><br>
-<p align="right">
-<a class="w3-button w3-black" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:1px;border-radius:2px;padding:6px 8px;margin:0;text-decoration:none;">GET STARTED</a></p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:26px 0 0 0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-songs that inspire</p>
-</div>
-</div>
-<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column3" style="padding:0;margin:0;">
-<div class="content1 w3-panel" style="background-color:#e8effc;padding:0;margin:0;">
-</div>
-</div>
-<div class="row w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
-<div class="column" style="padding:0 5px 5px 5px;margin:0;">
-<div class="content1 w3-panel w3-card" style="padding:5px;margin:0;background-color:#fbfbfb;border-radius:4px;">
-<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">UNBREAKABLE</p>
-<video src="http://spiralgroup.atwebpages.com/wp-content/uploads/2018/12/Michael-Jackson.mp4" controls style="width:100%"></video>
-<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">MICHAEL JACKSON</p>
-</div>
-</div>
-<div class="column" style="padding:5px;margin:0;">
-<div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">THREATENED</p>
-<video src="http://spiralgroup.atwebpages.com/wp-content/uploads/2018/12/michael-jackson-threatened.mp4" controls style="width:100%"></video>
-<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">MICHAEL JACKSON</p>
-</div>
-</div>
-<div class="column" style="padding:5px;margin:0;">
-<div class="content1 w3-card" style="background-color:#fbfbfb;padding:5px;margin:0;border-radius:4px;">
-<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:0 0 2px 0;margin:0;">BAD</p>
-<video src="http://spiralgroup.atwebpages.com/wp-content/uploads/2018/12/mj-bad.mp4" controls style="width:100%"></video>
-<p align="center" style="font-family:khand medium;color:#000000;font-size:14px;text-shadow:0 1px 2px #cccccc;padding:2px 0 0 0;margin:0;">MICHAEL JACKSON</p>
-</div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <script>
 var slideIndex = 0;
 showSlides();
@@ -497,10 +971,436 @@ function myFunction() {
   }
 }
 </script>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+about us</p>
+
+<div class="w3-container w3-panel w3-white w3-card" style="width:100%;padding:0;margin:0;">
+<div class="row w3-white" style="width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:0;margin:0;border-radius:4px;">
+</div>
+</div>
+
+<div class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0 5px 4px 5px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px 10px 0 10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">brightness_7</i></p>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">SPIRAL GROUP, INC.</p>
+
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. We offer affordable <a rel="nofollow" style="font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">BUSINESS SOLUTIONS</a> to locally under-served Small Businesses. We're committed to assisting this population of entrepreneurs by providing the <a rel="nofollow" style="font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">BUSINESS SOLUTIONS</a> and workforce training tools they need to ensure operational excellence, at affordable rates.</p>
+
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+We leverage our skills and years of corporate experience to help our clients build and maintain reliable companies that can support the needs of their markets. We work to refine operational infrastructure by establishing lean systems & processes, and the outsourcing of non-core services. As a result, our clients enjoy reduced operating costs and improved workforce productivity.</p>
+</div></div></div>
+
+<div class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0 5px 4px 5px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px 10px 0 10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">opacity</i></p>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">OUR CORE VALUES</p>
+
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div></div>
+
+<div class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0 5px 4px 5px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px 10px 0 10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">language</i></p>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">OUR MISSION</p>
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+
+<p align="left" style="font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;">
+Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div></div></div>
+</div></div></div>
+</div></div></div>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:38px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+meet the team</p>
+
+<div class="w3-container w3-panel w3-card" style="background-color:#ffebcd;padding:0;margin:0;">
+<center>
+<div class="row" style="padding:1px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+  <div class="column1" style="padding:1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:5px;margin:0;border-radius:4px;">
+   <img src="https://user-images.githubusercontent.com/25410880/49532946-8704d080-f872-11e8-9ebe-31fc7735c28a.png" style="width:100%;">
+   <p align="center" style="font-family:calibri;font-size:18px;color:#000000;text-shadow:0 1px 1px #585858;padding:0;margin:10px 0 0 0;">MICHELLE JONES</p>
+  <p align="center" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">FOUNDER & CEO</p>
+ 
+ <p align="center" style="font-size:20px;text-shadow:0 1px 1px #585858;padding:0;margin:5px 0;">
+ <a href="#"><i class="fa fa-dribbble"></i></a> 
+ <a href="#"><i class="fa fa-twitter"></i></a> 
+ <a href="#"><i class="fa fa-linkedin"></i></a> 
+ <a href="#"><i class="fa fa-facebook"></i></a></p>
+  </div>
+   </div>
+   
+<div class="column1" style="padding:1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:5px;margin:0;border-radius:4px;">
+   <img src="https://user-images.githubusercontent.com/25410880/49532945-866c3a00-f872-11e8-9c7d-389f1ef7aa6e.png" style="width:100%;">
+    <p align="center" style="font-family:calibri;font-size:18px;color:#000000;text-shadow:0 1px 1px #585858;padding:0;margin:10px 0 0 0;">TEAM MEMBER 2</p>
+  <p align="center" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">TITLE</p>
+ 
+ <p align="center" style="font-size:20px;text-shadow:0 1px 1px #585858;padding:0;margin:5px 0;">
+ <a href="#"><i class="fa fa-dribbble"></i></a> 
+ <a href="#"><i class="fa fa-twitter"></i></a> 
+ <a href="#"><i class="fa fa-linkedin"></i></a> 
+ <a href="#"><i class="fa fa-facebook"></i></a></p>
+ </div>
+  </div>
+  
+<div class="column1" style="padding:1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:5px;margin:0;border-radius:4px;">
+   <img src="https://user-images.githubusercontent.com/25410880/49532942-85d3a380-f872-11e8-846e-899bfbb9ccec.png" style="width:100%;">
+  <p align="center" style="font-family:calibri;font-size:18px;color:#000000;text-shadow:0 1px 1px #585858;padding:0;margin:10px 0 0 0;">TEAM MEMBER 3</p>
+  <p align="center" style="font-family:calibri;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">TITLE</p>
+  
+ <p align="center" style="font-size:20px;text-shadow:0 1px 1px #585858;padding:0;margin:5px 0;">
+ <a href="#"><i class="fa fa-dribbble"></i></a> 
+ <a href="#"><i class="fa fa-twitter"></i></a> 
+ <a href="#"><i class="fa fa-linkedin"></i></a> 
+ <a href="#"><i class="fa fa-facebook"></i></a></p>
+  </div>
+</div></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+contact us</p>
+
+<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row w3-white" style="width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:0;margin:0;border-radius:4px;">
+</div>
+</div>
+
+<div class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;">
+<div class="column1" style="background-color:#ffebcd;padding:1px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">dvr</i></p>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">GENERAL FEEDBACK</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:14px;color:#000000;letter-spacing:.5px;">
+Use this option to submit your reviews, general comments, and to join our mailing list. We look forward to hearing from you.<br><br>
+
+<a class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">GENERAL FEEDBACK</a></p>
+</div>
+</div>
+
+<div class="column1" style="padding:1px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">message</i></p>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">REQUEST QUOTE</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:14px;color:#000000;letter-spacing:.5px;">
+Use this option to request a price quote for customized products and specialized services. Response time, approximately 2 hours.<br><br>
+
+<a class="w3-button w3-black" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">REQUEST QUOTE</a></p>
+</div>
+</div>
+
+
+<div class="column1" style="padding:1px;margin:0;">
+<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;border-radius:4px;">
+<p align="left"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">date_range</i></p>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">BOOK APPOINTMENT</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:14px;color:#000000;letter-spacing:.5px;">
+Looking to book an appointment online? Then, use this option and we will do our best to accomodate your scheduling request.<br><br>
+
+<a class="w3-button w3-black" href="https://spiralgroupinc.appointlet.com" style="font-family:calibri,helvetica;font-size:12px;letter-spacing:1px;text-shadow:0 1px 2px #000;border-radius:2px;text-decoration:none;padding:6px 8px;">BOOK APPOINTMENT</a></p>
+ </div>
+</div></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:38px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+our location</p>
+
+<div class="w3-container w3-panel w3-card" style="background-color:#ffebcd;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column3" style="padding:0;margin:0;">
+<div class="content1 w3-panel" style="background-color:#ffebcd;padding:0;margin:0;">
+</div>
+</div>
+
+<center>
+<div class="row" style="background-color:#ffebcd;padding:0;margin:0;">
+  <div class="column3" style="background-color:#ffebcd;padding:10px 0;margin:0;vertical-align:middle;">
+ 
+ <p align="center" style="font-family:calibri;font-size:20px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">SPIRAL GROUP, INC.</p>
+ <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">Online Marketing Solutions</p>
+  <p align="center" style="font-family:calibri;font-size:16px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+773-242-0705</p>
+  </div>
+  </div>
+    
+    <div class="column1" style="padding:0 1px 1px 1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
+  <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
+   <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">ADDRESS</p>
+   <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">550 North Central Avenue, Suite 109<br>
+Chicago, Illinois 60644</p>
+
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+<input type="hidden" name="daddr" value="550 North Central Avenue, Chicago, IL" />
+<input type="submit" value="get directions" class="w3-button" style="background-color:#ffebcd;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;border-radius:2px;margin:10px 0 0 0;">
+</form>
+</div>
+   </div>
+   
+   <div class="column1" style="padding:0 1px 1px 1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
+    <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">slow_motion_video</i></p>
+      <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">STORE HOURS</p>
+  <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+General Operating Hours<br>
+For Your Convenience</p>
+
+<button onclick="document.getElementById('id77').style.display='block'" class="w3-button" style="background-color:#ffebcd;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;text-decoration:none;border-radius:2px;margin:10px 0 0 0;">view store hours</button>
+
+  <div id="id77" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:450px;">
+     <div class="w3-center">
+        <header class="w3-container w3-blue">
+           <p align="center" style="font-family:calibri;font-size:18px;color:#fff;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:4px 0 3px 0;margin:0;">STORE HOURS</p>
+        <span onclick="document.getElementById('id77').style.display='none'" class="w3-button w3-small w3-display-topright" title="Close Modal">&times;</span>
+              </header></div>
+<div class="w3-panel" style="width:100%;background-color:#fff;">
+  
+  <div class="column3" style="background-color:#fff;">
+ <section class="openinghours" style="background-color:#fff;">
+    <div class="openinghourscontent section">
+        <table class="opening-hours-table">
+    
+            <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
+                <td>Monday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
+                <td>Tuesday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
+                <td>Wednesday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
+                <td>Thursday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Friday" itemprop="openingHours" title="Open Friday at 9am to 6pm">
+                <td>Friday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
+                <td>Saturday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
+                <td>Sunday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+        </table>
+        </div>
+        </div>
+         </div>
+         </div>
+<div class="column3">
+<img src="https://www.appointletcdn.com/loader/buttons/008DBD.png" data-appointlet-organization="spiralgroupinc"><script src="https://www.appointletcdn.com/loader/loader.min.js" async="" defer=""></script>
+
+<script>
+var currentDate = new Date();
+var weekday = [];
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var currentDay = weekday[currentDate.getDay()];
+
+var currentTimeHours = currentDate.getHours();
+currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
+var currentTimeMinutes = currentDate.getMinutes();
+var timeNow = currentTimeHours + "" + currentTimeMinutes;
+
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //this works at hightlighting today
+
+var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
+
+var openTimeHours = openTimeSplit[0];
+openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
+
+var openTimeMinutes = openTimeSplit[1];
+var openTimex = openTimeSplit[0] + openTimeSplit[1];
+
+var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
+
+var closeTimeHours = closeTimeSplit[0];
+closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
+
+var closeTimeMinutes = closeTimeSplit[1];
+var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
+
+if (timeNow >= openTimex && timeNow <= closeTimex) {
+    $(".openorclosed").toggleClass("open");
+} else {
+    $(".openorclosed").toggleClass("closed");
+}
+</script>
+</div>
+</section>
+</div>   
+</div>
+</div>
+
+
+   <div class="column1" style="padding:0 1px 1px 1px;margin:0;">
+  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
+    <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">contact_mail</i></p>
+      <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">MAILING LIST</p>
+ <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">Receive E-mail Updates On<br>
+New Products & Special Promotions</p>
+<p align="center" style="padding:0;margin:0;"><a class="w3-button" href="https://form.jotform.com/82323651984159" style="background-color:#ffebcd;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;text-decoration:none;border-radius:2px;margin:10px 0 0 0;">sign up</a></p>
+  </div>
+   </div>
+   </div>
+  
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row" style="background-color:#ffebcd;padding:0;margin:0;">
+<div class="column3" style="padding:0;margin:0;">
+  <div class="content1 w3-panel" style="padding:1px;margin:0;border-radius:4px;">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.0981146394124!2d-87.76774368493028!3d41.89074697922122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e334e3476db5b%3A0x63dbabfc44c23541!2s550+N+Central+Ave%2C+Chicago%2C+IL+60644!5e0!3m2!1sen!2sus!4v1544464086017" width="100%" height="400" frameborder="0" style="border:2px solid #fff;border-radius:4px;" allowfullscreen></iframe>
+  </div>
+  </div>
+  
+  </div>
+</div></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 12px 12px;margin:38px 0 0 0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+your feedback</p>
+<div class="w3-container w3-panel w3-card" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="row w3-white" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<center>
+<div class="content1 w3-panel" style="background-color:#ffebcd;padding:2px 2px 0 2px;margin:0;border-radius:4px;">
+<div class="scrollmenu w3-white" style="width:100%;padding:0;margin:0;">
+<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p style="color:#585858;">Paula Abdul, Verified Customer</p></a>
+
+<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p style="color:#585858;">Erykha Badu, Verified Customer</p></a>
+
+<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p style="color:#585858;">Sanaa Lathan, Verified Customer</p></a>
+
+<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p style="color:#585858;">Nia Long, Verified Customer</p></a>
+
+<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:50%;"></p>
+<p>"I love the customer service they provide.<br>
+Their products are the best!"</p>
+
+<p style="color:#585858;">Beyonce Knowles, Verified Customer</p></a>
+
+<a href="#" style="background-color:#ffebcd;font-family:khand medium;font-size:14px;padding:12px;color:#000000;padding:0;margin:0;">
+<p><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:50%;"></p>
+<p>"I have no idea what this thing is.<br>
+But I bought it because of their stellar service!"</p>
+
+<p style="color:#585858;">Nephew Tommy, Verified Customer</p></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 <div class="row" style="width:100%;padding:0;margin:0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:28px 0 0 0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:38px 0 0 0;">773 242-0705</p>
+
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
 </div>
