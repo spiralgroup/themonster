@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>Demo Webage &#124; Products & Services</title>
+<title>Demo WebPage &#124; Products & Services</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
@@ -18,10 +18,7 @@
 <link rel="canonical" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html/" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="css/reset.css"> 
-<link rel="stylesheet" href="css/style.css"> 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
@@ -34,7 +31,7 @@
 <script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
 <script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
 
-<script type="text/javascript">
+<script>
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 7,
@@ -247,6 +244,8 @@ border: none;
   margin: 0;
   float: left;
   display: block;
+  position: fixed;
+  top: 0;
 }
 
 .sticky {
@@ -937,7 +936,7 @@ function showSlides() {
 <script>
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
+var header = document.getElementById("navbar");
 var sticky = header.offsetTop;
 
 function myFunction() {
