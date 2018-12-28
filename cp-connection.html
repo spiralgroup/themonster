@@ -4,11 +4,317 @@
 <title>Community Partners</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="quote-overlay.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src='//platform-api.sharethis.com/js/sharethis.js#property=5bccbb791efc580011ca5ef5&product=social-ab' async='async'></script>
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
 <style type="text/css">
+
+.btn-grey {
+    color: #555;
+    background-color: #f0f0f0;
+}
+
+.overlay-box:hover>.overlay-logo {
+    opacity: .1;
+    filter: alpha(opacity=10);
+    -webkit-transform: scale(2, 2);
+    -ms-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
+    transform: scale(2, 2);
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.overlay-box:hover>.overlay-content {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.overlay-box {
+    z-index: 999;
+    overflow: hidden;
+    color: #fff;
+    height: 280px;
+    background: #9ce;
+    float: left;
+}
+
+.overlay-box .overlay-logo {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    margin: -280px auto 0;
+    -webkit-transition-property: opacity, transform;
+    transition-property: opacity, transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.overlay-box.box1 {
+    background: #531f29;
+}
+
+.overlay-box.box1 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/49752506-6d45fd80-fc65-11e8-9c63-6c970e2a8b06.png) center no-repeat;
+    background-size: 55%
+}
+
+.overlay-box.box2 {
+    background: #ffc7ae;
+}
+
+.overlay-box.box2 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038976-d79ccc00-ffde-11e8-8344-5772f57846d8.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box3 {
+    background: #9ce;
+}
+
+.overlay-box.box3 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038968-d66b9f00-ffde-11e8-84e0-3c9edfdec9ee.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box4 {
+    background: #1343a2;
+}
+
+.overlay-box.box4 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038966-d5d30880-ffde-11e8-8403-ed1b1f60017e.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box5 {
+    background: #4c566c;
+}
+
+.overlay-box.box5 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038967-d5d30880-ffde-11e8-8f5a-c9842772a331.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box6 {
+    background: #f7941d;
+}
+
+.overlay-box.box6 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038971-d7043580-ffde-11e8-83e0-c655619a3d67.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box7 {
+    background: #cad9ef;
+}
+
+.overlay-box.box7 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038969-d66b9f00-ffde-11e8-947d-5ede42f33f4f.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box8 {
+    background: #e5adea;
+}
+
+.overlay-box.box8 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038970-d66b9f00-ffde-11e8-9fca-a8151410eef7.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box9 {
+    background: #061206;
+}
+
+.overlay-box.box9 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50038973-d7043580-ffde-11e8-9742-b15f4a515ec5.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box10 {
+    background: #0c1d26;
+}
+
+.overlay-box.box10 .overlay-logo {
+    background: url(https://www.solodev.com/assets/customer-overlay/logo10.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box11 {
+    background: #7fc56d;
+}
+
+.overlay-box.box11 .overlay-logo {
+    background: url(https://www.solodev.com/assets/customer-overlay/logo11.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box12 {
+    background: #F7901E;
+}
+
+.overlay-box.box12 .overlay-logo {
+    background: url(https://www.solodev.com/assets/customer-overlay/logo12.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-content {
+    height: 280px;
+    padding: 30% 8% 25%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition-property: opacity, transform;
+    transition-property: opacity, transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
 * {
   box-sizing: border-box;
+}
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
 body, html {
     max-width: 1235px;
@@ -100,6 +406,39 @@ h1 {
         float: center;
  }
 }
+
+.row,
+.row > .column1 {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.column1 {
+    width: 32.7%;
+    display: inline-block;
+    float: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+}
+}
+
 .content {
   background-color: white;
   padding: 5px;
@@ -154,68 +493,114 @@ cp connection</p>
   <button class="btn" onclick="filterSelection('hr tools')"> HR TOOLS</button>
   <button class="btn" onclick="filterSelection('marketing')"> MARKETING</button>
   <button class="btn" onclick="filterSelection('operations')"> OPERATIONS</button>
-  
 </div>
 
 
 <center>
-<div class="w3-container w3-card" style="background-color:#e8effc;width:100%;padding:1px;margin:20px 0;border-radius:4px;">
-
-<center>
 <!-- Portfolio Gallery Grid -->
+<center>
+<div class="w3-container w3-card" style="background-color:#e8effc;width:100%;padding:1px;margin:20px 0;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column hr tools" style="border-radius:4px;">
-    <div class="content">
-      <img src="https://user-images.githubusercontent.com/25410880/49752506-6d45fd80-fc65-11e8-9c63-6c970e2a8b06.png" alt="Mountains" style="width:100%">
-      <p align="center">Test</p>
-         </div>
-  </div>
-  <div class="column hr tools" style="border-radius:4px;">
-    <div class="content">
-    <img src="https://user-images.githubusercontent.com/25410880/50038976-d79ccc00-ffde-11e8-8344-5772f57846d8.png" alt="Lights" style="width:100%">
-         </div>
-  </div>
-  <div class="column hr tools" style="border-radius:4px;">
-    <div class="content">
-    <img src="https://user-images.githubusercontent.com/25410880/50038968-d66b9f00-ffde-11e8-84e0-3c9edfdec9ee.png" alt="Nature" style="width:100%">
-         </div>
-  </div>
-  </div>
-  
-  <div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column marketing" style="border-radius:4px;">
-    <div class="content">
-      <img src="https://user-images.githubusercontent.com/25410880/50038966-d5d30880-ffde-11e8-8403-ed1b1f60017e.png" alt="Car" style="width:100%">
-        </div>
-  </div>
-  <div class="column marketing" style="border-radius:4px;">
-    <div class="content">
-    <img src="https://user-images.githubusercontent.com/25410880/50038967-d5d30880-ffde-11e8-8f5a-c9842772a331.png" alt="Car" style="width:100%">
-        </div>
-  </div>
-  <div class="column marketing" style="border-radius:4px;">
-    <div class="content">
-    <img src="https://user-images.githubusercontent.com/25410880/50038971-d7043580-ffde-11e8-83e0-c655619a3d67.png" alt="Car" style="width:100%">
-         </div>
-  </div>
-  </div>
-  
-   <div class="row" style="width:100%;padding:0;margin:0;">
-   <div class="column operations" style="border-radius:4px;">
-    <div class="content">
-      <img src="https://user-images.githubusercontent.com/25410880/50038969-d66b9f00-ffde-11e8-947d-5ede42f33f4f.png" alt="Car" style="width:100%">
-          </div>
-  </div>
- <div class="column operations" style="border-radius:4px;">
-    <div class="content">
-    <img src="https://user-images.githubusercontent.com/25410880/50038970-d66b9f00-ffde-11e8-9fca-a8151410eef7.png" alt="Car" style="width:100%">
-         </div>
-  </div>
- <div class="column operations" style="border-radius:4px;">
-    <div class="content">
-    <img src="https://user-images.githubusercontent.com/25410880/50038973-d7043580-ffde-11e8-9742-b15f4a515ec5.png" alt="Car" style="width:100%">
+<div class="container-fluid">
+<div onclick="" class="column hr tools overlay-box box1">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
     </div>
+    <div class="overlay-logo"></div>
   </div>
+  
+  <div onclick="" class="column hr tools overlay-box box2">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column hr tools overlay-box box3">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey ">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+
+<div onclick="" class="column marketing overlay-box box4">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column marketing overlay-box box5">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column marketing overlay-box box6">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column operations overlay-box box7">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column operations overlay-box box8">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column operations overlay-box box9">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column operations overlay-box box10">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column operations overlay-box box11">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" data-video-id="139255589">see the video</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+  
+  <div onclick="" class="column operations overlay-box box12">
+    <div class="overlay-content text-center" style="padding-top: 71.5px;">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+      <a href="#" class="btn btn-grey">View Case Study</a>
+    </div>
+    <div class="overlay-logo"></div>
+  </div>
+             
+</div>
+     </div>
+
 </div>
   </div>
   </div>
@@ -274,14 +659,27 @@ partner spotlite</p>
 <center>
 <div class="row" style="padding:0;margin:0;border-radius:4px;">
   <div class="column3" style="padding:10px 0;margin:0;">
- <div id="cp_widget_75c8ed8e-5a78-4cca-8577-35d1fa59cbad">...</div><script type="text/javascript">
-var cpo = []; cpo["_object"] ="cp_widget_75c8ed8e-5a78-4cca-8577-35d1fa59cbad"; cpo["_fid"] = "AMLAVbuEZ5-B";
-var _cpmp = _cpmp || []; _cpmp.push(cpo);
-(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script>
-</div></div></div></div></div></div>
+<div class="w3-container w3-card w3-white" style="width:100%;padding:0 12px 12px 12px;margin:38px 0 0 0;border-radius:4px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 12px 12px;margin:0;">
+   <section class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></div>
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></div>
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></div>
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></div>
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></div>
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></div>
+     <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></div>
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></div>
+      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></div>
+   </section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="row" style="width:100%;padding:0;margin:0;">
 <center>
