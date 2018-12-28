@@ -19,7 +19,7 @@
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 8,
+        slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
@@ -42,11 +42,6 @@ $(document).ready(function(){
 </script>
 
 <style type="text/css">
-
-.btn-grey {
-    color: #555;
-    background-color: #f0f0f0;
-}
 
 .overlay-box:hover>.overlay-logo {
     opacity: .1;
@@ -212,7 +207,7 @@ $(document).ready(function(){
 }
 /* Slider */
 .slick-slide {
-    margin: 0px 20px;
+    margin: 12px 0;
 }
 .slick-slide img {
     width: 100%;
@@ -378,7 +373,7 @@ h1 {
 
 .row,
 .row > .column {
-  padding: 8px;
+  padding: 4px;
 }
 
 .column {
@@ -414,7 +409,7 @@ h1 {
 }
 
 .column1 {
-    width: 32.7%;
+    width: 33.3%;
     display: inline-block;
     float: center;
 }
@@ -452,8 +447,7 @@ h1 {
   font-family: ubuntu condensed;
   color: #000;
   text-shadow: 0 1px 1px #585858;
-   background-color: transparent;
-  font-size: 12px;
+ font-size: 12px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -466,11 +460,6 @@ h1 {
   border-bottom: 2px solid #585858;
 }
 
-.btn.active {
-  background-color: transparent;
-  color: black;
-  border-bottom: 2px solid #585858;
-}
 </style>
 </head>
 <body>
@@ -484,22 +473,22 @@ h1 {
 
 <center>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0 0 38px 0;">
 cp connection</p>
 
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> ALL ITEMS</button>
-  <button class="btn" onclick="filterSelection('hr tools')"> HR TOOLS</button>
-  <button class="btn" onclick="filterSelection('marketing')"> MARKETING</button>
-  <button class="btn" onclick="filterSelection('operations')"> OPERATIONS</button>
+<div id="myBtnContainer" style="width:100%;">
+<button class="w3-button active" style="font-family:calibri;font-size:12px;color:#000000;text-shadow:0 1px 2px #000000;padding:0;margin:0;" onclick="filterSelection('all')">SHOW ALL</button>
+<button class="w3-button" style="font-family:calibri;font-size:12px;color:#000000;text-shadow:0 1px 2px #000000;padding:0;margin:0;" onclick="f ilterSelection('hr tools')">HR</button>
+<button class="w3-button" style="font-family:calibri;font-size:12px;color:#000000;text-shadow:0 1px 2px #000000;padding:0;margin:0;" onclick="filterSelection('marketing')">MARKETING</button>
+<button class="w3-button" style="font-family:calibri;font-size:12px;color:#000000;text-shadow:0 1px 2px #000000;padding:0;margin:0;" onclick="filterSelection('operations')">OPERATIONS</button>
 </div>
 
 
 <center>
 <!-- Portfolio Gallery Grid -->
 <center>
-<div class="w3-container w3-card" style="background-color:#e8effc;width:100%;padding:1px;margin:20px 0;border-radius:4px;">
+<div class="w3-container" style="width:100%;padding:1px;margin:20px 0;border-radius:4px;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="container-fluid">
 <div onclick="" class="column hr tools overlay-box box1">
@@ -545,7 +534,7 @@ cp connection</p>
   <div onclick="" class="column marketing overlay-box box6">
     <div class="overlay-content text-center" style="padding-top: 71.5px;">
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
-      <a href="#" class="btn btn-grey">View Case Study</a>
+      <a href="#" class="w3-button w3-green">View Case Study</a>
     </div>
     <div class="overlay-logo"></div>
   </div>
@@ -653,25 +642,60 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:20px 12px 0 12px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:12px 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
-partner spotlite</p>
+sg marketplace</p>
 <center>
-<div class="row" style="padding:0;margin:0;border-radius:4px;">
-  <div class="column3" style="padding:10px 0;margin:0;">
-<div class="w3-container w3-card w3-white" style="width:100%;padding:0 12px 12px 12px;margin:38px 0 0 0;border-radius:4px;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 12px 12px;margin:0;">
-   <section class="customer-logos slider" style="width:100%;padding:0;margin:0;">
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></div>
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></div>
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></div>
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></div>
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></div>
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></div>
-     <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></div>
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></div>
-      <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></div>
-   </section>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<section class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223336-59f87f80-f393-11e8-96aa-82694c2bf84a.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+automotive</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223337-5a911600-f393-11e8-8756-84522993a828.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+b2b</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223338-5b29ac80-f393-11e8-95b9-736056ec0ea0.jpg">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+beauty</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49225063-f0c73b00-f397-11e8-8833-ff0fd09da567.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+coaching</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223342-5bc24300-f393-11e8-90f5-ddb352eea2dd.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+entertainment</div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223343-5c5ad980-f393-11e8-8cc3-62a4276f7138.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+food & drink</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223344-5cf37000-f393-11e8-936c-940fe2df4434.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+health</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223345-5cf37000-f393-11e8-8550-6af2c09e65d6.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+home</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223347-5e249d00-f393-11e8-9055-79ca9e9cf6f4.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+hotels</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49223348-5e249d00-f393-11e8-83f7-09b547a5c7f9.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+nite life</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49225067-f15fd180-f397-11e8-9b20-7342da0e30c0.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+online learning</p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/49225069-f15fd180-f397-11e8-8e20-59d64275f7fc.png">
+<p align="center" style="font-family:arial narrow,helvetica;font-size:11px;color:#000000;padding:0;margin:0;">
+spiritual</p></div>
+</section>
 </div>
 </div>
 </div>
