@@ -249,6 +249,12 @@ border: none;
   display: block;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .nab {
   overflow: hidden;
   padding: 10px;
@@ -307,53 +313,6 @@ img {
     box-sizing: border-box;
 }
 
-.column {
-    width: 50%;
-    float: left;
-    padding: 0;
-    margin: 0;
-  }
-
-.row,
-.row > .column {
-    padding: 0;
-    margin: 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column2 {
-    width: 25%;
-    float: left;
-    padding: 0;
-    margin: 0;
-  }
-
-.row,
-.row > .column2 {
-    padding: 0;
-    margin: 0;
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-
 
 .column3 {
     width: 100%;
@@ -379,22 +338,8 @@ img {
     background-color: #ffffff;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
 }
 
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
 
 @media (max-width: 900px) {
     .column3 {
@@ -467,7 +412,7 @@ img {
 </head>
 
 <body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
