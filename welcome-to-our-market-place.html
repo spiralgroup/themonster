@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 
 <html lang="en" class="no-js">
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]>
-<!-->
-<!--<![endif]-->
-
 <head>
 <title>Welcome to Our MarketPlace</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
-<meta name="google-site-verification" content="BJIZwukE82Cn1letaid7scbh6dUWQVJGT4j4Wq9VgR4" />
-<meta name="yandex-verification" content="1cf8ce3cbc019d20" />
-<meta name="description" content="The SG Marketplace, Chicago Local Small Businesses, Chicago's Local Small Business, Affordable Online Marketing Solutions, Free Workforce Training, HR Tools, Online Shopping, List Your Small Business.">
-<meta name="Keywords" content="SpiralGroup, Spiralgroup, Spiral Group Inc., Spiral Group, Incorporated, Spiral, Online Marketing, Marketing, Workforce Training, Employment Preparation, Small Business Solutions, Free, Mystery Shop, Program, Chicagoland, Business Assessment, Operational, CSS, HTML, DHTML, Java, JavaScript, Michelle Jones, Monster, The Monster, Ex-Offender, Ex-Con, Web Master, Web Mistress, Master, Meech, The Meech">
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="SpiralGroup Inc. + Small Business Solutions, Online Marketing, NFP, Community Services Provider, Workforce Training" />
-<meta property="og:description" content="Small Business Solutions and HR Tools. Sign up for a free phone session so we can help you formulate and implement a strategy that supports the needs of your market and increases overall profitability." />
-<meta property="og:url" content="https://spiralgroup.github.io/themonster/showcase-demo-page3.html/" />
-<meta property="og:site_name" content="SpiralGroup.org" />
-
-<link rel="canonical" href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html/" />
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico"/>
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Dorsa|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dancing+Script|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Marck+Script|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="quote-overlay.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -62,7 +45,142 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
 <style type="text/css">
+
+/* Slider */
+.slick-slide {
+    margin: 12px 0;
+    padding: 0 5px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -84,10 +202,7 @@ img {
 .column {
     width: 24%;
     float: center;
-    border: 4px solid #fff;
-    border-radius: 4px;
     display: inline-block;
-    background-color: #e8effc;
     padding: 2px;
    }
 
@@ -352,37 +467,36 @@ SUPPORT US IN OUR MISSION<br><br>
 </div>
 </div>
 
-<div id="small-businesses" class="w3-container w3-panel w3-white" style="width:100%;padding:32px 12px 12px 12px;margin:0;">
+<div id="small-businesses" class="w3-container w3-panel w3-white" style="width:100%;padding:55px 0 0 0;margin:0;">
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:12px 0 0 0;border-radius:4px;">
-
-<div class="row" style="width:100%;background-color:#fff;padding:0;margin:0;">
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589195-3cec1fa0-61b7-11e8-8e54-e834170077ba.png" style="width:100%;" border="0"></a>
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 automotive</p>
 </div></div>
   
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40700685-98b187e2-63a8-11e8-954f-98e5c9097ff6.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 b2b services</p>
 </div></div>
     
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40700139-3e4f0128-63a6-11e8-8591-a80718801ef3.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 beauty & spas</p>
 </div></div>
 
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/49229145-c4b0b780-f3a1-11e8-8d3a-6955a80f886b.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 coaching services</p>
  </div>
@@ -391,70 +505,70 @@ coaching services</p>
 
 <center>
 <!-- Grid 2-->
-<div class="row" style="width:100%;background-color:#fff;padding:0;margin:0;">
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/49121801-b447f200-f266-11e8-8f3a-981f36952123.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 entertainment</p>
 </div></div>
  
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589199-3e3925f6-61b7-11e8-826c-8fa02323e141.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 food & drink</p>
 </div></div>
   
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589228-9eb707ae-61b7-11e8-8c5d-15e3e123416b.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 health & fitness</p>
 </div></div>
       
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589229-9f24d6ee-61b7-11e8-9846-3d99c863cd94.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 home services</p>
 </div></div></div> 
 
 <center>
 <!-- Grid 3-->
-<div class="row" style="width:100%;background-color:#fff;padding:0;margin:0;">
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589230-9f8e033a-61b7-11e8-8241-5f0c4c932bf8.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 hotels & lodging</p>
 </div></div>
  
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40589231-9fed45b6-61b7-11e8-9316-0d41d666a970.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 nite life</p>
 </div></div>
     
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/40697483-63257b16-6398-11e8-90ff-799b8a5a9641.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 online courses</p>
 </div></div>
       
-<div class="column" style="box-shadow:12px 12px 12px #fff;">
+<div class="column" style="box-shadow:0 1px 12px #ccc;border-radius:4px;padding:0;margin:0 0 25px 0;">
 <a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/49229539-9b445b80-f3a2-11e8-83fa-5bd8b0f3d3cb.png" style="width:100%;" border="0"></a>
 
-<div class="content w3-panel" style="background-color:#e8effc;padding:0;margin:0;border-radius:4px;">
+<div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:ubuntu;font-size:12.5px;color:#000;letter-spacing:1px;padding:5px 0;text-shadow:0 1px 1px #000;margin:0;">
 spiritual enrichment</p>
 </div>
@@ -507,7 +621,8 @@ function showSlides() {
     setTimeout(showSlides, 7010);
 }
 </script>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
@@ -517,8 +632,42 @@ function showSlides() {
 </div>
 </div>
 </div>
-<center><div class="w3-container w3-panel" style="background-color: #f5faff;width:100%;padding:0;margin:0;border-top:1px solid #f1f1f1;">
-<div class="nab topnav1" style="width:100%;padding:30px;margin:0;">
+
+<div class="w3-container w3-white w3-card" style="width:100%;padding:0;margin:0;box-shadow:0 1px 26px #ccc;border-radius:4px;">
+<div class="customer-logos slider" style="background-color:#fff;width:100%;padding:10px 0;margin:0;">
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html"><img src="https://user-images.githubusercontent.com/25410880/50592846-b1828300-0e4a-11e9-8843-8a426d21fc75.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html"><img src="https://user-images.githubusercontent.com/25410880/50633445-29f74b80-0f00-11e9-9fdb-296cf5bbcb16.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><img src="https://user-images.githubusercontent.com/25410880/50587070-47111900-0e31-11e9-843b-b4da8b17e04f.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/sg-giftcard.html"><img src="https://user-images.githubusercontent.com/25410880/50587300-34e3aa80-0e32-11e9-92db-cf16248677c3.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://form.jotform.com/82323651984159"><img src="https://user-images.githubusercontent.com/25410880/50594244-a03c7500-0e50-11e9-9511-6ec74e860a89.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/50591274-995b3580-0e43-11e9-941f-84a3ccf71090.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html"><img src="https://user-images.githubusercontent.com/25410880/50591555-2b177280-0e45-11e9-9b8b-90669eaf6c9e.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/50592032-3370ad00-0e47-11e9-81f8-f2716eda7ed4.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html"><img src="https://user-images.githubusercontent.com/25410880/50593778-b0535500-0e4e-11e9-9c17-421c7782e62b.png" style="border-radius:2px;"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;border-top:1px solid #f1f1f1;">
+<div class="nab topnav1" style="width:100%;padding:35px 0 30px 0;margin:0;">
 <a href="https://spiralgroup.github.io/themonster/demo-webpage-portal.html">DEMO PAGES</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
