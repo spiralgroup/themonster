@@ -11,10 +11,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <link href="quote-overlay.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="b5642737c5d7d6f6ad1e8f46-text/javascript"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="b5642737c5d7d6f6ad1e8f46-text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js" type="b5642737c5d7d6f6ad1e8f46-text/javascript"></script>
-<script type="b5642737c5d7d6f6ad1e8f46-text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 <style type="text/css">
 * {
   box-sizing: border-box;
@@ -83,6 +83,7 @@ img {vertical-align: middle;}
     z-index: 999;
     overflow: hidden;
     color: #fff;
+    text-shadow:0 1px 1px #585858;
     height: 280px;
     background: #9ce;
     float: left;
@@ -100,16 +101,20 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box1 {
-     background: #000;
+    background: #e5adea;
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box1 .overlay-logo {
-    background: url(https://user-images.githubusercontent.com/25410880/50782203-3fe87180-125c-11e9-8f15-6a6542b7f1f9.png) center no-repeat;
+    background: url(https://user-images.githubusercontent.com/25410880/50782199-3f4fdb00-125c-11e9-8dfb-03036a7619db.png) center no-repeat;
     background-size: 55%
 }
 
 .overlay-box.box2 {
-    background: #ffc7ae;
+     background: #f7941d;
+   border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box2 .overlay-logo {
@@ -119,6 +124,8 @@ img {vertical-align: middle;}
 
 .overlay-box.box3 {
     background: #9ce;
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box3 .overlay-logo {
@@ -127,79 +134,97 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box4 {
-    background: #1343a2;
+    background: #e5adea;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box4 .overlay-logo {
-    background: url(https://user-images.githubusercontent.com/25410880/50782199-3f4fdb00-125c-11e9-8dfb-03036a7619db.png) center no-repeat;
-    background-size: 55%;
-}
-
-.overlay-box.box5 {
-    background: #4c566c;
-}
-
-.overlay-box.box5 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50782207-3fe87180-125c-11e9-9e12-fd227bf06ea6.png) center no-repeat;
     background-size: 55%;
 }
 
-.overlay-box.box6 {
-    background: #f7941d;
+.overlay-box.box5 {
+   background: #f7941d;
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
 
-.overlay-box.box6 .overlay-logo {
+.overlay-box.box5 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50782197-3eb74480-125c-11e9-80dd-b7f3286a5016.png) center no-repeat;
     background-size: 55%;
 }
 
-.overlay-box.box7 {
-    background: #cad9ef;
+.overlay-box.box6 {
+   background: #9ce;
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
 
-.overlay-box.box7 .overlay-logo {
+.overlay-box.box6 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50779413-17a94480-1255-11e9-8054-e3b06848ba73.png) center no-repeat;
     background-size: 55%;
 }
 
-.overlay-box.box8 {
+.overlay-box.box7 {
     background: #e5adea;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
-.overlay-box.box8 .overlay-logo {
+.overlay-box.box7 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50782201-3f4fdb00-125c-11e9-9b5e-2e25e53590a2.png) center no-repeat;
     background-size: 55%;
 }
 
-.overlay-box.box9 {
-    background: #061206;
+.overlay-box.box8 {
+   background: #f7941d;
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
 
-.overlay-box.box9 .overlay-logo {
+.overlay-box.box8 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50783748-90fa6480-1260-11e9-81e3-00de620e8e80.png) center no-repeat;
     background-size: 55%;
 }
 
-.overlay-box.box10 {
-    background: #0c1d26;
+.overlay-box.box9 {
+     background: #9ce;
+      border: 2px solid #fff;
+    border-radius: 4px;
 }
 
-.overlay-box.box10 .overlay-logo {
+.overlay-box.box9 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50783749-9192fb00-1260-11e9-980c-0480e5cd49a3.png) center no-repeat;
     background-size: 55%;
 }
 
-.overlay-box.box11 {
-    background: #7fc56d;
+.overlay-box.box10 {
+   background: #e5adea;
+    border: 2px solid #fff;
+    border-radius: 4px;
 }
 
-.overlay-box.box11 .overlay-logo {
+.overlay-box.box10 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50783750-922b9180-1260-11e9-8605-b3890dc7f130.png) center no-repeat;
     background-size: 55%;
 }
 
-.overlay-box.box12 {
+.overlay-box.box11 {
     background: #F7901E;
+     border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.overlay-box.box11 .overlay-logo {
+    background: url(https://user-images.githubusercontent.com/25410880/50783747-90fa6480-1260-11e9-875e-0dc7d8c9ff88.png) center no-repeat;
+    background-size: 55%;
+}
+
+.overlay-box.box12 {
+    background: #9ce;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box12 .overlay-logo {
@@ -208,7 +233,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box13 {
-    background: #F7901E;
+ background: #e5adea;
+  border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box13 .overlay-logo {
@@ -217,7 +244,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box14 {
-     background: #9ce;
+     background: #F7901E;
+      border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box14 .overlay-logo {
@@ -226,7 +255,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box15 {
-    background: #F7901E;
+    background: #9ce;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box15 .overlay-logo {
@@ -235,7 +266,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box16 {
-    background: #F7901E;
+    background: #e5adea;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box16 .overlay-logo {
@@ -244,7 +277,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box17 {
-        background: #9ce;
+       background: #F7901E;
+        border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box17 .overlay-logo {
@@ -253,7 +288,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box18 {
-    background: #F7901E;
+    background: #9ce;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box18 .overlay-logo {
@@ -262,7 +299,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box19 {
-    background: #000;
+    background: #e5adea;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box19 .overlay-logo {
@@ -271,7 +310,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box20 {
-    background: #fbfbfb;
+     background: #F7901E;
+      border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box20 .overlay-logo {
@@ -280,7 +321,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box21 {
-    background: #F7901E;
+     background: #9ce;
+      border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box21 .overlay-logo {
@@ -289,7 +332,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box22 {
-    background: #F7901E;
+     background: #e5adea;
+      border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box22 .overlay-logo {
@@ -298,7 +343,9 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box23 {
-    background: #fbfbfb;
+    background: #F7901E;
+     border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box23 .overlay-logo {
@@ -307,46 +354,21 @@ img {vertical-align: middle;}
 }
 
 .overlay-box.box24 {
-    background: #F7901E;
+     background: #9ce;
+      border: 2px solid #fff;
+    border-radius: 4px;
 }
 
 .overlay-box.box24 .overlay-logo {
     background: url(https://user-images.githubusercontent.com/25410880/50594244-a03c7500-0e50-11e9-9511-6ec74e860a89.png) center no-repeat;
     background-size: 55%;
 }
-
-.overlay-box.box25 {
-    background: #F7901E;
-}
-
-.overlay-box.box25 .overlay-logo {
-    background: url(https://www.solodev.com/assets/customer-overlay/logo12.png) center no-repeat;
-    background-size: 55%;
-}
-
-.overlay-box.box26 {
-    background: #F7901E;
-}
-
-.overlay-box.box26 .overlay-logo {
-    background: url(https://www.solodev.com/assets/customer-overlay/logo12.png) center no-repeat;
-    background-size: 55%;
-}
-
-.overlay-box.box27 {
-    background: #F7901E;
-}
-
-.overlay-box.box27 .overlay-logo {
-    background: url(https://www.solodev.com/assets/customer-overlay/logo12.png) center no-repeat;
-    background-size: 55%;
-}
-
 .overlay-content {
     height: 280px;
     padding: 30% 8% 25%;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: calibri,helvetica;
+    font-size: 18px;
+    color: #000;
     cursor: default;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -488,7 +510,7 @@ h1 {
   width: 20%;
   height: 3em;
   border-radius: 2px 2px 0 0;
-  background: #ccc;
+  box-shadow: 0 1px 4px #ccc;
   text-align: center;
   line-height: 3em;
   padding: 0;
@@ -500,7 +522,7 @@ h1 {
 }
 .tabs label:hover {
   background: #000;
-  color:#ffffff;
+  color: #fff;
 }
 @media screen and (max-width: 1235px) {
 .tabs label {
@@ -515,7 +537,6 @@ h1 {
 .tabs label {
   width: 100%;
   display: block;
-  border-bottom: 2px solid #000;
 } 
 }
 @media screen and (max-width: 600px) {
@@ -524,20 +545,18 @@ h1 {
 } 
 }
 
-#tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label {
-  background: #c0c0c0;
-  color: #FFFFFF; }
+#tab1:checked + label, #tab2:checked + label, #tab3:checked + label {
+  background: #ccc;
+  color: #000; }
 
 .tab-content {
   position: absolute;
-  padding: 1px;
+  padding: 0;
   margin: 0;
    top: -9999px;
 }
 
 .tab-content-wrapper{
-  background: #fff;
-  border-top: #ccc 1px solid;
   margin: 0;
   padding: 0;
 }
@@ -556,24 +575,6 @@ h1 {
 .show {
   display: block;
 }
-
-.btn {
-  font-family: ubuntu condensed;
-  color: #000;
-  text-shadow: 0 1px 1px #585858;
- font-size: 14px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 8px 12px;
-  margin: 0 1px;
-}
-
-.btn:hover {
-  background-color: white;
-  border-bottom: 1px solid #fff;
-}
-
 </style>
 </head>
 <body style="width:100%;">
@@ -603,7 +604,7 @@ h1 {
 </div>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0 0 38px 0;">
-cp connection</p>
+resources</p>
 <div class="tabs">
 <input type="radio" name="tab" id="tab1" checked="checked">
 <label for="tab1">HR & PEO's</label>
@@ -613,99 +614,100 @@ cp connection</p>
 <label for="tab3">CUSTOMER SERVICE</label>
 <div class="tab-content-wrapper">
 <div id="tab-content-1" class="tab-content">
-<div class="row" style="background-color:#ccc;padding:0;margin:0;border-radius:4px;">
-<div onclick="" class="column overlay-box box1">
+<div class="row w3-card w3-white" style="padding:0;margin:0;border-radius:4px;">
+<div onclick="" class="column overlay-box box1" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Full Service HR and PEO Solutions &#124; Speak with David Bollenbacher</p>
-<a href="https://www.staffone.com/" target="_blank" class="btn btn-grey">Visit Website</a>
+<p>HR & PEO Services Providers<br>
+Call Dave at 214-461-1126</p>
+<a href="https://www.oasisadvantage.com" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Visit Website</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box2">
+<div onclick="" class="column overlay-box box2" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>3 Unique Ways To Implement Workplace Training</p>
-<a href="https://www.businessblogshub.com/2016/09/3-unique-ways-to-implement-workplace-training/" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Unique Ways To Implement Training</p>
+<a href="https://www.businessblogshub.com/2016/09/3-unique-ways-to-implement-workplace-training/" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box3">
+<div onclick="" class="column overlay-box box3" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>The Ultimate Guide to New Employee Forms [+ Free Templates]</p>
-<a href="https://fitsmallbusiness.com/new-employee-forms-templates" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Guide to New Employee Forms</p>
+<a href="https://fitsmallbusiness.com/new-employee-forms-templates" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box4">
-<div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Improve Your Business With Oasis PEO Services</p>
-<a href="https://www.oasisadvantage.com" target="_blank" class="btn btn-grey">Visit Website</a>
-</div>
-<div class="overlay-logo">
-</div>
-</div>
-<div onclick="" class="column overlay-box box5">
+<div onclick="" class="column overlay-box box4" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
 <p>Job Applicants with Criminal Records</p>
-<a href="https://www.xcelhr.com/resources/employment-law/applicant-criminal-records" target="_blank" class="btn btn-grey">Read Article</a>
+<a href="https://www.xcelhr.com/resources/employment-law/applicant-criminal-records" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box6">
+<div onclick="" class="column overlay-box box5" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
 <p>Free Employee Handbook Creator</p>
-<a href="https://www.handbooks.io/index.html#app" target="_blank" class="btn btn-grey">Visit Website</a>
+<a href="https://www.handbooks.io/index.html#app" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Visit Website</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box7">
+<div onclick="" class="column overlay-box box6" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Payroll, benefits, HR, and compliance &#151; all in one place.</p>
-<a href="https://justworks.com" target="_blank" class="btn btn-grey">Visit Website</a>
+<p>HR & PEO Services Providers</p>
+<a href="https://justworks.com" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Visit Website</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box8">
+<div onclick="" class="column overlay-box box7" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Strategies for Hiring Great Employees and Contractors</p>
-<a href="https://smallbusinesscommunity.org/blog/category/business-management" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Strategies for Hiring Great Employees</p>
+<a href="https://smallbusinesscommunity.org/blog/category/business-management" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box9">
+<div onclick="" class="column overlay-box box8" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Achieve more together with Microsoft Teams</p>
-<a href="https://products.office.com/en-us/microsoft-teams/group-chat-software" target="_blank" class="btn btn-grey">Visit Website</a>
+<p>Microsoft Teams</p>
+<a href="https://products.office.com/en-us/microsoft-teams/group-chat-software" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Visit Website</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box10">
+<div onclick="" class="column overlay-box box9" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Pros and Cons of Using a PEO Company</p>
-<a href="https://www.paycor.com/resource-center/pros-and-cons-of-using-a-peo" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Pros and Cons of Using a PEO</p>
+<a href="https://www.paycor.com/resource-center/pros-and-cons-of-using-a-peo" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box11">
+<div onclick="" class="column overlay-box box10" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Human Resources that know your business</p>
-<a href="https://www.trinet.com" target="_blank" class="btn btn-grey">Visit Website</a>
+<p>HR & PEO Services Providers</p>
+<a href="https://www.trinet.com" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Visit Website</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box12">
+<div onclick="" class="column overlay-box box11" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Sign Up for a Free Consultation So We Can Discuss Your HR Needs</p>
-<a href="https://form.jotform.com/82323651984159" target="_blank" class="btn btn-grey">Sign Up</a>
+<p>HR & PEO Services Providers</p>
+<a href="https://www.adp.com/semlps/2017/peo-provider-totalsource-fsb.aspx?CID=ADP_PPL_FitSmallBusiness_All_PPL_Text_PEO_Null_Payroll_May_18_Null" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Visit Website</a>
+</div>
+<div class="overlay-logo">
+</div>
+</div>
+<div onclick="" class="column overlay-box box12" style="padding:0;margin:0;">
+<div class="overlay-content text-center" style="padding-top: 71.5px;">
+<p>Let's Discuss Your HR Needs</p>
+<a href="https://form.jotform.com/82323651984159" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Free Consultation</a>
 </div>
 <div class="overlay-logo">
 </div>
@@ -713,51 +715,51 @@ cp connection</p>
 </div>
 </div>
 <div id="tab-content-2" class="tab-content">
-<div class="row" style="background-color:#ccc;padding:0;margin:0;border-radius:4px;">
-<div onclick="" class="column overlay-box box13">
+<div class="row w3-card w3-white" style="padding:0;margin:0;border-radius:4px;">
+<div onclick="" class="column overlay-box box13" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Make a logo you'll be proud of.</p>
-<a href="https://logojoy.com/" target="_blank" class="btn btn-grey">Visit Website</a>
+<p>Quality Logos</p>
+<a href="https://logojoy.com/" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Visit Website</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box14">
+<div onclick="" class="column overlay-box box14" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
 <p>Use the Tools Facebook Offers</p>
-<a href="https://smallbusinesscommunity.org/blog/social-media-marketing/use-the-tools-facebook-offers" target="_blank" class="btn btn-grey">Read Article</a>
+<a href="https://smallbusinesscommunity.org/blog/social-media-marketing/use-the-tools-facebook-offers" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box15">
+<div onclick="" class="column overlay-box box15" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>3 Tips for Smarter Brand Management in Small Business</p>
-<a href="https://www.shopkeep.com/blog/small-business-brand-management-tips" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Tips for Smarter Brand Management</p>
+<a href="https://www.shopkeep.com/blog/small-business-brand-management-tips" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box16">
+<div onclick="" class="column overlay-box box16" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Learn What Marketing Is and How It Is Used</p>
-<a href="https://www.thebalancesmb.com/what-is-marketing-2296057" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Learn What Marketing Is</p>
+<a href="https://www.thebalancesmb.com/what-is-marketing-2296057" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box17">
+<div onclick="" class="column overlay-box box17" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Enthusiasm Sells &#124; Marketing With A Positive Attitude</p>
-<a href="https://www.businessblogshub.com/2011/01/enthusiasm-sells-marketing-with-a-positive-attitude" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Enthusiasm Sells</p>
+<a href="https://www.businessblogshub.com/2011/01/enthusiasm-sells-marketing-with-a-positive-attitude" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box18">
+<div onclick="" class="column overlay-box box18" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Press Release Format, Instructions & Easy To Use Template</p>
-<a href="https://fitsmallbusiness.com/press-release-format-and-template" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Press Release Format & Instructions</p>
+<a href="https://fitsmallbusiness.com/press-release-format-and-template" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
@@ -765,51 +767,51 @@ cp connection</p>
 </div>
 </div>
 <div id="tab-content-3" class="tab-content">
-<div class="row" style="background-color:#ccc;padding:0;margin:0;border-radius:4px;">
-<div onclick="" class="column overlay-box box19">
+<div class="row w3-card w3-white" style="padding:0;margin:0;border-radius:4px;">
+<div onclick="" class="column overlay-box box19" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>10 Ways to Improve Client Satisfaction</p>
-<a href="https://smallbusinesscommunity.org/blog/category/customer-service/#tve_editor" target="_blank" class="btn btn-grey">Read Article</a>
+<p>25 Ways to Thank Your Customers</p>
+<a href="https://www.helpscout.com/25-ways-to-thank-your-customers" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box20">
+<div onclick="" class="column overlay-box box20" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>25 Simple Customer Service Tips All Retailers Should Try</p>
-<a href="https://www.shopkeep.com/blog/retail-customer-service-tips" target="_blank" class="btn btn-grey">Read Article</a>
+<p>25 Simple Customer Service Tips</p>
+<a href="https://www.shopkeep.com/blog/retail-customer-service-tips" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box21">
+<div onclick="" class="column overlay-box box21" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>The 5 Types of Customers and How to Make Them Buy More</p>
-<a href="https://www.thebalancesmb.com/the-5-types-of-customers-2948073" target="_blank" class="btn btn-grey">Read Article</a>
+<p>The 5 Types of Customers...</p>
+<a href="https://www.thebalancesmb.com/the-5-types-of-customers-2948073" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box22">
+<div onclick="" class="column overlay-box box22" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>7 Tips for Managing Customer Complaints</p>
-<a href="https://www.businessblogshub.com/2010/06/7-tips-for-managing-customer-complaints/" target="_blank" class="btn btn-grey">Read Article</a>
+<p>Tips for Managing Customer Complaints</p>
+<a href="https://www.businessblogshub.com/2010/06/7-tips-for-managing-customer-complaints/" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Read Article</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box23">
+<div onclick="" class="column overlay-box box23" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Free Customer Service Training Course Inside Our EP Tool-Kit</p>
-<a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" target="_blank" class="btn btn-grey">Sign Up</a>
+<p>Free Customer Service Training</p>
+<a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Sign Up</a>
 </div>
 <div class="overlay-logo">
 </div>
 </div>
-<div onclick="" class="column overlay-box box24">
+<div onclick="" class="column overlay-box box24" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Sign Up For A Free Consultation So We Can Discuss Your Workforce Training Needs</p>
-<a href="https://form.jotform.com/82323651984159" target="_blank" class="btn btn-grey">Sign Up</a>
+<p>Let's Discuss Your Workforce Training Needs</p>
+<a href="https://form.jotform.com/82323651984159" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Free Consultation</a>
 </div>
 <div class="overlay-logo">
 </div>
@@ -823,7 +825,7 @@ cp connection</p>
 </div>
 </div>
 </div>
-<script type="b5642737c5d7d6f6ad1e8f46-text/javascript">
+<script>
 var slideIndex = 0;
 showSlides();
 
@@ -858,11 +860,12 @@ function showSlides() {
 <a href="https://spiralgroup.github.io/themonster/demo-webpage-portal.html">DEMO PAGES</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
-<a href="https://spiralgroup.github.io/themonster/cp-connection.html">PARTNERS</a>
+<a href="https://spiralgroup.github.io/themonster/resources.html">RESOURCES</a>
+
 </div>
 </div>
 </div>
 </div>
 </div>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="b5642737c5d7d6f6ad1e8f46-" defer=""></script></body>
+</body>
 </html>
