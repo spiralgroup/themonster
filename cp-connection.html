@@ -522,8 +522,8 @@ h1 {
   border-bottom: none; 
 }
 .tabs label:hover {
-  background: #000;
-  color: #fff;
+  background: #f5f5f5;
+  color: #000;
 }
 @media screen and (max-width: 1235px) {
 .tabs label {
@@ -546,7 +546,7 @@ h1 {
 } 
 }
 
-#tab1:checked + label, #tab2:checked + label, #tab3:checked + label {
+#tab0:checked + label, #tab1:checked + label, #tab2:checked + label, #tab3:checked + label {
   background: #ccc;
   color: #000; }
 
@@ -569,7 +569,7 @@ h1 {
 } 
 }
 
-#tab1:checked ~ .tab-content-wrapper #tab-content-1, #tab2:checked ~ .tab-content-wrapper #tab-content-2, #tab3:checked ~ .tab-content-wrapper #tab-content-3 {
+#tab0:checked ~ .tab-content-wrapper #tab-content-0, #tab1:checked ~ .tab-content-wrapper #tab-content-1, #tab2:checked ~ .tab-content-wrapper #tab-content-2, #tab3:checked ~ .tab-content-wrapper #tab-content-3 {
   position: relative;
   top: 0;
  }
@@ -607,12 +607,18 @@ h1 {
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0 0 38px 0;">
 resources</p>
 <div class="tabs">
+<input type="radio" name="tab" id="tab0">
+<label for="tab0"><a href="https://spiralgroup.org" style="text-decoration:none;color:#000;">HOME</a></label>
+
 <input type="radio" name="tab" id="tab1" checked="checked">
 <label for="tab1">HR & PEO's</label>
+
 <input type="radio" name="tab" id="tab2">
 <label for="tab2">MARKETING</label>
+
 <input type="radio" name="tab" id="tab3">
 <label for="tab3">CUSTOMER SERVICE</label>
+
 <div class="tab-content-wrapper">
 <div id="tab-content-1" class="tab-content">
 <div class="row w3-card w3-white" style="padding:0;margin:0;border-radius:4px;">
@@ -707,7 +713,7 @@ Call Dave at 214-461-1126</p>
 </div>
 <div onclick="" class="column overlay-box box12" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Let's Discuss Your HR Needs</p>
+<p>What Are Your Training Needs?</p>
 <a href="https://form.jotform.com/82323651984159" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Free Consultation</a>
 </div>
 <div class="overlay-logo">
@@ -803,7 +809,7 @@ Call Dave at 214-461-1126</p>
 </div>
 <div onclick="" class="column overlay-box box23" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Free Customer Service Training</p>
+<p>Professional Development Course</p>
 <a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Sign Up</a>
 </div>
 <div class="overlay-logo">
@@ -811,8 +817,8 @@ Call Dave at 214-461-1126</p>
 </div>
 <div onclick="" class="column overlay-box box24" style="padding:0;margin:0;">
 <div class="overlay-content text-center" style="padding-top: 71.5px;">
-<p>Let's Discuss Your Workforce Training Needs</p>
-<a href="https://form.jotform.com/82323651984159" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Free Consultation</a>
+<p>Book Your Free Consultation</p>
+<a href="https://form.jotform.com/82323651984159" target="_blank" class="w3-button" style="background-color:transparent;font-family:ubuntu condensed;text-shadow:0 1px 1px #585858;font-size:14px;text-decoration:none;padding:8px 12px;border-radius:2px;">Sign Up</a>
 </div>
 <div class="overlay-logo">
 </div>
@@ -861,7 +867,7 @@ function showSlides() {
 <a href="https://spiralgroup.github.io/themonster/demo-webpage-portal.html">DEMO PAGES</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
-<a href="https://spiralgroup.github.io/themonster/resources.html">RESOURCES</a>
+<a href="https://spiralgroup.github.io/themonster/cp-connection.html">RESOURCES</a>
 
 </div>
 </div>
