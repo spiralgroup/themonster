@@ -54,6 +54,43 @@ $(document).ready(function(){
 </script>
 
 <style type="text/css">
+body, html {
+    max-width: 1235px;
+    height: 100%;
+    margin: auto;
+    background-image: linear-gradient(to left, #fff, #fff);
+}
+
+.header {
+  padding: 0;
+  background: #ffffff;
+  color: #585858;
+  margin: 0;
+  float: left;
+  display: block;
+}
+.top-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  float: left;
+ }
+ 
+ .navbar {
+position: fixed;
+top: 0;
+max-width: 1235px;
+background-color: #f5faff;
+border: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -244,15 +281,60 @@ body, html {
 
 </head>
 
-<body>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<body style="width:100%;">
+<div class="top-container" style="width:100%;padding:0;margin:0;">
+<div class="header" id="myHeader">
+<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Explore</span>
+<a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:ubuntu;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
+<li><a href="https://www.yelp.com/biz_photos/spiral-group-incorporated-chicago" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/sg-giftcard.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">The SG Gift Card</a></li><br>
+<li><a href="https://spiralgroup.org" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Tools</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
+</ul></ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">MARKETPLACE</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+</div>
+
+<center>
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
+<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
+<div>
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
+<div class="text"></div>
+</div>
+</div>
+<div style="text-align:center;padding:0;margin:0;">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
 </div>
 
 <center>
 <div class="content">
 </div>
+
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:10px 0 0 0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 the sg marketplace</p>
@@ -298,10 +380,6 @@ the sg marketplace</p>
 
 <div class="slideshow-container1 w3-white" style="width:100%;margin:0;padding:0;">
 
- <div style="text-align:center w3-white;">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
   
 <div class="mySlides1 w3-white w3-animate-fading" style="padding:165px 0 0 0;background-color:#fff;">
 <div class="text w3-white">
@@ -495,6 +573,20 @@ function showSlides() {
 }
 </script>
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:62px 0 20px 0;">
 <center>
@@ -510,7 +602,7 @@ function showSlides() {
 <a href="https://spiralgroup.github.io/themonster/demo-webpage-portal.html">DEMO PAGES</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">ADD LISTING</a>
+<a href="https://spiralgroup.github.io/themonster/cp-connection.html">RESOURCES</a>
 </div>
 </div>
 </div>
