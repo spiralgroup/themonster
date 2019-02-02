@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="css/reset.css"> 
 <link rel="stylesheet" href="css/style.css"> 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Ropa+Sans|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -33,7 +33,7 @@
 <script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
-<script type="text/javascript">
+<script>
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 7,
@@ -191,58 +191,28 @@ $(document).ready(function(){
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-.openinghours {
-    font-family:calibri;
-    font-size:14px;
-    color:#000;
-    letter-spacing:.5px;
-    padding:0 2px 0 2px;
-    overflow: hidden;
-    display: inline-block;
-}
-.openinghourscontent {
-    float:left;
+img {
+    border-radius: 0; 
+    max-width: 100%;
+    height: auto;
 }
 
-.today {
-    color: dodgerblue;
-}
-.opening-hours-table tr td:first-child {
-  font-weight:bold;
-}
-#open-status {
-    display:block;
-    text-align:center;
+* {
+    box-sizing: border-box;
 }
 
-.open {
-    color:#fff;
-}
-    
-.opening-hours-table tr td {
-    padding:0 5px 5px 5px;
+.content {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
 }
 
 body, html {
     max-width: 1235px;
     height: 100%;
-    margin: auto;
+    margin: none;
     background-image: linear-gradient(to left, #fff, #fff);
-}
-
-.navbar {
-position: fixed;
-top: 0;
-max-width: 1235px;
-background-color: #ffebcd;
-border: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .header {
@@ -252,6 +222,13 @@ border: none;
   margin: 0;
   float: left;
   display: block;
+}
+.top-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  float: left;
 }
 
 .nab {
@@ -274,6 +251,7 @@ border: none;
   text-shadow: 0 1px 1px #585858;
 }
 
+
 .nab a:hover {
   color: black;
   border-bottom: 1px solid #000;
@@ -282,6 +260,15 @@ border: none;
 .topnav1 a:hover {
   text-decoration: none;
 }
+
+.navbar {
+position: fixed;
+top: 0;
+max-width: 1235px;
+background-color: #ffebcd;
+border: none;
+}
+
 .mySlides {display:none;}
 
 img {vertical-align: middle;}
@@ -302,119 +289,6 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-img {
-    border-radius: 0; 
-    max-width: 100%;
-    height: auto;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.column {
-    width: 50%;
-    float: left;
-    padding: 0;
-    margin: 0;
-  }
-
-.row,
-.row > .column {
-    padding: 0;
-    margin: 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column2 {
-    width: 25%;
-    float: left;
-    padding: 0;
-    margin: 0;
-  }
-
-.row,
-.row > .column2 {
-    padding: 0;
-    margin: 0;
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-
-
-.column3 {
-    width: 100%;
-    float: center;
-    padding: 0;
-    margin: 0;
-  }
-
-.row,
-.row > .column3 {
-    padding: 0;
-    margin: 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.content {
-    background-color: #ffffff;
-    padding: 0;
-    margin: 0;
-    border-radius: 2px;
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column3 {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column3 {
-        width: 100%;
-        float: center;
- }
-}
-
 
 .active {
   background-color: #717171;
@@ -436,6 +310,13 @@ img {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .row,
 .row > .column1 {
     padding: 0;
@@ -443,7 +324,7 @@ img {
 }
 
 .column1 {
-    width: 32.7%;
+    width: 48%;
     display: inline-block;
     float: center;
 }
@@ -470,7 +351,6 @@ img {
 
 </style>
 </head>
-
 <body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
@@ -531,17 +411,23 @@ img {
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 0 12px;margin:0;">
+<div id="item1" class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 your products</p>
 
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-quarter" style="padding:0 12px;margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0 0 10px 0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52164417-eed66c80-26a5-11e9-9c8b-864d187597ec.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
+
+<p align="center" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:10px 0 0 0;margin:0;">773 242-0705</p>
+<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0 0 10px 0;margin:0;">yourcompany@spiralgroup.org</p>
+</div></div>
+
+<div class="w3-threequarter" style="padding:0 12px;margin:0 0 10px 0;">
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-card" style="background-color:#ffebcd;width:100%;padding:1px;margin:0 0 20px 0;border-radius:4px;">
 <!-- row 1 -->
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div id="item1" class="row" style="width:100%;background-color:#ffebcd;padding:0;margin:0;border-bottom:2px solid transparent;">
-<div class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:100%;border-radius:4px;">
 
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
@@ -586,8 +472,7 @@ No</p>
 
 <a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
-
-<div id="item2" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item2" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id02').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -632,7 +517,7 @@ No</p>
 
 <a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
-<div id="item3" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item3" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id03').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -675,11 +560,10 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div></div>
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
 <!-- row 2 -->
-<div id="item4" class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;border-bottom:2px solid transparent;">
-<div class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item4" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id04').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -724,7 +608,7 @@ No</p>
 
 <a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
-<div id="item5" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item5" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id05').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -769,7 +653,7 @@ No</p>
 
 <a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
-<div id="item6" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item6" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id06').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -811,12 +695,10 @@ No</p>
 </div>
 </div>
 
-<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div></div>
-
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
  
 <!-- row 3 -->
-<div id="item7" class="row" style="background-color:#ffebcd;width:100%;padding:0;margin:0;border-bottom:2px solid transparent;">
-<div class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item7" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id07').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -861,7 +743,7 @@ No</p>
 
 <a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
-<div id="item8" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item8" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id08').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -906,7 +788,7 @@ No</p>
 
 <a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div></div>
 
-<div id="item9" class="column1" style="padding:5px;box-shadow:0 1px 1px transparent;border-radius:4px;">
+<div id="item9" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id09').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
@@ -950,8 +832,52 @@ No</p>
 </div>
 
 <a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a></div>
-</div></div></div>
-</div></div> </div>
+</div>
+
+<div id="item10" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id10').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
+
+<div id="id10" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4">
+<header class="w3-container w3-white" style="padding:0 5px;">
+<span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
+<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:50%;"></p>
+</header>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
+<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
+PRODUCT DESCRIPTION</p>
+
+<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your nine showcase items will have its own "modal" just for this purpose.<br><br>
+
+Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
+
+Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
+
+<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
+<b>PRICE</b><br>
+$99.99<br><br>
+
+<b>ORDER ONLINE?</b><br>
+Yes<br><br>
+
+<b>IN-STORE PICK-UP?</b><br>
+Yes<br><br>
+
+<b>DELIVERY AVAILABLE?</b><br>
+No</p>
+     </div>
+<footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
+</footer>
+</div>
+</div>
+
+<a class="w3-button" style="background-color:#fff;border-radius:3px;color:#000;letter-spacing:.5px;font-family:ubuntu;font-size:12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">BUY NOW</a>
 </div>
 </div>
 </div>
@@ -960,7 +886,7 @@ No</p>
 </div>
 </div>
 </div>
-</div>
+
 
 <script>
 var slideIndex = 0;
@@ -997,21 +923,12 @@ function myFunction() {
   }
 }
 </script>
-
-<div class="row" style="width:100%;padding:0;margin:0;">
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:62px 0 0 0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
-
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 45px 0;"></div>
-</div>
-</div>
-</div>
-<div class="w3-container w3-white w3-card" style="width:100%;padding:0;margin:0;box-shadow:0 1px 1px #ffebcd;border-radius:4px;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="customer-logos slider" style="background-color:#fff;width:100%;padding:10px 0;margin:0;">
 <div class="slide"><a href="#item1"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png"></a></div>
 
-<div class="slide"><a href="#item2"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
+<div class="slide"><a href="#item1"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
 
 <div class="slide"><a href="#item3"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
 
@@ -1026,6 +943,10 @@ function myFunction() {
 <div class="slide"><a href="#item8"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
 
 <div class="slide"><a href="#item9"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
+
+<div class="slide"><a href="#item10"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1035,9 +956,40 @@ function myFunction() {
 </div>
 </div>
 
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;border-top:1px solid #ffebcd;">
+<div class="w3-row-padding" style="margin:50px 0 40px 0;">
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52162839-64364300-268e-11e9-8d00-2e181068c5ed.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
+</div></div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52164032-eb3fe700-269f-11e9-97cf-5b08cba4c6f4.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
+</div></div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52164033-ebd87d80-269f-11e9-8d55-1a57985574a0.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
+</div></div>
+
+<div class="w3-quarter">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52164034-ee3ad780-269f-11e9-92c8-028e408ae933.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <center>
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-<div class="nab topnav1" style="width:100%;padding:35px 0 30px 0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;border-top:1px solid #ffebcd;">
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:50px 0 0 0;margin:0;">
+</div>
+<div class="nab topnav1" style="background-color:#fff;width:100%;padding:25px 0 40px 0;margin:0;">
 <a href="https://spiralgroup.github.io/themonster/demo-webpage-portal.html">DEMO PAGES</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
