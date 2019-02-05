@@ -80,12 +80,6 @@ background-color: #f5faff;
 border: none;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -221,57 +215,20 @@ img {vertical-align: middle;}
   height: 4px;
   width: 4px;
   margin: 0 1px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+  background-color: #fff;
 }
 
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #000;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
-}
-
-.nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
-}
-
-body, html {
-    max-width: 1235px;
-    height: 100%;
-    margin: auto;
-    background-image: linear-gradient(to left, #fff, #fff);
-}
-
 </style>
 
 </head>
@@ -458,7 +415,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 7010);
+    setTimeout(carousel, 5010);
 }
 </script>
 
@@ -480,7 +437,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 7010);
+    setTimeout(showSlides, 5010);
 }
 </script>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
