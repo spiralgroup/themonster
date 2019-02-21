@@ -23,8 +23,33 @@
 <link href="quote-overlay.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -53,6 +78,111 @@ $(document).ready(function(){
 </script>
 
 <style type="text/css">
+/* Slider */
+.slick-slide {
+    padding: 0 3px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+display: block;
+}
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
 body, html {
     max-width: 1235px;
     height: 100%;
@@ -291,7 +421,7 @@ body, html {
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Explore</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">MarketPlace</span>
 <a class="navbar-brand" href="https://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -506,6 +636,36 @@ spiritual enrichment</p>
     </div>
     </div>
     </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:30px 0 0 0;margin:30px 0 0 0;border-top:1px solid #f5f5f5;">
+<p align="center" style="font-family:privus medium;font-size:30px;color:#c0c0c0;text-shadow:0 1px 1px #c0c0c0;letter-spacing:2px;padding:0;margin:0;">&nbsp;SPONSORS</p>
+<div class="customer-logos slider w3-white w3-padding" style="width:100%;padding:0;margin:0;">
+<div class="slide"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52450420-c3adac00-2aef-11e9-9e2e-0fcda88d6b51.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52450619-afb67a00-2af0-11e9-850d-f6cc5b4b549e.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52451698-ea221600-2af4-11e9-846c-54be5491eb7a.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52451859-89dfa400-2af5-11e9-9c98-4d539856ddaf.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a></div>
+
+<div class="slide"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52392328-25213c80-2a56-11e9-8e93-bbb625501e62.png" style="border-radius:2px;"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
