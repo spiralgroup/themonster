@@ -24,203 +24,12 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
-
-<script>
-$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
 <style type="text/css">
-/* Slider */
-.slick-slide {
-    margin: 0px 5px;
-}
-.slick-slide img {
-    width: 100%;
-}
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{ display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
 
-.openinghours {
-    font-family:calibri;
-    font-size:14px;
-    color:#000;
-    letter-spacing:.5px;
-    padding:0 2px 0 2px;
-    overflow: hidden;
-    display: inline-block;
-}
-.openinghourscontent {
-    float:left;
-}
-
-.today {
-    color: dodgerblue;
-}
-.opening-hours-table tr td:first-child {
-  font-weight:bold;
-}
-#open-status {
-    display:block;
-    text-align:center;
-}
-
-.open {
-    color:#fff;
-}
-    
-.opening-hours-table tr td {
-    padding:0 5px 5px 5px;
-}
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -839,11 +648,6 @@ Michelle has over 20 years' experience in the hospitality and food-service indus
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <script>
 var slideIndex = 0;
@@ -881,6 +685,9 @@ function myFunction() {
 }
 </script>
 
+
+</div>
+</div>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
@@ -891,35 +698,6 @@ function myFunction() {
 </div>
 </div>
 </div>
-
-<div class="w3-container w3-white w3-card" style="width:100%;padding:0;margin:0;">
-<div class="customer-logos slider" style="background-color:#fff;width:100%;padding:10px 0;margin:0;">
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#assessment"><img src="https://user-images.githubusercontent.com/25410880/50592846-b1828300-0e4a-11e9-8843-8a426d21fc75.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#smp"><img src="https://user-images.githubusercontent.com/25410880/50633445-29f74b80-0f00-11e9-9fdb-296cf5bbcb16.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><img src="https://user-images.githubusercontent.com/25410880/50587070-47111900-0e31-11e9-843b-b4da8b17e04f.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/sg-giftcard.html"><img src="https://user-images.githubusercontent.com/25410880/50587300-34e3aa80-0e32-11e9-92db-cf16248677c3.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://form.jotform.com/82323651984159" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/50594244-a03c7500-0e50-11e9-9511-6ec74e860a89.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/50591274-995b3580-0e43-11e9-941f-84a3ccf71090.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#mock"><img src="https://user-images.githubusercontent.com/25410880/50591555-2b177280-0e45-11e9-9b8b-90669eaf6c9e.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.org"><img src="https://user-images.githubusercontent.com/25410880/50592032-3370ad00-0e47-11e9-81f8-f2716eda7ed4.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery"><img src="https://user-images.githubusercontent.com/25410880/50593778-b0535500-0e4e-11e9-9c17-421c7782e62b.png" style="border-radius:2px;"></a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 <center>
 <div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;border-top:1px solid #f1f1f1;">
 <div class="nab topnav1" style="width:100%;padding:35px 0 30px 0;margin:0;">
