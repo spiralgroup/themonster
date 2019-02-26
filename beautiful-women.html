@@ -29,10 +29,10 @@
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 6,
+        slidesToShow: 8,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
         arrows: false,
         dots: false,
         pauseOnHover: true,
@@ -44,7 +44,7 @@ $(document).ready(function(){
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 3
             }
         }]
     });
@@ -369,6 +369,31 @@ body, html {
     background-image: linear-gradient(to left, #fff, #fff);
 }
 
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  font-family: khand medium;
+  float: left;
+  padding: 6px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border-radius: 2px;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 </style>
 
 </head>
@@ -412,35 +437,44 @@ body, html {
 </div>
 
 <center>
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
-<div class="text"></div>
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0 0 30px 0;border-bottom:1px solid #f5f5f5;">
+<div class="customer-logos slider w3-white" style="width:100%;padding:30px 0 20px 0;margin:0;">
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
+
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a>
 </div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
-<div class="text"></div>
 </div>
 </div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
 </div>
+</div>
+</div>
+</div>
+
 <center>
 <div class="content">
 </div>
-<div id="item1" class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 beautiful women</p>
 
 <div class="w3-row" style="padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 20px 0;">
 <center>
 <!-- row 1 -->
 <div class="column1" style="padding:0;margin:0 0 10px 0;">
@@ -458,6 +492,16 @@ cosmetic procedures</p>
     </div>
     </div>
      
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52395919-ad0e4300-2a64-11e9-9df9-79b5578491e0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+ <div class="content w3-panel" style="padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+makeup & cosmetics</p>
+ </div>
+    </div>
+    </div>
+
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
@@ -527,59 +571,29 @@ tattoos & piercings</p>
     </div>
     </div>
     </div>
-    
-    <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52395919-ad0e4300-2a64-11e9-9df9-79b5578491e0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
- <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
-makeup & cosmetics</p>
+   </div>
+</div>
+
+<div class="center">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+ </div>
     </div>
+</div>
+</div>
+</div>
+ </div>
     </div>
-    </div>
-     </div>
-    </div>
-     </div>
-   
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;border-top:1px solid #f5f5f5;">
-<div class="customer-logos slider w3-white w3-padding" style="width:100%;margin:20px 0;">
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png"></a></div>
+</div>
+</div>
+</div>
 
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <script>
 window.onscroll = function() {myFunction()};
 
