@@ -360,7 +360,37 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
+.column {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+ }
 
+.row,
+.row > .column {
+    padding: 0;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
 </style>
 </head>
 <body style="width:100%;">
@@ -389,8 +419,8 @@ img {vertical-align: middle;}
 </ul></ul>
 
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CUSTOMER SUPPORT</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">MARKETPLACE</a></li>
+<li><a class="w3-button w3-blue" href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">CUSTOMER SUPPORT</a></li>
+<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:10px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">MARKETPLACE</a></li>
 </ul>
 </div>
 </div>
@@ -424,7 +454,7 @@ img {vertical-align: middle;}
 <div id="item1" class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">our products</p>
 
-<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-row" style="padding:0;margin:50px 0 0 0;">
 <div class="w3-quarter" style="padding:0 12px;margin:0 0 10px 0;">
 <div class="w3-card" style="background-color:#e37e35;padding:0;margin:0 0 10px 0;border-radius:0 0 2px 2px;">
 <img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
@@ -451,7 +481,7 @@ img {vertical-align: middle;}
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="w3-row" style="margin:0;padding:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<a href="#"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 
 <div class="w3-threethird w3-pale-green" style="padding:0 10px;margin:0;">
@@ -485,87 +515,120 @@ To receive this product or service at the discounted price in-store, <a href="ht
 
 <button onclick="document.getElementById('id01').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-<div id="id01" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id01" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-          <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id01').style.display='none'">Close</button></div>
 </div>
 </div>
 
 <img src="https://user-images.githubusercontent.com/25410880/55264768-b5982400-5232-11e9-9456-988b60adbb39.png"></div></div>
+
 
 <div id="item2" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id02').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-  <div id="id02" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id02" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-         <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id02').style.display='none'">Close</button></div>
 </div>
 </div>
+
 
 <img src="https://user-images.githubusercontent.com/25410880/55264768-b5982400-5232-11e9-9456-988b60adbb39.png"></div></div>
 
@@ -574,43 +637,59 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id03').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-  <div id="id03" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id03" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-          <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id03').style.display='none'">Close</button></div>
 </div>
 </div>
+
 
 <img src="https://user-images.githubusercontent.com/25410880/55264768-b5982400-5232-11e9-9456-988b60adbb39.png"></div></div>
 
@@ -620,41 +699,56 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id04').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-  <div id="id04" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id04" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-         <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id04').style.display='none'">Close</button></div>
 </div>
 </div>
 
@@ -675,7 +769,7 @@ No</p>
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="w3-row" style="margin:0;padding:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<a href="#"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 
 <div class="w3-threethird w3-pale-green" style="padding:0 10px;margin:0;">
@@ -709,41 +803,56 @@ To receive this product or service at the discounted price in-store, <a href="ht
 
 <button onclick="document.getElementById('id05').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-  <div id="id05" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id05" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-         <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id05').style.display='none'">Close</button></div>
 </div>
 </div>
 
@@ -754,40 +863,56 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id06').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-<div id="id06" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div id="id06" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
+
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-          <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id06').style.display='none'">Close</button></div>
 </div>
 </div>
 
@@ -799,41 +924,56 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id07').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-  <div id="id07" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id07" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-         <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id07').style.display='none'">Close</button></div>
 </div>
 </div>
 
@@ -844,41 +984,56 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id08').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
- <div id="id08" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id08" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-           <footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id08').style.display='none'">Close</button></div>
 </div>
 </div>
 
@@ -889,41 +1044,56 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id09').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-<div id="id09" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id09" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-<footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id09').style.display='none'">Close</button></div>
 </div>
 </div>
 
@@ -934,41 +1104,56 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id10').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-<div id="id10" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id10" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-<footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id10').style.display='none'">Close</button></div>
 </div>
 </div>
 
@@ -979,43 +1164,59 @@ No</p>
 <div class="content1 w3-panel" style="background-color:#e37e35;padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id11').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-<div id="id11" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id11').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id11" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-<footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id11').style.display='none'">Close</button></div>
 </div>
 </div>
+
 
 <img src="https://user-images.githubusercontent.com/25410880/55264768-b5982400-5232-11e9-9456-988b60adbb39.png"></div></div>
 
@@ -1034,7 +1235,7 @@ No</p>
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="w3-row" style="margin:0;padding:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<a href="#"><img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 
 <div class="w3-threethird w3-pale-green" style="padding:0 10px;margin:0;">
@@ -1067,43 +1268,59 @@ To receive this product or service at the discounted price in-store, <a href="ht
 </div>
 <button onclick="document.getElementById('id12').style.display='block'" class="w3-button" style="border:none;background-color:#fff;color:#000;border-radius:3px;letter-spacing:.5px;font-family:ubuntu;font-size: 12px;margin:6px 2px;padding:6px 8px;text-align:center;text-decoration:none;text-shadow:0 1px 1px #000;display:inline-block;">PRODUCT DESCRIPTION</button>
 
-<div id="id12" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-white" style="padding:0 5px;">
-<span onclick="document.getElementById('id12').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-<p align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:20px 0 0 0;">PRODUCT NAME</p>
- <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:50%;"></p>
-</header>
-<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:20px;margin:0;">
-<p class="topic" align="center" style="font-family:khand medium;font-size:18.5px;color:#000;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:0;margin:0;">
-PRODUCT DESCRIPTION</p>
+<div id="id12" class="w3-modal w3-animate-zoom" style="border-radius:2px;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;border-radius:2px;">
+</div>
+</div>
 
-<p align="left" style="font-family:ubuntu;font-size:13.5px;color:#000;letter-spacing:.5px;">
-In this section we'll provide all the pertinent details about your product or service. Each of your TWELVE showcase items will have its own "modal" just for this purpose.<br><br>
+<div class="w3-container" style="background-color:#ffebcd;width:100%;padding:10px;margin:0;">
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRODUCT NAME</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;">
+In this section we'll provide all the pertinent details about your product or service. Each of your 12 showcase items will have its own "modal" just for this purpose.<br><br>
 
 Below, we will include the price of the product or service and whether your tangible items are eligible for delivery, or in-store pick up only. Your Small Business name and phone number will be displayed at the bottom of each modal.<br><br>
 
 Many Small Business owners know that an online presence is a crucial component of their marketing strategy. It reinforces their brand and what they offer to their audiences.</p>
 
-<p align="left" style="font-family:calibri,helvetica;font-size:15px;color:#000;text-shadow:0 1px 2px #cccccc;">
-<b>PRICE</b><br>
-$99.99<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+PRICE</p>
 
-<b>ORDER ONLINE?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+$99.99</p><br>
 
-<b>IN-STORE PICK-UP?</b><br>
-Yes<br><br>
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+ORDER ONLINE?</p>
 
-<b>DELIVERY AVAILABLE?</b><br>
-No</p>
-     </div>
-<footer class="w3-container w3-white" style="padding:12px 0 0 0;margin:0;">
-<p align="center" style="font-family:khand medium;font-size:16px;color:#000;letter-spacing:.5px;">Spiral Group, Inc. &#124; 773-242-0705</p>
-</footer>
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+IN-STORE PICK-UP?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Yes</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+DELIVERY AVAILABLE?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+No</p><br>
+
+<p align="left" style="font-family:calibri;font-size:15px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
+QUESTIONS?</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#000;letter-spacing:.5px;padding:0;margin:0;">
+Give us a call at 773-242-0705</p><br>
+
+<button class="w3-button w3-right" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id12').style.display='none'">Close</button></div>
 </div>
 </div>
+
 
 <img src="https://user-images.githubusercontent.com/25410880/55264768-b5982400-5232-11e9-9456-988b60adbb39.png"></div></div>
 </div>
