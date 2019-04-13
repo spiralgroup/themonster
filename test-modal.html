@@ -455,7 +455,25 @@ img {vertical-align: middle;}
 <p align="center" style="font-family:ubuntu;font-size:13px;color:#fff;letter-spacing:.5px;padding:5px 0;margin:0;">773-242-0705</p>
 </div></div>
 
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Fade In Modal</button>
 
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+</div>
 <div class="w3-threequarter" style="padding:0 12px;margin:0 0 10px 0;">
 <center>
 <!-- row 1 -->
