@@ -12,7 +12,7 @@
 <meta property="og:description" content="Welcome to our Spiritual Enrichment Category. Spend some qualty time here discovering some of Chicagoland's up and coming small businesses." />
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Expletus+Sans:600|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -326,16 +326,112 @@ body, html {
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
-.hero-image {
-  background-image: url("https://user-images.githubusercontent.com/25410880/56115962-7e579180-5f19-11e9-88ea-aecc55c818d5.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/*==========SCALE-IN==========*/
+@-webkit-keyframes scale-in {
+     0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1); opacity: 1;}
+}
+
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+/*==========ROLL-OUT==========*/
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+body{
+   background: #fff;
+}
+main{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Expletus Sans', cursive;
+}
+.hero{
+  width: 100%;
+  max-width: 1235px;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  position: relative; 
+  color: #fff;
+}
+
+.hero h1{
+  font-size: 4.1em;
+  margin: auto;
+  position: absolute; 
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.hero p{
+  font-size: 1.5em;
+  margin: auto;
+  position: absolute; 
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 1;
+}
+.hero img{
+  width: 100%;
+}
+.bar{
+  width: 100%;
+  height: 200px;
+  background: -moz-linear-gradient(289deg, #fff 0%, #fff 36%, #c60a09 100%);
+  background: -webkit-linear-gradient(289deg, #c60a09 0%, #fff 36%, #c60a09 100%);
+  background: -ms-linear-gradient(289deg, #c60a09 0%, #fff 36%, #c60a09 100%);
+  background: linear-gradient(161deg, #c60a09 0%, #fff 36%, #c60a09 100%);
+  opacity: 0.3;
+  position: absolute; 
+  z-index: 0;
+  left: 0;
+  top: 90px;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+   -webkit-animation: roll-out 1.2s ease-out ;
+  -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ; 
+}
+.hero h1, .hero p{
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out; 
 }
 
 
+@media all and (max-width: 768px) {
+  .hero{
+    height: 50vw;
+  }
+  .bar{
+    height: 26vw;
+    top: 10vw;
+  }
+  .hero h1{
+    font-size: 8vw;
+    top: 13vw;
+    
+    }
+  .hero p{
+    font-size: 3vw;
+    top: 27vw;
+  }
+ 
+}
 </style>
 
 </head>
@@ -377,15 +473,21 @@ body, html {
 </nav>
 </div>
 </div>
-<div class="hero-image">
-</div>
+<main>
+  <div class="hero">
+    <h1>Some Fancy Header Text</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <img src="https://user-images.githubusercontent.com/25410880/56115962-7e579180-5f19-11e9-88ea-aecc55c818d5.jpg" />
+     <div class="bar"></div>
+  </div>
+ 
+</main>
+
 
 <center>
 <div class="content">
 </div>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:130px 0 0 0;">
-<p align="center" style="font-family:roboto;font-size:20px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0 0 30px 0;">
-test</p>
 
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
