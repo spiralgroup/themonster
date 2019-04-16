@@ -8,11 +8,11 @@
 <meta name="Keywords" content="SpiralGroup, Spiralgroup, Spiral Group Inc., Spiral Group" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Welcome to our Beauty & Health Category. Spend some qualty time here discovering some of Chicagoland's up and coming small businesses." />
-<meta property="og:description" content="Welcome to our Beauty & Health Category. Spend some qualty time here discovering some of Chicagoland's up and coming small businesses." />
+<meta property="og:title" content="Welcome to our Beauty and Health Category. Spend some qualty time here discovering some of Chicagoland's up and coming small businesses." />
+<meta property="og:description" content="Welcome to our Beauty and Health Category. Spend some qualty time here discovering some of Chicagoland's up and coming small businesses." />
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Expletus Sans|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -333,6 +333,10 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+.active1 {
+  background-color: #ccc;
+}
+
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
@@ -367,40 +371,115 @@ img {vertical-align: middle;}
   text-decoration: none;
 }
 
-body, html {
-    max-width: 1235px;
-    height: 100%;
-    margin: auto;
-    background-image: linear-gradient(to left, #fff, #fff);
+
+/*==========SCALE-IN==========*/
+@-webkit-keyframes scale-in {
+     0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1); opacity: 1;}
 }
 
-.center {
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+/*==========ROLL-OUT==========*/
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+body{
+   background: #fff;
+}
+main{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Expletus Sans', cursive;
+}
+.hero{
+  width: 100%;
+  max-width: 1235px;
+  height: 500px;
   text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  position: relative; 
+  color: #f5f5f5;
+  text-shadow:0 1px 1px #000;
 }
 
-.pagination {
-  display: inline-block;
+.hero h1{
+  font-size: 4.1em;
+  margin: auto;
+  position: absolute; 
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.hero p{
+  font-size: 1.5em;
+  margin: auto;
+  position: absolute; 
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 1;
+}
+.hero img{
+  width: 100%;
+}
+.bar{
+  width: 100%;
+  height: 200px;
+  background: -moz-linear-gradient(289deg, #c60a09 0%, #999900 36%, #999900 100%);
+  background: -webkit-linear-gradient(289deg, #c60a09 0%, #999900 36%, #c60a09 100%);
+  background: -ms-linear-gradient(289deg, #c60a09 0%, #999900 36%, #c60a09 100%);
+  background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #999900 100%);
+  opacity: 0.3;
+  position: absolute; 
+  z-index: 0;
+  left: 0;
+  top: 90px;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+   -webkit-animation: roll-out 1.2s ease-out ;
+  -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ; 
 }
 
-.pagination a {
-  color: black;
-  font-family: khand medium;
-  float: left;
-  padding: 6px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border-radius: 2px;
-  margin: 0 4px;
+.hero h1, .hero p{
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out; 
 }
 
-.pagination a.active {
-  background-color: dodgerblue;
-  color: white;
-}
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+@media all and (max-width: 768px) {
+  .hero{
+    height: 50vw;
+  }
+  .bar{
+    height: 26vw;
+    top: 10vw;
+  }
+  .hero h1{
+    font-size: 8vw;
+    top: 13vw;
+     }
+  .hero p{
+    font-size: 4vw;
+    top: 28vw;
+  }
+ 
+}
 </style>
-
 </head>
 
 <body style="width:100%;">
@@ -424,7 +503,7 @@ body, html {
 <ul class="dropdown-menu">
 <li><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Apparel & Accessories</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/automotive.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Automotive</a></li><br>
-<li class="active"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Beauty & Health</a></li><br>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Beauty & Health</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/entertainment.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Entertainment</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/food-and-drink.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Food & Drink</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/home-services.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Home Services</a></li><br>
@@ -440,46 +519,27 @@ body, html {
 </nav>
 </div>
 </div>
-</div>
-
-<center>
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0 0 20px 0;box-shadow:0 1px 13px #ccc;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="customer-logos slide" style="background-color:#fff;width:100%;padding:15px 10px;margin:0;">
-<div class="slide"><a href="https://form.jotform.com/82323651984159" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/50594244-a03c7500-0e50-11e9-9511-6ec74e860a89.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/50587070-47111900-0e31-11e9-843b-b4da8b17e04f.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/special-offers.html"><img src="https://user-images.githubusercontent.com/25410880/55844767-b44cde00-5af3-11e9-85aa-ce0bd25d5746.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery"><img src="https://user-images.githubusercontent.com/25410880/50593778-b0535500-0e4e-11e9-9c17-421c7782e62b.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#mock"><img src="https://user-images.githubusercontent.com/25410880/54662323-de822180-4a9a-11e9-8b9a-40dcfa93f47b.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/50592032-3370ad00-0e47-11e9-81f8-f2716eda7ed4.png" style="border-radius:2px;"></a></div>
+<main>
+  <div class="hero">
+    <h1>beauty & health</h1>
+<p style="text-shadow:0 1px 1px #000;">
+make this your third place.</p>
+    <img src="https://user-images.githubusercontent.com/25410880/52520649-8268e980-2c20-11e9-84a2-5a0017178e22.png" />
+     <div class="bar"></div>
+     </div>
+</main>
 
 
-</div>
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-</div>
-</div>
-</div>
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:30px 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-&nbsp;beauty & health</p>
-
-
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
 <center>
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
  <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54101956-87d26480-4383-11e9-8f40-840ec8f2885a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54101956-87d26480-4383-11e9-8f40-840ec8f2885a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 barbers</p>
@@ -490,7 +550,7 @@ barbers</p>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593485-b7949780-3b4d-11e9-8fde-d797cb2e44e0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593485-b7949780-3b4d-11e9-8fde-d797cb2e44e0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 blowouts & styling</p>
@@ -500,7 +560,7 @@ blowouts & styling</p>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54868931-20d38900-4d4f-11e9-908c-b7ff3283d652.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
@@ -511,7 +571,7 @@ braids & weaves</p>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53594537-ec095300-3b4f-11e9-899a-797c3e00366a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53594537-ec095300-3b4f-11e9-899a-797c3e00366a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 brows & lashes</p>
@@ -521,7 +581,7 @@ brows & lashes</p>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593489-b82d2e00-3b4d-11e9-9cb6-9167b2829053.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593489-b82d2e00-3b4d-11e9-9cb6-9167b2829053.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 cosmetic procedures</p>
@@ -531,7 +591,7 @@ cosmetic procedures</p>
     
     <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868176-288f2f80-4d47-11e9-97e8-f1163c2a115e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868176-288f2f80-4d47-11e9-97e8-f1163c2a115e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 face & skin care</p>
@@ -541,7 +601,7 @@ face & skin care</p>
     
     <div class="w3-third" style="margin:0 0 10px 0;">
  <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54101957-886afb00-4383-11e9-9265-ce02bae85c63.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54101957-886afb00-4383-11e9-9265-ce02bae85c63.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 fitness centers</p>
@@ -551,7 +611,7 @@ fitness centers</p>
 
     <div class="w3-third" style="margin:0 0 10px 0;">
  <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54102128-5e660880-4384-11e9-8c76-4ed862a02c83.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54102128-5e660880-4384-11e9-8c76-4ed862a02c83.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 hair removal</p>
@@ -560,7 +620,7 @@ hair removal</p>
     </div>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593490-b82d2e00-3b4d-11e9-88ad-bb5ab5eb48d7.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593490-b82d2e00-3b4d-11e9-88ad-bb5ab5eb48d7.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
  <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 makeup & cosmetics</p>
@@ -571,7 +631,7 @@ makeup & cosmetics</p>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593491-b8c5c480-3b4d-11e9-8ff8-2dc2fdf7b772.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593491-b8c5c480-3b4d-11e9-8ff8-2dc2fdf7b772.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
    <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 massage therapy</p>
@@ -581,7 +641,7 @@ massage therapy</p>
      
 <div class="w3-third" style="margin:0 0 10px 0;">
  <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593493-b9f6f180-3b4d-11e9-92fd-64c7127d4aa7.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593493-b9f6f180-3b4d-11e9-92fd-64c7127d4aa7.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 nails</p>
@@ -591,7 +651,7 @@ nails</p>
        
         <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868179-2af18980-4d47-11e9-8ea4-4c175a9bff5b.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868179-2af18980-4d47-11e9-8ea4-4c175a9bff5b.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 nutritionists</p>
@@ -601,7 +661,7 @@ nutritionists</p>
     
     <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868346-ca634c00-4d48-11e9-97cd-5c766e2fbcfe.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868346-ca634c00-4d48-11e9-97cd-5c766e2fbcfe.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 salons & salon packages</p>
@@ -611,7 +671,7 @@ salons & salon packages</p>
  
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53594232-4655e400-3b4f-11e9-9ac3-7a50eb354bfc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53594232-4655e400-3b4f-11e9-9ac3-7a50eb354bfc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 tanning salons</p>
@@ -622,14 +682,17 @@ tanning salons</p>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
  <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 tattoos & piercings</p>
+      </div>
     </div>
-    </div>
-    </div>
-   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -648,27 +711,8 @@ function myFunction() {
   }
 }
 </script>
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
+
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0 0 30px 0;">
 <center>
