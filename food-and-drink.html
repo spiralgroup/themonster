@@ -12,7 +12,7 @@
 <meta property="og:description" content="Welcome to our Food & Drink Category. Spend some qualty time here discovering some of Chicagoland's up and coming small businesses." />
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Expletus Sans|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -333,6 +333,10 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+.active1 {
+  background-color: #ccc;
+}
+
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
@@ -367,40 +371,115 @@ img {vertical-align: middle;}
   text-decoration: none;
 }
 
-body, html {
-    max-width: 1235px;
-    height: 100%;
-    margin: auto;
-    background-image: linear-gradient(to left, #fff, #fff);
+
+/*==========SCALE-IN==========*/
+@-webkit-keyframes scale-in {
+     0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1); opacity: 1;}
 }
 
-.center {
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+/*==========ROLL-OUT==========*/
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+body{
+   background: #fff;
+}
+main{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Expletus Sans', cursive;
+}
+.hero{
+  width: 100%;
+  max-width: 1235px;
+  height: 500px;
   text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  position: relative; 
+  color: #f5f5f5;
+  text-shadow:0 1px 1px #000;
 }
 
-.pagination {
-  display: inline-block;
+.hero h1{
+  font-size: 4.1em;
+  margin: auto;
+  position: absolute; 
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.hero p{
+  font-size: 1.5em;
+  margin: auto;
+  position: absolute; 
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 1;
+}
+.hero img{
+  width: 100%;
+}
+.bar{
+  width: 100%;
+  height: 200px;
+  background: -moz-linear-gradient(289deg, #c60a09 0%, #999900 36%, #999900 100%);
+  background: -webkit-linear-gradient(289deg, #c60a09 0%, #999900 36%, #c60a09 100%);
+  background: -ms-linear-gradient(289deg, #c60a09 0%, #999900 36%, #c60a09 100%);
+  background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #999900 100%);
+  opacity: 0.3;
+  position: absolute; 
+  z-index: 0;
+  left: 0;
+  top: 90px;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+   -webkit-animation: roll-out 1.2s ease-out ;
+  -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ; 
 }
 
-.pagination a {
-  color: black;
-  font-family: khand medium;
-  float: left;
-  padding: 6px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border-radius: 2px;
-  margin: 0 4px;
+.hero h1, .hero p{
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out; 
 }
 
-.pagination a.active {
-  background-color: dodgerblue;
-  color: white;
-}
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+@media all and (max-width: 768px) {
+  .hero{
+    height: 50vw;
+  }
+  .bar{
+    height: 26vw;
+    top: 10vw;
+  }
+  .hero h1{
+    font-size: 8vw;
+    top: 13vw;
+     }
+  .hero p{
+    font-size: 4vw;
+    top: 28vw;
+  }
+ 
+}
 </style>
-
 </head>
 
 <body style="width:100%;">
@@ -426,7 +505,7 @@ body, html {
 <li><a href="https://spiralgroup.github.io/themonster/automotive.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Automotive</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Beauty & Health</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/entertainment.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Entertainment</a></li><br>
-<li class="active"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Food & Drink</a></li><br>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Food & Drink</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/home-services.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Home Services</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/personal-services.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Personal Services</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html" style="font-family:ubuntu;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Spiritual Enrichment</a></li>
@@ -440,43 +519,27 @@ body, html {
 </nav>
 </div>
 </div>
-</div>
+<main>
+  <div class="hero">
+    <h1>food & drink</h1>
+<p style="text-shadow:0 1px 1px #000;">
+make this your third place.</p>
+    <img src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png" />
+     <div class="bar"></div>
+     </div>
+</main>
 
-<center>
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0 0 20px 0;box-shadow:0 1px 13px #ccc;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="customer-logos slide" style="background-color:#fff;width:100%;padding:15px 10px;margin:0;">
-<div class="slide"><a href="https://form.jotform.com/82323651984159" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/50594244-a03c7500-0e50-11e9-9511-6ec74e860a89.png" style="border-radius:2px;"></a></div>
 
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/50587070-47111900-0e31-11e9-843b-b4da8b17e04f.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/special-offers.html"><img src="https://user-images.githubusercontent.com/25410880/55844767-b44cde00-5af3-11e9-85aa-ce0bd25d5746.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery"><img src="https://user-images.githubusercontent.com/25410880/50593778-b0535500-0e4e-11e9-9c17-421c7782e62b.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/business-excellence.html#mock"><img src="https://user-images.githubusercontent.com/25410880/54662323-de822180-4a9a-11e9-8b9a-40dcfa93f47b.png" style="border-radius:2px;"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/50592032-3370ad00-0e47-11e9-81f8-f2716eda7ed4.png" style="border-radius:2px;"></a></div>
-</div>
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-</div>
-</div>
-</div>
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:30px 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-&nbsp;food & drink</p>
-
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
 <center>
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54066950-d3eba080-41ed-11e9-91be-c864cf2f4f5d.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
@@ -487,7 +550,7 @@ bakeries & cafes</p>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066951-d4843700-41ed-11e9-897f-7fdfc9fc3a33.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066951-d4843700-41ed-11e9-897f-7fdfc9fc3a33.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
  <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 bars & pubs</p>
@@ -497,7 +560,7 @@ bars & pubs</p>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54077550-d6daa580-426e-11e9-943e-7b2edded1f37.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54077550-d6daa580-426e-11e9-943e-7b2edded1f37.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 breweries & wineries</p>
@@ -507,7 +570,7 @@ breweries & wineries</p>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066952-d5b56400-41ed-11e9-915c-6d65ba375aa9.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066952-d5b56400-41ed-11e9-915c-6d65ba375aa9.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 grocers</p>
@@ -517,7 +580,7 @@ grocers</p>
      
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066953-d64dfa80-41ed-11e9-91bd-9f0b9453e15d.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066953-d64dfa80-41ed-11e9-91bd-9f0b9453e15d.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
    <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 juice bars</p>
@@ -527,7 +590,7 @@ juice bars</p>
 
  <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54076755-b9540e80-4263-11e9-8873-f52f5f5985d6.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54076755-b9540e80-4263-11e9-8873-f52f5f5985d6.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 pizzerias</p>
@@ -537,7 +600,7 @@ pizzerias</p>
    
    <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066954-d6e69100-41ed-11e9-8ea7-28aa05a6775e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066954-d6e69100-41ed-11e9-8ea7-28aa05a6775e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 prepared meals</p>
@@ -547,7 +610,7 @@ prepared meals</p>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
  <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 restaurants</p>
@@ -557,17 +620,18 @@ restaurants</p>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54077551-d7733c00-426e-11e9-9cf6-639fafe7e60c.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
 wine & spirits</p>
+      </div>
     </div>
-    </div>
-    </div>
-   </div>
-    </div>
-    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -586,27 +650,8 @@ function myFunction() {
   }
 }
 </script>
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
+
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0 0 30px 0;">
 <center>
