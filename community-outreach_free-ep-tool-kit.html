@@ -214,10 +214,74 @@ img {
 }
 .active1 {
   background-color: #e6e6e6;}
+  
+  .customAlert{
+	
+  display: none;
+  position: fixed;
+  max-width: 100%;
+  min-width: 250px !important;
+  height: auto;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  margin-left: -12.5%;
+  margin-top: -5.2%;
+  background: #f5faff;
+  
+  @media all and (max-width: 1235px){
+    .message{
+      font-size: 14px !important;
+    }
+    input[type='button']{
+      height: 15% !important;
+    }
+  }
+  
+  .message{
+    padding: 0;
+   }
+    
+  input[type='button']{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 36px;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0;
+    background: #04B486;
+    color: white;
+    &:hover{
+      transition: 0.3s;
+      cursor: pointer;
+    	background: lighten(#04B486, 5%);  
+    }
+  } 
+}
+      
+      
+@keyframes fadeOut{
+	from{
+  	opacity: 1;
+  } 
+  to{
+    opacity: 0;
+  }
+}
+    
+@keyframes fadeIn{
+	from{
+  	opacity: 0;
+  } 
+  to{
+    opacity: 1;
+  }
+}
 </style>
-<script>
-      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','0332a3cf-f911-4ea8-a820-99cff2d99705');
-</script>
 </head>
 <body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
@@ -230,7 +294,7 @@ img {
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Free Training</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">We're Hiring</span>
 <a class="navbar-brand" href="http://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -253,6 +317,8 @@ img {
 </div>
 </nav>
 </div>
+
+
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
@@ -274,8 +340,59 @@ img {
 <span class="dot"></span>
 <span class="dot"></span>
 </div>
+
 <center>
 <div class="content">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="customAlert" style="width:100%;padding:10px;margin:0;">
+  <p class="message"><p align="center" style="font-family:ubuntu condensed;font-size:18px;color:#222;letter-spacing:1px;text-shadow:0 1px 1px #000;padding:0 0 4px 0;margin:0 0 5px 0;border-bottom:1px solid #f5f5f5;">
+WE'RE HIRING</p>
+<p align="center" style="font-family:roboto;font-size:13px;color:#000000;letter-spacing:.5px;padding:0;margin:0 0 10px 0;">
+Complete this online training program and then visit our <a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">CAREERS PAGE</a> to apply to become a SpiralGroup Specialist.</p>
+
+<input type='button' class='w3-button w3-blue confirmButton' style="font-family:calibri;font-size:12px;color:#222;letter-spacing:1px;border-radius:2px;padding:6px 10px;margin:0 0 10px 0;text-decoration:none;" value='CLOSE'>
+</div>
+  
+<script>
+var currentCallback;
+
+// override default browser alert
+window.alert = function(msg, callback){
+  $('.message').text(msg);
+  $('.customAlert').css('animation', 'fadeIn 0.3s linear');
+  $('.customAlert').css('display', 'inline');
+  setTimeout(function(){
+    $('.customAlert').css('animation', 'none');
+  }, 300);
+  currentCallback = callback;
+}
+
+$(function(){
+  
+  // add listener for when our confirmation button is clicked
+	$('.confirmButton').click(function(){
+    $('.customAlert').css('animation', 'fadeOut 0.3s linear');
+    setTimeout(function(){
+     $('.customAlert').css('animation', 'none');
+		$('.customAlert').css('display', 'none');
+    }, 300);
+    currentCallback();
+  })
+  
+  $('.rab').click(function(){
+    alert( function(){
+      console.log("Callback executed");
+    })
+  });
+  
+  // our custom alert box
+  setTimeout(function(){
+    alert( function(){
+        console.log("Callback executed");
+      });
+  }, 500);
+});
+</script>
 </div>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
@@ -399,15 +516,6 @@ ENROLL TODAY</p>
 <button class="w3-button w3-right w3-white w3-border" style="padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0 0 10px 0;" onclick="document.getElementById('id02').style.display='none'">Close</button>
 </div>
 </div>
-</div>
-</div>
-
-<hr />
-
-<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
-Complete this online training program and then apply to become a <a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">SPIRALGROUP SPECIALIST.</a></p>
-  </div>
- </div>
  </div>
 </div>
 </div>
@@ -454,7 +562,7 @@ function myFunction() {
 </script>
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
+<div class="row" style="width:100%;padding:0;margin:0 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:38px 0 0 0;">773 242-0705</p>
