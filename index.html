@@ -213,9 +213,9 @@ img {vertical-align: middle;}
 }
 
 .column2 {
-    width: 67%;
+    width: 100%;
     display: inline-block;
-    float: left;
+    float: center;
 }
 
 .row:after {
@@ -240,15 +240,15 @@ img {vertical-align: middle;}
 
 .row,
 .row > .column3 {
-    padding: 0 33px 0 33px;
+    padding: 0;
 }
 
 .column3 {
-    width: 33%;
+    width: 53%;
     margin: 0;
     padding: 0;
     display: inline-block;
-    float: left;
+    float: center;
 }
 
 @media (max-width: 900px) {
@@ -314,28 +314,29 @@ img {vertical-align: middle;}
 img {vertical-align: middle;}
 
 .slideshow-container {
-  width: 100%;
+  width: 63%;
   position: relative;
   margin: 0;
 }
 
-.dot {
-  height: 4px;
-  width: 4px;
-  margin: 0 1px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.slideshow-container1 {
+  width: 100%;
+  position: relative;
+  margin: 0;
 }
+.dot {
+  height: 0;
+  width: 0;
+  margin: 0;
+ }
 
 .topic {
 font-family:ubuntu;
 font-size:15px;
 color:#000000;
 text-shadow:0 1px 1px #585858;
-text-align: left;
-padding: 110px 10px 0 10px;
+text-align: center;
+padding: 10px 10px 0 10px;
 }
 
 .topic1 {
@@ -343,7 +344,7 @@ font-family:roboto;
 font-size:12px;
 color:#585858;
 text-shadow:0 1px 2px #ccc;
-text-align: left;
+text-align: center;
 letter-spacing: .5px;
 padding: 0 10px;
 }
@@ -364,12 +365,19 @@ margin: 0;
 
 
 @media screen and (max-width: 768px) {
-  .topic, .topic1, .topic2 {
+  .topic, .topic1 {
   text-align: center;  
   padding: 5px;  
   }
   }
-    
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  text-align: center;  
+  padding: 0;
+  margin: 0;
+  }
+  }
 </style>
 </head>
 <body style="width:100%;"> 
@@ -416,32 +424,34 @@ margin: 0;
 <span class="dot"></span>
 </div>
 
+<center>
 
 <div class="w3-row" style="width:100%;padding:0;margin:0 0 10px 0;">
-<div class="column3 w3-white" style="padding:20px 0 0 0;margin:0;">
+<div class="column3 w3-white" style="padding:10px 0 0 0;margin:0;">
 <div class="content1 w3-panel w3-white" style="padding:0;margin:0;">
-<div class="slideshow-container w3-white" style="width:100%;margin:0;padding:0;">
+<div class="slideshow-container w3-white" style="margin:0;padding:0;">
 <div class="mySlides1 w3-animate-zoom">
-<p align="right"><img src="https://user-images.githubusercontent.com/25410880/56623138-da8c7680-65e7-11e9-9afa-7c5662058391.png" style="width:100%;border-radius:2px;"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/56623138-da8c7680-65e7-11e9-9afa-7c5662058391.png" style="width:100%;border-radius:2px;"></p>
  </div>
- </div>
-
+ 
    
 <div class="mySlides1 w3-animate-zoom">
-<p align="right"><img src="https://user-images.githubusercontent.com/25410880/56623018-39052500-65e7-11e9-9c7a-a7c233815b58.png" style="width:100%;border-radius:2px;"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/56623018-39052500-65e7-11e9-9c7a-a7c233815b58.png" style="width:100%;border-radius:2px;"></p>
  </div>
-  </div>
+ 
   
 <div class="mySlides1 w3-animate-zoom">
-<p align="right"><img src="https://user-images.githubusercontent.com/25410880/56623017-39052500-65e7-11e9-97ae-31ab430bd694.png" style="width:100%;border-radius:2px;"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/25410880/56623017-39052500-65e7-11e9-97ae-31ab430bd694.png" style="width:100%;border-radius:2px;"></p>
  </div>
+  </div>
+</div>
   </div>
 
 
 
 <div class="column2 w3-white" style="padding:0;margin:0;">
 <div class="content1 w3-panel w3-white" style="padding:0;margin:0;">
-<div class="slideshow-container w3-white" style="width:100%;margin:0;padding:0;">
+<div class="slideshow-container1 w3-white" style="width:100%;margin:0;padding:0;">
 <div class="mySlides w3-animate-fading" style="padding:0 10px;margin:0;">
 <p class="topic">
 Your Marketing Begins with an Amazing Online Presence</p>
@@ -490,7 +500,7 @@ become visible</p>
 </div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:20px 10px;margin:0;">
+<div class="column1" style="padding:10px;margin:0;">
 <p class="topic2">
 Looking to develop an online presence for your Small Business? You've come to the right place. Our new Small Business Showcase WebPages are affordable, mobile-friendly, and allows you to perform a multitude of business tasks.<br><br>
 
@@ -611,11 +621,11 @@ what competition?</p>
 <img src="https://user-images.githubusercontent.com/25410880/55660956-c6f6a880-57bd-11e9-92ea-3116c397481c.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></div></div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:20px 10px;margin:0;">
+<div class="column1" style="padding:10px;margin:0;">
 <p class="topic2">
 Unlike our competitors, we update and completely maintain your Small Business Showcase WebPages. Getting started with us doesn't mean you'll have to attempt to learn code during a 14-day free trial period&#151;unless that's your goal.<br><br>
 
-All you have to do is complete the Six Steps outlined in our <a rel="nofollow" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">HOW IT WORKS</a> section to set up your account, and then enjoy your new online presence within 7 business days.</p><br>
+All you have to do is complete the Six Steps outlined in our "How It Works" section to set up your account, and then enjoy your new online presence within 7 business days.</p><br>
 
 <p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id12').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:12px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">HOW IT WORKS</button></p>
 
@@ -722,7 +732,7 @@ local business listings</p>
 <img src="https://user-images.githubusercontent.com/25410880/50410019-4df1b900-07ab-11e9-84c1-89040ae44c6d.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></div></div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:20px 10px;margin:0;">
+<div class="column1" style="padding:10px;margin:0;">
 <p class="topic2">
 Show up in more local searches, because being local matters. By leveraging the SG Listing Service, you can be confident that your business information is consistent. Affording you even more opportunities to attract the kind of customer your Small Business deserves.<br><br>
 
@@ -797,11 +807,11 @@ are you ready?</p>
 <img src="https://user-images.githubusercontent.com/25410880/55688636-78691b80-592f-11e9-9c73-2476aea2a843.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></div></div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:20px 10px;margin:0;">
+<div class="column1" style="padding:10px;margin:0;">
 <p class="topic2">
 Is your workforce adequately trained and well-versed in your products and services. Is your business prepared to welcome new clients? An online presence is a crucial component of your marketing strategy, but operational excellence will set you apart from competitors.<br><br>
 
-If you're prepared to increase your company's visibility with our new Small Business Showcase WebPages, then let's <a rel="nofollow" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">GET STARTED</a> today!</p><br>
+If you're prepared to increase your company's visibility with our new Small Business Showcase WebPages, then let's get started today!</p><br>
 
 <p align="right" class="w3-hover-shadow">
 <a class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:12px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;"href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">GET STARTED</a></p>
@@ -888,7 +898,7 @@ document.getElementById("defaultOpen").click();
 </div>
 </div>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:30px 0 20px 0;">
+<div class="row" style="width:100%;padding:0;margin:0 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:38px 0 0 0;">773 242-0705</p>
