@@ -181,7 +181,7 @@ $(document).ready(function(){
 }
 
 .today {
-    color: orange;
+    color: #e37e35;
 }
 .opening-hours-table tr td:first-child {
   font-weight:bold;
@@ -502,19 +502,25 @@ For Your Convenience</p>
 
 <button onclick="document.getElementById('id77').style.display='block'" class="w3-button" style="background-color:#ffebcd;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;text-decoration:none;border-radius:2px;margin:10px 0 0 0;">view hours</button>
 
-  <div id="id77" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-opacity" style="max-width:450px;">
-     <div class="w3-center">
-        <header class="w3-container" style="background-color:#ffebcd;">
-           <p align="center" style="font-family:calibri;font-size:18px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:4px 0 3px 0;margin:0;">BUSINESS HOURS</p>
-        <span onclick="document.getElementById('id77').style.display='none'" class="w3-button w3-small w3-display-topright" title="Close Modal">&times;</span>
-              </header></div>
-<div class="w3-panel" style="width:100%;background-color:#fff;">
-  
-  <div class="column3" style="background-color:#fff;">
+  <div id="id77" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column" style="background-color:#e37e35;padding:5px;margin:0;border-radius:0 0 2px 2px;">
+<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0;">BUSINESS HOURS</p>
+</div>
+</div>
+
+<div class="w3-row w3-white" style="width:100%;margin:0;">
+<div class="column3" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
  <section class="openinghours" style="background-color:#fff;">
-    <div class="openinghourscontent section">
-        <table class="opening-hours-table">
+    <div class="openinghourscontent section w3-white">
+        <table class="opening-hours-table w3-white">
     
             <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
                 <td>Monday</td>
@@ -560,11 +566,21 @@ For Your Convenience</p>
             </tr>
         </table>
         </div>
-        </section>
-        </div>
-         </div>
-         </div>
-<div class="column3">
+     </section>
+        
+        <div class="w3-row w3-white" style="width:100%;margin:0;">
+<div class="column3" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+      
+<button class="w3-button w3-center" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id77').style.display='none'">CLOSE</button>
+</div>
+</div>   
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <script>
 var currentDate = new Date();
 var weekday = [];
@@ -608,7 +624,7 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
     $(".openorclosed").toggleClass("closed");
 }
 </script>
-</div></div></div></div></div>
+</div></div></div>
 
 <div class="row" style="padding:0 8px;margin:10px 0 0 0;">
 <div class="column1">
