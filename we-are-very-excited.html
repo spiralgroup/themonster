@@ -214,10 +214,104 @@ img {
 }
 .active1 {
   background-color: #e6e6e6;}
+  
+   .customAlert{
+	
+  display: none;
+  position: fixed;
+  max-width: 100%;
+  min-width: 250px !important;
+  height: auto;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  margin-left: -12.5%;
+  margin-top: -5.2%;
+  background: dodgerblue;
+  
+  @media all and (max-width: 1235px){
+    .message{
+      font-size: 14px !important;
+    }
+    input[type='button']{
+      height: 15% !important;
+    }
+  }
+  
+  .message{
+    padding: 0;
+   }
+    
+  input[type='button']{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 36px;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0;
+    background: #04B486;
+    color: white;
+    &:hover{
+      transition: 0.3s;
+      cursor: pointer;
+    	background: lighten(#04B486, 5%);  
+    }
+  } 
+}
+      
+      
+@keyframes fadeOut{
+	from{
+  	opacity: 1;
+  } 
+  to{
+    opacity: 0;
+  }
+}
+    
+@keyframes fadeIn{
+	from{
+  	opacity: 0;
+  } 
+  to{
+    opacity: 1;
+  }
+}
+
+.topic1 {
+font-family:calibri;
+font-size:17px;
+color:#222;
+text-shadow:0 0 1px #000;
+text-align: left;
+letter-spacing: .5px;
+padding: 0;
+margin:0;
+}
+
+.topic2 {
+font-family:roboto;
+font-size:14px;
+color:#000;
+text-align: left;
+letter-spacing: .5px;
+padding: 0;
+margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .topic1, .topic2 {
+  text-align: center;  
+  padding: 0;
+  margin: 0;
+  }
+  }
 </style>
-<script>
-      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','0332a3cf-f911-4ea8-a820-99cff2d99705');
-</script>
 </head>
 <body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
@@ -275,64 +369,101 @@ img {
 <span class="dot"></span>
 </div>
 <center>
+<center>
 <div class="content">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="customAlert" style="width:100%;padding:10px;margin:0;">
+<p class="message" align="center" style="font-family:ubuntu condensed;font-size:18px;color:#222;letter-spacing:1px;text-shadow:0 1px 1px #000;padding:0 0 4px 0;margin:0 0 5px 0;">
+USEFUL TIPS</p>
+<p align="center" style="font-family:roboto;font-size:13px;color:#000000;letter-spacing:.5px;padding:0;margin:0 0 10px 0;">
+This page contains a list of useful tips that may help us both get the most from your consultation.</p>
+
+<input type='button' class='w3-button w3-white confirmButton' style="font-family:calibri;font-size:12px;color:#222;letter-spacing:1px;border-radius:2px;padding:6px 10px;margin:0 0 10px 0;text-decoration:none;" value='CLOSE'>
 </div>
-<div id="assessment" class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 2px 12px;margin:0;">
+  
+<script>
+var currentCallback;
+
+// override default browser alert
+window.alert = function(msg, callback){
+  $('.message').text(msg);
+  $('.customAlert').css('animation', 'fadeIn 0.3s linear');
+  $('.customAlert').css('display', 'inline');
+  setTimeout(function(){
+    $('.customAlert').css('animation', 'none');
+  }, 300);
+  currentCallback = callback;
+}
+
+$(function(){
+  
+  // add listener for when our confirmation button is clicked
+	$('.confirmButton').click(function(){
+    $('.customAlert').css('animation', 'fadeOut 0.3s linear');
+    setTimeout(function(){
+     $('.customAlert').css('animation', 'none');
+		$('.customAlert').css('display', 'none');
+    }, 300);
+    currentCallback();
+  })
+  
+  $('.rab').click(function(){
+    alert( function(){
+      console.log("Callback executed");
+    })
+  });
+  
+  // our custom alert box
+  setTimeout(function(){
+    alert( function(){
+        console.log("Callback executed");
+      });
+  }, 500);
+});
+</script>
+</div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 useful tips</p>
 
-<div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-threethird" style="background-color:#fff;padding:0;margin:0;">
-<div class="column1" style="padding:6px 10px 0 10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:13px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0 0 10px 0;margin:0 0 10px 0;border-bottom:1px solid #f1f1f1;">
-We've put together a list of useful tips that may help us both get the most from your consultation.</p>
+<div class="w3-row" style="width:100%;padding:0 20px;margin:52px 0 0 0;">
+<div class="w3-threethird" style="margin:0 0 5px 0;">
+<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
+<p class="topic1">
+BE PREPARED</p>
 
-<p align="left" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">BE PREPARED</p>
-
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 Know what you want to accomplish during your consultation. Have specific issues you'd like to discuss and questions to ask. Be ready to present any facts or figures that would shed light on your current operational situation.<br><br>
 
 Being prepared with an objective will decrease the likelihood of time being spent on issues that don't really need to be discussed during your free phone session. This way, we will be more inclined to get to the core of your most pressing business concerns. Keep in mind however, if you require more time to discuss your situation, your consultant will be more than happy to oblige.</p><br>
 
-<p align="left" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">REVIEW  OUR WEB PAGES</p>
+<p class="topic1">REVIEW  OUR WEB PAGES</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
-If you haven't done so already, review the contents of the following web pages before your consultation to determine if our products and services can be used to achieve your business objectives:  <a href="https://spiralgroup.github.io/themonster/business-excellence.html#assessment" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">BUSINESS ASSESSMENT TOOLS</a> and <a href="http://spiralgroup.org" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">ONLINE MARKETING SOLUTIONS &#151; SMALL BUSINESS SHOWCASE WEBPAGES & THE SG LISTING SERVICE</a>.</p><br>
+<p class="topic2">
+If you haven't done so already, review the contents of the following web pages before your consultation to determine if our products and services can be used to achieve your business objectives:  <a href="https://spiralgroup.github.io/themonster/business-excellence.html#assessment" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">BUSINESS ASSESSMENT TOOLS</a> and <a href="http://spiralgroup.org" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">ONLINE MARKETING SOLUTIONS &#151; SMALL BUSINESS SHOWCASE WEBPAGES & THE SG LISTING SERVICE</a>.</p><br>
 
-<p align="left" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">DETERMINE AFFORDABILITY</p>
+<p class="topic1">DETERMINE AFFORDABILITY</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
-Before your consult, please review our prices to determine affordability. If you decide to use our products and services after your consult, then check out our <a href="https://spiralgroup.github.io/themonster/special-offers.html" target="_blank" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">SPECIAL OFFERS</a>.</p><br>
+<p class="topic2">
+Before your consult, please review our prices to determine affordability. If you decide to use our products and services after your consult, then check out our <a href="https://spiralgroup.github.io/themonster/special-offers.html" target="_blank" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">SPECIAL OFFERS</a>.</p><br>
 
-<p align="left" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">TAKE NOTES</p>
+<p class="topic1">TAKE NOTES</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 During the consult, take notes on any overarching themes that come out of the conversation from both you and your consultant.</p><br>
 
-<p align="left" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">SAVE TIME</p>
+<p class="topic1">SAVE TIME</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 Although you may have a clear objective in mind, your Business Consultant may feel the need to address certain items, as they pertain to achieving and maintaining operational excellence. Please save time for useful and ample feedback.</p><br>
 
-<p align="left" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">CREATE ACTION ITEMS</p>
+<p class="topic1">CREATE ACTION ITEMS</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 Close the consultation with one clear objective in mind, to create action items. These should be specific and have solid deadlines. This will allow you to begin the process of putting to use what we both discover during your phone session.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-  </div>
- </div>
- </div>
 </div>
 </div>
 </div>
@@ -381,7 +512,8 @@ function myFunction() {
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:38px 0 0 0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
 </div>
