@@ -327,6 +327,102 @@ img {
 #Step6 {background-color:#ffffff;}
 .active1 {
   background-color: #e6e6e6;}
+  
+    .customAlert{
+	
+  display: none;
+  position: fixed;
+  max-width: 100%;
+  min-width: 250px !important;
+  height: auto;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  margin-left: -12.5%;
+  margin-top: -5.2%;
+  background: dodgerblue;
+  
+  @media all and (max-width: 1235px){
+    .message{
+      font-size: 14px !important;
+    }
+    input[type='button']{
+      height: 15% !important;
+    }
+  }
+  
+  .message{
+    padding: 0;
+   }
+    
+  input[type='button']{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 36px;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0;
+    background: #04B486;
+    color: white;
+    &:hover{
+      transition: 0.3s;
+      cursor: pointer;
+    	background: lighten(#04B486, 5%);  
+    }
+  } 
+}
+      
+      
+@keyframes fadeOut{
+	from{
+  	opacity: 1;
+  } 
+  to{
+    opacity: 0;
+  }
+}
+    
+@keyframes fadeIn{
+	from{
+  	opacity: 0;
+  } 
+  to{
+    opacity: 1;
+  }
+}
+
+  .topic1 {
+font-family:calibri;
+font-size:17px;
+color:#222;
+text-shadow:0 0 1px #000;
+text-align: left;
+letter-spacing: .5px;
+padding: 0;
+margin:0;
+}
+
+.topic2 {
+font-family:roboto;
+font-size:14px;
+color:#000;
+text-align: left;
+letter-spacing: .5px;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic1, .topic2 {
+  text-align: center;  
+  padding: 0;
+  margin:0;
+  }
+  }
 </style>
 </head>
 <body style="width:100%;">
@@ -384,11 +480,67 @@ img {
 <span class="dot"></span>
 <span class="dot"></span>
 </div>
+
+<center>
+<div class="content">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="customAlert" style="width:100%;padding:10px;margin:0;">
+<p class="message" align="center" style="font-family:ubuntu condensed;font-size:18px;color:#222;letter-spacing:1px;text-shadow:0 1px 1px #000;padding:0 0 4px 0;margin:0 0 5px 0;">
+STEP 6 - PENDING</p>
+<p align="center" style="font-family:roboto;font-size:13px;color:#000000;letter-spacing:.5px;padding:0;margin:0 0 10px 0;">
+We'll contact you within 24 hours to verify the information submitted.</p>
+
+<input type='button' class='w3-button w3-white confirmButton' style="font-family:calibri;font-size:12px;color:#222;letter-spacing:1px;border-radius:2px;padding:6px 10px;margin:0 0 10px 0;text-decoration:none;" value='CLOSE'>
+</div>
+  
+<script>
+var currentCallback;
+
+// override default browser alert
+window.alert = function(msg, callback){
+  $('.message').text(msg);
+  $('.customAlert').css('animation', 'fadeIn 0.3s linear');
+  $('.customAlert').css('display', 'inline');
+  setTimeout(function(){
+    $('.customAlert').css('animation', 'none');
+  }, 300);
+  currentCallback = callback;
+}
+
+$(function(){
+  
+  // add listener for when our confirmation button is clicked
+	$('.confirmButton').click(function(){
+    $('.customAlert').css('animation', 'fadeOut 0.3s linear');
+    setTimeout(function(){
+     $('.customAlert').css('animation', 'none');
+		$('.customAlert').css('display', 'none');
+    }, 300);
+    currentCallback();
+  })
+  
+  $('.rab').click(function(){
+    alert( function(){
+      console.log("Callback executed");
+    })
+  });
+  
+  // our custom alert box
+  setTimeout(function(){
+    alert( function(){
+        console.log("Callback executed");
+      });
+  }, 500);
+});
+</script>
+</div>
+
+
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
-<div id="hiw" class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:26px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:10px 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
 step 6</p>
 </div>
@@ -458,40 +610,45 @@ step 6</p>
 </div>
 </div>
 </div>
+</div>
+</div></div>
+</div>
+</div>
 
-<div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;border-top:1px solid #e8effc;">
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="width:100%;padding:0 20px;margin:10px 0;">
 <div class="w3-threethird" style="background-color:#fff;padding:0;margin:0;">
-<div class="column1" style="padding:6px 10px 0 10px;margin:0;">
+<div class="column1" style="margin:0;">
 
-<p align="center" style="font-family:roboto;font-size:13px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
-You will be contacted within 24 hours using the phone number you provided to verify the information submitted.</p>
+<p class="topic1">YOUR WEB DEVELOPER</p>
 
-<hr />
-
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">YOUR WEB DEVELOPER</p>
-
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 I'm Michelle Jones and I will be developing your Small Business Showcase WebPages. My goal is to ensure that your webpages are delivered on time and are exactly what you expect.</p><br>  
 
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">TIME IS OF THE ESSENCE</p>
+<p class="topic1">TIME IS OF THE ESSENCE</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 The next 7 business days are crucial. During this time, be prepared to work closely with me so that we can bring this work to completion within the time allotted.</p><br>
 
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">MAINTENANCE & SUPPORT</p>
+<p class="topic1">MAINTENANCE & SUPPORT</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 Never worry about updating your webpages. We do all the work for you. All plans include maintenance and support. Just inform us of any changes, via email and phone, so we can make sure your webpages reflect them.</p><br>
 
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">ABOUT US</p>
+<p class="topic1">ABOUT US</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
-If you haven't done so already, you're invited to click on the following link to learn more about <a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">SPIRAL GROUP, INC.</a></p><br>
+<p class="topic2">
+If you haven't done so already, you're invited to click on the following link to learn more about <a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">SPIRAL GROUP, INC.</a></p><br>
 
-<p align="left" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">IN THE MEANTIME</p>
+<p class="topic1">IN THE MEANTIME</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
+<p class="topic2">
 Have a great day and thanks for your purchase.</p>
 </div>
 </div>
