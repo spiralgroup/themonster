@@ -168,11 +168,12 @@ $(document).ready(function(){
 
 
 .openinghours {
-    font-family:calibri;
-    font-size:14px;
-    color:#000;
-    letter-spacing:.5px;
-    padding:0 2px 0 2px;
+    font-family: arial, helvetica;
+    font-size: 14px;
+    color: #222;
+    text-shadow: 0 0 1px #000;
+    letter-spacing: .5px;
+    padding: 0 2px 0 2px;
     overflow: hidden;
     display: inline-block;
 }
@@ -181,10 +182,10 @@ $(document).ready(function(){
 }
 
 .today {
-    color: #e37e35;
-}
+    color: blue;
+   }
 .opening-hours-table tr td:first-child {
-  font-weight:bold;
+  letter-spacing: .5px;
 }
 #open-status {
     display:block;
@@ -249,14 +250,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 
@@ -273,7 +274,7 @@ body, html {
 position: fixed;
 top: 0;
 max-width: 1235px;
-background-color: #ffebcd;
+background-color: #fff;
 border: none;
 }
 
@@ -288,16 +289,6 @@ img {vertical-align: middle;}
 }
 
 
-.dot {
-  height: 4px;
-  width: 4px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active {
   background-color: #717171;
 }
@@ -306,23 +297,6 @@ img {vertical-align: middle;}
   background-color: #e6e6e6;
 }
     
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -392,7 +366,7 @@ margin: 0;
 <body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -400,7 +374,7 @@ margin: 0;
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Contact Us</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Your Tagline</span>
 <a class="navbar-brand" href="http://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -408,16 +382,18 @@ margin: 0;
 <li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Your Company Menu <span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="green">DEMO</font> Careers</a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="green">DEMO</font> About Us</a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-contact-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="green">DEMO</font> Contact Us</a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="green">DEMO</font> Products & Services <i class="material-icons" style="color:green;font-size:13px;">local_offer</i></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO</font> Careers</a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO</font> About Us</a></li>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-contact-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO</font> Contact Us</a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO</font> Special Offers <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO</font> Products & Services</a></li>
 </ul></ul>
 
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
-    </ul></div>
+<li><a class="w3-button w3-light-grey w3-text-dark-grey" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:roboto;font-size:11px;letter-spacing:.5px;border-radius:3px;padding:8px 10px 6px 10px;margin:8px 2px 0 2px;text-decoration:none;text-shadow:0 0 1px #000;">ADD LISTING</a></li>
+<li><a class="w3-button w3-light-grey w3-text-dark-grey" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:roboto;font-size:11px;letter-spacing:.5px;border-radius:3px;padding:8px 10px 6px 10px;margin:8px 2px 0 2px;text-decoration:none;text-shadow:0 0 1px #222;">SG MARKETPLACE</a></li>
+</ul>
+</div>
 </div>
 </nav>
 </div>
@@ -425,23 +401,7 @@ margin: 0;
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
 <img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-</div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
 </div>
 <center>
 <div class="content">
@@ -449,63 +409,55 @@ margin: 0;
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <div class="w3-row" style="padding:0;margin:20px 0 0 0;">
 <div class="w3-fourquarter" style="padding:0 12px;margin:0 0 10px 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:green;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #585858;">demo</a> contact us</p>
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #585858;">demo</a> contact us</p>
 </div></div>
 
 <div class="w3-row" style="padding:0;margin:20px 0 0 0;">
 <div class="w3-quarter" style="padding:0 12px;margin:0 0 10px 0;">
 <div class="w3-card" style="background-color:#e37e35;padding:0;margin:0 0 10px 0;border-radius:2px;">
 <img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
-
-<p align="center" style="font-family:ubuntu;font-size:13px;color:#fff;letter-spacing:.5px;padding:5px 0;margin:0;">773-242-0705</p>
 </div></div>
 
 <center>
 <div class="w3-threequarter" style="padding:0 12px;margin:0 0 10px 0;">
-<div class="column1 w3-card" style="padding:10px;background-color:transparent;border-radius:2px;">
-<p align="left" style="padding:0;margin:0;"><i class="material-icons" style="color:#222;font-size:33px;text-shadow:2px 2px 2px #ccc;">dvr</i></p>
-<p class="topic1">GENERAL FEEDBACK</p>
+<div class="column1" style="padding:10px;background-color:transparent;border-radius:2px;">
+<p class="topic1">GENERAL COMMENTS</p>
 
 <p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;">
-Use this option to submit your feedback, general comments, or to join our mailing list. We look forward to hearing from you.<br><br>
+Use this option to submit your comments about our products and services or to join our mailing list. We look forward to hearing from you.<br><br>
 
-<a class="w3-button" style="background-color:#ffebcd;font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;text-decoration:none;padding:10px 8px;float:right;">SUBMIT FEEDBACK</a></p>
-<br>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">SUBMIT FEEDBACK</button></p>
 
 <hr style="width:100%;height:1px;border-width:0;background-color:#f5f5f5;padding:0;margin:20px 0;">
 
 <div class="column1" style="padding:1px;margin:0;">
-<p align="left" style="padding:0;margin:0;"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">message</i></p>
 <p class="topic1">REQUEST QUOTE</p>
 
 <p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;">
 Use this option to request a price quote for customized products and specialized services. Our response time is usually within 2 hours.<br><br>
 
-<a class="w3-button" style="background-color:#ffebcd;font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;text-decoration:none;padding:10px 8px;float:right;">REQUEST QUOTE</a></p>
-<br>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">REQUEST QUOTE</button></p>
 
 <hr style="width:100%;height:1px;border-width:0;background-color:#f5f5f5;padding:0;margin:20px 0;">
 
 <div class="column1" style="padding:1px 1px 0 1px;margin:0;">
-<p align="left" style="padding:0;margin:0;"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">date_range</i></p>
 <p class="topic1">BOOK APPOINTMENT</p>
 
 <p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;">
 Looking to book an appointment online? Then, use this option and we will do our best to accomodate your scheduling request.<br><br>
 
-<a class="w3-button" href="https://spiralgroupinc.appointlet.com" target="_blank" style="background-color:#ffebcd;font-family:ubuntu condensed;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;text-decoration:none;padding:10px 8px;float:right;">BOOK APPOINTMENT</a></p>
+
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://spiralgroupinc.appointlet.com" target="_blank" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">BOOK APPOINTMENT</a></p>
+
+<hr style="width:100%;height:1px;border-width:0;background-color:#f5f5f5;padding:0;margin:20px 0;">
 </div>
 </div>
 
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;border-top:1px solid #f5f5f5;">
-<p align="center" style="font-family:calibri;font-size:18px;color:#222;text-shadow:0 0 1px #000;padding:10px 0;margin:0;">LOCATION & HOURS</p>
-</div>
 
-
-<div class="w3-row-padding" style="width:100%;background-color:#ffebcd;margin:0 0 10px 0;border-radius:3px;">
-<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="w3-row w3-card" style="width:100%;margin:0 0 10px 0;border-radius:2px;">
+<div class="w3-half" style="background-color:#f0f0f0;margin:0 0 2px 0;">
 <div class="content1 w3-panel" style="padding:15px 5px;margin:0;">
 <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
    <p align="center" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;padding:0;margin:0;">ADDRESS</p>
@@ -517,7 +469,7 @@ Chicago, Illinois 60644</p>
 <input type="submit" value="get directions" class="w3-button" style="background-color:#fff;padding:8px 10px;font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;margin:10px 0 0 0;">
 </form></div></div>
 
-<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="w3-half" style="background-color:#f0f0f0;margin:0;">
 <div class="content1 w3-panel" style="padding:15px 5px;margin:0;">
 <p align="center"><i class="material-icons" style="color:#222;font-size:33px;text-shadow:2px 2px 2px #cccccc;">slow_motion_video</i></p>
   <p align="center" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;padding:0;margin:0;">BUSINESS HOURS</p>
@@ -527,17 +479,11 @@ For Your Convenience</p>
 
 <button onclick="document.getElementById('id77').style.display='block'" class="w3-button" style="background-color:#fff;padding:8px 10px;font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;margin:10px 0 0 0;">view hours</button>
 
-  <div id="id77" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+  <div id="id77" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 10px;margin:0;">
+<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;padding:0;margin:0 0 20px 0;border-radius:2px;">
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
 <img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px 2px 0 0;">
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#e37e35;padding:5px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0;">BUSINESS HOURS</p>
 </div>
 </div>
 
@@ -593,13 +539,13 @@ For Your Convenience</p>
         </div>
      </section>
         
-        <div class="w3-row w3-white" style="width:100%;margin:0;">
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;">
 <div class="column3" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-      
-<button class="w3-button w3-center" style="background-color:#e37e35;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id77').style.display='none'">CLOSE</button>
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id77').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
 </div>
 </div>   
-</div>
 </div>
 </div>
 </div>
@@ -652,7 +598,7 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
 </div>
 
 <div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="w3-three-third" style="padding:0;margin:0;">
+<div class="w3-three-third w3-card" style="padding:0;margin:0;">
 <div class="content1 w3-panel" style="padding:0;margin:0;">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.0981146394124!2d-87.76774368493028!3d41.89074697922122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e334e3476db5b%3A0x63dbabfc44c23541!2s550+N+Central+Ave%2C+Chicago%2C+IL+60644!5e0!3m2!1sen!2sus!4v1544464086017" width="100%" height="300" frameborder="0" style="border-radius:3px;padding:0;margin:0;" allowfullscreen></iframe>
 </div>
@@ -708,7 +654,7 @@ function myFunction() {
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="customer-logos slider" style="background-color:#fff;width:100%;padding:100px 0 60px 0;margin:0;">
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723200-6372b880-dc2a-11e8-9f71-a71ee639f029.png"></a></div>
+<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png"></a></div>
 
 <div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
 
@@ -748,7 +694,7 @@ function myFunction() {
 <div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
 <button onclick="document.getElementById('id99').style.display='block'" button class="btn" style="padding:0;margin:0;"><img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="width:100%;border-radius:2px;padding:0;margin:0;text-decoration:none;"></button>
 
-<div id="id99" class="w3-modal w3-animate-opacity">
+<div id="id99" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
 <div class="w3-modal-content w3-card-4" style="background-color:transparent;width:45%;border-radius:0 0 2px 2px;">
 <div class="w3-row" style="width:100%;margin:0;background-color:transparent;">
 <div class="column w3-card" style="background-color:transparent;padding:0;margin:0;border-radius:2px;">
@@ -757,30 +703,31 @@ function myFunction() {
 </div>
 
 <center>
-<div class="w3-row w3-white" style="width:100%;margin:0 0 10px 0;border-radius:2px;">
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
 <div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;">
-<p align="center" style="margin:0;padding:0;"><a rel="nofollow" style="font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-PREMIUM ADS SECTION</a></p>
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+PREMIUM ADS SECTION</p>
 
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-Here's an opportunity to make money selling ad space on your Small Business Showcase WebPages. The 4 ads comprising the Premium Ads Section is how and where these ads will appear.</a></p><br>
+<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+Here's an opportunity to make money selling ad space on your Small Business Showcase WebPages. The 4 ads comprising the Premium Ads Section is how and where these ads will appear.</p><br>
 
-<p align="center" style="margin:0;padding:0;"><a rel="nofollow" style="font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-EXPLORE YOUR CREATIVE POTENTIAL</a></p>
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+EXPLORE YOUR CREATIVE POTENTIAL</p>
 
 <p align="center"><a href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
 Click here to participate in helping us shape the terms of our Premium Ads Section. We look forward to receiving (and implementing) your suggestions soon.</a></p>
 </div>
     
     <center>
-<div class="column" style="background-color:#fff;padding:10px 0 0 0;margin:0;border-radius:0 0 2px 2px;">
-<button class="w3-button w3-center" style="background-color:#0047b3;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id99').style.display='none'">CLOSE</button></div>
+<div class="column" style="background-color:#fff;margin:0;padding:10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id99').style.display='none'">EXIT THIS WINDOW</button></p>
 </div>
 </div>
 </div>
 </div>
 </div>
-
+</div>
 
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
