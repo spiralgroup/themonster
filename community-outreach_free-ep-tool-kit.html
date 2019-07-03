@@ -60,14 +60,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 .nab a:hover {
@@ -82,7 +82,7 @@ body, html {
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -97,16 +97,6 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -163,22 +153,6 @@ img {
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 .sticky {
   position: fixed;
@@ -187,16 +161,42 @@ img {
 }
 
 .row,
-.row > .column3 {
+.row > .column2 {
     padding: 0 33px 0 33px;
 }
 
+.column2 {
+    width: 52%;
+    display: inline-block;
+    float: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 768px) {
+    .column2 {
+        width: 100%;
+        float: center;
+}
+}
+
 .column3 {
-    width: 50%;
+    width: 72%;
     margin: 10px;
     padding: 0;
     display: inline-block;
-    float: left;
+    float: center;
 }
 
 @media (max-width: 900px) {
@@ -212,75 +212,12 @@ img {
         float: center;
        }
 }
+
+
+
 .active1 {
   background-color: #e6e6e6;}
   
-  .customAlert{
-	
-  display: none;
-  position: fixed;
-  max-width: 100%;
-  min-width: 250px !important;
-  height: auto;
-  padding: 10px;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  margin-left: -12.5%;
-  margin-top: -5.2%;
-  background: dodgerblue;
-  
-  @media all and (max-width: 1235px){
-    .message{
-      font-size: 14px !important;
-    }
-    input[type='button']{
-      height: 15% !important;
-    }
-  }
-  
-  .message{
-    padding: 0;
-   }
-    
-  input[type='button']{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 50%;
-    height: 36px;
-    margin-top: -45px;
-    margin-left: -25%;
-    outline: 0;
-    border: 0;
-    background: #04B486;
-    color: white;
-    &:hover{
-      transition: 0.3s;
-      cursor: pointer;
-    	background: lighten(#04B486, 5%);  
-    }
-  } 
-}
-      
-      
-@keyframes fadeOut{
-	from{
-  	opacity: 1;
-  } 
-  to{
-    opacity: 0;
-  }
-}
-    
-@keyframes fadeIn{
-	from{
-  	opacity: 0;
-  } 
-  to{
-    opacity: 1;
-  }
-}
 
 .topic1 {
 font-family:calibri;
@@ -297,26 +234,70 @@ margin:0;
 font-family:roboto;
 font-size:14px;
 color:#000;
-text-align: left;
+text-align: justify;
 letter-spacing: .5px;
 padding: 0;
 margin: 0;
 }
 
+.topic3 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic4 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic5 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic6 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
 
 @media screen and (max-width: 768px) {
-  .topic1, .topic2 {
+  .topic, .topic1, .topic2, .topic3, .topic4 {
   text-align: center;  
-  padding: 0;
-  margin: 0;
+  padding: 5px;  
   }
   }
+ hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
+ 
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<body style="width:100%;"> 
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -324,7 +305,7 @@ margin: 0;
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">We're Hiring</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Free Training</span>
 <a class="navbar-brand" href="http://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -340,224 +321,116 @@ margin: 0;
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
 
-
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
 </div>
 </div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
 </div>
 
 <center>
 <div class="content">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="customAlert" style="width:100%;padding:10px;margin:0;">
-<p class="message" align="center" style="padding:0 0 4px 0;margin:15px 0;">
-<a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;">BECOME A REPRESENTATIVE</a></p>
-	
-<input type='button' class='w3-button w3-white confirmButton' style="font-family:calibri;font-size:12px;color:#222;letter-spacing:1px;border-radius:2px;padding:6px 10px;margin:0 0 10px 0;text-decoration:none;" value='CLOSE'>
 </div>
-  
-<script>
-var currentCallback;
-
-// override default browser alert
-window.alert = function(msg, callback){
-  $('.message').text(msg);
-  $('.customAlert').css('animation', 'fadeIn 0.3s linear');
-  $('.customAlert').css('display', 'inline');
-  setTimeout(function(){
-    $('.customAlert').css('animation', 'none');
-  }, 300);
-  currentCallback = callback;
-}
-
-$(function(){
-  
-  // add listener for when our confirmation button is clicked
-	$('.confirmButton').click(function(){
-    $('.customAlert').css('animation', 'fadeOut 0.3s linear');
-    setTimeout(function(){
-     $('.customAlert').css('animation', 'none');
-		$('.customAlert').css('display', 'none');
-    }, 300);
-    currentCallback();
-  })
-  
-  $('.rab').click(function(){
-    alert( function(){
-      console.log("Callback executed");
-    })
-  });
-  
-  // our custom alert box
-  setTimeout(function(){
-    alert( function(){
-        console.log("Callback executed");
-      });
-  }, 500);
-});
-</script>
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 ep tool-kit</p>
 
-<div class="w3-row" style="width:100%;padding:0 20px;margin:52px 0 0 0;">
+
+<div class="w3-row" style="width:100%;padding:0 20px;margin:20px 0 0 0;">
 <div class="w3-threethird" style="margin:0 0 5px 0;">
 <div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
 <p class="topic2">
-Our Employment Preparation Tool-Kit was designed to teach <a rel="nofollow" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">JOB SEEKERS</a> how to compete in today’s labor market. Participants learn how to set realistic occupational goals; how to conduct occupational research; and how to develop a positive personal brand. As a Training Services Provider, our main goal is to help them to improve their organizational, decision-making, customer service, and soft skills.<br><br>
+Our Employment Preparation Tool-Kit was designed to teach Job Seekers how to compete in today’s labor market. Participants learn how to set realistic occupational goals; how to conduct occupational research; and how to develop a positive personal brand. As a Training Services Provider, our main goal is to help Job Seekers improve their organizational, decision-making, customer service, and soft skills.<br><br>
 
-Using our EP Tool-Kit&reg;, along with the Interview Preparation Video Resources, participants will learn how to make use of the skills they already possess and how to communicate these to potential employers. We also offer instruction in telephone etiquette and how to request references from individuals who can attest to a <a rel="nofollow" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">JOB SEEKER'S</a> character and employability.</p><br>
+Using our EP Tool-Kit&reg;, along with the Interview Preparation Video Resources, participants learn how to make use of the skills they already possess and how to communicate these to potential employers. We also offer instruction in telephone etiquette and how to request references from individuals who can attest to a Job Seeker's character and employability.</p>
 
-<p class="topic1">OVERCOME THE OBSTACLES</p>
+<p align="center" class="w3-hover-shadow"><button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:20px 0;text-decoration:none;">EP TOOL-KIT DETAILS</button></p>
+
+<div id="id36" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+    <div class="column3" style="padding:0;margin:0;">
+    <p align="center" style="font-family:roboto;font-size:16px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">TRAINING PROGRAM OUTLINE</p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column3" style="padding:10px 10px 0 10px;margin:0;">
+<p align="center">
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#e6f2ff;font-family:roboto;font-size:12px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" href="https://goo.gl/forms/3dldK23N0wNeOQEs1" target="_blank">ENROLL NOW</a></p><br>
+
+<p class="topic3">0 &#124; ORIENTATION</p>
+
+<p class="topic3">Investing in your Professional Development is time spent improving your Self, overall. After completing our online training program, you will begin job seeking activities with confidence.</p><br>
+
+<p class="topic3">1 &#124; PROFESSIONAL DEVELOPMENT</p>
+
+<p class="topic3">This course is comprised wholly of Soft Skills modules&#151;critical thinking, handling workplace conflict, the art of active listening, mindful decision-making, customer service basics, body language, etc. Developing this skill-set is crucial for promoting your success in the workplace.</p><br>
+
+<p class="topic3">2 &#124; CAREER DEVELOPMENT</p>
+
+<p class="topic3">Learn how to conduct occupational research, set occupational goals, and how to begin the process of creating a positive personal brand. There’s also an introduction to entrepreneurship.</p><br>
+
+<p class="topic3">3 &#124; DOCUMENT PREPARATION</p>
+
+<p class="topic3">Designed to teach you how to develop your own self-marketing materials. We believe that creating your own documents allows you to know who you are, the skills you possess, and what you can offer an employer. This course will help improve your written communication skills.</p><br>
+
+<p class="topic3">4 &#124; STRATEGIC INTERVIEW PREPARATION</p>
+
+<p class="topic3">We engage you in modules such as, telephone etiquette for job seekers, strategic interview preparation, appropriate interview attire, and following up after the interview. This course also includes the module "Landing a Job with a Criminal Record". It can serve as a guide so the chances of landing a job may increase.</p><br>
+
+<p class="topic3">5 &#124; PERFORMANCE MANAGEMENT</p>
+
+<p class="topic3">Presented from the perspective that you have gained employment by convincing the hiring manager of your professionalism, ability to execute the duties of the position, and how you will begin benefitting the company as soon as you are allowed to contribute. This course teaches you how to deliver.</p>
+
+<hr class="style-one">
+
+<p class="topic6">After Completing This Course, You Should:</p><br>
+
+<p class="topic3">
+&#10144; Understand what it means to be job ready.<br><br>
+&#10144; Be able to demonstrate soft skills.<br><br>
+&#10144; Be able to conduct occupational and employer research.<br><br>
+&#10144; Know how to begin creating a positive personal brand.<br><br>
+&#10144; Begin developing your own self-marketing materials.<br><br>
+&#10144; Know what you can offer an employer.<br><br>
+&#10144; Be able to address a criminal past with poise, ease, and tact.<br><br>
+&#10144; Know how to follow up appropriately after any job interview.</p><br>
+
+<p align="center">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id36').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<p class="topic4">OVERCOME THE OBSTACLES</p>
 
 <p class="topic2">
-Although anyone with a desire to improve their employment readiness skills can benefit from our EP Tool-Kit&reg;, it was originally designed for those with criminal histories. <a href="https://github.com/spiralgroup/themonster/files/1648828/Michelle.A.Jones.Functional.Resume.pdf" target="_blank" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">MICHELLE A. JONES</a> [a twice convicted felon] is the Founder & CEO of Spiral Group, Inc. She is dedicated to helping this population of <a rel="nofollow" style="font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">JOB SEEKERS</a> overcome many obstacles to gainful employment.</p><br>
+Although anyone with a desire to improve their employment readiness skills can benefit from our EP Tool-Kit&reg;, it was originally designed for those with criminal histories. <a href="https://github.com/spiralgroup/themonster/files/1648828/Michelle.A.Jones.Functional.Resume.pdf" target="_blank">Michelle A. Jones</a> [a twice convicted felon] is the Founder & CEO of Spiral Group, Inc. She is dedicated to helping this population of Job Seekers overcome many obstacles to gainful employment.</p><br>
 
-<p class="topic1">DEDICATED SUPPORT</p>
+<p class="topic4">DEDICATED SUPPORT</p>
 
 <p class="topic2">
 You will have to complete the EP Tool-Kit&reg; using either a desktop or laptop computer. If you attempt to complete this online training program using ANY other device, you may encounter technical difficulties that are beyond our control.<br><br>
 
-Nevertheless, Team SpiralGroup is available at tech.support@spiralgroup.org to assist if you encounter technical difficulties using either a desktop or laptop computer only, or if you need guidance with completing the homework assignments. Tap the button below for program contents and to discover how you can access our free EP Tool-Kit&reg;.</p>
+Nevertheless, Team SpiralGroup is available at tech.support@spiralgroup.org to assist if you encounter technical difficulties using either a desktop or laptop computer only, or if you need guidance with completing the homework assignments.</p>
 
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:20px 0 10px 0;text-decoration:none;">LEARN MORE ABOUT THE EP TOOL-KIT&reg;</button></p>
-
-<div id="id02" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 10px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/55938953-64ecd780-5bf1-11e9-8ec3-a92778bf1d1c.png" style="width:100%;border-radius:2px 2px 0 0;">
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">EP TOOL-KIT&reg; COURSES</p>
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center" style="padding:0;margin:10px 0 0 0;"><a rel="nofollow" style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">0 &#124; ORIENTATION</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Investing in your Professional Development is time spent improving your Self, overall. After completing our online training program, you will begin job seeking activities with confidence.</a></p><br>
-
-<p align="center" style="padding:0;margin:10px 0 0 0;"><a rel="nofollow" style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">1 &#124; PROFESSIONAL DEVELOPMENT</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">This course is comprised wholly of Soft Skills modules&#151;critical thinking, handling workplace conflict, the art of active listening, mindful decision-making, customer service basics, body language, etc. Developing this skill-set is crucial for promoting your success in the workplace.</a></p><br>
-
-<p align="center" style="padding:0;margin:10px 0 0 0;"><a rel="nofollow" style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">2 &#124; CAREER DEVELOPMENT</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Learn how to conduct occupational research, set occupational goals, and how to begin the process of creating a positive personal brand. There’s also an introduction to entrepreneurship.</a></p><br>
-
-<p align="center" style="padding:0;margin:10px 0 0 0;"><a rel="nofollow" style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">3 &#124; DOCUMENT PREPARATION</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Designed to teach you how to develop your own self-marketing materials. We believe that creating your own documents allows you to know who you are, the skills you possess, and what you can offer an employer. This course will help improve your written communication skills.</a></p><br>
-
-<p align="center" style="padding:0;margin:10px 0 0 0;"><a rel="nofollow" style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">4 &#124; STRATEGIC INTERVIEW PREPARATION</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">We engage you in modules such as, telephone etiquette for job seekers, strategic interview preparation, appropriate interview attire, and following up after the interview. This course also includes the module "Landing a Job with a Criminal Record". It can serve as a guide so the chances of landing a job may increase.</a></p><br>
-
-<p align="center" style="padding:0;margin:10px 0 0 0;"><a rel="nofollow" style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">5 &#124; PERFORMANCE MANAGEMENT</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Presented from the perspective that you have gained employment by convincing the hiring manager of your professionalism, ability to execute the duties of the position, and how you will begin benefitting the company as soon as you are allowed to contribute. This course teaches you how to deliver.</a></p>
-
-<hr style="width:100%;height:1px;border-width:0;background-color:#f1f1f1;padding:0;margin:20px 0;">
-
-<p align="center" style="padding:0;margin:15px 0 0 0;"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">UPON SUCCESSFUL COMPLETION, YOU SHOULD:</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-Understand what it means to be job ready.<br>
-Demonstrate soft skills.<br>
-Conduct occupational and employer research.<br>
-Begin creating a positive personal brand.<br>
-Develop your own self-marketing materials.<br>
-Know what you can offer an employer.<br>
-Address a criminal past with poise, ease, and tact.<br>
-Follow up appropriately after any job interview.</a></p><br>
-
-<p align="center" style="padding:0;margin:0;"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">WHO COULD BENEFIT FROM OUR EP TOOL-KIT&reg;</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-Job seekers of all kinds.</a></p><br>
-
-<p align="center" style="padding:0;margin:0;"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">TRAINING PROGRAM DELIVERY</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-Online</a></p><br>
-
-<p align="center" style="padding:0;margin:0;"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">COURSE DURATION</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-20+ Hours</a></p><br>
-
-<p align="center" style="padding:0;margin:0;"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">COST</a></p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Free</a></p><br>
-
-<p align="center" style="padding:0;margin:0;"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">ENROLL TODAY</a></p>
-
-<p align="center"><a href="https://goo.gl/forms/3dldK23N0wNeOQEs1" target="_blank" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Click here to begin the enrollment process.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:20px 0 10px 0;" onclick="document.getElementById('id02').style.display='none'">CLOSE</button></div>
-</div>
-</div>
- </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -577,7 +450,7 @@ function myFunction() {
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
 
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
