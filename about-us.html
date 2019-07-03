@@ -93,16 +93,15 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
-
 
 .nab a:hover {
   color: black;
@@ -116,7 +115,7 @@ body, html {
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -132,35 +131,8 @@ img {vertical-align: middle;}
 }
 
 
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active {
   background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
 
 .sticky {
@@ -231,7 +203,7 @@ img {vertical-align: middle;}
 }
 
 .column3 {
-    width: 100%;
+    width: 72%;
     margin: 0;
     padding: 0;
     display: block;
@@ -254,73 +226,6 @@ img {vertical-align: middle;}
 }
 .active1 {
   background-color: #e6e6e6;}
-  
-     .customAlert{
-	
-  display: none;
-  position: fixed;
-  max-width: 100%;
-  min-width: 250px !important;
-  height: auto;
-  padding: 10px;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  margin-left: -12.5%;
-  margin-top: -5.2%;
-  background: dodgerblue;
-  
-  @media all and (max-width: 1235px){
-    .message{
-      font-size: 14px !important;
-    }
-    input[type='button']{
-      height: 15% !important;
-    }
-  }
-  
-  .message{
-    padding: 0;
-   }
-    
-  input[type='button']{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 50%;
-    height: 36px;
-    margin-top: -45px;
-    margin-left: -25%;
-    outline: 0;
-    border: 0;
-    background: #04B486;
-    color: white;
-    &:hover{
-      transition: 0.3s;
-      cursor: pointer;
-    	background: lighten(#04B486, 5%);  
-    }
-  } 
-}
-      
-      
-@keyframes fadeOut{
-	from{
-  	opacity: 1;
-  } 
-  to{
-    opacity: 0;
-  }
-}
-    
-@keyframes fadeIn{
-	from{
-  	opacity: 0;
-  } 
-  to{
-    opacity: 1;
-  }
-}
 
 .topic2 {
 font-family:roboto;
@@ -332,24 +237,38 @@ padding: 0;
 margin: 0;
 }
 
+.topic3 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
 .active {
   background-color: #717171;
 }
 
 
 @media screen and (max-width: 768px) {
-  .topic2 {
+  .topic2, .topic3 {
   text-align: center;  
-  padding: 0;  
+  padding: 5px 0;  
   margin: 0;
   }
   }
+  
+    hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
+ 
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<body style="width:100%;"> 
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -373,116 +292,58 @@ margin: 0;
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
+
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
 </div>
 </div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
 </div>
-<center>
-<div class="content">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="customAlert" style="width:100%;padding:10px;margin:0;">
-<p class="message" align="center" style="padding:0 0 4px 0;margin:15px 0;">
-<a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;">BECOME A REPRESENTATIVE</a></p>
-	
-<input type='button' class='w3-button w3-white confirmButton' style="font-family:calibri;font-size:12px;color:#222;letter-spacing:1px;border-radius:2px;padding:6px 10px;margin:0 0 10px 0;text-decoration:none;" value='CLOSE'>
-</div>
-  
-<script>
-var currentCallback;
 
-// override default browser alert
-window.alert = function(msg, callback){
-  $('.message').text(msg);
-  $('.customAlert').css('animation', 'fadeIn 0.3s linear');
-  $('.customAlert').css('display', 'inline');
-  setTimeout(function(){
-    $('.customAlert').css('animation', 'none');
-  }, 300);
-  currentCallback = callback;
-}
-
-$(function(){
-  
-  // add listener for when our confirmation button is clicked
-	$('.confirmButton').click(function(){
-    $('.customAlert').css('animation', 'fadeOut 0.3s linear');
-    setTimeout(function(){
-     $('.customAlert').css('animation', 'none');
-		$('.customAlert').css('display', 'none');
-    }, 300);
-    currentCallback();
-  })
-  
-  $('.rab').click(function(){
-    alert( function(){
-      console.log("Callback executed");
-    })
-  });
-  
-  // our custom alert box
-  setTimeout(function(){
-    alert( function(){
-        console.log("Callback executed");
-      });
-  }, 500);
-});
-</script>
-</div>
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:100px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 who we are</p>
 
-<div class="w3-row" style="width:100%;padding:0 12px;margin:50px 0 0 0;">
-<div class="w3-third" style="margin:0 0 5px 0;">
-<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 2px 12px;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third w3-white" style="margin:0;border-radius:4px 4px 0 0;">
+<div class="column1 w3-white" style="padding:0;margin:0;">
+
+
 <img src="https://user-images.githubusercontent.com/25410880/54096546-9744b400-4369-11e9-8a59-1a3ba96945d7.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:10px;margin:0;">
+<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
 <p class="topic2">
-Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. In addition to our <a style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" tagert="_blank">SMALL BUSINESS SHOWCASE WEBPAGES</a>, we offer affordable <a style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;" href="https://spiralgroup.github.io/themonster/business-excellence.html" tagert="_blank">BUSINESS EXCELLENCE TOOLS</a> to locally under-served Small Businesses.<br><br>
+Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. In addition to our Small Business Showcase WebPages, we offer affordable Business Excellence Tools to locally under-served Small Businesses.<br><br>
 
 We're committed to assisting this population of entrepreneurs by leveraging our skills and many years of corporate experience to help them build reliable companies that can support the needs of their markets.</p>
 
-<p align="right" class="w3-hover-shadow">
-<a class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;" href="https://form.jotform.com/82323651984159" target="_blank">SCHEDULE YOUR FREE PHONE CONSULTATION</a></p>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
 
+<p align="center" class="w3-hover-shadow">
+<a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://form.jotform.com/82323651984159" target="_blank">SCHEDULE YOUR FREE CONSULTATION</a></p>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
 
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
+<hr class="style-one">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 the returning citizen</p>
 
@@ -496,37 +357,37 @@ the returning citizen</p>
 </div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:10px;margin:0;">
+<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
 <p class="topic2">
 Michelle Jones is the Founder and CEO of Spiral Group, Inc. She began developing the company's business model after serving time in a correctional facility. Her goal is to make useful contributions to the Small Business Community and other returning citizens.<br><br>
 
-In 2016, Michelle created a free, online <a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:ubuntu condensed;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">EMPLOYMENT PREPARATION TRAINING PROGRAM</a> for job seekers with criminal histories. She is dedicated to helping returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism.</p>
+In 2016, Michelle created a free, online Employment Preparation Training Program for job seekers with criminal histories. She is dedicated to helping returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism.</p>
 
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">MORE ABOUT MICHELLE JONES</button></p>
+<p align="center" class="w3-hover-shadow">
+<button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">MORE ABOUT MICHELLE JONES</button></p>
 
-<div id="id02" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/47863750-5989ba80-ddce-11e8-9329-b17fb33ea7ac.png" style="width:100%;border-radius:2px 2px 0 0;">
+<div id="id02" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+    <div class="column3" style="padding:0;margin:0;">
+    <img src="https://user-images.githubusercontent.com/25410880/47863750-5989ba80-ddce-11e8-9329-b17fb33ea7ac.png" style="width:100%;border-radius:2px 2px 0 0;">
+<p align="center" style="font-family:roboto;font-size:16px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Taking a Break from Web Development</p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#b3e6ff;padding:10px 10px 0 10px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Taking a Break from Web Development</p>
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:12px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;padding:10px 0 0 0;margin:0 0 10px 0;">
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column3" style="padding:0;margin:0;background-color:#fff;">
+<p class="topic3">
 Along her career path, Michelle has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers. She has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant.<br><br>
 
 Michelle opened her first business, RMRC (Restaurant Materials Resource Center), in 1999 where she designed business documents, labels, and posters for the food-service industry.<br><br>
 She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. Michelle has been a web developer since 1999, and an ordained minister since 2007.</p>
+</div>
 
-<button class="w3-button w3-center" style="background-color:#b3e6ff;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;margin:10px 0;" onclick="document.getElementById('id02').style.display='none'">CLOSE</button></div>
+<div class="column3" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
 </div>
 </div>
 </div>
@@ -537,14 +398,12 @@ She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examina
 </div>
 </div>
 </div>
-</div></div>
-</div></div>
-
+</div>
 
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
+<hr class="style-one">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 who are you?</p>
 
@@ -558,16 +417,14 @@ who are you?</p>
 </div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:10px;margin:0;">
+<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
 <p class="topic2">
 We all value companies that can consistently and affordably meet our specialized needs. This is an auspicious time for you to begin taking advantage of profitable opportunities by spending time making strategic decisions on how to further develop your company.<br><br>
 
-We work with clients to refine operational infrastructure. As a result, they enjoy reduced operating costs and improved workforce productivity.
-
-Take the next step toward progressive growth and development by creating your new online presence today.</p>
+We work with clients to refine operational infrastructure. As a result, they enjoy reduced operating costs and improved workforce productivity. Take the next step toward progressive growth and development for your company by creating your new online presence today.</p>
 
 <p align="right" class="w3-hover-shadow">
-<a class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">EXPLORE YOUR SMALL BUSINESS POTENTIAL</a></p>
+<a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">EXPLORE YOUR BUSINESS POTENTIAL</a></p>
 </div>
 </div>
 </div>
@@ -576,8 +433,8 @@ Take the next step toward progressive growth and development by creating your ne
 </div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
+<hr class="style-one">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 our motivation</p>
 
@@ -617,27 +474,7 @@ our motivation</p>
 </div>
 </div>
 </div>
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -657,7 +494,7 @@ function myFunction() {
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
 
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
