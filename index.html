@@ -113,14 +113,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 .nab a:hover {
@@ -135,7 +135,7 @@ body, html {
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -213,7 +213,7 @@ img {vertical-align: middle;}
 }
 
 .column2 {
-    width: 100%;
+    width: 52%;
     display: inline-block;
     float: center;
 }
@@ -244,7 +244,7 @@ img {vertical-align: middle;}
 }
 
 .column3 {
-    width: 53%;
+    width: 72%;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -269,41 +269,6 @@ img {vertical-align: middle;}
 .row > .column3 {
     padding: 0 33px 0 33px;
 }
-
-.tablink {
-    background-color: #d3d3d3;
-    font-family: ubuntu;
-    color: white;
-    float: center;
-    outline: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 7px 12px;
-    margin: 0 0 8px 0;
-    font-size: 13.5px;
-    display: inline-block;
-}
-
-.tablink:hover {
-    background-color: #777;
-    color: d3d3d3;
-}
-
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 22px 12px 12px 12px;
-    margin: 0;
-    text-align: center;
-}
-
-#Step1 {background-color:#f5faff;}
-#Step2 {background-color:#f5faff;}
-#Step3 {background-color:#f5faff;}
-#Step4 {background-color:#f5faff;}
-#Step5 {background-color:#f5faff;}
-#Step6 {background-color:#f5faff;}
 
 .active1 {
   background-color: #e6e6e6;}
@@ -359,13 +324,35 @@ padding: 0;
 margin: 0;
 }
 
+.topic3 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic4 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
 .active {
   background-color: #717171;
 }
 
 
 @media screen and (max-width: 768px) {
-  .topic, .topic1 {
+  .topic, .topic1, .topic3, .topic4 {
   text-align: center;  
   padding: 5px;  
   }
@@ -374,16 +361,19 @@ margin: 0;
 @media screen and (max-width: 768px) {
   .topic2 {
   text-align: center;  
-  padding: 0;
+  padding: 10px 0 0 0;
   margin: 0;
   }
   }
+  
+  hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
+ 
 </style>
 </head>
 <body style="width:100%;"> 
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 12px 32px #f5f5f5;">
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -407,16 +397,15 @@ margin: 0;
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
-    </ul>
+<li><a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri,helvetica;font-size:11.5px;letter-spacing:1px;border-radius:2px;padding:8px 10px 6px 10px;margin:8px 2px 0 2px;text-decoration:none;text-shadow:0 0 1px #222;">ADD LISTING</a></li>
+<li><a class="w3-button w3-light-grey" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri,helvetica;font-size:11.5px;letter-spacing:1px;border-radius:2px;padding:8px 10px 6px 10px;margin:8px 2px 0 2px;text-decoration:none;text-shadow:0 0 1px #222;">MARKETPLACE</a></li>
+</ul>
 </div>
 </div>
 </nav>
 </div>
 
 <center>
-
 <div class="slideshow-container w3-white" style="width:100%;margin:0;padding:0 12px;">
 <div style="text-align:center;padding:0;margin:0;">
 <span class="dot"></span>
@@ -486,7 +475,7 @@ Our plans start at only $13.79 per month. If you're not sure which plan is right
 
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:100px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 become visible</p>
 
@@ -499,228 +488,182 @@ become visible</p>
 </div>
 </div>
 
-<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:10px;margin:0;">
+<div class="w3-twothird w3-white" style="padding:0;margin:0;border-radius:4px 4px 0 0;">
+<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
 <p class="topic2">
 Looking to develop an online presence for your Small Business? You've come to the right place. Our new Small Business Showcase WebPages are affordable, mobile-friendly, and allows you to perform a multitude of business tasks.<br><br>
 
 You can promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals.</p>
 
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">VIEW OUR SHOWCASE PLANS</button></p>
+<p align="center" class="w3-hover-shadow"><button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">VIEW OUR SHOWCASE PLANS</button></p>
 
- <div id="id01" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content w3-card-4 w3-white" style="padding:0;margin:0 0 20px 0;">
-<header class="w3-container w3-light-grey" style="padding:0 5px;">
-<p align="center" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#000;text-shadow:0 0 1px #000;padding:8px 8px 6px 8px;margin:8px;text-decoration:none;">
-<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">EXPLORE OUR DEMO WEBPAGES</a></p>
-<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-</header>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="row-padding" style="width:100%;padding:0;margin:0;">
-<div class="w3-third" style="margin:0 0 6px 0;border-radius:4px 4px 0 0;">
-<div class="column w3-card" style="padding:5px;margin:0;border-radius:2px">
-<div class="content w3-panel w3-white" style="padding:5px 10px 0 10px;margin:1px 2px 2px 2px;">
-<p align="center" class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;border-radius:2px;padding:8px 8px 6px 8px;margin:8px;">SIMPLE START</p><br>
-<p align="center" style="font-family:ubuntu;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #222;">$13.79 Per Month &#124; Paid Annually</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Products & Services Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Contact Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> About Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> Careers Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> SG Listing Service</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> Special Offers Online Ads</p>
-<p align="left" style="font-family:calibri,helvetica;font-size:12px;color:#000000;padding:5px 0 0 0;margin:0;border-top:1px solid transparent;">
-<b>The Fine Print</b></p>
-<p align="left" style="font-family:roboto;font-size:11px;color:#000000;">
-<i class="material-icons" style="color:#000;font-size:11px;">shopping_cart</i> included with your plan<br>
-<i class="material-icons" style="color:#000;font-size:11px;">remove_shopping_cart</i> not included with your plan</p>
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0 0 6px 0;border-radius:4px 4px 0 0;">
-<div class="column w3-card" style="padding:5px;margin:0;border-radius:4px">
-<div class="content w3-panel w3-white" style="padding:5px 10px 0 10px;margin:1px 2px 2px 2px;">
-<p align="center" class="w3-button w3-pink" style="white;font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;border-radius:2px;padding:8px 8px 6px 8px;margin:8px;">BUSINESS ESSENTIALS</p><br>
-<p align="center" style="font-family:ubuntu;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #222;">$16.97 Per Month &#124; Paid Annually</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Products & Services Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Contact Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> About Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Careers Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> SG Listing Service</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> Special Offers Online Ads</p>
-<p align="left" style="font-family:calibri,helvetica;font-size:12px;color:#000000;padding:5px 0 0 0;margin:0;border-top:1px solid transparent;">
-<b>The Fine Print</b></p>
-<p align="left" style="font-family:roboto;font-size:11px;color:#000000;">
-<i class="material-icons" style="color:#000;font-size:11px;">shopping_cart</i> included with your plan<br>
-<i class="material-icons" style="color:#000;font-size:11px;">remove_shopping_cart</i> not included with your plan</p>
-</div>
-</div>
-</div>
-
-
-<div class="w3-third" style="margin:0 0 6px 0;border-radius:4px 4px 0 0;">
-<div class="column w3-card" style="padding:5px;margin:0;border-radius:4px">
-<div class="content w3-panel w3-white" style="padding:5px 10px 0 10px;margin:1px 2px 2px 2px;">
-<p align="center" class="w3-button" style="background-color:green;font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;border-radius:2px;padding:8px 8px 6px 8px;margin:8px;">BUSINESS PREMIUM</p><br>
-<p align="center" style="font-family:ubuntu;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #222;">$24.99 Per Month &#124; Paid Annually</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Products & Services Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Contact Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> About Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Careers Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> SG Listing Service</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Special Offers Online Ads <i class="material-icons" style="color:green;font-size:14px;">local_offer</i></p>
-<p align="left" style="font-family:calibri,helvetica;font-size:12px;color:#000000;padding:5px 0 0 0;margin:0;border-top:1px solid transparent;">
-<b>The Fine Print</b></p>
-<p align="left" style="font-family:roboto;font-size:11px;color:#000000;">
-<i class="material-icons" style="color:#000;font-size:11px;">shopping_cart</i> included with your plan<br>
-<i class="material-icons" style="color:#000;font-size:11px;">remove_shopping_cart</i> not included with your plan</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<center>
+ <div id="id01" class="w3-modal w3-white w3-animate-opacity" style="padding:40px 0 20px 0;margin:0;">
+ <div class="w3-modal-content w3-white" style="padding:0;margin:10px;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-what competition?</p>
+<center>    
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6f2ff;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#cce7ff;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">SIMPLE START &#124; $13.79 Per Month</a></p>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 2px 12px;margin:0;">
-<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-third" style="margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/55660956-c6f6a880-57bd-11e9-92ea-3116c397481c.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></div></div>
+<div class="content w3-panel" style="background-color:#f0f8ff;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; Careers Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; SG Listing Service</p>
+   </div>
+    </div>
+     </div>
+    
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#fde8ec;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#fbd0d9;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">ESSENTIALS &#124; $16.97 Per Month</a></p>
 
-<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:10px;margin:0;">
-<p class="topic2">
-Unlike our competitors, we update and completely maintain your Small Business Showcase WebPages. Getting started with us doesn't mean you'll have to attempt to learn code during a 14-day free trial period&#151;unless that's your goal.<br><br>
+<div class="content w3-panel" style="background-color:#fde8ec;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Careers Page</p>
 
-All you have to do is complete the Six Steps outlined in our "How It Works" section to create your account, and then enjoy your new online presence within 7 business days.</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; SG Listing Service</p>
+    </div>
+    </div>
+      </div>
+   
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6ffe6;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#b3ffb3;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">PREMIUM &#124; $24.99 Per Month</a></p>
 
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id12').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">HOW IT WORKS</button></p>
+<div class="content w3-panel" style="background-color:#e6ffe6;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Careers Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; SG Listing Service</p>
+    </div>
+    </div>
+      </div>
+         
+ 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="column" style="background-color:#fff;margin:0;padding:5px;">
+<p class="topic3">Unlike our competitors, we update and completely maintain your Small Business Showcase WebPages. Getting started with us doesn't mean you'll have to attempt to learn code during a 14-day free trial period—unless that's your goal.<br><br>
 
-<div id="id12" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4 w3-white" style="width:45%;border-radius:2px;">
-<header class="w3-container" style="padding:0 5px;">
-<span onclick="document.getElementById('id12').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-</header>
-
-<center>
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
-<div class="column1" style="padding:0;margin:0;">
-<div class="content1 w3-panel" style="padding:10px;margin:0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/42121304-6c8a3154-7bfa-11e8-8e61-e62957f76456.png" style="width:100%;">
-<p align="center" style="padding:10px;margin:0;"><a rel="nofollow" style="font-family:ubuntu condensed;font-size:14px;color:dodgerblue;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px dodgerblue;">COMPLETE THESE SIX STEPS</a></p>
-<div class="tablink" onclick="openTablink('Step1', this, 'dodgerblue')" id="defaultOpen">1</div>
-<div class="tablink" onclick="openTablink('Step2', this, 'dodgerblue')" >2</div>
-<div class="tablink" onclick="openTablink('Step3', this, 'dodgerblue')" >3</div>
-<div class="tablink" onclick="openTablink('Step4', this, 'dodgerblue')" >4</div>
-<div class="tablink" onclick="openTablink('Step5', this, 'dodgerblue')" >5</div>
-<div class="tablink" onclick="openTablink('Step6', this, 'dodgerblue')" >6</div>
-<div id="Step1" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column1" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px 0;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 1. Choose Business Category</p>
-</div>
-</div>
-</div>
-
-
-<div id="Step2" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column1" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 2. Choose Showcase Plan</p>
-</div>
-</div>
-</div>
-
-
-<div id="Step3" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column1" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 3. Provide Business Details</p>
-</div>
-</div>
-</div>
-
-
-<div id="Step4" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column1" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 4. List Up to 12 Showcase Items</p>
-</div>
-</div>
-</div>
-
-<div id="Step5" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column1" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 5. Proceed to Checkout</p>
-</div>
-</div>
-</div>
-
-<div id="Step6" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column1" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 6. Get Verified</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+All you have to do is follow the instructions outlined in our "How It Works" section below to create your account, and then enjoy your new online presence within 7 business days.</p>
 </div>
 </div>
 </div>
 
 
+<div class="w3-half" style="background-color:#fff;padding:0;margin:10px 0 0 0;">  
+<div class="column" style="background-color:#fff;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 12px;">
+<button onclick="document.getElementById('id87').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87')">HOW IT WORKS</button></p>
+
+ <div id="id87" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+    <div class="column2" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">How It Works</p>
+</div>
+</div>
 
 <center>
-<div id="listing" class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container" style="width:100%;">
+<div class="column3" style="padding:0;margin:0;background-color:#fff;">
+<p class="topic4">&#10144; GETTING STARTED</p>
+<p class="topic3">
+After clicking an Add Listing or Get Started button anywhere on our website, you will arrive at the page that allows you to begin the process of creating your new Spiral Group, Inc. Merchant Account.</p><br>
+
+<p class="topic4">&#10144; CHOOSING A CATEGORY</p>
+<p class="topic3">
+Select a business category by clicking the image that corresponds to that particular category. To learn more about a category, just click on the category's label. If you don't see your category, choose the one that most closely characterizes your Small Business.</p><br>
+
+<p class="topic4">&#10144; COMPLETING THE ORDER FORM</p>
+<p class="topic3">
+Your Small Business Information. Once you have selected your business category, you will be taken to our secure online order form to complete the process of creating your new Merchant Account. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our Demo WebPages so you will know the kind of information needed to complete the online order form.<br><br>
+
+Choosing Your Plan. If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Please keep in mind that our Premium Plan includes the SG Listing Service. If you decide on this plan, do not add the SG Listing Service to your shopping basket.</p><br>
+
+<p class="topic3">
+Your Product Images. We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge. This could increase the time it takes for us to complete your webpages.</p><br>
+
+<p class="topic3">
+Team Member Images. On your About Us WebPage, you have the option of displaying individual photos of your team members. Alternatively, you can use a group photo. We do not require these images to be on a white background.</p><br>
+
+<p class="topic4">&#10144; CONFIRMATION</p>
+<p class="topic3">
+Once we have received your completed order form, we will contact you the next business day to confirm your information. If you have chosen to skip certain fields while completing the order form, we will also use this time to get that information. Please allow time for us to confirm all the details of your new Spiral Group, Inc. Merchant Account.</p><br>
+
+<p class="topic4">&#10144; OTHER INFORMATION</p>
+<p class="topic3">
+We require that all plans be paid annually. We do not provide refunds on Small Business Showcase WebPages purchases.</p>
+</div>
+
+<div class="column3" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-half" style="background-color:#fff;padding:0;margin:10px 0 0 0;">  
+<div class="column" style="background-color:#fff;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 12px;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id01').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div id="listing" class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
+<hr class="style-one">
+
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 local business listings</p>
 
@@ -732,13 +675,69 @@ local business listings</p>
 <img src="https://user-images.githubusercontent.com/25410880/50410019-4df1b900-07ab-11e9-84c1-89040ae44c6d.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></div></div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:10px;margin:0;">
+<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
 <p class="topic2">
 Show up in more local searches, because being local matters. By leveraging the SG Listing Service, you can be confident that your business information is consistent. Affording you even more opportunities to attract the kind of customer your Small Business deserves.<br><br>
 
 We'll register your Small Business in only the top electronic business directories such as Bing, FourSquare, Google, and Yahoo.</p>
 
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">MORE ABOUT THE SG LISTING SERVICE</button></p>
+<p align="center" class="w3-hover-shadow"><button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">THE SG LISTING SERVICE</button></p>
+
+<div id="id36" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+    <div class="column2" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">SG Listing Service</p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column3" style="padding:10px 10px 0 10px;margin:0;">
+<p class="topic4">We register your Small Business in only the top electronic business directories such as Bing, FourSquare, Google, and Yahoo.</p><br>
+
+<p class="topic4">&#10144; CLAIMING CITATIONS</p>
+<p class="topic3">
+Claiming citations from local directories can help give your Small Business more legitimacy and increase visibility. We can claim, update, and even create listings for you to ensure that your small business is represented accurately across the web.</p><br>
+
+<p class="topic4">&#10144; NICHE CITATIONS</p>
+<p class="topic3">
+We'll create listings for your company on industry-specific local directories. We keep track of the top local industry sites for each of our MarketPlace Categories.</p><br>
+
+<p class="topic4">&#10144; MARKETING OPPORTUNITIES</p>
+<p class="topic3">
+We take full advantage of opportunities to transform your Small Business listings into marketing opportunities. Some online directories allow businesses to showcase their logos, photos, videos, complete business descriptions, hours and holiday hours, menus, staff bios, products & services lists, and other business data alongside their basic information.</p><br>
+
+<p class="topic4">&#10144; LET US DO THE WORK</p>
+<p class="topic3">
+Put us in control of your brand's local online presence and we'll make sure consumers find accurate and consistent information about your Small Business.</p><br>
+
+<p class="topic4">&#10144; PRICE</p>
+<p class="topic3">
+$5.99 Per Month &#124; Paid Annually</p><br>
+
+<p class="topic4">&#10144; ORDER ONLINE</p>
+<p class="topic3">
+The SG Listing Service is included with our Premium Plan. For our other plans, just add it to your shopping basket when placing your Small Business Showcase WebPages order.</p>
+</div>
+
+<div class="column3" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+<p align="center" style="margin:0;padding:0 5px;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id36').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div id="id36" class="w3-modal w3-animate-opacity">
 <div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
@@ -791,13 +790,11 @@ Claiming citations from local directories can help give your Small Business more
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
+<hr class="style-one">
+
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 are you ready?</p>
 
@@ -809,14 +806,15 @@ are you ready?</p>
 <img src="https://user-images.githubusercontent.com/25410880/55688636-78691b80-592f-11e9-9c73-2476aea2a843.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></div></div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:10px;margin:0;">
+<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
 <p class="topic2">
 Is your workforce adequately trained and well-versed in your products and services? Is your business prepared to welcome new clients? An online presence is a crucial component of your marketing strategy, but operational excellence will set you apart from competitors.<br><br>
 
 If you're prepared to increase your company's visibility with our new Small Business Showcase WebPages, let's get started today!</p>
 
-<p align="right" class="w3-hover-shadow">
-<a class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;"href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">GET STARTED</a></p>
+<p align="center" class="w3-hover-shadow">
+<a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">GET STARTED</a></p>
+
 </div>
 </div>
 </div>
@@ -896,30 +894,12 @@ function myFunction() {
   }
 }
 </script>
-<script>
-function openTablink(TablinkName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(TablinkName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-
-document.getElementById("defaultOpen").click();
-</script>
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
 
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
