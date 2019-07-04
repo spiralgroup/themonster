@@ -59,14 +59,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 .nab a:hover {
@@ -81,10 +81,11 @@ body, html {
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
+
 .mySlides {display:none;}
 
 img {vertical-align: middle;}
@@ -95,16 +96,6 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -161,23 +152,6 @@ img {
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -194,7 +168,7 @@ img {
     margin: 10px;
     padding: 0;
     display: inline-block;
-    float: left;
+    float: center;
 }
 
 @media (max-width: 900px) {
@@ -247,7 +221,7 @@ img {
 
 
 .column2 {
-    width: 31.5%;
+    width: 72%;
     margin: 0 2px 0 2px;
     padding: 0;
     display: inline-block;
@@ -276,21 +250,6 @@ img {
 }
 
 
-.tablink1 {
-    background-color: #ffffff;
-    font-family: calibri;
-    color: black;
-    float: center;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0 2px 8px 0;
-    font-size: 12px;
-    letter-spacing: .5px;
-    display: inline-block;
-}
-
 .tablink {
     background-color: #d3d3d3;
     font-family: ubuntu;
@@ -300,9 +259,9 @@ img {
     border: none;
     border-radius: 2px;
     cursor: pointer;
-    padding: 8px 12px;
+    padding: 7px 12px;
     margin: 0 0 8px 0;
-    font-size: 12px;
+    font-size: 14px;
     display: inline-block;
 }
 
@@ -325,14 +284,78 @@ img {
 #Step4 {background-color:#ffffff;}
 #Step5 {background-color:#ffffff;}
 #Step6 {background-color:#ffffff;}
+
 .active1 {
   background-color: #e6e6e6;}
+  
+.topic {
+font-family: roboto;
+font-size: 16px;
+color: #444;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic3 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic4 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic5 {
+font-family: ubuntu condensed;
+font-size: 16px;
+color: dodgerblue;
+text-shadow:0 0 1px dodgerblue;
+text-align: center;
+letter-spacing: .5px;
+padding: 75px 0 10px 0;
+margin:0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2, .topic3, .topic4, .topic5 {
+  text-align: center;  
+  padding: 5px 0 0 0;
+   }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .topic {
+  text-align: center;  
+  padding: 20px 0 10px 0;
+  margin: 0;
+  }
+  }
+  
+  hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f5f5f5, #ccc, #f5f5f5); }
+
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+
+<body style="width:100%;"> 
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -356,462 +379,613 @@ img {
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
-    
+
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
 </div>
 </div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
 </div>
+
 <center>
-<div class="content">
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:10px 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
-step 1</p>
-</div>
-</div>
-<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-</div>
-</div>
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column3" style="padding:0 2px 4px 2px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:10px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+create account</p>
+
+
+<div class="w3-row" style="width:100%;">
+<div class="w3-half" style="margin:0 0 20px 0;">
 <img src="https://user-images.githubusercontent.com/25410880/42121304-6c8a3154-7bfa-11e8-8e61-e62957f76456.png" style="width:80%;">
 </div>
-</div>
-<p align="center" style="padding:55px 0 10px 0;margin:0;"><a rel="nofollow" style="font-family:ubuntu condensed;font-size:14px;color:dodgerblue;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px dodgerblue;">CREATE YOUR ACCOUNT</a></p>
+
+<center>
+<div class="w3-half" style="margin:0;">
+<p class="topic5">COMPLETE THESE STEPS</p>
 <div class="tablink" onclick="openTablink('Step1', this, 'dodgerblue')" id="defaultOpen">1</div>
 <div class="tablink" onclick="openTablink('Step2', this, 'dodgerblue')">2</div>
 <div class="tablink" onclick="openTablink('Step3', this, 'dodgerblue')">3</div>
 <div class="tablink" onclick="openTablink('Step4', this, 'dodgerblue')">4</div>
 <div class="tablink" onclick="openTablink('Step5', this, 'dodgerblue')">5</div>
 <div class="tablink" onclick="openTablink('Step6', this, 'dodgerblue')">6</div>
-<div id="Step1" class="tabcontent" style="padding:0;margin:0;">
+
 <center>
+<div id="Step1" class="tabcontent" style="padding:0;margin:0;">
 <div class="column3" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 1. Choose Business Category</p>
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Tap Image to Select Category Below</p>
 </div>
 </div>
-</div>
+
 <div id="Step2" class="tabcontent" style="padding:0;margin:0;">
 <center>
 <div class="column3" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 2. Choose Showcase Plan</p>
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Choose Showcase Plan on Order Form</p>
 </div>
 </div>
-</div>
+
 <div id="Step3" class="tabcontent" style="padding:0;margin:0;">
 <center>
 <div class="column3" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 3. Provide Business Details</p>
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Provide Relevant Business Details</p>
 </div>
 </div>
-</div>
+
 <div id="Step4" class="tabcontent" style="padding:0;margin:0;">
 <center>
 <div class="column3" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 4. List Up to 12 Showcase Items</p>
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">List Your Showcase Items (12 Max)</p>
 </div>
 </div>
-</div>
+
 <div id="Step5" class="tabcontent" style="padding:0;margin:0;">
 <center>
 <div class="column3" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 5. Proceed to Checkout</p>
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Proceed to Our Secure Checkout</p>
 </div>
 </div>
-</div>
+
 <div id="Step6" class="tabcontent" style="padding:0;margin:0;">
 <center>
 <div class="column3" style="padding:0;margin:0;">
-<div class="content w3-panel" style="background-color:#fff;padding:2px;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Step 6. Get Verified</p>
+<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Be Available for Phone Confirmation</p>
 </div>
 </div>
-</div>
-<button onclick="document.getElementById('id13').style.display='block'" class="w3-button" style="font-family:calibri;font-size:13px;color:#fff;letter-spacing:.5px;border-radius:2px;padding:6px 8px;margin:5px 0 50px 0;background-color:dodgerblue;">PLANS & PRICING</button>
-<div id="id13" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content w3-card-4 w3-white" style="padding:0;margin:0 0 20px 0;">
-<header class="w3-container w3-light-grey" style="padding:0 5px;">
-<p align="center" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#000;text-shadow:0 0 1px #000;padding:8px 8px 6px 8px;margin:8px;text-decoration:none;">
-<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">EXPLORE OUR DEMO WEBPAGES</a></p>
-<span onclick="document.getElementById('id13').style.display='none'" class="w3-button w3-small w3-display-topright">&times;</span>
-</header>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="row-padding" style="width:100%;padding:0;margin:0;">
-<div class="w3-third" style="margin:0 0 6px 0;border-radius:4px 4px 0 0;">
-<div class="column w3-card" style="padding:5px;margin:0;border-radius:2px">
-<div class="content w3-panel w3-white" style="padding:5px 10px 0 10px;margin:1px 2px 2px 2px;">
-<p align="center" class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;border-radius:2px;padding:8px 8px 6px 8px;margin:8px;">SIMPLE START</p><br>
-<p align="center" style="font-family:ubuntu;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #222;">$13.79 Per Month &#124; Paid Annually</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Products & Services Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Contact Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> About Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> Careers Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> SG Listing Service</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> Special Offers Online Ads</p>
-<p align="left" style="font-family:calibri,helvetica;font-size:12px;color:#000000;padding:5px 0 0 0;margin:0;border-top:1px solid transparent;">
-<b>The Fine Print</b></p>
-<p align="left" style="font-family:roboto;font-size:11px;color:#000000;">
-<i class="material-icons" style="color:#000;font-size:11px;">shopping_cart</i> included with your plan<br>
-<i class="material-icons" style="color:#000;font-size:11px;">remove_shopping_cart</i> not included with your plan</p>
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 6px 0;border-radius:4px 4px 0 0;">
-<div class="column w3-card" style="padding:5px;margin:0;border-radius:4px">
-<div class="content w3-panel w3-white" style="padding:5px 10px 0 10px;margin:1px 2px 2px 2px;">
-<p align="center" class="w3-button w3-pink" style="white;font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;border-radius:2px;padding:8px 8px 6px 8px;margin:8px;">BUSINESS ESSENTIALS</p><br>
-<p align="center" style="font-family:ubuntu;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #222;">$16.97 Per Month &#124; Paid Annually</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Products & Services Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Contact Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> About Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Careers Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> SG Listing Service</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">remove_shopping_cart</i> Special Offers Online Ads</p>
-<p align="left" style="font-family:calibri,helvetica;font-size:12px;color:#000000;padding:5px 0 0 0;margin:0;border-top:1px solid transparent;">
-<b>The Fine Print</b></p>
-<p align="left" style="font-family:roboto;font-size:11px;color:#000000;">
-<i class="material-icons" style="color:#000;font-size:11px;">shopping_cart</i> included with your plan<br>
-<i class="material-icons" style="color:#000;font-size:11px;">remove_shopping_cart</i> not included with your plan</p>
-</div>
-</div>
-</div>
-
-
-<div class="w3-third" style="margin:0 0 6px 0;border-radius:4px 4px 0 0;">
-<div class="column w3-card" style="padding:5px;margin:0;border-radius:4px">
-<div class="content w3-panel w3-white" style="padding:5px 10px 0 10px;margin:1px 2px 2px 2px;">
-<p align="center" class="w3-button" style="background-color:green;font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;border-radius:2px;padding:8px 8px 6px 8px;margin:8px;">BUSINESS PREMIUM</p><br>
-<p align="center" style="font-family:ubuntu;font-size:12px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #222;">$24.99 Per Month &#124; Paid Annually</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Products & Services Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Contact Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> About Us Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Careers Page</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> SG Listing Service</p>
-<p align="left" style="font-family:roboto;font-size:13px;color:#000000;">
-<i class="material-icons" style="color:#000000;font-size:12.5px;vertical-align:middle;">shopping_cart</i> Special Offers Online Ads <i class="material-icons" style="color:green;font-size:14px;">local_offer</i></p>
-<p align="left" style="font-family:calibri,helvetica;font-size:12px;color:#000000;padding:5px 0 0 0;margin:0;border-top:1px solid transparent;">
-<b>The Fine Print</b></p>
-<p align="left" style="font-family:roboto;font-size:11px;color:#000000;">
-<i class="material-icons" style="color:#000;font-size:11px;">shopping_cart</i> included with your plan<br>
-<i class="material-icons" style="color:#000;font-size:11px;">remove_shopping_cart</i> not included with your plan</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></div>
-</div>
-</div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:50px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:20px 0 10px 0;margin:0;border-top:1px solid #f5f5f5;">
-<p align="center" style="font-family:roboto;font-size:12px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #000;padding:30px 0 10px 0;margin:0;">TAP IMAGE TO SELECT CATEGORY</p>
-</div>
-
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px 2px 0 0;">
 <img src="https://user-images.githubusercontent.com/25410880/56709508-8dd39900-66d6-11e9-91cc-2fda370a8a3d.png" style="width:100%;border-radius:2px 2px 0 0;">
 
-<div class="content w3-panel" style="background-color:dodgerblue;padding:6px 8px;margin:0;border-radius:0 0 2px 2px;font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;">Need Help? Call 773-242-0705.</div>
+<div class="content w3-panel w3-hover-shadow" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id87').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; VIEW OUR SHOWCASE PLANS</button>
+
+ <div id="id87" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+ <div class="w3-modal-content w3-white" style="padding:0;margin:10px;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<center>    
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6f2ff;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#cce7ff;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">SIMPLE START &#124; $13.79 Per Month</a></p>
+
+<div class="content w3-panel" style="background-color:#f0f8ff;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; Careers Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; SG Listing Service</p>
+   </div>
+    </div>
+     </div>
+    
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#fde8ec;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#fbd0d9;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">ESSENTIALS &#124; $16.97 Per Month</a></p>
+
+<div class="content w3-panel" style="background-color:#fde8ec;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Careers Page</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; SG Listing Service</p>
+    </div>
+    </div>
+      </div>
+   
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6ffe6;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#b3ffb3;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">PREMIUM &#124; $24.99 Per Month</a></p>
+
+<div class="content w3-panel" style="background-color:#e6ffe6;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Careers Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; SG Listing Service</p>
+    </div>
+    </div>
+      </div>
+         
+ 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="column" style="background-color:#fff;margin:0;padding:5px;">
+<p class="topic3">Unlike our competitors, we update and completely maintain your Small Business Showcase WebPages. Getting started with us doesn't mean you'll have to attempt to learn code during a 14-day free trial period—unless that's your goal.<br><br>
+
+You're just minutes away from completing the process of creating your new account. Click the button below for some useful tips.</p>
+</div>
 </div>
 </div>
 
+
+<div class="w3-half" style="background-color:#fff;padding:0;margin:10px 0 0 0;">  
+<div class="column" style="background-color:#fff;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 12px;">
+<button onclick="document.getElementById('id88').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id88')">CREATING YOUR ACCOUNT</button></p>
+
+ <div id="id88" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+    <div class="column2" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 25px 0;padding:0;">Creating Your Account</p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<p class="topic4">&#10144; CHOOSING A CATEGORY</p>
+<p class="topic3">
+Select a business category by clicking the image that corresponds to that particular category. To learn more about a category, just click on the category's label. If you don't see your category, choose the one that most closely characterizes your Small Business.</p><br>
+
+<p class="topic4">&#10144; COMPLETING THE ORDER FORM</p>
+<p class="topic3">
+Your Small Business Information. Once you have selected your business category, you will be taken to our secure online order form to complete the process of creating your new Merchant Account. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our Demo WebPages so you will know the kind of information needed to complete the online order form.<br><br>
+
+Choosing Your Plan. If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Please keep in mind that our Premium Plan includes the SG Listing Service. If you decide on this plan, do not add the SG Listing Service to your shopping basket.</p><br>
+
+<p class="topic3">
+Your Product Images. We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge.</p><br>
+
+<p class="topic3">
+Team Member Images. On your About Us WebPage, you have the option of displaying individual photos of your team members. Alternatively, you can use a group photo. We do not require these images to be on a white background.</p><br>
+
+<p class="topic4">&#10144; CONFIRMATION</p>
+<p class="topic3">
+Once we have received your completed order form, we will contact you the next business day to confirm your information. If you have chosen to skip certain fields while completing the order form, we will also use this time to get that information. Please allow time for us to confirm all the details of your new Spiral Group, Inc. Merchant Account.</p><br>
+
+<p class="topic4">&#10144; OTHER INFORMATION</p>
+<p class="topic3">
+We require that all plans be paid annually. We do not provide refunds on Small Business Showcase WebPages purchases.</p>
+</div>
+
+<div class="column2" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id88').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-half" style="background-color:#fff;padding:0;margin:10px 0 0 0;">  
+<div class="column" style="background-color:#fff;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 12px;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:0 0 2px 2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:0 0 2px 2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">apparel & accessories <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; APPAREL & ACCESSORIES</button>
 
-<div id="id01" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div id="id01" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">APPAREL & ACCESSORIES</p>
+
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Adult toys. Apparel for men, women, and children. Handbags, luggage, and travel bags. Jewelry and watches. Novelty items. Perfumes and colognes. Personalized items.</p>
+
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Adult toys. Apparel for men, women, and children. Handbags, luggage, and travel bags. Jewelry and watches. Novelty items. Perfumes and colognes. Personalized items.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id01').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id01').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:0 0 2px 2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:0 0 2px 2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">automotive <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; AUTOMOTIVE</button>
 
-<div id="id02" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div id="id02" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">AUTOMOTIVE</p>
+
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking (valet) services. Party bus rentals. Remote starter installation. Towing services. Windshield repair and replacement.</p>
+
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking (valet) services. Party bus rentals. Remote starter installation. Towing services. Windshield repair and replacement.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id02').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
-
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:0 0 2px 2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:0 0 2px 2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520649-8268e980-2c20-11e9-84a2-5a0017178e22.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">beauty & health <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; BEAUTY & HEALTH</button>
 
-<div id="id03" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520649-8268e980-2c20-11e9-84a2-5a0017178e22.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div id="id03" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">BEAUTY & HEALTH</p>
+
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Barbers and barber shops. Blowouts. Braids, weaves, and sew-ins. Cosmetic dentistry. Cuts, styles, and coloring. Face and skin care. Fitness centers. Hair removal. Lashes and brows. Makeup artistry. Makeup and cosmetics. Massage therapy. Nail services. Nutritionists. Salons and salon packages. Tattoos and piercings.</p>
+
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Barbers and barber shops. Blowouts. Braids, weaves, and sew-ins. Cosmetic dentistry. Cuts, styles, and coloring. Face and skin care. Fitness centers. Hair removal. Lashes and brows. Makeup artistry. Makeup and cosmetics. Massage therapy. Nail services. Nutritionists. Salons and salon packages. Tattoos and piercings.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id03').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id03').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
   
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520620-42a20200-2c20-11e9-8039-218d8c42bb9c.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">entertainment <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id04').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; ENTERTAINMENT</button>
 
-<div id="id04" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520620-42a20200-2c20-11e9-8039-218d8c42bb9c.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div id="id04" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">ENTERTAINMENT</p>
+
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Art galleries. Carnivals and amusement parks. Hot-air balloon rides. Bowling. Bus tours. Concerts and other venues. Dinner cruises. Festivals. Food tours. Golf. Haunted houses. Helicopter tours. Magicians (illusionists). Live theater. Movie theaters. Murder mystery dinner theaters and cruises. Museums and science centers. Paintballing. Poetry readings. Skating. Skydiving. Sporting events. Stage plays. Stand-up comedy. Wine tours.</p>
+
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Art galleries. Carnivals and amusement parks. Hot-air balloon rides. Bowling. Bus tours. Concerts and other venues. Dinner cruises. Festivals. Food tours. Golf. Haunted houses. Helicopter tours. Magicians (illusionists). Live theater. Movie theaters. Murder mystery dinner theaters and cruises. Museums and science centers. Paintballing. Poetry readings. Skating. Skydiving. Sporting events. Stage plays. Stand-up comedy. Wine tours.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id04').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id04').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">food & drink <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id05').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; FOOD & DRINK</button>
 
-<div id="id05" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div id="id05" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">FOOD & DRINK</p>
+
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Bakeries. Bars and pubs. Breweries. Cafés. Ethnic restaurants. Fast casual dining concepts. Fine dining concepts. Full service restaurants. Gourmet cuisine. Grocers. Ice cream/frozen yogurt bars. Juice bars. Pizzerias. Prepared meals. Sandwich shops. Steak houses. Taprooms. Wine and spirits. Wineries.</p>
+
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Bakeries. Bars and pubs. Breweries. Cafés. Ethnic restaurants. Fast casual dining concepts. Fine dining concepts. Full service restaurants. Gourmet cuisine. Grocers. Ice cream/frozen yogurt bars. Juice bars. Pizzerias. Prepared meals. Sandwich shops. Steak houses. Taprooms. Wine and spirits. Wineries.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id05').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id05').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">home services <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id06').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; HOME SERVICES</button>
 
-<div id="id06" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div id="id06" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">HOME SERVICES</p>
+
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog-walking and other pet services. Duct cleaning. Flooring installation. General contractors. Gutter cleaning. Handymen. Home alarm installation. House-keeping services. HVAC technicians. Laundry services. Movers. Painters. Pest control. Pet supplies. Plumbers. Remodeling services. Upholstery cleaning. Window cleaning. Etc.</p>
+
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog-walking and other pet services. Duct cleaning. Flooring installation. General contractors. Gutter cleaning. Handymen. Home alarm installation. House-keeping services. HVAC technicians. Laundry services. Movers. Painters. Pest control. Pet supplies. Plumbers. Remodeling services. Upholstery cleaning. Window cleaning. Etc.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id06').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
-  
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id06').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
   
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id07').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">personal services <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id07').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; PERSONAL SERVICES</button>
 
+<div id="id07" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div id="id07" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">PERSONAL SERVICES</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Art lessons. Boxing lessons. Business, Career & Life coaching. Computer training. Cooking lessons. Dance studios. Electronics repair. Event planning. Flying lessons. Golf lessons. Martial arts training. Mentoring services. Music lessons. Online learning courses. Printing services. Sailing lessons. Sports training. Tax preparation services. Tennis lessons. Voice lessons. Etc.</p>
+
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Art lessons. Boxing lessons. Business, Career & Life coaching. Computer training. Cooking lessons. Dance studios. Electronics repair. Event planning. Flying lessons. Golf lessons. Martial arts training. Mentoring services. Music lessons. Online learning courses. Printing services. Sailing lessons. Sports training. Tax preparation services. Tennis lessons. Voice lessons. Etc.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id07').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id07').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="content w3-panel" style="padding:0;margin:0;">
-<button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-white" style="margin:0;padding:6px 8px;border-radius:0;font-family:khand medium;font-size:15.5px;color:#000;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;">spiritual enrichment <i class="material-icons" style="color:#000;font-size:15.5px;vertical-align:middle;">launch</i></button>
+<div class="content w3-panel w3-hover-shadow w3-white" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id08').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:8px;margin:0;text-decoration:none;">&#10144; SPIRITUAL ENRICHMENT</button>
 
-<div id="id08" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png" style="width:100%;border-radius:2px;" border="0"></div></div>
+<div id="id08" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:60%;border-radius:0 0 2px 2px;">
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THIS CATEGORY INCLUDES</p>
-</div>
-</div>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px;margin:0;">
+<p align="center" style="margin:0 0 30px 0;padding:0;font-family:roboto;font-size:18px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">SPIRITUAL ENRICHMENT</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Acupuncturists. Akashic records readers. Astrologers. Clairvoyants. Fortune tellers. Gemstone readers. Holistic healers. Hypnotists. Intuitives. Magicians. Metaphysicians and metaphysical shops. Mystics. Numerologists. Occult bookstores. Palmistry. Psychics. Reiki healers. Religious and spiritual organizations. Runes readers. Tarot card readers and other cartomancers. Other lightworkers.</a></p>
+<p class="topic4">&#10144; THIS CATEGORY INCLUDES</p>
+<p class="topic3">Acupuncturists. Akashic records readers. Astrologers. Clairvoyants. Fortune tellers. Gemstone readers. Holistic healers. Hypnotists. Intuitives. Magicians. Metaphysicians and metaphysical shops. Mystics. Numerologists. Occult bookstores. Palmistry. Psychics. Reiki healers. Religious and spiritual organizations. Runes readers. Tarot card readers and other cartomancers. Other lightworkers.</p>
 
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id08').style.display='none'">CLOSE</button></div>
-</div></div></div></div></div></div>
+<hr class="style-one">
+
+<p class="topic4">&#10144; TELL US WHAT'S MISSING</p>
+<p class="topic3">Don't see the products and services your Small Business offers? Call us at 773-242-0705.</p>
 </div>
-</div>
-</div>
-</div>
-</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://form.jotform.com/82334586547163" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SELECT THIS CATEGORY</a></p>
 </div>
 </div>
 
-<script>
-var slideIndex = 0;
-showSlides();
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id08').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -850,7 +1024,7 @@ document.getElementById("defaultOpen").click();
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
 
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
