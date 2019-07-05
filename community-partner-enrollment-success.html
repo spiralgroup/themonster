@@ -61,14 +61,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 .nab a:hover {
@@ -83,7 +83,7 @@ body, html {
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -99,21 +99,6 @@ img {vertical-align: middle;}
 }
 
 
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-img {
-    border-radius: 0; 
-    max-width: 100%;
-    height: auto;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -127,7 +112,7 @@ img {
 
 .row,
 .row > .column {
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
@@ -142,7 +127,6 @@ img {
     background-color: #ffffff;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
 }
 
 @media (max-width: 900px) {
@@ -164,67 +148,49 @@ img {
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-
-.active1 {
-  background-color: #e6e6e6;}
-  
-    .topic1 {
-font-family:calibri;
-font-size:17px;
-color:#222;
-text-shadow:0 0 1px #000;
-text-align: left;
-letter-spacing: .5px;
-padding: 0;
-margin:0;
-}
-
 .topic2 {
 font-family:roboto;
 font-size:14px;
 color:#000;
-text-align: left;
+text-align: justify;
 letter-spacing: .5px;
 padding: 0;
 margin: 0;
 }
 
+.topic4 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+
+.active1 {
+  background-color: #e6e6e6;}
+  
 @media screen and (max-width: 768px) {
-  .topic1, .topic2 {
+  .topic2, .topic4 {
   text-align: center;  
-  padding: 0;
-  margin: 0;
+  padding: 2px;  
   }
   }
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<body style="width:100%;"> 
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -248,8 +214,8 @@ margin: 0;
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
     </ul>
 </div>
 </div>
@@ -258,36 +224,24 @@ margin: 0;
 
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
+<div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
 </div>
 </div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
+
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 enrollment success</p>
 
-<div class="w3-row" style="width:100%;padding:0 20px;margin:50px 0 0 0;">
+<div class="w3-row" style="width:100%;padding:0 20px;margin:20px 0 0 0;">
 <div class="w3-threethird" style="margin:0 0 5px 0;">
-<div class="column" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
-<p class="topic1">
+<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
+<p class="topic4">
 SERVSAFE&reg; TRAINING PRODUCTS</p>
 
 <p class="topic2">
@@ -297,31 +251,25 @@ The cost for each ServSafe&reg; Exam Voucher for Food Service Managers in Illino
 
 The cost for each ServSafe&reg; Food Handler Course & Assessment Bundle for Food Service Workers in Illinois is $15. <a href="https://www.servsafe.com/access/SS/Catalog/ProductDetail/SSECT6">You may purchase these by clicking here</a>.</p><br>
 
-<p class="topic1">
+<p class="topic4">
 IF YOU ARE A TAX-EXEMPT ENTITY</p>
 
 <p class="topic2">
 After completing your profile, please fax your tax exemption certificate to ServSafe&reg; (866) 665-9570, Attn: Tax Department. They will then record your Tax Exemption Certificate so that your orders are not charged state sales tax for all states where you are exempt. Orders placed by individuals cannot be exempted; the order must be for the entity named on the certificate. Orders shipped to states where you are not exempt will be charged applicable sales tax.</p><br>
 
-<p class="topic1">
+<p class="topic4">
 QUESTIONS ABOUT TAX EXEMPTIONS</p>
 
 <p class="topic2">
 Please email MLin@restaurant.org or the National Restaurant Association Service Center at servicecenter@restaurant.org, or phone them at (800) 765-2122, ext 6703. In Chicagoland (312) 715-1010, ext. 6703.</p><br>
 
-<p class="topic1">
-CERTIFICATE OF EXCELLENCE VOUCHERS</p>
-
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
-The cost for each Certificate of Excellence Voucher for Job Seekers who qualify is $19.99. <a href="https://spiralgroup.github.io/themonster/purchase-coe-vouchers.html">You may purchase these by clicking here</a>.</p><br>
-
-<p class="topic1">
+<p class="topic4">
 JOB READY DOCUMENTS</p>
 
 <p class="topic2">
 If you've opted to provide funds that would allow qualified graduates of our training program to obtain job ready documentation, then visit our <a href="https://www.gofundme.com/help-us-reduce-recidivism">GoFundMe page by clicking here</a>.</p><br>
 
-<p class="topic1">
+<p class="topic4">
 JOB OPPORTUNITIES FOR OUR PROGRAM GRADUATES</p>
 
 <p class="topic2">
@@ -335,27 +283,7 @@ If you have, or are aware of, job opportunities for qualified graduates of our o
 </div>
 </div>
 
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -372,10 +300,10 @@ function myFunction() {
 </script>
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
+<div class="row" style="width:100%;padding:0;margin:70px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
 
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
