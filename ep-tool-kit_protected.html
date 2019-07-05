@@ -60,14 +60,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 .nab a:hover {
@@ -82,7 +82,7 @@ body, html {
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -97,16 +97,6 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -141,8 +131,7 @@ img {
     background-color: #ffffff;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
-}
+    }
 
 @media (max-width: 900px) {
     .column {
@@ -163,22 +152,6 @@ img {
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 .sticky {
   position: fixed;
@@ -188,11 +161,11 @@ img {
 
 .row,
 .row > .column3 {
-    padding: 0 13px 0 13px;
+    padding: 0;
 }
 
 .column3 {
-    width: 33.33%;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -214,12 +187,40 @@ img {
 }
 .active1 {
   background-color: #e6e6e6;}
+  
+  .topic2 {
+font-family:roboto;
+font-size:14px;
+color:#000;
+text-align: justify;
+letter-spacing: .5px;
+padding: 0;
+margin: 0;
+}
+
+.topic4 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2, .topic4 {
+  text-align: center;  
+  padding: 2px;  
+  }
+  }
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<body style="width:100%;"> 
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -243,8 +244,8 @@ img {
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
     </ul>
 </div>
 </div>
@@ -253,58 +254,48 @@ img {
 
 <center>
 <div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
+<div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
 </div>
 </div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
+
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 12px 2px 12px;margin:0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 good luck</p>
 
-<div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-threethird" style="background-color:#fff;padding:0;margin:0;">
-<div class="column1" style="padding:6px 10px 0 10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0 0 10px 0;margin:0 0 10px 0;border-bottom:1px solid #f1f1f1;">
-Please be patient while this page loads. It's packed with courses and training videos.</p>
+<div class="w3-row" style="width:100%;padding:0 20px;margin:20px 0 0 0;">
+<div class="w3-threethird" style="margin:0 0 5px 0;">
+<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:13px;letter-spacing:.50px;text-shadow:0 0 1px #000;">
+PLEASE BE PATIENT WHILE THIS PAGE LOADS. IT'S PACKED WITH COURSES & TRAINING VIDEOS.</p>
 
-<p align="left" style="font-family:roboto;font-size:14px;color:#000000;letter-spacing:.5px;padding:0;margin:0;">
-Below are the training modules you must complete in order to be deemed Employment Ready. You will have to complete this course-set using either a desktop or laptop computer. If you attempt to complete this online learning course using ANY other device, you may encounter technical difficulties that are beyond our control.<br><br>
+<p class="topic2">
+Below are the training modules you must complete in order to be deemed Job Ready. We recommend completing this course-set using either a desktop or laptop computer. If you attempt to complete this online learning course using ANY other device, you may encounter technical difficulties that are beyond our control.<br><br>
 
 We are available at 773.242.0705 or tech.support@spiralgroup.org to assist if you encounter technical difficulties using either a desktop or laptop computer only.<br><br>
 
 If you need guidance with completing the homework assignments, send e-mail to: tech.support@spiralgroup.org or call 773-242-0705 during normal business hours.<br><br>
 
-For best results, take courses and complete assignments in the order presented. Don't forget to bookmark this page so that you can return to it as often as required to bring all course-work to completion. Good luck with your training.</p><br>
+For best results, take courses and complete assignments in the order presented. Don't forget to bookmark this page and return to it as often as required to bring all course-work to completion. Good luck with your training.</p><br>
 
 <div class="panel-group" id="accordion" style="width:100%;margin:10px 0 0 0;">
   <div class="panel w3-white">
    <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
           WELCOME</a>
           </h4></div>
 <div id="collapse1" class="panel-collapse collapse">
 <div class="panel-body">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:.50px;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.<br>
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:11.5px;letter-spacing:.50px;text-shadow:0 0 1px #000;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.</p>
+
+<p align="center">
 <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/spiralgroup/themonster/files/2334184/Spiral.Group.Inc.New.Participant.Onboarding.Letter.pdf" style="width:100%;height:500px;"></p>
   </div>
   </div>
@@ -313,12 +304,15 @@ For best results, take courses and complete assignments in the order presented. 
  <div class="panel w3-white">
  <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-         <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+         <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
         ORIENTATION</a>
           </h4></div>
 <div id="collapse2" class="panel-collapse collapse">
 <div class="panel-body">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:.50px;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.<br>
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:11.5px;letter-spacing:.50px;text-shadow:0 0 1px #000;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.</p>
+
+<p align="center">
 <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/spiralgroup/themonster/files/1778351/00-Orientation.Course.An.Introduction.pdf" style="width:100%;height:1050px;">
 </p>
   </div>
@@ -328,12 +322,15 @@ For best results, take courses and complete assignments in the order presented. 
   <div class="panel w3-white">
  <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
          PROFESSIONAL DEVELOPMENT</a>
           </h4></div>
 <div id="collapse3" class="panel-collapse collapse">
 <div class="panel-body">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:.50px;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.<br>
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:11.5px;letter-spacing:.50px;text-shadow:0 0 1px #000;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.</p>
+
+<p align="center">
 <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/spiralgroup/themonster/files/1778352/01-Professional.Development.Course.pdf" style="width:100%;height:1050px;">
 </p>
   </div>
@@ -343,12 +340,15 @@ For best results, take courses and complete assignments in the order presented. 
  <div class="panel w3-white">
  <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
         CAREER DEVELOPMENT</a>
           </h4></div>
 <div id="collapse4" class="panel-collapse collapse">
 <div class="panel-body">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:.50px;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.<br>
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:11.5px;letter-spacing:.50px;text-shadow:0 0 1px #000;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.</p>
+
+<p align="center">
 <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/spiralgroup/themonster/files/1778353/02-Career.Development.Course.pdf" style="width:100%;height:1050px;">
 </p>
   </div>
@@ -358,12 +358,15 @@ For best results, take courses and complete assignments in the order presented. 
    <div class="panel w3-white">
  <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-         <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+         <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
          DOCUMENT PREPARATION</a>
           </h4></div>
 <div id="collapse5" class="panel-collapse collapse">
 <div class="panel-body">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:.50px;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.<br>
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:11.5px;letter-spacing:.50px;text-shadow:0 0 1px #000;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.</p>
+
+<p align="center">
 <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/spiralgroup/themonster/files/1778367/03-Document.Preparation.Course.pdf" style="width:100%;height:1050px;">
 </p>
   </div>
@@ -373,12 +376,15 @@ For best results, take courses and complete assignments in the order presented. 
  <div class="panel w3-white">
  <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
         INTERVIEW PREPARATION</a>
           </h4></div>
 <div id="collapse6" class="panel-collapse collapse">
 <div class="panel-body">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:.50px;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.<br>
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:11.5px;letter-spacing:.50px;text-shadow:0 0 1px #000;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.</p>
+
+<p align="center">
 <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/spiralgroup/themonster/files/1778355/04-Strategic.Interview.Preparation.Course.pdf" style="width:100%;height:1050px;">
 </p>
   </div>
@@ -388,86 +394,105 @@ For best results, take courses and complete assignments in the order presented. 
  <div class="panel w3-white">
  <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
 VIDEO RESOURCES</a>
           </h4></div>
 <div id="collapse7" class="panel-collapse collapse">
-<div class="panel-body" style="font-family:calibri;font-size:16px;letter-spacing:.50px;">
-<p align="left" style="font-family:calibri;font-size:16px;letter-spacing:.50px;"><b>OVERVIEW</b><br>In this section, we present you with video tools by <a href="http://jobspeaker.com">JobSpeaker</a>. They help you prepare for job interviews. Pay attention while watching these videos, because some of the information may be on the exam.<br>
-
-<center>
-<!-- Portfolio Gallery Grid -->
-<div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-    <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/7D1RcWS0ce0?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Best Practices</p>
-              </div>
-  </div>
-    <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-     <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/m5kR7TPAkSw?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Tell Me About...</p>
-         </div>
-     </div>
-     
-   <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-    <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/QiLDMXOH8bI?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Your Greatest Strength</p>
-         </div>
-     </div>
+<div class="panel-body">
+<p class="topic2">In this section, we present you with video tools by <a href="http://jobspeaker.com">JobSpeaker</a>. They help you prepare for job interviews. Some of the information in these videos may be on the exam.</p>
 </div>
 
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-     <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/i4LKoegE8P0?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Your Greatest Weakness</p>
-         </div>
-  </div>
-   <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-     <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/H25RnmslChI?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Difficult Situations</p>
-         </div>
-     </div>
-     
-   <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-    <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/FKiJZbsWMME?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Your Career Path</p>
-         </div>
-     </div>
+<div class="w3-row-padding" style="padding:0 4px;width:100%;margin:0;">
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/7D1RcWS0ce0?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; BEST PRACTICES</p>
+</div>
 </div>
 
-<center>
-<div class="row" style="width:100%;padding:0;margin:0;">
-  <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-   <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/SIaL36HsbbY?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Salary Questions</p>
-         </div>
-  </div>
-   <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-    <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/iETGNw9kunI?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Why Should We Hire You?</p>
-         </div>
-     </div>
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/m5kR7TPAkSw?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; TELL ME ABOUT YOURSELF</p>
+</div>
+</div>
      
-  <div class="column3" style="padding:4px;margin:0 0 20px 0;box-shadow:0 1px 2px #cccccc;border-radius:4px;">
-    <div class="content1" style="padding:0;margin:0;">
-    <p align="center" style="font-family:ubuntu;font-size:14px;letter-spacing:1px;text-shadow:0 1px 2px #cccccc;"><iframe style="width:100%;" src="https://www.youtube.com/embed/vbTZgIPYr8Y?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>Any Questions for Us?</p>
-         </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/QiLDMXOH8bI?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; YOUR GREATEST STRENGTH</p>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/i4LKoegE8P0?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; YOUR GREATEST WEAKNESS</p>
+</div>
+</div>
+  
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/H25RnmslChI?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; DIFFICULT SITUATIONS</p>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/FKiJZbsWMME?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; YOUR CAREER PATH</p>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/SIaL36HsbbY?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; SALARY QUESTIONS</p>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/iETGNw9kunI?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; WHY SHOULD WE HIRE YOU?</p>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column3 w3-card" style="margin:0 0 20px 0;border-radius:4px;">
+<iframe style="width:100%;margin:0;padding:0;" src="https://www.youtube.com/embed/vbTZgIPYr8Y?rel=0&amp;showinfo=0" frameborder="0" height="250" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:0 0 5px 0;margin:0;text-decoration:none;">&#10144; ANY QUESTIONS FOR US?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
   <div class="panel w3-white">
  <div class="panel-heading" style="background-color:#f5faff;border-radius:3px;">
        <h4 class="panel-title" align="left">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="font-family:calibri;font-size:14px;letter-spacing:1px;text-shadow:0 1px 1px #000000;">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="font-family:roboto;font-size:14px;
+color:#222;text-align:left;letter-spacing:.5px;text-shadow: 0 0 1px #000;">
         PERFORMANCE MANAGEMENT</a>
           </h4></div>
 <div id="collapse8" class="panel-collapse collapse">
 <div class="panel-body">
-<p align="center" style="font-family:calibri;font-size:11px;letter-spacing:.50px;">REFRESH THIS PAGE IF THE CONTENT BELOW DOESN'T APPEAR WITHIN A FEW SECONDS.<br>
+<p align="center" style="font-family:calibri,helvetica;color:#222;font-size:11.5px;letter-spacing:.50px;text-shadow:0 0 1px #000;">REFRESH IF THE CONTENT DOESN'T APPEAR WITHIN SECONDS.</p>
+
+<p align="center">
 <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/spiralgroup/themonster/files/1778356/05-Performance.Management.Course.pdf" style="width:100%;height:1050px;">
 </p>
   </div>
@@ -489,27 +514,6 @@ VIDEO RESOURCES</a>
 </div>
 
 <script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
-<script>
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
@@ -528,7 +532,8 @@ function myFunction() {
 <div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:38px 0 0 0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
+
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
 </div>
