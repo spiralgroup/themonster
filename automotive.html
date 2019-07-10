@@ -48,10 +48,32 @@ body, html {
   float: left;
  }
  
- .navbar {
+ .nab a {
+  float: center;
+  font-family: calibri,helvetica;
+  color: #222;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+.nab a:hover {
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
+}
+
+.navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -186,16 +208,6 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 .active {
   background-color: #717171;
 }
@@ -216,27 +228,6 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-.nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #000;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
-}
-
-.nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
-}
 
 
 /*==========SCALE-IN==========*/
@@ -375,10 +366,9 @@ $(document).ready(function(){
 </script>
 </head>
 
-<body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -404,14 +394,14 @@ $(document).ready(function(){
 <li><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Spiritual Enrichment</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/special-offers.html" style="background-color:green;font-family:calibri;font-size:11px;color:white;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SPECIAL OFFERS</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">JOIN OUR MARKETPLACE</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/sg-marketplace_special-offers.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SPECIAL OFFERS</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#f0f0f0;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">JOIN OUR MARKETPLACE</a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
-</div>
+
 <main>
   <div class="hero">
     <h1>automotive</h1>
@@ -436,7 +426,7 @@ $(document).ready(function(){
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54056014-a5e16e80-41a3-11e9-84ab-3f6413fc3bf7.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 airport transportation</p>
     </div>
     </div>
@@ -446,7 +436,7 @@ airport transportation</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54055811-fd330f00-41a2-11e9-81aa-7aec000ac14f.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
  <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 auto body repair</p>
  </div>
     </div>
@@ -456,7 +446,7 @@ auto body repair</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54055812-fdcba580-41a2-11e9-87e4-454e297cfa6f.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 auto detailing</p>
     </div>
     </div>
@@ -466,7 +456,7 @@ auto detailing</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54004391-3ec3ab80-410a-11e9-88db-01864e4b5e66.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 batteries, tires & car parts</p>
     </div>
     </div>
@@ -476,7 +466,7 @@ batteries, tires & car parts</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54004390-3ec3ab80-410a-11e9-9fd5-4afc64301455.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
    <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 brake services</p>
     </div>
     </div>
@@ -486,7 +476,7 @@ brake services</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54004393-3f5c4200-410a-11e9-8a66-48a4fcace401.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 driving instruction</p>
     </div>
     </div>
@@ -496,7 +486,7 @@ driving instruction</p>
  <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54004394-3ff4d880-410a-11e9-91c1-1ca852591fc9.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 luxury auto experiences</p>
     </div>
     </div>
@@ -507,7 +497,7 @@ luxury auto experiences</p>
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54004398-41be9c00-410a-11e9-9383-a9ce707aa48d.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 oil changes</p>
     </div>
     </div>
@@ -517,7 +507,7 @@ oil changes</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54004399-42573280-410a-11e9-96a9-1abb7fbb46b1.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 parking services</p>
     </div>
     </div>
@@ -527,7 +517,7 @@ parking services</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54058276-3d49c000-41aa-11e9-8407-17ea44c2884e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
  <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 remote starter installation services</p>
     </div>
     </div>
@@ -536,7 +526,7 @@ remote starter installation services</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54057120-db3b8b80-41a6-11e9-8262-eef8bd8244ce.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 towing services</p>
     </div>
     </div>
@@ -546,7 +536,7 @@ towing services</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54056114-f789f900-41a3-11e9-9414-c3fc1158410c.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 1px 1px #000;margin:0;">
+<p style="font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:6px 0;margin:0;">
 windshield repair & replacement</p>
       </div>
     </div>
@@ -576,10 +566,11 @@ function myFunction() {
 
 
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0 0 30px 0;">
+<div class="row" style="width:100%;padding:0;margin:50px 0 30px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:38px 0 0 0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
+
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
 </div>
