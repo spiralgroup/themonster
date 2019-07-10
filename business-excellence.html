@@ -64,8 +64,8 @@ img {
     background-color: #ffffff;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
-}
+   }
+   
 body, html {
     max-width: 1235px;
     height: 100%;
@@ -76,7 +76,6 @@ body, html {
 .header {
   padding: 0;
   background: #fff;
-  color: #585858;
   margin: 0;
   float: left;
   display: block;
@@ -103,8 +102,9 @@ body, html {
   margin: 0;
   text-align: left;
   float: left;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
 }
+
 .nab {
   overflow: hidden;
   padding: 10px;
@@ -115,14 +115,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 .nab a:hover {
@@ -137,7 +137,7 @@ body, html {
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -152,37 +152,10 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
-
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active {
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 .sticky {
   position: fixed;
@@ -219,59 +192,6 @@ img {vertical-align: middle;}
        }
 }
 
-.row,
-.row > .column4 {
-    padding: 0 33px 0 33px;
-}
-
-.column4 {
-    width: 49%;
-    margin: 10px;
-    padding: 0;
-    display: inline-block;
-    float: left;
-}
-
-@media (max-width: 900px) {
-    .column4 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
-    .column4 {
-        width: 100%;
-        float: center;
-       }
-}
-
-.column2 {
-    width: 32.7%;
-    display: inline-block;
-    float: center;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media (max-width: 620px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 620px) {
-    .column2 {
-        width: 100%;
-        float: center;
-}
-}
-
 .active1 {
   background-color: #e6e6e6;}
   
@@ -290,8 +210,30 @@ margin:0;
 font-family:roboto;
 font-size:14px;
 color:#000;
-text-align: left;
+text-align: justify;
 letter-spacing: .5px;
+padding: 0;
+margin: 0;
+}
+
+.topic3 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic4 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
 padding: 0;
 margin: 0;
 }
@@ -302,17 +244,17 @@ margin: 0;
 
 
 @media screen and (max-width: 768px) {
-  .topic2, .topic1 {
+  .topic2, .topic1, .topic3, .topic4 {
   text-align: center;  
   padding: 0 5px;  
   }
   }
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+<body style="width:100%;"> 
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -320,7 +262,7 @@ margin: 0;
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Business Excellence</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Special Offers</span>
 <a class="navbar-brand" href="http://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -336,8 +278,8 @@ margin: 0;
 <li class="active1"><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
+<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
     </ul>
 </div>
 </div>
@@ -346,139 +288,24 @@ margin: 0;
 
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
+<div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-</div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
+</div></div>
 
 <center>
 <div class="content">
 </div>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:15px 0 12px 0;margin:0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-business excellence</p>
+mystery shopping</p>
 
-<div class="w3-row" style="width:100%;padding:0 12px;margin:50px 0 0 0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
+<div class="w3-row" style="width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-third" style="margin:0 0 5px 0;">
-<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
-<input type="image" src="https://user-images.githubusercontent.com/25410880/43028144-1e749f56-8c4c-11e8-9170-78fafa2f40dd.png" style="width:100%;float:left;padding:0;margin:0;border-radius:2px;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>
-</div>
-</div>
-
-<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;">
-<div class="column1" style="padding:10px;margin:0;">
-<p class="topic1">OPERATIONAL ASSESSMENT</p>
-<p class="topic2">
-With the Operational Assessment, we can provide a critical evaluation of your operation, including elements contributing to the customer experience. After thorough analysis, we troubleshoot your business systems and create the SMP.<br><br>
-
-The SMP will help guide us in the direction of reducing costs, increasing profitability, and improving workforce productivity.</p>
-
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">MORE ABOUT THIS ASSESSMENT</button></p>
-
-<div id="id01" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/43028144-1e749f56-8c4c-11e8-9170-78fafa2f40dd.png" style="width:100%;padding:0;margin:0;border-radius:2px;float:center;">
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">ASSESSMENT COMPONENTS</p>
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Information gathering sessions. Interviews with leadership team. Operational & SWOT analyses. Strategic Management Plan.</a></p><br>
-
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">PRICE</p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">$379.98</a></p><br>
-
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">ORDER ONLINE</p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Click the image after closing this window to purchase.</a></p><br>
-
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">NO OBLIGATION</p>
-
-<p align="center"><a href="https://form.jotform.com/82323651984159" target="_blank" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Schedule a free consultation so we can help you formulate and implement a strategy that increases brand awareness.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id01').style.display='none'">CLOSE</button></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="w3-row" style="width:100%;padding:0 12px;margin:50px 0 0 0;">
-<div class="w3-third" style="margin:0 0 5px 0;">
-<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
-<img src="https://user-images.githubusercontent.com/25410880/48017189-81d12c00-e0e2-11e8-89ed-84a8bbb99823.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></div></div>
-
-<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;">
-<div class="column1" style="padding:10px;margin:0;">
-<p class="topic1">THE SMP</p>
-<p class="topic2">
-The Strategic Management Plan can be inavluable when adjusting your company's direction in response to a changing environment. We use it to help you focus efforts and resources, strengthen operations, and to ensure your workforce is working toward common goals.<br><br>
-
-Your SMP will articulate where your oganization is headed and the actions you'll need to take to achieve and maintain Operational Excellence.</p>
-
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">MORE ABOUT THE SMP</button></p>
-
-<div id="id02" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/48017189-81d12c00-e0e2-11e8-89ed-84a8bbb99823.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;">
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">THE SMP</p>
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">The Strategic Management Plan is included with the Operational Assessment, along with optional Implementation Support.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id02').style.display='none'">CLOSE</button></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="w3-row" style="width:100%;padding:0 12px;margin:50px 0 0 0;">
-<div class="w3-third" style="margin:0 0 5px 0;">
-<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
+<div class="column1" style="padding:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="A4AGPXHZRJJW4">
@@ -486,108 +313,121 @@ Your SMP will articulate where your oganization is headed and the actions you'll
 </form></div></div>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;">
-<div class="column1" style="padding:10px;margin:0;">
-<p class="topic1">MYSTERY SHOPPING PROGRAM</p>
+<div class="column1" style="padding:0 10px;margin:0;">
 <p class="topic2">
 We design and implement Mystery Shopping Programs that provide honest and in-depth views from the customers' perspective. We compile and analyze data from completed evaluations to gain awareness about how it affects your small business, operationally.<br><br>
 
 Our insights include wait & service times; impact of workforce training; quality of products & services; suggestive selling techniques; and parting statements.</p>
 
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0;text-decoration:none;">LEARN HOW OUR MSP WORKS</button></p>
+<p align="center" class="w3-hover-shadow">
+<button onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">MYSTERY SHOPPING PROGRAM</button></p>
 
-<div id="id03" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div id="id03" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+ <div class="w3-modal-content w3-white" style="padding:0;margin:10px;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<center>    
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0 0 12px 0;">
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:16px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">MYSTERY SHOPPING PROGRAM</p>
+<hr style="margin:5px 0;padding:0;" />
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">HOW IT WORKS</p><br>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/43028146-1ebd4800-8c4c-11e8-887b-b2d19699f203.png" style="width:100%;padding:0;margin:0;border-radius:2px;float:center;"></div>
-</div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">HOW THIS WORKS</p>
-</div>
-</div>
+<p class="topic4">1. Plan</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-pale-red" style="padding:10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-PLAN</p>
+<p class="topic3">
+We begin by getting to know your small business and operational structure so we can devise a custom mystery shopping plan and create a specific timeline of execution.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;">
-We begin by getting to know your small business and operational structure so we can devise a custom mystery shopping plan and create a specific timeline of execution.</p></div></div>
+<p class="topic4">2. Schedule</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-pale-blue" style="padding:10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-SCHEDULE</p>
+<p class="topic3">
+Next, we schedule certified shoppers to perform your specific tasks, such as purchasing & returning items, calling your customer service line, using your website, or asking questions of your associates. After discretely completing your tasks, we move on to the next phase.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;">
-Next, we schedule certified shoppers to perform your specific tasks, such as purchasing & returning items, calling your customer service line, using your website, or asking questions of your associates. After discretely completing your tasks, we move on to the next phase.</p></div></div>
+<p class="topic4">3. Evaluate</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-pale-yellow" style="padding:10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-EVALUATE</p>
+<p class="topic3">
+During this phase, the shopper completes your customized questionnaire. Answers are a combination of multiple choice or scored points, along with highly detailed comments that allow you to fully understand the overall customer experience.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;">
-During this phase, the shopper completes your customized questionnaire. Answers are a combination of multiple choice or scored points, along with highly detailed comments that allow you to fully understand the overall customer experience.</p></div></div>
+<p class="topic4">4. Analyze</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-pale-green" style="padding:10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-ANALYZE</p>
+<p class="topic3">
+We analyze data from completed evaluations to gain insight into how it affects your small business, and present you with a view of your operation through the eyes of the customer. We offer recommendations on how to honor stellar performance, or improve where needed.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;">
-We analyze data from completed evaluations to gain insight into how it affects your small business, and present you with a view of your operation through the eyes of the customer. We offer recommendations on how to honor stellar performance, or improve where needed.</p></div></div>
+<p class="topic4">5. Improve</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-light-grey" style="padding:10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-IMPROVE</p>
+<p class="topic3">
+We guide you on how to improve operational strategies using what we learn from the evaluations. Your new knowledge of problem areas will help you create noticeable changes that will delight your customers.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;">
-We guide you on how to improve operational strategies using what we learn from the evaluations. Your new knowledge of problem areas will help you create noticeable changes that will delight your customers.</p>
-</div></div>
+<p class="topic4">6. Repeat</p>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-pale-red" style="padding:10px;margin:0;">
-<p align="center" style="font-family:calibri;font-size:15px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-REPEAT</p>
+<p class="topic3">
+We will work with you to create a schedule of ongoing evaluations and other customer experience research services that will help fine-tune your brand experience and take your small business to the next level.</p>
 
-<p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;">
-We will work with you to create a schedule of ongoing evaluations and other customer experience research services that will help fine-tune your brand experience and take your small business to the next level.</p></div></div>
+<hr />
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-white" style="padding:10px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">PRICE I</p>
+<p class="topic4">Price I</p>
 
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">$99.99. The cost to customize your Mystery Shopping Program.</a></p><br>
+<p class="topic3">
+$99.99, the cost to customize your Mystery Shopping Program.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">PRICE II</p>
+<p class="topic4">Price II</p>
 
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">The cost to conduct each Mystery Shop will be determined.</a></p><br>
+<p class="topic3">
+The cost to conduct each Mystery Shop will be determined after customizing your program.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">ORDER ONLINE</p>
+<p class="topic4">Order Online</p>
 
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Click the image after closing this window to purchase.</a></p><br>
+<p class="topic3">
+Tap on the image after closing this window to purchase.</p><br>
 
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">NO OBLIGATION</p>
+<p class="topic4">No Obligation</p>
 
-<p align="center"><a href="https://form.jotform.com/82323651984159" target="_blank" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Schedule a free consultation.</a></p>
-
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0 0 0;" onclick="document.getElementById('id03').style.display='none'">CLOSE</button></div>
-</div>
-</div>
-</div>
-</div>
+<p class="topic3">
+Schedule a free consultation so we can discuss how implementing a Mystery Shopping Program can be invaluable for your Small Business.</p>
 </div>
 </div>
 
 
-<div class="w3-row" style="width:100%;padding:0 12px;margin:50px 0 0 0;">
-<div class="w3-third" style="margin:0 0 5px 0;">
-<div class="column1" style="padding:0;background-color:transparent;border-radius:2px 2px 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0 0 10px 0;">
+</div>
+
+<div class="w3-half" style="background-color:transparent;padding:0;margin:0;">  
+<div class="column" style="background-color:transparent;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://form.jotform.com/82323651984159" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SCHEDULE FREE CONSULTATION</a></p>
+</div>
+</div>
+
+
+<div class="w3-half" style="background-color:transparent;padding:0;margin:0;">  
+<div class="column" style="background-color:transparent;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id03').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
+<hr class="style-one">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+mock health inspection</p>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 0 12px;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third w3-white" style="margin:0;border-radius:4px 4px 0 0;">
+<div class="column1 w3-white" style="padding:0;margin:0;">
 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="D2DXWFU64GFKU">
@@ -598,93 +438,179 @@ We will work with you to create a schedule of ongoing evaluations and other cust
 
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;">
-<div class="column1" style="padding:10px;margin:0;">
-<p class="topic1">MOCK HEALTH INSPECTION</p>
+<div class="column1" style="padding:0 10px;margin:0;">
 <p class="topic2">
 It is likely that every organization in the food industry will undergo regular public health inspections conducted by local government health departments. We can help you prepare for an official City of Chicago Health Department Inspection.<br><br>
 
 During your Mock Health Inspection, we work closely with you to ensure food safety, while prioritizing any missed opportunities within your last health inspection report.</p>
 
-<p align="right" class="w3-hover-shadow"><button onclick="document.getElementById('id04').style.display='block'" class="btn btn-primary btn-block" style="background-color:dodgerblue;font-family:calibri;font-size:13px;color:#fff;letter-spacing:1px;border:none;border-radius:2px;padding:8px 10px;margin:10px 0 0 0;text-decoration:none;">MORE ABOUT OUR MOCK HEALTH INSPECTION</button></p>
+<p align="center" class="w3-hover-shadow">
+<button onclick="document.getElementById('id04').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">MOCK HEALTH INSPECTION</button></p>
 
-<div id="id04" class="w3-modal w3-animate-opacity">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
+<div id="id04" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+ <div class="w3-modal-content w3-white" style="padding:0;margin:10px;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<center>    
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0 0 12px 0;">
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:16px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">MOCK HEALTH INSPECTION</p>
+<hr style="margin:5px 0;padding:0;" />
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">HOW IT WORKS</p><br>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/54404253-23b7e500-4690-11e9-9b7e-0a85c47e97c9.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<p class="topic3">
+During the inspection, we develop and help you implement a Food Safety Management system that will likely increase your chances of receiving a higher grade during a follow-up City of Chicago Health Inspection. Our goal is to help your food service establishment avoid being among the eateries facing major Health Code Violations.</p>
+
+<p align="center">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://spiralgroup.github.io/themonster/health-code-violations.html" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:20px 0;padding:8px;text-decoration:none;">HEALTH CODE VIOLATIONS</a></p>
+
+<p class="topic4">Price</p>
+
+<p class="topic3">
+$129.99, the cost to conduct a Mock Health Inspection and develop your Food Safety Management Plan.</p><br>
+
+<p class="topic4">Order Online</p>
+
+<p class="topic3">
+Tap on the image after closing this window to purchase.</p><br>
+
+<p class="topic4">No Obligation</p>
+
+<p class="topic3">
+Schedule a free consultation so we can discuss the benefits of training your staff to conduct regular health inspections.</p>
+<hr />
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0 0 7px 0;">WHY A MOCK HEALTH INSPECTION</p>
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;background-color:#fff;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">During the inspection, we develop and help you implement a Food Safety Management system that will likely increase your chances of receiving a higher grade during a follow-up City of Chicago Health Inspection.</a></p><br>
-
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">WE'RE SERIOUS ABOUT FOOD SAFETY</p>
-
-<p align="center"><a href="https://spiralgroup.github.io/themonster/health-code-violations.html" target="_blank" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Our goal is to help you avoid being among the eateries facing major Health Code Violations like those here.</a></p><br>
-
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">PRICE</p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">$129.99</a></p><br>
-
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">ORDER ONLINE</p>
-
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Click the image after closing this window to purchase.</a></p><br>
-
-<p align="center" style="font-family:roboto;font-size:14px;color:dodgerblue;letter-spacing:.5px;margin:0;">NO OBLIGATION</p>
-
-<p align="center"><a href="https://form.jotform.com/82323651984159" target="_blank" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Schedule a free consultation so we can discuss the benefits of conducting regular Mock Health Inspections.</a></p><br>
-</div></div>
-
-
-<div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="column" style="padding:20px 10px 10px 10px;margin:0;background-color:#fff;border-top:1px solid #f5f5f5;border-radius:0 0 2px 2px;">
-<p align="center"><a rel="nofollow" style="font-family:roboto;font-size:12px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0 0 10px 0;">
+<p class="topic3">
 Michelle Jones is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. Along her career path, she has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers.<br><br>
 
-Michelle has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant (as a consultant for the Subway brand, Michelle conducted numerous health inspections.)</a></p>
+Michelle has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant (as a consultant for the Subway brand, Michelle conducted numerous health inspections and helped to prevent health code violations.)</p>
+</div>
 
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0 0 0;" onclick="document.getElementById('id04').style.display='none'">CLOSE</button></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="w3-half" style="background-color:transparent;padding:0;margin:10px 0 0 0;">  
+<div class="column" style="background-color:transparent;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://form.jotform.com/82323651984159" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SCHEDULE FREE CONSULTATION</a></p>
 </div>
 </div>
 
 
-<script>
-var slideIndex = 0;
-showSlides();
+<div class="w3-half" style="background-color:transparent;padding:0;margin:10px 0 0 0;">  
+<div class="column" style="background-color:transparent;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id04').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
+<hr class="style-one">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+operational assessment</p>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 2px 12px;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third w3-white" style="margin:0;border-radius:4px 4px 0 0;">
+<div class="column1 w3-white" style="padding:0;margin:0;">
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="89CKKGMKRKN5W">
+<input type="image" src="https://user-images.githubusercontent.com/25410880/43028144-1e749f56-8c4c-11e8-9170-78fafa2f40dd.png" style="width:100%;float:left;padding:0;margin:0;border-radius:2px;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</form>
+</div>
+</div>
+
+<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;">
+<div class="column1" style="padding:0 10px;margin:0;">
+<p class="topic2">
+With the Operational Assessment, we can provide a critical evaluation of your operation, including elements contributing to the customer experience. After thorough analysis, we troubleshoot your business systems and create the SMP.<br><br>
+
+The SMP will help guide us in the direction of reducing costs, increasing profitability, and improving workforce productivity.</p>
+
+<p align="center" class="w3-hover-shadow">
+<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">OPERATIONAL ASSESSMENT</button></p>
+
+<div id="id01" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+ <div class="w3-modal-content w3-white" style="padding:0;margin:10px;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<center>    
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0 0 12px 0;">
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:16px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">OPERATIONAL ASSESSMENT</p>
+<hr style="margin:5px 0;padding:0;" />
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">THE COMPONENTS</p><br>
+
+<p class="topic3">
+The Operational Assessment is comprised of information gathering sessions; interviews with leadership team; operational & SWOT analyses, and a Strategic Management Plan (SMP).
+
+After compiling all your data, we develop your SMP and use it to communicate where your oganization is headed and the actions you'll need to take to achieve and maintain Operational Excellence.<br><br>
+
+We recommened using both your Operational Assessment and SMP to focus your efforts and resources, develop lean processes, strengthen operations, and to ensure your workforce is working toward common goals.</p>
+
+<hr />
+
+<p class="topic4">Price</p>
+
+<p class="topic3">
+$379.98, the cost to conduct an Operational Assessment and develop your SMP.</p><br>
+
+<p class="topic4">Order Online</p>
+
+<p class="topic3">
+Tap on the image after closing this window to purchase.</p><br>
+
+<p class="topic4">No Obligation</p>
+
+<p class="topic3">
+Schedule a free consultation so we can discuss the benefits of conducting an Operational Assessment for your Small Business.</p>
+</div>
+</div>
+
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0 0 10px 0;">
+</div>
+
+<div class="w3-half" style="background-color:transparent;padding:0;margin:0;">  
+<div class="column" style="background-color:transparent;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://form.jotform.com/82323651984159" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;">SCHEDULE FREE CONSULTATION</a></p>
+</div>
+</div>
+
+
+<div class="w3-half" style="background-color:transparent;padding:0;margin:0;">  
+<div class="column" style="background-color:transparent;margin:0;padding:0 0 5px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id01').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -701,10 +627,10 @@ function myFunction() {
 </script>
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
+<div class="row" style="width:100%;padding:0;margin:20px 0;">
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
 
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
 </div>
