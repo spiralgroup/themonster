@@ -243,7 +243,6 @@ font-size: 13px;
 color: #222;
 text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
 padding: 0;
 margin: 0;
 }
@@ -262,11 +261,53 @@ margin: 0;
   }
   
     hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
+
+.button {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-family: calibri;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
  
 </style>
 </head>
 <body style="width:100%;"> 
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
@@ -292,8 +333,8 @@ margin: 0;
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
@@ -301,11 +342,13 @@ margin: 0;
 </div>
 
 <center>
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-</div>
-</div>
+</div></div>
+
+<center>
+<div class="content">
 </div>
 
 <center>
@@ -319,8 +362,6 @@ who we are</p>
 <div class="w3-row" style="width:100%;margin:0 0 10px 0;">
 <div class="w3-third w3-white" style="margin:0;border-radius:4px 4px 0 0;">
 <div class="column1 w3-white" style="padding:0;margin:0;">
-
-
 <img src="https://user-images.githubusercontent.com/25410880/54096546-9744b400-4369-11e9-8a59-1a3ba96945d7.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
@@ -332,13 +373,12 @@ Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois
 
 We're committed to assisting this population of entrepreneurs by leveraging our skills and many years of corporate experience to help them build reliable companies that can support the needs of their markets.</p>
 
-
 <p align="center" class="w3-hover-shadow">
 <a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://form.jotform.com/82323651984159" target="_blank">SCHEDULE YOUR FREE CONSULTATION</a></p>
 </div></div>
 </div></div>
 </div></div>
-</div></div>
+
 
 
 <center>
@@ -379,7 +419,7 @@ In 2016, Michelle created a free, online Employment Preparation Training Program
 <div class="w3-container" style="width:100%;">
 <div class="column3" style="padding:0;margin:0;background-color:#fff;">
 <p class="topic3">
-Along her career path, Michelle has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers. She has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant.<br><br>
+Along her career path, Michelle Jones has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers. She has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant.<br><br>
 
 Michelle opened her first business, RMRC (Restaurant Materials Resource Center), in 1999 where she designed business documents, labels, and posters for the food-service industry.<br><br>
 She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. Michelle has been a web developer since 1999, and an ordained minister since 2007.</p>
@@ -388,8 +428,6 @@ She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examina
 <div class="column3" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
 <p align="center" style="margin:0;padding:0;">
 <button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
-</div>
-</div>
 </div>
 </div>
 </div>
