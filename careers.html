@@ -254,6 +254,48 @@ margin: 0;
   padding: 0 5px;  
   }
   }
+  
+  .button {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-family: calibri;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
 </style>
 </head>
 <body style="width:100%;"> 
@@ -267,7 +309,7 @@ margin: 0;
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Work From Home</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Legendary</span>
 <a class="navbar-brand" href="http://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -282,15 +324,15 @@ margin: 0;
 <li><a href="http://spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Tools</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
-
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
+
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 12px 12px #f0f0f0;">
@@ -299,7 +341,9 @@ margin: 0;
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:12px 0;margin:60px 0 0 0;">
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 work from home</p>
 
@@ -322,7 +366,7 @@ We know it takes an especially dedicated person to work in sales. That's why we 
 <p align="center" class="w3-hover-shadow"><button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:calibri;font-size:13px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;border:none;border-radius:2px;padding:10px;margin:20px 0;text-decoration:none;">WE'RE DEDICATED TO YOUR SUCCESS</button></p>
 
 <div id="id02" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
-<div class="w3-modal-content w3-card-4" style="background-color:transparent;width:45%;border-radius:0 0 2px 2px;">
+<div class="w3-modal-content w3-card-4" style="background-color:transparent;width:55%;border-radius:0 0 2px 2px;">
 <div class="w3-row" style="width:100%;margin:0;background-color:transparent;">
 <div class="column w3-card" style="background-color:transparent;padding:0;margin:0;border-radius:2px;">
 <img src="https://user-images.githubusercontent.com/25410880/54404255-24507b80-4690-11e9-978d-5ebc261dff88.png" style="width:100%;border-radius:2px 2px 0 0;">
@@ -330,8 +374,8 @@ We know it takes an especially dedicated person to work in sales. That's why we 
 </div>
 
 <div class="w3-row" style="width:100%;margin:0 0 20px 0;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="padding:0;margin:0 0 10px 0;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">YOU CAN EXPECT</p>
+<div class="column" style="background-color:#fff;padding:10px;margin:0;border-radius:0 0 2px 2px;">
+<p align="center" style="padding:0;margin:0 0 10px 0;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">As An Independent Sales Rep, You Can Expect</p>
 
 <p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;padding:0 0 5px 0;">
 Product Knowledge Training</p>
@@ -353,9 +397,17 @@ Professional Profile on Our Website</p>
 </div>
 
 <center>
-<div class="column" style="background-color:#fff;margin:0;padding:10px;">
+<div class="w3-row-padding" style="width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-half">
 <p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://form.jotform.com/82323651984159" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 12px 0;padding:8px;text-decoration:none;">APPLY NOW</a></p>
+</div>
+
+<div class="w3-half">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 12px 0;padding:8px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
 </div>
 </div>
 </div>
