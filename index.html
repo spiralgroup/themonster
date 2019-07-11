@@ -330,7 +330,6 @@ font-size: 13px;
 color: #222;
 text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
 padding: 0;
 margin: 0;
 }
@@ -341,7 +340,7 @@ font-size: 14px;
 color: #222;
 text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
+text-shadow: 0 0 1px #ccc;
 padding: 0;
 margin: 0;
 }
@@ -366,7 +365,49 @@ margin: 0;
   }
   }
   
-  hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
+  hr.style-one { border: 0; height: 1px; background: #fff; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
+  
+  .button {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-family: calibri;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
  
 </style>
 </head>
@@ -397,14 +438,13 @@ margin: 0;
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
-
 <center>
 <div class="slideshow-container w3-white" style="width:100%;margin:0;padding:0 12px;">
 <div style="text-align:center;padding:0;margin:0;">
@@ -588,47 +628,58 @@ All you have to do is follow the instructions outlined in our "How It Works" sec
 
  <div id="id87" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
     <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
-      <div class="w3-row" style="width:100%;margin:0;">
-    <div class="column2" style="padding:0;margin:0;">
+   <div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0;">
 <p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">How It Works</p>
 </div>
-</div>
 
-<center>
-<div class="w3-container" style="width:100%;">
-<div class="column3" style="padding:0;margin:0;background-color:#fff;">
-<p class="topic4">&#10144; GETTING STARTED</p>
+<div class="w3-threethird" style="padding:0;margin:0;">
+<hr style="background-color:#f0f0f0;margin:5px 0 15px 0;padding:0;" />
+
+<p class="topic4">Getting Started</p>
 <p class="topic3">
 After clicking an Add Listing or Get Started button anywhere on our website, you will arrive at the page that allows you to begin the process of creating your new Spiral Group, Inc. Merchant Account.</p><br>
 
-<p class="topic4">&#10144; CHOOSING A CATEGORY</p>
+<p class="topic4">Choosing Your Category</p>
 <p class="topic3">
-Select a business category by clicking the image that corresponds to that particular category. To learn more about a category, just click on the category's label. If you don't see your category, choose the one that most closely characterizes your Small Business.</p><br>
+Select a business category by clicking the image that corresponds to it. To learn more about a category, just click on it's label. If you don't see your category, choose the one that most closely characterizes your Small Business.</p><br>
 
-<p class="topic4">&#10144; COMPLETING THE ORDER FORM</p>
+<p class="topic4">Completing the Order Form</p>
 <p class="topic3">
-Your Small Business Information. Once you have selected your business category, you will be taken to our secure online order form to complete the process of creating your new Merchant Account. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our Demo WebPages so you will know the kind of information needed to complete the online order form.<br><br>
+&#10144; Your Small Business Information. Once you have selected your business category, you will be taken to our secure online order form to continue the process of creating your new Spiral Group, Inc. Merchant Account. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our Demo WebPages so you will know the kind of information needed to complete the online order form.<br><br>
 
-Choosing Your Plan. If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Please keep in mind that our Premium Plan includes the SG Listing Service. If you decide on this plan, do not add the SG Listing Service to your shopping basket.</p><br>
+&#10144; Choosing Your Plan. If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Please keep in mind that our Premium Plan includes the SG Listing Service. If you decide on this plan, do not add the SG Listing Service to your shopping basket.<br><br>
 
+&#10144; Your Product Images. We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge.<br><br>
+
+&#10144; Team Member Images. On your About Us WebPage, you have the option of displaying individual photos of your staff. Alternatively, you can use a group photo. We do not require these images to be on a white background.</p><br>
+
+<p class="topic4">Phone Confirmation</p>
 <p class="topic3">
-Your Product Images. We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge. This could increase the time it takes for us to complete your webpages.</p><br>
+Once you have submitted your completed order form and payment, you will need to schedule your Phone Confirmation to complete the process of creating your Spiral Group, Inc. Merchant Account.</p><br>
 
+<p class="topic4">Other Information</p>
 <p class="topic3">
-Team Member Images. On your About Us WebPage, you have the option of displaying individual photos of your team members. Alternatively, you can use a group photo. We do not require these images to be on a white background.</p><br>
-
-<p class="topic4">&#10144; CONFIRMATION</p>
-<p class="topic3">
-Once we have received your completed order form, we will contact you the next business day to confirm your information. If you have chosen to skip certain fields while completing the order form, we will also use this time to get that information. Please allow time for us to confirm all the details of your new Spiral Group, Inc. Merchant Account.</p><br>
-
-<p class="topic4">&#10144; OTHER INFORMATION</p>
-<p class="topic3">
-We require that all plans be paid annually. We do not provide refunds on Small Business Showcase WebPages purchases.</p>
+We require that all plans be paid annually. We do not provide refunds on Small Business Showcase WebPages purchases.</p><br>
+</div>
 </div>
 
-<div class="column3" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
-<p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87').style.display='none'">EXIT THIS WINDOW</button></p>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+</div>
+
+<div class="w3-half" style="padding:0;margin:0;">  
+<div class="column" style="margin:0;padding:0 0 10px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 5px 0;padding:8px;text-decoration:none;">DEMO WEBPAGES</a></p>
+</div>
+</div>
+
+
+<div class="w3-half" style="background-color:transparent;padding:0;margin:0;">  
+<div class="column" style="background-color:transparent;margin:0;padding:0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:8px;text-decoration:none;" onclick="document.getElementById('id87').style.display='none'">EXIT THIS WINDOW</button></p>
 </div>
 </div>
 </div>
@@ -657,13 +708,11 @@ We require that all plans be paid annually. We do not provide refunds on Small B
 </div>
 </div>
 </div>
-</div>
 
 
 <center>
 <div id="listing" class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
 <hr class="style-one">
-
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 local business listings</p>
 
@@ -683,47 +732,58 @@ We'll register your Small Business in only the top electronic business directori
 
 <p align="center" class="w3-hover-shadow"><button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">THE SG LISTING SERVICE</button></p>
 
-<div id="id36" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+ <div id="id36" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
     <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
-      <div class="w3-row" style="width:100%;margin:0;">
-    <div class="column2" style="padding:0;margin:0;">
-<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">SG Listing Service</p>
-</div>
+   <div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">The SG Listing Service</p>
 </div>
 
-<center>
-<div class="w3-container" style="width:100%;">
-<div class="column3" style="padding:10px 10px 0 10px;margin:0;">
-<p class="topic4">We register your Small Business in only the top electronic business directories such as Bing, FourSquare, Google, and Yahoo.</p><br>
+<div class="w3-threethird" style="padding:0;margin:0;">
+<hr style="background-color:#f0f0f0;margin:5px 0 15px 0;padding:0;" />
+<p class="topic3">We developed this service to help grow your Small Business. We manually register your company in only the top electronic business directories such as Bing, FourSquare, Google, and Yahoo.</p><br>
 
-<p class="topic4">&#10144; CLAIMING CITATIONS</p>
+<p class="topic4">Claiming Citations</p>
 <p class="topic3">
-Claiming citations from local directories can help give your Small Business more legitimacy and increase visibility. We can claim, update, and even create listings for you to ensure that your small business is represented accurately across the web.</p><br>
+Claiming citations from local directories can help give your Small Business more legitimacy and increase visibility. We can claim, update, and even create listings for you to ensure that your company is represented accurately across the web.</p><br>
 
-<p class="topic4">&#10144; NICHE CITATIONS</p>
+<p class="topic4">Niche Citations</p>
 <p class="topic3">
 We'll create listings for your company on industry-specific local directories. We keep track of the top local industry sites for each of our MarketPlace Categories.</p><br>
 
-<p class="topic4">&#10144; MARKETING OPPORTUNITIES</p>
+<p class="topic4">Marketing Opportunities</p>
 <p class="topic3">
 We take full advantage of opportunities to transform your Small Business listings into marketing opportunities. Some online directories allow businesses to showcase their logos, photos, videos, complete business descriptions, hours and holiday hours, menus, staff bios, products & services lists, and other business data alongside their basic information.</p><br>
 
-<p class="topic4">&#10144; LET US DO THE WORK</p>
+<p class="topic4">Let Us Do the Work</p>
 <p class="topic3">
 Put us in control of your brand's local online presence and we'll make sure consumers find accurate and consistent information about your Small Business.</p><br>
 
-<p class="topic4">&#10144; PRICE</p>
+<p class="topic4">Price</p>
 <p class="topic3">
 $5.99 Per Month &#124; Paid Annually</p><br>
 
-<p class="topic4">&#10144; ORDER ONLINE</p>
+<p class="topic4">Order Online</p>
 <p class="topic3">
-The SG Listing Service is included with our Premium Plan. For our other plans, just add it to your shopping basket when placing your Small Business Showcase WebPages order.</p>
+The SG Listing Service is included with our Premium Plan. For our other plans, just add it to your shopping basket when placing your Small Business Showcase WebPages order.</p><br>
+</div>
 </div>
 
-<div class="column3" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+</div>
+
+<div class="w3-half" style="padding:0;margin:0;">  
+<div class="column" style="margin:0;padding:0 0 10px 0;">
+<p align="center" style="margin:0;padding:0 8px;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://form.jotform.com/82323651984159" target="_blank"  style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 5px 0;padding:8px;text-decoration:none;">SCHEDULE FREE CONSULTATION</a></p>
+</div>
+</div>
+
+<div class="w3-half" style="padding:0;margin:0;">  
+<div class="column" style="margin:0;padding:0 0 10px 0;">
 <p align="center" style="margin:0;padding:0 5px;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id36').style.display='none'">EXIT THIS WINDOW</button></p>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 5px 0;padding:8px;text-decoration:none;" onclick="document.getElementById('id36').style.display='none'">EXIT THIS WINDOW</button></p>
 </div>
 </div>
 </div>
@@ -784,17 +844,11 @@ Claiming citations from local directories can help give your Small Business more
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
 <hr class="style-one">
-
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
 are you ready?</p>
 
@@ -814,31 +868,15 @@ If you're prepared to increase your company's visibility with our new Small Busi
 
 <p align="center" class="w3-hover-shadow">
 <a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">GET STARTED</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
 <script>
