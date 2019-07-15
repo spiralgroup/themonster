@@ -29,7 +29,7 @@
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -274,28 +274,6 @@ img {
   margin: 0;
 }
 
-.nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #000;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
-}
-
-.nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
-}
-
 .slideshow-container {
   width: 100%;
   position: relative;
@@ -373,10 +351,10 @@ main{
 .bar{
   width: 100%;
   height: 200px;
-  background: -moz-linear-gradient(289deg, #c60a09 0%, #999900 36%, dodgerblue 100%);
-  background: -webkit-linear-gradient(289deg, #c60a09 0%, dodgerblue 36%, #c60a09 100%);
-  background: -ms-linear-gradient(289deg, #c60a09 0%, dodgerblue 36%, #c60a09 100%);
-  background: linear-gradient(161deg, #c60a09 0%, dodgerblue 36%, #999900 100%);
+  background: -moz-linear-gradient(289deg, transparent 100%);
+  background: -webkit-linear-gradient(289deg, transparent 100%);
+  background: -ms-linear-gradient(289deg, transparent 100%);
+  background: linear-gradient(161deg, transparent 100%);
   opacity: 0.3;
   position: absolute; 
   z-index: 0;
@@ -426,7 +404,95 @@ img1 {
 img1:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+.button {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-family: calibri;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
+ 
+ 
+ .nab a {
+  float: center;
+  font-family: calibri,helvetica;
+  color: #222;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+.nab a:hover {
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
+}
+
+.topic2 {
+font-family: khand medium;
+font-size: 18px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #222;
+padding: 0;
+margin: 0;
+}
+
+ .topic5 {
+font-family: roboto;
+font-size: 15px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
 </style>
+
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -454,11 +520,10 @@ $(document).ready(function(){
 });
 </script>
 </head>
-
 <body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -484,13 +549,12 @@ $(document).ready(function(){
 <li><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Spiritual Enrichment</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/special-offers.html" style="background-color:green;font-family:calibri;font-size:11px;color:white;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SPECIAL OFFERS</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">JOIN OUR MARKETPLACE</a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
 </nav>
-</div>
 </div>
 
 <center>
@@ -655,36 +719,42 @@ South Loop</p>
  </div>
     </div>
 
+<center>
+<div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:70px 0 0 0;">
+<div class="w3-row-padding" style="background-color:#fff;width:100%;margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:0;">
+<p class="topic2">Browse Businesses by Category</p>
+</div>
+</div>
+</div>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
-<div class="slideshow-container w3-card" style="background-color:#fff;width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:calibri;font-size:16px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:15px 0 0 0;margin:0;">
-BROWSE BUSINESSES BY CATEGORY</p>
-<div class="customer-logos slide" style="font-family:roboto;font-size:14px;color:#000;text-shadow:0 0 1px #000;letter-spacing:.5px;width:100%;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0 0 80px 0;box-shadow:0 32px 32px #f0f0f0;">
+<div class="customer-logos slide w3-white" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:5px 5px 0 5px;margin:0;">
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">apparel & accessories</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">apparel & accessories</p></div>
 
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">automotive</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">automotive</p></div>
 
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img src="https://user-images.githubusercontent.com/25410880/52520649-8268e980-2c20-11e9-84a2-5a0017178e22.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">beauty & health</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">beauty & health</p></div>
 
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img src="https://user-images.githubusercontent.com/25410880/52520620-42a20200-2c20-11e9-8039-218d8c42bb9c.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">entertainment</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">entertainment</p></div>
 
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">food & drink</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">food & drink</p></div>
 
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">home services</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">home services</p></div>
 
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">personal services</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">personal services</p></div>
 
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0;margin:0;">spiritual enrichment</p></div>
+<p style="padding:10px 0 5px 0;margin:0;">spiritual enrichment</p></div>
 </div>
 </div>
 </div>
@@ -727,23 +797,24 @@ function showSlides() {
 }
 </script>
 
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-<div class="row" style="background-color:transparent;width:100%;padding:0;margin:0 0 30px 0;">
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:60px 0 0 0;">773 242-0705</p>
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
+<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
+<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p class="topic5">become visible.</p>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
 </div>
 </div>
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<center><div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;border-top:1px solid #f1f1f1;">
-<div class="nab topnav1" style="width:100%;padding:35px 0 30px 0;margin:0;">
+
+<center>
+<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
 <a href="https://spiralgroup.github.io/themonster/about-us.html">ABOUT US</a>
 <a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank">CUSTOMER FEEDBACK</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
-
 </div>
 </div>
 </div>
