@@ -33,46 +33,6 @@
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
 <style type="text/css">
-
-.openinghours {
-    font-family:calibri;
-    font-size:14px;
-    color:#000;
-    letter-spacing:.5px;
-    padding:0 2px 0 2px;
-    overflow: hidden;
-    display: inline-block;
-}
-.openinghourscontent {
-    float:left;
-}
-
-.today {
-    color: dodgerblue;
-}
-.opening-hours-table tr td:first-child {
-  font-weight:bold;
-}
-#open-status {
-    display:block;
-    text-align:center;
-}
-
-.open {
-    color:#fff;
-}
-    
-.opening-hours-table tr td {
-    padding:0 5px 5px 5px;
-}
-
-body, html {
-    max-width: 1235px;
-    height: 100%;
-    margin: auto;
-    background-image: linear-gradient(to left, #fff, #fff);
-}
-
 .header {
   padding: 0;
   background: #ffffff;
@@ -87,7 +47,16 @@ body, html {
   margin: 0;
   text-align: left;
   float: left;
- }
+}
+
+body, html {
+    max-width: 1235px;
+    height: 100%;
+    margin: auto;
+    background-image: linear-gradient(to left, #fff, #fff);
+}
+
+
 .nab {
   overflow: hidden;
   padding: 10px;
@@ -98,14 +67,14 @@ body, html {
 .nab a {
   float: center;
   font-family: calibri,helvetica;
-  color: #000;
+  color: #222;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
   font-size: 10.5px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 1px 1px #585858;
+  text-shadow: 0 0 1px #000;
 }
 
 .nab a:hover {
@@ -117,19 +86,19 @@ body, html {
   text-decoration: none;
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
 .navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 .mySlides {display:none;}
 
 img {vertical-align: middle;}
@@ -140,36 +109,65 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
+.active {
+  background-color: #717171;
+}
 
-.dot {
-  height: 6px;
-  width: 6px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
+.active1 {
+  background-color: #e6e6e6;}
+  
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-family: calibri;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+.button span {
+  cursor: pointer;
   display: inline-block;
-  transition: background-color 0.6s ease;
-}
-img {
-    border-radius: 0; 
-    max-width: 100%;
-    height: auto;
+  position: relative;
+  transition: 0.5s;
 }
 
-* {
-    box-sizing: border-box;
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-.row,
-.row > .column1 {
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
+.content {
+    background-color: #ffffff;
     padding: 0;
-    margin: 5px 0;
-}
-
-.column1 {
-    width: 32.7%;
-    display: inline-block;
-    float: center;
+    margin: 0;
 }
 
 .row:after {
@@ -177,7 +175,6 @@ img {
     display: table;
     clear: both;
 }
-
 
 .column3 {
     width: 100%;
@@ -192,62 +189,20 @@ img {
     margin: 0;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.content {
-    background-color: #ffffff;
-    padding: 0;
-    margin: 0;
-}
-
-.column2 {
-    width: 50%;
-    float: left;
+.column4 {
+    width: 75%;
+    float: center;
     padding: 0;
     margin: 0;
   }
 
 .row,
-.row > .column2 {
+.row > .column4 {
     padding: 0;
     margin: 0;
 }
 
 @media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-
-@media (max-width: 525px) {
-    .column1 {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 525px) {
-    .column1 {
-        width: 100%;
-        float: center;
- }
-}
-
-@media (max-width: 900px) {
     .column3 {
         width: 100%;
         float: center;
@@ -261,40 +216,69 @@ img {
  }
 }
 
-.active {
-  background-color: #717171;
+@media (max-width: 900px) {
+    .column4 {
+        width: 100%;
+        float: center;
+       }
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+@media (max-width: 900px) {
+    .column4 {
+        width: 100%;
+        float: center;
+ }
+}
+.topic1 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+padding: 0;
+margin: 0;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.topic2 {
+font-family: roboto;
+font-size: 15px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+
+.topic3 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.topic4 {
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
 }
-.active1 {
-  background-color: #e6e6e6;}
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid #ffffff;">
+
+<body style="width:100%;"> 
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -302,7 +286,7 @@ img {
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Demo Showcase</span>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Demo WebPages</span>
 <a class="navbar-brand" href="http://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -318,316 +302,127 @@ img {
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button w3-red" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
-    
+
 <center>
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<div class="mySlides animate-right">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-<div class="mySlides animate-right">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-<div class="text"></div>
-</div>
-</div>
-<div style="text-align:center;padding:0;margin:0;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
+</div></div>
 
 <center>
 <div class="content">
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:15px 12px 0 12px;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-demo webpages</p>
-
-<div class="w3-container w3-panel w3-card w3-white" style="width:100%;padding:0;margin:52px 0 0 0;">
-<div class="row w3-white" style="width:100%;padding:0;margin:0;">
-<div class="column3" style="padding:0;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:0;margin:0;border-radius:4px;">
-</div>
-</div>
-
-<div class="row" style="background-color:#f5faff;width:100%;padding:0;margin:0;">
-<div class="column1" style="padding:0 1px 1px 1px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:15px 10px;margin:0;border-radius:4px 4px 0 0;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:25px;text-shadow:2px 2px 2px #cccccc;">filter_1</i></p>
-
-<p align="left" style="font-family:roboto;font-size:13.5px;letter-spacing:.5px;color:#000000;">
-To begin exploring our showcase demo web pages, tap the button below.</p>
-</div>
-</div>
-
-<div class="column1" style="padding:0 1px 1px 1px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:15px 10px;margin:0;border-radius:4px 4px 0 0;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:25px;text-shadow:2px 2px 2px #cccccc;">filter_2</i></p>
-
-<p align="left" style="font-family:roboto;font-size:13.5px;letter-spacing:.5px;color:#000000;">
-From there, you can navigate to all the other web pages within the demonstration.</p>
-</div>
-</div>
-
-
-<div class="column1" style="padding:0 1px 1px 1px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:15px 10px;margin:0;border-radius:4px 4px 0 0;">
-<p align="left"><i class="material-icons" style="color:#000000;font-size:25px;text-shadow:2px 2px 2px #cccccc;">filter_3</i></p>
-
-<p align="left" style="font-family:roboto;font-size:13.5px;letter-spacing:.5px;color:#000000;">
-If you have any questions, do not hesitate to contact us at 773-242-0705.</p>
- </div>
-</div>
-
-<div class="column3" style="padding:0 1px 1px 1px;margin:0;">
-<div class="content1 w3-panel w3-white" style="padding:15px 10px;margin:0;border-radius:4px 4px 0 0;">
-<a class="w3-button w3-blue" href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:calibri;font-size:14px;letter-spacing:.5px;border-radius:2px;padding:12px 16px;margin:10px 0;text-decoration:none;float:center;">EXPLORE</a>
-</div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;margin:100px 0 0 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-our location</p>
-
-<div class="w3-container w3-panel w3-card" style="background-color:#f5faff;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="column3" style="padding:0;margin:0;">
-<div class="content1 w3-panel" style="background-color:#f5faff;padding:0;margin:0;">
-</div>
-</div>
 
 <center>
-<div class="row" style="background-color:#f5faff;padding:0;margin:0;">
-  <div class="column3" style="background-color:#f5faff;padding:10px 0;margin:0;vertical-align:middle;">
- 
- <p align="center" style="font-family:calibri;font-size:20px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">SPIRAL GROUP, INC.</p>
- <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">Online Marketing Solutions</p>
-  <p align="center" style="font-family:calibri;font-size:16px;color:#000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-773-242-0705</p>
-  </div>
-  </div>
-    
-    <div class="column1" style="padding:0 1px 1px 1px;margin:0;">
-  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
-  <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">store_mall_directory</i></p>
-   <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">ADDRESS</p>
-   <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">550 North Central Avenue<br>
-Chicago, Illinois 60644</p>
-
-<form action="http://maps.google.com/maps" method="get" target="_blank">
-<input type="hidden" name="daddr" value="550 North Central Avenue, Chicago, IL" />
-<input type="submit" value="get directions" class="w3-button" style="background-color:#f5faff;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000;letter-spacing:.5px;border-radius:2px;margin:10px 0 0 0;">
-</form>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:20px;">
+<p class="topic3"><a class="w3-button" href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="background-color:transparent;border:2px solid #f0f0f0;border-radius:3px;text-decoration:none;color:#222;padding:20px;">Explore Our Demo WebPages</a></p>
 </div>
+</div>
+</div>
+
+
+<center>
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;">
+<div class="w3-threethird">
+<div class="column4" style="padding:0;margin:0;">
+<p align="center" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/61180520-6bae3080-a5cc-11e9-8e2f-bfcfb0ffb899.png" style="width:100%;"></p>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:40px 0 0 0;">
+<div class="w3-row-padding" style="background-color:#fff;width:100%;margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:20px 0;">
+<p class="topic2">All Plans Include Maintenance & Support</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0 0 100px 0;">
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6f2ff;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#cce7ff;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">SIMPLE START &#124; $13.79 Per Month</a></p>
+
+<div class="content w3-panel" style="background-color:#f0f8ff;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; Careers Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; SG Listing Service</p>
    </div>
+    </div>
+     </div>
+    
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#fde8ec;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#fbd0d9;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">ESSENTIALS &#124; $16.97 Per Month</a></p>
+
+<div class="content w3-panel" style="background-color:#fde8ec;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Careers Page</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10134; SG Listing Service</p>
+    </div>
+    </div>
+      </div>
    
-   <div class="column1" style="padding:0 1px 1px 1px;margin:0;">
-  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
-    <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">slow_motion_video</i></p>
-      <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">BUSINESS HOURS</p>
-  <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">
-General Operating Hours<br>
-For Your Convenience</p>
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6ffe6;border-radius:2px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" style="background-color:#b3ffb3;font-family:roboto;font-size:12.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">PREMIUM &#124; $24.99 Per Month</a></p>
 
-<button onclick="document.getElementById('id77').style.display='block'" class="w3-button" style="background-color:#f5faff;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;text-decoration:none;border-radius:2px;margin:10px 0 0 0;">view hours</button>
-
- <div id="id77" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card-4" style="width:45%;background-color:transparent;border-radius:2px;padding:0;margin:0 0 20px 0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column w3-card" style="padding:0;margin:0;background-color:transparent;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/55688636-78691b80-592f-11e9-9c73-2476aea2a843.png" style="width:100%;border-radius:2px 2px 0 0;">
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column" style="background-color:dodgerblue;padding:5px;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#fff;letter-spacing:.5px;margin:0;">BUSINESS HOURS</p>
-</div>
-</div>
-
-<div class="w3-row w3-white" style="width:100%;margin:0;">
-<div class="column3" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
- <section class="openinghours" style="background-color:#fff;">
-    <div class="openinghourscontent section w3-white">
-        <table class="opening-hours-table w3-white">
-    
-            <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
-                <td>Monday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
-                <td>Tuesday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
-                <td>Wednesday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
-                <td>Thursday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Friday" itemprop="openingHours" title="Open Friday at 9am to 6pm">
-                <td>Friday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
-                <td>Saturday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
-                <td>Sunday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-        </table>
-        </div>
-     </section>
-        
-        <div class="w3-row w3-white" style="width:100%;margin:0;">
-<div class="column3" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-      
-<button class="w3-button w3-center" style="background-color:dodgerblue;padding:6px 8px;border-radius:2px;font-family:roboto;font-size:13px;color:#fff;letter-spacing:1px;margin:10px 0;" onclick="document.getElementById('id77').style.display='none'">CLOSE</button>
-</div>
-</div>   
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var currentDate = new Date();
-var weekday = [];
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-var currentDay = weekday[currentDate.getDay()];
-
-var currentTimeHours = currentDate.getHours();
-currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
-var currentTimeMinutes = currentDate.getMinutes();
-var timeNow = currentTimeHours + "" + currentTimeMinutes;
-
-var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
-$(currentDayID).toggleClass("today"); //this works at hightlighting today
-
-var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
-
-var openTimeHours = openTimeSplit[0];
-openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
-
-var openTimeMinutes = openTimeSplit[1];
-var openTimex = openTimeSplit[0] + openTimeSplit[1];
-
-var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
-
-var closeTimeHours = closeTimeSplit[0];
-closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
-
-var closeTimeMinutes = closeTimeSplit[1];
-var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
-
-if (timeNow >= openTimex && timeNow <= closeTimex) {
-    $(".openorclosed").toggleClass("open");
-} else {
-    $(".openorclosed").toggleClass("closed");
-}
-</script>
-
-   <div class="column1" style="padding:0 1px 1px 1px;margin:0;">
-  <div class="content1 w3-panel" style="background-color:#fff;padding:25px 5px;margin:0;border-radius:4px;">
-    <p align="center"><i class="material-icons" style="color:#000000;font-size:33px;text-shadow:2px 2px 2px #cccccc;">phone_in_talk</i></p>
-      <p align="center" style="font-family:calibri;font-size:16px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">FREE CONSULTATION</p>
- <p align="center" style="font-family:calibri;font-size:14px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">Schedule Your 30-Minute<br>
-Phone Session w/ Michelle</p>
-<p align="center" style="padding:0;margin:0;"><a class="w3-button" href="https://form.jotform.com/82323651984159" target="_blank" style="background-color:#f5faff;padding:8px 10px;font-family:ubuntu;font-size:14px;color:#000000;letter-spacing:.5px;text-decoration:none;border-radius:2px;margin:10px 0 0 0;">sign up</a></p>
-  </div>
-   </div>
-   </div>
+<div class="content w3-panel" style="background-color:#e6ffe6;padding:10px 10px 0 10px;margin:0;">
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; About Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Contact Us Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Products & Services Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Special Offers Page <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; Careers Page</p>
+<p align="left" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+&#10173; SG Listing Service</p>
+    </div>
+    </div>
+      </div>
+      </div>
+    </div>
      
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:2px 0 0 0;">
-<div class="row" style="background-color:#fff;padding:0;margin:0;">
-<div class="column3" style="padding:0;margin:0;">
-  <div class="content1 w3-panel" style="padding:0;margin:0;border-radius:4px;">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.0981146394124!2d-87.76774368493028!3d41.89074697922122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e334e3476db5b%3A0x63dbabfc44c23541!2s550+N+Central+Ave%2C+Chicago%2C+IL+60644!5e0!3m2!1sen!2sus!4v1544464086017" width="100%" height="400" frameborder="0" style="border:2px solid #fff;border-radius:4px;" allowfullscreen></iframe>
-  </div>
-  </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000);
-}
-</script>
-
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -643,18 +438,18 @@ function myFunction() {
 }
 </script>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:70px 0 20px 0;">
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#000000;letter-spacing:.5px;text-shadow:0 1px 1px #585858;padding:0;margin:0;">773 242-0705</p>
+<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
+<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p class="topic2">become visible.</p>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
+</div>
+</div>
 
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
-</div>
-</div>
-</div>
-<center><div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;border-top:1px solid #f1f1f1;">
-<div class="nab topnav1" style="width:100%;padding:35px 0 30px 0;margin:0;">
+<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
 <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">DEMO WEBPAGES</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
