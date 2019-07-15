@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
+<script src="https://apis.google.com/js/platform.js" async defer type="text/javascript"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
 <style type="text/css">
@@ -218,8 +218,6 @@ img {
  }
 }
 
-
-
 .column2 {
     width: 72%;
     margin: 0 2px 0 2px;
@@ -299,6 +297,17 @@ padding: 0;
 margin: 0;
 }
 
+.topic2 {
+font-family: roboto;
+font-size: 15px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
 .topic3 {
 font-family: roboto;
 font-size: 13px;
@@ -349,11 +358,51 @@ margin:0;
   
   hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f5f5f5, #ccc, #f5f5f5); }
 
+.button {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-family: calibri;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
 </style>
 </head>
-
 <body style="width:100%;"> 
-<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
@@ -379,8 +428,8 @@ margin:0;
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">ADD LISTING</a></li>
-<li><a class="w3-button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" style="background-color:#e6f2ff;color:#222;text-shadow:0 0 1px #000;font-family:calibri;font-size:11px;letter-spacing:.5px;border-radius:2px;padding:6px 10px;margin:9px 2px 0 2px;text-decoration:none;">SG MARKETPLACE</a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
@@ -940,7 +989,7 @@ We require that all plans be paid annually. We do not provide refunds on Small B
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 50px 0;">
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://form.jotform.com/82334586547163" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
@@ -986,6 +1035,12 @@ We require that all plans be paid annually. We do not provide refunds on Small B
 </div>
 </div>
 
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -1020,18 +1075,18 @@ function openTablink(TablinkName,elmnt,color) {
 document.getElementById("defaultOpen").click();
 </script>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:50px 0 20px 0;">
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:ubuntu;font-size:19px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:0;">773 242-0705</p>
+<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
+<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p class="topic2">become visible.</p>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
+</div>
+</div>
 
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:12px 0 12px 0;"></div>
-</div>
-</div>
-</div>
-<center><div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;border-top:1px solid #f1f1f1;">
-<div class="nab topnav1" style="width:100%;padding:35px 0 30px 0;margin:0;">
+<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
 <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">DEMO WEBPAGES</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
