@@ -96,6 +96,29 @@ img {vertical-align: middle;}
   margin: 0;
 }
 
+.dot {
+  height: 0;
+  width: 0;
+  margin: 0;
+ }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -126,10 +149,10 @@ img {
 }
 
 
-.content {
+.content1 {
     background-color: #ffffff;
     padding: 0;
-    margin: 0;
+    margin: 100px 0 0 0;
     border-radius: 2px;
 }
 
@@ -247,52 +270,27 @@ img {
     clear: both;
 }
 
-
-.tablink {
-    background-color: #d3d3d3;
-    font-family: ubuntu;
-    color: white;
-    float: center;
-    outline: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 7px 12px;
-    margin: 0 0 8px 0;
-    font-size: 14px;
-    display: inline-block;
-}
-
-.tablink:hover {
-    background-color: #777;
-    color: d3d3d3;
-}
-
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 22px 12px 12px 12px;
-    margin: 0;
-    text-align: center;
-}
-
-#Step1 {background-color:#ffffff;}
-#Step2 {background-color:#ffffff;}
-#Step3 {background-color:#ffffff;}
-#Step4 {background-color:#ffffff;}
-#Step5 {background-color:#ffffff;}
-#Step6 {background-color:#ffffff;}
-
 .active1 {
   background-color: #e6e6e6;}
   
 .topic {
 font-family: roboto;
 font-size: 16px;
-color: #444;
+color: #222;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
+text-shadow: 0 0 1px #ccc;
+padding: 0;
+margin: 0;
+}
+
+.topic1 {
+font-family: roboto;
+font-size: 13px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #ccc;
 padding: 0;
 margin: 0;
 }
@@ -329,29 +327,24 @@ padding: 0;
 margin: 0;
 }
 
-.topic5 {
-font-family: ubuntu condensed;
-font-size: 16px;
-color: dodgerblue;
-text-shadow:0 0 1px dodgerblue;
-text-align: center;
-letter-spacing: .5px;
-padding: 75px 0 10px 0;
-margin:0;
-}
 
 @media screen and (max-width: 768px) {
-  .topic2, .topic3, .topic4, .topic5 {
+  .topic2, .topic3, .topic4 {
   text-align: center;  
   padding: 5px 0 0 0;
    }
   }
   
   @media screen and (max-width: 768px) {
-  .topic {
+  .topic2, .topic3, .topic4 {
   text-align: center;  
-  padding: 20px 0 10px 0;
-  margin: 0;
+  padding: 5px 0 0 0;
+   }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .content1 {
+  margin: 20px 0 0 0;
   }
   }
   
@@ -401,7 +394,7 @@ margin:0;
 </style>
 </head>
 <body style="width:100%;"> 
-<div class="top-container" style="width:100%;padding:0;margin:0;">
+<div class="top-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
 <div class="container-fluid">
@@ -436,80 +429,78 @@ margin:0;
 </div>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-</div></div></div>
+<div class="slideshow-container w3-white" style="width:100%;margin:0;padding:0 12px;">
+<div style="text-align:center;padding:0;margin:0;">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+
+<center>
+<div class="w3-row-padding" style="width:100%;margin:0 0 20px 0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:0;margin:0;background-color:transparent;">
+<div class="content w3-panel" style="padding:25px 5px;margin:0;">
+
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+create your account</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column w3-white" style="padding:0;margin:0 0 15px 0;border-radius:2px;">
+<div class="content w3-panel w3-hover-shadow" style="background-color:#f0f8ff;padding:20px 10px;margin:0;">
+<p style="font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;">STEPS 1 - 2</p>
+
+<p class="topic1">
+1. Tap Image to Select Category Below.</p>
+
+<p class="topic1">
+2. Choose Showcase Plan on Order Form.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column w3-white" style="padding:0;margin:0 0 15px 0;border-radius:2px;">
+<div class="content w3-panel w3-hover-shadow" style="background-color:#fde8ec;padding:20px 10px;margin:0;">
+<p style="font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;">STEPS 3 - 4</p>
+
+<p class="topic1">
+3. Provide Relevant Business Details.</p>
+
+<p class="topic1">
+4. List Your Showcase Items (12 Max).</p>
+</div>
+</div>
+</div>
+
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column w3-white" style="padding:0;margin:0 0 15px 0;border-radius:2px;">
+<div class="content w3-panel w3-hover-shadow" style="background-color:#e6ffe6;padding:20px 10px;margin:0;">
+<p style="font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;">STEPS 5 - 6</p>
+
+<p class="topic1">
+5. Proceed to Our Secure Checkout.</p>
+
+<p class="topic1">
+6. Schedule Your Phone Confirmation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-create account</p>
-
-
-<div class="w3-row" style="width:100%;">
-<div class="w3-half" style="margin:0 0 20px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/42121304-6c8a3154-7bfa-11e8-8e61-e62957f76456.png" style="width:80%;">
-</div>
-
-<center>
-<div class="w3-half" style="margin:0;">
-<p class="topic5">COMPLETE THESE STEPS</p>
-<div class="tablink" onclick="openTablink('Step1', this, 'dodgerblue')" id="defaultOpen">1</div>
-<div class="tablink" onclick="openTablink('Step2', this, 'dodgerblue')">2</div>
-<div class="tablink" onclick="openTablink('Step3', this, 'dodgerblue')">3</div>
-<div class="tablink" onclick="openTablink('Step4', this, 'dodgerblue')">4</div>
-<div class="tablink" onclick="openTablink('Step5', this, 'dodgerblue')">5</div>
-<div class="tablink" onclick="openTablink('Step6', this, 'dodgerblue')">6</div>
-
-<center>
-<div id="Step1" class="tabcontent" style="padding:0;margin:0;">
-<div class="column3" style="padding:0;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Tap Image to Select Category Below</p>
-</div>
-</div>
-
-<div id="Step2" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column3" style="padding:0;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Choose Showcase Plan on Order Form</p>
-</div>
-</div>
-
-<div id="Step3" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column3" style="padding:0;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Provide Relevant Business Details</p>
-</div>
-</div>
-
-<div id="Step4" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column3" style="padding:0;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">List Your Showcase Items (12 Max)</p>
-</div>
-</div>
-
-<div id="Step5" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column3" style="padding:0;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Proceed to Our Secure Checkout</p>
-</div>
-</div>
-
-<div id="Step6" class="tabcontent" style="padding:0;margin:0;">
-<center>
-<div class="column3" style="padding:0;margin:0;">
-<p align="center" style="font-family:calibri,helvetica;font-size:14px;color:dodgerblue;">Schedule Telephone Confirmation</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<center>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:50px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
@@ -598,7 +589,7 @@ create account</p>
 <div class="column" style="background-color:#fff;margin:0;padding:5px;">
 <p class="topic3">Unlike our competitors, we update and completely maintain your Small Business Showcase WebPages. Getting started with us doesn't mean you'll have to attempt to learn code during a 14-day free trial period—unless that's your goal.<br><br>
 
-You're just minutes away from completing the process of creating your new account. Click the button below for some useful tips.</p>
+You're minutes away from completing the process of creating your new account. If you need help, click the button below for useful tips.</p>
 </div>
 </div>
 </div>
@@ -607,7 +598,7 @@ You're just minutes away from completing the process of creating your new accoun
 <div class="w3-half" style="background-color:#fff;padding:0;margin:10px 0 0 0;">  
 <div class="column" style="background-color:#fff;margin:0;padding:0 0 5px 0;">
 <p align="center" style="margin:0;padding:0 12px;">
-<button onclick="document.getElementById('id88').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id88')">CREATING YOUR ACCOUNT</button></p>
+<button onclick="document.getElementById('id88').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id88')">USEFUL TIPS &mdash; CREATING YOUR ACCOUNT</button></p>
 
  <div id="id88" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
     <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
@@ -627,7 +618,7 @@ Select a business category by clicking the image that corresponds to that partic
 <p class="topic3">
 &#10144; Your Small Business Information. Once you have selected your business category, you will be taken to our secure online order form to complete the process of creating your new Merchant Account. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our Demo WebPages so you will know the kind of information needed to complete the online order form.<br><br>
 
-&#10144; Choosing Your Plan. If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Please keep in mind that our Premium Plan includes the SG Listing Service. If you decide on this plan, do not add the SG Listing Service to your shopping basket.</p><br>
+&#10144; Choosing Your Plan. If you are not sure which Small Business Showcase WebPages Plan to choose, call us at 773-242-0705. Our Premium Plan includes the SG Listing Service. If you decide on this plan, do not add the SG Listing Service to your shopping basket.</p><br>
 
 <p class="topic3">
 &#10144; Your Product Images. We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge.</p><br>
@@ -1044,6 +1035,45 @@ We require that all plans be paid annually. We do not provide refunds on Small B
 </div>
 
 <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8010);
+}
+</script>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8010);
+}
+</script>
+
+<script>
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
@@ -1056,25 +1086,6 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-</script>
-
-<script>
-function openTablink(TablinkName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(TablinkName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-
-document.getElementById("defaultOpen").click();
 </script>
 
 <div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
