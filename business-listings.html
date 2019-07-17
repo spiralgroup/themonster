@@ -235,11 +235,6 @@ img {
     clear: both;
 }
 
-.content {
-    padding: 8px;
- }
-
-
 @media (max-width: 900px) {
     .column {
         width: 100%;
@@ -253,18 +248,11 @@ img {
         float: center;
 }
 }
-
-
 
 * {box-sizing: border-box;}
 
 .active {
   background-color: #717171;
-}
-
-
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
 }
 
 .nab {
@@ -274,11 +262,29 @@ img {
   margin: 0;
 }
 
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: 0;
+.nab a {
+  float: center;
+  font-family: calibri,helvetica;
+  color: #222;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
 }
+
+.nab a:hover {
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
+}
+
+
 body, html {
     max-width: 1235px;
     height: 100%;
@@ -305,9 +311,7 @@ body, html {
     0%   {width: 0;}
     100% {width: 100%; }
 }
-body{
-   background: #fff;
-}
+
 main{
   width: 100%;
   overflow: hidden;
@@ -326,20 +330,20 @@ main{
 }
 
 .hero h1{
-  font-size: 4.1em;
+  font-size: 6.5em;
   margin: auto;
   position: absolute; 
-  top: 120px;
+  top: 180px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
 }
 .hero p{
-  font-size: 1.5em;
+  font-size: 3.0em;
   margin: auto;
   position: absolute; 
-  top: 220px;
+  top: 290px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -363,7 +367,7 @@ main{
   -ms-transform-origin: 100% 0%;
   -webkit-transform-origin: 100% 0%;
   transform-origin: 100% 0%;
-   -webkit-animation: roll-out 3.2s ease-out ;
+    -webkit-animation: roll-out 3.2s ease-out ;
   -moz-animation: roll-out 3.2s ease-out ;
     animation: roll-out 3.2s ease-out ; 
 }
@@ -389,20 +393,9 @@ main{
      }
   .hero p{
     font-size: 4vw;
-    top: 28vw;
+    top: 22vw;
   }
  
-}
-
-img1 {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}
-
-img1:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 .button {
   border-radius: 2px;
@@ -445,29 +438,6 @@ img1:hover {
  opacity: 1;
   right: 0;
 }
- 
- 
- .nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #222;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
-}
-
-.nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
-}
 
 .topic2 {
 font-family: khand medium;
@@ -479,7 +449,7 @@ text-shadow: 0 0 1px #222;
 padding: 0;
 margin: 0;
 }
-
+ 
  .topic5 {
 font-family: roboto;
 font-size: 15px;
@@ -540,7 +510,7 @@ $(document).ready(function(){
 <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">All Categories <span class="caret"></span></a>
 <ul class="dropdown-menu">
 <li><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Apparel & Accessories</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/automotive.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Automotive</a></li><br>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/automotive.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Automotive</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Beauty & Health</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/entertainment.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Entertainment</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/food-and-drink.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Food & Drink</a></li><br>
@@ -557,35 +527,35 @@ $(document).ready(function(){
 </nav>
 </div>
 
-<center>
 <main>
   <div class="hero">
-    <h1>sg marketplace</h1>
+    <h1>shop small</h1>
 <p>
-<a href="#small-businesses" style="text-decoration:none;color:#fff;">explore chicago's small businesses</a>
+<a href="#small-business" style="text-decoration:none;color:#fff;">support local small businesses</a>
 </p>
-    <img src="https://user-images.githubusercontent.com/25410880/56983877-9d6d3a80-6b39-11e9-8aed-499e01f1d3e7.png" />
+    <img src="https://user-images.githubusercontent.com/25410880/61354602-613ba300-a827-11e9-9a05-c56b4849fdb5.png" />
      <div class="bar"></div>
      </div>
 </main>
 
 
 <center>
-<div id="small-businesses" class="content">
+<div id="small-business">
+    </div>
 </div>
-
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56102964-1c7d3480-5ee5-11e9-8c1f-66e7c8d71edd.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
-Web Development, Listing Service</p>
+Small Business Listing Service</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:0;margin:0;">
 South Loop</p>
@@ -597,7 +567,7 @@ South Loop</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
@@ -614,7 +584,7 @@ South Loop</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
@@ -630,7 +600,7 @@ South Loop</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
@@ -652,7 +622,7 @@ South Loop</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
@@ -669,7 +639,7 @@ South Loop</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56190411-02278180-5fdf-11e9-9616-667c12cb08c0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
@@ -686,7 +656,7 @@ South Loop</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56190416-0358ae80-5fdf-11e9-8a73-88210471f9bf.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
@@ -703,11 +673,11 @@ South Loop</p>
 <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/56190430-06ec3580-5fdf-11e9-938c-17ac46789cc2.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
   <div class="content w3-panel" style="padding:5px 2px;margin:0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">
 Online Marketing Solutions</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000000;letter-spacing:.5px;padding:0 0 5px 0;margin:0;">
-Free Job Readiness Training</p>
+Small Business WebPages</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:0;margin:0;">
 South Loop</p>
@@ -730,7 +700,7 @@ South Loop</p>
 </div>
 
 <center>
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0 0 80px 0;box-shadow:0 32px 32px #f0f0f0;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0 0 50px 0;box-shadow:0 32px 32px #f0f0f0;">
 <div class="customer-logos slide w3-white" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:5px 5px 0 5px;margin:0;">
 <div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png" style="border-radius:2px;"></a>
 <p style="padding:10px 0 5px 0;margin:0;">apparel & accessories</p></div>
