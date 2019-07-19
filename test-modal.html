@@ -4,17 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Dorsa|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
-<link rel="canonical" href="https://mdbootstrap.com/docs/jquery/navigation/navbar/" />
 <title>Bootstrap Navbar - examples &amp; tutorial. Basic &amp; advanced usage - Material Design for Bootstrap</title>
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-<link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.8.5.min.css?ver=4.8.5' type='text/css' media='all' />
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -329,80 +327,44 @@ padding: 0;
 margin: 0;
 }
 
+
+
 </style>
 </head>
-<body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
-<header>
+
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+<p><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:50%;border-radius:4px;"></p>
+ 
+ <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
   
-<!-- Sidebar navigation -->
-<div id="slide-out" class="side-nav sn-bg-4 mdb-sidenav fixed">
-  <ul class="custom-scrollbar list-unstyled" style="max-height:100vh; padding-bottom:90px">
-    <!-- Logo -->
-    <li class="logo-sn d-block waves-effect">
-      <div class="text-center">
-      <img src="https://user-images.githubusercontent.com/25410880/61418817-b2dc4000-a8b0-11e9-844a-a74f4e870c48.png" style="width:100%;">
+ 
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div data-role="page">
+  <div data-role="header" data-position="fixed">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <h1>Fixed Header</h1>
+    
+  </div>
+
+  <div data-role="main" class="ui-content">
+
+ 
+  <div class="w3-container">
+   <h1>My Page</h1>
       </div>
-    </li>
-    <!--/. Logo -->
-   
-    <!-- Side navigation links -->
-   
-      <ul id="side-menu" class="collapsible collapsible-accordion">
-      <li id="menu-item-54644" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-54644">
-    <a class="collapsible-header waves-effect" id="link-menu-item-54644"  href="https://mdbootstrap.com/publications/front-end/bootstrap-news/">MDB news</a></li>
-	<li id="menu-item-44258" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-44258"><a class="collapsible-header waves-effect" id="link-menu-item-44258"  href="https://mdbootstrap.com/docs/jquery/utilities/text/">Text</a></li>
-	<li id="menu-item-44259" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-44259"><a class="collapsible-header waves-effect" id="link-menu-item-44259"  href="https://mdbootstrap.com/docs/jquery/utilities/vertical-align/">Vertical align</a></li>
-	<li id="menu-item-44260" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-44260"><a class="collapsible-header waves-effect" id="link-menu-item-44260"  href="https://mdbootstrap.com/docs/jquery/utilities/visibility/">Visibility</a></li>
-</ul>
-<div class="sidenav-bg mask-strong">
-</div>
 </div>
 
-<!-- Navbar-->
-<nav class="navbar fixed-top navbar-expand-md navbar-light white double-nav scrolling-navbar">
-<!-- SideNav slide-out button -->
-<div class="float-left">
-<a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i><span class="sr-only" aria-hidden="true">Toggle side navigation</span></a>
+<div class="w3-container">
+<p>In this example, the sidebar is hidden (style="display:none")</p>
+<p>It is shown when you click on the menu icon in the top left corner.</p>
+<p>When it is opened, it hides all the page content (style.width="100%").</p>
 </div>
-  
-<!-- Navbar links-->
-<div class="mr-auto pl-2">
-<span class="d-none d-md-inline-block">
-
-<!-- Dynamic content wrapper -->
-<span id="dynamicContentWrapper-mainNavbar" class="dynamic-content d-none d-lg-inline-block"></span>
-
-<!--Angular-->
-<a class="btn btn-info btn-md my-0" href="/docs/jquery/getting-started/download/" role="button">
-<span class="d-none d-lg-inline-block mr-1">Getting started</span><i class="fas fa-download"></i></a>
-
-<a class="btn btn-info btn-md my-0" href="/education/bootstrap/" role="button">
-<span class="d-none d-lg-inline-block mr-1">Tutorial</span><i class="fas fa-graduation-cap"></i></a>
-
-<span id="dynamicContentWrapper-mainNavbar3" class="dynamic-content"></span></div>
-
-    <!--Navigation icons-->
-    <ul class="nav navbar-nav nav-flex-icons ml-auto">
-    <li class="nav-item"><a href="/general/contact/" class="nav-link waves-effect">
-    <i  id="navbar-static-contact" alt="Contact us" class="fas fa-envelope"></i><span class="sr-only">Contact us</span>
-          </a>
-        </li>
-        
-        <li class="nav-item"><a href="/general/contact/" class="nav-link waves-effect">
-    <i  id="navbar-static-contact" alt="Contact us" class="fas fa-envelope"></i><span class="sr-only">Contact us</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="/support/" class="nav-link waves-effect">
-          <i  id="navbar-static-contact" alt="Contact us" class="fas fa-question-circle"></i><span class="d-none d-xl-inline-block ml-1">Support</span>
-          </a>
-        </li>   
-          </ul></div>
-</nav>
-
-
-<main>
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-row" style="padding:0;margin:20px 0 0 0;">
 <div class="w3-fourquarter" style="padding:0 12px;margin:0 0 10px 0;">
@@ -749,24 +711,27 @@ If you have questions, please call 773-242-0705.</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-     
-<script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/4.8.5/compiled.0.min.js?ver=4.8.5'></script>    
 
 <script>
-  $(".button-collapse").sideNav();
-  var el = document.querySelector('.custom-scrollbar');
-  var ps = new PerfectScrollbar(el);
-</script>
-<script type="text/javascript">
-var type = window.location.hash.substr(1);
-if (type==="docsTabsAPI") {
-  if($("#docsTabsAPI").length) {
-    $('[href="#docsTabsAPI"]').tab('show'); 
-  } 
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-        
+
  <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -798,8 +763,5 @@ function myFunction() {
   }
 }
 </script>
-   
-
 </body>
-
 </html>
