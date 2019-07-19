@@ -1,353 +1,805 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Dorsa|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link rel="canonical" href="https://mdbootstrap.com/docs/jquery/navigation/navbar/" />
+<title>Bootstrap Navbar - examples &amp; tutorial. Basic &amp; advanced usage - Material Design for Bootstrap</title>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.8.5.min.css?ver=4.8.5' type='text/css' media='all' />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+});
+</script>
 
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-        <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-   <style>
-   /*
-    DEMO STYLE
-*/
+      // Store hash
+      var hash = this.hash;
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<style type="text/css">
+/* Slider */
+.slick-slide {
+    margin: 0px 5px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
 }
 
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
+.nab a {
+  float: center;
+  font-family: calibri,helvetica;
+  color: #222;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+
+.nab a:hover {
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.accordion {
+  font-family: roboto;
+  font-size: 13px;
+  text-shadow:0 0 1px #222;
+  letter-spacing: .5px;
+  background-color: #eee;
+  color: #222;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;  
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #222;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  background-color: #d3d3d3;
+}
+
+.panel {
+  padding: 0 5px;
+  margin: 5px 0;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.topic {
+font-family: calibri;
+font-size: 13px;
+letter-spacing: .5px;
+color: #222;
+text-align: justify;
+margin: 0;
+padding:0 0 8px 0;
+}
+
+.topic5 {
+font-family: roboto;
+font-size: 15px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
 }
 
 .navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+position: fixed;
+top: 0;
+max-width: 1225px;
+background-color: #fff;
+border: none;
 }
 
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
+.column2 {
+    width: 52%;
+    display: inline-block;
+    float: center;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100vh;
-    z-index: 999;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
-    overflow-y: scroll;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+.row,
+.row > .column2 {
+    padding: 0;
+    margin: 5px 0;
 }
 
-#sidebar.active {
-    left: 0;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-#dismiss {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    background: #7386D5;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
 }
 
-#dismiss:hover {
-    background: #fff;
-    color: #7386D5;
+.topic {
+font-family: roboto;
+font-size: 13px;
+letter-spacing: .5px;
+color: #222;
+text-align: justify;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding:0 0 8px 0;
 }
 
-.overlay {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-.overlay.active {
-    display: block;
-    opacity: 1;
+.topic5 {
+font: roboto;
+font-size: 15px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
 }
 
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-   </style>
-
+</style>
 </head>
+<body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
+<header>
+  
+<!-- Sidebar navigation -->
+<div id="slide-out" class="side-nav sn-bg-4 mdb-sidenav fixed">
+  <ul class="custom-scrollbar list-unstyled" style="max-height:100vh; padding-bottom:90px">
+    <!-- Logo -->
+    <li class="logo-sn d-block waves-effect">
+      <div class="text-center">
+      <img src="https://user-images.githubusercontent.com/25410880/61418817-b2dc4000-a8b0-11e9-844a-a74f4e870c48.png" style="width:100%;">
+      </div>
+    </li>
+    <!--/. Logo -->
+   
+    <!-- Side navigation links -->
+   
+      <ul id="side-menu" class="collapsible collapsible-accordion">
+      <li id="menu-item-54644" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-54644">
+    <a class="collapsible-header waves-effect" id="link-menu-item-54644"  href="https://mdbootstrap.com/publications/front-end/bootstrap-news/">MDB news</a></li>
+	<li id="menu-item-44258" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-44258"><a class="collapsible-header waves-effect" id="link-menu-item-44258"  href="https://mdbootstrap.com/docs/jquery/utilities/text/">Text</a></li>
+	<li id="menu-item-44259" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-44259"><a class="collapsible-header waves-effect" id="link-menu-item-44259"  href="https://mdbootstrap.com/docs/jquery/utilities/vertical-align/">Vertical align</a></li>
+	<li id="menu-item-44260" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-44260"><a class="collapsible-header waves-effect" id="link-menu-item-44260"  href="https://mdbootstrap.com/docs/jquery/utilities/visibility/">Visibility</a></li>
+</ul>
+<div class="sidenav-bg mask-strong">
+</div>
+</div>
 
-<body>
+<!-- Navbar-->
+<nav class="navbar fixed-top navbar-expand-md navbar-light white double-nav scrolling-navbar">
+<!-- SideNav slide-out button -->
+<div class="float-left">
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i><span class="sr-only" aria-hidden="true">Toggle side navigation</span></a>
+</div>
+  
+<!-- Navbar links-->
+<div class="mr-auto pl-2">
+<span class="d-none d-md-inline-block">
 
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
+<!-- Dynamic content wrapper -->
+<span id="dynamicContentWrapper-mainNavbar" class="dynamic-content d-none d-lg-inline-block"></span>
 
-            <div class="sidebar-header">
-             <img src="https://user-images.githubusercontent.com/25410880/61418817-b2dc4000-a8b0-11e9-844a-a74f4e870c48.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="phone-confirmation">
-            </div>
+<!--Angular-->
+<a class="btn btn-info btn-md my-0" href="/docs/jquery/getting-started/download/" role="button">
+<span class="d-none d-lg-inline-block mr-1">Getting started</span><i class="fas fa-download"></i></a>
 
-            <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+<a class="btn btn-info btn-md my-0" href="/education/bootstrap/" role="button">
+<span class="d-none d-lg-inline-block mr-1">Tutorial</span><i class="fas fa-graduation-cap"></i></a>
 
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul>
-        </nav>
+<span id="dynamicContentWrapper-mainNavbar3" class="dynamic-content"></span></div>
 
-        <!-- Page Content  -->
-        <div id="content">
+    <!--Navigation icons-->
+    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+    <li class="nav-item"><a href="/general/contact/" class="nav-link waves-effect">
+    <i  id="navbar-static-contact" alt="Contact us" class="fas fa-envelope"></i><span class="sr-only">Contact us</span>
+          </a>
+        </li>
+        
+        <li class="nav-item"><a href="/general/contact/" class="nav-link waves-effect">
+    <i  id="navbar-static-contact" alt="Contact us" class="fas fa-envelope"></i><span class="sr-only">Contact us</span>
+          </a>
+        </li>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
+        <li class="nav-item">
+          <a href="/support/" class="nav-link waves-effect">
+          <i  id="navbar-static-contact" alt="Contact us" class="fas fa-question-circle"></i><span class="d-none d-xl-inline-block ml-1">Support</span>
+          </a>
+        </li>   
+          </ul></div>
+</nav>
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">Collapsible Sidebar Using Bootstrap</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<main>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="w3-fourquarter" style="padding:0 12px;margin:0 0 10px 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #585858;">demo</a> our products</p>
+</div></div>
 
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="w3-row-padding" style="margin:20px 0 0 0;">
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div id="item1" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;border-radius:4px;">
 
-            <div class="line"></div>
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-light-grey" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal">
+PRODUCT DETAILS</button>
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
         </div>
-    </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;">
 
-    <div class="overlay"></div>
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
 
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div id="item2" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
+
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">PRODUCT DETAILS</button>
+
+
+ <div id="id02" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+
+<div class="column2" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Product Name &#124; 99.99</p>
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font-family:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column3" style="padding:0;margin:0;background-color:#fff;">
+<center>
+<button class="accordion">Description</button>
+<div class="panel">
+<p class="topic">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+<div class="column" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div id="item3" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">PRODUCT DETAILS</button>
+
+
+ <div id="id03" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+
+<div class="column2" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Product Name &#124; 99.99</p>
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font-family:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column3" style="padding:0;margin:0;background-color:#fff;">
+<center>
+<button class="accordion">Description</button>
+<div class="panel">
+<p class="topic">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+<div class="column" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id03').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div id="item4" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button onclick="document.getElementById('id04').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">PRODUCT DETAILS</button>
+
+
+ <div id="id04" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
+    <div class="w3-modal-content" style="padding:0;margin:0;">
+      <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+
+<div class="column2" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Product Name &#124; 99.99</p>
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font-family:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column3" style="padding:0;margin:0;background-color:#fff;">
+<center>
+<button class="accordion">Description</button>
+<div class="panel">
+<p class="topic">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+<div class="column" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id04').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+     
+<script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/4.8.5/compiled.0.min.js?ver=4.8.5'></script>    
+
+<script>
+  $(".button-collapse").sideNav();
+  var el = document.querySelector('.custom-scrollbar');
+  var ps = new PerfectScrollbar(el);
+</script>
+<script type="text/javascript">
+var type = window.location.hash.substr(1);
+if (type==="docsTabsAPI") {
+  if($("#docsTabsAPI").length) {
+    $('[href="#docsTabsAPI"]').tab('show'); 
+  } 
+}
+</script>
+        
+ <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+ <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+   
+
 </body>
 
 </html>
