@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css?family=Dorsa|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+
 <title>Bootstrap Navbar - examples &amp; tutorial. Basic &amp; advanced usage - Material Design for Bootstrap</title>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -36,41 +37,21 @@ $(document).ready(function(){
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 3
             }
         }]
     });
 });
 </script>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
 <style type="text/css">
+body, html {
+    max-width: 1235px;
+    height: 100%;
+    margin: auto;
+    background-image: linear-gradient(to left, #fff, #fff);
+}
+
 /* Slider */
 .slick-slide {
     margin: 0px 5px;
@@ -327,63 +308,130 @@ padding: 0;
 margin: 0;
 }
 
+.column {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+ }
 
+.row,
+.row > .column {
+    padding: 0;
+    margin: 0;
+}
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+.column1 {
+    width: 70%;
+    float: center;
+    padding: 0;
+    margin: 0;
+ }
+
+.row,
+.row > .column1 {
+    padding: 0;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+ }
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
 </style>
 </head>
 
-
 <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-<p><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:50%;border-radius:4px;"></p>
- 
- <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-  
- 
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+<div class="w3-sidebar w3-bar-block" style="display:none;background-color:#f0f0f0;border:none;padding:10px 0 6px 0;margin:0;" id="mySidebar">
+
+<center>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="margin:80px 0 0 0;">
+<div class="column1" style="padding:0 10px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:50%;border-radius:2px;"></div>
+
+<div class="column1" style="padding:0 10px;margin:0 0 10px 0;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="background-color:#fff;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 20px 0;padding:10px;text-decoration:none;">About Us</a></p>
+
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="background-color:#fff;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 20px 0;padding:10px;text-decoration:none;">About Us</a></p>
+
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="background-color:#fff;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 20px 0;padding:10px;text-decoration:none;">About Us</a></p>
+
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block w3-hover-shadow" href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="background-color:#fff;font-family:roboto;font-size:15px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0 0 20px 0;padding:10px;text-decoration:none;">About Us</a></p>
+
+<button onclick="w3_close()" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-<div data-role="page">
-  <div data-role="header" data-position="fixed">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-    <h1>Fixed Header</h1>
-    
-  </div>
 
-  <div data-role="main" class="ui-content">
-
- 
-  <div class="w3-container">
-   <h1>My Page</h1>
-      </div>
+<div data-role="page" style="width:100%;background-color:#fff;">
+<div class="w3-white" data-role="header" data-position="fixed" style="border:none;padding:10px 0 2px 0;margin:0;box-shadow:0 1px 2px #f1f1f1;">
+<p align="center" style="font-family:kaushan script;font-size:36px;color:#f1f1f1;letter-spacing:1px;text-shadow:0 1px 1px #000;">Our Products</p>
+<button class="w3-button w3-white w3-small" style="padding:6px 10px;margin:18px 2px 30px 2px;" onclick="w3_open()">&#9776;</button>
 </div>
 
-<div class="w3-container">
-<p>In this example, the sidebar is hidden (style="display:none")</p>
-<p>It is shown when you click on the menu icon in the top left corner.</p>
-<p>When it is opened, it hides all the page content (style.width="100%").</p>
-</div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="w3-fourquarter" style="padding:0 12px;margin:0 0 10px 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #585858;">demo</a> our products</p>
-</div></div>
 
-<div class="w3-row-padding" style="margin:20px 0 0 0;">
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div id="item1" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;border-radius:4px;">
+<body style="width:100%;background-color:#fff;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:80px 0 0 0;">
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item1" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;">
 
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-light-grey" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal">
-PRODUCT DETAILS</button>
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+Product Details</button>
 
   <!-- The Modal -->
-  <div class="modal fade" id="myModal" style="background-color:#fff;">
+  <div class="modal fade" id="myModal1" style="background-color:#fff;">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
       
@@ -458,42 +506,40 @@ If you have questions, please call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div id="item2" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item2" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
+Product Details</button>
 
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">PRODUCT DETAILS</button>
-
-
- <div id="id02" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
-    <div class="w3-modal-content" style="padding:0;margin:0;">
-      <div class="w3-row" style="width:100%;margin:0;">
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal2" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
       <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
 
-<div class="column2" style="padding:0;margin:0;">
-<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Product Name &#124; 99.99</p>
-
-<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font-family:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column3" style="padding:0;margin:0;background-color:#fff;">
-<center>
 <button class="accordion">Description</button>
 <div class="panel">
-<p class="topic">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
 In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
 </div>
 
@@ -511,72 +557,72 @@ Orders will be ready for pick up 1 hour after being placed. By default, the pers
 
 You Will Need:</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
     
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 Your Designated Person Will Need:</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 If you have questions, please call 773-242-0705.</p>
 </div>
 
-<div class="column" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
-<p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</div>      
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div id="item3" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">PRODUCT DETAILS</button>
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item3" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal3">
+Product Details</button>
 
-
- <div id="id03" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
-    <div class="w3-modal-content" style="padding:0;margin:0;">
-      <div class="w3-row" style="width:100%;margin:0;">
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal3" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
       <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
 
-<div class="column2" style="padding:0;margin:0;">
-<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Product Name &#124; 99.99</p>
-
-<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font-family:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column3" style="padding:0;margin:0;background-color:#fff;">
-<center>
 <button class="accordion">Description</button>
 <div class="panel">
-<p class="topic">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
 In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
 </div>
 
@@ -594,73 +640,72 @@ Orders will be ready for pick up 1 hour after being placed. By default, the pers
 
 You Will Need:</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
     
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 Your Designated Person Will Need:</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 If you have questions, please call 773-242-0705.</p>
 </div>
 
-<div class="column" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
-<p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id03').style.display='none'">EXIT THIS WINDOW</button></p>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</div>      
 </div>
 </div>
 </div>
 
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item4" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
+Product Details</button>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div id="item4" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button onclick="document.getElementById('id04').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f0f0f0;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">PRODUCT DETAILS</button>
-
-
- <div id="id04" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
-    <div class="w3-modal-content" style="padding:0;margin:0;">
-      <div class="w3-row" style="width:100%;margin:0;">
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal4" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
       <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
 
-<div class="column2" style="padding:0;margin:0;">
-<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Product Name &#124; 99.99</p>
-
-<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font-family:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column3" style="padding:0;margin:0;background-color:#fff;">
-<center>
 <button class="accordion">Description</button>
 <div class="panel">
-<p class="topic">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
 In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
 </div>
 
@@ -678,31 +723,781 @@ Orders will be ready for pick up 1 hour after being placed. By default, the pers
 
 You Will Need:</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
     
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 Your Designated Person Will Need:</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 <i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
 
-<p align="left" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
 If you have questions, please call 773-242-0705.</p>
 </div>
 
-<div class="column" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item5" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal5" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item6" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal6" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item7" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal7" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item8" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal8" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item9" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal9" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-white" style="margin:0 0 60px 0;">
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item10" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal10" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item11" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal11" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div id="item12" class="column" style="padding:0;margin:0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
+Product Details</button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal12" style="background-color:#fff;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <p align="center" style="font:roboto;font-size:18px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <center>
+         <div class="w3-row" style="width:100%;margin:0;">
+      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<button class="w3-button" style="border:1px solid #f5f5f5;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:12px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;">ADD TO CART</button>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<button class="accordion">Description</button>
+<div class="panel">
+<p style="font:roboto;font-size:12px;text-decoration:none;text-shadow:0 0 1px #000;">
+In this section, we provide the details of your product or service. We retreive this data from your completed and verified order form. The name of your product or service, along with the price, is installed directly beneath the corresponding image. In addition, an Add to Cart button is installed inside the modal for ease of purchase. Each of your items has a modal for this purpose.</p>
+</div>
+
+
+<button class="accordion">Buy Online, Pick Up In-Store</button>
+<div class="panel">
+<p class="topic" style="margin:0;padding:0 0 15px 0;">
+Include your specific instructions on how customers are to retrieve their online purchases from your retail location. We have provided an example below.</p>
+
+<p class="topic">
+Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page. Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pick Up Notification Email when your items are ready for pick up.</p>
+
+<p class="topic">
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order. Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.<br><br>
+
+You Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;The credit card used for your purchase.</p><br>
+    
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+Your Designated Person Will Need:</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A copy of your Store Pickup Notification Email.</p>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+<i class='fas fa-caret-right' style="font-size:13px;color:#a9a9a9;"></i> &nbsp;A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p align="left" style="font:roboto;font-size:13px;color:#222;letter-spacing:.5px;margin:0;padding:0 0 5px 0;">
+If you have questions, please call 773-242-0705.</p>
+</div>
+
+
+<div class="modal-footer">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-yellow" style="font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+</div>
+</div>
+</div>      
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="customer-logos slider" style="background-color:#fff;width:100%;padding:60px 0;margin:0;box-shadow:0 1px 10px #f0f0f0;">
+<div class="slide"><a href="#item1"><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png"></a></div>
+
+<div class="slide"><a href="#item2"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
+
+<div class="slide"><a href="#item3"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
+
+<div class="slide"><a href="#item4"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png"></a></div>
+
+<div class="slide"><a href="#item5"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></a></div>
+
+<div class="slide"><a href="#item6"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png"></a></div>
+
+<div class="slide"><a href="#item7"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png"></a></div>
+
+<div class="slide"><a href="#item8"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
+
+<div class="slide"><a href="#item9"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
+
+<div class="slide"><a href="#item10"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a>
+</div>
+
+<div class="slide"><a href="#item11"><img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png"></a>
+</div>
+
+<div class="slide"><a href="#item12"><img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png"></a>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:40px 0 0 0;">
+<div class="w3-container w3-panel" style="background-color:white;width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:50px 0;">
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id99').style.display='block'" button class="btn" style="padding:0;margin:0;border-radius:2px;"><img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="width:100%;padding:0;margin:0;text-decoration:none;"></button>
+
+<div id="id99" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content w3-card-4" style="background-color:transparent;width:45%;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="width:100%;margin:0;background-color:transparent;">
+<div class="column w3-card" style="background-color:transparent;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+<center>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;">
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+PREMIUM ADS SECTION</p>
+
+<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+Here's an opportunity to make money selling ad space on your Small Business Showcase WebPages. The 4 ads comprising the Premium Ads Section is how and where these ads will appear.</p><br>
+
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+EXPLORE YOUR CREATIVE POTENTIAL</p>
+
+<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+Click the button below to participate in helping us shape the terms of our Premium Ads Section. We look forward to both receiving and implementing your suggestions soon.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:0 0 10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
 <p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id04').style.display='none'">EXIT THIS WINDOW</button></p>
+<a class="btn btn-primary btn-block" href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">HELP US SHAPE THE TERMS</a></p>
+</div>
+</div>
+
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id99').style.display='none'">CLOSE</button></p>
 </div>
 </div>
 </div>
@@ -711,9 +1506,44 @@ If you have questions, please call 773-242-0705.</p>
 </div>
 </div>
 </div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
+</div></div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
+</div></div>
+
+<div class="w3-quarter">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52392328-25213c80-2a56-11e9-8e93-bbb625501e62.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
 </div>
 </div>
 </div>
+</div>
+
+
+<center>
+<div class="w3-container w3-panel w3-card" style="background-color:#f1f1f1;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-container w3-panel" style="background-color:#f1f1f1;width:100%;padding:0;margin:25px 0 0 0;">
+<div class="w3-row" style="background-color:#f1f1f1;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p class="topic5">become visible.</p>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
+</div>
+</div>
+
+<center>
+<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/about-us.html">ABOUT US</a>
+<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank">CUSTOMER FEEDBACK</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
+<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
 </div>
 </div>
 </div>
@@ -749,19 +1579,33 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
- <script>
-window.onscroll = function() {myFunction()};
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 </script>
+
+
 </body>
 </html>
