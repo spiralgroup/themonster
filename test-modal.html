@@ -171,30 +171,8 @@ body, html {
     display: none;
 }
 
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #222;
-  text-align: center;
-  padding: 2px;
+.topnav1 a:hover {
   text-decoration: none;
-  font-size: 16.5px;
-  margin: 2px 0;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
-}
-
-
-.nab a:hover {
-  color: #444;
-  border-bottom: 3px solid #ccc;
 }
 
 .accordion {
@@ -393,12 +371,38 @@ margin: 0;
  }
 }
 
-.btn {
+.button {
   background-color: transparent;
   border: none;
-  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-family: kaushan script;
+  font-size: 30.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
   cursor: pointer;
+  padding: 0;
   margin: 0;
+ }
+
+.button span {
+  cursor: pointer;
+  display: block;
+  line-height: 10.5px;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.button:hover span {
+  color: #fff;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -429,69 +433,86 @@ margin: 0;
 
 .hero{
   width: 100%;
-  max-width: 1235px;
-  height: auto;
+  height: 350px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   background: #fff;
   position: relative; 
 }
 
 .hero h1{
-font-family: roboto;
-font-size: 15px;
-color: #222;
+font-family: kaushan script;
+font-size: 52px;
+color: #ccc;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
+text-shadow: 0 0 1px #444;
 text-decoration: none;
 margin: auto;
 position: absolute; 
-  top: 80px;
+  top: 40px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
 }
-.hero p{
-  font-size: 3.0em;
-  margin: auto;
-  position: absolute; 
-  top: 290px;
+
+.hero h2{
+font-family: kaushan script;
+font-size: 43px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #ccc;
+text-decoration: none;
+position: absolute; 
+  top: 120px;
   left: 0;
   right: 0;
   bottom: 0;
-   z-index: 1;
+  z-index: 1;
 }
 
+.hero h2 a:hover {
+margin: 0;
+  }
+  
 .hero img{
   width: 100%;
 }
-.hero h1, .hero p{
-  -webkit-animation: scale-in 3.3s ease-out;
-  -moz-animation: scale-in 3.3s  ease-out;
-    animation: scale-in 3.3s ease-out; 
+.hero h1, .hero h2{
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out; 
 }
-
 
 @media all and (max-width: 768px) {
   .hero{
-    height: 50vw;
+    height: 70vw;
   }
-  .bar{
-    height: 26vw;
-    top: 10vw;
-  }
+  
   .hero h1{
-    font-size: 14px;
-    top: 8vw;
+    font-size: 10vw;
+    top: 6vw;
      }
-  .hero p{
-    font-size: 4vw;
-    top: 22vw;
+  .hero h2{
+    font-size: 6vw;
+    top: 20vw;
   }
  
 }
+
+@media all and (max-width: 768px) {
+  .button {
+  font-size: 16.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #222;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  }
+  }
+
 </style>
 </head>
 
@@ -514,18 +535,42 @@ position: absolute;
 <div class="w3-half">
 <div class="column w3-black" style="padding:0;margin:0;">
 <div class="hero">
-<h1>
-<a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#fff;">ABOUT US</a><br><br>
-<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank" style="color:#fff;">CUSTOMER FEEDBACK</a><br><br>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html" style="color:#fff;">PRIVACY</a><br><br>
-<a href="https://spiralgroup.github.io/themonster/terms-of-use.html" style="color:#fff;">TERMS</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html" style="color:#fff;">PRIVACY</a><br><br>
-<a href="https://spiralgroup.github.io/themonster/terms-of-use.html" style="color:#fff;">TERMS</a></h1>
-<img src="https://user-images.githubusercontent.com/25410880/53593485-b7949780-3b4d-11e9-8fde-d797cb2e44e0.png" />
+<h1>Our Products</h1>
+
+<h2 class="topnav1">
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>About</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Careers</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Contact</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Special Offers</span></a>
+</h2>
+
+<img src="https://user-images.githubusercontent.com/25410880/61634770-ea4b4380-ac46-11e9-9f64-578687efe1eb.png">
 </div> 
 
-
 <span onclick="document.getElementById('id99').style.display='none'" class="w3-button w3-display-topright" style="background-color:transparent;">&times;</span>
+</div>
+</div>
+</div>
+
+<div class="w3-row" style="margin:0;padding:0;width:100%;">
+<div class="w3-quarter w3-white">
+<div class="column w3-white" style="padding:10px 0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;border-radius:2px;margin:0;padding:10px;text-decoration:none;">Product Details</button>
+</div>
+</div>
+<div class="w3-quarter w3-white">
+<div class="column w3-white" style="padding:10px 0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;border-radius:2px;margin:0;padding:10px;text-decoration:none;">Product Details</button>
+</div>
+</div>
+<div class="w3-quarter w3-white">
+<div class="column w3-white" style="padding:10px 0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;border-radius:2px;margin:0;padding:10px;text-decoration:none;">Product Details</button>
+</div>
+</div>
+<div class="w3-quarter w3-white">
+<div class="column w3-white" style="padding:10px 0;margin:0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;border-radius:2px;margin:0;padding:10px;text-decoration:none;">Product Details</button>
 </div>
 </div>
 </div>
