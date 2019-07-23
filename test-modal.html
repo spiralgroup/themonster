@@ -433,7 +433,7 @@ margin: 0;
 
 .hero{
   width: 100%;
-  height: 350px;
+  height: 100%;
   text-align: center;
   margin: 0;
   background: #fff;
@@ -512,7 +512,63 @@ margin: 0;
   cursor: pointer;
   }
   }
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
 </style>
 </head>
 
@@ -520,9 +576,63 @@ margin: 0;
 <div data-role="page" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <center>
 <div class="w3-light-grey" data-role="header" data-position="fixed" style="border:none;padding:0;margin:0;box-shadow:0 1px 10px #f0f0f0;">
-<p align="center" style="font-family:kaushan script;font-size:36px;color:#fff;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;padding:15px 0;" onclick="document.getElementById('id99').style.display='block'" p class="btn">Our Products</p>
+<p align="center" style="font-family:kaushan script;font-size:36px;color:#fff;letter-spacing:1px;text-shadow:0 1px 1px #000;margin:0;padding:15px 0;" onclick="openNav()" p class="btn">Our Products</p>
 
-<div id="id99" class="w3-modal w3-white w3-animate-opacity" style="width:100%;margin:0;padding:0;">
+<div id="myNav" class="overlay w3-white">
+<div class="overlay-header" style="margin:0;padding:0;">
+
+<div class="w3-row" style="margin:0;width:100%;">
+<div class="w3-threethird">
+<div class="column w3-black" style="padding:0;margin:0;">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+<img src="https://user-images.githubusercontent.com/25410880/61645808-68661500-ac5c-11e9-8c8d-bb9cb17f9f15.png" style="width:100%;margin:0;padding:0;">
+</div>
+</div>
+
+<div class="w3-half">
+<div class="column w3-white" style="padding:0;margin:0;">
+<div class="hero">
+<h1>Our Products</h1>
+<h2 class="topnav1">
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>About</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Careers</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Contact</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Special Offers</span></a>
+</h2>
+
+<img src="https://user-images.githubusercontent.com/25410880/61634770-ea4b4380-ac46-11e9-9f64-578687efe1eb.png">
+</div> 
+</div>
+</div>
+
+<div class="w3-half">
+<div class="column w3-white" style="padding:0;margin:0;">
+<h1>Our Products</h1>
+
+<h2 class="topnav1">
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>About</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Careers</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Contact</span></a><br>
+<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Special Offers</span></a>
+</h2>
+</div> 
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<div id="id99" class="w3-modal w3-white w3-animate-opacity" style="width:100%;height:100%;margin:0;padding:0;">
 
 <div class="w3-modal-content w3-black" style="width:100%;margin:0;padding:0;">
 <div class="w3-row" style="margin:0;width:100%;">
@@ -1806,7 +1916,5 @@ $(document).ready(function(){
   });
 });
 </script>
-
-
 </body>
 </html>
