@@ -34,7 +34,7 @@
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 7,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -169,10 +169,6 @@ body, html {
 }
 .slick-arrow.slick-hidden {
     display: none;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
 }
 
 .accordion {
@@ -371,38 +367,20 @@ margin: 0;
  }
 }
 
-.button {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  text-align: center;
-  font-family: kaushan script;
-  font-size: 30.5px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #ccc;
+.topnav1 {
+font-family: ubuntu condensed;
+font-size: 18px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #ccc;
+text-decoration: none;
+margin: 10px 0;
+}
+
+.topnav1 a:hover {
   text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
- }
-
-.button span {
-  cursor: pointer;
-  display: block;
-  line-height: 10.5px;
-  position: relative;
-  transition: 0.5s;
-}
-
-
-.button:hover span {
-  color: #fff;
-}
-
-.button:hover span:after {
- opacity: 1;
-  right: 0;
+  border-bottom: 2px solid #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -411,107 +389,7 @@ margin: 0;
    }
   }
   
-  /*==========SCALE-IN==========*/
-@-webkit-keyframes scale-in {
-     0%   {transform: scale(10, 10); opacity: 0;}
-    100% {transform: scale(1, 1); opacity: 1;}
-}
-
-@keyframes scale-in {
-    0%   {transform: scale(10, 10); opacity: 0;}
-    100% {transform: scale(1, 1);  opacity: 1;}
-}
-/*==========ROLL-OUT==========*/
-@-webkit-keyframes roll-out {
-    0%   {width: 0;}
-    100% {width: 100%; }
-}
-@keyframes roll-out {
-    0%   {width: 0;}
-    100% {width: 100%; }
-}
-
-.hero{
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  margin: 0;
-  background: #fff;
-  position: relative; 
-}
-
-.hero h1{
-font-family: kaushan script;
-font-size: 52px;
-color: #ccc;
-text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #444;
-text-decoration: none;
-margin: auto;
-position: absolute; 
-  top: 40px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.hero h2{
-font-family: kaushan script;
-font-size: 43px;
-color: #fff;
-text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #ccc;
-text-decoration: none;
-position: absolute; 
-  top: 120px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.hero h2 a:hover {
-margin: 0;
-  }
-  
-.hero img{
-  width: 100%;
-}
-.hero h1, .hero h2{
-  -webkit-animation: scale-in 1.3s ease-out;
-  -moz-animation: scale-in 1.3s  ease-out;
-    animation: scale-in 1.3s ease-out; 
-}
-
-@media all and (max-width: 768px) {
-  .hero{
-    height: 70vw;
-  }
-  
-  .hero h1{
-    font-size: 10vw;
-    top: 6vw;
-     }
-  .hero h2{
-    font-size: 6vw;
-    top: 20vw;
-  }
  
-}
-
-@media all and (max-width: 768px) {
-  .button {
-  font-size: 16.5px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #222;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  }
-  }
 .overlay {
   height: 100%;
   width: 0;
@@ -525,42 +403,14 @@ margin: 0;
   transition: 0.5s;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
 .overlay .closebtn {
   position: absolute;
   top: 5px;
   right: 5px;
   font-size: 20px;
+  text-decoration: none;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
 
 @media screen and (max-height: 450px) {
   .closebtn {
@@ -589,33 +439,64 @@ margin: 0;
 </div>
 </div>
 
-<div class="w3-half">
-<div class="column w3-white" style="padding:0;margin:0;">
-<div class="hero">
-<h1>Our Products</h1>
-<h2 class="topnav1">
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>About</span></a><br>
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Careers</span></a><br>
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Contact</span></a><br>
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Special Offers</span></a>
-</h2>
-
-<img src="https://user-images.githubusercontent.com/25410880/61634770-ea4b4380-ac46-11e9-9f64-578687efe1eb.png">
+<div class="w3-half" style="padding:0;margin:0;">
+<div class="column w3-card w3-light-grey" style="padding:0;margin:0;">
+<div class="topnav1" style="padding:25px 0 13px 0;margin:0;">
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
 </div> 
 </div>
 </div>
 
+
 <div class="w3-half">
 <div class="column w3-white" style="padding:0;margin:0;">
-<h1>Our Products</h1>
+<div class="customer-logos slider" style="background-color:#fff;width:100%;padding:20px 0 15px 0;margin:0;">
+<div class="slide"><a href="#item1"><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png"></a></div>
 
-<h2 class="topnav1">
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>About</span></a><br>
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Careers</span></a><br>
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Contact</span></a><br>
-<a class="button" href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;"><span>Special Offers</span></a>
-</h2>
+<div class="slide"><a href="#item2"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
+
+<div class="slide"><a href="#item3"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
+
+<div class="slide"><a href="#item4"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png"></a></div>
+
+<div class="slide"><a href="#item5"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></a></div>
+
+<div class="slide"><a href="#item6"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png"></a></div>
+
+<div class="slide"><a href="#item7"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png"></a></div>
+
+<div class="slide"><a href="#item8"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
+
+<div class="slide"><a href="#item9"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
+
+<div class="slide"><a href="#item10"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a>
+</div>
+
+<div class="slide"><a href="#item11"><img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png"></a>
+</div>
+
+<div class="slide"><a href="#item12"><img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png"></a>
+</div>
+</div>
 </div> 
+</div>
+
+<div class="w3-row">
+<div class="w3-threethird">
+<div class="column w3-white" style="padding:0;margin:0;">
+<div style="padding:25px 0 13px 0;margin:0;">
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/about-us.html" style="color:#222;">About</a></p>
+</div> 
+</div>
+</div>
 </div>
 </div>
 </div>
