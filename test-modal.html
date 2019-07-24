@@ -208,11 +208,6 @@ body, html {
   background-color: #f0f0f0;
 }
 
-.active1 {
-  color: #ccc;
-  text-decoration: none;
-}
-
 .panel {
   padding: 0 2px;
   margin: 5px 0;
@@ -307,7 +302,7 @@ body, html {
 
 .column3 {
     width: 100%;
-    margin: 50px 0 15px 0;
+    margin: 0;
     padding: 0;
     display: block;
     float: center;
@@ -329,7 +324,7 @@ body, html {
         display: inline-block;
         width: 100%;
         margin: 0;
-        padding: 0 0 10px 0;
+        padding: 0;
         float: center;
  }
 }
@@ -408,7 +403,40 @@ margin: 0;
   margin: 0;
    }
   } 
- 
+  
+.bg-img {
+  /* The image used */
+  background-image: url("https://user-images.githubusercontent.com/25410880/61811348-2a045d80-adf6-11e9-8222-45b31c5b2a97.png");
+
+  min-height: 480px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.active1 {
+  color: #222;
+  }
+
+li:hover span {
+  border-bottom: 2px solid #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+   transition: 0.5s;
+}
 </style>
 </head>
 
@@ -418,18 +446,49 @@ margin: 0;
 <img src="https://user-images.githubusercontent.com/25410880/61714113-e84cb780-ad0e-11e9-86b9-499f26176aa3.png" style="width:100%;margin:0;padding:0;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
 </div>
 
-<div data-role="main" class="ui-content">
-<div class="modal fade" id="myModal88" style="background-color:#fff;">
 <center>
-<div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>
+<div data-role="main" class="ui-content">
+<!-- The Modal -->
+<center>
+<div class="modal fade" id="myModal88" style="width:100%;background-color:#fff;padding:0;margin:0;">
+<div class="modal-body" style="width:100%;background-color:#fff;padding:0;margin:0;">
+<h2>test</h2>
+<div class="bg-img" style="width:100%;background-color:transparent;padding:0;margin:0;">
+  <div class="container" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<nav class="navbar navbar-default" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;">
+  <div class="container-fluid" style="width:100%;background-color:transparent;padding:0;margin:0;">
+    <div class="navbar-header w3-center">
+    <center>
+      <button class="btn w3-hover-shadow navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:transparent;font-family:calibri,helvetica;font-size:40px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:0;margin:0;border:none;">&#9776;</button>
+      </center>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>About</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Our Products</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Special Offers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Contact</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Careers</span></a></li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Advertise</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Customer Feedback</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Terms &#124; Privacy</span></a></li>
+   </ul>
+    </div>
+  </div>
+</nav>
 </div>
-        
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
+</div>
+<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+
 </div>
 </div>
 </div>
+</div>
+
 
 <div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <div class="w3-row w3-white" style="margin:0;padding:0;">
@@ -440,6 +499,7 @@ margin: 0;
 </div>
 </div>
 </div>
+
 
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 15px 0;">
@@ -1434,6 +1494,7 @@ If you have questions, call 773-242-0705.</p>
 <p class="topic4">become visible.</p>
 <div class="w3-threethird" style="margin:0;padding:0;">
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
+</div>
 </div>
 </div>
 </div>
