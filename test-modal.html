@@ -177,7 +177,7 @@ body, html {
 
 .accordion {
   font-family: roboto;
-  font-size: 13px;
+  font-size: 14px;
   text-shadow:0 0 1px #222;
   letter-spacing: .5px;
   background-color: #f8f8ff;
@@ -223,76 +223,6 @@ body, html {
   transition: max-height 0.2s ease-out;
 }
 
-
-.column2 {
-    width: 52%;
-    display: inline-block;
-    float: center;
-}
-
-.row,
-.row > .column2 {
-    padding: 0;
-    margin: 5px 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-.topic {
-font-family: roboto;
-font-size: 12px;
-letter-spacing: .5px;
-color: #222;
-text-align: justify;
-text-shadow: 0 0 1px #000;
-margin: 0;
-padding:0 0 8px 0;
-}
-
-.topic1 {
-font-family: roboto;
-font-size: 14px;
-letter-spacing: .5px;
-color: #222;
-text-align: justify;
-text-shadow: 0 0 1px #000;
-margin: 0;
-padding:0 0 8px 0;
-}
-
-.topic2 {
-font-family: roboto;
-font-size: 13px;
-letter-spacing: .5px;
-color: #222;
-text-align: center;
-text-shadow: 0 0 1px #000;
-margin: 0;
-padding:0 0 8px 0;
-}
-
-.topic5 {
-font: roboto;
-font-size: 15px;
-color: #222;
-text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
-padding: 0;
-margin: 0;
-}
-
 .column {
     width: 100%;
     float: left;
@@ -326,16 +256,15 @@ margin: 0;
 }
 
 .column1 {
-    width: 70%;
+    width: 82%;
+    display: inline-block;
     float: center;
-    padding: 0;
-    margin: 0;
- }
+}
 
 .row,
 .row > .column1 {
     padding: 0;
-    margin: 0;
+    margin: 5px 0;
 }
 
 .row:after {
@@ -343,12 +272,6 @@ margin: 0;
     display: table;
     clear: both;
 }
-@media (max-width: 900px) {
-    .column1 {
-        width: 100%;
-        float: center;
-       }
-}
 
 @media (max-width: 900px) {
     .column1 {
@@ -357,11 +280,106 @@ margin: 0;
  }
 }
 
-@media screen and (max-width: 768px) {
-  .topic, .topic1, .topic5 {
-  text-align: center;  
+.column2 {
+    width: 52%;
+    display: inline-block;
+    float: center;
+}
+
+.row,
+.row > .column2 {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+.topic {
+font-family: roboto;
+font-size: 13px;
+letter-spacing: .5px;
+color: #222;
+text-align: justify;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding:0 0 8px 0;
+}
+
+.topic1 {
+font-family: roboto;
+font-size: 14px;
+letter-spacing: .5px;
+color: #222;
+text-align: justify;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding:0 0 8px 0;
+}
+
+.topic2 {
+font-family: roboto;
+font-size: 13px;
+letter-spacing: .5px;
+color: #222;
+text-align: center;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding:0 0 8px 0;
+}
+
+.topic4 {
+font-family: kaushan script;
+font-size: 26px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 1px 1px #000;
+padding: 0;
+margin: 0;
+}
+
+.topic5 {
+font-family: kaushan script;
+font-size: 56px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 1px 1px #000;
+padding: 0;
+margin: 75px 0 15px 0;
+}
+
+ @media screen and (max-width: 768px) {
+  .topic {
+  text-align: left;  
    }
   }
+  
+@media screen and (max-width: 768px) {
+  .topic1 {
+  text-align: center;  
+   }
+  } 
+  
+  @media screen and (max-width: 768px) {
+  .topic5 {
+  font-size: 36px;
+  padding: 0;
+  margin: 15px 0;
+   }
+  } 
+ 
 </style>
 </head>
 
@@ -383,20 +401,16 @@ margin: 0;
 </div>
 </div>
 
-
-
-<div class="w3-container" style="width:100%;background-color:#fff;padding:30px 0 0 0;margin:0;">
+<div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <div class="w3-row w3-white" style="margin:0;padding:0;">
-<div class="w3-threethird" style="margin:15px 0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="margin:0;padding:0;">
-<p align="center" style="font-family:kaushan script;font-size:36px;letter-spacing:1px;color:#fff;text-align:center;
-text-shadow:0 1px 1px #000;margin:15px 0;padding:0;">Our Products</p>
+<p class="topic5">Our Products</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-
 
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 15px 0;">
@@ -405,34 +419,27 @@ text-shadow:0 1px 1px #000;margin:15px 0;padding:0;">Our Products</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
-</div>
 
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal1" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -478,15 +485,12 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+</div>
+</div> 
+</div>
+</div> 
+</div> 
 
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
-</div>
-</div> 
-</div>
-</div> 
-</div>
-</div>
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item2" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -494,33 +498,27 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
 Product Details</button>
 </div>
-</div>
 
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal2" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-         <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        <!-- Modal body -->
-       <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal2" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -566,15 +564,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
@@ -583,34 +577,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal3">
 Product Details</button>
 </div>
-</div>
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal3" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-  <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-      <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal3" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -656,15 +642,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item4" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -672,34 +654,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
 Product Details</button>
 </div>
-</div>
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal4" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
- <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-       <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal4" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -745,15 +719,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item5" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -761,34 +731,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
 Product Details</button>
 </div>
-</div>
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal5" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-  <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-        <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal5" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -834,15 +796,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item6" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -850,35 +808,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
 Product Details</button>
 </div>
-</div>
-
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal6" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
- <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-        <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal6" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -924,15 +873,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item7" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -940,35 +885,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
 Product Details</button>
 </div>
-</div>
-
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal7" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
- <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-       <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal7" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -1014,15 +950,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item8" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -1030,35 +962,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
 Product Details</button>
 </div>
-</div>
-
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal8" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
- <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-        <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal8" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -1104,15 +1027,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item9" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -1120,35 +1039,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
 Product Details</button>
 </div>
-</div>
-
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal9" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
- <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-       <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal9" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -1194,15 +1104,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 </div>
 
 <div class="w3-row-padding" style="width:100%;margin:0;">
@@ -1212,35 +1118,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
 Product Details</button>
 </div>
-</div>
-
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal10" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-  <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-        <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal10" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -1286,15 +1183,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
 </div> 
 </div>
 </div> 
-</div>
-</div>
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item11" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -1302,35 +1195,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
 Product Details</button>
 </div>
-</div>
-
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal11" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-  <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-       <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal11" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -1376,15 +1260,11 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
+</div> 
 </div>
-</div>
-</div>      
-</div>
-</div>
+</div> 
+</div> 
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item12" class="column" style="padding:0;margin:0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
@@ -1392,36 +1272,26 @@ If you have questions, call 773-242-0705.</p>
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
 Product Details</button>
 </div>
-</div>
-
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal12" style="background-color:#fff;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
- <!-- Modal Header -->
-        <div class="modal-header" style="background-color:#f1f1f1;border-color:#f1f1f1;padding:10px 0;">
-        <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0;padding:0;">Product Name &#124; 99.99</p>   
-        </div>
-        
-        
-        <!-- Modal body -->
-       <div class="modal-body" style="width:100%;padding:0;margin:0;">
-        <center>
-         <div class="w3-row" style="width:100%;margin:0;">
-      <div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<!-- The Modal -->
+<div class="modal fade" id="myModal12" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
-<p align="center" style="width:60%;">
-<button class="w3-button" style="background-color:#f8f8ff;border:none;color:#222;border-radius:3px;letter-spacing:.5px;font:roboto;font-size:11px;margin:0 0 20px 0;padding:8px;text-align:center;text-decoration:none;text-shadow:0 0 1px #000;"><span class="glyphicon glyphicon-shopping-cart"></span> ADD TO CART</button></p>
-</div>
-</div>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+</div>
+</div>
 
 <center>
 <div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -1467,18 +1337,12 @@ Your Designated Person Will Need:</p>
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
-
-<div class="modal-footer" style="padding:0;margin:7px 0 15px 0;border:none;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8ff;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:7px;text-decoration:none;" data-dismiss="modal">EXIT THIS WINDOW</button>
 </div>
+</div> 
 </div>
+</div> 
+</div> 
 </div>
-</div>
-</div>
-</div>
-</div>
-
-
 
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
@@ -1534,11 +1398,11 @@ If you have questions, call 773-242-0705.</p>
 
 
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:#f8f8ff;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-container w3-panel w3-card" style="background-color:#f8f8ff;width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-container w3-panel" style="background-color:#f8f8ff;width:100%;padding:0;margin:25px 0 0 0;">
 <div class="w3-row" style="background-color:#f8f8ff;padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic5">become visible.</p>
+<p class="topic4">become visible.</p>
 <div class="w3-threethird" style="margin:0;padding:0;">
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
 </div>
