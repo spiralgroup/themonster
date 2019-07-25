@@ -73,39 +73,6 @@ height: 125px !important;
 background-color: #fff !important;
 }
 
-.openinghours {
-    font-family: arial, helvetica;
-    font-size: 14px;
-    color: #222;
-    text-shadow: 0 0 1px #000;
-    letter-spacing: .5px;
-    padding: 0 2px 0 2px;
-    overflow: hidden;
-    display: inline-block;
-}
-.openinghourscontent {
-    float:left;
-}
-
-.today {
-    color: blue;
-   }
-.opening-hours-table tr td:first-child {
-  letter-spacing: .5px;
-}
-#open-status {
-    display:block;
-    text-align:center;
-}
-
-.open {
-    color:#fff;
-}
-    
-.opening-hours-table tr td {
-    padding:0 5px 5px 5px;
-}
-
 
 /* Slider */
 .slick-slide {
@@ -214,6 +181,38 @@ background-color: #fff !important;
     display: none;
 }
 
+.openinghours {
+    font-family: arial, helvetica;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    letter-spacing: .5px;
+    padding: 0 2px 0 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+
+.today {
+    color: blue;
+   }
+.opening-hours-table tr td:first-child {
+  letter-spacing: .5px;
+}
+#open-status {
+    display:block;
+    text-align:center;
+}
+
+.open {
+    color:#fff;
+}
+    
+.opening-hours-table tr td {
+    padding:0 5px 5px 5px;
+}
 .accordion {
   font-family: roboto;
   font-size: 14px;
@@ -438,9 +437,13 @@ margin: 0 !important;
   @media screen and (max-width: 768px) {
   .topic5 {
   font-size: 36px;
- padding: 0;
-margin: 20px 0 10px 0 !important;
+  padding: 0;
+ margin: 20px 0 10px 0 !important;
    }
+   .content3 {
+   height: 0 !important;
+   background-color: #fff !important;
+  }
   }
   
 .bg-img {
@@ -518,34 +521,13 @@ li:hover span {
     </div>
   </div>
 </nav>
-</div>
-</div>
-</div>
-<div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-</div>
-</div>
-</div>
+ </div>
 
-<div class="content3">
-&nbsp;</div>
-
-  <!-- The Modal -->
-<div class="modal fade" id="myModal44" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-<center>
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px 2px 0 0;">
-</div>
-</div>
-
-<div class="w3-row w3-white" style="width:100%;margin:0;">
-<div class="column3" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
- <section class="openinghours" style="background-color:#fff;">
-    <div class="openinghourscontent section w3-white">
-        <table class="opening-hours-table w3-white">
+<div class="w3-row" style="width:100%;margin:100px 0 0 0;">
+<div class="column3" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
+ <section class="openinghours">
+    <div class="openinghourscontent section">
+        <table class="opening-hours-table">
     
             <tr id="Monday" itemprop="openingHours" title="Open Monday from 8am to 8pm">
                 <td>Monday</td>
@@ -592,19 +574,13 @@ li:hover span {
         </table>
         </div>
      </section>
-        
-<div class="w3-row w3-white" style="width:100%;margin:10px 0;">
-<div class="column3" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id77').style.display='none'">EXIT THIS WINDOW</button></p>
-</div>
-</div>
-</div>   
 </div>
 </div>
 </div>
+<div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
 </div>
-
+</div>
 
 <script>
 var currentDate = new Date();
@@ -649,7 +625,13 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
     $(".openorclosed").toggleClass("closed");
 }
 </script>
+</div>
+</div>
+</div>
 
+<div class="content3">
+<p align="center">&nbsp;</p>
+</div>
 
 <div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <div class="w3-row w3-white" style="margin:0;padding:0;">
