@@ -69,9 +69,43 @@ body, html {
 }
     
 .content3 {
-height: 150px;
-border: 1px solid black !important;
+height: 125px !important;
+background-color: #fff !important;
 }
+
+.openinghours {
+    font-family: arial, helvetica;
+    font-size: 14px;
+    color: #222;
+    text-shadow: 0 0 1px #000;
+    letter-spacing: .5px;
+    padding: 0 2px 0 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+
+.today {
+    color: blue;
+   }
+.opening-hours-table tr td:first-child {
+  letter-spacing: .5px;
+}
+#open-status {
+    display:block;
+    text-align:center;
+}
+
+.open {
+    color:#fff;
+}
+    
+.opening-hours-table tr td {
+    padding:0 5px 5px 5px;
+}
+
 
 /* Slider */
 .slick-slide {
@@ -477,9 +511,9 @@ li:hover span {
 </ul>
 
 <ul class="nav navbar-nav navbar-right">
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Advertise</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Customer Feedback</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Terms &#124; Privacy</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Advertise</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Customer Feedback</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Terms &#124; Privacy</span></a></li>
    </ul>
     </div>
   </div>
@@ -494,8 +528,129 @@ li:hover span {
 </div>
 
 <div class="content3">
-&nbsp;
+<button type="button" class="btn" style="background-color:#fff;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal44">
+view hours</button>
+
+  <!-- The Modal -->
+<div class="modal fade" id="myModal44" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px 2px 0 0;">
 </div>
+</div>
+
+<div class="w3-row w3-white" style="width:100%;margin:0;">
+<div class="column3" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
+ <section class="openinghours" style="background-color:#fff;">
+    <div class="openinghourscontent section w3-white">
+        <table class="opening-hours-table w3-white">
+    
+            <tr id="Monday" itemprop="openingHours" title="Open Monday from 8am to 8pm">
+                <td>Monday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday from 8am to 8pm">
+                <td>Tuesday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday from 8am to 8pm">
+                <td>Wednesday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Thursday" itemprop="openingHours" title="Open Thursday from 8am to 8pm">
+                <td>Thursday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Friday" itemprop="openingHours" title="Open Friday from 8am to 8pm">
+                <td>Friday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Saturday" itemprop="openingHours" title="Open Saturday from 8am to 8pm">
+                <td>Saturday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Sunday" itemprop="openingHours" title="Open Sunday from 8am to 8pm">
+                <td>Sunday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+        </table>
+        </div>
+     </section>
+        
+<div class="w3-row w3-white" style="width:100%;margin:10px 0;">
+<div class="column3" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id77').style.display='none'">EXIT THIS WINDOW</button></p>
+</div>
+</div>
+</div>   
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+var currentDate = new Date();
+var weekday = [];
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var currentDay = weekday[currentDate.getDay()];
+
+var currentTimeHours = currentDate.getHours();
+currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
+var currentTimeMinutes = currentDate.getMinutes();
+var timeNow = currentTimeHours + "" + currentTimeMinutes;
+
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //this works at hightlighting today
+
+var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
+
+var openTimeHours = openTimeSplit[0];
+openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
+
+var openTimeMinutes = openTimeSplit[1];
+var openTimex = openTimeSplit[0] + openTimeSplit[1];
+
+var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
+
+var closeTimeHours = closeTimeSplit[0];
+closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
+
+var closeTimeMinutes = closeTimeSplit[1];
+var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
+
+if (timeNow >= openTimex && timeNow <= closeTimex) {
+    $(".openorclosed").toggleClass("open");
+} else {
+    $(".openorclosed").toggleClass("closed");
+}
+</script>
+
 
 <div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <div class="w3-row w3-white" style="margin:0;padding:0;">
