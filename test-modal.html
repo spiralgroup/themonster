@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
 
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Khand+Light|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Ubuntu+Light|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -29,38 +29,13 @@
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
-
-<script>
-$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 9,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
 
 <style type="text/css">
 * {
     box-sizing: border-box;
 }
+
 body, html {
     max-width: 1235px;
     height: 100%;
@@ -76,7 +51,7 @@ background-color: #fff !important;
 
 /* Slider */
 .slick-slide {
-    margin: 0px 5px;
+    margin: 0;
 }
 .slick-slide img {
     width: 100%;
@@ -121,7 +96,7 @@ background-color: #fff !important;
         -ms-transform: translate3d(0, 0, 0);
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-}
+            }
 .slick-track
 {
     position: relative;
@@ -150,8 +125,8 @@ background-color: #fff !important;
     min-height: 1px;
 }[dir='rtl'] .slick-slide
 {
-    float: right;
-}
+    float: left;
+ }
 .slick-slide img
 {
     display: block;
@@ -181,38 +156,7 @@ background-color: #fff !important;
     display: none;
 }
 
-.openinghours {
-    font-family: roboto;
-    font-size: 14px;
-    color: #fff;
-    text-shadow: 0 1px 2px #000;
-    letter-spacing: .5px;
-    padding: 0 2px 0 2px;
-    overflow: hidden;
-    display: inline-block;
-}
-.openinghourscontent {
-    float:left;
-}
 
-.today {
-    color: lightblue;
-   }
-.opening-hours-table tr td:first-child {
-  letter-spacing: .5px;
-}
-#open-status {
-    display:block;
-    text-align:center;
-}
-
-.open {
-    color:#fff;
-}
-    
-.opening-hours-table tr td {
-    padding:0 5px 15px 5px;
-}
 .accordion {
   font-family: roboto;
   font-size: 14px;
@@ -379,35 +323,34 @@ padding:0 0 8px 0;
 }
 
 .topic1 {
-font-family: roboto;
-font-size: 14px;
-letter-spacing: .5px;
-color: #222;
-text-align: justify;
+font-family: kaushan script;
+font-size: 18px;
+color: #fff;
+text-align: center;
+letter-spacing: 1.5px;
 text-shadow: 0 0 1px #000;
+padding: 0 !important;
 margin: 0;
-padding:0 0 8px 0;
 }
 
 .topic2 {
-font-family: roboto;
-font-size: 13px;
-letter-spacing: .5px;
-color: #222;
+font-family: Open Sans Condensed;
+font-size: 19px;
+color: #fff;
 text-align: center;
-text-shadow: 0 0 1px #000;
+letter-spacing: 1px;
+text-shadow: 0 2px 2px #000;
 margin: 0;
 padding:0 0 8px 0;
 }
 
 .topic4 {
-font-family: kaushan script;
+font-family: ubuntu condensed;
 font-size: 26px;
-color: #222;
+color: #333;
 text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 1px 1px #000;
-padding: 0;
+text-shadow: 0 1px 1px #444;
+padding: 20px 0 10px 0;
 margin: 0;
 }
 
@@ -431,6 +374,17 @@ letter-spacing: 1px;
 text-shadow: 0 1px 2px #000;
 padding: 0 !important;
 margin: 150px 0 10px 0 !important;
+}
+
+.topic7 {
+font-family: kaushan script;
+font-size: 66px;
+color: mediumseagreen;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 1px 1px #222;
+padding: 0 !important;
+margin: 230px 0 0 0 !important;
 }
 
  @media screen and (max-width: 768px) {
@@ -460,31 +414,32 @@ margin: 150px 0 10px 0 !important;
   @media screen and (max-width: 768px) {
   .topic6 {
   font-size: 24px;
-  margin: 20px 0 10px 0 !important;
-  background-color: grey;
-  opacity: 0.5;
-  filter: Alpha(opacity=50); /* IE8 and earlier */
+  margin: 20px 0 7px 0 !important;
    }
   } 
   
+  @media screen and (max-width: 768px) {
+  .topic7 {
+  display: none !important;
+  }
+  } 
+    
 .bg-img {
   /* The image used */
-  background-image: url("https://user-images.githubusercontent.com/25410880/61811348-2a045d80-adf6-11e9-8222-45b31c5b2a97.png");
-  min-height: 680px;
+  background-image: url("https://user-images.githubusercontent.com/25410880/62144433-a986a680-b2a6-11e9-9fa3-95b7f8f949ae.png");
+  min-height: 580px;
   max-width: 100% !important;
   float: center !important;
   padding: 0 !important;
   margin: 0 !important;
-
-
-  /* Center and scale the image nicely */
   background-position: center !important;
-    background-size: cover !important;
+  background-size: cover !important;
+  background-color: transparent;
   
   /* Needed to position the navbar */
   position: relative;
 }
-    
+
 /* Position the navbar container inside the image */
 .container {
   position: relative;
@@ -503,12 +458,14 @@ li:hover span {
   padding-left: 10px;
    transition: 0.5s;
 }
+
+
 </style>
 </head>
 
 <body style="width:100%;background-color:#fff;padding:0;margin:0;">
-<div class="w3-card" data-role="header" data-position="fixed" style="border:none;padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/61714113-e84cb780-ad0e-11e9-86b9-499f26176aa3.png" style="width:100%;margin:0;padding:0;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
+<div class="w3-card-4" data-role="header" data-position="fixed" style="border:none;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/62146197-beb10480-b2a9-11e9-8128-857c78172d9d.png" style="width:100%;margin:0;padding:0;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
 </div>
 
 <center>
@@ -517,148 +474,37 @@ li:hover span {
 <div class="modal fade" id="myModal88" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <div class="modal-body" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <div class="bg-img" style="width:100%;background-color:transparent;padding:0;margin:0;">
-  <div class="container" style="width:100%;background-color:transparent;padding:0;margin:0;">
-<nav class="navbar navbar-default" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;">
-  <div class="container-fluid" style="width:100%;background-color:transparent;padding:0;margin:0;">
-    <div class="navbar-header w3-center">
+  <div class="container" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;">
+<nav class="navbar navbar-default w3-card" style="background-color:rgba(192,192,192,0.1);width:100%;padding:0;margin:0;border:none;border-radius:0;">
+  <div class="container-fluid" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;">
+      <div class="navbar-header w3-center" style="border:none;">
     <center>
-      <p class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:transparent;font-family:calibri,helvetica;font-size:40px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:0;margin:0;border:none;cursor:pointer;">&#9776;</p>
-      </center>
-    </div>
+      <p class="navbar-toggle btn" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:transparent;font-size:20px;color:#777;padding:10px;margin:0;border:none;cursor:pointer;">&#9776;</p>
+      </center></div>
 <div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>About</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Our Products</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Special Offers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Careers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Contact</span></a></li>
+<ul class="nav navbar-nav" style="border:none;">    
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>About</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>Our Products</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>Special Offers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>Careers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>Contact</span></a></li>
 </ul>
 
 <ul class="nav navbar-nav navbar-right">
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Advertise</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Customer Feedback</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:calibri,helvetica;font-size:14px;letter-spacing:.5px;color:#fff;text-shadow:0 1px 1px #000;padding:15px 0 8px 0;margin:0 15px;"><span>Terms &#124; Privacy</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>Advertise</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>Customer Feedback</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#777;letter-spacing:1px;text-shadow:-1px 0 -1px #444;padding:15px 0 8px 0;margin:0 15px;"><span>Terms</span></a></li>
    </ul>
     </div>
   </div>
 </nav>
- </div>
-
-<center>
-<div class="w3-row" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-half" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<p class="topic6">
-online marketing solutions</p>
+</div>
 </div>
 </div>
 
-<div class="w3-half" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<p class="topic6">
-business hours</p>
- <section class="openinghours">
-    <div class="openinghourscontent section">
-        <table class="opening-hours-table">
-    
-            <tr id="Monday" itemprop="openingHours" title="Open Monday from 8am to 8pm">
-                <td>Monday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday from 8am to 8pm">
-                <td>Tuesday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday from 8am to 8pm">
-                <td>Wednesday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Thursday" itemprop="openingHours" title="Open Thursday from 8am to 8pm">
-                <td>Thursday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Friday" itemprop="openingHours" title="Open Friday from 8am to 8pm">
-                <td>Friday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Saturday" itemprop="openingHours" title="Open Saturday from 8am to 8pm">
-                <td>Saturday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Sunday" itemprop="openingHours" title="Open Sunday from 8am to 8pm">
-                <td>Sunday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-        </table>
-        </div>
-     </section>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
 <button type="button" class="close" data-dismiss="modal">&times;</button>
 </div>
-</div>
-
-<script>
-var currentDate = new Date();
-var weekday = [];
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-var currentDay = weekday[currentDate.getDay()];
-
-var currentTimeHours = currentDate.getHours();
-currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
-var currentTimeMinutes = currentDate.getMinutes();
-var timeNow = currentTimeHours + "" + currentTimeMinutes;
-
-var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
-$(currentDayID).toggleClass("today"); //this works at hightlighting today
-
-var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
-
-var openTimeHours = openTimeSplit[0];
-openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
-
-var openTimeMinutes = openTimeSplit[1];
-var openTimex = openTimeSplit[0] + openTimeSplit[1];
-
-var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
-
-var closeTimeHours = closeTimeSplit[0];
-closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
-
-var closeTimeMinutes = closeTimeSplit[1];
-var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
-
-if (timeNow >= openTimex && timeNow <= closeTimex) {
-    $(".openorclosed").toggleClass("open");
-} else {
-    $(".openorclosed").toggleClass("closed");
-}
-</script>
 </div>
 </div>
 </div>
@@ -678,18 +524,18 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
 </div>
 
 
-<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item1" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal1" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<button type="w3-button" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
@@ -761,7 +607,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item2" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
 Product Details</button>
 </div>
 
@@ -840,7 +686,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item3" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal3">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal3">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -917,7 +763,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item4" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -994,7 +840,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item5" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1071,7 +917,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item6" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1148,7 +994,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item7" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1225,7 +1071,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item8" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1302,7 +1148,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item9" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1377,11 +1223,12 @@ If you have questions, call 773-242-0705.</p>
 </div> 
 </div>
 
-<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0 0 60px 0;">
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item10" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1403,7 +1250,7 @@ Product Details</button>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 15px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
@@ -1458,7 +1305,7 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div id="item11" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1532,10 +1379,10 @@ If you have questions, call 773-242-0705.</p>
 </div> 
 </div> 
 
-<div class="w3-third" style="margin:0 0 15px 0;">
+<div class="w3-third" style="margin:0;">
 <div id="item12" class="column" style="padding:0;margin:0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
 Product Details</button>
 </div>
 <!-- The Modal -->
@@ -1607,43 +1454,20 @@ If you have questions, call 773-242-0705.</p>
 </div> 
 </div>
 </div> 
-</div> 
 </div>
-
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
-<div class="customer-logos slider" style="background-color:#fff;width:100%;padding:60px 0;margin:0;box-shadow:0 1px 10px #f0f0f0;">
-<div class="slide"><a href="#item1"><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png"></a></div>
-
-<div class="slide"><a href="#item2"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
-
-<div class="slide"><a href="#item3"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
-
-<div class="slide"><a href="#item4"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png"></a></div>
-
-<div class="slide"><a href="#item5"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></a></div>
-
-<div class="slide"><a href="#item6"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png"></a></div>
-
-<div class="slide"><a href="#item7"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png"></a></div>
-
-<div class="slide"><a href="#item8"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
-
-<div class="slide"><a href="#item9"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
-
-<div class="slide"><a href="#item10"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a>
 </div>
-
-<div class="slide"><a href="#item11"><img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png"></a>
 </div>
-
-<div class="slide"><a href="#item12"><img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png"></a>
 </div>
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="background-color:white;width:100%;padding:0;margin:40px 0 0 0;">
-<div class="w3-row-padding" style="margin:40px 0;">
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f8f8ff;width:100%;padding:0;margin:0;">
+
+<p class="topic4">our sponsors</p>
+
+<div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="margin:0 0 20px 0;">
 <div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
 <img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
@@ -1664,11 +1488,12 @@ If you have questions, call 773-242-0705.</p>
 
 
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:#f8f8ff;width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-container w3-panel" style="background-color:#f8f8ff;width:100%;padding:0;margin:25px 0 0 0;">
+<hr />
 <div class="w3-row" style="background-color:#f8f8ff;padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic4">become visible.</p>
+<p align="center" style="font-family:brownilla new,sans-serif;font-size:11px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;">Monster Web Development</p>
+
 <div class="w3-threethird" style="margin:0;padding:0;">
 <div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
 </div>
