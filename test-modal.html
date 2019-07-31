@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="en-us">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Demo WebPage - Products & Services &#124; Spiral Group, Inc.</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
 <meta name="google-site-verification" content="BJIZwukE82Cn1letaid7scbh6dUWQVJGT4j4Wq9VgR4" />
 <meta name="yandex-verification" content="1cf8ce3cbc019d20" />
@@ -16,8 +15,6 @@
 <meta property="og:description" content="Online Marketing, Internet Marketing. This is one of our Demo WebPages: Products & Services. If you're looking to develop an online presence for your Small Business, we've got you covered. Our new SMALL BUSINESS SHOWCASE WEBPAGES are mobile-friendly and allows you to perform a multitude of business tasks: promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals. Plans starting at only $13.79 per month. Don't forget to check out the rest of the webpages in our demo." />
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
-
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Khand+Light|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Ubuntu+Light|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -29,29 +26,68 @@
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
+
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <style type="text/css">
-* {
-    box-sizing: border-box;
-}
-
-body, html {
-    max-width: 1235px;
-    height: 100%;
-    margin: auto;
-    background-color: #fff;
-}
-    
-.content3 {
-height: 125px !important;
-background-color: #fff !important;
-}
-
-
 /* Slider */
 .slick-slide {
-    margin: 0;
+    margin: 0px 5px;
 }
 .slick-slide img {
     width: 100%;
@@ -96,7 +132,7 @@ background-color: #fff !important;
         -ms-transform: translate3d(0, 0, 0);
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-            }
+}
 .slick-track
 {
     position: relative;
@@ -125,8 +161,8 @@ background-color: #fff !important;
     min-height: 1px;
 }[dir='rtl'] .slick-slide
 {
-    float: left;
- }
+    float: right;
+}
 .slick-slide img
 {
     display: block;
@@ -155,7 +191,229 @@ background-color: #fff !important;
 .slick-arrow.slick-hidden {
     display: none;
 }
+img {
+    border-radius: 0; 
+    max-width: 100%;
+    height: auto;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}
+
+body, html {
+    max-width: 1235px;
+    height: 100%;
+    margin: none;
+    background-image: linear-gradient(to left, #fff, #fff);
+}
+
+
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: calibri,helvetica;
+  color: #222;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+
+.nab a:hover {
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+ .active1 {
+  background-color: #e6e6e6;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.row,
+.row > .column1 {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.column1 {
+    width: 100%;
+    display: inline-block;
+    float: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column1 {
+        width: 100%;
+        float: center;
+}
+}
+
+.row,
+.row > .column2 {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.column2 {
+    width: 52%;
+    display: inline-block;
+    float: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column2 {
+        width: 100%;
+        float: center;
+}
+}
+
+.row,
+.row > .column3 {
+    padding: 0;
+    margin: 5px 0;
+}
+
+.column3 {
+    width: 72%;
+    display: inline-block;
+    float: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+ }
+}
+
+@media (max-width: 900px) {
+    .column3 {
+        width: 100%;
+        float: center;
+}
+}
+.btn {
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+
+.column {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+ }
+
+.row,
+.row > .column {
+    padding: 0;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+ }
+}
+
+hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f5f5f5, #ccc, #f5f5f5); }
 
 .accordion {
   font-family: roboto;
@@ -200,269 +458,75 @@ background-color: #fff !important;
   transition: max-height 0.2s ease-out;
 }
 
-.column {
-    width: 100%;
-    float: left;
-    padding: 0;
-    margin: 0;
- }
-
-.row,
-.row > .column {
-    padding: 0;
-    margin: 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 900px) {
-    .column {
-        width: 100%;
-        float: center;
- }
-}
-
-.column1 {
-    width: 82%;
-    display: inline-block;
-    float: center;
-}
-
-.row,
-.row > .column1 {
-    padding: 0;
-    margin: 5px 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media (max-width: 900px) {
-    .column1 {
-        width: 100%;
-        float: center;
- }
-}
-
-.column2 {
-    width: 52%;
-    display: inline-block;
-    float: center;
-}
-
-.row,
-.row > .column2 {
-    padding: 0;
-    margin: 5px 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
- }
-}
-
-.column3 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: block;
-    float: center;
-}
-
-@media (max-width: 768px) {
-    .column3 {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
-        padding: 0 0 10px 0;
-        float: center;
-       
- }
-}
-
-@media (max-width: 768px) {
-    .column3 {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        float: center;
- }
-}
-
 .topic {
 font-family: roboto;
 font-size: 13px;
 letter-spacing: .5px;
 color: #222;
 text-align: justify;
-text-shadow: 0 0 1px #000;
 margin: 0;
 padding:0 0 8px 0;
-}
-
-.topic1 {
-font-family: kaushan script;
-font-size: 18px;
-color: #fff;
-text-align: center;
-letter-spacing: 1.5px;
-text-shadow: 0 0 1px #000;
-padding: 0 !important;
-margin: 0;
-}
-
-.topic2 {
-font-family: Open Sans Condensed;
-font-size: 19px;
-color: #fff;
-text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 2px 2px #000;
-margin: 0;
-padding:0 0 8px 0;
-}
-
-.topic4 {
-font-family: ubuntu condensed;
-font-size: 26px;
-color: #333;
-text-align: center;
-text-shadow: 0 1px 1px #444;
-padding: 20px 0 10px 0;
-margin: 0;
 }
 
 .topic5 {
-font-family: kaushan script;
-font-size: 56px;
-color: #fff;
+font-family: roboto;
+font-size: 15px;
+color: #222;
 text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 1px 1px #000;
-padding: 0 !important;
-margin: 0 !important;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
 }
 
-.topic6 {
-font-family: kaushan script;
-font-size: 28px;
-color: #fff;
-text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 1px 2px #000;
-padding: 0 !important;
-margin: 150px 0 10px 0 !important;
-}
-
-.topic7 {
-font-family: kaushan script;
-font-size: 66px;
-color: mediumseagreen;
-text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 1px 1px #222;
-padding: 0 !important;
-margin: 230px 0 0 0 !important;
-}
-
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .topic {
   text-align: left;  
    }
   }
-  
-@media screen and (max-width: 768px) {
-  .topic1 {
-  text-align: center;  
-   }
-  } 
-  
-  @media screen and (max-width: 768px) {
-  .topic5 {
-  font-size: 36px;
+.button {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-family: calibri;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
   padding: 0;
- margin: 20px 0 10px 0 !important;
-   }
-   .content3 {
-   height: 0 !important;
-   background-color: #fff !important;
-  }
-  }
-  
-  @media screen and (max-width: 768px) {
-  .topic6 {
-  font-size: 24px;
-  margin: 20px 0 7px 0 !important;
-   }
-  } 
-  
-  @media screen and (max-width: 768px) {
-  .topic7 {
-  display: none !important;
-  }
-  } 
-    
-.bg-img {
-  /* The image used */
-  background-image: url("https://user-images.githubusercontent.com/25410880/62144433-a986a680-b2a6-11e9-9fa3-95b7f8f949ae.png");
-  min-height: 680px;
-  max-width: 100% !important;
-  float: center !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  background-position: center !important;
-  background-size: cover !important;
-  background-color: transparent;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
-
-/* Position the navbar container inside the image */
-.container {
-  position: relative;
   margin: 0;
-  padding: 0;
-  width: 100%;
+ }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.active1 {
-  color: #222;
-  }
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-li:hover span {
-  border-bottom: 2px solid #fff;
+.button:hover span {
   padding-right: 10px;
-  padding-left: 10px;
-   transition: 0.5s;
 }
 
-
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
 </style>
 </head>
-
 <body style="width:100%;background-color:#fff;padding:0;margin:0;">
 <div class="w3-card-4" data-role="header" data-position="fixed" style="border:none;padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/62146197-beb10480-b2a9-11e9-8128-857c78172d9d.png" style="width:100%;margin:0;padding:0;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
@@ -512,30 +576,28 @@ li:hover span {
 <div class="content3">
 <p align="center">&nbsp;</p>
 </div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="w3-fourquarter" style="padding:0 12px;margin:0 0 10px 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #585858;">demo</a> our products</p>
+</div></div>
 
-<div class="w3-container" style="width:100%;background-color:#fff;padding:0;margin:0;">
-<div class="w3-row w3-white" style="margin:0;padding:0;">
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column3">
-<p class="topic5">Our Products</p>
-</div>
-</div>
-</div>
-</div>
+<div class="w3-row-padding" style="margin:20px 0 0 0;">
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+<div id="item1"class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;border-radius:4px;">
 
-
-<div class="w3-row-padding w3-white" style="width:100%;margin:0;">
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item1" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal1" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="w3-button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
@@ -598,28 +660,35 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item2" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+<div id="item2" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
+
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal2" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -677,27 +746,34 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item3" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal3">
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+<div id="item3" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal3" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -755,26 +831,33 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item4" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+<div id="item4" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal4" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -832,26 +915,34 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item5" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+<div id="item5" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;border-radius:4px;">
+
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal5" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -909,26 +1000,34 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item6" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
+
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+<div id="item6" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal6" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -986,26 +1085,35 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item7" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
+
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+
+<div id="item7" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal7" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1063,26 +1171,35 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item8" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
+
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+
+<div id="item8" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal8" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1140,26 +1257,35 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item9" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
+
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+
+<div id="item9" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal9" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1217,106 +1343,36 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding w3-white" style="width:100%;margin:0 0 60px 0;">
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item10" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
+<div class="w3-row-padding" style="margin:20px 0 0 0;">
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+<div id="item10" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal10" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;float:center;"></p>
-
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
-
-<p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
-</div>
-</div>
-
-<center>
-<div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 15px 0;background-color:#fff;">
-<div class="accordion">Product Description</div>
-<div class="panel" style="border:none;">
-<p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly above its corresponding image. Each of your items has a modal for this purpose.<br><br>
-
-In addition, an Add to Cart button is installed directly beneath the image of your product or service for ease of purchase.</p>
-</div>
-
-<div class="accordion">Buy Online, Pick Up In-Store</div>
-<div class="panel">
-<p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Include your specific instructions, in this section, on how your customers are to retrieve their online purchases from your retail location. We have provided the following example.</p>
-
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
-BOPIS INSTRUCTION EXAMPLE</p>
-
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page.<br><br>
-
-Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pickup Notification Email when your items are ready for pick up.<br><br>
-
-Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
-
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
-
-<p class="topic" style="color:#222;">
-You Will Need:</p>
-
-<p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
-
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
-
-&#9900; The credit card used for your purchase.</p><br>
-
-<p class="topic" style="color:#222;">
-Your Designated Person Will Need:</p>
-
-<p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
-
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
-
-<p class="topic" style="color:#222;border:none;">
-If you have questions, call 773-242-0705.</p>
-</div>
-</div>
-</div> 
-</div>
-</div> 
-</div> 
-
-<div class="w3-third" style="margin:0 0 15px 0;">
-<div id="item11" class="column" style="padding:0;margin:0 0 15px 0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
-Product Details</button>
-</div>
-<!-- The Modal -->
-<div class="modal fade" id="myModal11" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-<center>
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1374,26 +1430,35 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
-</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-third" style="margin:0;">
-<div id="item12" class="column" style="padding:0;margin:0;box-shadow:0 1px 10px #f0f0f0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
+
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
+
+<div id="item11" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
+
 <!-- The Modal -->
-<div class="modal fade" id="myModal12" style="background-color:#fff;">
-<div class="modal-body" style="width:100%;padding:0;margin:20px 0 0 0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1451,9 +1516,7 @@ Your Designated Person Will Need:</p>
 If you have questions, call 773-242-0705.</p>
 </div>
 </div>
-</div> 
 </div>
-</div> 
 </div>
 </div>
 </div>
@@ -1462,49 +1525,97 @@ If you have questions, call 773-242-0705.</p>
 </div>
 
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#f8f8ff;width:100%;padding:0;margin:0;">
+<div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
 
-<p class="topic4">our sponsors</p>
-
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-third" style="margin:0 0 20px 0;">
-<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
-<img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
-</div></div>
-
-<div class="w3-third" style="margin:0 0 20px 0;">
-<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
-<img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
-</div></div>
-
-<div class="w3-third" style="margin:0 0 20px 0;">
-<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
-<img src="https://user-images.githubusercontent.com/25410880/56190430-06ec3580-5fdf-11e9-938c-17ac46789cc2.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
-</div>
-</div>
-</div>
+<div id="item12" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;border-radius:4px;">
+<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
+<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+Product Details</button>
 </div>
 
+<!-- The Modal -->
+<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal-body" style="width:100%;padding:0;margin:0;">
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
+<center>
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="column2" style="padding:0;margin:0;background-color:#fff;">
+<p align="center">
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+
+<p align="center">
+<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+</div>
+</div>
 
 <center>
-<div class="w3-container w3-panel" style="background-color:#f8f8ff;width:100%;padding:0;margin:25px 0 0 0;">
-<hr />
-<div class="w3-row" style="background-color:#f8f8ff;padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<p align="center" style="font-family:brownilla new,sans-serif;font-size:11px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;">Monster Web Development</p>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly above its corresponding image. Each of your items has a modal for this purpose.<br><br>
 
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
-</div>
-</div>
-</div>
-</div>
-</div>
+In addition, an Add to Cart button is installed directly beneath the image of your product or service for ease of purchase.</p>
 </div>
 
+<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Include your specific instructions, in this section, on how your customers are to retrieve their online purchases from your retail location. We have provided the following example.</p>
 
- <script>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available shipping methods in the shopping cart or on the Shipping Information page.<br><br>
+
+Once we've processed your order, we will send you an Order Confirmation Email that summarizes your purchases and a Store Pickup Notification Email when your items are ready for pick up.<br><br>
+
+Orders will be ready for pick up 1 hour after being placed. By default, the person who placed the order can pick up the items. An alternate pickup person can be specified during checkout by providing the designated individuals first and last names, and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+
+Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+
+<p class="topic" style="color:#222;">
+You Will Need:</p>
+
+<p class="topic" style="color:#222;">
+&#9900; A copy of your Store Pickup Notification Email.<br>
+
+&#9900; A valid photo ID (state issued ID or driver's license).<br>
+
+&#9900; The credit card used for your purchase.</p><br>
+
+<p class="topic" style="color:#222;">
+Your Designated Person Will Need:</p>
+
+<p class="topic" style="color:#222;">
+&#9900; A copy of your Store Pickup Notification Email.<br>
+
+&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+
+<p class="topic" style="color:#222;border:none;">
+If you have questions, call 773-242-0705.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -1521,31 +1632,141 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="customer-logos slider" style="background-color:#fff;width:100%;padding:100px 0 60px 0;margin:0;">
+<div class="slide"><a href="#item1"><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png"></a></div>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+<div class="slide"><a href="#item2"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
 
-      // Store hash
-      var hash = this.hash;
+<div class="slide"><a href="#item3"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+<div class="slide"><a href="#item4"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png"></a></div>
+
+<div class="slide"><a href="#item5"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></a></div>
+
+<div class="slide"><a href="#item6"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png"></a></div>
+
+<div class="slide"><a href="#item7"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png"></a></div>
+
+<div class="slide"><a href="#item8"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
+
+<div class="slide"><a href="#item9"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
+
+<div class="slide"><a href="#item10"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a>
+</div>
+
+<div class="slide"><a href="#item11"><img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png"></a>
+</div>
+
+<div class="slide"><a href="#item12"><img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;border-top:1px solid #f5f5f5;">
+<div class="w3-row-padding" style="margin:50px 0;">
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<button onclick="document.getElementById('id99').style.display='block'" button class="btn" style="padding:0;margin:0;"><img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="width:100%;border-radius:2px;padding:0;margin:0;text-decoration:none;"></button>
+
+<div id="id99" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
+<div class="w3-modal-content w3-card-4" style="background-color:transparent;width:45%;border-radius:0 0 2px 2px;">
+<div class="w3-row" style="width:100%;margin:0;background-color:transparent;">
+<div class="column w3-card" style="background-color:transparent;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+<center>
+<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
+<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;">
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+PREMIUM ADS SECTION</p>
+
+<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+Here's an opportunity to make money selling ad space on your Small Business Showcase WebPages. The 4 ads comprising the Premium Ads Section is how and where these ads will appear.</p><br>
+
+<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+EXPLORE YOUR CREATIVE POTENTIAL</p>
+
+<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
+Click the button below to participate in helping us shape the terms of our Premium Ads Section. We look forward to both receiving and implementing your suggestions soon.</p>
+</div>
+    
+<div class="w3-row w3-white" style="width:100%;margin:0 0 10px 0;border-radius:2px;">
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<a class="btn btn-primary btn-block" href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">HELP US SHAPE THE TERMS</a></p>
+</div>
+</div>
+
+<div class="w3-half">
+<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
+<p align="center" style="margin:0;padding:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id99').style.display='none'">CLOSE</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
+</div></div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
+</div></div>
+
+<div class="w3-quarter">
+<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/52392328-25213c80-2a56-11e9-8e93-bbb625501e62.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
+<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p align="center" style="font-family:brownilla new,sans-serif;font-size:11px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;">Monster Web Development</p>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
+</div>
+</div>
+
+<center>
+<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/about-us.html">ABOUT US</a>
+<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank">CUSTOMER FEEDBACK</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
+<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
