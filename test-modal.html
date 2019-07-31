@@ -201,18 +201,17 @@ img {
     box-sizing: border-box;
 }
 
-.content {
-    background-color: #ffffff;
+.content3 {
+    background-color: #fff;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
 }
 
 body, html {
     max-width: 1235px;
     height: 100%;
     margin: none;
-    background-image: linear-gradient(to left, #fff, #fff);
+    background-color: #fff;
 }
 
 
@@ -251,31 +250,16 @@ body, html {
   background-color: #717171;
 }
 
- .active1 {
-  background-color: #e6e6e6;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.column1 {
+    width: 82%;
+    display: inline-block;
+    float: center;
 }
 
 .row,
@@ -284,12 +268,6 @@ body, html {
     margin: 5px 0;
 }
 
-.column1 {
-    width: 100%;
-    display: inline-block;
-    float: center;
-}
-
 .row:after {
     content: "";
     display: table;
@@ -301,19 +279,6 @@ body, html {
         width: 100%;
         float: center;
  }
-}
-
-@media (max-width: 900px) {
-    .column1 {
-        width: 100%;
-        float: center;
-}
-}
-
-.row,
-.row > .column2 {
-    padding: 0;
-    margin: 5px 0;
 }
 
 .column2 {
@@ -322,6 +287,12 @@ body, html {
     float: center;
 }
 
+.row,
+.row > .column2 {
+    padding: 0;
+    margin: 5px 0;
+}
+
 .row:after {
     content: "";
     display: table;
@@ -333,13 +304,6 @@ body, html {
         width: 100%;
         float: center;
  }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
-}
 }
 
 .row,
@@ -464,26 +428,149 @@ font-size: 13px;
 letter-spacing: .5px;
 color: #222;
 text-align: justify;
+text-shadow: 0 0 1px #000;
 margin: 0;
 padding:0 0 8px 0;
 }
 
-.topic5 {
-font-family: roboto;
-font-size: 15px;
-color: #222;
+.topic1 {
+font-family: kaushan script;
+font-size: 18px;
+color: #fff;
 text-align: center;
-letter-spacing: .5px;
+letter-spacing: 1.5px;
 text-shadow: 0 0 1px #000;
-padding: 0;
+padding: 0 !important;
 margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+.topic2 {
+font-family: Open Sans Condensed;
+font-size: 19px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 2px 2px #000;
+margin: 0;
+padding:0 0 8px 0;
+}
+
+.topic4 {
+font-family: ubuntu condensed;
+font-size: 26px;
+color: #333;
+text-align: center;
+text-shadow: 0 1px 1px #444;
+padding: 20px 0 10px 0;
+margin: 0;
+}
+
+.topic5 {
+font-family: kaushan script;
+font-size: 56px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 1px 1px #000;
+padding: 0 !important;
+margin: 0 !important;
+}
+
+.topic6 {
+font-family: kaushan script;
+font-size: 28px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 1px 2px #000;
+padding: 0 !important;
+margin: 150px 0 10px 0 !important;
+}
+
+.topic7 {
+font-family: kaushan script;
+font-size: 66px;
+color: mediumseagreen;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 1px 1px #222;
+padding: 0 !important;
+margin: 230px 0 0 0 !important;
+}
+
+ @media screen and (max-width: 768px) {
   .topic {
   text-align: left;  
    }
   }
+  
+@media screen and (max-width: 768px) {
+  .topic1 {
+  text-align: center;  
+   }
+  } 
+  
+  @media screen and (max-width: 768px) {
+  .topic5 {
+  font-size: 36px;
+  padding: 0;
+ margin: 20px 0 10px 0 !important;
+   }
+   .content3 {
+   height: 0 !important;
+   background-color: #fff !important;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .topic6 {
+  font-size: 24px;
+  margin: 20px 0 7px 0 !important;
+   }
+  } 
+  
+  @media screen and (max-width: 768px) {
+  .topic7 {
+  display: none !important;
+  }
+  } 
+    
+.bg-img {
+  /* The image used */
+  background-image: url("https://user-images.githubusercontent.com/25410880/62144433-a986a680-b2a6-11e9-9fa3-95b7f8f949ae.png");
+  min-height: 680px;
+  max-width: 100% !important;
+  float: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-color: transparent;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-img  {
+ background-image: url("https://user-images.githubusercontent.com/25410880/62144433-a986a680-b2a6-11e9-9fa3-95b7f8f949ae.png");
+ min-height: 430px;
+ max-width: 100% !important;
+  }
+  } 
+/* Position the navbar container inside the image */
+.container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li:hover span {
+  border-bottom: 2px solid #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+   transition: 0.5s;
+}
+
 .button {
   border-radius: 2px;
   background-color: #f0f0f0;
@@ -583,13 +670,12 @@ margin: 0;
 </div></div>
 
 <div class="w3-row-padding" style="margin:20px 0 0 0;">
+<div class="w3-threethird" style="padding:0 12px;margin:0 0 10px 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #585858;">demo</a> our products</p></div></div>
+
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-<div id="item1"class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item1"class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;border-radius:4px;">
-
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
 <button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
@@ -664,31 +750,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-<div id="item2" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item2" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
-
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal2" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -750,30 +828,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-<div id="item3" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item3" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal3">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal3" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -835,29 +906,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-<div id="item4" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item4" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal4" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -919,30 +984,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-<div id="item5" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item5" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;border-radius:4px;">
-
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal5" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1004,30 +1062,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-<div id="item6" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item6" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal6" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1089,31 +1140,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-
-<div id="item7" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item7" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal7" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1175,31 +1218,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-
-<div id="item8" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item8" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal8" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1261,31 +1296,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-
-<div id="item9" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item9" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal9" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1341,10 +1368,6 @@ Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1355,24 +1378,21 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-row-padding" style="margin:20px 0 0 0;">
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-<div id="item10" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item10" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal10" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1434,31 +1454,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-
-<div id="item11" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item11" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal11" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
@@ -1520,31 +1532,23 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 10px 0;">
-
-<div id="item12" class="column1 w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div id="item12" class="column w3-card" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;border-radius:4px;">
-<div class="content1 w3-panel" style="background-color:#fff;padding:0;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="column" style="padding:0 10px;margin:0 0 10px 0;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="myModal1" style="background-color:#fff;">
+<div class="modal fade" id="myModal12" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;float:center;"></p>
 
 <p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
 
