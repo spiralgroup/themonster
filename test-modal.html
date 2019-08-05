@@ -240,43 +240,13 @@ img {
 .content3 {
     padding: 0;
     margin: 0;
+    line-height: 100px;
 }
 
 body, html {
     max-width: 1235px;
     height: 100%;
     margin: none;
-}
-
-
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #222;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
-}
-
-
-.nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
 }
 
 
@@ -572,6 +542,28 @@ margin: 0 !important;
    }
   }     
 
+.bg-img {
+  /* The image used */
+  background-image: url("https://user-images.githubusercontent.com/25410880/62431454-8449cc00-b6dc-11e9-9138-e647dad4f700.png");
+  min-height: 600px;
+  max-width: 100% !important;
+  float: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-color: transparent;
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 li:hover span {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
@@ -631,12 +623,15 @@ li:hover span {
 <center>
 <div class="modal fade" id="myModal88" style="width:100%;background-color:#222;padding:0;margin:0;">
 <div class="modal-body" style="width:100%;background-color:#222;padding:0;margin:0;">
+<div class="bg-img" style="width:100%;background-color:transparent;padding:0;margin:0;">
+  <div class="container" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;">
+
 <nav class="navbar navbar-default w3-card" style="background-color:#222;width:100%;padding:0;margin:0;border:none;border-radius:0;">
-<div class="container-fluid" style="background-color:#222;width:100%;padding:0;margin:0;border:none;">
-<div class="navbar-header w3-center" style="width:100%;border:none;">
-<center>
-<p class="navbar-toggle btn" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#222;font-size:20px;color:#777;padding:10px;margin:0;border:none;cursor:pointer;">&#9776;</p>
-</center></div>
+  <div class="container-fluid" style="background-color:#222;width:100%;padding:0;margin:0;border:none;">
+      <div class="navbar-header w3-center" style="width:100%;border:none;">
+    <center>
+      <p class="navbar-toggle btn" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#222;font-size:20px;color:#f0f0f0;padding:10px;margin:0;border:none;cursor:pointer;">&#9776;</p>
+      </center></div>
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav" style="border:none;">    
 <li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span>About</span></a></li>
@@ -720,7 +715,7 @@ business hours</p>
 
 <center>
 <div class="w3-container" style="width:100%;background-color:#222;padding:0;margin:0;">
-<p align="center" type="button" class="close" data-dismiss="modal" style="border-radius:2px;margin:0;padding:0 20px;font-family:ubuntu;color:#ccc;font-size:42px;">&times;</p>
+<p align="center" type="button" class="close" data-dismiss="modal" style="border-radius:2px;margin:0;padding:0;font-family:ubuntu;color:#ccc;font-size:42px;">&times;</p>
 </div>
 </div>
 </div>
@@ -771,18 +766,16 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
 </script>
 </div>
 </div>
-</div>
+
 
 <div class="content3">
 &nbsp;
 </div>
-<div class="w3-container w3-panel" style="width:100%;">
-<div class="w3-row-padding">
-</div></div></div>
 
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-threethird" style="padding:0 22px;margin:0 0 10px 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #ccc;">demo</a> our products</p></div>
+
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item1"class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
