@@ -192,41 +192,35 @@ $(document).ready(function(){
     display: none;
 }
 
-.openinghours {
-    font-family: roboto;
-    font-size: 13px;
-    color: #fff;
-    text-shadow: 0 1px 2px #000;
-    letter-spacing: .5px;
-    padding: 0;
-    overflow: hidden;
-    display: inline-block;
-}
-.openinghourscontent {
-    float:left;
+
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
 }
 
-.today {
-    color: #fff;
-    background-color: rgba(169,169,169,0.2);
-    }
-    
-.opening-hours-table tr td:first-child {
-  letter-spacing: .5px;
-   }
-#open-status {
-    display:block;
-    text-align:center;
+.nab a {
+  float: center;
+  font-family: roboto;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 10.5px;
+  font-weight: normal;
+  margin: 0 4px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
 }
 
-.open {
-    color: #fff;
+  
+.nab a:hover span {
+  color: white;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  transition: 0.5s;
 }
-    
-.opening-hours-table tr {
-    padding: 5px;
-}
-
 
 img {
     border-radius: 0; 
@@ -428,8 +422,8 @@ hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: li
   transition: max-height 0.2s ease-out;
 }
 
-.col-sm-5 {
-  margin: 120px 0 0 0;
+.col-sm-7, .col-sm-5 {
+  margin: 120px 0 10px 0;
   }
   
 .topic {
@@ -486,14 +480,14 @@ margin: 0;
 }
 
 .topic5 {
-font-family: kaushan script;
-font-size: 56px;
+font-family: Open Sans Condensed;
+font-size: 18px;
 color: #fff;
 text-align: center;
 letter-spacing: 1px;
-text-shadow: 0 1px 1px #000;
-padding: 0 !important;
-margin: 0 !important;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 6px 0 8px 0;
 }
 
 .topic6 {
@@ -513,9 +507,15 @@ margin: 0 0 10px 0!important;
    }
   }
   
+   @media screen and (max-width: 768px) {
+  .topic5 {
+  display: none;  
+   }
+  }
+  
    @media screen and (max-width: 767px) {
-  .col-sm-5 {
-  margin: 0;
+  .col-sm-5, .col-sm-7 {
+  margin: 10px 0;
    }
   }
   
@@ -526,12 +526,7 @@ margin: 0 0 10px 0!important;
   } 
   
   @media screen and (max-width: 768px) {
-  .topic5 {
-  font-size: 36px;
-  padding: 0;
- margin: 20px 0 10px 0 !important;
-   }
-   .content3 {
+  .content3 {
    line-height: 20px !important;
   }
   }
@@ -625,7 +620,6 @@ li:hover span {
 <img src="https://user-images.githubusercontent.com/25410880/62146197-beb10480-b2a9-11e9-8128-857c78172d9d.png" style="width:100%;margin:0;padding:0;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
 </div>
 
-<center>
 <!-- The Modal -->
 <center>
 <div class="modal fade" id="myModal88" style="width:100%;background-color:#222;padding:0;margin:0;">
@@ -636,21 +630,21 @@ li:hover span {
   <div class="container-fluid" style="background-color:#222;width:100%;padding:0;margin:0;border:none;">
       <div class="navbar-header w3-center" style="width:100%;border:none;padding:0;margin:0;">
     <center>
-      <p class="navbar-toggle btn w3-light-grey" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#222;font-family:open sans condensed;font-size:18px;color:#f0f0f0;letter-spacing:1px;text-shadow:0 0 1px #222;padding:6px;margin:0;border:none;border-radius:0;cursor:pointer;">Our Menu</p>
+      <p class="navbar-toggle btn w3-card" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#222;font-family:roboto;font-size:15px;font-weight:normal;color:#f0f0f0;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px;margin:0;border:none;border-radius:0;cursor:pointer;">Our Menu</p>
       </center></div>
 <div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav" style="border:none;">    
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span>About</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span>Our Products</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span>Special Offers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span>Careers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span>Contact</span></a></li>
+<ul class="nav navbar-nav" style="border:none;">
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>About</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Our Products</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Special Offers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Careers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Contact</span></a></li>
 </ul>
 
 <center>
 <ul class="nav navbar-nav navbar-right">
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span> View All Categories</span></a></li>
-<li><a class="close1" data-dismiss="modal" href="#" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:15px 0 8px 0;margin:0 15px;"><span>Close Window</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span> View All Categories</span></a></li>
+<li><a class="close1" data-dismiss="modal" href="#" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Close Window</span></a></li>
     </ul></center>
     </div>
   </div>
@@ -658,111 +652,28 @@ li:hover span {
 </div>
 
 <center>
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="col-sm-1" style="margin:0;padding:0;">&nbsp;</div>
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="col-sm-7">
+<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">beauty & health</p>
+<img class="w3-card-4 w3-white" src="https://user-images.githubusercontent.com/25410880/62493319-a6e3ef80-b785-11e9-9fba-1da3306daa99.png" style="width:100%;border-radius:0 0 2px 2px;padding:0;">
+</div>
+
 <div class="col-sm-5">
-<img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="width:100%;padding:2px;margin:0;float:center;box-shadow:0 52px 52px #000;border-radius:3px;"></div>
-<div class="col-sm-1" style="margin:0;padding:0;">&nbsp;</div>
-<div class="col-sm-5">
-<p class="topic6">
-business hours</p>
- <section class="openinghours">
-    <div class="openinghourscontent section">
-        <table class="opening-hours-table">
-    
-            <tr id="Monday" itemprop="openingHours" title="Open Monday from 8am to 8pm">
-                <td style="padding:5px;">Monday</td>
-                <td class="opens">8:00am</td>
-                <td>&nbsp;-</td>
-                <td style="padding:5px;" class="closes">8:00pm</td>
-            </tr>       
-            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday from 8am to 8pm">
-                <td style="padding:5px;">Tuesday</td>
-                <td class="opens">8:00am</td>
-                <td>&nbsp;-</td>
-                <td style="padding:5px;" class="closes">8:00pm</td>
-            </tr>
-            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday from 8am to 8pm">
-                <td style="padding:5px;">Wednesday</td>
-                <td class="opens">8:00am</td>
-                <td>&nbsp;-</td>
-                <td style="padding:5px;" class="closes">8:00pm</td>
-            </tr>
-            <tr id="Thursday" itemprop="openingHours" title="Open Thursday from 8am to 8pm">
-                <td style="padding:5px;">Thursday</td>
-                <td class="opens">8:00am</td>
-                <td>&nbsp;-</td>
-                <td style="padding:5px;" class="closes">8:00pm</td>
-            </tr>
-            <tr id="Friday" itemprop="openingHours" title="Open Friday from 8am to 8pm">
-                 <td style="padding:5px;">Friday</td>
-                <td class="opens">8:00am</td>
-                <td>&nbsp;-</td>
-                <td style="padding:5px;" class="closes">8:00pm</td>
-            </tr>
-            <tr id="Saturday" itemprop="openingHours" title="Open Saturday from 8am to 8pm">
-                <td style="padding:5px;">Saturday</td>
-                <td class="opens">8:00am</td>
-                <td>&nbsp;-</td>
-                <td style="padding:5px;" class="closes">8:00pm</td>
-            </tr>
-            <tr id="Sunday" itemprop="openingHours" title="Open Sunday from 8am to 8pm">
-                 <td style="padding:5px;">Sunday</td>
-                <td class="opens">8:00am</td>
-                <td>&nbsp;-</td>
-                <td style="padding:5px;" class="closes">8:00pm</td>
-            </tr>
-        </table>
-        </div>
-     </section>
+<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">our location</p>
+<div class="w3-card-4 w3-white" style="padding:2px;margin:0 0 10px 0;border-radius:0 0 2px 2px;">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.0981146394124!2d-87.76774368493028!3d41.89074697922122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e334e3476db5b%3A0x63dbabfc44c23541!2s550+N+Central+Ave%2C+Chicago%2C+IL+60644!5e0!3m2!1sen!2sus!4v1544464086017" width="100%" frameborder="0" style="border-radius:0 0 2px 2px;padding:0;margin:0;" allowfullscreen></iframe>
+</div>
+
+<div class="nab" style="width:100%;padding:10px 0 5px 0;margin:0;">
+<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank"><span>Your FeedBack</span></a>
+<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank"><span>Add Listing</span></a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html"><span>Privacy</span></a>
+
 </div>
 </div>
 </div>
 </div>
-
-<script>
-var currentDate = new Date();
-var weekday = [];
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-var currentDay = weekday[currentDate.getDay()];
-
-var currentTimeHours = currentDate.getHours();
-currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
-var currentTimeMinutes = currentDate.getMinutes();
-var timeNow = currentTimeHours + "" + currentTimeMinutes;
-
-var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
-$(currentDayID).toggleClass("today"); //this works at hightlighting today
-
-var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
-
-var openTimeHours = openTimeSplit[0];
-openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
-
-var openTimeMinutes = openTimeSplit[1];
-var openTimex = openTimeSplit[0] + openTimeSplit[1];
-
-var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
-
-var closeTimeHours = closeTimeSplit[0];
-closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
-
-var closeTimeMinutes = closeTimeSplit[1];
-var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
-
-if (timeNow >= openTimex && timeNow <= closeTimex) {
-    $(".openorclosed").toggleClass("open");
-} else {
-    $(".openorclosed").toggleClass("closed");
-}
-</script>
 </div>
 </div>
 
@@ -1767,7 +1678,7 @@ for (i = 0; i < acc.length; i++) {
 <div class="w3-threethird" style="margin:0;padding:40px 0 10px 0;">
 <p><a align="center" style="padding:0;margin:0;color:#f1f1f1;font-family:kaushan script;font-size:23px;letter-spacing:1px;text-shadow:-4px 0 4px #000;text-decoration:none;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">become visible.</a></p>
 
-<p align="center" style="font-family:ubuntu condensed;font-size:13px;color:#f1f1f1;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">Add your small business to our MarketPlace.</p>
+<p><a align="center" style="font-family:ubuntu condensed;font-size:13px;color:#f1f1f1;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">Add your small business to our MarketPlace.</a></p>
 
 <div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
 </div>
