@@ -192,6 +192,40 @@ $(document).ready(function(){
     display: none;
 }
 
+.openinghours {
+    font-family: arial, helvetica;
+    font-size: 14px;
+    color: #222;
+    text-shadow: 0 0 1px #000;
+    letter-spacing: .5px;
+    padding: 0 2px 0 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+
+.today {
+    color: blue;
+   }
+   
+.opening-hours-table tr td:first-child {
+  letter-spacing: .5px;
+}
+#open-status {
+    display:block;
+    text-align:center;
+}
+
+.open {
+    color:#fff;
+}
+    
+.opening-hours-table tr td {
+    padding:0 5px 5px 5px;
+}
+
 
 .nab {
   overflow: hidden;
@@ -479,6 +513,30 @@ padding: 20px 0 10px 0;
 margin: 0;
 }
 
+.topic4a {
+font-family: roboto;
+font-size: 13px;
+color: #000;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0;
+margin: 0;
+}
+
+.topic4b {
+font-family: roboto;
+font-size: 13px;
+color: #000;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0;
+margin: 0;
+}
+
 .topic5 {
 font-family: Open Sans Condensed;
 font-size: 18px;
@@ -634,22 +692,135 @@ li:hover span {
       </center></div>
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav" style="border:none;">
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>About</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Our Products</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Special Offers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Careers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Contact</span></a></li>
-</ul>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 7px;"><span>About</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 7px;"><span>Our Products</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 7px;"><span>Special Offers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 7px;"><span>Careers</span></a></li>
+<li><a href="javascript:void(
+        window.open(
+          'https://form.jotform.com/92186745877172',
+          'blank',
+          'scrollbars=yes,
+          toolbar=no,
+          width=700,
+          height=500'
+        )
+      )
+    " style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Contact</span></a></li>
+<li><a onclick="document.getElementById('id77').style.display='block'" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;cursor:pointer;padding:8px 0;margin:0 7px;"><span>Business Hours</span></a></li>
+
+<div id="id77" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 10px;margin:0;">
+<div class="w3-modal-content" style="width:45%;background-color:transparent;padding:0;margin:0;border-radius:2px;">
+<span onclick="document.getElementById('id77').style.display='none'" class="w3-button w3-display-topcenter">&times;</span>
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="column3" style="background-color:#fff;padding:0;margin:20px 0 0 0;">
+ <section class="openinghours" style="background-color:#fff;">
+    <div class="openinghourscontent section w3-white">
+        <table class="opening-hours-table w3-white">
+    
+            <tr id="Monday" itemprop="openingHours" title="Open Monday from 8am to 8pm">
+                <td>Monday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday from 8am to 8pm">
+                <td>Tuesday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday from 8am to 8pm">
+                <td>Wednesday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Thursday" itemprop="openingHours" title="Open Thursday from 8am to 8pm">
+                <td>Thursday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Friday" itemprop="openingHours" title="Open Friday from 8am to 8pm">
+                <td>Friday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Saturday" itemprop="openingHours" title="Open Saturday from 8am to 8pm">
+                <td>Saturday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Sunday" itemprop="openingHours" title="Open Sunday from 8am to 8pm">
+                <td>Sunday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+        </table>
+        </div>
+     </section>
+     
+     
+     <script>
+var currentDate = new Date();
+var weekday = [];
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var currentDay = weekday[currentDate.getDay()];
+
+var currentTimeHours = currentDate.getHours();
+currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
+var currentTimeMinutes = currentDate.getMinutes();
+var timeNow = currentTimeHours + "" + currentTimeMinutes;
+
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //this works at hightlighting today
+
+var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
+
+var openTimeHours = openTimeSplit[0];
+openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
+
+var openTimeMinutes = openTimeSplit[1];
+var openTimex = openTimeSplit[0] + openTimeSplit[1];
+
+var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
+
+var closeTimeHours = closeTimeSplit[0];
+closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
+
+var closeTimeMinutes = closeTimeSplit[1];
+var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
+
+if (timeNow >= openTimex && timeNow <= closeTimex) {
+    $(".openorclosed").toggleClass("open");
+} else {
+    $(".openorclosed").toggleClass("closed");
+}
+</script>
+</ul>  
 
 <center>
 <ul class="nav navbar-nav navbar-right">
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span> View All Categories</span></a></li>
-<li><a class="close1" data-dismiss="modal" href="#" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 8px;"><span>Close Window</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 7px;"><span>View All Categories</span></a></li>
+
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 7px;"><span>Terms</span></a></li>
+<li><a class="close1" data-dismiss="modal" href="#" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:8px 0;margin:0 7px;"><span>Close Window</span></a></li>
     </ul></center>
+   </div>
     </div>
-  </div>
-</nav>
-</div>
+ </nav>
+
 
 <center>
 <div class="w3-row-padding" style="width:100%;margin:0;">
@@ -660,16 +831,34 @@ li:hover span {
 
 <div class="col-sm-5">
 <p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">our location</p>
-<div class="w3-card-4 w3-white" style="padding:2px;margin:0 0 10px 0;border-radius:0 0 2px 2px;">
+<div class="w3-card-4 w3-white" style="padding:9px 0;margin:0 0 9px 0;border-radius:0 0 2px 2px;">
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.0981146394124!2d-87.76774368493028!3d41.89074697922122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e334e3476db5b%3A0x63dbabfc44c23541!2s550+N+Central+Ave%2C+Chicago%2C+IL+60644!5e0!3m2!1sen!2sus!4v1544464086017" width="100%" frameborder="0" style="border-radius:0 0 2px 2px;padding:0;margin:0;" allowfullscreen></iframe>
+<p class="topic4a">
+400 S. State Street<br>
+Chicago, IL 60605</p>
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+<input type="hidden" name="daddr" value="400 South State Street, Chicago, IL" />
+<input type="submit" value="Get Directions Using Google Maps" class="w3-button" style="background-color:#f1f1f1;padding:6px 10px;font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration1:none;text-shadow:0 0 1px #000;border-radius:2px;margin:9px 0 0 0;">
+</form>
+</div>
 </div>
 
-<div class="nab" style="width:100%;padding:10px 0 5px 0;margin:0;">
-<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank"><span>Your FeedBack</span></a>
-<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank"><span>Add Listing</span></a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html"><span>Privacy</span></a>
+<div class="col-md-5">
+<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">direct contact information</p>
+<div class="w3-card-4 w3-white" style="padding:9px 0;margin:0 0 9px 0;border-radius:0 0 2px 2px;">
 
+<p class="topic4a">
+Phone: 123.456.7890</p>
+
+<p class="topic4a">
+Fax: 123.456.7891</p>
+
+<p class="topic4a">
+Email: info@yourcompany.com</p>
+
+<a class="w3-button" style="background-color:#f1f1f1;padding:6px 10px;font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;font-weight:normal;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;margin:9px 0 0 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment Online</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -684,7 +873,6 @@ li:hover span {
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-threethird" style="padding:0 22px;margin:0 0 10px 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #ccc;">demo</a> our products</p></div>
-
 
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item1"class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
@@ -1673,9 +1861,9 @@ for (i = 0; i < acc.length; i++) {
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="background-color:#222;width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="padding:0;margin:0;">
-<div class="w3-threethird" style="margin:0;padding:40px 0 10px 0;">
+<div class="w3-container w3-panel" style="background-color:#222;width:100%;padding:50px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 15px 0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <p><a align="center" style="padding:0;margin:0;color:#f1f1f1;font-family:kaushan script;font-size:23px;letter-spacing:1px;text-shadow:-4px 0 4px #000;text-decoration:none;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">become visible.</a></p>
 
 <p><a align="center" style="font-family:ubuntu condensed;font-size:13px;color:#f1f1f1;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">Add your small business to our MarketPlace.</a></p>
@@ -1685,16 +1873,14 @@ for (i = 0; i < acc.length; i++) {
 </div>
 </div>
 
-<div class="w3-row-padding w3-card" style="width:100%;margin:0 0 15px 0;">
-<div class="w3-threethird" style="margin:0;padding:8px 0;">
-<p align="center" style="font-family:roboto;font-size:12px;color:#ccc;letter-spacing:.5px;text-shadow:0 0 1px #444;text-decoration:none;margin:0;padding:0;">Spiral Group, Inc. &copy; 2016 - 2019</p>
+
+<div class="w3-row" style="width:100%;margin:0 0 15px 0;">
+<div class="w3-threethird w3-card" style="margin:0;padding:10px 0;">
+<a align="center" style="font-family:roboto;font-size:12.5px;color:#f1f1f1;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;font-weight:normal;" href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank"><span>Give Feedback About This Merchant</span></a>
 </div>
 </div>
 </div>
 </div>
 </div>
- <!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5773662.js"></script>
-<!-- End of HubSpot Embed Code -->
 </body>
 </html>
