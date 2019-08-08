@@ -416,9 +416,9 @@ hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: li
 .accordion {
   font-family: roboto;
   font-size: 14px;
-  text-shadow:0 0 1px #222;
+  text-shadow:0 0 1px #ccc;
   letter-spacing: .5px;
-  background-color: #f8f8ff;
+  background-color: #f8f8f8;;
   color: #222;
   width: 100%;
   border: none;
@@ -447,9 +447,9 @@ hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: li
 }
 
 .panel {
-  padding: 0 2px;
+  padding: 0 5px;
   margin: 5px 0;
-  background-color: white;
+  background-color: #fff;
   max-height: 0;
   border: none;
   overflow: hidden;
@@ -466,7 +466,6 @@ font-size: 13px;
 letter-spacing: .5px;
 color: #222;
 text-align: justify;
-text-shadow: 0 0 1px #000;
 margin: 0;
 padding:0 0 8px 0;
 }
@@ -515,7 +514,7 @@ margin: 0;
 
 .topic4a {
 font-family: roboto;
-font-size: 13px;
+font-size: 14px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -575,7 +574,7 @@ margin: 0 0 10px 0!important;
   margin: 40px 0 10px 0;
    }
  .col-sm-5 {
-    margin: 10px 0;
+    margin: 12px 0;
   }
   }
   
@@ -828,26 +827,27 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
 <div class="w3-row-padding" style="width:100%;margin:10px 0 0 0;">
 <div class="col-sm-7">
 <p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">beauty & health</p>
-<img class="w3-card-4 w3-white" src="https://user-images.githubusercontent.com/25410880/62493319-a6e3ef80-b785-11e9-9fba-1da3306daa99.png" style="width:100%;border-radius:0 0 2px 2px;padding:0;">
+<img class="w3-card-4 w3-white" src="https://user-images.githubusercontent.com/25410880/62493319-a6e3ef80-b785-11e9-9fba-1da3306daa99.png" style="width:100%;border-radius:0 0 2px 2px;">
 </div>
 
 <div class="col-sm-5">
 <p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">our location</p>
-<div class="w3-card-4 w3-white" style="padding:9px 0;margin:0 0 9px 0;border-radius:0 0 2px 2px;">
+<div class="w3-card-4 w3-white" style="padding:12px 0 0 0;margin:0 0 12px 0;border-radius:0;">
 
 <p class="topic4a">
 400 S. State Street<br>
 Chicago, IL 60605</p>
+
 <form action="http://maps.google.com/maps" method="get" target="_blank">
 <input type="hidden" name="daddr" value="400 South State Street, Chicago, IL" />
-<input type="submit" value="Get Directions Using Google Maps" class="w3-button" style="background-color:#f1f1f1;padding:6px 10px;font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;text-decoration1:none;text-shadow:0 0 1px #000;border-radius:2px;margin:9px 0 0 0;">
+<input type="submit" value="Get Directions" class="btn btn-primary btn-block" style="background-color:#333;padding:7px;font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0;margin:12px 0 0 0;">
 </form>
 </div>
 </div>
 
 <div class="col-md-5">
 <p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">direct contact information</p>
-<div class="w3-card-4 w3-white" style="padding:9px 0;margin:0 0 9px 0;border-radius:0 0 2px 2px;">
+<div class="w3-card-4 w3-white" style="padding:12px 0 0 0;margin:0 0 12px 0;border-radius:0 0 2px 2px;">
 
 <p class="topic4a">
 Phone: 123.456.7890</p>
@@ -858,7 +858,7 @@ Fax: 123.456.7891</p>
 <p class="topic4a">
 Email: info@yourcompany.com</p>
 
-<a class="w3-button" style="background-color:#f1f1f1;padding:6px 10px;font-family:ubuntu condensed;font-size:14px;color:#222;letter-spacing:.5px;font-weight:normal;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;margin:9px 0 0 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment Online</a>
+<a class="btn btn-primary btn-block" style="background-color:#333;padding:7px;font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;font-weight:normal;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0;margin:12px 0 0 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment Online</a>
 </div>
 </div>
 </div>
@@ -879,24 +879,22 @@ Email: info@yourcompany.com</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item1"class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;border-radius:4px;">
-<button class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
+<button class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal1">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal1" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -931,23 +929,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -957,24 +956,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item2" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal2">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal2" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1009,23 +1006,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1042,17 +1040,15 @@ Product Details</button>
 <!-- The Modal -->
 <div class="modal fade" id="myModal3" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1087,23 +1083,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1113,24 +1110,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item4" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal4">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal4" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1165,23 +1160,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1191,24 +1187,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item5" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal5">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal5" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1243,23 +1237,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1269,24 +1264,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item6" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal6">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal6" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1321,23 +1314,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1347,24 +1341,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item7" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal7">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal7" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1399,23 +1391,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1425,24 +1418,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item8" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal8">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal8" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1477,23 +1468,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1503,24 +1495,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item9" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal9">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal9" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1555,56 +1545,53 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
 </div>
 </div>
-
 
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-threethird" style="padding:0 12px;margin:0;">
 </div></div>
 
-
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item10" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal10">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal10" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1639,23 +1626,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1665,24 +1653,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item11" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal11">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal11" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1717,23 +1703,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1743,24 +1730,22 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-third" style="padding:0 12px;margin:0 0 20px 0;">
 <div id="item12" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;border-radius:4px;">
-<button type="button" class="btn w3-hover-shadow" style="font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
+<button type="button" class="btn w3-hover-shadow" style="background-color:#f8f8f8;font-family:brownilla new,sans-serif;font-size:11.5px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #444;text-decoration:none;border:none;margin:0;padding:6px 10px;text-decoration:none;" data-toggle="modal" data-target="#myModal12">
 Product Details</button>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal12" style="background-color:#fff;">
 <div class="modal-body" style="width:100%;padding:0;margin:0;">
-<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 <center>
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="column2" style="padding:0;margin:0;background-color:#fff;">
-<p align="center">
-<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;float:center;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #444;margin:0 0 20px 0;padding:0;">Product Name &#124; 99.99</p>  
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#444;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
 
 <p align="center">
-<button type="button" class="btn w3-hover-blue" style="background-color:#f8f8ff;width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:0 0 20px 0;padding:8px;text-align:center;text-shadow:0 0 1px #444;border-radius:2px;">Add to Cart</button></p>
+<button type="button" class="btn w3-hover-blue" style="width:50%;border:none;color:#222;letter-spacing:1px;font-family:roboto;font-size:14px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Add to Cart</button></p>
 </div>
 </div>
 
@@ -1795,23 +1780,24 @@ Orders will be held at the store for 7 days. If you have not picked up your orde
 You Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).<br>
+&#9900; Valid photo ID.<br>
 
-&#9900; The credit card used for your purchase.</p><br>
+&#9900; Credit card used for purchase.</p><br>
 
 <p class="topic" style="color:#222;">
 Your Designated Person Will Need:</p>
 
 <p class="topic" style="color:#222;">
-&#9900; A copy of your Store Pickup Notification Email.<br>
+&#9900; Store Pickup Notification Email.<br>
 
-&#9900; A valid photo ID (state issued ID or driver's license).</p><br>
+&#9900; Valid photo ID.</p><br>
 
 <p class="topic" style="color:#222;border:none;">
 If you have questions, call 773-242-0705.</p>
 </div>
+<button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
 </div>
 </div>
 </div>
@@ -1874,7 +1860,6 @@ for (i = 0; i < acc.length; i++) {
 </div>
 </div>
 </div>
-
 
 <div class="w3-row" style="width:100%;margin:0 0 15px 0;">
 <div class="w3-threethird w3-card" style="background-color:#222;margin:0;padding:8px 0;">
