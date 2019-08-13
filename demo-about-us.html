@@ -15,28 +15,26 @@
 <meta property="og:description" content="This is one of our Demo WebPages: About Us. If you're looking to develop an online presence for your Small Business, we've got you covered. Our new SMALL BUSINESS SHOWCASE WEBPAGES are mobile-friendly and allows you to perform a multitude of business tasks: promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals. Plans starting at only $13.79 per month. Don't forget to check out the rest of the webpages in our demo." />
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="css/reset.css"> 
-<link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -46,49 +44,25 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 1
             }
         }]
     });
 });
 </script>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 <style type="text/css">
 /* Slider */
 .slick-slide {
-    margin: 0px 5px;
-}
+    margin: 10px 6px 30px 6px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 2px;
+   }
 .slick-slide img {
     width: 100%;
 }
@@ -111,10 +85,9 @@ $(document).ready(function(){
 {
     position: relative;
     display: block;
-    overflow: hidden;
-    margin: 0;
+    overflow: hidden; 
     padding: 0;
-}
+    }
 .slick-list:focus
 {
     outline: none;
@@ -139,7 +112,7 @@ $(document).ready(function(){
     top: 0;
     left: 0;
     display: block;
-}
+   }
 .slick-track:before,
 .slick-track:after
 {display: table;
@@ -191,6 +164,73 @@ $(document).ready(function(){
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.openinghours {
+    font-family: arial, helvetica;
+    font-size: 14px;
+    color: #222;
+    text-shadow: 0 0 1px #000;
+    letter-spacing: .5px;
+    padding: 0 2px 0 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+
+.today {
+    color: blue;
+   }
+   
+.opening-hours-table tr td:first-child {
+  letter-spacing: .5px;
+}
+#open-status {
+    display:block;
+    text-align:center;
+}
+
+.open {
+    color:#fff;
+}
+    
+.opening-hours-table tr td {
+    padding:0 5px 5px 5px;
+}
+
+.nab {
+  overflow: hidden;
+  width: 100%;
+  margin: 100px 0 0 0;
+ }
+ 
+@media screen and (max-width: 768px) {
+  .nab {
+  margin: 28px 0 5px 0 !important;
+   }
+  } 
+ 
+.nab a {
+  float: center;
+  font-family: roboto;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10.5px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 4px;
+  text-shadow: 0 0 1px #000;
+}
+
+.nab a:hover span {
+  color: white;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -201,109 +241,54 @@ img {
     box-sizing: border-box;
 }
 
-.content {
-    background-color: #ffffff;
+.content3 {
     padding: 0;
     margin: 0;
-    border-radius: 2px;
+    line-height: 120px;
+}
+
+.content {
+    padding: 0;
+    margin: 0;
 }
 
 body, html {
     max-width: 1235px;
     height: 100%;
     margin: none;
-    background-image: linear-gradient(to left, #fff, #fff);
 }
 
-.header {
-  padding: 0;
-  background: #ffffff;
-  color: #585858;
-  margin: 0;
-  float: left;
-  display: block;
-}
-.top-container {
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  float: left;
-}
-
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #222;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
-}
-
-
-.nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
-}
-
-.navbar {
-position: fixed;
-top: 0;
-max-width: 1225px;
-background-color: #fff;
-border: none;
-}
-
-
-.mySlides {display:none;}
-
-img {vertical-align: middle;}
-
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: 0;
-}
-
-.active {
+.active1 {
   background-color: #717171;
+  border-radius: 0 0 2px 2px;
 }
 
- .active1 {
-  background-color: #e6e6e6;
-}
- 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.row,
-.row > .column1 {
-    padding: 0;
-    margin: 5px 0;
+.btn {
+font-weight: normal;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
 }
 
-.column1 {
+.column {
     width: 100%;
-    display: inline-block;
-    float: center;
+    float: left;
+    padding: 0;
+    margin: 0;
+ }
+
+.row,
+.row > .column {
+    padding: 0;
+    margin: 0;
 }
 
 .row:after {
@@ -311,221 +296,457 @@ img {vertical-align: middle;}
     display: table;
     clear: both;
 }
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: center;
+       }
+}
 
 @media (max-width: 900px) {
-    .column1 {
+    .column {
         width: 100%;
         float: center;
  }
 }
 
-@media (max-width: 900px) {
-    .column1 {
-        width: 100%;
-        float: center;
-}
-}
+hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: linear-gradient(to right, #f1f1f1, #cceeff, #f1f1f1); }
 
- .btn {
-  background-color: DodgerBlue;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-  .topic1 {
-font-family:calibri;
-font-size:14.5px;
-color:#222;
-text-shadow:0 0 1px #000;
-text-align: left;
+.col-sm-7, .col-sm-5 {
+  margin: 120px 0 14px 0;
+  }
+  
+.topic {
+font-family: roboto;
+font-size: 13px;
 letter-spacing: .5px;
+color: #222;
+text-align: justify;
+margin: 0;
+padding:0 0 8px 0;
+}
+
+.topic1 {
+font-family: roboto;
+font-size: 14px;
+letter-spacing: .5px;
+color: #222;
+text-align: center;
+margin: 0;
 padding: 0;
-margin:0;
 }
 
 .topic2 {
-font-family:roboto;
-font-size:13.5px;
-color:#000;
-text-align: justify;
+font-family: Open Sans Condensed;
+font-size: 18px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 0 0 8px 0;
+}
+
+.topic3 {
+font-family: kaushan script;
+font-size: 22px;
+color: #000;
 letter-spacing: .5px;
-padding: 0;
+text-align: center;
+text-shadow: 2px 2px 2px #000;
+margin: 0;
+padding: 10px 0 0 0;
+}
+.topic4 {
+font-family: ubuntu condensed;
+font-size: 26px;
+color: #333;
+text-align: center;
+text-shadow: 0 1px 1px #444;
+padding: 20px 0 10px 0;
 margin: 0;
 }
 
-  .topic3 {
-font-family:calibri;
-font-size:16px;
-color:#222;
-text-shadow:0 0 1px #000;
-text-align: center;
-letter-spacing: .5px;
-padding: 5px 0 0 0;
-margin:0;
-}
-
-  .topic4 {
-font-family:calibri;
-font-size:14px;
-color:#222;
-text-shadow:0 0 1px #000;
-text-align: center;
-letter-spacing: .5px;
-padding: 0 0 10px 0;
-margin:0;
-}
-
-.topic5 {
+.topic4a {
 font-family: roboto;
-font-size: 15px;
-color: #222;
+font-size: 14px;
+color: #000;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
+font-weight: normal;
 padding: 0;
 margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .topic1, .topic2, .topic3, .topic4 {
+.topic4b {
+font-family: Open Sans Condensed;
+font-size: 20px;
+color: #000;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 6px 0 10px 0;
+}
+
+.topic4c {
+font-family: roboto;
+font-size: 11.5px;
+color: #000;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0;
+margin: 0;
+}
+
+.topic5 {
+font-family: Open Sans Condensed;
+font-size: 18px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 6px 0 8px 0;
+}
+
+.topic6 {
+font-family: kaushan script;
+font-size: 20px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 1px 2px #000;
+padding: 0 !important;
+margin: 0 0 10px 0!important;
+}
+
+ @media screen and (max-width: 768px) {
+  .topic {
   text-align: center;  
-  padding: 0;
-  margin: 0;
+   }
+  }
+  
+   @media screen and (max-width: 768px) {
+  .topic5 {
+  display: none;  
+   }
+  }
+  
+   @media screen and (max-width: 767px) {
+ .col-sm-7 {
+  margin: 40px 0 10px 0;
+   }
+ .col-sm-5 {
+    margin: 12px 0;
   }
   }
   
-  hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f5f5f5, #ccc, #f5f5f5); }
+@media screen and (max-width: 768px) {
+  .topic1 {
+  text-align: center;  
+   }
+  } 
+  
+  @media screen and (max-width: 768px) {
+  .content3 {
+   line-height: 20px !important;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .topic6 {
+  font-size: 18px;
+  margin: 20px 0 10px 0 !important;
+   }
+  }     
 
-.button {
-  border-radius: 2px;
-  background-color: #f0f0f0;
-  border: none;
-  color: #000;
-  text-align: center;
-  font-family: calibri;
-  font-size: 10.5px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #ccc;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
- }
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
+.bg-img {
+  /* The image used */
+  background-image: url("https://user-images.githubusercontent.com/25410880/62431454-8449cc00-b6dc-11e9-9138-e647dad4f700.png");
+  min-height: 600px;
+  max-width: 100% !important;
+  float: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-color: transparent;
   position: relative;
-  transition: 0.5s;
 }
 
-.button span:after {
-  content: '';
-  position: absolute;
- opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+/* Position the navbar container inside the image */
+.container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.button:hover span {
-  padding-right: 10px;
+li:hover span {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+   transition: 0.5s;
 }
 
-.button:hover span:after {
- opacity: 1;
-  right: 0;
+.close1 {
+    text-align: center;
+  }
+  
+.navbar-right {
+margin-right: 0;
+margin-left: 0;
+padding-right: 0;
+padding-left: 0;
 }
+
 </style>
 </head>
-<body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;">
-<div class="header" id="myHeader">
-<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:dodgerblue;padding:11px 0 0 0;background-color:transparent;text-shadow:0 0 1px #777;">DEMO 2 of 5</span>
-<a class="navbar-brand" href="http://spiralgroup.org" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
+<body style="width:100%;padding:0;margin:0;">
+<div class="w3-card-4" data-role="header" data-position="fixed" style="border:none;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/62146197-beb10480-b2a9-11e9-8128-857c78172d9d.png" style="width:100%;margin:0;padding:0;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
 </div>
+
+<!-- The Modal -->
+<center>
+<div class="modal fade" id="myModal88" style="width:100%;background-color:#222;padding:0;margin:0;">
+<div class="modal-body" style="width:100%;background-color:#222;padding:0;margin:0;">
+<div class="bg-img" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<div class="container" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;">
+<nav class="navbar navbar-default" style="background-color:#222;width:100%;padding:0;margin:0;border:none;border-radius:0;">
+  <div class="container-fluid" style="background-color:#222;width:100%;padding:0;margin:0;border:none;">
+      <div class="navbar-header w3-center" style="width:100%;border:none;padding:0;margin:0;">
+    <center>
+      <p class="navbar-toggle btn w3-card" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#222;font-family:roboto;font-size:15px;font-weight:normal;color:#f0f0f0;letter-spacing:1px;text-shadow:0 0 1px #000;padding:12px 0 10px 0;margin:0;border:none;border-radius:0;cursor:pointer;">Our Menu</p>
+      </center></div>
 <div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Your Company Menu <span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO 1</font> Careers</a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO 2</font> About Us</a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-contact-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO 3</font> Contact Us</a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO 4</font> Special Offers <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;padding:10px 20px;"><font color="dodgerblue">DEMO 5</font> Products & Services</a></li>
-</ul></ul>
+<ul class="nav navbar-nav" style="border:none;">
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>About</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Our Products</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Special Offers <i class="material-icons" style="font-size:13.5px;">local_offer</i></span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Careers</span></a></li>
+ 
+<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 8px;"><span>Contact</span></a></li>
 
+<li><a onclick="document.getElementById('id77').style.display='block'" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;cursor:pointer;padding:12px 0;margin:0 7px;"><span>Business Hours</span></a></li>
+
+<div id="id77" class="w3-modal w3-white w3-animate-zoom" style="padding:0;margin:0;">
+<div class="w3-modal-content" style="width:45%;background-color:rgba(255,255,255,0.9);padding:10px 0 0 0;margin:0;border-radius:2px;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="column3" style="padding:0;margin:20px 0;">
+<p class="topic4b">Our Business Hours</p>
+ <section class="openinghours" style="margin:0 0 5px 0;">
+    <div class="openinghourscontent section">
+        <table class="opening-hours-table">
+    
+            <tr id="Monday" itemprop="openingHours" title="Open Monday from 8am to 8pm">
+                <td>Monday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday from 8am to 8pm">
+                <td>Tuesday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday from 8am to 8pm">
+                <td>Wednesday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Thursday" itemprop="openingHours" title="Open Thursday from 8am to 8pm">
+                <td>Thursday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Friday" itemprop="openingHours" title="Open Friday from 8am to 8pm">
+                <td>Friday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Saturday" itemprop="openingHours" title="Open Saturday from 8am to 8pm">
+                <td>Saturday</td>
+               <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+            <tr id="Sunday" itemprop="openingHours" title="Open Sunday from 8am to 8pm">
+                <td>Sunday</td>
+                <td class="opens">8:00am</td>
+                <td>-</td>
+                <td class="closes">8:00pm</td>
+            </tr>
+        </table>
+        </div>
+     </section>
+    
+<p align="center" style="font-family:roboto;font-size:12px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;margin:0;padding:10px 0;text-decoration:none;cursor:pointer;" onclick="document.getElementById('id77').style.display='none'">Close Window</p>
+</div>
+    
+     <script>
+var currentDate = new Date();
+var weekday = [];
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var currentDay = weekday[currentDate.getDay()];
+
+var currentTimeHours = currentDate.getHours();
+currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
+var currentTimeMinutes = currentDate.getMinutes();
+var timeNow = currentTimeHours + "" + currentTimeMinutes;
+
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //this works at hightlighting today
+
+var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
+
+var openTimeHours = openTimeSplit[0];
+openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
+
+var openTimeMinutes = openTimeSplit[1];
+var openTimex = openTimeSplit[0] + openTimeSplit[1];
+
+var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
+
+var closeTimeHours = closeTimeSplit[0];
+closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
+
+var closeTimeMinutes = closeTimeSplit[1];
+var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
+
+if (timeNow >= openTimex && timeNow <= closeTimex) {
+    $(".openorclosed").toggleClass("open");
+} else {
+    $(".openorclosed").toggleClass("closed");
+}
+</script>
+</ul>  
+
+<center>
 <ul class="nav navbar-nav navbar-right">
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
-    </ul>
+<li><a href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>View All Categories</span></a></li>
+
+<li><a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank" style="font-family:roboto;font-size:11.5px;color:transparent;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Your Feedback</span></a></li>
+    </ul></center>
+   </div>
+    </div>
+ </nav>
+
+<center>
+<div class="w3-row-padding" style="width:100%;margin:10px 0 0 0;">
+<div class="col-sm-7">
+<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">beauty & health</p>
+<img class="w3-card-4 w3-white" src="https://user-images.githubusercontent.com/25410880/62493319-a6e3ef80-b785-11e9-9fba-1da3306daa99.png" style="padding:0;margin:0;width:100%;border-radius:0 0 2px 2px;">
+</div>
+
+<div class="col-sm-5">
+<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">our location</p>
+<div class="w3-card-4 w3-white" style="padding:11px 0 0 0;margin:0 0 12px 0;border-radius:0 0 2px 2px;">
+
+<p class="topic4a">
+400 S. State Street<br>
+Chicago, IL 60605</p>
+
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+<input type="hidden" name="daddr" value="400 South State Street, Chicago, IL" />
+<input type="submit" value="Get Directions" class="btn btn-primary btn-block" style="background-color:#333;padding:7px 0;font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0;margin:12px 0 0 0;">
+</form>
 </div>
 </div>
-</nav>
+
+<div class="col-md-5">
+<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">direct contact information</p>
+<div class="w3-card-4 w3-white" style="padding:11px 0 0 0;margin:0 0 12px 0;border-radius:0 0 2px 2px;">
+
+<p class="topic4a">
+Phone: 123.456.7890</p>
+
+<p class="topic4a">
+Fax: 123.456.7891</p>
+
+<p class="topic4a">
+Email: info@yourcompany.com</p>
+
+<a class="btn btn-primary btn-block" style="background-color:#333;padding:7px 0;font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;font-weight:normal;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0;margin:12px 0 0 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment Online</a>
+</div>
+</div>
 </div>
 
 <center>
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/48654842-02d2d200-e9c5-11e8-9371-286553210e63.png" style="width:100%;height:auto;">
-</div>
+<div class="nab">
 <center>
-<div class="content">
+<div class="w3-container" style="padding:10px 0;margin:0;width:100%;">
+<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>Add Listing</span></a>
+<a href="https://spiralgroup.github.io/themonster/terms-of-use.html" target="_blank"><span>Terms</span></a>
+<a class="close1" data-dismiss="modal" href="#" style="font-family:roboto;font-size:10.5px;color:white;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Close Window</span></a>
 </div>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="w3-fourquarter" style="padding:0 12px;margin:0 0 10px 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #585858;">demo</a> about us</p>
-</div></div>
+</center>
+</div>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-row" style="padding:0;margin:20px 0 0 0;">
-<div class="w3-quarter" style="padding:0 12px;margin:0 0 10px 0;">
-<div class="w3-card" style="background-color:#e37e35;padding:0;margin:0 0 10px 0;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;border-radius:2px;" alt="Your Company Name">
-</div></div>
+<div class="content3">
+&nbsp;
+</div>
 
-<center>
-<div class="w3-threequarter" style="padding:0 12px;margin:0 0 10px 0;">
-<div class="column1" style="padding:0 10px;background-color:transparent;border-radius:2px;">
+<div class="w3-row-padding" style="margin:0 0 65px 0;">
+<div class="w3-threethird" style="padding:0 22px;margin:0 0 10px 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #ccc;">demo</a> about us</p></div>
 
-<p class="topic2">
-Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. In addition to these Small Business Showcase WebPages, we offer other affordable <a href="https://spiralgroup.github.io/themonster/business-excellence.html" target="_blank" style="color:#000;text-decoration:none;">Business Solutions</a> to locally under-served Small Businesses. We work with our clients to help them refine operational infrastructure by establishing lean systems & processes, and the outsourcing of non-core services. As a result, they enjoy reduced operating costs and improved workforce productivity.<br><br>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:0;">
+<div class="content w3-panel" style="padding:12px 12px 0 12px;margin:0;">
+<p class="topic">
+Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. In addition to these Small Business Showcase WebPages, we offer other affordable <a href="https://spiralgroup.github.io/themonster/business-excellence.html" target="_blank" style="font-family:roboto;font-size:13px;letter-spacing:.5px;color:#222;font-weight:normal;text-decoration:none;text-shadow:0 0 1px #222;">Business Solutions</a> to locally under-served Small Businesses. We work with our clients to help them refine operational infrastructure by establishing lean systems & processes, and the outsourcing of non-core services. As a result, they enjoy reduced operating costs and improved workforce productivity.<br><br>
 
 Our committment to assisting other entrepreneurs, by leveraging our skills and corporate experience to help them build reliable companies that can support the needs of their markets, is unparalleled.</p>
 
 <hr class="style-one">
 
-<p class="topic1">OUR CORE VALUES</p>
+<p align="center" style="font-family:kaushan script;font-size:22px;color:#222;letter-spacing:0;text-shadow:0 0 1px #ccc;padding:0;margin:20px 0 10px 0;text-decoration:none;">Our Core Values</p>
 
-<p class="topic2">
+<p class="topic">
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>
 
 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 <hr class="style-one">
-<p class="topic1">OUR MISSION</p>
 
-<p class="topic2">
+<p align="center" style="font-family:kaushan script;font-size:22px;color:#222;letter-spacing:0;text-shadow:0 0 1px #ccc;padding:0;margin:20px 0 10px 0;text-decoration:none;">Our Mission</p>
+
+<p class="topic">
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<br><br>
 
 Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-<hr class="style-one">
+</div>
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0 20px 0;">
-<div class="w3-row-padding">
+<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<hr class="style-one">
+<p align="center" style="font-family:kaushan script;font-size:22px;color:#222;letter-spacing:0;text-shadow:0 0 1px #ccc;padding:0;margin:20px 0 15px 0;text-decoration:none;">Our Team</p>
+
+<div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="border-radius:2px;margin:0 0 20px 0;">
 <div class="w3-card w3-white" style="border-radius:2px;">
 <img src="https://user-images.githubusercontent.com/25410880/52171961-1c113200-271b-11e9-9406-fac6ddfe67bd.png" style="width:100%;border-radius:2px 2px 1px 1px;padding:0;margin:0;">
@@ -547,55 +768,6 @@ Regional Sales Director</p>
 <img src="https://user-images.githubusercontent.com/25410880/52171962-1ca9c880-271b-11e9-8a19-6ab7da86d5bf.png" style="width:100%;border-radius:2px 2px 0 0;">
 <p align="center" style="font-family:roboto;font-size:12px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:4px;margin:0;">TEAM MEMBER 3<br>
 SG Listing Services Manager</p>
-</div></div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="customer-logos slider" style="background-color:#fff;width:100%;padding:60px 0;margin:0;">
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723190-6077c800-dc2a-11e8-912f-a799590fb317.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723198-6372b880-dc2a-11e8-901d-7a3970f5398a.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723193-62da2200-dc2a-11e8-9b16-f23eff8ab8cb.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723346-b8163380-dc2a-11e8-8be8-e5ffbe4bc0fa.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png"></a></div>
-
-<div class="slide"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png"></a></div>
-  
-</div>
 </div>
 </div>
 </div>
@@ -605,97 +777,38 @@ function myFunction() {
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;border-top:1px solid #f5f5f5;">
-<div class="w3-row-padding" style="margin:50px 0;">
-<div class="w3-quarter" style="margin:0 0 10px 0;">
-<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
-<button onclick="document.getElementById('id99').style.display='block'" button class="btn" style="padding:0;margin:0;"><img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="width:100%;border-radius:2px;padding:0;margin:0;text-decoration:none;"></button>
+<div class="w3-container w3-panel w3-card" style="width:100%;padding:10px 0 0 0;margin:55px 0 0 0;">
+<p style="padding:0;margin:0;"><a align="center" style="padding:0;margin:0;color:#000;font-family:kaushan script;font-size:24px;letter-spacing:.5px;text-shadow:0 0 1px #222;text-decoration:none;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">become visible.</a></p>
 
-<div id="id99" class="w3-modal w3-white w3-animate-opacity" style="padding:20px 0;margin:0;">
-<div class="w3-modal-content w3-card-4" style="background-color:transparent;width:45%;border-radius:0 0 2px 2px;">
-<div class="w3-row" style="width:100%;margin:0;background-color:transparent;">
-<div class="column w3-card" style="background-color:transparent;padding:0;margin:0;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/52195383-8950c000-280c-11e9-9177-1327ca071b13.png" style="width:100%;border-radius:2px 2px 0 0;">
-</div>
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52406211-0769cc80-2a82-11e9-9bb6-509d1402801d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/53670430-9310ec00-3c2f-11e9-9c4b-63465c5ddc6e.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card w3-hover-shadow"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 </div>
 
 <center>
-<div class="w3-row w3-white" style="width:100%;margin:0 0 20px 0;border-radius:2px;">
-<div class="column" style="background-color:#fff;padding:10px 10px 0 10px;margin:0;">
-<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-PREMIUM ADS SECTION</p>
-
-<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-Here's an opportunity to make money selling ad space on your Small Business Showcase WebPages. The 4 ads comprising the Premium Ads Section is how and where these ads will appear.</p><br>
-
-<p align="center" style="margin:0;padding:0;font-family:roboto;font-size:14px;color:#0047b3;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-EXPLORE YOUR CREATIVE POTENTIAL</p>
-
-<p align="center" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;">
-Click the button below to participate in helping us shape the terms of our Premium Ads Section. We look forward to both receiving and implementing your suggestions soon.</p>
-</div>
-    
-<div class="w3-row w3-white" style="width:100%;margin:0 0 10px 0;border-radius:2px;">
-<div class="w3-half">
-<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
-<p align="center" style="margin:0;padding:0;">
-<a class="btn btn-primary btn-block" href="https://forms.gle/KfbjpzJEsPQmnKHu5" target="_blank" style="background-color:#e6f2ff;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;">HELP US SHAPE THE TERMS</a></p>
-</div>
-</div>
-
-<div class="w3-half">
-<div class="column" style="background-color:#fff;margin:0;padding:10px 10px 0 10px;">
-<p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id99').style.display='none'">CLOSE</button></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="w3-quarter" style="margin:0 0 10px 0;">
-<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
-<img src="https://user-images.githubusercontent.com/25410880/52399007-c7015300-2a6f-11e9-8340-c8b0633ce0b2.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
-</div></div>
-
-<div class="w3-quarter" style="margin:0 0 10px 0;">
-<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
-<img src="https://user-images.githubusercontent.com/25410880/52392328-25213c80-2a56-11e9-8e93-bbb625501e62.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
-</div></div>
-
-<div class="w3-quarter">
-<div class="w3-card" style="padding:0;margin:0;border-radius:0 0 2px 2px;">
-<img src="https://user-images.githubusercontent.com/25410880/52395919-ad0e4300-2a64-11e9-9df9-79b5578491e0.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Your Company Name">
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<center>
-<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
-<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic5">become visible.</p>
+<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
-</div>
-</div>
+<p align="center" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;font-weight:normal;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0;padding:0;margin:12px 0 0 0;">Share Us On Social Media</p>
 
-<center>
-<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/about-us.html">ABOUT US</a>
-<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank">CUSTOMER FEEDBACK</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
-<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
+<div class="sharethis-inline-share-buttons" style="padding:0;margin:10px 0 15px 0;">
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
