@@ -360,6 +360,56 @@ font-family: 'Expletus Sans', cursive;
     top: 22vw;
   }
 }
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
 </style>
 </head>
 <body style="width:100%;"> 
@@ -437,15 +487,8 @@ Michelle Jones is the Founder and CEO of Spiral Group, Inc. She began developing
 
 In 2016, Michelle created a free, online Employment Preparation Training Program for job seekers with criminal histories. She is dedicated to helping returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism.</p>
 
-<p align="center" class="w3-hover-shadow">
-<button class="btn btn-primary btn-block" style="background-color:#f8f8f8;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" data-toggle="modal" data-target="#myModal88">MORE ABOUT MICHELLE JONES</button></p>
 
-<button onclick="document.getElementById('id87').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87')">HOW IT WORKS</button>
-
-<!-- The Modal -->
-<center>
-<div id="id87" class="w3-modal w3-white w3-animate-opacity" style="width:100%;padding:0;margin:0;">
-<div class="w3-modal-content" style="width:100%;background-color:#fff;padding:70px 0 0 0;margin:0;">
+<div id="myNav" class="overlay">
 <div class="w3-container" style="width:100%">
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-half" style="margin:0;">
@@ -473,6 +516,38 @@ She opened her first business, Restaurant Materials Resource Center, in 1999 whe
 
 <div class="w3-half" style="margin:0;">
 <button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:5px 0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87').style.display='none'">EXIT THIS WINDOW</button>
+  </div>
+</div>
+ </div>
+</div>
+ </div>
+</div>
+
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+<p align="center" class="w3-hover-shadow">
+<button class="btn btn-primary btn-block" style="background-color:#f8f8f8;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" data-toggle="modal" data-target="#myModal88">MORE ABOUT MICHELLE JONES</button></p>
+
+<button onclick="document.getElementById('id87').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87')">HOW IT WORKS</button>
+
+<!-- The Modal -->
+<center>
+<div id="id87" class="w3-modal w3-white w3-animate-opacity" style="width:100%;padding:0;margin:0;">
+<div class="w3-modal-content" style="width:100%;background-color:#fff;padding:30px 0 0 0;margin:0;">
+
 </div>
 </div>
 </div>
