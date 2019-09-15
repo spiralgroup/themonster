@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js"></script>
@@ -52,19 +52,16 @@ img {
     clear: both;
 }
 
-
 .content {
-    background-color: #ffffff;
     padding: 0;
     margin: 0;
-    border-radius: 2px;
 }
 
 body, html {
     max-width: 1235px;
     height: 100%;
     margin: auto;
-    background-image: linear-gradient(to left, #fff, #fff);
+    background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
 
 .header {
@@ -92,8 +89,8 @@ body, html {
 
 .nab a {
   float: center;
-  font-family: calibri,helvetica;
-  color: #222;
+  font-family: roboto;
+  color: #f1f1f1;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
@@ -104,32 +101,51 @@ body, html {
 }
 
 .nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ccc;
 }
 
 .topnav1 a:hover {
   text-decoration: none;
 }
 
+
+.nab1 {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab1 a {
+  float: center;
+  font-family: roboto;
+  color: #222;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 11.5px;
+  margin: 0 2px 0 2px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #222;
+}
+
+.nab1 a:hover {
+  border-bottom: 1px solid #444;
+}
+
+.topnav2 a:hover {
+  text-decoration: none;
+}
+
 .navbar {
 position: fixed;
 top: 0;
+right: 0;
+margin: 0;
 max-width: 1225px;
 background-color: #fff;
 border: none;
 }
-
-.mySlides {display:none;}
-
-img {vertical-align: middle;}
-
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: 0;
-}
-
 
 .active {
   background-color: #717171;
@@ -139,18 +155,6 @@ img {vertical-align: middle;}
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.content1 {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    border-radius: 2px;
-}
-
-.row,
-.row > .column {
-    padding: 0 13px 0 13px;
 }
 
 .column2 {
@@ -177,26 +181,22 @@ img {vertical-align: middle;}
 
 .column {
     width: 100%;
-    margin: 0 1px 0 1px;
+    float: left;
     padding: 0;
-    display: inline-block;
-    float: center;
-}
-
-@media (max-width: 525px) {
-    .column {
-        width: 100%;
-        float: center;
-       }
-}
-
-@media (max-width: 525px) {
-    .column {
-        width: 100%;
-        float: center;
+    margin: 0;
  }
+
+.row,
+.row > .column {
+    padding: 0 10px;
+    margin: 0;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .row,
 .row > .column3 {
     padding: 0;
@@ -227,36 +227,80 @@ img {vertical-align: middle;}
 .active1 {
   background-color: #e6e6e6;}
 
-.topic2 {
-font-family:roboto;
-font-size:14px;
-color:#000;
-text-align: justify;
+.topic {
+font-family: roboto;
+font-size: 13.5px;
 letter-spacing: .5px;
-padding: 0;
+color: #222;
+text-align: justify;
 margin: 0;
+padding: 0;
+}
+
+.topic2 {
+font-family: roboto;
+font-size: 19.5px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #222;
+padding-bottom: 5px;
+padding: 250px 0 0 0;
+margin: 0;
+}
+
+.underline {
+  text-decoration: none;
+  position: relative;
+}
+.underline:after {
+  position: absolute;
+  content: '';
+  height: 1.5px;
+  bottom: -3px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 46%;
+  background: #777;
+  box-shadow: 0 1px 2px #ccc;
+  transition: 0.5s;
+}
+.underline:hover:after {
+  width: 50%;
+  background: #444;
 }
 
 .topic3 {
 font-family: roboto;
-font-size: 13px;
+font-size: 14px;
 color: #222;
 text-align: justify;
 letter-spacing: .5px;
-padding: 0;
+padding: 10px;
 margin: 0;
 }
 
 .topic5 {
 font-family: roboto;
-font-size: 15px;
+font-size: 12.5px;
 color: #222;
-text-align: center;
+text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
-padding: 0;
+padding: 10px;
 margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .topic5 {
+  text-align: center;  
+  padding: 0;  
+  margin: 0;
+  }
+  .underline {
+  display: none;
+  }
+  }
 
 .active {
   background-color: #717171;
@@ -264,14 +308,14 @@ margin: 0;
 
 
 @media screen and (max-width: 768px) {
-  .topic2, .topic3 {
+  .topic, .topic2, .topic3 {
   text-align: center;  
-  padding: 5px 0;  
+  padding: 5px;  
   margin: 0;
   }
   }
   
-    hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
+hr.style-one { border: 0; height: 1px; background-image: linear-gradient(to right, #f8f8f8, #f1f1f1, #f8f8f8);}
 
 .button {
   border-radius: 2px;
@@ -315,12 +359,112 @@ margin: 0;
   right: 0;
 }
  
+ main{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Expletus Sans', cursive;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.hero{
+  width: 100%;
+  max-width: 1235px;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  background: #f5f5f5;
+  position: relative; 
+  color: #f5f5f5;
+  text-shadow:0 1px 1px #000;
+  }
+
+.hero h1{
+font-family: 'Expletus Sans', cursive;
+ font-size: 7.5em;
+  margin: auto;
+  position: absolute; 
+  top: 180px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.hero p{
+  font-size: 3.0em;
+  margin: auto;
+  position: absolute; 
+  top: 290px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 1;
+}
+
+.hero img{
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .hero{
+    height: 50vw;
+  }
+  
+  .hero h1{
+    font-size: 10vw;
+    top: 13vw;
+     }
+  .hero p{
+    font-size: 5vw;
+    top: 22vw;
+  }
+}
 </style>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
+</script>
+<!-- End MailerLite Universal -->
 </head>
-<body style="width:100%;"> 
+<body style="width:100%;">
+<center>
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;box-shadow:0 2px 8px #777;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -339,137 +483,195 @@ margin: 0;
 <li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
 <li class="active1"><a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/special-offers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers <i class="material-icons" style="color:green;font-size:13px;">local_offer</i></a></li><br>
-<li><a href="http://spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing Tools</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence Tools</a></li>
+<li><a href="https://spiralgroup.github.io/themonster/special-offers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></a></li><br>
+<li><a href="http://spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
-    </ul>
+</ul>
 </div>
 </div>
 </nav>
 </div>
+</div>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="slideshow-container" style="width:100%;padding:0;margin:0;border-bottom:2px solid transparent;box-shadow:0 32px 32px #f0f0f0;">
-<img src="https://user-images.githubusercontent.com/25410880/48379719-021b0280-e68a-11e8-95d8-d672166ed897.png" style="width:100%;height:auto;">
-</div></div></div>
-    
-<center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:60px 0 0 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-who we are</p>
+<main>
+<div class="hero">
+<h1>about us</h1>
+<p style="text-decoration:none;color:#fff;">who we are</p>
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/62994398-83b5e180-be10-11e9-90de-3b0105357e40.png" />
+</div>
+</main>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 2px 12px;margin:0;">
-<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-third w3-white" style="margin:0;border-radius:4px 4px 0 0;">
-<div class="column1 w3-white" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/54096546-9744b400-4369-11e9-8a59-1a3ba96945d7.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+the company</p>
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="padding:0 0 10px 0;margin:0;border-radius:4px 4px 0 0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/54096546-9744b400-4369-11e9-8a59-1a3ba96945d7.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 
-<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
-<p class="topic2">
+<div class="w3-twothird" style="padding:0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<p class="topic">
 Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. In addition to our Small Business Showcase WebPages, we offer affordable Business Excellence Tools to locally under-served Small Businesses.<br><br>
 
 We're committed to assisting this population of entrepreneurs by leveraging our skills and many years of corporate experience to help them build reliable companies that can support the needs of their markets.</p>
 
 <p align="center" class="w3-hover-shadow">
-<a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://form.jotform.com/82323651984159" target="_blank">SCHEDULE YOUR FREE CONSULTATION</a></p>
-</div></div>
-</div></div>
-</div></div>
-
-
+<a class="btn btn-primary btn-block" style="background-color:#f8f8f8;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:20px 0 0 0;text-decoration:none;" href="https://form.jotform.com/82323651984159" target="_blank">SCHEDULE FREE CONSULTATION</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
-<hr class="style-one">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
-the returning citizen</p>
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 2px 12px;margin:0;">
-<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-third w3-white" style="margin:0;border-radius:4px 4px 0 0;">
-<div class="column1 w3-white" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/55930872-2565c180-5bd8-11e9-82ff-690cd9fa11aa.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+the ceo</p>
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="padding:0 0 10px 0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/55930872-2565c180-5bd8-11e9-82ff-690cd9fa11aa.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 
-<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
-<p class="topic2">
+<div class="w3-twothird" style="padding:0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<p class="topic">
 Michelle Jones is the Founder and CEO of Spiral Group, Inc. She began developing the company's business model after serving time in a correctional facility. Her goal is to make useful contributions to the Small Business Community and other returning citizens.<br><br>
 
 In 2016, Michelle created a free, online Employment Preparation Training Program for job seekers with criminal histories. She is dedicated to helping returning citizens in achieving self-sufficiency, while reducing an inclination toward recidivism.</p>
 
 <p align="center" class="w3-hover-shadow">
-<button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;">MORE ABOUT MICHELLE JONES</button></p>
+<button onclick="document.getElementById('id87').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:20px 0 0 0;padding:10px;text-decoration:none;" onclick="document.getElementById('id87')">LEARN MORE</button></p>
 
-<div id="id02" class="w3-modal w3-white w3-animate-opacity" style="padding:0;margin:0;">
-    <div class="w3-modal-content" style="padding:20px 0 0 0;margin:0;">
-      <div class="w3-row" style="width:100%;margin:0;">
-    <div class="column3" style="padding:0;margin:0;">
-    <img src="https://user-images.githubusercontent.com/25410880/47863750-5989ba80-ddce-11e8-9329-b17fb33ea7ac.png" style="width:100%;border-radius:2px 2px 0 0;">
-<p align="center" style="font-family:roboto;font-size:16px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 15px 0;padding:0;">Taking a Break from Web Development</p>
+<div id="id87" class="w3-modal w3-animate-opacity" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
+<div class="w3-modal-content" style="width:100%;background-color:#f5f5f5;padding:0 6px;margin:13px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-half" style="padding:0 0 10px 0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/63132392-d0ff9380-bf75-11e9-9896-4f3404c09951.png" style="width:100%;" class="w3-card-2;">
+</div>
+</div>
+
+<div class="w3-half" style="background-color:#f5f5f5;">
+<p class="topic2 underline">Minister Michelle Jones</p>
+
+<p align="center" style="font-family:roboto;font-size:11.5px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0;margin:5px 0;">
+Business Consultant &#8739; Web Developer</p>
+</div>
 </div>
 </div>
 
 <center>
-<div class="w3-container" style="width:100%;">
-<div class="column3" style="padding:0;margin:0;background-color:#fff;">
+<div class="container w3-panel" style="width:100%;padding:0 2px;margin:20px 0 0 0;">
+<div class="w3-row-padding" style="background-color:#f5f5f5;margin:0;">
+<div class="w3-threethird" style="background-color:#fff;margin:10px 0 5px 0;border-radius:8px 8px 2px 2px;">
 <p class="topic3">
-Along her career path, Michelle Jones has worked with the following organizations: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers. She has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and franchise business operations consultant.<br><br>
+Michelle became an ordained minister in April 2007. In lieu of a traditional church, she decided to execute her ministerial duties as a web developer and business operations consultant through her not for profit organization - Spiral Group, Inc. The NFP was established in April 2016, and offers affordable online marketing services (Small Business Showcase WebPages & Local Business Listings Service) and business assessment tools for small businesses throughout the greater Chicagoland area. In recent months, she has adapted the NFP's business model to provide lucrative job opportunities to persons considered hard to employ, due to a criminal past.<br><br>
 
-Michelle opened her first business, RMRC (Restaurant Materials Resource Center), in 1999 where she designed business documents, labels, and posters for the food-service industry.<br><br>
-She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. Michelle has been a web developer since 1999, and an ordained minister since 2007.</p>
+Michelle has over 20 years' experience in the hospitality and food-service industries as an hourly worker, cashier supervisor, assistant manager, general manager, trainer, training manager, and business operations consultant. She has worked with the following brands: Subway, Portillo's, Quiznos, Dock's Great Fish, Burger King, Chili's, Target, and Jeepers.<br><br>
+
+Michelle opened her first business, Restaurant Materials Resource Center, in 1999 where she designed business documents, labels, and posters for the food-service industry. She is a Certified ServSafe&reg; Instructor and Registered ServSafe&reg; Examination Proctor. As a Franchise Field Operations Consultant for the Subway brand, she evaluated and directed 25-34 Subway restaurants, each month, to ensure compliance with company statutes and to increase overall profitability.<br><br>
+
+Michelle has assisted franchise owners with achieving managerial and operational control via comprehensive training programs, auditing their financial records, and enforcing personal hygiene policies. She conducted monthly health inspections, in each of the 25-34 restaurants, to increase food safety awareness and prevent health code violations. In addition, she assisted the franchisees in her territory with achieving their Local Store Marketing objectives by determining their level of preparedness prior to rolling out their campaigns.</p>
+
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-quarter" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="background-color:#f5f5f5;border-radius:3px;padding:2px;margin:0 0 10px 0;">
+<a href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/50592032-3370ad00-0e47-11e9-81f8-f2716eda7ed4.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></a>
+</div>
+</div>
 </div>
 
-<div class="column3" style="background-color:#fff;margin:15px 0 0 0;padding:0 0 20px 0;">
-<p align="center" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;font-family:roboto;font-size:10px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:10px;text-decoration:none;" onclick="document.getElementById('id02').style.display='none'">EXIT THIS WINDOW</button></p>
+<div class="w3-quarter" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="background-color:#f5f5f5;border-radius:3px;padding:2px;margin:0 0 10px 0;">
+<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html"><img src="https://user-images.githubusercontent.com/25410880/64918327-8b3f1200-d751-11e9-9c8e-bd28395d1032.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></a>
 </div>
 </div>
 </div>
+
+<div class="w3-quarter" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="background-color:#f5f5f5;border-radius:3px;padding:2px;margin:0 0 10px 0;">
+<a href="https://spiralgroup.github.io/themonster/business-excellence.html"><img src="https://user-images.githubusercontent.com/25410880/64918693-9183bd00-d756-11e9-8a69-bed5f687b774.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></a>
 </div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="background-color:#f5f5f5;border-radius:3px;padding:2px;margin:0 0 10px 0;">
+<a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><img src="https://user-images.githubusercontent.com/25410880/50587070-47111900-0e31-11e9-843b-b4da8b17e04f.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1"></a>
 </div>
 </div>
 </div>
 </div>
 </div>
 
+<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:50px 0 0 0;margin:0;">
+<div class="w3-row" style="background-color:#f5f5f5;padding:0;margin:0;">
+<div class="w3-threethird" style="background-color:#f5f5f5;padding:0;margin:0;">
+<div class="nab1 topnav2" style="width:100%;padding:10px 0 25px 0;margin:0;">
+<a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Join Mailing List</a>
+<a href="https://form.jotform.com/82323651984159" target="_blank">Free Consultation</a>
+<a href="#you" style="cursor:pointer;"><span onclick="document.getElementById('id87').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
-<hr class="style-one">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+<div id="you" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
 who are you?</p>
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 2px 12px;margin:0;">
-<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-row" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-third w3-white" style="margin:0;border-radius:4px 4px 0 0;">
-<div class="column1 w3-white" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/53689058-071bc480-3d02-11e9-980e-11ec9ce10f78.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="padding:0 0 10px 0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/53689058-071bc480-3d02-11e9-980e-11ec9ce10f78.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 
-<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
-<p class="topic2">
-We all value companies that can consistently and affordably meet our specialized needs. This is an auspicious time for you to begin taking advantage of profitable opportunities by spending time making strategic decisions on how to further develop your company.<br><br>
+<div class="w3-twothird" style="padding:0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<p class="topic">
+We all value companies that can meet our specialized needs. Unless you’re a small business owner who is not interested in meeting the needs of current and potential clients, you need to have an online presence. Most of your competitors all have websites.<br><br> 
 
-We work with clients to refine operational infrastructure. As a result, they enjoy reduced operating costs and improved workforce productivity. Take the next step toward progressive growth and development for your company by creating your new online presence today.</p>
+Our Small Business Showcase WebPages Plans start at only $13.79 per month, and allows you to perform a multitude of business tasks. Spend time concentrating on your small business and exploring its potential. Let us create and manage your new online presence.</p>
 
 <p align="right" class="w3-hover-shadow">
-<a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">EXPLORE YOUR BUSINESS POTENTIAL</a></p>
+<a class="btn btn-primary btn-block" style="background-color:#f8f8f8;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:20px 0 0 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">GET STARTED</a></p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -478,47 +680,32 @@ We work with clients to refine operational infrastructure. As a result, they enj
 </div>
 
 <center>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:20px 0;">
-<hr class="style-one">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;">
+<div class="container w3-panel" style="width:100%;padding:80px 0 20px 0;margin:2px 0 0 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
 our motivation</p>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px 2px 12px;margin:0;">
-<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-third w3-white" style="margin:0 0 10px 0;">
-<div class="column1 w3-white" style="padding:0;margin:0;">
-<iframe class="w3-black" width="100%" height="300" src="https://www.youtube.com/embed/D24fo1gIaXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border-radius:2px;padding:0 12px;margin:0;" allowfullscreen></iframe>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<iframe class="w3-card w3-black" width="100%" height="250" src="https://www.youtube.com/embed/D24fo1gIaXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border-radius:2px;padding:0 5px;margin:0;" allowfullscreen></iframe>
     </div></div>
     
-<div class="w3-third w3-white" style="margin:0 0 10px 0;">
-<div class="column1 w3-white" style="padding:0;margin:0;">
-<iframe class="w3-black" width="100%" height="300" src="https://www.youtube.com/embed/gVLsVj7BebE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border-radius:2px;padding:0 12px;margin:0;" allowfullscreen></iframe>
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<iframe class="w3-card w3-black" width="100%" height="250" src="https://www.youtube.com/embed/gVLsVj7BebE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border-radius:2px;padding:0 5px;margin:0;" allowfullscreen></iframe>
     </div></div>
     
-<div class="w3-third w3-white" style="margin:0 0 10px 0;">
-<div class="column1 w3-white" style="padding:0;margin:0;">
-<iframe class="w3-black" width="100%" height="300" src="https://www.youtube.com/embed/RioOJ7dZxuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border-radius:2px;padding:0 12px;margin:0;" allowfullscreen></iframe>
-    </div></div>
-        </div>
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<iframe class="w3-card w3-black" width="100%" height="250" src="https://www.youtube.com/embed/RioOJ7dZxuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border-radius:2px;padding:0 5px;margin:0;" allowfullscreen></iframe>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
- </div></div>
-        </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -534,25 +721,23 @@ function myFunction() {
   }
 }
 </script>
-
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
-<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic5">become visible.</p>
+<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
-</div>
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">Spiral Group, Inc.</p>
+
+<div class="sharethis-inline-share-buttons" style="padding:0;margin:10px 0 0 0;">
 </div>
 
 <center>
-<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">DEMO WEBPAGES</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
-<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
-<a href="https://spiralgroup.github.io/themonster/cp-connection.html">RESOURCES</a>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:10px 0 5px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Demo WebPages</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
+<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">Terms</a>
+<a href="https://spiralgroup.github.io/themonster/cp-connection.html">Resources</a>
 </div>
 </div>
 </div>
