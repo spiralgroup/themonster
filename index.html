@@ -341,21 +341,68 @@ padding: 0 10px;
 }
 
 .topic2 {
-font-family:roboto;
-font-size:14px;
-color:#000;
-text-align: justify;
+font-family: roboto;
+font-size: 19.5px;
+color: #000;
+text-align: center;
 letter-spacing: .5px;
-padding: 0;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 150px 0 0 0;
 margin: 0;
+}
+
+.underline {
+  text-decoration: none;
+  position: relative;
+}
+.underline:after {
+  position: absolute;
+  content: '';
+  height: 1.5px;
+  bottom: -3px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 46%;
+  background: #777;
+  box-shadow: 0 1px 2px #ccc;
+  transition: 0.5s;
+}
+.underline:hover:after {
+  width: 50%;
+  background: #444;
+}
+
+.underline1 {
+  text-decoration: none;
+  position: relative;
+}
+.underline1:after {
+  position: absolute;
+  content: '';
+  height: 1.5px;
+  bottom: -3px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 46%;
+  background: #777;
+  box-shadow: 0 1px 2px #ccc;
+  transition: 0.5s;
+}
+.underline1:hover:after {
+  width: 50%;
+  background: #444;
 }
 
 .topic3 {
 font-family: roboto;
-font-size: 13px;
+font-size: 14px;
 color: #222;
 text-align: justify;
-padding: 2px 0 0 0;
+letter-spacing: .5px;
+padding: 0;
 margin: 0;
 }
 
@@ -370,7 +417,7 @@ margin: 0;
 
 .topic4 {
 font-family: roboto;
-font-size: 13px;
+font-size: 14px;
 color: #000;
 text-align: justify;
 text-shadow: 0 0 1px #222;
@@ -380,7 +427,7 @@ margin: 0;
 
 .topic4b {
 font-family: roboto;
-font-size: 15px;
+font-size: 15.5px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -392,26 +439,28 @@ margin: 0;
 
 .topic4c {
 font-family: roboto;
-font-size: 12.5px;
+font-size: 11.5px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #444;
+text-shadow: 0 0 1px #000;
 font-weight: normal;
-padding: 0;
+padding: 10px 0 0 0;
 margin: 0;
 }
 
 .topic5 {
 font-family: roboto;
-font-size: 15px;
-color: #222;
+font-size: 15.5px;
+color: #000;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
-padding: 0;
+font-weight: normal;
+padding: 5px 0 0 0;
 margin: 0;
 }
+
 
 .active {
   background-color: #717171;
@@ -434,9 +483,16 @@ margin: 0;
   }
   
   @media screen and (max-width: 768px) {
-  .topic3, .topic4, .topic4c {
+  .topic3, .topic4 {
   text-align: center;  
   padding: 0;  
+  }
+  }
+  
+   @media screen and (max-width: 768px) {
+  .topic4c {
+  text-align: center;  
+  padding: 10px 0 0 0;  
   }
   }
   hr.style-one { border: 0; height: 1px; background: #fff; background-image: linear-gradient(to right, #f0f0f0, #f5f5f5, #f0f0f0);}
@@ -609,7 +665,7 @@ become visible</p>
 
 <div class="w3-twothird w3-white" style="padding:0;margin:0;border-radius:4px 4px 0 0;">
 <div class="column1" style="padding:0 10px 10px 10px;margin:0;">
-<p class="topic2">
+<p class="topic3">
 Looking to develop an online presence for your Small Business? You've come to the right place. Our new Small Business Showcase WebPages are affordable, mobile-friendly, and allows you to perform a multitude of business tasks.<br><br>
 
 You can promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals.</p>
@@ -650,6 +706,8 @@ Special Offers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Business Hours Display</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Premium Ads Business Placard</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Maintenance & Support</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 - -</p>
@@ -683,6 +741,8 @@ Products & Services Page</p>
 Special Offers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Business Hours Display</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Premium Ads Business Placard</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Maintenance & Support</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
@@ -718,6 +778,8 @@ Special Offers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Business Hours Display</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Premium Ads Business Placard</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Maintenance & Support</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Careers Page</p>
@@ -740,7 +802,7 @@ SG Listing Service</p>
 <p align="center" style="font-family:roboto;font-size:22px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;">Creating Your Account</p>
 
 <p class="topic3">
-Creating your new Spiral Group, Inc. Merchant Account doesn't mean signing up for a 14-day free trial, where you'll have to attempt to learn code. All plans include updates, maintenance, and dedicated support. Just follow the instructions outlined below, and then enjoy your new online presence within 7 business days. If you have any questions, do not hesitate to give us a call at 773-242-0705. We're open everyday, from 8am - 8pm.</p>
+Creating your new Spiral Group, Inc. Merchant Account doesn't mean signing up for a 14-day free trial, where you'll have to attempt to learn code. Just follow the instructions outlined below, and then enjoy your new online presence within 7 business days. All plans include updates, maintenance, and dedicated support. If you have any questions, call us at 773-242-0705. We're open everyday, from 8am - 8pm.</p>
 </div>
 </div>
 
@@ -749,7 +811,6 @@ Creating your new Spiral Group, Inc. Merchant Account doesn't mean signing up fo
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
 <p class="topic4b">ADD LISTING</p>
-
 </div>
 </div>
 </div>
@@ -775,7 +836,7 @@ Creating your new Spiral Group, Inc. Merchant Account doesn't mean signing up fo
 <div class="column" style="padding:10px 10px 20px 10px;margin:0;">
 <p class="topic4">Payment Options</p>
 <p class="topic3">
-We can process your credit or debit card payment via Square Online Payment Systems. If you require other payment options, do not use our online order form. Instead, give us a call at 773-242-0705. We're open everyday, from 8am - 8pm.</p><br>
+We can process your credit or debit card payment via our secure Online Payment System. If you require other payment options, do not use our online order form. Instead, give us a call at 773-242-0705. We're open everyday, from 8am - 8pm.</p><br>
 
 <p class="topic4">Getting Started</p>
 <p class="topic3">
@@ -793,7 +854,7 @@ Select a business category by clicking the image that corresponds to it. To lear
 
 3. Team Member Images. On your About WebPage, you have the option of displaying individual photos of your staff. Alternatively, you can use a group photo. We do not require these images to be on a white background.<br><br>
 
-4. Your Net Proceeds. These are the monies you will receive after all costs and expenses are deducted from the Gross Proceeds arising from the sale of your products and services via your Spiral Group, Inc. Small Business Showcase WebPages Merchant Services account. You can choose to have these monies delivered through the USPS via check or deposited into your bank account.</p><br>
+4. Your Net Proceeds. These are the monies you will receive after all costs and expenses are deducted from the Gross Proceeds arising from the sale of your products and services via your Spiral Group, Inc. Small Business Showcase WebPages Merchant Services account. You can choose to have these monies delivered through the USPS via check or deposited directly into your bank account.</p><br>
 
 <p class="topic4">Phone Confirmation</p>
 <p class="topic3">
@@ -803,7 +864,7 @@ We will also use this time to fill in any blanks or make adjustments to the info
 
 <p class="topic4">Other Information</p>
 <p class="topic3">
-If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Please keep in mind that our Premium Plan includes the SG Listing Service. We require that all plans be paid annually. We cannot offer refunds on our web development and SG Listing services.</p>
+If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Our Premium Plan includes the SG Listing Service. We require that all plans be paid annually. We cannot offer refunds on our web development and SG Listing services.</p>
 </div>
 </div>
 </div>
@@ -843,13 +904,281 @@ local business listings</p>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
 <div class="column1" style="padding:0 10px 10px 10px;margin:0;">
-<p class="topic2">
+<p class="topic3">
 Show up in more local searches, because being local matters. By leveraging the SG Listing Service, you can be confident that your business information is consistent. Affording you even more opportunities to attract the kind of customer your Small Business deserves.<br><br>
 
 We'll register your Small Business in only the top electronic business directories such as Bing, FourSquare, Google, and Yahoo.</p>
 
 <p align="center" class="w3-hover-shadow">
-<a class="btn btn-primary btn-block" style="background-color:#f5f5f5;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:10px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/sg-listing-service.html">LEARN MORE</a></p>
+<button onclick="document.getElementById('id04').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f8f8f8;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:20px 0 10px 0;text-decoration:none;">LEARN MORE</button></p>
+
+<div id="id04" class="w3-modal w3-animate-opacity" style="width:100%;background-color:#f5f5f5;padding:0;margin:0;">
+<div class="w3-modal-content" style="width:100%;background-color:#f5f5f5;padding:0 6px;margin:13px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-half" style="padding:0 0 10px 0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/50410019-4df1b900-07ab-11e9-84c1-89040ae44c6d.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" class="w3-card-2">
+</div>
+</div>
+
+<div class="w3-half" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic2 underline">
+SG Listing Service</p>
+
+<p class="topic5">
+$69.99</p>
+
+<a href="https://spiralgroup.github.io/themonster/special-offers.html">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:10px 0;text-decoration:none;">15% Off &#8226; Find Out How</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic3">
+Almost half of all searches are local, and nearly 90% of searches on mobile devices are local. With so many people searching for businesses near them, your small business needs a local listing. A local listing will make it easier for people to find your business when they do a local search, no matter what device they are using. As a result, you'll discover an increase in calls, visits, and sales.<br><br>
+
+We developed the SG Listing Service to help grow your small business by increasing brand awareness. We manually register your company in only the top electronic business directories such as Bing, FourSquare, Google, and Yahoo. We capture your unique business information to create your online business profiles for you. We put in the work of setting up your local business listings so you don't have to.<br><br>
+
+By leveraging the SG Listing Service, you can be confident that your business information is consistent. Affording you opportunities to attract the kind of customer you deserve. Below are the electronic directories we prefer and trust to list your small business information.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:20px 0 0 0;">
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473293-0082a500-de2c-11e9-9419-8829b60db971.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473294-0082a500-de2c-11e9-8887-c95735b24d52.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473295-0082a500-de2c-11e9-9bfa-ce766f403511.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473296-0082a500-de2c-11e9-9d27-5b7514727272.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473297-011b3b80-de2c-11e9-9e61-32d3d3a899a0.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473299-011b3b80-de2c-11e9-8449-85d8f2fdca40.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473300-01b3d200-de2c-11e9-9aa3-c78024009f69.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65473301-01b3d200-de2c-11e9-8fa5-53ed4e9d600c.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic3">
+We take full advantage of opportunities to transform your small business listings into marketing opportunities. Most of these preferred online directories allow businesses to showcase their logos, photos, videos, complete business descriptions, hours and holiday hours, menus, staff bios, products & services lists, payment information, and other business data alongside their basic information.<br><br>
+
+From your Google My Business dashboard, you can create posts to promote offers, events, and more. Like Google, many of these directories provide you with a dashboard so you can get full insights into how your account is performing. We also help drive more consumers by providing a direct link to your Small Business Showcase WebPages. Below is an array of what can be accomplished when you choose to optimize your local business listings.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:20px 0 0 0;">
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Analytics</p>
+<p class="topic4c">
+Get a comprehensive view of how consumers interact with your brand.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Business Description</p>
+<p class="topic4c">
+Localize your brand and attract more consumers.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Event Calendars</p>
+<p class="topic4c">
+Highlight special events and promotions with event calendars.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Holiday & Special Hours</p>
+<p class="topic4c">
+Let customers know your holiday and special hours.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Hours of Operation
+</p>
+<p class="topic4c">
+Let your customers know exactly when you're open.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Key Knowledge</p>
+<p class="topic4c">
+Give consumers the knowledge they seek about your small business.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Menus</p>
+<p class="topic4c">
+Let your consumers know what you're serving.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Photos</p>
+<p class="topic4c">
+Showcase photos of your location, products, and services.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Product & Service Lists</p>
+<p class="topic4c">
+Show your customers your unique offering and specialty with detailed product and services lists.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Real-Time Updates</p>
+<p class="topic4c">
+Stay in control of your critical business information by publishing updates in real time.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Review Monitoring</p>
+<p class="topic4c">
+Tune in and listen to what your customers are saying across different review channels.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-quarter" style="margin:0 0 20px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px 5px;margin:0;">
+<p align="center" class="underline1" style="font-family:roboto;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;margin:0;">Social Posting</p>
+<p class="topic4c">
+Create social posts directly from your dashboards to drive interactions with customers online.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="background-color:#f5f5f5;margin:0;">
+<div class="w3-threethird">
+<div class="nab1 topnav2" style="width:100%;padding:15px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id04').style.display='none'">CLOSE WINDOW</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -871,7 +1200,7 @@ are you ready?</p>
 
 <div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
 <div class="column1" style="padding:0 10px 10px 10px;margin:0;">
-<p class="topic2">
+<p class="topic3">
 Is your workforce adequately trained and well-versed in your products and services? Is your business prepared to welcome new clients? An online presence is a crucial component of your marketing strategy, but operational excellence will set you apart from competitors.<br><br>
 
 If you're prepared to increase your company's visibility with our new Small Business Showcase WebPages, let's get started today!</p>
