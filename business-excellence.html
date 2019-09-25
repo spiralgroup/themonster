@@ -257,28 +257,6 @@ padding: 150px 0 0 0;
 margin: 0;
 }
 
-.underline {
-  text-decoration: none;
-  position: relative;
-}
-.underline:after {
-  position: absolute;
-  content: '';
-  height: 1.5px;
-  bottom: -3px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  width: 46%;
-  background: #777;
-  box-shadow: 0 1px 2px #ccc;
-  transition: 0.5s;
-}
-.underline:hover:after {
-  width: 50%;
-  background: #444;
-}
-
 .topic3 {
 font-family: roboto;
 font-size: 14px;
@@ -360,9 +338,6 @@ margin: 0;
   padding: 0;  
   margin: 0;
   }
-  .underline {
-  display: none;
-  }
   }
 
 .active {
@@ -371,14 +346,23 @@ margin: 0;
 
 
 @media screen and (max-width: 768px) {
-  .topic, .topic2, .topic3, .topic4, .topic4b, .topic4c {
+  .topic, .topic3, .topic4, .topic4b, .topic4c {
   text-align: center;  
   padding: 0;  
   margin: 0;
   }
   }
   
-hr.style-one { border: 0; height: 1px; background-image: linear-gradient(to right, #f8f8f8, #f1f1f1, #f8f8f8);}
+  @media screen and (max-width: 768px) {
+  .topic2 {
+  font-size: 17px;
+  text-align: center;  
+  padding: 0;  
+  margin: 0;
+  }
+  }
+  
+hr.style-one { border: 0; height: 1px; width:50%; background-image: linear-gradient(to right, #ccc, #222, #ccc);}
 
 .button {
   border-radius: 2px;
@@ -604,13 +588,15 @@ Let us design and implement a mystery shopping program for your small business t
 
 <div class="w3-half" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<p class="topic2 underline">
+<p class="topic2">
 Mystery Shopping Program</p>
+
+<hr class="style-one" style="padding:0;margin:5px 0;">
 
 <p class="topic4c">
 $99.99</p>
 
-<a href="https://form.jotform.com/82838930647166">
+<a href="https://form.jotform.com/82838930647166" target="_blank">
 <button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:10px 0;text-decoration:none;">Order Now</button></a>
 </div>
 </div>
@@ -690,7 +676,7 @@ We can customize a Mystery Shopping Program that will help identify operational 
 <p class="topic4b">1. Plan</p>
 
 <p class="topic4">
-We get to know your small business and operational structure so we can devise a custom plan and create a specific timeline of execution. The cost to conduct each Mystery Shop is determined during this step.</p>
+We get to know your small business so we can devise a custom plan and create a specific timeline of execution. The cost to conduct each Mystery Shop is determined during this step.</p>
 </div>
 </div>
 </div>
@@ -701,7 +687,7 @@ We get to know your small business and operational structure so we can devise a 
 <p class="topic4b">2. Schedule</p>
 
 <p class="topic4">
-We schedule certified shoppers to discretely perform your tasks, such as purchasing and returning items, calling your customer service line, using your website, or asking specific questions of your team members.</p>
+We schedule shoppers to discretely perform your tasks: purchasing & returning items, calling your service line, using your website, asking specific questions of your team members, etc.</p>
 </div>
 </div>
 </div>
@@ -712,7 +698,7 @@ We schedule certified shoppers to discretely perform your tasks, such as purchas
 <p class="topic4b">3. Evaluate</p>
 
 <p class="topic4">
-The shopper completes your customized questionnaire. Answers are a combination of multiple choice, scored points, and detailed comments that allow you to fully understand the overall customer experience.</p>
+The shopper completes your questionnaire. Answers are a combination of multiple choice, scored points, and comments that allow you to understand the overall customer experience.</p>
 </div>
 </div>
 </div>
@@ -723,7 +709,7 @@ The shopper completes your customized questionnaire. Answers are a combination o
 <p class="topic4b">4. Analyze</p>
 
 <p class="topic4">
-In this phase, we analyze data from your completed evaluations to gain insight into how it affects your small business. We offer recommendations on how to honor stellar performance, or how to improve where needed.</p>
+We analyze data from your evaluations to gain insight into how it affects your small business.</p>
 </div>
 </div>
 </div>
@@ -734,7 +720,7 @@ In this phase, we analyze data from your completed evaluations to gain insight i
 <p class="topic4b">5. Improve</p>
 
 <p class="topic4">
-We guide you on how to improve operational strategies using what we learn from the evaluations. Your new knowledge of problem areas will help you create noticeable changes that will delight your customers.</p>
+We present you with specific recommendations that will enhance the overall customer experience.</p>
 </div>
 </div>
 </div>
@@ -745,7 +731,7 @@ We guide you on how to improve operational strategies using what we learn from t
 <p class="topic4b">6. Repeat</p>
 
 <p class="topic4">
-We will work with you to create a schedule of ongoing evaluations and other customer experience research services that will help fine-tune your brand experience and take your small business to the next level.</p>
+We create a schedule of ongoing evaluations and help take your small business to the next level.</p>
 </div>
 </div>
 </div>
@@ -850,13 +836,15 @@ During your Mock Health Inspection, we work closely with you to ensure food safe
 
 <div class="w3-half" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<p class="topic2 underline">
+<p class="topic2">
 Mock Health Inspection</p>
+
+<hr class="style-one" style="padding:0;margin:5px 0;">
 
 <p class="topic4c">
 $129.99</p>
 
-<a href="https://form.jotform.com/82838930647166">
+<a href="https://form.jotform.com/82838930647166" target="_blank">
 <button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:10px 0;text-decoration:none;">Order Now</button></a>
 </div>
 </div>
@@ -868,8 +856,7 @@ $129.99</p>
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic3">
-Our mock health inspections are an independent review of your food service operation. During the inspection, we pay particular attention to the factors that could lead to potential <a href="https://spiralgroup.github.io/themonster/health-code-violations.html" target="_blank" style="font-family:roboto;font-size:13.5px;color:#000;letter-spacing:.5px;
-text-shadow:0 0 1px #000;font-weight:normal;text-decoration:none;">Health Code Violations.</a> We help you understand the underlying causes of food safety problems and recognize staff that may need additional training.<br><br>
+Our Mock Health Inspections are an independent review of your food service operation. During the inspection, we pay particular attention to the factors that could lead to potential <a href="https://spiralgroup.github.io/themonster/health-code-violations.html" target="_blank" style="text-decoration:none;">Health Code Violations.</a> We help you understand the underlying causes of food safety problems and recognize staff that may need additional training.<br><br>
 
 At the conclusion of the inspection, we review the results with the person in charge. Within 48 hours you receive a comprehensive report which includes a detailed summary of the inspection, specific recommendations for correcting violations, and information on how to develop and install a *Food Safety Plan. Our goal is to help increase the chances of receiving a higher grade during a follow-up City of Chicago Health Inspection.</p><br>
 
@@ -949,7 +936,7 @@ Michelle Jones is a Certified Food Protection Manager, Certified ServSafe&reg; I
 operational assessment</p>
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-third" style="padding:0 0 5px 0;margin:0;">
+<div class="w3-third" style="padding:0 0 10px 0;margin:0;">
 <div class="column" style="padding:0 10px;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/54404255-24507b80-4690-11e9-978d-5ebc261dff88.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" class="w3-card-2" alt="sg1">
 </div>
@@ -976,8 +963,10 @@ An Operational Marketing Assessment can provide the answers to these kinds of qu
 
 <div class="w3-half" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<p class="topic2 underline">
+<p class="topic2">
 Operational Marketing Assessment</p>
+
+<hr class="style-one" style="padding:0;margin:5px 0;">
 
 <p class="topic4c">
 $199.99</p>
@@ -1062,9 +1051,7 @@ Michelle assisted franchise owners with achieving managerial and operational con
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -1080,19 +1067,20 @@ function myFunction() {
   }
 }
 </script>
+
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
 <p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">Spiral Group, Inc.</p>
 
-<div class="sharethis-inline-share-buttons" style="padding:0;margin:10px 0 0 0;">
+<div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
 </div>
 
 <center>
 <div class="w3-threethird" style="margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:10px 0 5px 0;margin:0;">
+<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
 <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Demo WebPages</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">Terms</a>
