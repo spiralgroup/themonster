@@ -341,8 +341,8 @@ padding: 0 10px;
 }
 
 .topic2 {
-font-family: roboto;
-font-size: 19.5px;
+font-family: pt sans;
+font-size: 25px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -442,7 +442,7 @@ margin: 0;
 
 @media screen and (max-width: 768px) {
   .topic2 {
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;  
   padding: 0;  
   margin: 0;
@@ -507,19 +507,19 @@ margin: 0;
 }
 
 .alert {
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 5px;
+  margin: 20px;
   background-color: #222;
-  color: white;
+  border-radius: 3px;
 }
 
 .closebtn {
-  margin-left: 15px;
+  margin-left: 10px;
   color: #ccc;
   font-weight: bold;
   float: right;
-  font-size: 28px;
-  line-height: 20px;
+  font-size: 25px;
+  line-height: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -528,41 +528,33 @@ margin: 0;
   color: black;
 }
 
-.topicprestige {
-font-family: roboto;
-font-size: 15.5px;
-color: #fff;
+.topicprestige1 {
+font-family: pt sans;
+font-size: 18px;
+color: #fff; 
+text-shadow: 0 0 71px #222;
+letter-spacing:1.5px;
 text-align: center;
-letter-spacing: .5px;
-padding: 8px 0 5px 0;
+padding: 0;
 margin: 0;
 }
 
-.topicprestige1 {
+.topicprestige {
 font-family: roboto;
-font-size: 16.5px;
+font-size: 17.5px;
 color: #fff;
 text-align: center;
 letter-spacing: .5px;
-padding: 5px 0;
+padding: 6px 0 3px 0;
 margin: 0;
+visibility: hidden;
 }
 
   @media screen and (max-width: 768px) {
  .topicprestige {
   text-align: center;  
   font-size: 12.5px;
-  padding: 8px 0 5px 0;
-  margin: 0;
-  }
-  }
-  
-   @media screen and (max-width: 768px) {
- .topicprestige1 {
-  text-align: center;  
-  font-size: 14.5px;
-  padding: 8px 0 5px 0;
-  margin: 0;
+  visibility: visible;
   }
   }
 </style>
@@ -700,21 +692,20 @@ Choose the Showcase Plan That's Right for Your Small Business</p>
 <div class="alert">
 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 
-<div class="w3-container" style="width:100%;padding:0 12px;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="w3-container" style="width:100%;padding:0 10px;margin:0;">
+<div class="w3-row-padding" style="margin:0 0 5px 0;">
 <div class="w3-threethird">
-<div class="column w3-pink w3-hover-shadow" style="border-radius:3px;padding:10px 5px;margin:5px 0;">
-<p class="topicprestige1">
-SB Online Marketing Services</p>
+<div class="column w3-card w3-hover-shadow" style="background-color:#000;border-radius:3px;padding:0;margin:5px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/66077649-3a7f3580-e515-11e9-8d0d-832608339ee3.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
 </div>
 </div>
 </div>
 </div>
 
-<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:5px 0 0 0;">
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column w3-card" style="padding:5px;margin:0;">
+<div class="column w3-card-4" style="padding:5px;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/65896750-b71de280-e362-11e9-9f1a-2c9b80136cbe.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content w3-panel" style="background-color:#222;padding:0;margin:0;">
 <p class="topicprestige">
@@ -724,7 +715,7 @@ Branded Category Ads</p>
 </div>
 
 <div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column w3-card" style="padding:5px;margin:0;">
+<div class="column w3-card-4" style="padding:5px;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/53689056-06832e00-3d02-11e9-88ad-569f6f25502c.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content w3-panel" style="background-color:#222;padding:0;margin:0;">
 <p class="topicprestige">
@@ -734,7 +725,7 @@ Scrolling Footer Logo Ads</p>
 </div>
 
 <div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column w3-card" style="padding:5px;margin:0;">
+<div class="column w3-card-4" style="padding:5px;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/65653603-c3084e00-dfca-11e9-8d83-60c832cc207e.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content w3-panel" style="background-color:#222;padding:0;margin:0;">
 <p class="topicprestige">
@@ -744,7 +735,7 @@ Email Marketing</p>
 </div>
 
 <div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column w3-card" style="padding:5px;margin:0;">
+<div class="column w3-card-4" style="padding:5px;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/65896751-b71de280-e362-11e9-8171-03a6f3f59d22.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content w3-panel" style="background-color:#222;padding:0;margin:0;">
 <p class="topicprestige">
@@ -756,10 +747,10 @@ The Prestige &#8226; Get All 3</p>
 
 <div class="w3-container" style="width:100%;padding:0 8px;margin:0;">
 <div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<a href="#advertise" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:8px;margin:10px 0;"><p class="topicprestige1">More About Our Advertising Magic</p></button></a>
+<div class="w3-threethird">
+<div class="column w3-card w3-hover-shadow" style="background-color:#000;border-radius:3px;padding:3px;margin:0 0 12px 0;">
+<a href="#advertise" style="text-decoration:none;"><img src="https://user-images.githubusercontent.com/25410880/66087252-a8365c00-e52b-11e9-9a90-f442198ef08f.png" style="width:100%;padding:0;margin:0;border-radius:3px;"></a>
+</div>
 </div>
 </div>
 </div>
@@ -908,7 +899,7 @@ Careers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 SG Listing Service</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
-Email Marketing Service</p>
+1 Branded Category Ad</p>
 </div>
 
 <div class="column w3-center" style="padding:0;margin:0;background-color:#fbd0d9;border-radius:2px;">
@@ -922,8 +913,8 @@ Email Marketing Service</p>
 <div class="container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:15px 0 0 0;border-radius:8px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:10px 0;margin:0;">
-<p align="center" style="font-family:roboto;font-size:22px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;">Creating Your Account</p>
+<div class="w3-threethird" style="padding:0 0 10px 0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 10px 0;margin:0;">Creating Your Account</p>
 
 <p class="topic3">
 Creating your new Spiral Group, Inc. Merchant Account doesn't mean signing up for a 14-day free trial, where you'll have to attempt to learn code. Just follow the instructions outlined below, and then enjoy your new online presence within 7 business days. All plans include updates, maintenance, and dedicated support. If you have any questions, call us at 773-242-0705. We're open everyday, from 8am - 8pm.</p>
@@ -998,7 +989,7 @@ If you are not sure which Small Business Showcase WebPages Plan to choose, give 
 <div class="w3-row-padding" style="background-color:#f5f5f5;margin:0;">
 <div class="w3-threethird">
 <div class="nab1 topnav2" style="width:100%;padding:15px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id01').style.display='none'">CLOSE WINDOW</span></a>
+<a style="cursor:pointer;"><span onclick="document.getElementById('id01').style.display='none'">CLOSE</span></a>
 </div>
 </div>
 </div>
@@ -1348,12 +1339,15 @@ Advertise with us and never worry about PPC, CPA, CPL, CPM or any other elaborat
 <div class="w3-half" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <p class="topic2">
-SB Online Marketing Services</p>
+Spiral-Group Ads</p>
 
 <hr class="style-one" style="padding:0;margin:5px 0;">
 
 <p class="topic5">
-As Low As $1 A Day</p>
+Starting At Only $1 A Day</p>
+
+<a href="#checkitout">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:10px 0;text-decoration:none;">Check It Out</button></a>
 </div>
 </div>
 </div>
@@ -1365,7 +1359,7 @@ As Low As $1 A Day</p>
 <div class="w3-threethird" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <p class="topic3">
-Finding the right advertising solution to create awareness about your small business can be a complicated and time-consuming task. With the many and varying online advertising compensation models, it's no wonder. Nevertheless, it's important to educate consumers about your brand and products through marketing and advertising. That's why we developed <a href="#" style="text-decoration:none;">Small Business Online Marketing Services</a>. Our new Ad Products and pricing model was created with the small business owner in mind.<br><br>
+Finding the right advertising solution to create awareness about your small business can be a complicated and time-consuming task. With the many and varying online advertising compensation models, it's no wonder. Nevertheless, it's important to educate consumers about your brand and products through marketing and advertising. That's why we developed <a href="#" style="text-decoration:none;">Spiral-Group Ads</a>. Our new ad products and pricing model was created with the small business owner in mind.<br><br>
 
 When you advertise with us, you'll never have to worry about paying for CPA's, CPC's, CPI's, etc. Although tracking the progress of an ad campaign is crucial, the best way to know if an ad is truly yielding the results you desire is by observing how many people actually bought from you, how many subscribed to your mailing list, or how many simply followed the instructions of your call-to-action (CTA) buttons.</p>
 
@@ -1373,17 +1367,17 @@ When you advertise with us, you'll never have to worry about paying for CPA's, C
 <img src="https://user-images.githubusercontent.com/25410880/65936310-161a4080-e3d1-11e9-9e7c-43c4606c039d.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" class="w3-card-2"></p>
 
 <p class="topic3">
-Other ways to track the effectiveness of your online ad campaign are to encourage consumers to download and print a coupon to encourage offline sales (included with our Small Business Showcase WebPages Plans); to use a discount code when ordering online (also included); or to send offers to consumers using email (included with our Premium Plan). When it comes to marketing your small business products and services, we have an enormous competitive advantage. We are confident our new Ad Products will assist you in running an efficient and profitable small business operation.</p>
+Other ways to track the effectiveness of your online ad campaign are to encourage consumers to download and print coupons to encourage offline sales (included with our Small Business Showcase WebPages Plans); to use discount codes when ordering online (also included); or to send offers to consumers using email (included with our Premium Plan). When it comes to marketing your small business products and services, we have an enormous competitive advantage. We are confident our new Ad Products will assist you in running an efficient and profitable small business operation.</p>
 </div>
 </div>
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div id="checkitout" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird">
-<p align="center" style="font-family:open sans condensed;font-size:28px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;padding:10px 0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:30px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:10px 0;margin:0;">
 Ad Products</p>
 </div>
 
@@ -1431,7 +1425,7 @@ Ad Products</p>
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<p align="center" style="font-family:open sans condensed;font-size:23px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
 Scrolling Footer Logo Ads</p>
 <p class="topic3">
 Your company logo is probably the most valuable advertising asset you can use in your marketing strategy. It can help build your reputation and trust with potential customers. A well-designed logo allows you the opportunity to speak to consumers in an artistic and visually stimulating way. It can give your audience an idea of the personality of your company and make your brand instantly recognizable.<br><br>
@@ -1455,7 +1449,7 @@ Your logo will appear on all Small Business Showcase WebPages within the same an
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<p align="center" style="font-family:open sans condensed;font-size:23px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">Branded Category Ads</p>
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">Branded Category Ads</p>
 <p class="topic3">
 Companies that use brand advertising aim to get long-term recognition by establishing brand identity and credibility. Brand ads don’t necessarily involve asking users to perform a specific action. These kind of ads are more focused on putting your brand in front of people so they remember it later. The goal is to connect with prospects intellectually and emotionally in an effort to motivate them to take action in the future when they see your performance-based ads.<br><br>
 
@@ -1478,7 +1472,7 @@ Our Branded Category Ads are non-intrusive and can be easily dismissed by websit
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<p align="center" style="font-family:open sans condensed;font-size:23px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">Email Marketing</p>
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">Email Marketing</p>
 <p class="topic3">
 An email marketing campaign is important to the success of any online business. It is the primary driver for customer acquisition for 81% of small businesses online. Therefore, it is an effective strategy for each phase of the buying process. In order to begin marketing with email, you'll need to develop a subscriber base. The best way to accomplish this is to add a subscription form to your website allowing visitors to opt-in so they can receive advertising news, promotional offers, etc. A multi-purpose contact form is included on each of our <a href="#" style="text-decoration:none;">Small Business Showcase WebPages</a>, which aids in developing a subscriber base for merchants who've joined our marketplace.<br><br>
 
@@ -1511,7 +1505,7 @@ Moreover, it's easy for recipients to share your advertising content with friend
 <div class="column" style="padding:0;margin:0 0 10px 0;">
 <div class="content w3-panel" style="border-radius:3px;margin:0;">
 <p class="topic3">
-Purchase our new <a href="https://spiralgroup.github.io/themonster/business-excellence.html#assess" target="_blank" style="text-decoration:none;">Operational Marketing Assessment</a> at the regular price of $199, and get all three Ad Products for only $339. With this assessment, we can help determine your company's level of preparedness before rolling out your next marketing campaign. We'll help you identify the strengths and weaknesses of your business systems by examining how workflow and structure affect customer service. Combine this product with all three Ad Products and capture an immediate ROI.</p>
+Purchase our new <a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="text-decoration:none;">Operational Marketing Assessment</a> at the regular price of $199, and get all three Ad Products for only $339. With this assessment, we can help determine your company's level of preparedness before rolling out your next marketing campaign. We'll help you identify the strengths and weaknesses of your business systems by examining how workflow and structure affect customer service. Combine this product with all three Ad Products and capture an immediate ROI.</p>
 
 <hr class="style-one" style="padding:0;margin:15px 0 0 0;">
 
@@ -1519,7 +1513,7 @@ Purchase our new <a href="https://spiralgroup.github.io/themonster/business-exce
 <button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">$179 Per Month &#8226; Order Now</button></a>
 
 <p align="center" style="padding:0;margin:0;">
-<a onclick="document.getElementById('id15').style.display='block'" href="#" style="font-family:roboto;font-size:12px;color:#222;padding:0;margin:0;text-decoration:none;">$179 Per Month for 3 Months</a></p>
+<a onclick="document.getElementById('id15').style.display='block'" href="#" style="font-family:roboto;font-size:12px;color:#222;padding:0;margin:0;text-decoration:none;">Take Time To Read The Fine Print</a></p>
 
 <div id="id15" class="w3-modal w3-animate-opacity">
 <div class="w3-modal-content" style="background-color:transparent;">
@@ -1581,7 +1575,7 @@ Enjoy six targeted, personalized email marketing campaigns within a 90-day time-
 <div class="column" style="background-color:#cce7ff;padding:0 10px;margin:0 0 10px 0;">
 <div class="content w3-panel" style="background-color:#cce7ff;border-radius:3px;margin:0;">
 <p class="topic3">
-That's a total of $681 if you bought all 3 ad products at regular price. But, when you purchase our Operational Marketing Assessment at the regular price of $199, you'll receive all 3 ad products for only $339. Combine and capture an immediate ROI.</p>
+That's a total of $681 if you bought all 3 ad products at regular price. But, when you purchase our <a href="https://spiralgroup.github.io/themonster/business-excellence.html">Operational Marketing Assessment</a> at the regular price of $199, you'll receive all 3 ad products for only $339. Combine and capture an immediate ROI.</p>
 
 <hr class="style-one" style="padding:0;margin:15px 0 0 0;">
 
