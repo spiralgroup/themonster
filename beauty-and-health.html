@@ -29,29 +29,77 @@ body, html {
     max-width: 1235px;
     height: 100%;
     margin: auto;
-    background-image: linear-gradient(to left, #fff, #fff);
+    background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
 
 .header {
   padding: 0;
-  background: #ffffff;
-  color: #585858;
-  margin: 0;
+   margin: 0;
   float: left;
   display: block;
 }
 .top-container {
-  background-color: #ffffff;
   padding: 0;
   margin: 0;
   text-align: left;
   float: left;
  }
  
- .navbar {
+ .nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+.nab a {
+  float: center;
+  font-family: roboto;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+.nab a:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
+}
+
+.nab1 {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab1 a {
+  float: center;
+  font-family: roboto;
+  color: #000;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 2px 0 2px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #000;
+}
+
+.topnav2 a:hover {
+  text-decoration: none;
+}
+
+.navbar {
 position: fixed;
 top: 0;
-max-width: 1235px;
+max-width: 1225px;
 background-color: #fff;
 border: none;
 }
@@ -60,6 +108,11 @@ border: none;
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .row,
@@ -163,42 +216,12 @@ border: none;
 
 * {box-sizing: border-box;}
 
-
 .active {
   background-color: #717171;
 }
 
 .active1 {
   background-color: #ccc;
-}
-
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: calibri,helvetica;
-  color: #222;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
-}
-
-.nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
 }
 
 /*==========SCALE-IN==========*/
@@ -232,7 +255,7 @@ main{
   height: 500px;
   text-align: center;
   margin: 0 auto;
-  background: #fff;
+  background: #f5f5f5;
   position: relative; 
   color: #f5f5f5;
   text-shadow:0 1px 1px #000;
@@ -305,7 +328,6 @@ main{
     font-size: 4vw;
     top: 22vw;
   }
- 
 }
 
 .button {
@@ -363,37 +385,22 @@ margin: 0;
 
 </style>
 
+<!-- MailerLite Universal -->
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
+<!-- End MailerLite Universal -->
 </head>
 <body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;box-shadow:0 2px 8px #777;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -420,36 +427,32 @@ $(document).ready(function(){
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button w3-blue" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
+</div>
 
 <main>
-  <div class="hero">
-    <h1>beauty & health</h1>
-<p>
-<a href="#beauty" style="text-decoration:none;color:#fff;">make this your third place</a>
-</p>
-    <img src="https://user-images.githubusercontent.com/25410880/52520649-8268e980-2c20-11e9-84a2-5a0017178e22.png" />
-     <div class="bar"></div>
-     </div>
+<div class="hero">
+<h1>beauty & health</h1>
+<p>make this your third place</p>
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/66203706-db790800-e65d-11e9-8010-4add25249ced.png" />
+<div class="bar">
+</div>
+</div>
 </main>
 
-
-
 <center>
-<div id="beauty">
-    </div>
-</div>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
+<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
 <center>
-<div class="w3-row-padding" style="margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
- <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54101956-87d26480-4383-11e9-8f40-840ec8f2885a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -459,7 +462,7 @@ barbers</p>
     </div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593485-b7949780-3b4d-11e9-8fde-d797cb2e44e0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -469,7 +472,7 @@ blowouts & styling</p>
     </div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54868931-20d38900-4d4f-11e9-908c-b7ff3283d652.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
@@ -480,7 +483,7 @@ braids & weaves</p>
     </div>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53594537-ec095300-3b4f-11e9-899a-797c3e00366a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -490,7 +493,7 @@ brows & lashes</p>
     </div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593489-b82d2e00-3b4d-11e9-9cb6-9167b2829053.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -500,7 +503,7 @@ cosmetic procedures</p>
     </div>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868176-288f2f80-4d47-11e9-97e8-f1163c2a115e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -510,7 +513,7 @@ face & skin care</p>
     </div>
     
     <div class="w3-third" style="margin:0 0 10px 0;">
- <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54101957-886afb00-4383-11e9-9265-ce02bae85c63.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -520,7 +523,7 @@ fitness centers</p>
     </div>
 
     <div class="w3-third" style="margin:0 0 10px 0;">
- <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54102128-5e660880-4384-11e9-8c76-4ed862a02c83.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -529,7 +532,7 @@ hair removal</p>
     </div>
     </div>
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593490-b82d2e00-3b4d-11e9-88ad-bb5ab5eb48d7.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -540,7 +543,7 @@ makeup & cosmetics</p>
 
 
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593491-b8c5c480-3b4d-11e9-8ff8-2dc2fdf7b772.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -550,7 +553,7 @@ massage therapy</p>
     </div>
      
 <div class="w3-third" style="margin:0 0 10px 0;">
- <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593493-b9f6f180-3b4d-11e9-92fd-64c7127d4aa7.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -560,7 +563,7 @@ nails</p>
     </div>
        
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868179-2af18980-4d47-11e9-8ea4-4c175a9bff5b.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -570,7 +573,7 @@ nutritionists</p>
     </div>
     
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54868346-ca634c00-4d48-11e9-97cd-5c766e2fbcfe.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -580,7 +583,7 @@ salons & salon packages</p>
     </div>
  
 <div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53594232-4655e400-3b4f-11e9-9ac3-7a50eb354bfc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -588,10 +591,9 @@ tanning salons</p>
     </div>
     </div>
     </div>
-   
     
 <div class="w3-third" style="margin:0 0 50px 0;">
-<div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
+<div class="column w3-card w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 <div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
 <p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
@@ -622,25 +624,23 @@ function myFunction() {
 }
 </script>
 
-
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
-<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic5">become visible.</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
-</div>
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">Spiral Group, Inc.</p>
+
+<div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
 </div>
 
 <center>
-<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/about-us.html">ABOUT US</a>
-<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank">CUSTOMER FEEDBACK</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
-<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Demo WebPages</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
+<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">Terms</a>
+<a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a>
 </div>
 </div>
 </div>
