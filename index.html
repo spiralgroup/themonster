@@ -341,8 +341,8 @@ padding: 0 10px;
 }
 
 .topic2 {
-font-family: roboto;
-font-size: 19.5px;
+font-family: pt sans;
+font-size: 25px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -373,7 +373,7 @@ margin: 0;
 
 .topic4 {
 font-family: roboto;
-font-size: 14px;
+font-size: 15px;
 color: #000;
 text-align: justify;
 text-shadow: 0 0 1px #222;
@@ -442,7 +442,7 @@ margin: 0;
 
 @media screen and (max-width: 768px) {
   .topic2 {
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;  
   padding: 0;  
   margin: 0;
@@ -506,7 +506,116 @@ margin: 0;
   right: 0;
 }
 
+.alert {
+  padding: 3px;
+  margin: 20px;
+  background-color: #000;
+  border-radius: 3px;
+}
+
+.closebtn {
+  margin-left: 3px;
+  color: #ccc;
+  font-weight: normal;
+  float: right;
+  font-size: 20px;
+  line-height: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: dodgerblue;
+}
+
+.closebtn1 {
+  margin-left: 3px;
+  color: dodgerblue;
+  font-weight: normal;
+  float: right;
+  font-size: 25px;
+  line-height: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn1:hover {
+  color: #222;
+}
+
+.topicprestige {
+font-family: roboto;
+font-size: 15.5px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+padding: 10px 0 15px 0;
+margin: 0;
+}
+.topicprestige2 {
+font-family: roboto;
+font-size: 15.5px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+padding: 10px 0 15px 0;
+margin: 0;
+}
+
+.topicprestige1 {
+font-family: roboto;
+font-size: 19.5px;
+color: #fff;
+text-align: center;
+text-shadow: 0 0 1px #000;
+letter-spacing: .5px;
+padding: 5px 0 15px 0;
+margin: 0;
+}
+
+  @media screen and (max-width: 768px) {
+ .topicprestige, .topicprestige1, .topicprestige2 {
+  text-align: center;  
+  font-size: 14.5px;
+  padding: 5px 0 15px 0;
+  margin: 0;
+  }
+  }
+   @media screen and (max-width: 768px) {
+ .topicprestige2 {
+  text-align: center;  
+  font-size: 14.5px;
+  padding: 5px 0;
+  margin: 0;
+  }
+  }
 </style>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 <!-- MailerLite Universal -->
 <script>
@@ -519,8 +628,9 @@ _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.ma
 var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
+
 </head>
-<body style="width:100%;"> 
+<body style="width:100%;">
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;box-shadow:0 2px 8px #777;">
@@ -570,50 +680,95 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="content1 w3-panel" style="padding:0;margin:0;">
 <div class="slideshow-container" style="margin:0;padding:0;">
 <div class="mySlides1 w3-animate-zoom">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/56623138-da8c7680-65e7-11e9-9afa-7c5662058391.png" style="width:100%;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/56623138-da8c7680-65e7-11e9-9afa-7c5662058391.png" style="width:100%;">
  </div>
  
 <div class="mySlides1 w3-animate-zoom">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/56623018-39052500-65e7-11e9-9c7a-a7c233815b58.png" style="width:100%;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/56623018-39052500-65e7-11e9-9c7a-a7c233815b58.png" style="width:100%;">
  </div>
  
 <div class="mySlides1 w3-animate-zoom">
-<p align="center"><img src="https://user-images.githubusercontent.com/25410880/56623017-39052500-65e7-11e9-97ae-31ab430bd694.png" style="width:100%;"></p>
+<img src="https://user-images.githubusercontent.com/25410880/56623017-39052500-65e7-11e9-97ae-31ab430bd694.png" style="width:100%;">
  </div>
   </div>
 </div>
   </div>
 
-<div class="column2" style="padding:0;margin:0;">
+<div class="column3" style="padding:0;margin:10px 0 0 0;">
 <div class="content1 w3-panel" style="padding:0;margin:0;">
 <div class="slideshow-container1" style="width:100%;margin:0;padding:0;">
 <div class="mySlides w3-animate-fading" style="padding:0 10px 5px 0;margin:0;">
 <p class="topic">
-Your Marketing Begins with an Amazing Online Presence</p>
-
-<p class="topic1">
-Our new Small Business Showcase WebPages are mobile-friendly and allows you to perform a multitude of business tasks.</p>
+Give Your Small Business the Gift of an Amazing Online Presence</p>
 </div>
 </div>
 
 <div class="mySlides w3-animate-fading" style="padding:0 10px 5px 0;margin:0;">
 <p class="topic">
 Accomplish More with Our Small Business Showcase WebPages</p>
-
-<p class="topic1">
-Sell your products and services, receive customer feedback, create some of the most amazing deals, and so much more.</p>
 </div>
 </div>
 
 <div class="mySlides w3-animate-fading" style="padding:0 10px 5px 0;margin:0;">
 <p class="topic">
 Choose the Showcase Plan That's Right for Your Small Business</p>
-
-<p class="topic1">
-Our plans start at only $13.79 per month. If you're not sure which plan is right for you, then give us a call at 773-242-0705.</p>
  </div>
 </div>
  </div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="alert">
+<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+<div class="w3-container" style="width:100%;padding:0 7px;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column w3-card-4" style="background-color:#000;padding:0;margin:0;border-radius:0 0 4px 4px;">
+<a href="#advertise" style="text-decoration:none;">
+<img src="https://user-images.githubusercontent.com/25410880/66178909-d1361a00-e61b-11e9-9f8c-6f986be9d717.png" style="width:100%;padding:0;margin:0;border-radius:2px 2px 0 0;">
+<p class="topicprestige1">Branded Category Ads</p></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<a href="#advertise" style="text-decoration:none;">
+<div class="w3-row-padding" style="margin:30px 0 0 0;">
+<div class="w3-third" style="margin:0;">
+<div class="column w3-card-4" style="padding:2px;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/53689056-06832e00-3d02-11e9-88ad-569f6f25502c.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="content w3-panel" style="background-color:#000;padding:0;margin:0;">
+<p class="topicprestige">
+Scrolling Footer Logo Ads</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="column w3-card-4" style="padding:2px;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/65653603-c3084e00-dfca-11e9-8d83-60c832cc207e.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="content w3-panel" style="background-color:#000;padding:0;margin:0;">
+<p class="topicprestige">
+Email Marketing</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="column w3-card-4" style="padding:2px;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/65896751-b71de280-e362-11e9-8171-03a6f3f59d22.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="content w3-panel" style="background-color:#000;padding:0;margin:0;">
+<p class="topicprestige2">
+The Prestige &#8226; Get All 3</p>
+</div>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 </div>
 
@@ -674,9 +829,13 @@ Special Offers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Business Hours Display</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
-Premium Ads Business Placard</p>
+Standard SG MarketPlace Logo</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Scrolling Footer Logo Ad</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Maintenance & Support</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+- -</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 - -</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
@@ -710,11 +869,15 @@ Special Offers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Business Hours Display</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
-Premium Ads Business Placard</p>
+Standard SG MarketPlace Logo</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Scrolling Footer Logo Ad</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Maintenance & Support</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Careers Page</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+- -</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 - -</p>
 </div>
@@ -746,13 +909,17 @@ Special Offers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Business Hours Display</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
-Premium Ads Business Placard</p>
+Standard SG MarketPlace Logo</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Scrolling Footer Logo Ad</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Maintenance & Support</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 Careers Page</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 SG Listing Service</p>
+<p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+1 Branded Category Ad &#8226; 90 Days</p>
 </div>
 
 <div class="column w3-center" style="padding:0;margin:0;background-color:#fbd0d9;border-radius:2px;">
@@ -764,45 +931,22 @@ SG Listing Service</p>
 </div>
 
 <div class="container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:15px 0 0 0;border-radius:8px;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;border-radius:8px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:10px 0;margin:0;">
-<p align="center" style="font-family:roboto;font-size:22px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;">Creating Your Account</p>
+<div class="w3-threethird" style="padding:0 0 10px 0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 10px 0;margin:0;">Creating Your Account</p>
 
 <p class="topic3">
 Creating your new Spiral Group, Inc. Merchant Account doesn't mean signing up for a 14-day free trial, where you'll have to attempt to learn code. Just follow the instructions outlined below, and then enjoy your new online presence within 7 business days. All plans include updates, maintenance, and dedicated support. If you have any questions, call us at 773-242-0705. We're open everyday, from 8am - 8pm.</p>
 </div>
 </div>
-
-<div class="w3-row-padding" style="width:100%;margin:20px 0 0 0;">
-<div class="w3-third" style="margin:0 0 20px 0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic4b">ADD LISTING</p>
-</div>
-</div>
 </div>
 
-<div class="w3-third" style="margin:0 0 20px 0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic4b">GET STARTED</p>
-</div>
-</div>
-</div>
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;border-radius:8px;margin:20px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0 0 10px 0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 10px 0;margin:0;">Payment Options</p>
 
-<div class="w3-third" style="margin:0 0 20px 0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic4b">CHOOSE PLAN</p>
-</div>
-</div>
-</div>
-</div>
-
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:10px 10px 20px 10px;margin:0;">
-<p class="topic4">Payment Options</p>
 <p class="topic3">
 We can process your credit or debit card payment via our secure Online Payment System. If you require other payment options, do not use our online order form. Instead, give us a call at 773-242-0705. We're open everyday, from 8am - 8pm.</p><br>
 
@@ -816,23 +960,23 @@ Select a business category by clicking the image that corresponds to it. To lear
 
 <p class="topic4">Completing the Order Form</p>
 <p class="topic3">
-1. Your Small Business Information. Once you have selected your business category, you will be taken to our secure online order form to continue the process of creating your new Spiral Group, Inc. Merchant Account. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">Demo WebPages</a> so you will know the kind of information needed to complete the online order form.<br><br>
+<a href="#" style="text-decoration:none;">Your Small Business Information</a>. Once you have selected your business category, you will be taken to our secure online order form to continue the process of creating your new Spiral Group, Inc. Merchant Account. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank">Demo WebPages</a> so you will know the kind of information needed to complete the online order form.<br><br>
 
-2. Your Product Images. We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge.<br><br>
+<a href="#" style="text-decoration:none;">Your Product Images</a>. We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge.<br><br>
 
-3. Team Member Images. On your About WebPage, you have the option of displaying individual photos of your staff. Alternatively, you can use a group photo. We do not require these images to be on a white background.<br><br>
+<a href="#" style="text-decoration:none;">Team Member Images</a>. On your About WebPage, you have the option of displaying individual photos of your staff. Alternatively, you can use a group photo. We do not require these images to be on a white background.<br><br>
 
-4. Your Net Proceeds. These are the monies you will receive after all costs and expenses are deducted from the Gross Proceeds arising from the sale of your products and services via your Spiral Group, Inc. Small Business Showcase WebPages Merchant Services account. You can choose to have these monies delivered through the USPS via check or deposited directly into your bank account.</p><br>
+<a href="#" style="text-decoration:none;">Your Net Proceeds</a>. These are the monies you will receive after all costs and expenses are deducted from the Gross Proceeds arising from the sale of your products and services via your Spiral Group, Inc. Small Business Showcase WebPages Merchant Services account. You can choose to have these monies delivered through the USPS via check or deposited directly into your bank account.</p><br>
 
 <p class="topic4">Phone Confirmation</p>
 <p class="topic3">
-Once you have submitted your completed order form and payment, you will be sent to a page that will allow you to schedule your Phone Confirmation. After scheduling your Phone Confirmation, you will be contacted by our web developer to complete the process of creating your Spiral Group, Inc. Merchant Account. It is important to confirm the information submitted to ensure your web pages reflect the details you want communicated about your brand.<br><br>
+Once you have submitted your completed order form and payment, you will be directed to schedule your Phone Confirmation. Within 24 hours, you will be contacted by our web developer to complete the process of creating your Spiral Group, Inc. Merchant Account. It is important to confirm the information submitted to ensure your web pages reflect the details you want communicated about your brand.<br><br>
 
-We will also use this time to fill in any blanks or make adjustments to the information you initially submitted. Phone Confirmations are conducted Sunday through Saturday, between 11am and 7pm (this includes major holidays). This process should take approximately 15 minutes to complete.</p><br>
+We can also use this time to fill in any blanks or make adjustments to the information submitted. Phone Confirmations are conducted Sunday through Saturday (including major holidays), from 8am - 8pm. This process should take approximately 15 minutes to complete.</p><br>
 
 <p class="topic4">Other Information</p>
 <p class="topic3">
-If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Our Premium Plan includes the SG Listing Service. We require that all plans be paid annually. We cannot offer refunds on our web development and SG Listing services.</p>
+If you are not sure which Small Business Showcase WebPages Plan to choose, give us a call. Our Premium Plan includes the SG Listing Service. We require all plans be paid annually. We cannot offer refunds on our web development and SG Listing services.</p>
 </div>
 </div>
 </div>
@@ -842,7 +986,7 @@ If you are not sure which Small Business Showcase WebPages Plan to choose, give 
 <div class="w3-row-padding" style="background-color:#f5f5f5;margin:0;">
 <div class="w3-threethird">
 <div class="nab1 topnav2" style="width:100%;padding:15px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id01').style.display='none'">CLOSE WINDOW</span></a>
+<a style="cursor:pointer;"><span onclick="document.getElementById('id01').style.display='none'">CLOSE</span></a>
 </div>
 </div>
 </div>
@@ -916,7 +1060,7 @@ Almost half of all searches are local, and nearly 90% of searches on mobile devi
 
 We developed the SG Listing Service to help grow your small business by increasing brand awareness. We manually register your company in only the top electronic business directories such as Bing, FourSquare, Google, and Yahoo. We put in the work of setting up your local business listings so you don't have to. Service included with our Premium Small Business Showcase WebPages Plan.<br><br>
 
-By leveraging the SG Listing Service, you can be confident that your business information is consistent. Affording you opportunities to attract the kind of customer you deserve. Below are the electronic directories we prefer and trust to list your small business information.</p>
+By leveraging the SG Listing Service, you can attract the kind of customers you deserve. Below are the online business directories we prefer and trust to list your small business information.</p>
 </div>
 </div>
 </div>
@@ -929,7 +1073,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473293-0082a500-de2c-11e9-9419-8829b60db971.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041273-57dce100-e4ce-11e9-90da-2dfe6e71454d.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -937,7 +1081,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473294-0082a500-de2c-11e9-8887-c95735b24d52.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041276-58757780-e4ce-11e9-9664-4fdae736035f.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -945,7 +1089,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473295-0082a500-de2c-11e9-9bfa-ce766f403511.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041278-58757780-e4ce-11e9-9015-2513b1b44ac1.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -953,7 +1097,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473296-0082a500-de2c-11e9-9d27-5b7514727272.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041279-58757780-e4ce-11e9-8a6b-f0abcaefa25b.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -961,7 +1105,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473297-011b3b80-de2c-11e9-9e61-32d3d3a899a0.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041280-590e0e00-e4ce-11e9-8313-3c1cebc5669a.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -969,7 +1113,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473299-011b3b80-de2c-11e9-8449-85d8f2fdca40.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041281-590e0e00-e4ce-11e9-8971-b97c098837ec.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -977,7 +1121,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473300-01b3d200-de2c-11e9-9aa3-c78024009f69.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041282-590e0e00-e4ce-11e9-9fc8-9591885e71bc.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -985,7 +1129,7 @@ By leveraging the SG Listing Service, you can be confident that your business in
 <div class="w3-quarter" style="margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
-<img src="https://user-images.githubusercontent.com/25410880/65473301-01b3d200-de2c-11e9-8fa5-53ed4e9d600c.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+<img src="https://user-images.githubusercontent.com/25410880/66041283-59a6a480-e4ce-11e9-924b-ab732ed586f8.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
 </div>
 </div>
@@ -1135,11 +1279,327 @@ Create social posts directly from your dashboards to drive online interactions w
 </div>
 
 <center>
-<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:10px 0 0 0;margin:0;">
+<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-row-padding" style="background-color:#f5f5f5;margin:0;">
 <div class="w3-threethird">
 <div class="nab1 topnav2" style="width:100%;padding:15px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id04').style.display='none'">CLOSE WINDOW</span></a>
+<a style="cursor:pointer;"><span onclick="document.getElementById('id04').style.display='none'">CLOSE</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="advertise" class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+advertise with us</p>
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="padding:0 0 10px 0;margin:0;border-radius:4px 4px 0 0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/65482728-d5f61380-de4e-11e9-9e9e-d79068289b26.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+
+<div class="w3-twothird" style="background-color:#fff;padding:0;margin:0;border-radius:4px 4px 0 0;">
+<div class="column1" style="padding:0 10px 10px 10px;margin:0;">
+<p class="topic3">
+What is your primary advertising goal? Is it to build brand awareness? Promote a product or service? We have the most effective and affordable online advertising products for your small business. Promoting your brand to people who matter has never been this easy.<br><br>
+
+Advertise with us and never worry about elaborate online advertising compensation models. Our new SG Local Ad Services start at only $1 a day.</p>
+
+<p align="center" class="w3-hover-shadow">
+<button onclick="document.getElementById('id05').style.display='block'" class="btn btn-primary btn-block" style="background-color:#f8f8f8;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:20px 0 10px 0;text-decoration:none;">LEARN MORE</button></p>
+
+<div id="id05" class="w3-modal w3-animate-opacity" style="width:100%;background-color:#f5f5f5;padding:0;margin:0;">
+<div class="w3-modal-content" style="width:100%;background-color:#f5f5f5;padding:0 6px;margin:13px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-half" style="padding:0 0 10px 0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/65482728-d5f61380-de4e-11e9-9e9e-d79068289b26.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" class="w3-card-2">
+</div>
+</div>
+
+<div class="w3-half" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic2">
+SG Local Ad Services</p>
+
+<hr class="style-one" style="padding:0;margin:5px 0;">
+
+<p class="topic5">
+Starting At Only $1 A Day</p>
+
+<a href="#checkitout">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:10px 0;text-decoration:none;">Explore The Magic</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic3">
+Finding the right advertising solution for your small business can be complicated and time-consuming. With so many online advertising compensation models, it's no wonder. Nevertheless, it's still important to educate local consumers about your brand, products, and services through online marketing efforts. That's why we developed <a href="#" style="text-decoration:none;">SG Local Ad Services</a>. Our new ad products and pricing model was created with the small business owner in mind.<br><br>
+
+When you advertise with us, you'll never have to worry about paying for CPA's, CPC's, CPI's, etc. Although tracking the progress of an ad campaign is crucial, the best way to know if an ad is truly yielding the results you desire is by observing how many people actually bought from you, how many subscribed to your mailing list, or how many simply followed the instructions of your call-to-action (CTA) buttons.</p>
+
+<p align="center" style="padding:20px;margin:20px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/65936310-161a4080-e3d1-11e9-9e7c-43c4606c039d.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:2px;" class="w3-card-2"></p>
+
+<p class="topic3">
+Other ways to track the effectiveness of your campaigns are to encourage consumers to download and print coupons from your website to encourage offline sales; to use discount codes when ordering online; or to send offers to consumers using an email marketing service.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="checkitout" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird">
+<p align="center" style="font-family:open sans condensed;font-size:30px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:10px 0;margin:0;">
+Ad Products</p>
+</div>
+
+<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<a href="#scroll">
+<img src="https://user-images.githubusercontent.com/25410880/65892055-7fab3800-e35a-11e9-8539-6962475bab25.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:3px;" class="w3-card-4"></a>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<a href="#brand">
+<img src="https://user-images.githubusercontent.com/25410880/65890314-871d1200-e357-11e9-9bea-0f97196e7511.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:3px;" class="w3-card-4"></a>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<a href="#email">
+<img src="https://user-images.githubusercontent.com/25410880/65890313-86847b80-e357-11e9-9418-899f5610c4dc.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:3px;" class="w3-card-4"></a>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border-radius:3px;margin:0 0 10px 0;">
+<a href="#prestige">
+<img src="https://user-images.githubusercontent.com/25410880/65895384-3cec5e80-e360-11e9-9dc9-e57e3d9bf6d6.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:3px;" class="w3-card-4"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="scroll" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">
+Scrolling Footer Logo Ads</p>
+<p class="topic3">
+Your logo is the most valuable advertising asset you can use in your marketing efforts. A well-designed logo speaks to consumers in an artistic and visually stimulating way. It gives them an idea of your company's personality and makes your brand recognizable. Your <a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Scrolling Footer Logo</a> will appear on all our Small Business Showcase WebPages within the same and complimentary business categories.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<a href="https://form.jotform.com/92618377594169" target="_blank">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">$90 for 90 Days &#8226; Order Now</button></a>
+
+<p align="center" style="font-family:roboto;font-size:12px;color:#222;padding:0;margin:0;"><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">View Scrolling Footer Logo Ads Here</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="brand" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">Branded Category Ads</p>
+<p class="topic3">
+Brand advertising is one way to get long-term recognition by establishing brand identity and credibility. The goal of these ads is to connect with prospects intellectually and emotionally so they're motivated to take action when they see your performance-based ads. Your <a href="https://spiralgroup.github.io/themonster/" target="_blank" style="text-decoration:none;">Branded Category Ad</a> will appear on all our Small Business Showcase WebPages within the same and complimentary business categories.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<a href="https://form.jotform.com/92618377594169" target="_blank">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">$99 Per Month &#8226; Order Now</button></a>
+
+<p align="center" style="font-family:roboto;font-size:12px;color:#222;padding:0;margin:0;"><a href="https://spiralgroup.github.io/themonster/" target="_blank" style="text-decoration:none;">View Sample Branded Category Ad Here</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="email" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:25px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">Email Marketing</p>
+<p class="topic3">
+Email marketing drives customer acquisition for more than 81% of small businesses online. We recommend it for each phase of the buying process. It's easy for recipients to share your advertising content with others, which means increased awareness for your brand. We can easily evaluate the success of each campaign and provide feedback. <a href="https://app.pg.mlsend.com/e6m3i7/" target="_blank" style="text-decoration:none;">Four-campaign commitment required</a>. Up to 1,000 email subscribers.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<a href="https://form.jotform.com/92618377594169" target="_blank">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">$49 Per Campaign &#8226; Order Now</button></a>
+
+<p align="center" style="font-family:roboto;font-size:12px;color:#222;padding:0;margin:0;"><a href="https://app.pg.mlsend.com/e6m3i7/" target="_blank" style="text-decoration:none;">View Sample Email Here</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="prestige" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:15px 6px 0 6px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="content w3-panel" style="border-radius:3px;margin:0 0 10px 0;">
+<img src="https://user-images.githubusercontent.com/25410880/66046270-4568a480-e4da-11e9-941a-5ad801f03f4d.png" style="width:100%;vertical-align:middle;padding:0;margin:0;border-radius:3px;" class="w3-card">
+</div>
+</div>
+</div>
+
+<div class="w3-threethird" style="margin:0 0 10px 0;">
+<div class="column" style="padding:0;margin:0 0 10px 0;">
+<div class="content w3-panel" style="border-radius:3px;margin:0;">
+<p class="topic3">
+Purchase our new <a href="https://spiralgroup.github.io/themonster/business-excellence.html" target="_blank" style="text-decoration:none;">Operational Marketing Assessment</a> at the regular price of $199, and get all three Ad Products for only $339. With this assessment, we can help determine your company's level of preparedness before rolling out your next marketing campaign. We'll help you identify the strengths and weaknesses of your business systems by examining how workflow and structure affect customer service. Combine this product with all three Ad Products and capture an immediate ROI.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<a href="https://form.jotform.com/92618377594169" target="_blank">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">$179 Per Month &#8226; Order Now</button></a>
+
+<p align="center" style="padding:0;margin:0;">
+<a onclick="document.getElementById('id15').style.display='block'" href="#" style="font-family:roboto;font-size:12px;color:#222;padding:0;margin:0;text-decoration:none;">Read The Fine Print</a></p>
+
+<div id="id15" class="w3-modal w3-animate-opacity">
+<div class="w3-modal-content" style="background-color:transparent;">
+<div class="w3-row-padding w3-card" style="background-color:#cce7ff;width:100%;margin:0 0 10px 0;border-radius:3px;">
+<div class="w3-threethird" style="padding:10px 0 5px 0;margin:0;">
+<p align="center" style="font-family:open sans condensed;font-size:26px;color:#000;letter-spacing:.5px;text-shadow:0 0 1px #000;">The Fine Print</p>
+</div>
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="column w3-card" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:0 5px;margin:0;">
+<p class="topic4b">Scrolling Logo Ads</p>
+<hr class="style-one" style="padding:0;margin:0 0 15px 0;">
+
+<p align="center" style="font-family:roboto;font-size:12px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Your logo will appear on all Small Business Showcase WebPages within the same and complimentary business categories throughout our marketplace for 90 days.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">Total = $90</button>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="column w3-card" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:0 5px;margin:0;">
+<p class="topic4b">Branded Logo Ads</p>
+<hr class="style-one" style="padding:0;margin:0 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:12px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Your ads will appear on all Small Business Showcase WebPages within the same and complimentary business categories throughout our marketplace for 90 days.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">Total = $297</button>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="column w3-card" style="padding:0;margin:0;">
+<div class="content w3-panel w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:0 5px;margin:0;">
+<p class="topic4b">Email Marketing Service</p>
+<hr class="style-one" style="padding:0;margin:0 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:12px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
+Enjoy six personalized email marketing campaigns within a 90-day time-period to accompany your other marketing efforts. Up to 1,000 email subscribers.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">Total = $294</button>
+</div>
+</div>
+</div>
+
+<div class="w3-threethird" style="background-color:#cce7ff;margin:0 0 10px 0;">
+<div class="column" style="background-color:#cce7ff;padding:0 10px;margin:0 0 10px 0;">
+<div class="content w3-panel" style="background-color:#cce7ff;border-radius:3px;margin:0;">
+<p class="topic3">
+That's a total of $681 if you bought all 3 ad products at regular price. But, when you purchase our <a href="https://spiralgroup.github.io/themonster/business-excellence.html" target="_blank">Operational Marketing Assessment</a> at the regular price of $199, you'll receive all 3 ad products for only $339. Combine and capture an immediate ROI.</p>
+
+<hr class="style-one" style="padding:0;margin:15px 0 0 0;">
+
+<a href="https://form.jotform.com/92618377594169" target="_blank">
+<button class="w3-button" style="background-color:dodgerblue;font-family:roboto;font-size:15px;color:#f8f8f8;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #c0c0c0;padding:10px;margin:20px 0 10px 0;text-decoration:none;">$179 Per Month &#8226; Order Now</button></a>
+
+<p align="center" style="padding:0;margin:0;font-family:roboto;font-size:12px;color:#222;padding:0;margin:0;text-decoration:none;">$179 Per Month for 3 Months</p>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="nab1 topnav2" style="width:100%;padding:0 0 15px 0;margin:0;">
+<span class="closebtn1" onclick="document.getElementById('id15').style.display='none'">&times;</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-row-padding" style="background-color:#f5f5f5;margin:0;">
+<div class="w3-threethird">
+<div class="nab1 topnav2" style="width:100%;padding:15px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id05').style.display='none'">CLOSE</span></a>
 </div>
 </div>
 </div>
@@ -1247,12 +1707,12 @@ function myFunction() {
 <div class="w3-threethird" style="margin:0;padding:0;">
 <p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">Spiral Group, Inc.</p>
 
-<div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
+<div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0 10px 0;">
 </div>
 
 <center>
 <div class="w3-threethird" style="margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
+<div class="nab topnav1" style="width:100%;padding:10px 0 5px 0;margin:0;">
 <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Demo WebPages</a>
 <a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
 <a href="https://spiralgroup.github.io/themonster/terms-of-use.html">Terms</a>
