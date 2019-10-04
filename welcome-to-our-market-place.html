@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-<title>Welcome to Our MarketPlace &#124; Spiral Group, Inc.</title>
+<title>Welcome to The SG MarketPlace &#124; Spiral Group, Inc.</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Online Marketing, Internet Marketing. If you're seeking affordable Small Business Solutions and Workforce Training Tools, then we've got you covered.">
@@ -31,7 +31,7 @@ body, html {
     max-width: 1235px;
     height: 100%;
     margin: auto;
-    background-image: linear-gradient(to left, #fff, #fff);
+    background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
 
 .header {
@@ -50,10 +50,16 @@ body, html {
   float: left;
  }
  
- .nab a {
+ .nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+.nab a {
   float: center;
-  font-family: calibri,helvetica;
-  color: #222;
+  font-family: roboto;
+  color: #f1f1f1;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
@@ -64,11 +70,34 @@ body, html {
 }
 
 .nab a:hover {
-  color: black;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ccc;
 }
 
 .topnav1 a:hover {
+  text-decoration: none;
+}
+
+.nab1 {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab1 a {
+  float: center;
+  font-family: roboto;
+  color: #000;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 2px 0 2px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #000;
+}
+
+.topnav2 a:hover {
   text-decoration: none;
 }
 
@@ -198,46 +227,30 @@ img {
 .active1 {
   background-color: #e6e6e6;}
   
-/*==========SCALE-IN==========*/
-@-webkit-keyframes scale-in {
-     0%   {transform: scale(10, 10); opacity: 0;}
-    100% {transform: scale(1, 1); opacity: 1;}
-}
-
-@keyframes scale-in {
-    0%   {transform: scale(10, 10); opacity: 0;}
-    100% {transform: scale(1, 1);  opacity: 1;}
-}
-/*==========ROLL-OUT==========*/
-@-webkit-keyframes roll-out {
-    0%   {width: 0;}
-    100% {width: 100%; }
-}
-@keyframes roll-out {
-    0%   {width: 0;}
-    100% {width: 100%; }
-}
-
 main{
   width: 100%;
   overflow: hidden;
   font-family: 'Expletus Sans', cursive;
- 
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
 }
+
 .hero{
   width: 100%;
   max-width: 1235px;
   height: 500px;
   text-align: center;
   margin: 0 auto;
-  background: #fff;
+  background: #f5f5f5;
   position: relative; 
   color: #f5f5f5;
   text-shadow:0 1px 1px #000;
- }
+  }
 
 .hero h1{
-  font-size: 6.5em;
+font-family: 'Expletus Sans', cursive;
+ font-size: 7.5em;
   margin: auto;
   position: absolute; 
   top: 180px;
@@ -260,51 +273,22 @@ main{
 .hero img{
   width: 100%;
 }
-.bar{
-  width: 100%;
-  height: 200px;
-  background: -moz-linear-gradient(289deg, transparent 100%);
-  background: -webkit-linear-gradient(289deg, transparent 100%);
-  background: -ms-linear-gradient(289deg, transparent 100%);
-  background: linear-gradient(161deg, transparent 100%);
-  opacity: 0.3;
-  position: absolute; 
-  z-index: 0;
-  left: 0;
-  top: 90px;
-  -ms-transform-origin: 100% 0%;
-  -webkit-transform-origin: 100% 0%;
-  transform-origin: 100% 0%;
-    -webkit-animation: roll-out 3.2s ease-out ;
-  -moz-animation: roll-out 3.2s ease-out ;
-    animation: roll-out 3.2s ease-out ; 
-}
-
-.hero h1, .hero p{
-  -webkit-animation: scale-in 3.3s ease-out;
-  -moz-animation: scale-in 3.3s  ease-out;
-    animation: scale-in 3.3s ease-out; 
-}
-
 
 @media all and (max-width: 768px) {
   .hero{
     height: 50vw;
   }
-  .bar{
-    height: 26vw;
-    top: 10vw;
-  }
+  
   .hero h1{
-    font-size: 8vw;
+    font-size: 10vw;
     top: 13vw;
      }
   .hero p{
-    font-size: 4vw;
+    font-size: 5vw;
     top: 22vw;
   }
- 
 }
+
 .button {
   border-radius: 2px;
   background-color: #f0f0f0;
@@ -360,37 +344,22 @@ margin: 0;
 
 </style>
 
+<!-- MailerLite Universal -->
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
+<!-- End MailerLite Universal -->
 </head>
 <body style="width:100%;">
-<div class="top-container" style="width:100%;padding:0;margin:0;box-shadow:0 30px 30px #f0f0f0;">
+<div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default w3-card" style="width:100%;border-radius:0 0 2px 2px;">
+<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;box-shadow:0 2px 8px #777;">
 <div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -417,37 +386,28 @@ $(document).ready(function(){
 </ul></ul>
 <ul class="nav navbar-nav navbar-right">
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button w3-blue" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
     </ul>
 </div>
 </div>
 </nav>
 </div>
-
+</div>
 
 <center>
 <main>
-  <div class="hero">
-    <h1>sg marketplace</h1>
-<p>
-<a href="#small-businesses" style="text-decoration:none;color:#fff;">we're glad you're here</a>
-</p>
-    <img src="https://user-images.githubusercontent.com/25410880/61347545-3eeb5a80-a812-11e9-8061-cf4f63d03aea.png" />
-     <div class="bar">
-     </div>
-     </div>
-    </main>
-
-  
-
-<center>
-<div id="small-businesses">
-    </div>
+<div class="hero">
+<h1>sg marketplace</h1>
+<p style="text-decoration:none;color:#fff;">we're glad you're here</p>
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/66195413-67356900-e64b-11e9-94fa-8e04d26da574.png" />
 </div>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
+</main>
+
 <center>
-<div class="w3-row-padding" style="margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
  <div class="column w3-card w3-hover-shadow w3-center" style="padding:0;margin:0 0 15px 0;background-color:transparent;border-radius:2px;">
 <a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
@@ -572,23 +532,22 @@ function myFunction() {
 </script>
 
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:#f0f8ff;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#f0f8ff;width:100%;padding:0;margin:25px 0 0 0;">
-<div class="w3-row" style="background-color:#f0f8ff;padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic5">become visible.</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<div class="sharethis-inline-share-buttons" style="width:100%;padding:15px 0 30px 0;">
-</div>
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">Spiral Group, Inc.</p>
+
+<div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
 </div>
 
 <center>
-<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:25px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/about-us.html">ABOUT US</a>
-<a href="https://goo.gl/forms/qwk0MLUkyfEvmSXt2" target="_blank">CUSTOMER FEEDBACK</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">PRIVACY</a>
-<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">TERMS</a>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Demo WebPages</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
+<a href="https://spiralgroup.github.io/themonster/terms-of-use.html">Terms</a>
+<a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a>
 </div>
 </div>
 </div>
