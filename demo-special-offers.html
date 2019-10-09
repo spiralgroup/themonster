@@ -28,7 +28,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
 <script>
@@ -266,6 +266,30 @@ $(document).ready(function(){
   transition: 0.5s;
 }
 
+.nab1 {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab1 a {
+  float: center;
+  font-family: roboto;
+  color: #333;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0 2px 0 2px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #000;
+}
+
+.topnav21 a:hover {
+  text-decoration: none;
+}
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -492,7 +516,30 @@ margin: 0;
 
 .topic4a {
 font-family: roboto;
-font-size: 14px;
+font-size: 12px;
+color: #000;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0;
+margin: 5px 0;
+}
+
+.topic4b {
+font-family: pt sans;
+font-size: 22px;
+color: #ccc;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 6px 0;
+}
+
+.topic4c {
+font-family: roboto;
+font-size: 16px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -502,15 +549,16 @@ padding: 0;
 margin: 0;
 }
 
-.topic4b {
-font-family: Open Sans Condensed;
-font-size: 20px;
+.topic4d {
+font-family: roboto;
+font-size: 15px;
 color: #000;
 text-align: center;
-letter-spacing: 1px;
+letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0;
 margin: 0;
-padding: 6px 0 10px 0;
 }
 
 .topic5 {
@@ -878,17 +926,70 @@ Email: info@yourcompany.com</p>
 <p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #ccc;">demo</a> special offers</p></div>
 
 <div class="w3-row-padding">
-<div class="w3-half" style="margin:0 0 30px 0;">
+<div id="1" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column w3-white" style="padding:10px 10px 0 10px;border-radius:8px 8px 4px 4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:70%;padding:0;margin:0;">
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id34').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id34')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id34" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/47722175-260d2b80-dc28-11e8-86a1-1da0e1497da7.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id34').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -898,13 +999,65 @@ Give it a try. Click the button below.</p>
 <img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:70%;padding:0;margin:0;">
 
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id35').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id35')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id35" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/47723192-62da2200-dc2a-11e8-8cdb-76f4b94b9e19.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id35').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -916,13 +1069,66 @@ Give it a try. Click the button below.</p>
 <img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:70%;padding:0;margin:0;">
 
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id36')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id36" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/47723195-6372b880-dc2a-11e8-86ec-410a53e98879.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id36').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -930,34 +1136,136 @@ Give it a try. Click the button below.</p>
 <div class="w3-half" style="margin:0 0 30px 0;">
 <div class="column w3-white" style="padding:10px 10px 0 10px;border-radius:8px 8px 4px 4px;">
 <img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:70%;padding:0;margin:0;">
-
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id37').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id37')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id37" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/60390230-e2084a00-9a86-11e9-813f-38f42d92cd29.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
 </div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
 </div>
 </div>
 </div>
 
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id37').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="w3-row-padding">
 <div class="w3-half" style="margin:0 0 30px 0;">
 <div class="column w3-white" style="padding:10px 10px 0 10px;border-radius:8px 8px 4px 4px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:70%;padding:0;margin:0;">
-
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id38').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id38')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id38" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/52188074-80002d00-27e5-11e9-9c45-d4b33b638223.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id38').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -965,15 +1273,66 @@ Give it a try. Click the button below.</p>
 <div class="w3-half" style="margin:0 0 30px 0;">
 <div class="column w3-white" style="padding:10px 10px 0 10px;border-radius:8px 8px 4px 4px;">
 <img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:70%;padding:0;margin:0;">
-
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id39').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id39')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id39" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/52188075-80002d00-27e5-11e9-87cb-169689ff25df.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id39').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -983,15 +1342,67 @@ Give it a try. Click the button below.</p>
 <div class="w3-half" style="margin:0 0 30px 0;">
 <div class="column w3-white" style="padding:10px 10px 0 10px;border-radius:8px 8px 4px 4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:70%;padding:0;margin:0;">
-
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id40').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id39')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id40" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/47723196-6372b880-dc2a-11e8-8f9d-15f89fead57d.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id40').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -999,15 +1410,68 @@ Give it a try. Click the button below.</p>
 <div class="w3-half" style="margin:0 0 30px 0;">
 <div class="column w3-white" style="padding:10px 10px 0 10px;border-radius:8px 8px 4px 4px;">
 <img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:70%;padding:0;margin:0;">
-
 <div class="content1 w3-panel" style="padding:10px 10px 0 10px;margin:0;border-radius:0 0 2px 2px;">
-<p class="topic">
-Here, we provide the details of your Promotional Offer. Customers can either tap the image to receive the discount online, or click the button below to print and redeem the offer at your retail location.
+<button onclick="document.getElementById('id41').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id41')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 
-<p class="topic">
-Give it a try. Click the button below.</p>
+<div id="id41" class="w3-modal">
+<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
+<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
+<p class="topic4d">
+Regular Price &#8226; $99.99</p>
+</div>
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/47723194-62da2200-dc2a-11e8-95d5-4bdaf3ce55b8.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:calibri,helvetica;font-size:11.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:20px 0;" href="https://github.com/spiralgroup/themonster/files/2993691/Your.Company.Printed.Special.Offer.pdf" target="_blank">PRINT SPECIAL OFFER</a>
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Take $20 off this Product.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; B5678 &#8226; at online checkout</p></button></a>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic4c">
+Or, spend $200 or more and receive $30 off your total purchase.</p>
+
+<a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;">
+<p align="center" style="font-family:roboto;font-size:13px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; PAL99 &#8226; at online checkout</p></button></a>
+
+<p class="topic4a">
+Discount codes cannot be combined.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" href="https://app.mlsend.com/g6u6l9/" target="_blank">PRINT SPECIAL OFFERS</a>
+</div>
+
+<div class="w3-half">
+<a class="w3-button w3-hover-shadow" style="background-color:#f5f5f5;font-family:calibri,helvetica;font-size:12.5px;color:#333;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;border-radius:2px;border:none;padding:8px 10px;margin:10px 0;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">SEND TO YOUR INBOX</a>
+</div>
+</div>
+
+<div class="w3-row" style="padding:0;margin:10px 0 0 0;">
+<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
+<div class="nab1 topnav21" style="padding:3px 0 5px 0;margin:0;">
+<a style="cursor:pointer;"><span onclick="document.getElementById('id41').style.display='none'">Close</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
