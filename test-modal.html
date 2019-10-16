@@ -30,7 +30,7 @@ body, html {
     max-width: 1235px;
     height: 100%;
     margin: auto;
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 
 .header {
@@ -210,9 +210,10 @@ background-color: #fff;
 
 .topic {
 font-family: roboto;
-font-size: 13.5px;
+font-size: 13px;
 letter-spacing: .5px;
-color: #222;
+color: #000;
+text-shadow: 0 0 1px #000;
 text-align: center;
 margin: 0;
 padding: 0;
@@ -242,23 +243,24 @@ margin: 0;
 
 .topic3 {
 font-family: roboto;
-font-size: 13px;
+font-size: 14px;
 color: #222;
 text-align: center;
 letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
 padding: 0;
 margin: 0;
 }
 
 .topic42 {
-font-family:calibri;
-font-size:22px;
-color:#000;
-text-shadow:0 0 1px #000;
+font-family: roboto;
+font-size: 16px;
+color: #333;
+text-shadow: 0 0 1px #000;
 text-align: center;
 letter-spacing: .5px;
 padding: 0;
-margin:0;
+margin: 0 0 5px 0;
 }
 
 .topic4 {
@@ -338,9 +340,27 @@ margin: 0;
   }
 
 @media screen and (max-width: 768px) {
-  .topic, .topic1, .topic2, .topic3, .topic4, .topic4c {
+  .topic, .topic1, .topic3, .topic4, .topic4c {
   text-align: center;  
   padding: 0 5px;  
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .topic4b {
+  font-size: 17px;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .topic2 {
+  font-family: open sans condensed;
+  font-size: 20px;  
+  color: #000;
+  text-shadow: 0 0 1px #000;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 0 0 5px 0;  
   }
   }
   
@@ -355,7 +375,7 @@ margin: 0;
   height: 500px;
   text-align: center;
   margin: 0 auto;
-  background: #fff;
+  background: #f5f5f5;
   position: relative; 
   }
 
@@ -383,7 +403,7 @@ margin: 0;
   text-align: left;
   outline: none;
   cursor: pointer;
-  padding: 20px;
+  padding: 15px;
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -412,6 +432,13 @@ margin: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
+
+@media all and (max-width: 768px) {
+  .accordion{
+  font-size: 12px;
+   padding: 12px;
+  }
+  }
 
 hr.style-one { border: 0; height: 1px; width:100%; background-image: linear-gradient(to right, #f5f5f5, #ccc, #f5f5f5);}
 
@@ -470,34 +497,40 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/66893187-52899700-efa2-11e9-8e38-50944d4216b0.png" />
 </div>
 </main>
+
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0 0 50px 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0 5px;margin:0;">
+<div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0;">
+<div class="w3-threethird" style="background-color:#f5f5f5;margin:0;">
 <p class="topic2">Branded Category Ads</p>
 
-<p class="topic4c">
-Branded Category Ads are ads that feature your brand logo, a custom headline, and up to four of your products and/or services.<br>
+<p class="topic3">
+<a class="w3-button w3-white" href="https://form.jotform.com/92618377594169" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;box-shadow:0 0 22px #ccc;margin:10px 0 30px 0;">Only $99 Per Month &#8226; Order Now</a></p>
 
-These ads appear within the same and complimentary business categories in the SG MarketPlace, and help generate recognition for your brand and product portfolio.</p>
+<p class="topic4b">
+Our Branded Category Ads feature your brand logo, a custom headline, and up to four of your products. These ads appear within the same and complimentary business categories in the SG MarketPlace, and help generate recognition for your brand and product portfolio.</p>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-
-<div class="w3-container" style="width:100%;padding:0;margin:50px 0;">
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
+<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:30px 0;">
+<div class="w3-row-padding" style="background-color:#f5f5f5;margin:0;">
  <div class="w3-third" style="margin:0 0 10px 0;">
   <div class="alert alert-success alert-dismissible w3-card" style="border:none;border-radius:3px;">
     <a href="#" class="close" data-dismiss="alert" aria-label="close" style="color:#222;">&times;</a>
-    <p class="topicprestige">Advertisement</p>
+    <p class="topicprestige">Branded Category Ad</p>
    
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;">
 <img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="width:100%;">
 
 <div class="w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">   
-<button onclick="document.getElementById('id35').style.display='block'" class="btn btn-primary btn-block w3-white" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border:none;margin:0;padding:15px 0;"><i class='fas fa-store-alt' style='font-size:14px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i> Your Clickable Headline Here</button>
+<button onclick="document.getElementById('id35').style.display='block'" class="btn btn-primary btn-block w3-white" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border:none;margin:0;padding:15px 0;"><i class='fas fa-store-alt' style='font-size:14px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i> Your Custom Headline Here</button>
 
 <div id="id35" class="w3-modal w3-animate-zoom">
 <span onclick="document.getElementById('id35').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
@@ -518,10 +551,10 @@ We offer a variety of products that are ... simply fabulous.</p>
 <img src="https://user-images.githubusercontent.com/25410880/66706503-2a6f0f00-ece8-11e9-8c33-f6257d00ed5c.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
 <p class="topic4ca">
-Levinna's Anti-Aging Cream<br>
+Anti-Aging Cream<br>
 8 oz. Keepsake Container</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -530,10 +563,10 @@ Levinna's Anti-Aging Cream<br>
 <img src="https://user-images.githubusercontent.com/25410880/66706839-0661fc80-eced-11e9-8876-f391d3c0750d.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
 <p class="topic4ca">
-Levinna's Magic Playing Cards<br>
+Magical Playing Cards<br>
 2, 52-Card Decks</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -545,7 +578,7 @@ Levinna's Magic Playing Cards<br>
 Vibrating Pink Kitty<br>
 Batteries not included</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -557,7 +590,7 @@ Batteries not included</p>
 Noise Reduction Headphones<br>
 Free with any purchase</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 </div>
@@ -572,13 +605,13 @@ Free with any purchase</p>
  <div class="w3-third" style="margin:0 0 10px 0;">
   <div class="alert alert-success alert-dismissible w3-card" style="border:none;border-radius:3px;">
     <a href="#" class="close" data-dismiss="alert" aria-label="close" style="color:#222;">&times;</a>
-    <p class="topicprestige">Advertisement</p>
+     <p class="topicprestige">Branded Category Ad</p>
    
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;">
 <img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="width:100%;">
 
 <div class="w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">   
-<button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block w3-white" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border:none;margin:0;padding:15px 0;"><i class='fas fa-store-alt' style='font-size:14px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i> Your Clickable Headline Here</button>
+<button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block w3-white" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border:none;margin:0;padding:15px 0;"><i class='fas fa-store-alt' style='font-size:14px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i> Your Custom Headline Here</button>
 
 <div id="id36" class="w3-modal w3-animate-zoom">
 <span onclick="document.getElementById('id36').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
@@ -599,10 +632,10 @@ We offer a variety of products that are ... simply fabulous.</p>
 <img src="https://user-images.githubusercontent.com/25410880/66706503-2a6f0f00-ece8-11e9-8c33-f6257d00ed5c.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
 <p class="topic4ca">
-Gidole's Anti-Aging Cream<br>
+Anti-Aging Cream<br>
 8 oz. Keepsake Container</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -611,10 +644,10 @@ Gidole's Anti-Aging Cream<br>
 <img src="https://user-images.githubusercontent.com/25410880/66706839-0661fc80-eced-11e9-8876-f391d3c0750d.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
 <p class="topic4ca">
-Gidole's Magic Playing Cards<br>
+Magical Playing Cards<br>
 2, 52-Card Decks</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -626,7 +659,7 @@ Gidole's Magic Playing Cards<br>
 Vibrating Pink Kitty<br>
 Batteries not included</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -638,7 +671,7 @@ Batteries not included</p>
 Noise Reduction Headphones<br>
 Free with any purchase</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 </div>
@@ -653,13 +686,13 @@ Free with any purchase</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="alert alert-success alert-dismissible w3-card" style="border:none;border-radius:3px;">
 <a href="#" class="close" data-dismiss="alert" aria-label="close" style="color:#222;">&times;</a>
-<p class="topicprestige">Advertisement</p>
+ <p class="topicprestige">Branded Category Ad</p>
    
 <div class="column w3-card" style="padding:0;margin:0 0 15px 0;">
 <img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;">
 
 <div class="w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">   
-<button onclick="document.getElementById('id37').style.display='block'" class="btn btn-primary btn-block w3-white" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border:none;margin:0;padding:15px 0;"><i class='fas fa-store-alt' style='font-size:14px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i> Your Clickable Headline Here</button>
+<button onclick="document.getElementById('id37').style.display='block'" class="btn btn-primary btn-block w3-white" style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border:none;margin:0;padding:15px 0;"><i class='fas fa-store-alt' style='font-size:14px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i> Your Custom Headline Here</button>
 
 <div id="id37" class="w3-modal w3-animate-zoom">
 <span onclick="document.getElementById('id37').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
@@ -680,10 +713,10 @@ We offer a variety of products that are ... simply fabulous.</p>
 <img src="https://user-images.githubusercontent.com/25410880/66706503-2a6f0f00-ece8-11e9-8c33-f6257d00ed5c.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
 <p class="topic4ca">
-The Prestige's Anti-Aging Cream<br>
+Anti-Aging Cream<br>
 8 oz. Keepsake Container</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -692,10 +725,10 @@ The Prestige's Anti-Aging Cream<br>
 <img src="https://user-images.githubusercontent.com/25410880/66706839-0661fc80-eced-11e9-8876-f391d3c0750d.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
 <p class="topic4ca">
-The Prestige's Playing Cards<br>
+Magical Playing Cards<br>
 2, 52-Card Decks</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -707,7 +740,7 @@ The Prestige's Playing Cards<br>
 Vibrating Pink Kitty<br>
 Batteries not included</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
 </div>
 </div>
 
@@ -719,7 +752,9 @@ Batteries not included</p>
 Noise Reduction Headphones<br>
 Free with any purchase</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
-<a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+<a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="text-decoration:none;">Shop Now</a></p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -734,20 +769,45 @@ Free with any purchase</p>
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:10px 0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic2">Who can use Branded Category Ads?</p>
+<p class="topic2">These Ads Are Ideal For...</p>
+</div>
 
-<p class="topic4c">
-Branded Category Ads are available for small business owners, professional sellers, vendors, book vendors, and agencies.</p>
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="column" style="margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
+<p align="center" style="padding:0;margin:0 0 10px 0;">
+<i class='fas fa-bullhorn' style='font-size:28px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i></p>
+
+<p class="topic">
+Business owners looking to promote and sell their products and services locally.</p>
 </div>
 </div>
 </div>
+
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="column" style="margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
+<p align="center" style="padding:0;margin:0 0 10px 0;">
+<i class='fas fa-store-alt' style='font-size:28px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i></p>
+
+<p class="topic">
+Business owners who have purchased a Small Business Showcase WebPages Plan.</p>
 </div>
 </div>
+</div>
+
+<div class="w3-third" style="margin:0 0 50px 0;">
+<div class="column" style="margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
+<p align="center" style="padding:0;margin:0 0 10px 0;">
+<i class='fab fa-adversal' style='font-size:28px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i></p>
+
+<p class="topic">
+Marketing agencies seeking high-quality, low cost advertising solutions for their clients.</p>
 </div>
 </div>
 </div>
@@ -755,42 +815,32 @@ Branded Category Ads are available for small business owners, professional selle
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:0 0 20px 0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic2">
-How Branded Category Ads Work</p>
-</div>
-</div>
-
-<div class="w3-row-padding" style="width:100%;margin:20px 0 0 0;">
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px;margin:0;">
-<p class="topic1">
-Control Costs While Growing Brand Awareness</p>
-
-<p class="topic">
-Sponsored Brands appear in search results to help drive discovery of your brand. Use custom messaging to help shoppers see your brand the way you want it to be seen.</p>
-
-<p class="topic">
-You pay for ads on a monthly basis. So you control how much you spend by paying only for the months you want the ads displayed.</p>
-</div>
-</div>
+<p class="topic2">Benefits of Branded Category Ads</p>
 </div>
 
 <div class="w3-half" style="margin:0 0 20px 0;">
 <div class="column" style="margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:10px;margin:0;">
-<p class="topic1">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
+<p class="topic4b">
+Control Costs & Grow Brand Awareness</p>
+
+<p class="topic">
+No need to worry about cost per click, which can lead to click fraud. You pay for Branded Category Ads on a monthly basis. This way, you're in control of how much you want to spend by paying only for the months you want your ads displayed.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0 0 50px 0;">
+<div class="column" style="margin:0;">
+<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:20px 10px;margin:0;">
+<p class="topic4b">
 Bring Shoppers to Your Products</p>
 
 <p class="topic">
-These ads reach customers when they're looking for what to buy. When SG MarketPlace shoppers click on your ad, they're presented with your featured products and/or services. When they click on a Shop Now link, they're taken to your landing page or Spiral Group, Inc. Products WebPage.</p>
-</div>
-</div>
-</div>
+When SG MarketPlace shoppers click on your ad, they're presented with your featured products and/or services. When they click on a Shop Now link, they're taken to your landing page or Spiral Group, Inc. Products & Services WebPage.</p>
 </div>
 </div>
 </div>
@@ -798,17 +848,12 @@ These ads reach customers when they're looking for what to buy. When SG MarketPl
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:20px 0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<p class="topic2">
-How to Get Started</p>
-</div>
+<p class="topic2">How to Get Started</p>
 </div>
 
-<div class="w3-row-padding" style="width:100%;margin:20px 0 0 0;">
 <div class="w3-half" style="margin:0 0 20px 0;">
 <div class="column" style="margin:0;">
 <div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
@@ -850,25 +895,21 @@ How to Get Started</p>
 </div>
 </div>
 </div>
-</div>
-</div>
+
+<center>
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p class="topic3">
+<a class="w3-button w3-white" href="https://form.jotform.com/92618377594169" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;box-shadow:0 0 22px #ccc;margin:0 0 70px 0;">Order Your Branded Category Ad</a></p>
+
+<p class="topic2">
+Frequently Asked Questions</p>
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<p class="topic2">
-Frequently Asked Questions</p>
-
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion">Why should I use Sponsored Brands?</div>
-<div class="panel" style="border:none;">
-<p class="topic4" style="margin:0;padding:5px 0 10px 0;">
-Sponsored Brands help high-intent customers discover and engage with your brand as they research on Amazon.</p>
-</div>
-
 <div class="w3-threethird" style="padding:0;margin:0;">
 <div class="accordion">What is brand advertising?</div>
 <div class="panel" style="border:none;">
@@ -878,10 +919,10 @@ Brand advertising is a form of advertising used to establish connections and bui
 Companies that use brand advertising aim to get long-term positive recognition by establishing brand identity, credibility, and loyalty, and connecting with prospects intellectually and emotionally to motivate them to take action in the future.</p>
 </div>
 
-<div class="accordion">Where will my Sponsored Brands ads appear?</div>
+<div class="accordion">How will these ads help me achieve my business goals?</div>
 <div class="panel">
 <p class="topic4" style="margin:0;padding:5px 0 10px 0;">
-Your ads may be displayed on top of, alongside, or within search results. Ads may appear on both desktop and mobile.</p>
+Sponsored Brands can help you achieve a variety of goals, from generating awareness of a new product to promoting seasonal items or creating more demand for a best seller?Your ads may be displayed on top of, alongside, or within search results. Ads may appear on both desktop and mobile.</p>
 </div>
 
 <div class="accordion">How much does Sponsored Brands cost?</div>
@@ -896,32 +937,11 @@ You bid the maximum amount that you are willing to pay when a shopper clicks an 
 At this time, adult products, used products, refurbished products, and products in closed categories are not eligible for advertising.</p>
 </div>
 
-<div class="accordion">What results can I expect from Sponsored Brands?</div>
+<div class="accordion">How does brand advertising add value to a brand?</div>
 <div class="panel">
 <p class="topic4" style="margin:0;padding:5px 0 10px 0;">
-Sponsored Brands can help you achieve a variety of goals, from generating awareness of a new product to promoting seasonal items or creating more demand for a best seller.<br><br>
-
-We provide a range of tools and reports that help you analyze campaign performance and measure success. New-to-brand metrics allow you to measure how many first-time customers your campaign drove in the last 12 months, and advertising cost of sales (ACOS) represents your ad spend as a percentage of sales. Once you have launched your campaign, you can view performance via the graphical dashboard or view downloadable reports on the reporting page.</p>
-
-<p class="topic1">
-Which form of advertising is designed to influence demand for a specific brand?
-
-<p class="topic4">
-Two primary types of advertising exist: brand advertising and direct response advertising.<br><br>
-
-Direct response ads (or performance-based ads) are used to drive immediate action from users, while brand advertising is designed to increase overall demand for a brand.<br><br>
-
-Direct response ads — which includes most (but not all) forms of digital advertising — allow advertisers to easily track and measure the performance of their campaigns with links, unique phone numbers, app installs, coupon codes, and more. <br><br>
-
-Brand ads — most of the ads on TV, radio, billboards, newspapers, magazines, etc. — don’t necessarily involve asking users to perform a specific action and, therefore, are harder to track. However, it’s not impossible to track brand advertising campaigns.<br><br>
-
-Think about display ads, or retargeting ads. These aren’t meant so much for click-throughs and encourage in-the-moment actions. Rather, these are more focused on impressions and reach — putting your brand in front of people so they remember it later. This is the overall goal of brand advertising: getting in front of users’ eyes, making a favorable impression, building strong connections, and increasing demand for the brand over time.<br><br>
-
-How does brand advertising add value to a brand?
 Even without easy tracking and measurability, brand advertising campaigns still add tremendous value. With more consumers aware of your brand, the more they trust and stick with you throughout the buyer’s journey. This makes them more likely to take action when they see a performance-based ad (and even become a loyal customer) in the future:<br><br>
  
-Let’s take a look at how brand advertising adds value to a brand during each of the beginning stages of the funnel.
-
 Exposure: Establishes brand identity
 During the exposure stage, it’s crucial to deliver a great first impression to establish a strong, positive, consistent brand identity (aka character or personality). Brand identity is determined by a variety of components: the brand’s logo, fonts and colors, web presence, and other visual elements.<br><br>
 
@@ -945,6 +965,13 @@ Add brand advertising to your marketing strategy
 Failing to incorporate brand advertising into your overall marketing strategy could be detrimental to your bottom line. Brand advertising may be considered the long game compared to direct response ads, but a well-executed strategy can pay off in more ways than one.<br><br>
 
 By combining brand ads and with direct response, your brand can capture both immediate ROI while also driving future sales. Use the suggestions and examples above to refine your own strategy. Then, ensure all of your digital ads are connected to a professional post-click landing page designed for conversion.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -986,6 +1013,7 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 <center>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;">
