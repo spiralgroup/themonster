@@ -35,10 +35,6 @@ body, html {
     background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
 
-.topnav1 a:hover {
-  text-decoration: none;
-}
-
 .nab1 {
   overflow: hidden;
   padding: 10px;
@@ -110,11 +106,32 @@ body, html {
  }
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
+.nab {
+  overflow: hidden;
+  padding: 10px;
   width: 100%;
-  z-index: 1;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: roboto;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+.nab a:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
 }
 
 .active1 {
@@ -142,7 +159,7 @@ margin:0;
 
 .topic2 {
 font-family: roboto;
-font-size: 15.5px;
+font-size: 25.5px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -232,7 +249,16 @@ margin: 0;
 
 
 @media screen and (max-width: 768px) {
-  .topic, .topic1, .topic2, .topic3, .topic4, .topic4c {
+  .topic, .topic1, .topic2, .topic3, .topic4c {
+  text-align: center;  
+  padding: 0 5px;  
+  }
+  }
+  
+  
+@media screen and (max-width: 768px) {
+  .topic4 {
+  font-size: 12px;
   text-align: center;  
   padding: 0 5px;  
   }
@@ -240,7 +266,7 @@ margin: 0;
   
 .accordion {
   font-family: roboto;
-  font-size: 14px;
+  font-size: 16px;
   text-shadow:0 0 1px #222;
   letter-spacing: .5px;
   background-color: #fff;
@@ -251,7 +277,7 @@ margin: 0;
   text-align: left;
   outline: none;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 10px;
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -273,18 +299,26 @@ margin: 0;
 
 .panel {
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
   background-color: #fff;
   max-height: 0;
   border: none;
+  border-radius: 2px;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
 
 @media all and (max-width: 768px) {
+  .accordion:after, .content {
+  display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
   .accordion{
   font-size: 12px;
-   padding: 12px;
+  text-align: center;
+   padding: 12px 5px;
   }
 }
 
@@ -309,46 +343,69 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <body style="width:100%;">
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel w3-white" style="width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67250695-43cb3600-f421-11e9-9116-2bd99509ff3e.png" style="width:100%;margin:0 0 10px 0;border-radius:3px;">
-
-<p class="topic3"><a class="w3-button w3-white" href="https://squareup.com/gift/124EPQTK00B8R/order" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;margin:30px 0 0 0;box-shadow:0 0 22px #ccc;">Send an eGift Card via email</a></p>
-</div>
-</div>
-
-<div class="container w3-panel w3-white" style="width:100%;padding:50px 0 0 0;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:15px 0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-half" style="margin:0 0 20px 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column w3-card" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67319366-aecc4980-f4c1-11e9-9ad8-f2fe8f2a95bf.png" style="width:100%;margin:0;border-radius:2px;">
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
+<p class="topic2">
+Gifts for the Entrepreneur</p>
+
+<p class="topic">
+Knowing what gift to get for the small business owner in your life can be difficult. We suggest the kind that will help keep their business running smoothly and make their life easier.<br><br>
+
+We offer the kind of gifts that send the message that you take an interest in what they do and want to help them succeed.</p>
+
+<p class="topic3"><a class="w3-button w3-white" href="https://squareup.com/gift/124EPQTK00B8R/order" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;margin:20px 0;box-shadow:0 0 22px #ccc;">Send an eGift Card via email</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:60px 0 0 0;">
+<p class="topic2">
+Gifts for the Entrepreneur</p>
+
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:15px 0 0 0;">
+<div class="w3-half" style="margin:0 0 15px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
 <i class="material-icons" style="color:dodgerblue;font-size:33px;">textsms</i>
 <p class="topic4b">Choose an eGift Card amount and time of delivery.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
+<div class="w3-half" style="margin:0 0 15px 0;">
 <div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
+<div class="w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
 <i class="material-icons" style="color:dodgerblue;font-size:33px;">content_copy</i>
 <p class="topic4b">Add a personal message and the recipient’s information.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
+<div class="w3-half" style="margin:0 0 15px 0;">
 <div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
+<div class="w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
 <i class="material-icons" style="color:dodgerblue;font-size:33px;">android</i>
 <p class="topic4b">Redeem as easily as you would any other form of payment.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
+<div class="w3-half" style="margin:0 0 15px 0;">
 <div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
+<div class="w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
 <i class="material-icons" style="color:dodgerblue;font-size:33px;">content_copy</i>
 <p class="topic4b">They’re simple to redeem, track, and reload. </p>
 </div>
@@ -361,32 +418,29 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:10px 0 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
 <p class="topic2">
-Gift Ideas</p>
-
-<p class="topic">
-Knowing what to get for the entrepreneur in your life can be difficult. Perhaps the kind of gift that will help keep their business running smoothly and make their life easier. Send the kind of gift that sends the message that you take an interest in what they do and want to help them succeed.</p>
+Other Gift Ideas</p>
 </div>
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-row" style="width:100%;padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion">For those looking to streamline their marketing efforts</div>
+<div class="accordion">Those looking to streamline their marketing efforts</div>
 
 <div class="panel">
-<div class="w3-row-padding" style="margin:0 0 50px 0;">
-<div class="w3-third">
-<div class="column" style="padding:20px 0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/54404255-24507b80-4690-11e9-978d-5ebc261dff88.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-third" style="padding:0;">
+<div class="column w3-card-2" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/54404255-24507b80-4690-11e9-978d-5ebc261dff88.png" style="width:100%;padding:0;margin:0;">
 </div>
 </div>
 
-<div class="w3-twothird">
-<div class="column" style="padding:0;margin:0;">
+<div class="w3-twothird" style="padding:0 5px;">
+<div class="column" style="padding:10px;margin:0;">
 <p class="topic4">
 Is your small business ready to expand its customer base? How is workflow and organizational structure affecting customer service? Is your workforce adequately trained and well-versed in your products and services?
 
@@ -402,7 +456,7 @@ An Operational Marketing Assessment can provide the answers to these kinds of qu
 </div>
 </div>
 
-<div class="accordion">For restaurateurs who want to stay on top of their game</div>
+<div class="accordion">Restaurateurs who want to stay on top of their game</div>
 <div class="panel">
 <div class="w3-row-padding" style="padding:0;margin:0;">
 <div class="w3-third">
@@ -425,7 +479,7 @@ We work closely with you to ensure food safety, while prioritizing any missed op
 </div>
 </div>
 
-<div class="accordion">For those looking to improve the customer experience</div>
+<div class="accordion">Those looking to improve the customer experience</div>
 <div class="panel">
 <div class="w3-row-padding" style="padding:0;margin:0;">
 <div class="w3-third">
@@ -448,7 +502,7 @@ Let us design and implement a mystery shopping program for your small business t
 </div>
 </div>
 
-<div class="accordion">For those who want to develop an online presence</div>
+<div class="accordion">Those who want to develop an online presence</div>
 <div class="panel">
 <div class="w3-row-padding" style="padding:0;margin:0;">
 <div class="w3-third">
@@ -471,7 +525,7 @@ You can promote and sell your products and services, book appointments, provide 
 </div>
 </div>
 
-<div class="accordion">For those who want to attract the customers they deserve</div>
+<div class="accordion">Those who want to attract more customers</div>
 <div class="panel">
 <div class="w3-row-padding" style="padding:0;margin:0;">
 <div class="w3-third">
@@ -494,7 +548,7 @@ We'll register your Small Business in only the top electronic business directori
 </div>
 </div>
 
-<div class="accordion">For those looking for the right advertising solution</div>
+<div class="accordion">Those looking for affordable advertising solutions</div>
 <div class="panel">
 <div class="w3-row-padding" style="padding:0;margin:0;">
 <div class="w3-third">
@@ -540,7 +594,7 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:30px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
