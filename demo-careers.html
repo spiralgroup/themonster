@@ -30,6 +30,7 @@
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
@@ -254,6 +255,11 @@ img {
     line-height: 120px;
 }
 
+.content {
+    padding: 0;
+    margin: 0;
+}
+
 body, html {
     max-width: 1235px;
     height: 100%;
@@ -312,7 +318,7 @@ font-weight: normal;
  }
 }
 
-hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: linear-gradient(to right, #f1f1f1, #cceeff, #f1f1f1); }
+hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: linear-gradient(to right, #f1f1f1, #f5f5f5, #f1f1f1); }
 
 .col-sm-7, .col-sm-5 {
   margin: 120px 0 14px 0;
@@ -488,6 +494,28 @@ margin: 0 0 10px 0!important;
   width: 100%;
 }
 
+.bg-img1 {
+  /* The image used */
+  background-image: url("https://user-images.githubusercontent.com/25410880/67661555-c589fa80-f91e-11e9-8a9e-5b169decbfac.png");
+  min-height: 150px;
+  max-width: 100% !important;
+  float: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-color: transparent;
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 li:hover span {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
@@ -520,7 +548,10 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </head>
 <body style="width:100%;padding:0;margin:0;">
 <div class="w3-card-4" data-role="header" data-position="fixed" style="border:none;padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/62146197-beb10480-b2a9-11e9-8128-857c78172d9d.png" style="width:100%;margin:0;padding:0;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
+<div class="bg-img1" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;border-radius:0 0 2px 2px;cursor:pointer;" data-toggle="modal" data-target="#myModal88">
+<div class="container1" style="width:100%;background-color:transparent;padding:0;margin:0;border:none;">
+</div>
+</div>
 </div>
 
 <!-- The Modal -->
@@ -662,13 +693,13 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
 <center>
 <div class="w3-row-padding" style="width:100%;margin:10px 0 0 0;">
 <div class="col-sm-7">
-<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">beauty & health</p>
-<img class="w3-card-4 w3-white" src="https://user-images.githubusercontent.com/25410880/62493319-a6e3ef80-b785-11e9-9fba-1da3306daa99.png" style="padding:0;margin:0;width:100%;border-radius:0 0 2px 2px;">
+<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">business category here</p>
+<img class="w3-card-4 w3-white" src="https://user-images.githubusercontent.com/25410880/67663364-8f4e7a00-f922-11e9-8a59-2d27753f2812.png" style="padding:0;margin:0;width:100%;border-radius:0 0 2px 2px;">
 </div>
 
 <div class="col-sm-5">
 <p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">our location</p>
-<div class="w3-card-4 w3-white" style="padding:11px 0 0 0;margin:0 0 12px 0;border-radius:0 0 2px 2px;">
+<div class="w3-card-4 w3-white" style="padding:11px 0 0 0;margin:0 0 14px 0;border-radius:0 0 2px 2px;">
 
 <p class="topic4a">
 400 S. State Street<br>
@@ -721,16 +752,16 @@ Email: info@yourcompany.com</p>
 &nbsp;
 </div>
 
-<div class="w3-row-padding" style="margin:0 0 15px 0;">
-<div class="w3-threethird" style="margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000;letter-spacing:2.5px;text-shadow:0 1px 2px #000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:dodgerblue;letter-spacing:2.5px;text-decoration:none;text-shadow:0 1px 2px #ccc;">demo</a> careers</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="padding:0 22px;margin:0 0 10px 0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:darkblue;letter-spacing:2.5px;text-shadow:0 0 2px #000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:darkblue;letter-spacing:2.5px;text-shadow:0 0 2px #000">demo</a> careers</p></div>
 
 <div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-threethird" style="margin:0;">
 <div class="column" style="padding:0;">
-<div class="content w3-panel" style="padding:15px 12px 10px 12px;margin:0;">
+<div class="content w3-panel" style="padding:15px 12px 0 12px;margin:0;">
 <p class="topic">
 Spiral Group, Inc. is a Not for Profit organization located in Chicago, Illinois. We provide Small Business Showcase Webpages and other affordable Business Excellence Tools for locally under-served small businesses. We seek creative, energetic, self-motivated, and ambitious people to join our team as Independent Sales Representatives. Persons considered hard to employ, due to a criminal past, are strongly encouraged to apply.<br><br>
 
