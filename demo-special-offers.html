@@ -28,7 +28,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
 <script>
@@ -290,6 +290,7 @@ $(document).ready(function(){
 .topnav21 a:hover {
   text-decoration: none;
 }
+
 img {
     border-radius: 0; 
     max-width: 100%;
@@ -311,6 +312,7 @@ body, html {
     height: 100%;
     margin: none;
 }
+
 
 .active1 {
   background-color: #717171;
@@ -447,27 +449,16 @@ font-weight: normal;
 
 hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: linear-gradient(to right, #f1f1f1, #cceeff, #f1f1f1); }
 
-
-.panel {
-  padding: 0 5px;
-  margin: 5px 0;
-  background-color: #fff;
-  max-height: 0;
-  border: none;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
 .col-sm-7, .col-sm-5 {
   margin: 120px 0 14px 0;
   }
   
 .topic {
 font-family: roboto;
-font-size: 13px;
+font-size: 14px;
 letter-spacing: .5px;
 color: #222;
-text-align: center;
+text-align: justify;
 margin: 0;
 padding:0 0 8px 0;
 }
@@ -523,20 +514,19 @@ letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
 font-weight: normal;
 padding: 0;
-margin: 5px 0;
+margin: 0;
 }
 
 .topic4b {
-font-family: pt sans;
-font-size: 22px;
-color: #ccc;
+font-family: Open Sans Condensed;
+font-size: 20px;
+color: #000;
 text-align: center;
 letter-spacing: 1px;
 text-shadow: 0 0 1px #000;
 margin: 0;
-padding: 6px 0;
+padding: 6px 0 10px 0;
 }
-
 .topic4c {
 font-family: roboto;
 font-size: 16px;
@@ -583,9 +573,40 @@ padding: 0 !important;
 margin: 0 0 10px 0!important;
 }
 
+.topic11 {
+font-family: pt sans;
+font-size: 20px;
+color: #c0c0c0;
+text-align: center;
+letter-spacing: 1.5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0;
+margin: 0;
+}
+
+.topic12 {
+font-family: pt sans;
+font-size: 25px;
+color: #c0c0c0;
+text-align: center;
+letter-spacing: 1.5px;
+text-shadow: 0 0 1px #000;
+font-weight: bold;
+padding: 0;
+margin: 0;
+}
+ 
+ @media screen and (max-width: 768px) {
+ .topic12 {
+  font-size: 20.5px;
+  }
+  }
+  
+  
  @media screen and (max-width: 768px) {
   .topic {
-  text-align: center;  
+  text-align: left;  
    }
   }
   
@@ -644,6 +665,7 @@ margin: 0 0 10px 0!important;
   padding: 0;
   width: 100%;
 }
+
 
 .bg-img1 {
   /* The image used */
@@ -728,6 +750,7 @@ padding-left: 0;
 }
 
 </style>
+
 <!-- MailerLite Universal -->
 <script>
 (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
@@ -949,9 +972,7 @@ Email: info@yourcompany.com</p>
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-threethird" style="padding:0 22px;margin:0 0 10px 0;">
 <p align="center" style="font-family:dorsa;font-size:43px;color:darkblue;letter-spacing:2.5px;text-shadow:0 0 2px #000;"><a rel="nofollow" style="font-family:dorsa;font-size:43px;color:darkblue;letter-spacing:2.5px;text-shadow:0 0 2px #000">demo</a> special offers</p></div>
-
-
-<div class="w3-row-padding">
+ 
 <div id="1" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column w3-white" style="padding:0;border-radius:8px 8px 4px 4px;">
 <img src="https://user-images.githubusercontent.com/25410880/66706503-2a6f0f00-ece8-11e9-8c33-f6257d00ed5c.png" style="width:100%;padding:0;margin:0;">
