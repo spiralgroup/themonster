@@ -205,6 +205,29 @@ body, html {
     box-sizing: border-box;
 }
 
+.topic2 {
+font-family: pt sans;
+font-size: 28.5px;
+color: #c0c0c0;
+text-align: center;
+letter-spacing: 1.5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0 0 10px 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-family: open sans condensed;
+  font-size: 22px;  
+  color: #000;
+  text-shadow: 0 0 1px #000;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 0 0 5px 0;  
+  }
+  }
 .topic3 {
 font-family: roboto;
 font-size: 14px;
@@ -225,6 +248,22 @@ padding: 0 0 10px 0;
 margin: 0;
 }
 
+.topic4 {
+font-family: roboto;
+font-size: 13.5px;
+letter-spacing: .5px;
+color: #222;
+text-align: justify;
+margin: 0;
+padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic4 {
+  font-size: 12px;
+  text-align: left;  
+  }
+  }
 .topic4b {
 font-family: roboto;
 font-size: 15.5px;
@@ -235,6 +274,56 @@ text-shadow: 0 0 1px #444;
 font-weight: normal;
 padding: 10px 0 5px 0;
 margin: 0;
+}
+
+.accordion {
+  font-family: roboto;
+  font-size: 13.5px;
+  text-shadow:0 0 1px #222;
+  letter-spacing: .5px;
+  background-color: #f8f8f8;
+  color: #222;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #222;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  background-color: #f0f0f0;
+}
+
+.panel {
+  padding: 0 12px;
+  margin: 5px 0;
+  background-color: #f8f8f8;
+  max-height: 0;
+  border: none;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+@media all and (max-width: 768px) {
+  .accordion{
+  font-size: 12px;
+   padding: 12px 8px;
+  }
 }
 </style>
 <!-- MailerLite Universal -->
@@ -259,7 +348,6 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 
-
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:20px;margin:20px 0 50px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
@@ -270,9 +358,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <center>
-<div id="pricing" class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:20px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
-
+<div id="pricing" class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;">
 <div class="column" style="padding:10px 0;margin:0;">
@@ -407,6 +493,122 @@ SG Listing Service</p>
 </div>
 </div>
 </div>
+
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
+<p class="topic2">
+Frequently Asked Questions</p>
+</div>
+
+<center>
+<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0 8px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0 0 30px 0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">How do I sell in the SG MarketPlace?</div>
+<div class="panel">
+<p class="topic4">
+It’s easy to start growing your business with your new Small Business Showcase WebPages. Getting started with us doesn't mean signing up for a 14-day free trial, where you'll have to attempt to learn code. Just follow the instructions outlined below, and then enjoy your new online presence within 7 business days.</p>
+
+<p class="topic4">
+&#8226; <a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">Click here</a> to begin the process of creating your Spiral Group, Inc. Merchant Account. Select a business category by clicking the image that corresponds to it. To learn more about a category, click on it's label. If you don't see your category, choose the one that most closely characterizes your Small Business.<br><br>
+
+&#8226; Provide your business information using our secure online order form. Please set aside 30-45 minutes. It may help to have all your pertinent business information handy before you begin. We recommend visiting each of our Demo WebPages so you will know the kind of information needed to complete the online order form.<br><br>
+
+&#8226; We prefer that images used for showcasing your products be on a white background. However, if your images don't meet this requirement, upload them anyway and we will do our best to substitute them at no additional charge.<br><br>
+
+&#8226; On your About WebPage, you have the option of displaying individual photos of your staff. Alternatively, you can use a group photo. We do not require these images to be on a white background.<br><br>
+
+&#8226; Your Net Proceeds. These are the monies you will receive after all costs and expenses are deducted from the Gross Proceeds arising from the sale of your products and services via your Spiral Group, Inc. Small Business Showcase WebPages Merchant Services account. You can choose to have these monies delivered through the USPS via check or deposited directly into your bank account.<br><br>
+
+&#8226; Once you have submitted your completed order form and payment, you will be directed to schedule your Phone Confirmation.<br><br>
+
+If you are not sure which Small Business Showcase WebPages Plan to choose, call us at 773-242-0705. We're open everyday from 8am to 8pm.</p>
+</div>
+
+<div class="accordion">How do I update my SBS WebPages?</div>
+<div class="panel">
+<p class="topic4">
+Once you become a Spiral Group, Inc. Merchant, just submit any updates to your Account Representative via email. He/she will let you know how long it will take to see those changes reflected on your web pages - usually within 24 hours. All plans include updates, maintenance, and support.</p>
+</div>
+
+<div class="accordion">	How will customers find my SBS WebPages?</div>
+<div class="panel">
+<p class="topic4">
+Customers will be able to discover your Small Business Showcase WebPages when searching for <a rel="nofollow">Spiral Group + your business name</a>.</p>
+</div>
+
+<div class="accordion">How will you promote my small business?</div>
+<div class="panel">
+<p class="topic4">
+Each SBS WebPages Plan includes a Scrolling Footer Logo Ad. Your Scrolling Footer Logo will appear on all our Small Business Showcase WebPages within the same and complimentary business categories.<br><br>
+
+Our Premium Plan includes the SG Listing Service. We manually register your small business in the top eight electronic business directories. Among them are Bing, Google, Yelp, YP.com, and Foursquare.<br><br>
+
+Our Premium Plan also includes a premium style <a href="https://spiralgroup.github.io/themonster/share-the-magic.html" target="_blank">Branded Category Ad</a>, which will run for 90 days. You can feature up to six of your products and services with our scrolling app. These ads will appear, prominently, at the top of every qualifying webpage throughout the SG MarketPlace.</p>
+</div>
+
+<div class="accordion">How much does it cost to run LM Campaigns?</div>
+<div class="panel">
+<p class="topic4">
+Check out the <a href="https://spiralgroup.github.io/themonster#advertise" target="_blank">SG Local Ad Services</a> for complete details.</p>
+</div>
+
+<div class="accordion">How do I update my appointment availability?</div>
+<div class="panel">
+<p class="topic4">
+You can update your bookable hours whenever you choose. Each SBS WebPage contains a link for your customers to book online appointments through <a href="https://calendly.com/" target="_blank">Calendly</a>, when they click on your menu-awning. When we set up your SBS WebPages, we also set up your free account with them; therefore, you create and update your own availability.</p>
+</div>
+
+<div class="accordion">	Am I a good fit for in-store pickup?</div>
+<div class="panel">
+<p class="topic4">
+As long as you have a non-residential/non-industrial storefront where a customer can pick up his or her products, then an in-store pickup campaign could be right for you.</p>
+</div>
+
+<div class="accordion">How are returns handled?</div>
+<div class="panel">
+<p class="topic4">
+We follow whatever the standard return policy is for PayPal. You can review the details in our Merchant Agreement.</p>
+</div>
+
+<div class="accordion">How is feedback collected from customers?</div>
+<div class="panel">
+<p class="topic4">
+When customers click on your menu-awning, there's a link at the bottom of the page labeled "Give Us Your Feedback". All feedback is collected through this form and sent to you. We do not publish/post feedback on any of our web pages.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-threethird" style="margin:10px 0 15px 0;">
+<p class="topic3"><a class="w3-button w3-white" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;box-shadow:0 0 22px #ccc;">Get Started</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0 12px;margin:100px 0 20px 0;">
