@@ -27,7 +27,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Expletus+Sans|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Lobster+Two|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script>
@@ -486,6 +486,18 @@ hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: li
   background-color: #f0f0f0;
 }
 
+@media all and (max-width: 768px) {
+  .accordion:after, .content {
+  display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .accordion{
+    text-align: center;
+    }
+}
+
 .panel {
   padding: 0 5px;
   margin: 5px 0;
@@ -504,7 +516,7 @@ hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: li
 font-family: roboto;
 font-size: 14px;
 letter-spacing: .5px;
-color: #222;
+color: #000;
 text-align: justify;
 margin: 0;
 padding:0 0 8px 0;
@@ -523,8 +535,8 @@ margin: 0;
 
 .topic2 {
 font-family: Open Sans Condensed;
-font-size: 18px;
-color: #fff;
+font-size: 20px;
+color: #000;
 text-align: center;
 letter-spacing: 1px;
 text-shadow: 0 0 1px #000;
@@ -630,7 +642,7 @@ margin: 0;
   
  @media screen and (max-width: 768px) {
   .topic {
-  text-align: left;  
+  text-align: center;  
    }
   }
   
@@ -1046,39 +1058,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1119,39 +1131,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1191,39 +1203,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1263,39 +1275,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1335,39 +1347,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1407,39 +1419,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1479,39 +1491,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1551,39 +1563,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1623,39 +1635,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1697,39 +1709,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1769,39 +1781,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
@@ -1841,39 +1853,39 @@ Product Details</button></div>
 In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
 </div>
 
-<div class="accordion">Buy Online, Pick Up In-Store</div>
+<div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, PickUp InStore (BOPIS) example.</p>
+Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
-<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;color:#222;border-bottom:1px solid #f1f1f1;">
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;color:#222;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
 
 Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
 
 Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 You Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.<br>
 
 &#8226; Credit card used for purchase.</p><br>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 Your Designated Person Will Need:</p>
 
-<p class="topic" style="color:#222;">
+<p class="topic">
 &#8226; Store Pickup Notification Email.<br>
 
 &#8226; Valid photo ID.</p><br>
 
-<p class="topic" style="color:#222;border:none;">
+<p class="topic">
 If you have questions, call 773-242-0705.</p>
 </div>
 <button type="w3-button" style="border-radius:1px;" class="close" data-dismiss="modal">&times;</button>
