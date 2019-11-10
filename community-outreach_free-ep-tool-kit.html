@@ -20,39 +20,36 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 <style type="text/css">
 body, html {
-    max-width: 1235px;
+    max-width: 1024px;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
-   @media screen and (min-width: 1090px) {
-  body {
-  display: none;  
-  }
-  }
-.header {
-  padding: 0;
-  background: #ffffff;
-  color: #585858;
-  margin: 0;
-  float: left;
-  display: block;
-}
-.top-container {
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  float: left;
+ .navbar {
+max-width: 1024px;
+ margin: 0 auto;
+   background-color: #f5f5f5;
+ border: none;
+ z-index: 1;
 }
 
+.header {
+  padding: 0;
+  margin: 0 auto;
+}
+.top-container {
+   padding: 0;
+  margin: 0 auto;
+  
+   }
+   
 .nab {
   overflow: hidden;
   padding: 10px;
@@ -109,14 +106,6 @@ body, html {
   text-decoration: none;
 }
 
-.navbar {
-position: fixed;
-top: 0;
-max-width: 1225px;
-background-color: #fff;
-border: none;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -160,12 +149,6 @@ border: none;
  }
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .active1 {
   background-color: #e6e6e6;}
   
@@ -190,39 +173,53 @@ margin:0;
 }
 
 .topic2 {
-font-family: roboto;
-font-size: 15.5px;
-color: #000;
+font-family: pt sans;
+font-size: 28.5px;
+color: #c0c0c0;
 text-align: center;
-letter-spacing: .5px;
+letter-spacing: 1.5px;
 text-shadow: 0 0 1px #000;
 font-weight: normal;
 padding: 0 0 10px 0;
 margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-family: open sans condensed;
+  font-size: 22px;  
+  color: #000;
+  text-shadow: 0 0 1px #000;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 0 0 5px 0;  
+  }
+  }
+  
 .topic3 {
 font-family: roboto;
-font-size: 13px;
-color: #222;
-text-align: justify;
-letter-spacing: .5px;
-padding: 0;
-margin: 0;
-}
-
-.topic4 {
-font-family: roboto;
 font-size: 14px;
-color: #222;
+color: #000;
 text-align: justify;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #ccc;
 padding: 0;
 margin: 0;
 }
+
+.topic4 {
+font-family: roboto;
+font-size: 15px;
+color: #000;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
 .topic4c {
 font-family: roboto;
-font-size: 11.5px;
+font-size: 12.5px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -235,19 +232,26 @@ margin: 0;
 .topic6 {
 font-family: roboto;
 font-size: 14px;
-color: #222;
+color: #000;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #ccc;
 padding: 0;
 margin: 0;
 }
+}
 
 
 @media screen and (max-width: 768px) {
-  .topic, .topic1, .topic2, .topic3, .topic4, .topic4c {
+  .topic, .topic1, .topic4c {
   text-align: center;  
   padding: 0 5px;  
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .topic, .topic3, .topic4 {
+  text-align: center;  
   }
   }
   
@@ -258,7 +262,7 @@ margin: 0;
   color: #000;
   text-align: center;
   font-family: calibri;
-  font-size: 10.5px;
+  font-size: 11.5px;
   letter-spacing: 1px;
   text-shadow: 0 0 1px #ccc;
   text-decoration: none;
@@ -296,16 +300,17 @@ margin: 0;
 main{
   width: 100%;
   overflow: hidden;
-  font-family: 'Expletus Sans', cursive; 
-}
+  font-family: 'Expletus Sans', cursive;
+  }
 
 .hero{
   width: 100%;
-  max-width: 1235px;
-  height: 500px;
+  max-width: 1024px;
+  height: auto;
   text-align: center;
-  margin: 0 auto;
-  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background: transparent;
   position: relative; 
   color: #f5f5f5;
   text-shadow:0 1px 1px #000;
@@ -320,7 +325,7 @@ font-family: 'Expletus Sans', cursive;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
 }
 .hero p{
   font-size: 3.0em;
@@ -330,18 +335,18 @@ font-family: 'Expletus Sans', cursive;
   left: 0;
   right: 0;
   bottom: 0;
-   z-index: 1;
+   z-index: 0;
 }
 
 .hero img{
   width: 100%;
 }
 
+
 @media all and (max-width: 768px) {
   .hero{
-    height: 50vw;
+    height: auto;
   }
-  
   .hero h1{
     font-size: 10vw;
     top: 13vw;
@@ -353,7 +358,6 @@ font-family: 'Expletus Sans', cursive;
 }
 
 hr.style-one { border: 0; height: 2px; background-image: linear-gradient(to right, #f8f8f8, #f5f5f5, #f8f8f8);}
-
 </style>
 
 <!-- MailerLite Universal -->
@@ -368,18 +372,19 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
 </head>
-<body style="width:100%;">
+<body>
+<center>
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;box-shadow:0 2px 8px #777;">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Training</span>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Free Training</span>
 <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -394,22 +399,24 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <li><a href="https://www.spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
 </ul></ul>
-
-<ul class="nav navbar-nav navbar-right">
+<ul class="nav navbar-nav navbar-right" style="margin:0 1px;">
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
-    </ul>
+</ul>
 </div>
 </div>
 </nav>
-</div>
-</div>
+
 <center>
 <main>
-<div class="hero">
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel w3-card-2 w3-round-small" style="background-color:#f5f5f5;width:100%;padding:0;margin:65px 0 20px 0;">
+<div class="hero w3-round-small">
 <h1>ep tool-kit</h1>
 <p style="text-decoration:none;color:#fff;">online job readiness training</p>
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/63661359-18a0cf00-c76f-11e9-8a5e-6227c5db6f51.png" />
+<img class="w3-round-small" src="https://user-images.githubusercontent.com/25410880/63661359-18a0cf00-c76f-11e9-8a5e-6227c5db6f51.png" />
+</div>
+</div>
 </div>
 </main>
 
@@ -437,9 +444,9 @@ Using our EP Tool-Kit&reg;, along with the Interview Preparation Video Resources
 <div class="column" style="padding:0 10px;margin:0;">
 <p class="topic2">
 Overcome the Obstacles</p>
-
+      
 <p class="topic">
-Although anyone with a desire to improve their employment readiness skills can benefit from our EP Tool-Kit&reg;, it was originally designed for those with criminal histories. <a style="text-decoration:none;" href="https://github.com/spiralgroup/themonster/files/1648828/Michelle.A.Jones.Functional.Resume.pdf" target="_blank">Michelle Jones</a> [a twice convicted felon] is the Founder & CEO of Spiral Group, Inc. She is dedicated to helping this population of Job Seekers overcome many obstacles to gainful employment.</p>
+Although anyone with a desire to improve their employment readiness skills can benefit from our EP Tool-Kit&reg;, it was originally designed for those with criminal histories. <a style="text-decoration:none;color:dodgerblue;" href="https://github.com/spiralgroup/themonster/files/1648828/Michelle.A.Jones.Functional.Resume.pdf" target="_blank">Michelle Jones</a> [a twice convicted felon] is the Founder & CEO of Spiral Group, Inc. She is dedicated to helping this population of Job Seekers overcome many obstacles to gainful employment.</p>
 
 <hr class="style-one">
 
@@ -447,13 +454,21 @@ Although anyone with a desire to improve their employment readiness skills can b
 Dedicated Support</p>
 
 <p class="topic">
-Team SpiralGroup is available at 773-242-0705 and tech.support@spiralgroup.org to assist if you encounter technical difficulties or if you need guidance with completing any of the homework assignments. We recommend taking this online training program using either a desktop or laptop computer. Click <button onclick="document.getElementById('id36').style.display='block'" style="background-color:#fff;border:none;padding:0;margin:0;text-decoration:none;cursor:pointer;">here</button> to view our EP Tool-Kit course outline.</p>
+Team SpiralGroup is available at 773-242-0705 and tech.support@spiralgroup.org to assist if you encounter technical difficulties or if you need guidance with completing any of the homework assignments. We recommend taking this online training program using either a desktop or laptop computer. View our <button type="button" style="background-color:#fff;border:none;padding:0;margin:0;color:dodgerblue;text-decoration:none;cursor:pointer;" data-toggle="modal" data-target="#myModal">EP Tool-Kit Course Outline</button>.</p>
 
-<div id="id36" class="w3-modal w3-animate-opacity" style="width:100%;background-color:#f5f5f5;padding:0 10px;margin:0;">
-<div class="w3-modal-content" style="width:100%;background-color:#f5f5f5;padding:0;margin:10px 0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
-course outline</p>
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 5px;border-radius:8px 8px 2px 2px;margin:0;">
+<!-- Modal -->
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog" style="width:90%;">
+    
+<!-- Modal content-->
+<div class="modal-content" style="padding:0;margin:0;">
+<div class="modal-header" style="padding:10px 10px 0 10px;margin:0;border:none;">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<p class="topic2">Course Outline</p></div>
+<div class="modal-body">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic4">0 &#124; Orientation</p>
@@ -471,9 +486,9 @@ course outline</p>
 
 <p class="topic3">Designed to teach you how to develop your own self-marketing materials. We believe that creating your own documents allows you to know who you are, the skills you possess, and what you can offer an employer. This course will help improve your written communication skills.</p><br>
 
-<p class="topic4">4 &#124; Strategic Interview Preparation</p>
+<p class="topic4">4 &#124; Interview Preparation</p>
 
-<p class="topic3">We engage you in modules such as, telephone etiquette for job seekers, strategic interview preparation, appropriate interview attire, and following up after the interview. This course also includes the module "Landing a Job with a Criminal Record". It can serve as a guide so the chances of landing a job may increase.</p><br>
+<p class="topic3">In our Strategic Interview Preparation course, we engage you in modules such as, telephone etiquette for job seekers, strategic interview preparation, appropriate interview attire, and following up after the interview. This course also includes the module "Landing a Job with a Criminal Record". It can serve as a guide so the chances of landing a job may increase.</p><br>
 
 <p class="topic4">5 &#124; Performance Management</p>
 
@@ -483,8 +498,8 @@ course outline</p>
 </div>
 </div>
 
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0;border-radius:8px 8px 2px 2px;margin:0;">
-<p class="topic6">After Completing This Program, You Should:</p>
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
+<p class="topic2">After Training, You Should:</p>
 </div>
 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:0;margin:0;">
@@ -513,13 +528,12 @@ course outline</p>
 </div>
 </div>
 </div>
-
-<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:20px 0 0 0;margin:0;">
-<div class="w3-row" style="background-color:#f5f5f5;padding:0;margin:0;">
-<div class="w3-threethird" style="background-color:#f5f5f5;padding:0;margin:0;">
-<div class="nab1 topnav2" style="width:100%;padding:10px 0 25px 0;margin:0;">
-<a href="https://goo.gl/forms/3dldK23N0wNeOQEs1" target="_blank">ENROLL</a>
-<a style="cursor:pointer;"><span onclick="document.getElementById('id36').style.display='none'">CLOSE WINDOW</span></a>
+<div class="modal-footer" style="border:none;">
+<center>
+<p class="topic6"><a class="w3-button w3-white" href="https://goo.gl/forms/3dldK23N0wNeOQEs1" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;margin:0 0 20px 0;box-shadow:0 0 22px #ccc;">Enroll Now</a></p></center>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -535,7 +549,7 @@ course outline</p>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000000;padding:0;margin:0;">
+<p align="center" style="font-family:dorsa;font-size:43px;color:#000000;letter-spacing:2.5px;text-shadow:0 1px 2px #000;padding:0;margin:0;">
 are you job-ready?</p>
 
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
@@ -549,7 +563,7 @@ are you job-ready?</p>
 <p class="topic">
 If you are Job-Ready, we want to meet you. We seek creative, energetic, and self-motivated people to join our team as Independent Sales Representatives. Persons considered hard to employ, due to a criminal past, are encouraged to apply for this rewarding opportunity.<br><br>
 
-Ambitious Sales Reps can earn between $14,000 and $30,000 per year after completing our 3-day online training program. <a href="https://github.com/spiralgroup/themonster/files/3303863/Spiral.Group.Inc.Job.Posting.For.Independent.Sales.Reps.pdf" target="_blank" style="text-decoration:none;">Click here for a complete description of your responsibilities.</a></p>
+Ambitious Sales Reps can earn between $30,000 and $35,000 per year after completing our 3-day online training program. <a href="https://spiralgroup.github.io/themonster/careers.html" style="text-decoration:none;color:dodgerblue;">Click here for more details.</a></p>
 
 <p align="center" class="w3-hover-shadow">
 <a class="btn btn-primary btn-block" style="background-color:#f5f5f5;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:20px 0 10px 0;text-decoration:none;" href="https://form.jotform.com/82398672847172" target="_blank">APPLY NOW</a></p>
