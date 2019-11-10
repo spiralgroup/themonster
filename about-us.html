@@ -17,9 +17,9 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
 <style type="text/css">
@@ -57,32 +57,28 @@ img {
 }
 
 body, html {
-    max-width: 1235px;
+    max-width: 1024px;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
+ .navbar {
+max-width: 1024px;
+ margin: 0 auto;
+   background-color: #f5f5f5;
+ border: none;
+ z-index: 1;
+}
 
-     @media screen and (min-width: 1090px) {
-  body {
-  display: none;  
-  }
-  }
 .header {
   padding: 0;
-  background: #ffffff;
-  color: #585858;
-  margin: 0;
-  float: left;
-  display: block;
+  margin: 0 auto;
 }
 .top-container {
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  float: left;
-}
+   padding: 0;
+  margin: 0 auto;
+  
+   }
 
 .nab {
   overflow: hidden;
@@ -141,24 +137,8 @@ body, html {
   text-decoration: none;
 }
 
-.navbar {
-position: fixed;
-top: 0;
-right: 0;
-margin: 0;
-max-width: 1225px;
-background-color: #fff;
-border: none;
-}
-
 .active {
   background-color: #717171;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .column2 {
@@ -342,7 +322,7 @@ hr.style-one { border: 0; height: 1px; width:50%; background-image: linear-gradi
   color: #000;
   text-align: center;
   font-family: calibri;
-  font-size: 10.5px;
+  font-size: 11.5px;
   letter-spacing: 1px;
   text-shadow: 0 0 1px #ccc;
   text-decoration: none;
@@ -377,22 +357,20 @@ hr.style-one { border: 0; height: 1px; width:50%; background-image: linear-gradi
   right: 0;
 }
  
- main{
+main{
   width: 100%;
   overflow: hidden;
   font-family: 'Expletus Sans', cursive;
-  padding: 0;
-  margin: 0;
-  background-color: #f5f5f5;
-}
+  }
 
 .hero{
   width: 100%;
-  max-width: 1235px;
-  height: 500px;
+  max-width: 1024px;
+  height: auto;
   text-align: center;
-  margin: 0 auto;
-  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background: transparent;
   position: relative; 
   color: #f5f5f5;
   text-shadow:0 1px 1px #000;
@@ -407,7 +385,7 @@ font-family: 'Expletus Sans', cursive;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
 }
 .hero p{
   font-size: 3.0em;
@@ -417,18 +395,18 @@ font-family: 'Expletus Sans', cursive;
   left: 0;
   right: 0;
   bottom: 0;
-   z-index: 1;
+   z-index: 0;
 }
 
 .hero img{
   width: 100%;
 }
 
+
 @media all and (max-width: 768px) {
   .hero{
-    height: 50vw;
+    height: auto;
   }
-  
   .hero h1{
     font-size: 10vw;
     top: 13vw;
@@ -478,19 +456,19 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
 </head>
-<body style="width:100%;">
+<body>
 <center>
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;box-shadow:0 2px 8px #777;">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Check Us Out</span>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Legendary</span>
 <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -505,22 +483,24 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <li><a href="https://www.spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
 </ul></ul>
-<ul class="nav navbar-nav navbar-right">
+<ul class="nav navbar-nav navbar-right" style="margin:0 1px;">
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
 </ul>
 </div>
 </div>
 </nav>
-</div>
-</div>
 
 <center>
 <main>
-<div class="hero">
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel w3-card-2 w3-round-small" style="background-color:#f5f5f5;width:100%;padding:0;margin:65px 0 20px 0;">
+<div class="hero w3-round-small">
 <h1>about us</h1>
 <p style="text-decoration:none;color:#fff;">who we are</p>
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/62994398-83b5e180-be10-11e9-90de-3b0105357e40.png" />
+<img class="w3-round-small" src="https://user-images.githubusercontent.com/25410880/62994398-83b5e180-be10-11e9-90de-3b0105357e40.png" />
+</div>
+</div>
 </div>
 </main>
 
