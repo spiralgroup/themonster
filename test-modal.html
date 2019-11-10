@@ -24,19 +24,31 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 <style type="text/css">
 body, html {
-    max-width: 1235px;
+    max-width: 1024px;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
- 
+ .navbar {
+max-width: 1024px;
+ margin: 0 auto;
+}
+
+.header {
+  padding: 0;
+  margin: 0 auto;
+}
+.top-container {
+   padding: 0;
+  margin: 0 auto;
+  
+   }
+
+
 
 .nab {
   overflow: hidden;
@@ -138,12 +150,6 @@ body, html {
  }
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .active1 {
   background-color: #e6e6e6;}
   
@@ -241,14 +247,14 @@ margin: 0;
   }
   }
   
-  .button {
+ .button {
   border-radius: 2px;
   background-color: #f0f0f0;
   border: none;
   color: #000;
   text-align: center;
   font-family: calibri;
-  font-size: 10.5px;
+  font-size: 11.5px;
   letter-spacing: 1px;
   text-shadow: 0 0 1px #ccc;
   text-decoration: none;
@@ -286,15 +292,16 @@ margin: 0;
 main{
   width: 100%;
   overflow: hidden;
-  font-family: 'Expletus Sans', cursive; 
-}
+  font-family: 'Expletus Sans', cursive;
+ }
 
 .hero{
   width: 100%;
-  max-width: 1235px;
-  height: 500px;
+  max-width: 1024px;
+  height: auto;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   background: #f5f5f5;
   position: relative; 
   color: #f5f5f5;
@@ -327,11 +334,11 @@ font-family: 'Expletus Sans', cursive;
   width: 100%;
 }
 
+
 @media all and (max-width: 768px) {
   .hero{
-    height: 50vw;
+    height: auto;
   }
-  
   .hero h1{
     font-size: 10vw;
     top: 13vw;
@@ -359,7 +366,10 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <!-- End MailerLite Universal -->
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<center>
+<div class="top-container" style="width:100%;padding:0;margin:0;">
+<div class="header" id="myHeader">
+<nav class="navbar navbar-default navbar-fixed-top w3-card-4">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -367,36 +377,39 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Check Us Out</span>
+<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/special-offers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Special Offers <i class="material-icons" style="color:dodgerblue;font-size:13px;">local_offer</i></a></li><br>
+<li><a href="https://www.spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
+</ul></ul>
+<ul class="nav navbar-nav navbar-right" style="margin:0 5px;">
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
+</ul>
+</div>
+</div>
 </nav>
 
 <center>
 <main>
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel w3-card" style="width:100%;padding:2px;margin:80px 0 10px 0;">
 <div class="hero">
 <h1>careers</h1>
 <p style="text-decoration:none;color:#fff;">work from home</p>
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/62992105-09cd2a80-be07-11e9-9b2a-972226d4761d.png" />
+<img src="https://user-images.githubusercontent.com/25410880/62992105-09cd2a80-be07-11e9-9b2a-972226d4761d.png" />
+</div>
+</div>
 </div>
 </main>
 
@@ -533,4 +546,4 @@ src="https://c.statcounter.com/12123020/0/200cda4a/1/" alt="Web Analytics Made
 Easy - StatCounter"></div></noscript>
 <!-- End of Statcounter Code -->
 </body>
-</html> 
+</html>
