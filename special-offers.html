@@ -19,13 +19,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Lato|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">  
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">  
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>  
 <style type="text/css">
 body, html {
@@ -251,15 +248,21 @@ margin: 0;
 }
 .topic4c {
 font-family: roboto;
-font-size: 13px;
+font-size: 15px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
 font-weight: normal;
-padding: 0;
+padding: 10px 5px;
 margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .topic4c {
+  font-size: 13px;
+   }
+  }
 
 .topic4c1 {
 font-family: roboto;
@@ -275,7 +278,7 @@ margin: 0;
 
 .topic4d {
 font-family: roboto;
-font-size: 15px;
+font-size: 18px;
 color: #000;
 text-align: center;
 letter-spacing: .5px;
@@ -286,7 +289,13 @@ margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .topic3, .topic4, .topic4c {
+  .topic4d {
+  font-size: 15px;
+   }
+  }
+
+@media screen and (max-width: 768px) {
+  .topic3, .topic4 {
   text-align: center;  
   padding: 0;  
    margin: 0;
@@ -471,39 +480,28 @@ amazing deals</p>
 <img src="https://user-images.githubusercontent.com/25410880/54404255-24507b80-4690-11e9-978d-5ebc261dff88.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id32').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id32')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Operational Marketing Assessment</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Operational Marketing Assessment</button>
 
-<div id="id32" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
 Regular Price &#8226; $199.99</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/54404255-24507b80-4690-11e9-978d-5ebc261dff88.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
-<p class="topic4c">
+        </div>
+        <div class="modal-body" style="padding:0;margin:0;">
+        
+        <img src="https://user-images.githubusercontent.com/25410880/54404255-24507b80-4690-11e9-978d-5ebc261dff88.png" style="width:100%;">
+      <p class="topic4c">
 Let us help prepare your small business before rolling out your next marketing campaign. Here's $40 off our <a href="https://spiralgroup.github.io/themonster/business-excellence.html#assess" target="_blank" style="color:darkblue;">Operational Marketing Assessment.</a></p>
 
 <a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Save $40 with code &#8226; OMA26</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; OMA26</p>
 <p align="center" style="font-family:roboto;font-size:11px;letter-spacing:.5px;color:#f8f8f8;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">
-Cannot be combined with other discount codes.</p></button></a>
-</div>
-</div>
-
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id32').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+Offers cannot be combined.</p></button></a>
 </div>
 </div>
 </div>
@@ -517,39 +515,28 @@ Cannot be combined with other discount codes.</p></button></a>
 <img src="https://user-images.githubusercontent.com/25410880/54404253-23b7e500-4690-11e9-9b7e-0a85c47e97c9.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id34').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id34')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Mock Health Inspection</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal1"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Mock Health Inspection</button>
 
-<div id="id34" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
+ <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
 Regular Price &#8226; $129.99</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/54404253-23b7e500-4690-11e9-9b7e-0a85c47e97c9.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
+        </div>
+        <div class="modal-body" style="padding:0;margin:0;">
+        
+        <img src="https://user-images.githubusercontent.com/25410880/54404253-23b7e500-4690-11e9-9b7e-0a85c47e97c9.png" style="width:100%;">
 <p class="topic4c">
-Take $20 off our <a href="https://spiralgroup.github.io/themonster/business-excellence.html#mock" target="_blank" style="color:darkblue;">Mock Health Inspection</a> and receive a higher grade during your next city health inspection.</p>
+Receive a higher grade on your next City of Chicago health inspection. Take $20 off our on-site <a href="https://spiralgroup.github.io/themonster/business-excellence.html#mock" target="_blank" style="color:darkblue;">Mock Health Inspection</a>.</p>
 
 <a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Save $20 with code &#8226; NPU90</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; NPU90</p>
 <p align="center" style="font-family:roboto;font-size:11px;letter-spacing:.5px;color:#f8f8f8;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">
-Cannot be combined with other discount codes.</p></button></a>
-</div>
-</div>
-
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id34').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+Offers cannot be combined.</p></button></a>
 </div>
 </div>
 </div>
@@ -563,39 +550,28 @@ Cannot be combined with other discount codes.</p></button></a>
 <img src="https://user-images.githubusercontent.com/25410880/55269608-98734d80-5252-11e9-9f8e-c06a224f0443.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id35').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id35')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Mystery Shopping Program</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal2"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Mock Health Inspection</button>
 
-<div id="id35" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
+<!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
 Regular Price &#8226; $99.99</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/55269608-98734d80-5252-11e9-9f8e-c06a224f0443.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
-<p class="topic4c">
+        </div>
+        <div class="modal-body" style="padding:0;margin:0;">
+        
+        <img src="https://user-images.githubusercontent.com/25410880/55269608-98734d80-5252-11e9-9f8e-c06a224f0443.png" style="width:100%;">
+ <p class="topic4c">
 Enjoy $10 off a customized <a href="https://spiralgroup.github.io/themonster/business-excellence.html#mystery" target="_blank" style="color:darkblue;">Mystery Shopping Program</a>.</p>
 
 <a href="https://form.jotform.com/82838930647166" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Save $10 with code &#8226; WVJ58</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; WVJ58</p>
 <p align="center" style="font-family:roboto;font-size:11px;letter-spacing:.5px;color:#f8f8f8;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">
-Cannot be combined with other discount codes.</p></button></a>
-</div>
-</div>
-
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id35').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+Offers cannot be combined.</p></button></a>
 </div>
 </div>
 </div>
@@ -609,39 +585,27 @@ Cannot be combined with other discount codes.</p></button></a>
 <img src="https://user-images.githubusercontent.com/25410880/54404256-24507b80-4690-11e9-9ec9-5a48748fe50b.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id36').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id36')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> SG Listing Service</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal3"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> SG Listing Service</button>
 
-<div id="id36" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
+<!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
 Regular Price &#8226; $69.99</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/54404256-24507b80-4690-11e9-9ec9-5a48748fe50b.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
+        </div>
+<div class="modal-body" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/54404256-24507b80-4690-11e9-9ec9-5a48748fe50b.png" style="width:100%;">
 <p class="topic4c">
-Save $11 on the <a href="https://spiralgroup.github.io/themonster/#listing" target="_blank" style="color:darkblue;">SG Listing Service</a> when you purchase either the Simple Start or Essentials WebPages Plan.</p>
+Purchase our Simple Start or Essentials Small Business Showcase WebPages Plan, and save $11 on the <a href="https://spiralgroup.github.io/themonster/#listing" target="_blank" style="color:darkblue;">SG Listing Service</a>.</p>
 
 <a href="https://form.jotform.com/92823113203142" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Save $11 with code &#8226; NRP94</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; NRP94</p>
 <p align="center" style="font-family:roboto;font-size:11px;letter-spacing:.5px;color:#f8f8f8;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">
-Cannot be combined with other discount codes.</p></button></a>
-</div>
-</div>
-
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id36').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+Offers cannot be combined.</p></button></a>
 </div>
 </div>
 </div>
@@ -655,39 +619,27 @@ Cannot be combined with other discount codes.</p></button></a>
 <img src="https://user-images.githubusercontent.com/25410880/66248279-0a34c400-e6da-11e9-96d3-eb6b673bc85f.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id44').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id44')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> SG Local Ad Services</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal4"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> SG Local Ad Services</button>
 
-<div id="id44" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
+<!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
 Introductory Offer</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/66248279-0a34c400-e6da-11e9-96d3-eb6b673bc85f.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
+        </div>
+<div class="modal-body" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/66248279-0a34c400-e6da-11e9-96d3-eb6b673bc85f.png" style="width:100%;">
 <p class="topic4c">
-Save $50 on our <a href="https://spiralgroup.github.io/themonster/#advertise" target="_blank" style="color:darkblue;">SG Local Ad Services</a>. </p>
+Save $50 on any <a href="https://spiralgroup.github.io/themonster/#advertise" target="_blank" style="color:darkblue;">SG Local Ad Product</a>. </p>
 
 <a href="https://form.jotform.com/92618377594169" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Save $50 with code &#8226; SXM69</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; SXM69</p>
 <p align="center" style="font-family:roboto;font-size:11px;letter-spacing:.5px;color:#f8f8f8;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">
-Cannot be combined with other discount codes.</p></button></a>
-</div>
-</div>
-
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id44').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+Offers cannot be combined.</p></button></a>
 </div>
 </div>
 </div>
@@ -701,39 +653,28 @@ Cannot be combined with other discount codes.</p></button></a>
 <img src="https://user-images.githubusercontent.com/25410880/64918327-8b3f1200-d751-11e9-9c8e-bd28395d1032.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id37').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id37')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> SBS WebPages Plans</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal5"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> SBS WebPages Plans</button>
 
-<div id="id37" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-SAVE $20</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/64918327-8b3f1200-d751-11e9-9c8e-bd28395d1032.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
+<!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
+Save $20</p>
+        </div>
+<div class="modal-body" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/64918327-8b3f1200-d751-11e9-9c8e-bd28395d1032.png" style="width:100%;">
 <p class="topic4c">
-Join our marketplace. Here's $20 toward the purchase of any <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank" style="color:darkblue;">Small Business Showcase WebPages Plan</a>.</p>
+Join the SG MarketPlace and take $20 off the price of any <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank" style="color:darkblue;">Small Business Showcase WebPages Plan</a>.</p>
 
 <a href="https://form.jotform.com/92823113203142" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Save $20 with code &#8226; RJH62</p>
-<p align="center" style="font-family:roboto;font-size:11px;letter-spacing:.5px;color:#f8f8f8;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">
-Cannot be combined with other discount codes.</p></button></a>
-</div>
-</div>
 
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id37').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Use code &#8226; RJH62</p>
+<p align="center" style="font-family:roboto;font-size:11px;letter-spacing:.5px;color:#f8f8f8;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">
+Offers cannot be combined.</p></button></a>
 </div>
 </div>
 </div>
@@ -747,34 +688,21 @@ Cannot be combined with other discount codes.</p></button></a>
 <img src="https://user-images.githubusercontent.com/25410880/55297954-af937600-53df-11e9-9181-4fce0e48c122.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id38').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id38')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Web Development Services</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal6"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> Web Development Services</button>
 
-<div id="id38" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-CALL FOR PRICING</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/55297954-af937600-53df-11e9-9181-4fce0e48c122.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
+<!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
+Call for Pricing</p>
+        </div>
+<div class="modal-body" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/55297954-af937600-53df-11e9-9181-4fce0e48c122.png" style="width:100%;">
 <p class="topic4c">
-Purchased a domain name and need a website? We can help. Contact our Web Developer at 773-242-0705.</p>
-</div>
-</div>
-
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id38').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+Contact our Web Developer at 773-242-0705.</p>
 </div>
 </div>
 </div>
@@ -788,37 +716,26 @@ Purchased a domain name and need a website? We can help. Contact our Web Develop
 <img src="https://user-images.githubusercontent.com/25410880/54404347-637ecc80-4690-11e9-8c06-97f163a6a1f1.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id39').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id39')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">loyalty</i> Phone Consultation</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal7"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">loyalty</i> Phone Consultation</button>
 
-<div id="id39" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-FREE</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/54404347-637ecc80-4690-11e9-8c06-97f163a6a1f1.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
+<!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
+Free</p>
+        </div>
+<div class="modal-body" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/54404347-637ecc80-4690-11e9-8c06-97f163a6a1f1.png" style="width:100%;">
 <p class="topic4c">
 You deserve amazing business solutions.</p>
 
 <a href="https://form.jotform.com/82323651984159" target="_blank" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Schedule Free Consultation</p></button></a>
-</div>
-</div>
 
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id39').style.display='none'">Close</span></a>
-</div>
-</div>
-</div>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Schedule Free Consultation</p></button></a>
 </div>
 </div>
 </div>
@@ -832,35 +749,25 @@ You deserve amazing business solutions.</p>
 <img src="https://user-images.githubusercontent.com/25410880/64921373-5776e300-d777-11e9-8f7b-d1f6bc04e279.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="content w3-panel" style="padding:0;margin:0;border-radius:0 0 4px 4px;">
-<button onclick="document.getElementById('id40').style.display='block'" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f8f8f8;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" onclick="document.getElementById('id40')"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">loyalty</i> We're Hiring</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:13.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal8"><i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">loyalty</i> We're Hiring</button>
 
-<div id="id40" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:38%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-JOIN OUR TEAM</p>
-</div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/64921373-5776e300-d777-11e9-8f7b-d1f6bc04e279.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-
-<div class="column" style="padding:10px 5px;margin:0;">
+<!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <p class="topic4d">
+Join Our Team</p>
+        </div>
+<div class="modal-body" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/64921373-5776e300-d777-11e9-8f7b-d1f6bc04e279.png" style="width:100%;">
 <p class="topic4c">
-We seek creative, self-motivated, and ambitious people to join our team as Independent Sales Reps. Persons considered hard to employ are encouraged to apply.</p>
+We seek creative and ambitious people to join our team as Independent Sales Representatives. Persons considered hard to employ are encouraged to apply.</p>
 
 <a href="https://spiralgroup.github.io/themonster/careers.html" target="_blank" style="text-decoration:none;">
-<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:10px 8px;margin:10px 0 5px 0;"><p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Visit Our Careers Page</p></button></a>
-</div>
-</div>
-
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:0;margin:5px 0;">
-<div class="nab1 topnav2" style="padding:3px 0 5px 0;margin:0;">
-<a style="cursor:pointer;"><span onclick="document.getElementById('id40').style.display='none'">Close</span></a>
-</div>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:0;padding:8px;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:0;">Visit Our Careers Page</p></button></a>
 </div>
 </div>
 </div>
