@@ -226,38 +226,6 @@ $(document).ready(function(){
     padding:0 5px 5px 5px;
 }
 
-.nab {
-  overflow: hidden;
-  width: 100%;
-  margin: 100px 0 0 0;
- }
- 
-@media screen and (max-width: 768px) {
-  .nab {
-  margin: 28px 0 5px 0 !important;
-   }
-  } 
- 
-.nab a {
-  float: center;
-  font-family: roboto;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 10.5px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin: 0 4px;
-  text-shadow: 0 0 1px #000;
-}
-
-.nab a:hover span {
-  color: white;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 5px;
-  transition: 0.5s;
-}
-
 .nab1 a {
   float: center;
   font-family: roboto;
@@ -278,27 +246,11 @@ $(document).ready(function(){
   transition: 0.5s;
 }
 
-.topnav2 a:hover {
-  color: #f1f1f1;
-   padding: 4px 0;
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
-  transition: 0.5s;
-}
-
 .topnav1 a:hover {
   color: #f1f1f1;
    padding: 4px 0;
   text-decoration: none;
   border-bottom: 1px solid #222;
-  transition: 0.5s;
-}
-
-.topnav2 a:hover {
-  color: #f1f1f1;
-   padding: 4px 0;
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
   transition: 0.5s;
 }
 
@@ -309,34 +261,13 @@ $(document).ready(function(){
   margin: 0;
 }
 
-.sonab a {
-float: center;
-  font-family: roboto;
-  color: #222;
-  text-align: center;
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin: 0 4px;
-  text-shadow: 0 0 1px #000;
+* {
+    box-sizing: border-box;
 }
-
-.sonab a:hover span {
-  color: #222;
-  border-bottom: 1px solid #222;
-  padding-bottom: 5px;
-  transition: 0.5s;
-}
-
 img {
     border-radius: 0; 
     max-width: 100%;
     height: auto;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body, html {
@@ -347,8 +278,8 @@ body, html {
  }
  .navbar {
 max-width: 1024px;
+ background-color: darkblue;
  margin: 0 auto;
-   background-color: #f5f5f5;
  border: none;
  z-index: 1;
 }
@@ -364,54 +295,6 @@ max-width: 1024px;
    }
   
    }
-.active1 {
-  background-color: #717171;
-  border-radius: 0 0 2px 2px;
-}
-
-.button {
-  border-radius: 2px;
-  background-color: #f0f0f0;
-  border: none;
-  color: #000;
-  text-align: center;
-  font-family: calibri;
-  font-size: 11.5px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #ccc;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
- }
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '';
-  position: absolute;
- opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 10px;
-}
-
-.button:hover span:after {
- opacity: 1;
-  right: 0;
-}
- 
-
 .column {
     width: 100%;
     padding: 0;
@@ -456,82 +339,16 @@ margin: 0;
 padding: 0;
 }
 
-.topic1 {
-font-family: kaushan script;
-font-size: 18px;
-color: #fff;
-text-align: center;
-letter-spacing: 1.5px;
-text-shadow: 0 0 1px #000;
-padding: 0 !important;
-margin: 0;
-}
-
-.topic2 {
-font-family: pt sans;
-font-size: 28.5px;
-color: #c0c0c0;
-text-align: center;
-letter-spacing: 1.5px;
-text-shadow: 0 0 1px #000;
-font-weight: normal;
-padding: 0 0 10px 0;
-margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic2 {
-  font-family: open sans condensed;
-  font-size: 22px;  
-  color: #000;
-  text-shadow: 0 0 1px #000;
-  text-align: center;
-  letter-spacing: .5px;
-  padding: 0 0 5px 0;  
-  }
-  }
-
-.topic3 {
-font-family: kaushan script;
-font-size: 22px;
-color: #000;
-letter-spacing: .5px;
-text-align: center;
-text-shadow: 2px 2px 2px #000;
-margin: 0;
-padding: 10px 0 0 0;
-}
-.topic4 {
-font-family: ubuntu condensed;
-font-size: 26px;
-color: #333;
-text-align: center;
-text-shadow: 0 1px 1px #444;
-padding: 20px 0 10px 0;
-margin: 0;
-}
-
 .topic4a {
 font-family: roboto;
 font-size: 14px;
-color: #000;
+color: #fff;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
 font-weight: normal;
 padding: 0;
 margin: 0;
-}
-
-.topic4b {
-font-family: Open Sans Condensed;
-font-size: 20px;
-color: #000;
-text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #000;
-margin: 0;
-padding: 6px 0 10px 0;
 }
 .topic4c {
 font-family: roboto;
@@ -556,51 +373,12 @@ padding: 0;
 margin: 0;
 }
 
-.topic5 {
-font-family: Open Sans Condensed;
-font-size: 18px;
-color: #fff;
-text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #000;
-margin: 0;
-padding: 6px 0 8px 0;
-}
-
-.topic6 {
-font-family: kaushan script;
-font-size: 20px;
-color: #fff;
-text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 1px 2px #000;
-padding: 0 !important;
-margin: 0 0 10px 0!important;
-}
-
-.topic11 {
-font-family: pt sans;
-font-size: 20px;
-color: #c0c0c0;
-text-align: center;
-letter-spacing: 1.5px;
-text-shadow: 0 0 1px #000;
-font-weight: normal;
-padding: 0;
-margin: 0;
-}
-
-
 li:hover span {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
    transition: 0.5s;
 }
 
-.close1 {
-    text-align: center;
-  }
-  
 .fa {
 background-color: #fff;
   padding: 8px 10px;
@@ -618,15 +396,14 @@ background-color: #fff;
 .fa:hover {
       opacity: 0.7;
 }
-
 .close {
  font-size: 58px;
-   color: white;
-   text-shadow: 0 0 1px #222;
+ color: white;
+ text-shadow: 0 0 1px #222;
  opacity: 0.9;
  padding: 0;
- margin: 0;
-  filter: Alpha(opacity=50); /* IE8 and earlier */
+ margin-right: 20px;
+ filter: Alpha(opacity=50); /* IE8 and earlier */
 }
 </style>
 
@@ -643,21 +420,21 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <!-- End MailerLite Universal -->
 </head>
 <body>
-<center>
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
 <nav class="navbar navbar-default navbar-fixed-top w3-card">
-  <div class="container-fluid" style="background-color:#fff;width:100%;padding:0 20px;margin:0;border:none;">
-      <div class="navbar-header w3-center" style="width:100%;border:none;padding:0;margin:0;">
-    <center>
-      <p class="navbar-toggle btn" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#fff;font-family:roboto;font-size:15px;font-weight:normal;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:12px 0 10px 0;margin:0;border:none;border-radius:0;cursor:pointer;">Our Menu</p>
-      </center></div>
+
+<div class="navbar-header w3-center" style="width:100%;border:none;padding:0;margin:0;">
+<center>
+<p class="navbar-toggle btn" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#fff;padding:0;margin:0;border:none;border-radius:0;cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/68754914-844f4700-05bc-11ea-83db-4d97ccf8aa6c.png"></p>
+</center></div>
+<div class="container-fluid" style="background-color:#fff;width:100%;padding:0 15px;margin:0;border:none;">
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav" style="border:none;">
-<li><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>About</span></a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Our Products</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Special Offers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Careers</span></a></li>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>About</span></a></li>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Our Products</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Special Offers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Careers</span></a></li>
  
 <li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 8px;"><span>Contact</span></a></li>
 
@@ -717,6 +494,17 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
         </table>
         </div>
      </section>
+     
+     <div class="w3-container w3-panel w3-green" style="padding:0 12px;margin:20px 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-threethird">
+<div class="column" style="padding:0;margin:0;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d95064.6335696599!2d-87.69824128708129!3d41.87629902245431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!3m2!1d41.876320299999996!2d-87.6282014!5e0!3m2!1sen!2sus!4v1573651236844!5m2!1sen!2sus" style="width:100%;border:0;" height="300" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+</div>
     
 <p align="center" style="font-family:roboto;font-size:12px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;margin:0;padding:10px 0;text-decoration:none;cursor:pointer;" onclick="document.getElementById('id77').style.display='none'">Close Window</p>
 </div>
@@ -764,22 +552,17 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
     $(".openorclosed").toggleClass("closed");
 }
 </script>
-</li></ul>
+</ul>
 
-<center>
 <ul class="nav navbar-nav navbar-right">
-<li><a href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>View All Categories</span></a></li>
-
-<li><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Want Your Own WebPages?</span></a></li>
-    </ul></center>
-   </div></nav> </div>
-   </div> 
-   
+<li><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Become Visible</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/privacy-policy.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Privacy</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/terms-of-use.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Terms</span></a></li>
+</ul></div></div></nav></div></div>
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-
 <div class="container w3-panel" style="width:100%;padding:10px 0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
 <div class="w3-threethird" style="padding:0 22px;margin:0 0 10px 0;">
@@ -788,20 +571,18 @@ if (timeNow >= openTimex && timeNow <= closeTimex) {
 <div id="1" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 4px 4px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal2"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal1"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
- <!-- Modal -->
-  <div class="modal fade" id="myModal2" role="dialog">
- <div class="modal-header" style="border:none;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                 </div>
-       <div class="modal-dialog modal-md">
-          <div class="modal-content">
-                    <div class="modal-body" style="padding:0;margin:0;">
-        <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
- <img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;margin:0;">
 
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic">
@@ -834,26 +615,6 @@ Codes cannot be combined</p></button></a>
 Redeem In-Store</p></button></a>
 </div>
 </div>
-
-
-</div>
-
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-third" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;color:darkblue;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:5px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;color:darkblue;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block close" data-dismiss="modal" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:12px 10px;margin:5px 0 8px 0;font-family:roboto;font-size:12.5px;letter-spacing:.5px;color:darkblue;text-shadow:0 0 1px #222;font-weight:normal;text-decoration:none;">CLOSE WINDOW</button>
 </div>
 </div>
 </div>
@@ -861,59 +622,53 @@ Redeem In-Store</p></button></a>
 </div>
 </div>
 </div>
-</div>
-</div>
-
 
 <div id="2" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;border:none;border-radius:0 0 2px 2px;margin:0;padding:6px 10px;text-decoration:none;" onclick="document.getElementById('id35').style.display='block'">
-<i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button></div>
-
-<div id="id35" class="w3-modal w3-animate-zoom">
-<span onclick="document.getElementById('id35').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:40%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-Regular Price &#8226; $99.99</p>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal2"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="modal fade" id="myModal2" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;margin:0;">
+
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Customers can redeem offers online, delivered to their inbox, or print from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
 </div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic4c">
-The details of your Special Offer will go here.</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
-Codes cannot be combined.</p></button></a>
-
-<p class="topic">
-Customers can redeem your offers online, have them sent to their inbox, or print them using a desktop. By choosing to have your offers delivered via email, customers are also subscribing to your mailing list.<br><br>
-
-We've chosen <a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;">MailerLite</a> as our email list manager. You can add up to 1,000 subscribers free of charge.<br><br>
-
-If your company's email service provider is ZOHO, you will not be able to have Special Offers delivered to your inbox, as emails are undeliverable.</p>
-</div>
+Codes cannot be combined</p></button></a>
 </div>
 </div>
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:20px 0 5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:10px 0 15px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
+<p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
+Redeem In-Store</p></button></a>
+</div>
 </div>
 </div>
 </div>
@@ -926,52 +681,49 @@ If your company's email service provider is ZOHO, you will not be able to have S
 <div id="3" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;border:none;border-radius:0 0 2px 2px;margin:0;padding:6px 10px;text-decoration:none;" onclick="document.getElementById('id36').style.display='block'">
-<i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button></div>
-
-<div id="id36" class="w3-modal w3-animate-zoom">
-<span onclick="document.getElementById('id36').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:40%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-Regular Price &#8226; $99.99</p>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal3"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="modal fade" id="myModal3" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;">
+
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Customers can redeem offers online, delivered to their inbox, or print from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
 </div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic4c">
-The details of your Special Offer will go here.</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
-Codes cannot be combined.</p></button></a>
-
-<p class="topic">
-Customers can redeem your offers online, have them sent to their inbox, or print them using a desktop. By choosing to have your offers delivered via email, customers are also subscribing to your mailing list.<br><br>
-
-We've chosen <a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;">MailerLite</a> as our email list manager. You can add up to 1,000 subscribers free of charge.<br><br>
-
-If your company's email service provider is ZOHO, you will not be able to have Special Offers delivered to your inbox, as emails are undeliverable.</p>
-</div>
+Codes cannot be combined</p></button></a>
 </div>
 </div>
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:20px 0 5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:10px 0 15px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
+<p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
+Redeem In-Store</p></button></a>
+</div>
 </div>
 </div>
 </div>
@@ -984,52 +736,49 @@ If your company's email service provider is ZOHO, you will not be able to have S
 <div id="4" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67866484-421b0580-fae6-11e9-9330-53964d9fe336.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;border:none;border-radius:0 0 2px 2px;margin:0;padding:6px 10px;text-decoration:none;" onclick="document.getElementById('id37').style.display='block'">
-<i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button></div>
-
-<div id="id37" class="w3-modal w3-animate-zoom">
-<span onclick="document.getElementById('id37').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:40%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-Regular Price &#8226; $99.99</p>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal4"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="modal fade" id="myModal4" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67866484-421b0580-fae6-11e9-9330-53964d9fe336.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67866484-421b0580-fae6-11e9-9330-53964d9fe336.png" style="width:100%;padding:0;margin:0;">
+
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Customers can redeem offers online, delivered to their inbox, or print from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
 </div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic4c">
-The details of your Special Offer will go here.</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
-Codes cannot be combined.</p></button></a>
-
-<p class="topic">
-Customers can redeem your offers online, have them sent to their inbox, or print them using a desktop. By choosing to have your offers delivered via email, customers are also subscribing to your mailing list.<br><br>
-
-We've chosen <a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;">MailerLite</a> as our email list manager. You can add up to 1,000 subscribers free of charge.<br><br>
-
-If your company's email service provider is ZOHO, you will not be able to have Special Offers delivered to your inbox, as emails are undeliverable.</p>
-</div>
+Codes cannot be combined</p></button></a>
 </div>
 </div>
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:20px 0 5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:10px 0 15px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
+<p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
+Redeem In-Store</p></button></a>
+</div>
 </div>
 </div>
 </div>
@@ -1042,52 +791,49 @@ If your company's email service provider is ZOHO, you will not be able to have S
 <div id="5" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;border:none;border-radius:0 0 2px 2px;margin:0;padding:6px 10px;text-decoration:none;" onclick="document.getElementById('id38').style.display='block'">
-<i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button></div>
-
-<div id="id38" class="w3-modal w3-animate-zoom">
-<span onclick="document.getElementById('id38').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:40%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-Regular Price &#8226; $99.99</p>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal5"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="modal fade" id="myModal5" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;margin:0;">
+
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Customers can redeem offers online, delivered to their inbox, or print from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
 </div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic4c">
-The details of your Special Offer will go here.</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
-Codes cannot be combined.</p></button></a>
-
-<p class="topic">
-Customers can redeem your offers online, have them sent to their inbox, or print them using a desktop. By choosing to have your offers delivered via email, customers are also subscribing to your mailing list.<br><br>
-
-We've chosen <a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;">MailerLite</a> as our email list manager. You can add up to 1,000 subscribers free of charge.<br><br>
-
-If your company's email service provider is ZOHO, you will not be able to have Special Offers delivered to your inbox, as emails are undeliverable.</p>
-</div>
+Codes cannot be combined</p></button></a>
 </div>
 </div>
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:20px 0 5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:10px 0 15px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
+<p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
+Redeem In-Store</p></button></a>
+</div>
 </div>
 </div>
 </div>
@@ -1100,52 +846,49 @@ If your company's email service provider is ZOHO, you will not be able to have S
 <div id="6" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;border:none;border-radius:0 0 2px 2px;margin:0;padding:6px 10px;text-decoration:none;" onclick="document.getElementById('id39').style.display='block'">
-<i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button></div>
-
-<div id="id39" class="w3-modal w3-animate-zoom">
-<span onclick="document.getElementById('id39').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:40%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-Regular Price &#8226; $99.99</p>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal6"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="modal fade" id="myModal6" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;">
+
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Customers can redeem offers online, delivered to their inbox, or print from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
 </div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic4c">
-The details of your Special Offer will go here.</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
-Codes cannot be combined.</p></button></a>
-
-<p class="topic">
-Customers can redeem your offers online, have them sent to their inbox, or print them using a desktop. By choosing to have your offers delivered via email, customers are also subscribing to your mailing list.<br><br>
-
-We've chosen <a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;">MailerLite</a> as our email list manager. You can add up to 1,000 subscribers free of charge.<br><br>
-
-If your company's email service provider is ZOHO, you will not be able to have Special Offers delivered to your inbox, as emails are undeliverable.</p>
-</div>
+Codes cannot be combined</p></button></a>
 </div>
 </div>
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:20px 0 5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:10px 0 15px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
+<p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
+Redeem In-Store</p></button></a>
+</div>
 </div>
 </div>
 </div>
@@ -1158,52 +901,49 @@ If your company's email service provider is ZOHO, you will not be able to have S
 <div id="7" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;border:none;border-radius:0 0 2px 2px;margin:0;padding:6px 10px;text-decoration:none;" onclick="document.getElementById('id40').style.display='block'">
-<i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button></div>
-
-<div id="id40" class="w3-modal w3-animate-zoom">
-<span onclick="document.getElementById('id40').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:40%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-Regular Price &#8226; $99.99</p>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal7"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="modal fade" id="myModal7" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png" style="width:100%;padding:0;margin:0;">
+
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Customers can redeem offers online, delivered to their inbox, or print from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
 </div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic4c">
-The details of your Special Offer will go here.</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
-Codes cannot be combined.</p></button></a>
-
-<p class="topic">
-Customers can redeem your offers online, have them sent to their inbox, or print them using a desktop. By choosing to have your offers delivered via email, customers are also subscribing to your mailing list.<br><br>
-
-We've chosen <a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;">MailerLite</a> as our email list manager. You can add up to 1,000 subscribers free of charge.<br><br>
-
-If your company's email service provider is ZOHO, you will not be able to have Special Offers delivered to your inbox, as emails are undeliverable.</p>
-</div>
+Codes cannot be combined</p></button></a>
 </div>
 </div>
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:20px 0 5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:10px 0 15px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
+<p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
+Redeem In-Store</p></button></a>
+</div>
 </div>
 </div>
 </div>
@@ -1216,52 +956,48 @@ If your company's email service provider is ZOHO, you will not be able to have S
 <div id="8" class="w3-half" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;border:none;border-radius:0 0 2px 2px;margin:0;padding:6px 10px;text-decoration:none;" onclick="document.getElementById('id41').style.display='block'">
-<i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button></div>
-
-<div id="id41" class="w3-modal w3-animate-zoom">
-<span onclick="document.getElementById('id41').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="width:40%;padding:0 5px;border-radius:2px;">
-<div class="column w3-hover-shadow" style="background-color:#f8f8f8;border:1px solid #f5f5f5;padding:10px 5px;margin:5px 0;">
-<p class="topic4d">
-Regular Price &#8226; $99.99</p>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal8"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
-<div class="w3-container" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
+<div class="modal fade" id="myModal8" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;margin:0;">
+
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Customers can redeem offers online, delivered to their inbox, or print from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
 </div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic4c">
-The details of your Special Offer will go here.</p>
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
-<p align="center" style="font-family:roboto;font-size:14px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Use code SP1 &#8226; at checkout</p>
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
-Codes cannot be combined.</p></button></a>
-
-<p class="topic">
-Customers can redeem your offers online, have them sent to their inbox, or print them using a desktop. By choosing to have your offers delivered via email, customers are also subscribing to your mailing list.<br><br>
-
-We've chosen <a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;">MailerLite</a> as our email list manager. You can add up to 1,000 subscribers free of charge.<br><br>
-
-If your company's email service provider is ZOHO, you will not be able to have Special Offers delivered to your inbox, as emails are undeliverable.</p>
-</div>
+Codes cannot be combined</p></button></a>
 </div>
 </div>
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
+<div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:20px 0 5px 0;"><a href="https://app.mlsend.com/g6u6l9/" target="_blank" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">PRINT SPECIAL OFFERS</a></button>
-</div>
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:#f5f5f5;border-radius:2px;border:none;padding:8px 10px;margin:10px 0 15px 0;"><a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;text-decoration:none;">DELIVER TO YOUR INBOX</a></button>
+<p align="center" style="font-family:roboto;font-size:12px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">
+Redeem In-Store</p></button></a>
 </div>
 </div>
 </div>
@@ -1277,68 +1013,6 @@ If your company's email service provider is ZOHO, you will not be able to have S
 </div>
 </div>
 </div>
-</div>
-</div>
-
-
-
-<center>
-<div class="w3-row-padding" style="width:100%;margin:10px 0 0 0;">
-<div class="col-sm-7">
-<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">business category here</p>
-<img class="w3-card-4 w3-white" src="https://user-images.githubusercontent.com/25410880/68123612-5a15cf00-fec2-11e9-8965-217b1e6d73f9.png" style="padding:0;margin:0;width:100%;border-radius:0 0 2px 2px;">
-</div>
-
-<div class="col-sm-5">
-<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">our location</p>
-<div class="w3-card-4 w3-white" style="padding:11px 0 0 0;margin:0 0 14px 0;border-radius:0 0 2px 2px;">
-
-<p class="topic4a">
-400 S. State Street<br>
-Chicago, IL 60605</p>
-
-<form action="http://maps.google.com/maps" method="get" target="_blank">
-<input type="hidden" name="daddr" value="400 South State Street, Chicago, IL" />
-<input type="submit" value="Get Directions" class="btn btn-primary btn-block" style="background-color:#333;padding:7px 0;font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0;margin:12px 0 0 0;">
-</form>
-</div>
-</div>
-
-<div class="col-md-5">
-<p class="topic5 w3-card-4 w3-white" style="border-radius:2px 2px 0 0;">direct contact information</p>
-<div class="w3-card-4 w3-white" style="padding:11px 0 0 0;margin:0 0 14px 0;border-radius:0 0 2px 2px;">
-
-<p class="topic4a">
-Phone: 123.456.7890</p>
-
-<p class="topic4a">
-Fax: 123.456.7891</p>
-
-<p class="topic4a">
-Email: info@yourcompany.com</p>
-
-<a class="btn btn-primary btn-block" style="background-color:#333;padding:7px 0;font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;font-weight:normal;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0;margin:12px 0 0 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment Online</a>
-</div>
-</div>
-</div>
-
-<center>
-<div class="nab">
-<center>
-<div class="w3-container" style="padding:10px 0;margin:0;width:100%;">
-<a href="https://form.jotform.com/92946245259165" target="_blank">
-<span>Give Us Your Feedback</span></a>
-</div>
-</center>
-</div>
-</center>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 
 <center>
 <div class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
@@ -1363,30 +1037,42 @@ Email: info@yourcompany.com</p>
 </div>
 </div>
 
-
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
+<div class="w3-container w3-panel w3-card" style="background-color:darkblue;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="background-color:darkblue;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:darkblue;padding:0;margin:0;">
-<div class="w3-row" style="background-color:darkblue;margin:0;">
-<div class="w3-threethird" style="background-color:darkblue;padding:0;margin:0;">
-<div class="column w3-card" style="background-color:darkblue;padding:15px 0 0 0;margin:0;">
+<div class="w3-row w3-card-4" style="background-color:darkblue;margin:0;">
+<div class="w3-half">
+<div class="column" style="background-color:darkblue;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/68754914-844f4700-05bc-11ea-83db-4d97ccf8aa6c.png" style="border-radius:0;" alt="Your Company Name">
+</div>
+</div>
+
+<div class="w3-half">
+<div class="column" style="background-color:darkblue;padding:0;margin:20px 0 0 0;">
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
 <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
 
-<div class="column" style="background-color:darkblue;padding:0;margin:0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:20px 0 0 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:5px 0 0 0;">
 Spiral Group, Inc.</p>
+<p class="topic4a">
+Phone: 123.456.7890</p>
 
-<p align="center" style="font-family:roboto;font-size:13px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:0;margin:0 0 20px 0;">
-773-242-0705</p>
+<p class="topic4a">
+Fax: 123.456.7891</p>
+
+<p class="topic4a">
+Email: info@yourcompany.com</p>
+
+
+</div>
+
 <div class="nab1 topnav1" style="width:100%;padding:5px 0 15px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">Become Visible</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank">Privacy</a>
-<a href="https://spiralgroup.github.io/themonster/terms-of-use.html" target="_blank">Terms</a>
-<a onclick="ml_account('webforms', '1533738', 'z8f2l1', 'show')" style="cursor:pointer;">Deliver Special Offers to Your Inbox</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank">Book Appointment</a>
+<a onclick="ml_account('webforms', '1533738', 'z8f2l1', 'show')" style="cursor:pointer;">Subscribe</a>
+<a href="https://form.jotform.com/92946245259165" target="_blank">Your Feedback</a>
 </div>
 </div>
 </div>
