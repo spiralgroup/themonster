@@ -16,19 +16,14 @@
 <meta property="og:url" content="https://spiralgroup.org" />
 <meta property="og:site_name" content="SpiralGroup.org" />
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
-
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script>
@@ -192,66 +187,52 @@ $(document).ready(function(){
     display: none;
 }
 
-.openinghours {
-    font-family: arial, helvetica;
-    font-size: 14px;
-    color: #222;
-    text-shadow: 0 0 1px #000;
-    letter-spacing: .5px;
-    padding: 0 2px 0 2px;
-    overflow: hidden;
-    display: inline-block;
-}
-.openinghourscontent {
-    float:left;
-}
+.hours {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: roboto;
+  font-size: 13px;
+ }
 
-.today {
-    color: blue;
-   }
-   
-.opening-hours-table tr td:first-child {
-  letter-spacing: .5px;
-}
-#open-status {
-    display:block;
-    text-align:center;
-}
+.hours ul {
+  padding-left: 0;
+  float: left;
+  padding: 0;
+  }
 
-.open {
-    color:#fff;
-}
-    
-.opening-hours-table tr td {
-    padding:0 5px 5px 5px;
-}
+.hours li {
+background-color: #ccc;
+  float: left;
+  width: 50%;
+  padding: 4px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  }
+
+.c { clear: both; }
 
 .nab1 a {
   float: center;
   font-family: roboto;
-  color: #f5f5f5;
+  color: #333;
   text-align: center;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: normal;
+  text-shadow: 0 0 1px #222;
   letter-spacing: 1px;
   margin: 0 4px;
-  text-shadow: 0 0 1px #000;
-}
+  }
 
-.nab1 a:hover span {
-  color: #222;
-  border-bottom: 1px solid #222;
+.nab1 a:hover {
+  border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
-  transition: 0.5s;
-}
-
-.topnav1 a:hover {
-  color: #f1f1f1;
-   padding: 4px 0;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-  transition: 0.5s;
+   transition: 0.5s;
 }
 
 .nab1 {
@@ -277,9 +258,10 @@ body, html {
     background-color: #f2f2f2;
  }
  .navbar {
-max-width: 1024px;
- background-color: darkblue;
+ max-width: 1024px;
+ background-color: #fff;
  margin: 0 auto;
+ padding: 0;
  border: none;
  z-index: 1;
 }
@@ -288,13 +270,12 @@ max-width: 1024px;
   padding: 0;
   margin: 0 auto;
 }
+
 .top-container {
-   padding: 0;
-  margin: 0 auto;
-  
+  padding: 0;
+  margin: 0 auto;  
    }
-  
-   }
+   
 .column {
     width: 100%;
     padding: 0;
@@ -313,6 +294,7 @@ max-width: 1024px;
     display: table;
     clear: both;
 }
+
 @media (max-width: 768px) {
     .column {
         width: 100%;
@@ -341,15 +323,14 @@ padding: 0;
 
 .topic4a {
 font-family: roboto;
-font-size: 14px;
+font-size: 17.5px;
 color: #fff;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
-font-weight: normal;
 padding: 0;
 margin: 0;
 }
+
 .topic4c {
 font-family: roboto;
 font-size: 14px;
@@ -373,6 +354,39 @@ padding: 0;
 margin: 0;
 }
 
+.topicfooter {
+font-family: roboto;
+font-size: 15px;
+color: #333;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: .5px;
+padding: 4px 0 0 0;
+margin: 0;
+}
+
+.topicfooter1 {
+font-family: roboto;
+font-size: 15px;
+color: #000;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: .5px;
+padding: 12px 0 7px 0;
+margin: 0;
+}
+
+.topicfooter2 {
+font-family: roboto;
+font-size: 20px;
+color: #333;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: 1px;
+padding: 4px 0 0 0;
+margin: 0;
+}
+
 li:hover span {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
@@ -380,22 +394,77 @@ li:hover span {
 }
 
 .fa {
-background-color: #fff;
-  padding: 8px 10px;
-  width: 45px;
-  font-size: 20.5px;
-  font-weight: normal !important;
-  color: darkblue !important;
-  text-shadow: 1px 2px 2px #ccc;
+background-color: #ccc;
+  padding: 8px 5px;
+  width: 44px;
+  font-size: 22px;
+  color: #fff !important;
   text-decoration: none !important;
-  border: 1px solid #f5f5f5;
-  border-radius: 2px;
-  margin: 5px 2px;
+  border-radius: 3px;
+  margin: 5px 2px 30px 2px;
   }
 
 .fa:hover {
-      opacity: 0.7;
+  color: #333 !important;
 }
+
+.active1 {
+  background-color: darkblue;
+  color: #fff !important;
+  }
+
+.button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  color: #000 !important;
+  text-shadow: 0 0 1px #222;
+  font-family: calibri;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 5px;
+  color: #000;
+   text-shadow: 0 0 1px #000;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
+
+
+.button1 {
+  background-color: #ccc;
+  border: none;
+  text-align: center;
+  font-family: roboto;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
 .close {
  font-size: 58px;
  color: white;
@@ -422,142 +491,28 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <body>
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default navbar-fixed-top w3-card">
+<nav class="navbar navbar-default navbar-fixed-top w3-card w3-white">
 
 <div class="navbar-header w3-center" style="width:100%;border:none;padding:0;margin:0;">
 <center>
-<p class="navbar-toggle btn" data-toggle="collapse" data-target="#myNavbar" style="width:100%;background-color:#fff;padding:0;margin:0;border:none;border-radius:0;cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/68754914-844f4700-05bc-11ea-83db-4d97ccf8aa6c.png"></p>
+
+<p class="navbar-toggle btn " data-toggle="collapse" data-target="#myNavbar" style="background-color:darkblue;width:100%;font-family:roboto;font-size:18px;font-weight:normal;color:#f0f0f0;letter-spacing:1px;text-shadow:0 0 1px #000;padding:12px 0;margin:0;border:none;border-radius:0;cursor:pointer;">Our Menu</p>
 </center></div>
+
 <div class="container-fluid" style="background-color:#fff;width:100%;padding:0 15px;margin:0;border:none;">
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav" style="border:none;">
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>About</span></a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Our Products</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Special Offers</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Careers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>About</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Our Products</span></a></li>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" style="font-family:roboto;font-size:12px;color:#f2f2f2;text-shadow:0 0 1px #ccc;letter-spacing:1px;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Special Offers</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Careers</span></a></li>
  
-<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 8px;"><span>Contact</span></a></li>
-
-<li><a onclick="document.getElementById('id77').style.display='block'" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;cursor:pointer;padding:12px 0;margin:0 7px;"><span>Business Hours</span></a></li>
-
-<div id="id77" class="w3-modal w3-white w3-animate-zoom" style="padding:0;margin:0;">
-<div class="w3-modal-content" style="width:45%;background-color:rgba(255,255,255,0.9);padding:10px 0 0 0;margin:0;border-radius:2px;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="column3" style="padding:0;margin:20px 0;">
-<p class="topic4b">Our Business Hours</p>
- <section class="openinghours" style="margin:0 0 5px 0;">
-    <div class="openinghourscontent section">
-        <table class="opening-hours-table">
+<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Contact</span></a></li></ul>
     
-            <tr id="Monday" itemprop="openingHours" title="Open Monday from 8am to 8pm">
-                <td>Monday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday from 8am to 8pm">
-                <td>Tuesday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday from 8am to 8pm">
-                <td>Wednesday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Thursday" itemprop="openingHours" title="Open Thursday from 8am to 8pm">
-                <td>Thursday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Friday" itemprop="openingHours" title="Open Friday from 8am to 8pm">
-                <td>Friday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Saturday" itemprop="openingHours" title="Open Saturday from 8am to 8pm">
-                <td>Saturday</td>
-               <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-            <tr id="Sunday" itemprop="openingHours" title="Open Sunday from 8am to 8pm">
-                <td>Sunday</td>
-                <td class="opens">8:00am</td>
-                <td>-</td>
-                <td class="closes">8:00pm</td>
-            </tr>
-        </table>
-        </div>
-     </section>
-     
-     <div class="w3-container w3-panel w3-green" style="padding:0 12px;margin:20px 0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-threethird">
-<div class="column" style="padding:0;margin:0;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d95064.6335696599!2d-87.69824128708129!3d41.87629902245431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!3m2!1d41.876320299999996!2d-87.6282014!5e0!3m2!1sen!2sus!4v1573651236844!5m2!1sen!2sus" style="width:100%;border:0;" height="300" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-</div>
-</div>
-    
-<p align="center" style="font-family:roboto;font-size:12px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;margin:0;padding:10px 0;text-decoration:none;cursor:pointer;" onclick="document.getElementById('id77').style.display='none'">Close Window</p>
-</div>
-    
-     <script>
-var currentDate = new Date();
-var weekday = [];
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-var currentDay = weekday[currentDate.getDay()];
-
-var currentTimeHours = currentDate.getHours();
-currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
-var currentTimeMinutes = currentDate.getMinutes();
-var timeNow = currentTimeHours + "" + currentTimeMinutes;
-
-var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
-$(currentDayID).toggleClass("today"); //this works at hightlighting today
-
-var openTimeSplit = $(currentDayID).children('.opens').text().split(":");
-
-var openTimeHours = openTimeSplit[0];
-openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
-
-var openTimeMinutes = openTimeSplit[1];
-var openTimex = openTimeSplit[0] + openTimeSplit[1];
-
-var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
-
-var closeTimeHours = closeTimeSplit[0];
-closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
-
-var closeTimeMinutes = closeTimeSplit[1];
-var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
-
-if (timeNow >= openTimex && timeNow <= closeTimex) {
-    $(".openorclosed").toggleClass("open");
-} else {
-    $(".openorclosed").toggleClass("closed");
-}
-</script>
-</ul>
-
 <ul class="nav navbar-nav navbar-right">
-<li><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Become Visible</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/privacy-policy.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Privacy</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/terms-of-use.html" style="font-family:roboto;font-size:11.5px;color:#000;letter-spacing:1px;font-weight:normal;padding:12px 0;margin:0 7px;"><span>Terms</span></a></li>
+<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/"><span>Become Visible</span></a></li>
+<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MarketPlace</span></a></li>
+<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/terms-of-use.html"><span>Terms</span></a></li>
 </ul></div></div></nav></div></div>
 
 <center>
@@ -607,7 +562,7 @@ Codes cannot be combined</p></button></a>
 
 <div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
 <button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
 <p align="center" style="font-family:roboto;font-size:18px;color:#f8f8f8;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:0;">Print Special Offer</p>
 
@@ -1016,11 +971,11 @@ Redeem In-Store</p></button></a>
 
 <center>
 <div class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:80px 0 0 0;">
-<div class="container" style="background-color:#fff;width:100%;padding:12px 0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:80px 0 0 0;">
+<div class="container" style="background-color:#f2f2f2;width:100%;padding:12px 0;margin:0;">
 <p style="padding:0;margin:0;"><a align="center" style="padding:0;margin:0;color:darkblue;font-family:kaushan script;font-size:24px;letter-spacing:.5px;text-shadow:0 0 1px #222;text-decoration:none;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">become visible.</a></p>
 
-<div class="customer-logos slider w3-white" style="width:100%;padding:0;margin:0;">
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
 <div class="slide w3-card"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
 <div class="slide w3-card"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52406211-0769cc80-2a82-11e9-9bb6-509d1402801d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
@@ -1036,48 +991,124 @@ Redeem In-Store</p></button></a>
 <div class="slide w3-card"><a href="#"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 </div>
 </div>
+</div>
+</div>
+</div>
+
+
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:darkblue;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:darkblue;padding:0;margin:0;">
-<div class="w3-row w3-card-4" style="background-color:darkblue;margin:0;">
-<div class="w3-half">
-<div class="column" style="background-color:darkblue;padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/68754914-844f4700-05bc-11ea-83db-4d97ccf8aa6c.png" style="border-radius:0;" alt="Your Company Name">
+<div class="w3-container w3-panel w3-card" style="background-color:#ccc;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#ccc;padding:0;margin:0;">
+<div class="w3-row w3-card-4" style="background-color:transparent;padding:0;margin:0;">
+<div class="w3-third" style="background-color:#ccc;">
+<div class="column" style="background-color:#ccc;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:0;" alt="Your Company Name">
 </div>
 </div>
 
-<div class="w3-half">
-<div class="column" style="background-color:darkblue;padding:0;margin:20px 0 0 0;">
+<div class="w3-third" style="padding:0;margin:0;">
+<div class="column" style="background-color:#fff;margin:0;">
+<div class="w3-container" style="background-color:#ccc;padding:0;margin:0;">
+<p class="topicfooter1">Business Hours</p>
+ <div class="hours" style="padding:0;">
+  <ul>
+    <li class="today w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;"></li>
+    <li class="hrstoday w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;"></li>
+    <li class="tomorrow"></li>
+    <li class="hrstomorrow"></li>
+    <li class="dayafter"></li>
+    <li class="hrsdayafter"></li>
+    <li class="threedaysout"></li>
+    <li class="hrsthreedaysout"></li>
+    <li class="fourdaysout"></li>
+    <li class="hrsfourdaysout"></li>
+    <li class="fivedaysout"></li>
+    <li class="hrsfivedaysout"></li>
+    <li class="yesterday" style="border-bottom:1px solid #ccc;padding:4px 4px 0 4px;"></li>
+    <li class="hrsyesterday" style="border-bottom:1px solid #ccc;padding:4px 4px 0 4px;"></li>
+  </ul>
+  <div class="c"></div>
+</div>
+  
+<div style="clear: both;">
+</div>
+</div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+   var date = new Date();
+   var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+   var hours = ['Closed','8:00am - 5:00pm','8:00am - 4:00pm','8:00am - 3:00pm','8:00am - 2:00pm','8:00am - 1:00pm','Closed'];
+  
+   var today = date.getDay();
+   var tomorrow = (date.getDay() + 1) % 7;
+   var dayafter = (date.getDay() + 2) % 7;
+   var threedaysout = (date.getDay() + 3) % 7;
+   var fourdaysout = (date.getDay() + 4) % 7;
+   var fivedaysout = (date.getDay() + 5) % 7;
+   var yesterday = (date.getDay() + 6) % 7;
+  
+   var hrstoday = date.getDay();
+   var hrstomorrow = (date.getDay() + 1) % 7;
+   var hrsdayafter = (date.getDay() + 2) % 7;
+   var hrsthreedaysout = (date.getDay() + 3) % 7;
+   var hrsfourdaysout = (date.getDay() + 4) % 7;
+   var hrsfivedaysout = (date.getDay() + 5) % 7;
+   var hrsyesterday = (date.getDay() + 6) % 7;
+  
+   $('.today').html(days[today]);
+   $('.tomorrow').html(days[tomorrow]);
+   $('.dayafter').html(days[dayafter]);
+   $('.threedaysout').html(days[threedaysout]);
+   $('.fourdaysout').html(days[fourdaysout]);
+   $('.fivedaysout').html(days[fivedaysout]);
+   $('.yesterday').html(days[yesterday]);
+  
+   $('.hrstoday').html(hours[today]);
+   $('.hrstomorrow').html(hours[tomorrow]);
+   $('.hrsdayafter').html(hours[dayafter]);
+   $('.hrsthreedaysout').html(hours[threedaysout]);
+   $('.hrsfourdaysout').html(hours[fourdaysout]);
+   $('.hrsfivedaysout').html(hours[fivedaysout]);
+   $('.hrsyesterday').html(hours[yesterday]);
+});
+</script>
+
+<div class="w3-third w3-card-4" style="background-color:#ccc;padding:7px 0 0 0;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="background-color:#ccc;margin:0;">
+<p class="topicfooter">
+Follow Us Around the Web</p>
+
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
 <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
 
-<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:5px 0 0 0;">
-Spiral Group, Inc.</p>
-<p class="topic4a">
-Phone: 123.456.7890</p>
+<p class="topicfooter2">
+123-456-7890</p>
 
-<p class="topic4a">
-Fax: 123.456.7891</p>
-
-<p class="topic4a">
-Email: info@yourcompany.com</p>
-
-
+<p class="topicfooter">
+400 South State Street<br>
+Chicago, IL 60605</p>
 </div>
 
-<div class="nab1 topnav1" style="width:100%;padding:5px 0 15px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank">Book Appointment</a>
+<div class="nab1" style="width:100%;padding:30px 0 14px 0;margin:0;color:#ccc;">
+<a href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a> &#124; 
+<a href="https://form.jotform.com/92946245259165" target="_blank">Feedback</a> &#124;
 <a onclick="ml_account('webforms', '1533738', 'z8f2l1', 'show')" style="cursor:pointer;">Subscribe</a>
-<a href="https://form.jotform.com/92946245259165" target="_blank">Your Feedback</a>
 </div>
 </div>
 </div>
-</div>
-</div>
+
+
+<div class="w3-threethird">
+<div class="column" style="background-color:#ccc;margin:0;">
+<iframe class="w3-card" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d95064.6335696599!2d-87.69824128708129!3d41.87629902245431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!3m2!1d41.876320299999996!2d-87.6282014!5e0!3m2!1sen!2sus!4v1573651236844!5m2!1sen!2sus" style="width:100%;border:0;border-radius:2px;vertical-align:bottom;height:248px;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 </div>
