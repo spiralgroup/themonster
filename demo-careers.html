@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-us">
 <head>
 <title>Demo WebPage - Careers &#124; Spiral Group, Inc.</title>
@@ -25,6 +25,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
@@ -53,7 +54,7 @@ $(document).ready(function(){
 <style type="text/css">
 /* Slider */
 .slick-slide {
-    margin: 10px 6px 20px 6px;
+    margin: 12px 6px;
     padding: 0;
     background-color: #fff;
     border-radius: 2px;
@@ -167,7 +168,7 @@ $(document).ready(function(){
   box-sizing: border-box;
   color: #fff;
   font-family: roboto;
-  font-size: 13px;
+  font-size: 13.5px;
  }
 
 .hours ul {
@@ -180,7 +181,7 @@ $(document).ready(function(){
 background-color: #ccc;
   float: left;
   width: 50%;
-  padding: 4px;
+  padding: 7px 4px;
   box-sizing: border-box;
   list-style-type: none;
   text-align: center;
@@ -198,15 +199,12 @@ background-color: #ccc;
   font-size: 11.5px;
   font-weight: normal;
   letter-spacing: 1px;
-  margin: 0 4px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 9px 6px;
+  margin: 10px 4px;
   }
-
-.nab1 a:hover {
-  border-bottom: 1px solid #f5f5f5;
-  padding-bottom: 5px;
-   transition: 0.5s;
-}
-
+  
 .nab1 {
   overflow: hidden;
   padding: 10px;
@@ -231,7 +229,7 @@ body, html {
  }
  .navbar {
  max-width: 1024px;
- background-color: #fff;
+ background-color: #f2f2f2;
  margin: 0 auto;
  padding: 0;
  border: none;
@@ -296,8 +294,8 @@ padding: 0;
   text-align: center;  
   }
   }
-  
-  .topic2 {
+
+.topic2 {
 font-family: pt sans;
 font-size: 28.5px;
 color: #c0c0c0;
@@ -320,6 +318,7 @@ margin: 0;
   padding: 0 0 5px 0;  
   }
   }
+  
 .topic4a {
 font-family: roboto;
 font-size: 17.5px;
@@ -343,14 +342,19 @@ padding: 0;
 
 .topic4d {
 font-family: roboto;
-font-size: 15px;
+font-size: 16px;
 color: #000;
-text-align: center;
-letter-spacing: .5px;
+text-align: left;
+letter-spacing: 0;
 text-shadow: 0 0 1px #000;
-font-weight: normal;
 padding: 0;
-margin: 0;
+margin: 20px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .topic4d {
+       text-align: center;
+       }
 }
 
 .topicfooter {
@@ -360,7 +364,7 @@ color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: .5px;
-padding: 4px 0 0 0;
+padding: 14px 0 0 0;
 margin: 0;
 }
 
@@ -371,18 +375,18 @@ color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: .5px;
-padding: 12px 0 7px 0;
+padding: 0;
 margin: 0;
 }
 
 .topicfooter2 {
 font-family: roboto;
-font-size: 20px;
+font-size: 22px;
 color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: 1px;
-padding: 4px 0 0 0;
+padding: 10px 0 0 0;
 margin: 0;
 }
 
@@ -393,13 +397,13 @@ li:hover span {
 }
 
 .fa {
-background-color: #ccc;
+background-color: #fff;
   padding: 8px 5px;
   width: 44px;
-  font-size: 22px;
-  color: #fff !important;
-  text-decoration: none !important;
   border-radius: 3px;
+  font-size: 22px;
+  color: #ccc !important;
+  text-decoration: none !important;
   margin: 5px 2px 30px 2px;
   }
 
@@ -408,13 +412,14 @@ background-color: #ccc;
 }
 
 .active1 {
-  background-color: darkblue;
-  color: #fff !important;
+  background-color: #ccc;
+  box-shadow: 0 1px 3px #ccc;
+  color: #222 !important;
   }
 
 .button {
   background-color: #f2f2f2;
-  border: none;
+  border: 1px solid #fff;
   border-radius: 2px;
   text-align: center;
   color: #000 !important;
@@ -473,6 +478,7 @@ background-color: #ccc;
  margin-right: 20px;
  filter: Alpha(opacity=50); /* IE8 and earlier */
 }
+
 </style>
 
 <!-- MailerLite Universal -->
@@ -490,20 +496,19 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <body>
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default navbar-fixed-top w3-card">
+<nav class="navbar navbar-default navbar-fixed-top">
 <div class="navbar-header w3-center" style="width:100%;border:none;padding:0;margin:0;">
 <center>
-
-<p class="navbar-toggle btn " data-toggle="collapse" data-target="#myNavbar" style="background-color:darkblue;width:100%;font-family:roboto;font-size:18px;color:#f0f0f0;letter-spacing:1px;text-shadow:0 0 1px #000;padding:12px 0;margin:0;border:none;border-radius:0;cursor:pointer;">Our Menu</p>
+<p class="navbar-toggle btn w3-card" data-toggle="collapse" data-target="#myNavbar" style="background-color:#fff;width:100%;font-family:roboto;font-size:18px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;padding:12px 0;margin:0;border:none;border-radius:0;cursor:pointer;">Menu</p>
 </center></div>
 
-<div class="container-fluid" style="background-color:#fff;width:100%;padding:0 15px;margin:0;border:none;">
+<div class="container-fluid" style="background-color:#f2f2f2;width:100%;padding:0 15px;margin:0;border:none;">
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav" style="border:none;">
 <li><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>About Us</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Our Products</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" style="font-family:roboto;font-size:12px;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Special Offers</span></a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#f2f2f2;letter-spacing:1px;text-shadow:0 0 1px #ccc;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Careers</span></a></li>
+<li ><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Our Products</span></a></li>
+<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Special Offers</span></a></li>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Careers</span></a></li>
  
 <li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Contact</span></a></li></ul>
     
@@ -514,19 +519,18 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </ul></div></div></nav></div></div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:10px 0;border-radius:8px 8px 2px 2px;margin:0;">
-<div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0 0 20px 0;">
-<p align="center" style="font-family:kaushan script;font-size:36px;color:darkblue;letter-spacing:0;text-shadow:0 0 1px #222;padding:0;margin:20px 0 10px 0;text-decoration:none;">Careers</p></div>
+<div class="w3-row-padding" style="background-color:#f2f2f2;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
+<p align="center" style="font-family:kaushan script;font-size:36px;color:#c0c0c0;letter-spacing:0;text-shadow:1px 1px 1px #c0c0c0;padding:0;margin:20px 0 0 0;text-decoration:none;">Careers</p></div>
  
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-threethird" style="margin:0;">
 <div class="column" style="padding:0;">
-<div class="content w3-panel" style="padding:10px 5px;margin:0;">
+<div class="content w3-panel" style="padding:10px;margin:0;">
 <p class="topic">
 Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. We provide <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank" style="text-decoration:none;color:#000;">Small Business Showcase WebPages</a>, <a href="https://spiralgroup.github.io/themonster/business-excellence.html" target="_blank" style="text-decoration:none;color:#000;">Operational Assessment Tools</a>, <a href="https://spiralgroup.github.io/themonster/#listing" target="_blank" style="text-decoration:none;color:#000;">Local Business Listing Services</a>, and <a href="https://spiralgroup.github.io/themonster/#advertise" target="_blank" style="text-decoration:none;color:#000;">Local Advertising Services</a> for locally under-served small businesses. We seek creative, energetic, self-motivated, and ambitious people to join our team as Independent Sales Representatives. Persons considered hard to employ, due to a criminal past, are strongly encouraged to apply.<br><br>
 
@@ -534,13 +538,13 @@ Ideal candidates will have exceptional service skills, the drive to be successfu
 
 Independent Sales Representatives will be responsible for identifying Small Businesses throughout Chicagoland that would benefit from our products and services. Contact them and present our catalog in an effort to sell to those customers. Obtain necessary information in an effort to better serve them. Set follow-up appointments to close deals.<br><br>
 
-This is a commission-based sales opportunity. You'll work as an independent contractor. Our product line will help drive orders and your commissions. Confident, ethical, and committed Independent Sales Representatives will earn 15% commission on all Spiral Group, Inc. products and services they sell to new and existing clients. For a complete description of your responsibilities, <a href="https://github.com/spiralgroup/themonster/files/3853890/Spiral.Group.Inc.ISR.Complete.Job.Description.pdf" style="text-decoration:none;color:darkblue;text-shadow:0 0 1px #000;">click here.</a><br><br>
+This is a commission-based sales opportunity. You'll work as an independent contractor. Our product line will help drive orders and your commissions. Confident, ethical, and committed Independent Sales Representatives will earn 15% commission on all Spiral Group, Inc. products and services they sell to new and existing clients. For a complete description of your responsibilities, <a href="https://github.com/spiralgroup/themonster/files/3853890/Spiral.Group.Inc.ISR.Complete.Job.Description.pdf" style="text-decoration:none;text-shadow:0 0 1px #000;">click here.</a><br><br>
 
 We provide the resources, training, support, and creative autonomy you'll need to serve our clients in the best way possible. With each product sold, you've helped a local small business in achieving and maintaining operational excellence.<br><br>
 
 We know it takes an especially dedicated person to work in sales. That's why we are committed to providing you with an enriching and rewarding opportunity. While our performance expectations are high, so is our dedication to your success.<br><br>
 
-If you think you have what we're seeking, then <a href="https://form.jotform.com/82398672847172" target="_blank" style="text-decoration:none;color:darkblue;text-shadow:0 0 1px #000;">click here</a> to apply now. Once you've submitted your online application, contact Michelle Jones at 773 242-0705 to follow-up within 48 hours. Our hours are Sunday through Saturday, 8am to 8pm.</p>
+If you think you have what we're seeking, then <a href="https://form.jotform.com/82398672847172" target="_blank" style="text-decoration:none;text-shadow:0 0 1px #000;">click here</a> to apply now. Once you've submitted your online application, contact Michelle Jones at 773 242-0705 to follow-up within 48 hours. Our hours are Sunday through Saturday, 8am to 8pm.</p>
 </div>
 </div>
 </div>
@@ -565,7 +569,7 @@ As a small business owner, you can quickly reach a local audience through your S
 
 This can be the place where you differentiate your organization from competitors and really sell the company as a place where potential employees may want to work. It's a section within your company's digital brochure and can work to compliment your efforts in social media and other recruitment strategies.<br><br>
 
-In the above section we have provided our own current job posting, but it's merely an example of how we have chosen to use this web page in our demo. When you purchase our Essentials or Premium WebPages Plan, you decide how you'll use this web page to your company's advantage. The following suggestions can help shape your Careers WebPage so people will want to work with you. <a data-toggle="collapse" data-target="#demo" style="color:darkblue;text-shadow:0 0 1px #000;text-decoration:none;cursor:pointer;">Read More.</a></p>
+In the above section we have provided our own current job posting, but it's merely an example of how we have chosen to use this web page in our demo. When you purchase our Essentials or Premium WebPages Plan, you decide how you'll use this web page to your company's advantage. The following suggestions can help shape your Careers WebPage so people will want to work with you. <a data-toggle="collapse" data-target="#demo" style="text-shadow:0 0 1px #000;text-decoration:none;cursor:pointer;">Read More.</a></p>
 </div>
   
 <div id="demo" class="collapse">
@@ -598,51 +602,54 @@ Discover the right blend of content, visuals, and video, and we can help your Ca
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
-<div class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:80px 0 0 0;">
-<div class="container" style="background-color:#f2f2f2;width:100%;padding:12px 0;margin:0;">
-<p style="padding:0;margin:0;"><a align="center" style="padding:0;margin:0;color:darkblue;font-family:kaushan script;font-size:24px;letter-spacing:.5px;text-shadow:0 0 1px #222;text-decoration:none;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">become visible.</a></p>
-
-<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52406211-0769cc80-2a82-11e9-9bb6-509d1402801d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:#ccc;padding:0;margin:20px 0 0 0;">
-<div class="w3-container w3-panel" style="background-color:#ccc;padding:0;margin:0;">
-<div class="w3-row w3-card-4" style="background-color:transparent;padding:0;margin:0;">
-<div class="w3-third" style="background-color:#ccc;">
-<div class="column" style="background-color:#ccc;padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px 0 0 0;" alt="Your Company Name">
+<div class="w3-container w3-panel w3-card" style="background-color:#ccc;padding:0;margin:100px 0 0 0;">
+<div class="w3-container w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<div class="w3-row" style="background-color:#ccc;margin:0;">
+<div class="w3-third" style="background-color:#ccc;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="w3-white" align="center" style="background-color:#fff;font-family:calibri;font-size:16px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #000;padding:6px 0 5px 0;margin:0;border-radius:2px 2px 0 0;">BEAUTY & HEALTH</p>
+<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;padding:0;margin:0;">
 </div>
 </div>
 
-<div class="w3-third" style="padding:0;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;">
+<div class="w3-third" style="background-color:#ccc;margin:0 0 8px 0;padding:0;border-radius:2px 2px 0 0;">
+<div class="column" style="background-color:#ccc;margin:0;">
+<p class="topicfooter">
+Follow Us Around the Web</p>
+
+<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
+<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+<p class="topicfooter2">
+123-456-8890</p>
+
+<p class="topicfooter1">
+400 South State Street<br>
+Chicago, IL 60605</p>
+</div>
+
+<div class="nab1" style="width:100%;padding:50px 0 10px 0;margin:0;color:#ccc;">
+<a href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a>
+<a onclick="ml_account('webforms', '1533738', 'z8f2l1', 'show')" style="cursor:pointer;">Subscribe</a>
+</div>
+</div>
+
+<div class="w3-third w3-card" style="background-color:#ccc;padding:0;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="background-color:#ccc;margin:0;">
 <div class="w3-container" style="background-color:#ccc;padding:0;margin:0;">
-<p class="topicfooter1">Business Hours</p>
-<div class="hours" style="padding:0;">
+<p class="topicfooter">Business Hours</p>
+<div class="hours" style="padding:13px 0 0 0;">
 <ul>
 <li class="today w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;border-radius:3px 0 0 0;"></li>
 <li class="hrstoday w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;border-radius:0 3px 0 0;"></li>
@@ -661,8 +668,8 @@ Discover the right blend of content, visuals, and video, and we can help your Ca
   </ul>
   <div class="c"></div>
 </div>
-  
 <div style="clear: both;">
+</div>
 </div>
 </div>
 </div>
@@ -673,7 +680,7 @@ $(document).ready(function(){
 
    var date = new Date();
    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-   var hours = ['Closed','8:00am - 5:00pm','8:00am - 4:00pm','8:00am - 3:00pm','8:00am - 2:00pm','8:00am - 1:00pm','Closed'];
+   var hours = ['8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm'];
   
    var today = date.getDay();
    var tomorrow = (date.getDay() + 1) % 7;
@@ -709,38 +716,43 @@ $(document).ready(function(){
 });
 </script>
 
-<div class="w3-third w3-card-4" style="background-color:#ccc;padding:7px 0 0 0;margin:0;border-radius:2px 2px 0 0;">
-<div class="column" style="background-color:#ccc;margin:0;">
-<p class="topicfooter">
-Follow Us Around the Web</p>
-
-<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
-<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
-
-<p class="topicfooter2">
-123-456-8890</p>
-
-<p class="topicfooter">
-400 South State Street<br>
-Chicago, IL 60605</p>
-</div>
-
-<div class="nab1" style="width:100%;padding:40px 0 14px 0;margin:0;color:#ccc;">
-<a href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a> &#124; 
-<a href="https://form.jotform.com/92946245259165" target="_blank">Feedback</a> &#124;
-<a onclick="ml_account('webforms', '1533738', 'z8f2l1', 'show')" style="cursor:pointer;">Subscribe</a>
-</div>
-</div>
-</div>
-
-
 <div class="w3-threethird">
 <div class="column" style="background-color:#ccc;margin:0;">
-<iframe class="w3-card" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d95064.6335696599!2d-87.69824128708129!3d41.87629902245431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!3m2!1d41.876320299999996!2d-87.6282014!5e0!3m2!1sen!2sus!4v1573651236844!5m2!1sen!2sus" style="width:100%;border:0;border-radius:0 0 2px 2px;vertical-align:bottom;height:248px;" frameborder="0" allowfullscreen=""></iframe>
+<iframe class="w3-card" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d95064.6335696599!2d-87.69824128708129!3d41.87629902245431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!3m2!1d41.876320299999996!2d-87.6282014!5e0!3m2!1sen!2sus!4v1573651236844!5m2!1sen!2sus" style="width:100%;border:0;border-radius:2px 2px 0 0;vertical-align:bottom;height:248px;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<div id="scroll" class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0 8px;margin:80px 0 0 0;">
+<div class="container" style="background-color:#f2f2f2;width:100%;padding:12px 0 0 0;margin:0;">
+<p style="padding:0;margin:0;"><a align="center" style="padding:0;margin:0;color:darkblue;font-family:kaushan script;font-size:24px;letter-spacing:.5px;text-shadow:0 0 1px #000;text-decoration:none;font-weight:normal;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">become visible.</a></p>
+
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 </div>
 </div>
 </div>
