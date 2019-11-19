@@ -31,6 +31,32 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer type="152734e17bc794499fddf777-text/javascript"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 <style type="text/css">
 body, html {
@@ -108,9 +134,18 @@ margin: 0;
 .topic3a {
 font-family: roboto;
 font-size: 13px;
-color: #222;
+color: #000;
 text-align: center;
 padding: 0 0 10px 0;
+margin: 0;
+}
+
+.topic31 {
+font-family: roboto;
+font-size: 13px;
+color: #000;
+text-align: center;
+padding: 0;
 margin: 0;
 }
 
@@ -235,13 +270,16 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="margin:0 0 15px 0;">
-<p class="topic3"><a class="w3-button w3-white" href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;margin:0 0 20px 0;box-shadow:0 0 22px #ccc;">Explore Our Demo WebPages</a></p>
-    </div>
+<div class="w3-threethird" style="margin:0;">
+<p class="topic3"><a class="w3-button w3-white" href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="border-radius:3px;text-decoration:none;color:#222;padding:20px;margin:0 0 20px 0;box-shadow:0 0 22px #ccc;">Explore Our Demo WebPages</a>
+
+<p class="topic31"><a href="#pricing" style="text-decoration:none;">View Our Plans & Pricing</a></p>
+</div>
+</div>
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:20px;margin:10px 0 50px 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 20px;margin:0 0 50px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird">
 <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="text-decoration:none;"><img src="https://user-images.githubusercontent.com/25410880/66703925-63998600-eccc-11e9-8096-61b18a8ddc1b.png" style="width:100%;border-radius:8px 8px 4px 4px;"></a>
@@ -261,7 +299,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="margin:0 0 20px 0;">
-<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6f2ff;border-radius:2px;">
+<div class="column w3-center w3-white" style="padding:5px;margin:0;background-color:#e6f2ff;border-radius:2px;">
 <p align="center" style="margin:0;padding:0;">
 <a class="btn btn-primary btn-block" style="background-color:#cce7ff;font-family:roboto;font-size:18.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">SIMPLE START</a></p>
 
@@ -293,17 +331,12 @@ Maintenance & Support</p>
 - -</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 - -</p>
-</div>
-
-<div class="column w3-center" style="padding:0;margin:0;background-color:#fbd0d9;border-radius:2px;">
-<p align="center" style="margin:0;padding:0;">
-<a class="btn btn-primary btn-block" style="background-color:#e6f2ff;font-family:roboto;font-size:18.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">Choose Plan</a></p>
    </div>
     </div>
      </div>
     
 <div class="w3-third" style="margin:0 0 20px 0;">
-<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#fde8ec;border-radius:2px;">
+<div class="column w3-center w3-white" style="padding:5px;margin:0;background-color:#fde8ec;border-radius:2px;">
 <p align="center" style="margin:0;padding:0;">
 <a class="btn btn-primary btn-block" style="background-color:#fbd0d9;font-family:roboto;font-size:18.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">ESSENTIALS</a></p>
 
@@ -335,17 +368,12 @@ Careers Page</p>
 - -</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 - -</p>
-</div>
-
-<div class="column w3-center" style="padding:0;margin:0;background-color:#fbd0d9;border-radius:2px;">
-<p align="center" style="margin:0;padding:0;">
-<a class="btn btn-primary btn-block" style="background-color:#fde8ec;font-family:roboto;font-size:18.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">Choose Plan</a></p>
     </div>
       </div>
       </div>
    
 <div class="w3-third" style="margin:0 0 20px 0;">
-<div class="column w3-card w3-center" style="padding:0;margin:0;background-color:#e6ffe6;border-radius:2px;">
+<div class="column w3-center w3-white" style="padding:5px;margin:0;background-color:#e6ffe6;border-radius:2px;">
 <p align="center" style="margin:0;padding:0;">
 <a class="btn btn-primary btn-block" style="background-color:#b3ffb3;font-family:roboto;font-size:18.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">PREMIUM</a></p>
 
@@ -378,10 +406,6 @@ SG Listing Service</p>
 <p align="center" style="font-family:roboto;font-size:14px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #222;">
 1 Branded Category Ad &#8226; 90 Days</p>
 </div>
-
-<div class="column w3-center" style="padding:0;margin:0;background-color:#fbd0d9;border-radius:2px;">
-<p align="center" style="margin:0;padding:0;">
-<a class="btn btn-primary btn-block" style="background-color:#e6ffe6;font-family:roboto;font-size:18.5px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:0;padding:12px 10px 10px 10px;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">Choose Plan</a></p>
 </div>
 </div>
 </div>
