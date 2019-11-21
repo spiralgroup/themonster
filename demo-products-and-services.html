@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
 <title>Demo WebPage - Our Products &#124; Spiral Group, Inc.</title>
@@ -168,7 +168,7 @@ $(document).ready(function(){
   box-sizing: border-box;
   color: #fff;
   font-family: roboto;
-  font-size: 13.5px;
+  font-size: 12.5px;
  }
 
 .hours ul {
@@ -181,11 +181,11 @@ $(document).ready(function(){
 background-color: #ccc;
   float: left;
   width: 50%;
-  padding: 7px 4px;
+  padding: 6px 4px;
   box-sizing: border-box;
   list-style-type: none;
   text-align: center;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
   }
 
 .c { clear: both; }
@@ -233,6 +233,7 @@ body, html {
  margin: 0 auto;
  padding: 0;
  border: none;
+ border-radius: 0;
  z-index: 1;
 }
 
@@ -297,7 +298,7 @@ padding: 0;
   }
   }
   
-  .topic2 {
+ .topic2 {
 font-family: Open Sans Condensed;
 font-size: 20px;
 color: #000;
@@ -307,6 +308,25 @@ text-shadow: 0 0 1px #000;
 margin: 0;
 padding: 0 0 8px 0;
 }
+  
+.topic3 {
+font-family: open sans condensed;
+font-size: 38px;
+letter-spacing: .5px;
+color: #c0c0c0;
+text-shadow: 0 0 1px #c0c0c0;
+text-align: center;
+margin: 0;
+padding: 65px 0 75px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3 {
+  padding: 0;
+  font-size: 1px;
+  display: none;
+  }
+  }
   
 .topic4a {
 font-family: roboto;
@@ -348,13 +368,13 @@ color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: .5px;
-padding: 14px 0 0 0;
+padding: 7px 0 0 0;
 margin: 0;
 }
 
 .topicfooter1 {
 font-family: roboto;
-font-size: 15px;
+font-size: 14.5px;
 color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
@@ -365,7 +385,7 @@ margin: 0;
 
 .topicfooter2 {
 font-family: roboto;
-font-size: 22px;
+font-size: 19px;
 color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
@@ -385,10 +405,10 @@ background-color: #fff;
   padding: 8px 5px;
   width: 44px;
   border-radius: 3px;
-  font-size: 22px;
+  font-size: 21.5px;
   color: #ccc !important;
   text-decoration: none !important;
-  margin: 5px 2px 30px 2px;
+  margin: 5px 2px 20px 2px;
   }
 
 .fa:hover {
@@ -396,9 +416,9 @@ background-color: #fff;
 }
 
 .active1 {
-  background-color: #ccc;
-  box-shadow: 0 1px 3px #ccc;
-  color: #222 !important;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000 !important;
   }
 
 .button {
@@ -417,7 +437,6 @@ background-color: #fff;
   padding: 0;
   margin: 0;
  }
-
 
 .button span:after {
   content: '';
@@ -438,7 +457,6 @@ background-color: #fff;
  opacity: 1;
   right: 0;
 }
-
 
 .button1 {
   background-color: #ccc;
@@ -517,6 +535,23 @@ background-color: #fff;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+body {
+    position: relative; 
+  }
+  .affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+  }
 </style>
 
 <!-- MailerLite Universal -->
@@ -531,40 +566,49 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
 </head>
-<body>
-<div class="top-container" style="width:100%;padding:0;margin:0;">
-<div class="header" id="myHeader">
-<nav class="navbar navbar-default navbar-fixed-top">
-<div class="navbar-header w3-center" style="width:100%;border:none;padding:0;margin:0;">
-<center>
-<p class="navbar-toggle btn w3-card" data-toggle="collapse" data-target="#myNavbar" style="background-color:#fff;width:100%;font-family:roboto;font-size:18px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;padding:12px 0;margin:0;border:none;border-radius:0;cursor:pointer;">Menu</p>
-</center></div>
+  
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="container-fluid" style="background-color:#fff;padding:0;height:175px;box-shadow:0 2px 22px #ccc;border-radius:0 0 4px 4px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="w3-twothird" style="padding:0;margin:0;">
+<p class="topic3">BEAUTY & HEALTH</p>
+</div>
 
-<div class="container-fluid" style="background-color:#f2f2f2;width:100%;padding:0 15px;margin:0;border:none;">
+<div class="w3-third" style="padding:4px 5px;margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/69280929-33cb8100-0b9c-11ea-88f3-b7597c8b1fd9.png" style="width:100%;padding:0;margin:0;border-radius:2px;padding:0;margin:0;">
+</div>
+</div>
+
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="200">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle w3-light-grey" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>                        
+</button>
+<a class="navbar-brand" href="#" style="font-family:open sans condensed;font-size:20px;color:#C0C0C0;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;">MAKEUP & COSMETICS</a>
+</div>
+<div>
 <div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav" style="border:none;">
+<ul class="nav navbar-nav">
 <li><a href="https://spiralgroup.github.io/themonster/demo-about-us.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>About Us</span></a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #000;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Our Products</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-special-offers.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Special Offers</span></a></li>
+<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Our Products</span></a></li>
 <li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Careers</span></a></li>
- 
 <li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Contact</span></a></li></ul>
     
 <ul class="nav navbar-nav navbar-right">
-<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/"><span>Become Visible</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MarketPlace</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/terms-of-use.html"><span>Terms</span></a></li>
-</ul></div></div></nav></div></div>
+<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MarketPlace</span></a></li>
+<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/"><span>Get In The Game</span></a></li>
+<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/terms-of-use.html"><span>Terms of Use</span></a></li></ul>
+      </div>
+    </div>
+  </div>
+</nav>    
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-<div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
-<p align="center" style="font-family:kaushan script;font-size:36px;color:#c0c0c0;letter-spacing:.5px;text-shadow:1px 1px 1px #c0c0c0;padding:0;margin:20px 0 10px 0;text-decoration:none;">Our Products</p></div>
-</div>
-</div>
-</div>
  
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
@@ -582,58 +626,53 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -659,58 +698,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -736,58 +770,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -800,7 +829,7 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item4" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67868169-cb333c00-fae8-11e9-840e-0d212076233c.png" style="width:100%;border-radius:4px 4px 0 0;">
+<img src="https://user-images.githubusercontent.com/25410880/69305963-c5f27a00-0bda-11ea-9307-426290546d23.png" style="width:100%;border-radius:4px 4px 0 0;">
 <button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal4"> View Product Details</button>
 </div>
 
@@ -813,58 +842,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67868169-cb333c00-fae8-11e9-840e-0d212076233c.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/69305963-c5f27a00-0bda-11ea-9307-426290546d23.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -877,7 +901,7 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item5" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67868171-cbcbd280-fae8-11e9-8b43-0f595801c6b8.png" style="width:100%;border-radius:4px 4px 0 0;">
+<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;border-radius:4px 4px 0 0;">
 <button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal5"> View Product Details</button>
 </div>
 
@@ -890,58 +914,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67868171-cbcbd280-fae8-11e9-8b43-0f595801c6b8.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -954,7 +973,7 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item6" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67868175-cc646900-fae8-11e9-8424-827bb3645b90.png" style="width:100%;border-radius:4px 4px 0 0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306161-6a74bc00-0bdb-11ea-86af-c83cadde26bc.png" style="width:100%;border-radius:4px 4px 0 0;">
 <button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal6"> View Product Details</button>
 </div>
 
@@ -967,58 +986,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67868175-cc646900-fae8-11e9-8424-827bb3645b90.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/69306161-6a74bc00-0bdb-11ea-86af-c83cadde26bc.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -1031,7 +1045,7 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item7" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;border-radius:4px 4px 0 0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306475-672e0000-0bdc-11ea-9b0c-b462cbf5e65e.png" style="width:100%;border-radius:4px 4px 0 0;">
 <button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal7"> View Product Details</button>
 </div>
 
@@ -1044,58 +1058,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/69306475-672e0000-0bdc-11ea-9b0c-b462cbf5e65e.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -1121,58 +1130,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -1185,7 +1189,7 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item9" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;border-radius:4px 4px 0 0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306343-f686e380-0bdb-11ea-8331-36359556bc40.png" style="width:100%;border-radius:4px 4px 0 0;">
 <button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal9"> View Product Details</button>
 </div>
 
@@ -1198,58 +1202,53 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/69306343-f686e380-0bdb-11ea-8331-36359556bc40.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 
 <p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:.5px;font-family:roboto;font-size:18px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">$99.99 &#8226; Buy Now</button></a></p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A 'Buy Now' button, including price, is installed for ease of purchase.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -1257,6 +1256,17 @@ If you have questions, call 773-242-0705.</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div id="special-offers" class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
+<div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
+<p align="center" style="font-family:open sans condensed;font-size:38px;color:#c0c0c0;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;padding:0;margin:20px 0 10px 0;text-decoration:none;">SPECIAL OFFERS</p></div>
 </div>
 </div>
 </div>
@@ -1264,8 +1274,8 @@ If you have questions, call 773-242-0705.</p>
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item10" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67866484-421b0580-fae6-11e9-9330-53964d9fe336.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal10"> View Product Details</button>
+<img src="https://user-images.githubusercontent.com/25410880/69305794-1ddcb100-0bda-11ea-84b9-3563c5c2630f.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal10"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
 
 <div class="modal fade" id="myModal10" role="dialog">
@@ -1277,58 +1287,88 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67866484-421b0580-fae6-11e9-9330-53964d9fe336.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/69305794-1ddcb100-0bda-11ea-84b9-3563c5c2630f.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:26px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Now Only &nbsp;$79.99</p>
 
-<p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<p align="center" style="color:#000;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:open sans condensed;font-size:16px;margin:0 0 30px 0;padding:0;">Reg. $99.99</p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic">
+The details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0 0 10px 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">BUY ONLINE<br>
+Use code SP1 at checkout</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+Codes cannot be combined</p></button></a>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
+<button class="btn btn-primary btn-block w3-light-blue" style="border:none;border-radius:2px;padding:8px;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">REDEEM IN-STORE<br>
+Print Special Offer</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">Present to cashier</p></button></a>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;">
+<div class="column" style="margin:0;">
+<div class="w3-row" style="margin:0 0 5px 0;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. Each of your Special Offers has a modal for this purpose.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0 0 5px 0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -1341,8 +1381,8 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item11" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal11"> View Product Details</button>
+<img src="https://user-images.githubusercontent.com/25410880/69306720-592caf00-0bdd-11ea-979d-41af878eec51.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal11"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
 
 <div class="modal fade" id="myModal11" role="dialog">
@@ -1354,58 +1394,88 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/69306720-592caf00-0bdd-11ea-979d-41af878eec51.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:26px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Now Only &nbsp;$79.99</p>
 
-<p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<p align="center" style="color:#000;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:open sans condensed;font-size:16px;margin:0 0 30px 0;padding:0;">Reg. $99.99</p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic">
+The details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0 0 10px 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">BUY ONLINE<br>
+Use code SP1 at checkout</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+Codes cannot be combined</p></button></a>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
+<button class="btn btn-primary btn-block w3-light-blue" style="border:none;border-radius:2px;padding:8px;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">REDEEM IN-STORE<br>
+Print Special Offer</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">Present to cashier</p></button></a>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;">
+<div class="column" style="margin:0;">
+<div class="w3-row" style="margin:0 0 5px 0;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. Each of your Special Offers has a modal for this purpose.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0 0 5px 0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
 </div>
 </div>
 </div>
@@ -1418,8 +1488,8 @@ If you have questions, call 773-242-0705.</p>
 
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item12" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal12"> View Product Details</button>
+<img src="https://user-images.githubusercontent.com/25410880/69306933-03a4d200-0bde-11ea-9d71-6a48fbc33ff1.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal12"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
 
 <div class="modal fade" id="myModal12" role="dialog">
@@ -1431,58 +1501,100 @@ If you have questions, call 773-242-0705.</p>
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png" style="width:80%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/69306933-03a4d200-0bde-11ea-9d71-6a48fbc33ff1.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:20px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name &mdash; 99.99</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:26px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Now Only &nbsp;$79.99</p>
 
-<p align="center">
-<a href="https://form.jotform.com/92823006850151"><button type="button" class="btn w3-light-blue w3-hover-blue" style="width:50%;border:none;color:#000;text-shadow:0 0 1px #222;letter-spacing:1px;font-family:roboto;font-size:15px;margin:20px 0;padding:8px;text-align:center;border-radius:2px;">Buy Now</button></a></p>
+<p align="center" style="color:#000;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:open sans condensed;font-size:16px;margin:0 0 30px 0;padding:0;">Reg. $99.99</p>
 </div>
 </div>
 
 <center>
 <div class="w3-container" style="width:100%;">
-<div class="column1" style="padding:0;margin:0 0 20px 0;background-color:#fff;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic">
+The details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
+
+<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0 0 10px 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:darkblue;border:none;border-radius:2px;padding:8px;margin:10px 0 15px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">BUY ONLINE<br>
+Use code SP1 at checkout</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+Codes cannot be combined</p></button></a>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
+<button class="btn btn-primary btn-block w3-light-blue" style="border:none;border-radius:2px;padding:8px;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">REDEEM IN-STORE<br>
+Print Special Offer</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">Present to cashier</p></button></a>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;">
+<div class="column" style="margin:0;">
+<div class="w3-row" style="margin:0 0 5px 0;">
 <div class="accordion">Product Description</div>
 <div class="panel" style="border:none;">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-In this section, we provide the details of your product or service. The name of your product or service, along with price, is installed directly beneath its corresponding image. Each of your items has a modal for this purpose. A 'Buy Now' button is installed for ease of purchase.</p>
+In this section, we provide the details of your product or service. Each of your Special Offers has a modal for this purpose.</p>
 </div>
 
 <div class="accordion">Buy Online, Pickup In-Store</div>
 <div class="panel">
 <p class="topic" style="margin:0;padding:5px 0 10px 0;">
-Instruct your customers on how they are to retrieve their online purchases from your retail location. We have provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
 
 <p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
 BOPIS INSTRUCTION EXAMPLE</p>
 
-<p class="topic" style="margin:0;padding:8px 0;">Once you've chosen your items, you'll go through our regular online Checkout process to purchase them. Select "In-Store Pickup" from the available delivery methods on the order form for each item you are purchasing.<br><br>
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select "In-Store Pickup" from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, we will send you a notification email when your items are ready for pick up. Orders will be ready for pick up 1 hour after being placed. The person who placed the order can pick up the items. However, an alternate pickup person can retrieve your purchased items only if you call us soon after making your purchase and providing the designated individual's full name and email address. Only the purchaser or designated pickup person can pick up the order.<br><br>
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
 
-Orders will be held at the store for 7 days. If you have not picked up your order after 7 days, we will cancel the order and refund your card at the end of the holding period.</p><br>
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
 
-<p class="topic">
-You Will Need:</p>
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
 
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
 
-&#8226; Valid photo ID.<br>
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
 
-&#8226; Credit card used for purchase.</p><br>
-
-<p class="topic">
-Your Designated Person Will Need:</p>
-
-<p class="topic">
-&#8226; Store Pickup Notification Email.<br>
-
-&#8226; Valid photo ID.</p><br>
-
-<p class="topic">
-If you have questions, call 773-242-0705.</p>
+<p class="topic" style="margin:0 0 5px 0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1520,13 +1632,12 @@ for (i = 0; i < acc.length; i++) {
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container w3-panel w3-card" style="background-color:#ccc;padding:0;margin:80px 0 0 0;">
-<div class="w3-container w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:transparent;padding:0 12px;margin:0;">
+<div class="w3-container w3-panel w3-card" style="padding:0;margin:80px 0 0 0;">
 <div class="w3-row" style="background-color:#ccc;margin:0;">
-<div class="w3-third" style="background-color:#ccc;margin:0;border-radius:2px 2px 0 0;">
+<div class="w3-third" style="background-color:#ccc;margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
-<p class="w3-white" align="center" style="background-color:#fff;font-family:calibri;font-size:16px;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #000;padding:6px 0 5px 0;margin:0;border-radius:2px 2px 0 0;">BEAUTY & HEALTH</p>
-<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;padding:0;margin:0;border-radius:2px 2px 0 0;">
 </div>
 </div>
 
@@ -1548,17 +1659,17 @@ Follow Us Around the Web</p>
 Chicago, IL 60605</p>
 </div>
 
-<div class="nab1" style="width:100%;padding:50px 0 10px 0;margin:0;color:#ccc;">
+<div class="nab1" style="width:100%;padding:36px 0 10px 0;margin:0;color:#ccc;">
 <a href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a>
 <a onclick="ml_account('webforms', '1533738', 'z8f2l1', 'show')" style="cursor:pointer;">Subscribe</a>
 </div>
 </div>
 
-<div class="w3-third w3-card" style="background-color:#ccc;padding:0;margin:0;border-radius:2px 2px 0 0;">
+<div class="w3-third w3-card" style="background-color:#ccc;padding:0;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;">
 <div class="w3-container" style="background-color:#ccc;padding:0;margin:0;">
 <p class="topicfooter">Business Hours</p>
-<div class="hours" style="padding:13px 0 0 0;">
+<div class="hours" style="padding:7px 0 0 0;">
 <ul>
 <li class="today w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;border-radius:3px 0 0 0;"></li>
 <li class="hrstoday w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;border-radius:0 3px 0 0;"></li>
@@ -1667,8 +1778,6 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
-
-
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
