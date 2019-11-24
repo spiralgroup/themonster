@@ -298,16 +298,30 @@ padding: 0;
   }
   }
   
- .topic2 {
-font-family: Open Sans Condensed;
-font-size: 20px;
-color: #000;
+.topic2 {
+font-family: pt sans;
+font-size: 28.5px;
+color: #c0c0c0;
 text-align: center;
-letter-spacing: 1px;
+letter-spacing: 1.5px;
 text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0 0 10px 0;
 margin: 0;
-padding: 0 0 8px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-family: open sans condensed;
+  font-size: 20px;  
+  color: #000;
+  text-shadow: 0 0 1px #000;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 0 0 5px 0;  
+  }
+  }
+  
   
 .topic3 {
 font-family: open sans condensed;
@@ -471,71 +485,6 @@ background-color: #fff;
   margin: 0;
  }
 
-.close {
- font-size: 58px;
- color: white;
- text-shadow: 0 0 1px #222;
- opacity: 0.9;
- padding: 0;
- margin-right: 20px;
- filter: Alpha(opacity=50); /* IE8 and earlier */
-}
-
-.accordion {
-  font-family: roboto;
-  font-size: 14px;
-  text-shadow:0 0 1px #222;
-  letter-spacing: .5px;
-  background-color: #f8f8f8;;
-  color: #222;
-  width: 100%;
-  border: none;
-  border-radius: 3px;
-  text-align: left;
-  outline: none;
-  cursor: pointer;
-  padding: 8px;
-  margin: 0;
-  transition: 0.4s;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #222;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.active, .accordion:hover {
-  background-color: #f0f0f0;
-}
-
-@media all and (max-width: 768px) {
-  .accordion:after, .content {
-  display: none;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .accordion{
-    text-align: center;
-    }
-}
-
-.panel {
-  padding: 0 5px;
-  margin: 5px 0;
-  background-color: #fff;
-  max-height: 0;
-  border: none;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
 body {
     position: relative; 
   }
@@ -610,19 +559,33 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <center>
 <div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
 
 <div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:0;">
+<div class="w3-third" style="margin:0;">
+<div class="column" style="padding:15px 0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/69490486-9d1def00-0e3d-11ea-89bc-2ab7e96371aa.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
+
+</div>
+</div>
+
+<div class="w3-twothird" style="margin:0;">
+<div class="column" style="padding:10px 0;">
 <p class="topic">
 Spiral Group, Inc. is a not for profit organization located in Chicago, Illinois. We seek creative, energetic, self-motivated, and ambitious people to join our team as Independent Sales Representatives. Persons considered hard to employ, due to a criminal past, are strongly encouraged to apply. Ideal candidates will have exceptional service skills, the drive to be successful, and an understanding of the sales process and its related dynamics, or the teachable mentality to learn it.<br><br>
 
-Independent Sales Representatives will be responsible for identifying Small Businesses throughout Chicagoland that would benefit from our products and services. Contact them and present our catalog in an effort to sell to those customers. Obtain necessary information in an effort to better serve them. Set follow-up appointments to close deals.<br><br>
+Independent Sales Representatives will be responsible for identifying Small Businesses throughout Chicagoland that would benefit from our products and services. Contact them and present our catalog in an effort to sell to those customers. Obtain necessary information in an effort to better serve them. Set follow-up appointments to close deals.</p>
+</div>
+</div>
+</div>
 
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:0 10px 10px 10px;">
+<p class="topic">
 This is a commission-based sales opportunity. You'll work as an independent contractor. Our product line will help drive orders and your commissions. Confident, ethical, and committed Independent Sales Representatives will earn 15% commission on all Spiral Group, Inc. products and services they sell to new and existing clients. For a complete description of your responsibilities, <a href="https://github.com/spiralgroup/themonster/files/3853890/Spiral.Group.Inc.ISR.Complete.Job.Description.pdf" style="text-decoration:none;">click here.</a><br><br>
 
-We provide the resources, training, support, and creative autonomy you'll need to serve our clients in the best way possible. With each product sold, you've helped a local small business in achieving and maintaining operational excellence.<br><br>
+We provide the resources, training, support, and autonomy you'll need to serve our clients in the best way possible. With each product sold, you've helped a local small business in achieving and maintaining operational excellence.<br><br>
 
 We know it takes an especially dedicated person to work in sales. That's why we are committed to providing you with an enriching and rewarding opportunity. While our performance expectations are high, so is our dedication to your success.<br><br>
 
