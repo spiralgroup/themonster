@@ -22,14 +22,149 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
 <style type="text/css">
+/* Slider */
+.slick-slide {
+    margin: 12px 6px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 2px;
+   }
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 body, html {
     max-width: 1024px;
     height: 100%;
     margin: 0 auto;
-    background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
+    background-image: linear-gradient(to left, #f2f2f2, #f2f2f2);
 }
  .navbar {
 max-width: 1024px;
@@ -430,17 +565,16 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <center>
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:10px 0 0 0;">
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<center>
-<div class="w3-row-padding" style="background-color:transparent;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 adult toys</p>
     </div>
     </div>
@@ -449,8 +583,8 @@ adult toys</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54082484-5b5b1180-42cb-11e9-85d3-2aa21cc88726.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 bags & luggage</p>
     </div>
     </div>
@@ -458,8 +592,8 @@ bags & luggage</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54080887-fee9f900-42ae-11e9-8cf6-c9b8bfda893e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 infants & children</p>
  </div>
     </div>
@@ -468,8 +602,8 @@ infants & children</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54082485-5c8c3e80-42cb-11e9-8a77-6982ea2fb668.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 jewelry & watches</p>
     </div>
     </div>
@@ -478,8 +612,8 @@ jewelry & watches</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54081044-7b320b80-42b2-11e9-9065-ca925ddbcaa2.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 mens fashion</p>
     </div>
     </div>
@@ -488,8 +622,8 @@ mens fashion</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 novelty items</p>
     </div>
     </div>
@@ -498,8 +632,8 @@ novelty items</p>
  <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54080888-fee9f900-42ae-11e9-86fb-fc6b62c32acc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 perfumes & colognes</p>
     </div>
     </div>
@@ -508,8 +642,8 @@ perfumes & colognes</p>
    <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/54080890-ff828f80-42ae-11e9-95dc-56cbe148d5c6.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 personalized items</p>
     </div>
     </div>
@@ -519,14 +653,36 @@ personalized items</p>
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
 <img src="https://user-images.githubusercontent.com/25410880/54080893-014c5300-42af-11e9-9ece-cb58b21e7bbc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 womens fashion</p>
     </div>
     </div>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="scroll" class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:80px 0 0 0;">
+<p align="center" style="padding:0;margin:0;"><a style="font-family:kaushan script;font-size:26px;letter-spacing:.5px;color:#c0c0c0;text-shadow:0 0 1px #c0c0c0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">play to win.</a></p>
+
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 </div>
 </div>
 </div>
