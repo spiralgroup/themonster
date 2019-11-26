@@ -22,14 +22,148 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
 <style type="text/css">
+/* Slider */
+.slick-slide {
+    margin: 12px 6px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 2px;
+   }
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
 body, html {
     max-width: 1024px;
     height: 100%;
     margin: 0 auto;
-    background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
+    background-image: linear-gradient(to left, #f2f2f2, #f2f2f2);
 }
  .navbar {
 max-width: 1024px;
@@ -320,16 +454,15 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <center>
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:10px 0 0 0;">
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<center>
-<div class="w3-row-padding" style="background-color:transparent;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 appliance repair</p>
     </div>
     </div>
@@ -338,8 +471,8 @@ appliance repair</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53668896-22b39c00-3c2a-11e9-8867-802c38d7dcf3.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 carpet cleaning</p>
     </div>
     </div>
@@ -348,8 +481,8 @@ carpet cleaning</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53665624-d152df00-3c20-11e9-9cae-e8831c85f398.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 home cleaning</p>
  </div>
     </div>
@@ -358,8 +491,8 @@ home cleaning</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53665304-e54a1100-3c1f-11e9-95d0-10766d1f1506.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 home inspection</p>
     </div>
     </div>
@@ -368,8 +501,8 @@ home inspection</p>
  <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53668900-234c3280-3c2a-11e9-8cf1-b40e866e1d9e.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 home moving</p>
     </div>
     </div>
@@ -378,8 +511,8 @@ home moving</p>
  <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53665305-e54a1100-3c1f-11e9-9886-1aefd6f0cffc.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 home renovation</p>
     </div>
     </div>
@@ -388,8 +521,8 @@ home renovation</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53668898-234c3280-3c2a-11e9-96a1-95c41a69deb2.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 home security</p>
     </div>
     </div>
@@ -398,8 +531,8 @@ home security</p>
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53668899-234c3280-3c2a-11e9-807e-dfc84729c08f.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 hvac services</p>
     </div>
     </div>
@@ -408,8 +541,8 @@ hvac services</p>
 <div class="w3-third" style="margin:0 0 50px 0;">
 <div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
 <a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/53668897-22b39c00-3c2a-11e9-9063-d6289079b172.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
-<div class="content w3-panel" style="background-color:#f0f0f0;padding:0;margin:0;">
-<p style="font-family:khand medium;font-size:14px;color:#000;letter-spacing:1px;padding:4px 0;text-shadow:0 0 1px #000;padding:6px;margin:0;">
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand medium;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
 pet services & supplies</p>
       </div>
     </div>
@@ -421,6 +554,29 @@ pet services & supplies</p>
 </div>
 </div>
 </div>
+
+<center>
+<div id="scroll" class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:80px 0 0 0;">
+<p align="center" style="padding:0;margin:0;"><a style="font-family:kaushan script;font-size:26px;letter-spacing:.5px;color:#c0c0c0;text-shadow:0 0 1px #c0c0c0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">play to win.</a></p>
+
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 <script>
 window.onscroll = function() {myFunction()};
