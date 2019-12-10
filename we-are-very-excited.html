@@ -20,38 +20,35 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://apis.google.com/js/platform.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 <style type="text/css">
 body, html {
-    max-width: 1235px;
+    max-width: 1024px;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
 }
-   @media screen and (min-width: 1090px) {
-  body {
-  display: none;  
-  }
-  }
+ .navbar {
+max-width: 1024px;
+ margin: 0 auto;
+   background-color: #f5f5f5;
+ border: none;
+}
+
 .header {
   padding: 0;
-  background: #ffffff;
-  color: #585858;
-  margin: 0;
-  float: left;
-  display: block;
+  margin: 0 auto;
 }
 .top-container {
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  float: left;
-}
+   padding: 0;
+  margin: 0 auto;
+  
+   }
 
 .nab {
   overflow: hidden;
@@ -109,13 +106,6 @@ body, html {
   text-decoration: none;
 }
 
-.navbar {
-position: fixed;
-top: 0;
-max-width: 1225px;
-background-color: #fff;
-border: none;
-}
 
 * {
     box-sizing: border-box;
@@ -160,12 +150,6 @@ border: none;
  }
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .active1 {
   background-color: #e6e6e6;}
   
@@ -179,19 +163,26 @@ margin: 0;
 padding: 0;
 }
   .topic1 {
-font-family:calibri;
-font-size:17px;
-color:#000;
-text-shadow:0 0 1px #000;
-text-align: justify;
-letter-spacing: .5px;
+font-family: open sans condensed;
+font-size: 20px;
+color: dodgerblue;
+text-shadow: 0 0 1px dodgerblue;
+text-align: left;
+letter-spacing: 1px;
 padding: 0;
-margin:0;
+margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .topic1 {
+  font-size: 16.5px;  
+  text-align: center;
+    }
+  }
+  
 .topic2 {
 font-family: roboto;
-font-size: 13.5px;
+font-size: 15px;
 color: #000;
 text-align: justify;
 letter-spacing: .5px;
@@ -200,6 +191,15 @@ font-weight: normal;
 padding: 0 0 10px 0;
 margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-size: 13.5px;  
+  text-align: center;
+  padding: 0 0 10px 0;  
+  }
+  }
+  
 .topic3 {
 font-family: roboto;
 font-size: 13px;
@@ -210,27 +210,21 @@ padding: 0;
 margin: 0;
 }
 
-.topic42 {
-font-family: roboto;
-font-size: 14px;
-color: #222;
-text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
-padding: 0;
-margin: 0 0 10px 0;
-}
-
 .topic4 {
 font-family: roboto;
-font-size: 14px;
-color: #222;
+font-size: 15px;
+color: #000;
 text-align: justify;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
+text-shadow: 0 0 1px #222;
 padding: 0;
 margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+ .topic4 {
+  text-align: center;  
+   }
+  }
 
 .topic4b {
 font-family: open sans condensed;
@@ -268,13 +262,13 @@ margin: 0;
 
 
 @media screen and (max-width: 768px) {
-  .topic, .topic1, .topic2, .topic3, .topic4, .topic4c {
+  .topic, .topic1, .topic3, .topic4c {
   text-align: center;  
   padding: 0 5px;  
   }
   }
   
-  .button {
+ .button {
   border-radius: 2px;
   background-color: #f0f0f0;
   border: none;
@@ -319,16 +313,17 @@ margin: 0;
 main{
   width: 100%;
   overflow: hidden;
-  font-family: 'Expletus Sans', cursive; 
-}
+  font-family: 'Expletus Sans', cursive;
+ }
 
 .hero{
   width: 100%;
-  max-width: 1235px;
-  height: 500px;
+  max-width: 1024px;
+  height: auto;
   text-align: center;
-  margin: 0 auto;
-  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background: transparent;
   position: relative; 
   color: #f5f5f5;
   text-shadow:0 1px 1px #000;
@@ -360,11 +355,11 @@ font-family: 'Expletus Sans', cursive;
   width: 100%;
 }
 
+
 @media all and (max-width: 768px) {
   .hero{
-    height: 50vw;
+    height: auto;
   }
-  
   .hero h1{
     font-size: 10vw;
     top: 13vw;
@@ -375,7 +370,7 @@ font-family: 'Expletus Sans', cursive;
   }
 }
 
-hr.style-one { border: 0; height: 1px; width:100%; background-image: linear-gradient(to right, #f5f5f5, #ccc, #f5f5f5);}
+hr.style-one { border: 0; height: 2px; background-image: linear-gradient(to right, #f8f8f8, #f5f5f5, #f8f8f8);}
 
 </style>
 
@@ -391,18 +386,19 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
 </head>
-<body style="width:100%;">
+<body>
+<center>
 <div class="top-container" style="width:100%;padding:0;margin:0;">
 <div class="header" id="myHeader">
-<nav class="navbar navbar-default" style="width:100%;border-radius:0 0 2px 2px;box-shadow:0 2px 8px #777;">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Privacy Policy</span>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Legendary</span>
 <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -417,27 +413,29 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <li><a href="https://www.spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
 </ul></ul>
-
-<ul class="nav navbar-nav navbar-right">
+<ul class="nav navbar-nav navbar-right" style="margin:0 1px;">
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
 <li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
-    </ul>
+</ul>
 </div>
 </div>
 </nav>
-</div>
-</div>
+
 <center>
 <main>
-<div class="hero">
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel w3-card-2 w3-round-small" style="background-color:#f5f5f5;width:100%;padding:0;margin:65px 0 20px 0;">
+<div class="hero w3-round-small">
 <h1>we're excited</h1>
 <p style="text-decoration:none;color:#fff;">useful tips to help you prepare</p>
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/66757631-62459600-ee51-11e9-81e5-b32a2b8bcadd.png" />
+<img class="w3-round-small" src="https://user-images.githubusercontent.com/25410880/66757631-62459600-ee51-11e9-81e5-b32a2b8bcadd.png" />
+</div>
+</div>
 </div>
 </main>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
 <div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0;border-radius:8px 8px 2px 2px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
@@ -505,7 +503,7 @@ If you haven't done so already, review the contents of the following web pages b
 <p class="topic1">3. DETERMINE AFFORDABILITY</p>
 
 <p class="topic2">
-Before your consult, please review our prices to determine affordability. If you decide to use our products and services after your consultation, then <a href="https://spiralgroup.github.io/themonster/special-offers.html" target="_blank" style="text-decoration:none;">click here to check out our Special Offers</a>.</p><br>
+Before your consult, review our prices to determine affordability. If you decide to use our products and services after your consultation, don't forget to check out our Special Offers.</p><br>
 
 <p class="topic1">4. TAKE NOTES</p>
 
