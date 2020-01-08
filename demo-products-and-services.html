@@ -18,7 +18,7 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -284,10 +284,11 @@ body, html {
 hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: linear-gradient(to right, #f1f1f1, #cceeff, #f1f1f1); }
 
 .topic {
-font-family: roboto;
+font-family: roboto condensed;
 font-size: 14px;
 letter-spacing: .5px;
 color: #000;
+text-shadow: 0 0 1px #222;
 text-align: justify;
 margin: 0;
 padding: 0;
@@ -332,6 +333,23 @@ padding: 65px 0 75px 0;
   padding: 0;
   font-size: 1px;
   display: none;
+  }
+  }
+  
+  .topic3a {
+font-family: open sans condensed;
+font-size: 38px;
+letter-spacing: .5px;
+color: #c0c0c0;
+text-shadow: 0 0 1px #c0c0c0;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3a {
+ font-size: 30px;
   }
   }
   
@@ -620,7 +638,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item1" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal1" role="dialog">
@@ -634,9 +652,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -691,7 +709,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item2" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal2"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal2"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal2" role="dialog">
@@ -705,9 +723,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -762,7 +780,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item3" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal3"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal3"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal3" role="dialog">
@@ -776,9 +794,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -833,7 +851,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item4" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/69305963-c5f27a00-0bda-11ea-9307-426290546d23.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal4"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal4"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal4" role="dialog">
@@ -847,9 +865,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69305963-c5f27a00-0bda-11ea-9307-426290546d23.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -904,7 +922,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item5" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal5"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal5"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal5" role="dialog">
@@ -918,9 +936,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -975,7 +993,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item6" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/69306161-6a74bc00-0bdb-11ea-86af-c83cadde26bc.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal6"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal6"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal6" role="dialog">
@@ -989,9 +1007,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69306161-6a74bc00-0bdb-11ea-86af-c83cadde26bc.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -1046,7 +1064,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item7" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/69306475-672e0000-0bdc-11ea-9b0c-b462cbf5e65e.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal7"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal7"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal7" role="dialog">
@@ -1060,9 +1078,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69306475-672e0000-0bdc-11ea-9b0c-b462cbf5e65e.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -1117,7 +1135,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item8" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal8"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal8"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal8" role="dialog">
@@ -1131,9 +1149,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -1188,7 +1206,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item9" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/69306343-f686e380-0bdb-11ea-8331-36359556bc40.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal9"> View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:dodgerblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal9"> View Product Details</button>
 </div>
 
 <div class="modal fade" id="myModal9" role="dialog">
@@ -1202,9 +1220,9 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69306343-f686e380-0bdb-11ea-8331-36359556bc40.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:darkblue;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
-<button class="w3-button" style="background-color:darkblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
 </div>
 </div>
 
@@ -1260,10 +1278,10 @@ DESIGNATED PERSON WILL NEED</p>
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
-<p align="center" style="font-family:open sans condensed;font-size:38px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:20px 0 10px 0;text-decoration:none;">SPECIAL OFFERS</p></div>
+<p class="topic3a">SPECIAL OFFERS</p></div>
 </div>
 </div>
 </div>
@@ -1272,7 +1290,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item10" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/69305794-1ddcb100-0bda-11ea-84b9-3563c5c2630f.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal10"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#00b386;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal10"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
 
 <div class="modal fade" id="myModal10" role="dialog">
@@ -1296,9 +1314,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-container" style="width:100%;">
 <div class="column" style="padding:10px 5px;margin:0;">
 <p class="topic">
-The details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email using the "Email Special Offers" button at the bottom of this web page, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
-
-<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+Details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email using the "Email Special Offers" button at the bottom of this web page, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list. Add up to 1,000 subscribers for free.</p>
 </div>
 </div>
 </div>
@@ -1307,15 +1323,15 @@ The details of your Special Offer will be added to this section. Customers can r
 <div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
-<button class="btn btn-primary btn-block w3-white" style="border:2px solid darkblue;border-radius:2px;padding:8px 0;margin:10px 0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
 
-<hr style="width:100%;border-bottom:1px solid darkblue;padding:0;margin:0;">
+<hr style="width:100%;border-bottom:1px solid dodgerblue;padding:0;margin:0;">
 
-<p align="center" style="font-family:roboto;font-size:14px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
 Use code TSA49 at checkout</p>
 
-<p align="center" style="font-family:roboto;font-size:11px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
 Discount codes cannot be combined</p></button></a>
 </div>
 </div>
@@ -1323,15 +1339,15 @@ Discount codes cannot be combined</p></button></a>
 <div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
-<button class="btn btn-primary btn-block w3-white" style="border:2px solid darkblue;border-radius:2px;padding:8px 0;margin:10px 0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
+<button class="btn btn-primary btn-block" style="background-color:#00b386;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
 
-<hr style="width:100%;border-bottom:1px solid darkblue;padding:0;margin:0;">
+<hr style="width:100%;border-bottom:1px solid #00b386;padding:0;margin:0;">
 
-<p align="center" style="font-family:roboto;font-size:14px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
 Print Special Offer</p>
 
-<p align="center" style="font-family:roboto;font-size:11px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
 Present to cashier in-store</p></button></a>
 </div>
 </div>
@@ -1388,7 +1404,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item11" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/69306720-592caf00-0bdd-11ea-979d-41af878eec51.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal11"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#00b386;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal11"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
 
 <div class="modal fade" id="myModal11" role="dialog">
@@ -1412,9 +1428,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-container" style="width:100%;">
 <div class="column" style="padding:10px 5px;margin:0;">
 <p class="topic">
-The details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email using the "Email Special Offers" button at the bottom of this web page, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
-
-<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+Details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email using the "Email Special Offers" button at the bottom of this web page, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list. Add up to 1,000 subscribers for free.</p>
 </div>
 </div>
 </div>
@@ -1423,15 +1437,15 @@ The details of your Special Offer will be added to this section. Customers can r
 <div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
-<button class="btn btn-primary btn-block w3-white" style="border:2px solid darkblue;border-radius:2px;padding:8px 0;margin:10px 0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
 
-<hr style="width:100%;border-bottom:1px solid darkblue;padding:0;margin:0;">
+<hr style="width:100%;border-bottom:1px solid dodgerblue;padding:0;margin:0;">
 
-<p align="center" style="font-family:roboto;font-size:14px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
 Use code TSA49 at checkout</p>
 
-<p align="center" style="font-family:roboto;font-size:11px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
 Discount codes cannot be combined</p></button></a>
 </div>
 </div>
@@ -1439,15 +1453,15 @@ Discount codes cannot be combined</p></button></a>
 <div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
-<button class="btn btn-primary btn-block w3-white" style="border:2px solid darkblue;border-radius:2px;padding:8px 0;margin:10px 0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
+<button class="btn btn-primary btn-block" style="background-color:#00b386;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
 
-<hr style="width:100%;border-bottom:1px solid darkblue;padding:0;margin:0;">
+<hr style="width:100%;border-bottom:1px solid #00b386;padding:0;margin:0;">
 
-<p align="center" style="font-family:roboto;font-size:14px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
 Print Special Offer</p>
 
-<p align="center" style="font-family:roboto;font-size:11px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
 Present to cashier in-store</p></button></a>
 </div>
 </div>
@@ -1504,7 +1518,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
 <div id="item12" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
 <img src="https://user-images.githubusercontent.com/25410880/69306933-03a4d200-0bde-11ea-9d71-6a48fbc33ff1.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:darkblue;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal12"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#00b386;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal12"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
 </div>
 
 <div class="modal fade" id="myModal12" role="dialog">
@@ -1528,9 +1542,7 @@ DESIGNATED PERSON WILL NEED</p>
 <div class="w3-container" style="width:100%;">
 <div class="column" style="padding:10px 5px;margin:0;">
 <p class="topic">
-The details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email using the "Email Special Offers" button at the bottom of this web page, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.<br><br>
-
-<a href="https://mailerlite.com" target="blank" style="text-decoration:none;font-weight:normal;color:darkblue;">MailerLite</a> is our email list manager. Add up to 1,000 subscribers free of charge.</p>
+Details of your Special Offer will be added to this section. Customers can redeem offers online, have them delivered via email using the "Email Special Offers" button at the bottom of this web page, or print them using a desktop. When delivered to their inbox, customers are also subscribing to your mailing list. Add up to 1,000 subscribers for free.</p>
 </div>
 </div>
 </div>
@@ -1539,15 +1551,15 @@ The details of your Special Offer will be added to this section. Customers can r
 <div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
-<button class="btn btn-primary btn-block w3-white" style="border:2px solid darkblue;border-radius:2px;padding:8px 0;margin:10px 0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
 
-<hr style="width:100%;border-bottom:1px solid darkblue;padding:0;margin:0;">
+<hr style="width:100%;border-bottom:1px solid dodgerblue;padding:0;margin:0;">
 
-<p align="center" style="font-family:roboto;font-size:14px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
 Use code TSA49 at checkout</p>
 
-<p align="center" style="font-family:roboto;font-size:11px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
 Discount codes cannot be combined</p></button></a>
 </div>
 </div>
@@ -1555,15 +1567,15 @@ Discount codes cannot be combined</p></button></a>
 <div class="w3-half" style="margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
-<button class="btn btn-primary btn-block w3-white" style="border:2px solid darkblue;border-radius:2px;padding:8px 0;margin:10px 0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #000;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
+<button class="btn btn-primary btn-block" style="background-color:#00b386;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
 
-<hr style="width:100%;border-bottom:1px solid darkblue;padding:0;margin:0;">
+<hr style="width:100%;border-bottom:1px solid #00b386;padding:0;margin:0;">
 
-<p align="center" style="font-family:roboto;font-size:14px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:14px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
 Print Special Offer</p>
 
-<p align="center" style="font-family:roboto;font-size:11px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:11px;color:#f5f5f5;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
 Present to cashier in-store</p></button></a>
 </div>
 </div>
@@ -1655,18 +1667,18 @@ for (i = 0; i < acc.length; i++) {
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
-<p align="center" style="font-family:open sans condensed;font-size:38px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:20px 0 10px 0;text-decoration:none;">ABOUT US</p></div>
+<p class="topic3a">ABOUT US</p></div>
 </div>
 </div>
 </div>
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:1px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:10px;margin:0;">
 
 <div id="about" class="w3-row-padding" style="margin:0;">
 <div class="w3-threethird" style="margin:0;">
@@ -1684,10 +1696,10 @@ Our commitment to assisting other entrepreneurs take their small businesses furt
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:100px 0 0 0;">
 <div class="w3-row-padding" style="background-color:#f2f2f2;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
-<p align="center" style="font-family:open sans condensed;font-size:38px;color:darkblue;letter-spacing:.5px;text-shadow:0 0 1px darkblue;padding:0;margin:20px 0 10px 0;text-decoration:none;">OUR TEAM</p></div>
+<p class="topic3a">OUR TEAM</p></div>
 
 <div class="w3-row-padding" style="margin:0;">
 <div class="w3-third" style="margin:0 0 15px 0;">
@@ -1846,7 +1858,7 @@ $(document).ready(function(){
 
 <center>
 <div id="scroll" class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:80px 0 0 0;">
-<p align="center" style="padding:0;margin:0;"><a style="font-family:kaushan script;font-size:26px;letter-spacing:.5px;color:darkblue;text-shadow:0 0 1px darkblue;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">play to win.</a></p>
+<p align="center" style="padding:0;margin:0;"><a style="font-family:kaushan script;font-size:26px;letter-spacing:.5px;color:#f5f5f5;text-shadow:1px 1px 3px #333;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">our sponsors</a></p>
 
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
 <div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
