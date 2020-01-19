@@ -368,17 +368,16 @@ padding: 0 0 10px 0;
 margin: 0;
 }
 
- @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
   .topic2 {
   font-family: open sans condensed;
-  font-size: 23px;  
-  color: #c0c0c0;
+  font-size: 22px;  
+  color: #000;
   text-shadow: 0 0 1px #000;
   text-align: center;
   letter-spacing: .5px;
-  padding: 0 0 5px 0;  
-  }
-  }
+    }
+  }  
   
 .topic3 {
 font-family: roboto;
@@ -394,10 +393,10 @@ margin: 0;
 .topic33 {
 font-family: roboto;
 font-size: 15px;
-color: #333;
+color: #222;
 text-align: center;
 letter-spacing: 0;
-text-shadow: 0 0 1px #333;
+text-shadow: 0 0 1px #000;
 padding: 0;
 margin: 0;
 }
@@ -408,7 +407,7 @@ font-size: 15px;
 color: #222;
 text-align: center;
 letter-spacing: 0;
-text-shadow: 0 0 1px #333;
+text-shadow: 0 0 1px #000;
 padding: 0;
 margin: 0;
 }
@@ -450,7 +449,7 @@ padding: 10px 0;
 .topic4b {
 font-family: open sans condensed;
 font-size: 20px;
-color: #222;
+color: #000;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
@@ -517,15 +516,27 @@ margin: 0;
 
 .topic4c1 {
 font-family: pt sans;
-font-size: 20px;
-color: dodgerblue;
+font-size: 28.5px;
+color: #c0c0c0;
 text-align: center;
+letter-spacing: 1.5px;
 text-shadow: 0 0 1px #000;
 font-weight: normal;
-padding: 5px 0;
+padding: 0 0 10px 0;
 margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+ .topic4c1 {
+  font-family: open sans condensed;
+font-size: 24px;
+color: #333;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+   }
+  }
+  
 .topicprestige {
 font-family: roboto;
 font-size: 14px;
@@ -675,6 +686,17 @@ margin: 0;
  opacity: 1;
   right: 0;
 }
+
+.city {
+padding: 30px 0 0 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .city {
+  padding: 10px 0 0 0;
+  }
+  }
 </style>
 
 <!-- MailerLite Universal -->
@@ -724,9 +746,8 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </nav>
 
-
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:100px 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:100px 0 90px 0;">
 <p class="topic2">SG Local Ad Services</p>
 
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
@@ -736,8 +757,6 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 Finding the right advertising solution for your small business can be complicated and time-consuming. With so many online advertising compensation models, it's no wonder. However, it's still important to educate consumers about your brand through online marketing efforts.<br><br>
 
 That's why we developed SG Local Ad Services. Our new ad products and pricing model were created with the small business owner in mind. Advertise with us and never worry about paying for CPA's, CPC's, or CPI's. Promoting your brand to people who matter has never been this easy.</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -824,11 +843,11 @@ Marketing agencies seeking high-quality, low cost advertising solutions for thei
 </div>
 </div>
 
-<div id="ECA" class="w3-container city" style="display:none;width:100%;padding:30px 0 0 0;margin:0;">
+<div id="ECA" class="city" style="display:none;width:100%;">
 <div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0 0 30px 0;">
 <div class="w3-threethird" style="background-color:#f5f5f5;margin:0;">
-<p class="topic2">Exclusive Category Ads</p>
+<p class="topic4c1">Exclusive Category Ads</p>
 
 <p class="topic4b">
 Acquire territory for your small business in the SG MarketPlace. An ECA can help you market your products to a specific audience.
@@ -982,8 +1001,7 @@ Free with any purchase</p>
 <div class="column" style="padding:0;margin:10px 0 0 0;">
 <p class="topicprestige">Displays 4 to 6 Items</p>
 <a class="w3-button w3-blue" href="https://form.jotform.com/200181106011129" style="border-radius:2px;text-decoration:none;padding:20px;box-shadow:0 0 22px #333;margin:10px 0;">
-<p class="topic3">$139 Per Month &#8226; Order Now</p>
-</a>
+<p class="topic3">$139 Per Month &#8226; Order Now</p></a>
 </div>
 </div>
 </div>
@@ -1009,7 +1027,6 @@ No need to worry about cost per click, which can lead to click fraud. You pay fo
 </div>
 </div>
 </div>
-
 
 <div class="w3-half" style="margin:0 0 20px 0;">
 <div class="column" style="margin:0;">
@@ -1073,11 +1090,11 @@ When our shoppers click on your ECA, they're presented with your featured produc
 </div>
 </div>
 
-<div id="SFLA" class="w3-container city" style="display:none;width:100%;padding:30px 0 0 0;margin:0;">
+<div id="SFLA" class="city" style="display:none;width:100%;">
 <div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0 0 10px 0;">
 <div class="w3-threethird" style="background-color:#f5f5f5;margin:0;">
-<p class="topic2">Scrolling Footer Logo Ads</p>
+<p class="topic4c1">Scrolling Footer Logo Ads</p>
 
 <p class="topic4b">
 Scrolling Footer Logo Ads appear on all SG MarketPlace Seller Pages. Don't have a logo? We'll create a temporary for free.</p>
@@ -1189,11 +1206,11 @@ When SG MarketPlace shoppers click on your SFLA, they're taken to your external 
 </div>
 </div>
 
-<div id="Prestige" class="w3-container city" style="display:none;width:100%;padding:30px 0 0 0;margin:0;">
+<div id="Prestige" class="city" style="display:none;width:100%;">
 <div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0 0 30px 0;">
+<div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0;">
 <div class="w3-threethird" style="background-color:#f5f5f5;margin:0;">
-<p class="topic2">The Prestige</p>
+<p class="topic4c1">The Prestige</p>
 
 <p class="topic4b">
 Get both Ad Products for only $299. The Prestige ads run for 90 days. Pay $507 when purchased separately.</p>
@@ -1280,7 +1297,6 @@ Free with any purchase</p>
 </div>
 </div>
 
-
 <center>
 <div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:30px 0 0 0;">
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
@@ -1338,7 +1354,7 @@ Free with any purchase</p>
 </div>
 </div>
 
-<div class="w3-half" style="margin:0 0 30px 0;">
+<div class="w3-half" style="margin:0 0 20px 0;">
 <div class="column" style="margin:0;">
 <div class="w3-panel w3-dark-grey w3-hover-shadow" style="border-radius:3px;padding:20px 10px;margin:0;">
 <p class="topic1">4</p>
@@ -1358,7 +1374,7 @@ Free with any purchase</p>
 </div>
 
 <center>
-<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:60px 0 0 0;margin:0;">
+<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:80px 0 0 0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic2">
