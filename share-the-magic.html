@@ -207,6 +207,24 @@ img {
     box-sizing: border-box;
 }
 
+.navbar {
+max-width: 1024px;
+ margin: 0 auto;
+   background-color: #f5f5f5;
+ border: none;
+ z-index: 1;
+}
+
+.header {
+  padding: 0;
+  margin: 0 auto;
+}
+.top-container {
+   padding: 0;
+  margin: 0 auto;
+  
+   }
+   
 .column {
     width: 100%;
     float: left;
@@ -616,9 +634,7 @@ margin: 0;
   }
 }
 
- hr.style-one { border: 0; height: 1px; width:50%; background-image: linear-gradient(to right, #ccc, #222, #ccc);}
-  
-  .button {
+ .button {
   border-radius: 2px;
   background-color: #f0f0f0;
   border: none;
@@ -674,9 +690,43 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <!-- End MailerLite Universal -->
 </head>
 
-<body style="width:100%;">
+<body>
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:50px 0;">
+<div class="top-container" style="width:100%;padding:0;margin:0;">
+<div class="header" id="myHeader">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Stay In The Game</span>
+<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
+<li class="active1"><a href="https://www.spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
+</ul></ul>
+<ul class="nav navbar-nav navbar-right" style="margin:0 1px;">
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>ADD LISTING</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MARKETPLACE</span></a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:100px 0;">
 <p class="topic2">SG Local Ad Services</p>
 
 <div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
@@ -1251,7 +1301,7 @@ Free with any purchase</p>
 </div>
 
 <a class="w3-button w3-blue" href="https://form.jotform.com/200181360736145" style="border-radius:2px;text-decoration:none;padding:20px;box-shadow:0 0 22px #ccc;margin:10px 0;">
-<p class="topic3">$299 Per 90 Days &#8226; Order Now</p>
+<p class="topic3">$299 for 90 Days &#8226; Order Now</p>
 </a>
 
 <center>
@@ -1359,6 +1409,12 @@ If you don't have a logo for your small business, we will create a temporary for
 <div class="panel">
 <p class="topic4">
 If you still have questions about our ad products and services, call us at 773-242-0705. We're open every day from 8am to 8pm.</p>
+</div>
+
+<div class="accordion">Have an SG Seller Account?</div>
+<div class="panel">
+<p class="topic4">
+If you have an SG Seller Account, do not order ad products using the online order forms. Instead, contact your Account Manager and he/she will place an order for you.</p>
 </div>
 </div>
 </div>
