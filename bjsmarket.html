@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>Food For The Soul</title>
+<title>SG MarketPlace Features &#124; Spiral Group, Inc.</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Food For The Soul</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|PT+Sans|Open+Sans+Condensed:300|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Khand+Medium|PT+Sans|Open+Sans+Condensed:300|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
+<!-- This is The Monster. --><!-- Michelle A. Jones -->
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         arrows: false,
         dots: false,
         pauseOnHover: true,
@@ -41,16 +44,40 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <style type="text/css">
 
 /* Slider */
 .slick-slide {
-    margin: 18px 5px;
-    padding: 0;
+    margin: 20px 10px;
    }
 .slick-slide img {
     width: 100%;
-    border-radius: 2px;
 }
 .slick-slider
 {
@@ -211,8 +238,8 @@ body, html {
    
   .button {
   background-color: #004d00;
-  border: 1px solid transparent;
-   border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #004d00;
   text-align: center;
   color: #fff !important;
   text-shadow: 0 0 1px #ccc;
@@ -222,37 +249,215 @@ body, html {
   text-decoration: none;
   transition: all 0.5s;
   cursor: pointer;
-  padding: 0;
+  padding: 1px;
   margin: 0;
  }
-
-.button span:after {
-  content: '';
-  position: absolute;
- opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 0.5s;
-}
 
 .button:hover span {
   padding-right: 5px;
   color: #004d00;
-   text-shadow: 0 0 1px #333;
-   
+  text-shadow: 0 0 1px #333; 
 }
 
 .button:hover span:after {
- opacity: 1;
+ opacity: 0.1;
   right: 0;
  }
 
   li:hover span {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
-   transition: 0.5s;
+  transition: 0.5s;
 }
 
+td {
+  text-align: center;
+  width: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: roboto;
+  font-size: 13.5px;
+  text-shadow: 0 0 1px #fff;
+  letter-spacing: .5px;
+  float: left;
+  padding-left: 40px !important;
+  border-bottom: 3px solid #ffa333;
+  border-top: none !important;
+  margin: 0 0 2px 0;
+ }
+ 
+ .topic {
+font-family: roboto;
+font-size: 13.5px;
+letter-spacing: .5px;
+color: #222;
+text-align: justify;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic {
+  text-align: center;  
+  padding: 5px;  
+  margin: 0;
+  }
+  }
+ 
+.topic1 {
+font-family: roboto;
+font-size: 15px;
+letter-spacing: .5px;
+color: #fff;
+text-shadow: 0 0 1px #ccc;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+    @media screen and (max-width: 768px) {
+  .topic1 {
+   font-size: 11px;
+  }
+  }
+
+.topic2 {
+font-family: roboto condensed;
+font-size: 14px;
+color: #333;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #333;
+padding: 0;
+margin: 0;
+}
+
+.topic3 {
+font-family: roboto;
+font-size: 13px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #ccc;
+padding: 0;
+margin: 0;
+}
+
+.topic4 {
+font-family: roboto condensed;
+font-size: 15px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic4 {
+ text-align: center;
+  font-size: 13.5px; 
+    }
+  }
+  
+.topic5 {
+font-family: roboto condensed;
+font-size: 15.5px;
+color: #222;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #000;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic5 {
+   font-size: 13.5px; 
+    }
+  }
+    
+  .topic6 {
+font-family: roboto condensed;
+font-size: 20.5px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+padding: 0;
+margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic6 {
+  font-family: open sans condensed;
+  font-size: 20px; 
+    }
+  }
+  
+.topicfooter {
+font-family: roboto;
+font-size: 28px;
+color: #000;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: .5px;
+padding: 35px 0 0 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topicfooter {
+  font-size: 20px; 
+    }
+  }
+  
+.topicfooter1 {
+font-family: roboto;
+font-size: 14.5px;
+color: #000;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: .5px;
+padding: 0;
+margin: 0;
+}
+
+.topicfooter2 {
+font-family: roboto;
+font-size: 19px;
+color: #000;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: 1px;
+padding: 10px 0 0 0;
+margin: 0;
+}
+
+.topicmodal {
+font-family: pt sans;
+font-size: 38.5px;
+color: #c0c0c0;
+text-align: center;
+letter-spacing: 1.5px;
+text-shadow: 0 0 1px #000;
+font-weight: normal;
+padding: 0 0 10px 0;
+margin: 0;
+}
+
+  @media screen and (max-width: 768px) {
+  .topicmodal {
+  font-family: open sans condensed;
+  font-size: 22px;  
+  color: #000;
+  text-shadow: 0 0 1px #000;
+  text-align: center;
+  letter-spacing: .5px;
+    }
+  }  
+  
 .hours {
   width: 250px;
   display: block;
@@ -282,136 +487,11 @@ background-color: #ccc;
 
 .c { clear: both; }
 
-
-td {
-  text-align: center;
-  width: 50%;
-  box-sizing: border-box;
-  color: #fff;
-  font-family: roboto;
-  font-size: 14.5px;
-  padding-left: 0;
-  float: left;
-  border-bottom: 3px solid #ffa333;
-  border-top: none !important;
-  margin: 0 0 2px 0;
- }
-
-.rmenu {
-  width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
-  color: #fff;
-  font-family: roboto;
-  font-size: 14.5px;
-  padding: 0;
-  margin: 0;
- }
- 
-    @media screen and (max-width: 768px) {
-  .rmenu {
-   font-size: 12px;
-  }
-  }
-
-.rmenu ul {
-  padding-left: 0;
-  float: left;
-  padding: 0;
-  }
-
-.rmenu li {
-background-color: #ff8c00;
-  float: left;
-  width: 50%;
-  padding: 8px 4px;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-align: center;
-  border-bottom: 3px solid #ffa333;
-  }
-
-.topic1 {
-font-family: roboto;
-font-size: 15px;
-letter-spacing: .5px;
-color: #fff;
-text-shadow: 0 0 1px #ccc;
-text-align: center;
-margin: 0;
-padding: 0;
-}
-    @media screen and (max-width: 768px) {
-  .topic1 {
-   font-size: 11px;
-  }
-  }
-
-.topic2 {
-font-family: roboto;
-font-size: 11px;
-color: #222;
-text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #ccc;
-padding: 0;
-margin: 0;
-}
-
-.topic3 {
-font-family: roboto;
-font-size: 13px;
-color: #fff;
-text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #ccc;
-padding: 0;
-margin: 0;
-}
-
-.topicfooter {
-font-family: roboto;
-font-size: 15px;
-color: #000;
-text-shadow: 0 0 1px #222;
-text-align: center;
-letter-spacing: .5px;
-padding: 7px 0 0 0;
-margin: 0;
-}
-
-.topicfooter1 {
-font-family: roboto;
-font-size: 14.5px;
-color: #000;
-text-shadow: 0 0 1px #222;
-text-align: center;
-letter-spacing: .5px;
-padding: 0;
-margin: 0;
-}
-
-.topicfooter2 {
-font-family: roboto;
-font-size: 19px;
-color: #000;
-text-shadow: 0 0 1px #222;
-text-align: center;
-letter-spacing: 1px;
-padding: 10px 0 0 0;
-margin: 0;
-}
-
 li:hover span {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
    transition: 0.5s;
 }
-
-.action {
-  background-color: #ff8c00;
-  color: #000 !important;
-  }
 
 .fa {
 background-color: #fff;
@@ -428,31 +508,67 @@ background-color: #fff;
   color: #333 !important;
 }
 
-main{
+.accordion {
+  font-family: pt sans;
+  font-size: 16px;
+  text-shadow: 0 0 1px #fff;
+  letter-spacing: 1px;
+  background-color: #cb3434;
+  color: #fff;
   width: 100%;
-  overflow: hidden;
-  font-family: 'Expletus Sans', cursive;
-  }
-
-.hero{
-  width: 100%;
-  max-width: 1024px;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  position: relative; 
-   }
-
-.hero img{
-  width: 100%;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  margin: 5px 0;
+  transition: 0.4s;
 }
 
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+}
+
+.active, .accordion:hover {
+  background-color: #004d00;
+}
+
+.panel {
+  padding: 0 12px;
+  margin: 5px 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
 
 @media all and (max-width: 768px) {
-  .hero{
-    height: auto;
+  .accordion{
+  font-size: 12px;
+   padding: 12px;
+   text-align: center;
   }
+}
+
+@media all and (max-width: 768px) {
+  .accordion:after, .content {
+  display: none;
+  }
+}
+
+.close {
+ font-size: 58px;
+ color: white;
+ text-shadow: 0 0 1px #222;
+ opacity: 0.9;
+ padding: 0;
+ margin-right: 20px;
+ filter: Alpha(opacity=50); /* IE8 and earlier */
 }
 
 </style>
@@ -476,397 +592,32 @@ main{
 
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav">
-<li class="action"><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12.5px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;font-weight:normal;padding:16px 0;margin:0 7px;"><span>MENU</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#004d00;letter-spacing:.5px;text-shadow:0 0 1px #333;font-weight:normal;padding:16px 0;margin:0 7px;"><span>SPECIALS</span></a></li>
-<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#004d00;letter-spacing:.5px;text-shadow:0 0 1px #333;font-weight:normal;padding:16px 0;margin:0 7px;"><span>CATERING</span></a></li>
-<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#004d00;letter-spacing:.5px;text-shadow:0 0 1px #333;font-weight:normal;padding:16px 0;margin:0 7px;"><span>JOBS</span></a></li></ul>
+<li><a href="#menu" style="font-family:roboto;font-size:12px;color:#004d00;letter-spacing:.5px;text-shadow:0 0 1px #333;font-weight:normal;padding:17px 5px;margin:0 2px;"><span>MENU</span></a></li>
+<li><a href="#specials" style="font-family:roboto;font-size:12px;color:#004d00;letter-spacing:.5px;text-shadow:0 0 1px #333;font-weight:normal;padding:17px 5px;margin:0 2px;"><span>SPECIALS</span></a></li>
+<li><a href="#catering" style="font-family:roboto;font-size:12px;color:#004d00;letter-spacing:.5px;text-shadow:0 0 1px #333;font-weight:normal;padding:17px 5px;margin:0 2px;"><span>CATERING</span></a></li>
+<li><a href="#jobs" style="font-family:roboto;font-size:12px;color:#004d00;letter-spacing:.5px;text-shadow:0 0 1px #333;font-weight:normal;padding:17px 5px;margin:0 2px;"><span>JOIN OUR TEAM</span></a></li>
+</ul>
     
 <ul class="nav navbar-nav navbar-right">
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>NEWSROOM</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>INVESTORS</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/terms-of-use.html"><span>CONTACT US</span></a></li></ul>
+<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0" class="button" href="#john"><span>CHEF JOHN MEYER</span></a></li>
+<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0;" class="button" href="#media-kit"><span>MEDIA KIT</span></a></li>
+<li style="margin:5px 3px;"><a style="padding:11px 8px;margin:0;" class="button" href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))"><span>CONTACT US</span></a></li></ul>
       </div>
     </div>
     </nav>  
   </div>
    
 <center>
-<main>
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
-<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:20px 0;">
-<div class="hero w3-round-small">
+<div class="container w3-panel" style="width:100%;padding:0;margin:20px 0;">
+<div class="w3-row" style="margin:0;">
+<div class="w3-twothird">
+<div class="column" style="margin:0;padding:0;">
 
-<img class="w3-round-small" src="https://user-images.githubusercontent.com/25410880/76715667-9405a600-66ea-11ea-99f7-f0d0d5f3e0f2.png" />
-</div>
-</div>
-</div>
-</main>
+<img src="https://user-images.githubusercontent.com/25410880/77217154-83d03b00-6add-11ea-876b-111dc1394479.png" style="width:100%;">
+</div></div>
 
-<center>
-<div class="w3-container w3-panel" style="background-color:#fff;margin:0;">
-<div class="w3-row-padding" style="padding:10px 0;background-color:#ff8c00;margin:0;border-radius:2px 2px 0 0;">
-<p class="topic1">
-SOUTHERN STYLE EATING FOR THE ENTIRE FAMILY</p>
-
-<div class="customer-logos slider" style="border-radius:2px;padding:0;margin:0;">
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-
-<div class="slide w3-card"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png"></div>
-</div>
-</div>
-
-
-<div class="w3-row-padding w3-card" style="background-color:#ff8c00;margin:0;border-radius:0 0 3px 3px;">
-<div class="w3-half" style="background-color:#ff8c00;margin:10px 0;">
-<p class="topicfooter">Main Dishes</p>
-<p class="topic1">Includes 2 Sides & Choice of Bread</p><br>
-<p class="topic1">Rotisserie Smoked Chicken</p>
-
-<p class="topic3">Our smoked chicken is rubbed with a custom blend of herbs and spices and cooked to perfection. Due to our smoking process, some pink may be noticed. Chef assures the quality and doneness of our product.</p><br>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">                                                                                 
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td>1/4 Dark Meat</td>
-<td>$9.29</td>
-    
-<td>1/4 White Meat</td>
-<td>$9.99</td>
-    
-<td>1/2 Chicken</td>
-<td>$10.99</td>
-    
-<td>1/2 Chicken (White)</td>
-<td>$11.99</td>
-    
-<td style="border-bottom:3px solid #ffa333;margin:0 0 2px 0;">1/2 Chicken (Dark)</td>
-<td style="border-bottom:3px solid #ffa333;margin:0 0 2px 0;">$10.69</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-<td style="border-bottom:1px solid #ff8c00;margin:0;">Whole Chicken</td>
-<td style="border-bottom:1px solid #ff8c00;margin:0;">$11.29</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topic2" style="padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
-Quartered &#124; Does Not Include Sides</p>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-<td style="border-bottom:1px solid #ff8c00;margin:0;">Whole Chicken</td>
-<td style="border-bottom:1px solid #ff8c00;margin:0;">$15.49</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topic2" style="padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
-Quartered &#124; Includes 2 Large or 3 Small Sides</p>
- 
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
- 
-<td style="border-bottom:1px solid #ff8c00;margin:0;">Mustard-Fried Catfish</td>
-<td style="border-bottom:1px solid #ff8c00;margin:0;">$12.99</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topic2" style="padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
-Dipped in mustard sauce, special breading & fried golden brown.</p>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
- 
-<td>Southern-Fried Catfish</td>
-<td>$11.29</td>
-
-<td>Roasted Turkey Wings</td>
-<td>$12.49</td>
-    
-<td>Turkey Rib Tips</td>
-<td>$14.99</td>
-    
-<td>Beef Ribs</td>
-<td>$14.49</td>
-
-<td>Barbecue Rib Tips</td>
-<td>$13.49</td>
-    
-<td>Turkey Meatloaf</td>
-<td>$11.99</td>
-    
-<td>Baked Catfish Fillet</td>
-<td>$11.29</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td style="border-bottom:1px solid #ff8c00;margin:0;">Salmon Fillet</td>
-<td style="border-bottom:1px solid #ff8c00;margin:0;">$14.69</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topic2" style="padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
-Served with Mustard-Dill Sauce</p>
- 
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td style="border-bottom:1px solid #ff8c00;margin:0;">Vegetarian Sampler</td>
-<td style="border-bottom:1px solid #ff8c00;margin:0;">$9.29</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topic2" style="padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
-Includes Your Choice of Any 4 Sides</p>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td>Batter-Fried Shrimp 1/2 pound</td>
-<td>$11.29</td>
-    
-<td>Batter-Fried Shrimp 1 pound</td>
-<td>$19.29</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topicfooter" style="padding:0 0 6px 0;">
-Kid's Corner</p>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td>1/4 Dark Meat</td>
-<td>$6.59</td>
-    
-<td>Macaroni & Cheese</td>
-<td>$5.99</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-
-<div class="w3-half" style="background-color:#ff8c00;margin:10px 0;">
-<p class="topicfooter">Freshly Baked Breads</p>
-<p class="topic1">From BJ’s Own Kitchen</p><br><br>
-
-<p class="topic1">Potato Rolls & Cornbread Muffins</p><br>
-
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td>Each</td>
-<td>$.65</td>
-
-<td>Half Dozen</td>
-<td>$3.29</td>
-
-<td>Fifteen</td>
-<td>$6.49</td> 
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-
-<p class="topicfooter">DESSERTS</p>
-<p class="topic1">From BJ’s Own Kitchen</p><br><br>
-
-<p class="topic1">Sweet Potato Pie</p>
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td>Whole Pie</td>
-<td>$11.99</td>
-    
-<td>Per Slice</td>
-<td>$1.99</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topic1">Caramel &#124; Strawberry Shortcake &#124; Double Chocolate Cake</p>
-
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td>Whole Cake</td>
-<td>$19.99</td>
-    
-<td>Per Slice</td>
-<td>$3.49</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topic1">Peach Cobbler</p>
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-<td>Small</td>
-<td>$1.99</td>
-    
-<td>Large</td>
-<td>$3.49</td>
-    
-<td>Extra Large</td>
-<td>$4.69</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-    
-<p class="topic1">Bread Pudding & Banana Pudding</p>
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-<td>Each</td>
-<td>$4.99</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-    
-<p class="topicfooter">Freshly Baked Breads</p>
-<p class="topic1">From BJ’s Own Kitchen</p><br><br>
-
-<p class="topic1">Cookies - Oatmeal & Chocolate Chunk</p>
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-   
-<td>3 Pack</td>
-<td>$2.99</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<p class="topicfooter">BEVERAGES</p>
-<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
-  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
-  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
-   <tbody style="width:100%;padding:0;margin:0;border:none;">
-   <tr>
-<td>Soft Drinks</td>
-<td>$1.69</td>
-      
-<td>Bottled Water</td>
-<td>$1.29</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
-<center>
-<div class="w3-container w3-panel" style="background-color:transparent;padding:0 12px;margin:0;">
-<div class="w3-container w3-panel" style="padding:0;margin:80px 0 0 0;">
-<div class="w3-row w3-card" style="background-color:#ccc;margin:0;">
-<div class="w3-third" style="background-color:#ccc;padding:0;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;">
+<div class="w3-third">
+<div class="column" style="margin:0;padding:0;">
 <p class="topicfooter">Business Hours</p>
 <div class="hours" style="padding:7px 0 0 0;">
 <ul>
@@ -890,35 +641,6 @@ Kid's Corner</p>
 <div style="clear: both;">
 </div>
 </div>
-</div>
-
-<div class="w3-third" style="background-color:#ccc;margin:0 0 8px 0;padding:0;border-radius:2px 2px 0 0;">
-<div class="column" style="background-color:#ccc;margin:0;">
-<p class="topicfooter">
-Follow Us Around the Web</p>
-
-<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
-<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
-
-<p class="topicfooter2">
-123-456-8890</p>
-
-<p class="topicfooter1">
-400 South State Street<br>
-Chicago, IL 60605</p>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="column" style="background-color:#ccc;margin:0;">
-<iframe class="w3-card" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190344.67011110255!2d-87.6208397!3d41.803842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e263373ff54c3%3A0xc351b258e504a347!2s1737%20E%2095th%20St%2C%20Chicago%2C%20IL%2060617!5e0!3m2!1sen!2sus!4v1584244241173!5m2!1sen!2sus" style="width:100%;border:0;border-radius:2px 2px 0 0;vertical-align:bottom;height:248px;" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-</div>
-</div>
-
 </div>
 </div>
 </div>
@@ -965,6 +687,389 @@ $(document).ready(function(){
 </script>
 </div>
 </div>
+</div>
+
+<center>
+<div id="menu" class="w3-container w3-panel" style="width:100%;padding:80px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:43px;color:#004d00;letter-spacing:2.5px;text-shadow:0 1px 2px #000;padding:0;margin:0;">Menu</p>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">MAIN DISHES</div>
+<div class="panel">
+<p class="topic4"><br>
+Greetings, Chef:</p>
+
+<p class="topic4"><br>
+&#8226; Your Menu Items, including pertinent details, will go inside these accordions. The menu on your website is what I've been using. I do recall you mentioning that you wanted to make changes to your menu, so please provide me with any revisions as your time permits.<br><br>
+
+&#8226; As you move through this online demonstration, please feel free to click on all links and buttons.<br><br>
+
+&#8226; I have installed a contact form. Submissions can be sent directly to your inbox.<br><br>
+
+&#8226; I can install an online application form so that prospective candidates can apply online for jobs. Like the contact form data, online application submissions can be sent directly to your inbox. Both the contact form and online application form examples are being used at my website.<br><br>
+
+&#8226; In your Specials Section below, I have installed a scrolling images app. I hope you like it, John. The images are just place holders. I can't wait to upload the images you want to add to this section &#151; I'm so excited about it! In addition, please feel free to click on the images in this section to reveal the contents inside each modal. My goal is to provide the details of each of the specials you have to offer.<br><br>
+
+&#8226; In your Catering Section, Chef, I can include accordions like these - providing all the information you want to include for your Catering Menu.</p><br>
+</div>
+
+<div class="accordion">OUR SIGNATURE DISH</div>
+<div class="panel">
+<p class="topic4"><br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+</div>
+
+<div class="accordion">KID'S CORNER</div>
+<div class="panel">
+<p class="topic4"><br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+</div>
+
+<div class="accordion">FRESH BREADS</div>
+<div class="panel">
+<p class="topic4"><br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+</div>
+
+<div class="accordion">DESSERTS</div>
+<div class="panel">
+<p class="topic4"><br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+</div>
+
+<div class="accordion">SIDES</div>
+<div class="panel">
+<p class="topic4"><br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+</div>
+
+<div class="accordion">SALADS</div>
+<div class="panel">
+<p class="topic4"><br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+</div>
+    
+<div class="accordion">BEVERAGES</div>
+<div class="panel">
+<p class="topic4"><br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+<center>
+<div id="specials" class="w3-container w3-panel" style="width:100%;padding:80px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:43px;color:#004d00;letter-spacing:2.5px;text-shadow:0 1px 2px #000;padding:0;margin:0;">Specials</p>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="customer-logos slider" style="padding:0;margin:0 0 30px 0;">
+
+<div class="slide" style="border-radius:2px;"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="border-radius:2px;">
+<p class="topic2" style="padding:10px 0 5px 0;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal4">Special Six</p></div>
+
+<div class="slide" style="border-radius:2px;"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="border-radius:2px;">
+<p class="topic2" style="padding:10px 0 5px 0;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal4">Special Five</p></div>
+
+<div class="slide" style="border-radius:2px;"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="border-radius:2px;">
+<p class="topic2" style="padding:10px 0 5px 0;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal4">Special Four</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="border-radius:2px;">
+<p class="topic2 w3-hover-shadow" style="padding:10px 0 5px 0;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal4">Special Three</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="border-radius:2px;">
+<p class="topic2" style="padding:10px 0 5px 0;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal4">Special Two</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><img src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="border-radius:2px;">
+<p class="topic2" style="padding:10px 0 5px 0;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal4">Special One</p></div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/77210374-15c84b80-6abe-11ea-8d72-733c4511b31a.png" style="width:100%;padding:0;margin:0 0 20px 0;float:center;">
+
+<p class="topic2">Your Special Title Here</p><br>
+
+<p class="topic5" style="text-align:center;padding:0 12px;">Details for each Special will be included inside a modal.</p><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="catering" class="w3-container w3-panel" style="width:100%;padding:80px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:43px;color:#004d00;letter-spacing:2.5px;text-shadow:0 1px 2px #000;padding:0;margin:0;">Catering</p>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0;">
+<div class="column" style="margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/55930872-2565c180-5bd8-11e9-82ff-690cd9fa11aa.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+
+<div class="w3-twothird" style="padding:0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<p class="topic">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p align="center">
+<button class="btn btn-primary btn-block w3-hover-shadow" type="button" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:20px 0 0 0;padding:10px;text-decoration:none;cursor:pointer;"><a href="https://spiralgroup.github.io/themonster/about-us.html" style="text-decoration:none;">LEARN MORE</a></button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="jobs" class="w3-container w3-panel" style="width:100%;padding:80px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:43px;color:#004d00;letter-spacing:2.5px;text-shadow:0 1px 2px #000;padding:0;margin:0;">Join Our Team</p>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0;">
+<div class="column" style="margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/54096546-9744b400-4369-11e9-8a59-1a3ba96945d7.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+
+<div class="w3-twothird" style="padding:0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<p class="topic">
+As a small business owner, you can quickly reach a local audience through your Spiral Group, Inc. SG MarketPlace Careers web page. Promote and sell your products and services while using this optional web page to recruit and sell your brand to local job seekers.<br><br>
+
+This can be the place where you differentiate your organization from competitors and sell the company as a place where potential employees may want to work. It's a section within your company's digital brochure and can work to compliment your efforts in social media and other recruitment strategies.<br><br>
+
+<p align="center" class="w3-hover-shadow">
+<a class="btn btn-primary btn-block" style="background-color:#f5f5f5;font-family:roboto;font-size:11px;color:#222;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #222;padding:10px;margin:20px 0 10px 0;text-decoration:none;" href="https://form.jotform.com/82398672847172" target="_blank">APPLY NOW</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="john" class="w3-container w3-panel" style="width:100%;padding:80px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:43px;color:#004d00;letter-spacing:2.5px;text-shadow:0 1px 2px #000;padding:0;margin:0;">Chef John Meyer</p>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0;">
+<div class="column" style="margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/54096546-9744b400-4369-11e9-8a59-1a3ba96945d7.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+
+<div class="w3-twothird" style="padding:0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<p class="topic">
+John Meyer, Chef/Owner of BJ&rsquo;s Market &amp; Bakery, graduated from Chicago State University in 1987 with a Bachelor&rsquo;s Degree in Marketing. He enrolled in the Culinary Arts Program at Washburne Trade School in Chicago where he was classically trained in French-American cuisine. After graduation, he worked at the prestigious University Club of Chicago to hone his culinary skills.</p>
+
+<p align="center">
+<button class="btn btn-primary btn-block w3-hover-shadow" type="button" style="background-color:#f5f5f5;font-family:roboto;font-size:10.5px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #000;border-radius:2px;border:none;margin:20px 0 0 0;padding:10px;text-decoration:none;cursor:pointer;" data-toggle="modal" data-target="#myModalchef-john">LEARN MORE</button></p></div>
+
+<div class="modal fade" id="myModalchef-john" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="column" style="margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/54096546-9744b400-4369-11e9-8a59-1a3ba96945d7.png" style="width:100%;padding:7px 0 0 0;margin:0;border-radius:2px;" alt="Chef John Meyer">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Chef John Meyer</p>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-threethird" style="padding:0;background-color:#fff;margin:10px 0 0 0;">
+<p class="topic2">
+After gaining invaluable experience at the University Club, Chef Meyer committed himself to opening a white tablecloth restaurant on Chicago&rsquo;s South Side. Established in 1992, The Retreat Restaurant was housed in a renovated Victorian mansion in the historical Pullman area. Its vast popularity was attributed to delicious fare (ranging from classical French to traditional American cuisine), fine service and elegant atmosphere. John operated The Retreat Restaurant for seven years.<br><br>
+
+In his continued quest to provide quality food service establishments to his community, John&rsquo;s second venture combined an upscale atmosphere, comfort food, and great customer service. The result was BJ&rsquo;s Market &amp; Bakery. Opened in May 1997, BJ&rsquo;s Market has been acclaimed by several food critics and was named one of the &ldquo;Top Ten Restaurants in Chicago&rdquo; by WLS-TV food critic James Ward.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:30px 0 0 0;">
+<div class="w3-third" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="w3-container w3-panel w3-hover-shadow" style="margin:0 0 10px 0;">
+<a href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/77242794-b94d5500-6bbf-11ea-910b-e1e553cf8348.png" style="width:100%;" alt="sg1"></a>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="w3-container w3-panel w3-hover-shadow" style="margin:0 0 10px 0;">
+<a href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/77242794-b94d5500-6bbf-11ea-910b-e1e553cf8348.png" style="width:100%;" alt="sg1"></a>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="w3-container w3-panel w3-hover-shadow" style="margin:0 0 10px 0;">
+<a href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/77242794-b94d5500-6bbf-11ea-910b-e1e553cf8348.png" style="width:100%;" alt="sg1"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<center>
+<div id="media-kit" class="w3-container w3-panel" style="width:100%;padding:80px 0 0 0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p align="center" style="font-family:khand medium;font-size:43px;color:#004d00;letter-spacing:2.5px;text-shadow:0 1px 2px #000;padding:0;margin:0;">Media Kit</p>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0;">
+<div class="column" style="margin:0;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/55930872-2565c180-5bd8-11e9-82ff-690cd9fa11aa.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
+</div>
+</div>
+
+<div class="w3-twothird" style="padding:0;margin:0;">
+<div class="column" style="padding:0 10px;margin:0;">
+<p class="topic">
+BJ’s Market opened in May 1997, BJ’s Market has been acclaimed by several food critics and was named one of the “Top Ten Restaurants in Chicago” by WLS-TV food critic James Ward. Since opening, BJ’s Market has increased its services to include catering and delivery.
+In July 2004, BJ’s Market & Bakery opened an
+additional location at 79th and Racine.
+Make all investment inquiries to:
+
+BJ’s Market & Bakery
+8734 South Stony Island Avenue
+Chicago, IL 60617
+
+(773) 374-4700
+</div>
+</div>
+</div>
+
+
+<!-- The Monster Footer Code -->
+<center>
+<div class="w3-container w3-panel" style="background-color:transparent;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="padding:0;margin:80px 0 0 0;">
+<div class="w3-row-padding" style="margin:0;">
+
+<div class="w3-threethird">
+<div class="column" style="margin:0;">
+<iframe class="w3-card" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190344.67011110255!2d-87.6208397!3d41.803842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e263373ff54c3%3A0xc351b258e504a347!2s1737%20E%2095th%20St%2C%20Chicago%2C%20IL%2060617!5e0!3m2!1sen!2sus!4v1584244241173!5m2!1sen!2sus" style="width:100%;border:0;border-radius:2px 2px 0 0;vertical-align:bottom;height:400px;" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:40px 0 0 0;">
@@ -972,9 +1077,8 @@ $(document).ready(function(){
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
 <div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">Join Our MarketPlace</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Community Outreach</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy Statement</a>
 </div>
 </div>
 </div>
