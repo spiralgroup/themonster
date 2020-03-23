@@ -43,7 +43,7 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }, {
             breakpoint: 520,
@@ -58,13 +58,14 @@ $(document).ready(function(){
 <style type="text/css">
 /* Slider */
 .slick-slide {
-    margin: 12px 6px;
-    padding: 0;
-    background-color: #fff;
-    border-radius: 2px;
-   }
-.slick-slide img {
+   
+   margin: 5px 0 0 0;
+    padding: 5px;
+}
+.slick-slide img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); 
     width: 100%;
+   
 }
 .slick-slider
 {
@@ -85,9 +86,10 @@ $(document).ready(function(){
 {
     position: relative;
     display: block;
-    overflow: hidden; 
+    overflow: hidden;
+    margin: 0;
     padding: 0;
-    }
+}
 .slick-list:focus
 {
     outline: none;
@@ -111,8 +113,8 @@ $(document).ready(function(){
     position: relative;
     top: 0;
     left: 0;
-    display: block;
-   }
+display: block;
+}
 .slick-track:before,
 .slick-track:after
 {display: table;
@@ -159,7 +161,6 @@ $(document).ready(function(){
 {
     display: block;
     height: auto;
-    border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
     display: none;
@@ -593,93 +594,196 @@ body {
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion">MAIN DISHES</div>
-<div class="panel">
-<p class="topic4"><br>
-Greetings, Chef:</p>
+<div class="w3-container" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;margin:0;">
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
 
-<p class="topic4"><br>
-&#8226; This is where I will keep you posted on updates about your new website. When your time permits, I suggest viewing the web site on both a desktop (or laptop) and a mobile device.<br><br>
-
-&#8226; After several attempts of trying to get the last menubar to "behave", I decided that it's best to give each link its own web page - this also allows for the online scalability of your business model.<br><br>
-
-&#8226; I have installed a contact form. Submissions can be sent directly to your inbox.<br><br>
-
-&#8226; I can install an online application form so that prospective candidates can apply online for jobs. Like the contact form data, online application submissions can be sent directly to your inbox. Both the contact form and online application form examples are being used at my website.<br><br>
-
-I am also capable of creating an online onboarding and training portal for new employees. Here's a <a href="https://spiralgroup.github.io/themonster/independent-sales-consultants_099.html" target="_blank" style="text-decoration:none;text-shadow:0 0 1px #333;">link to the online training portal</a> for my Independent Sales Consultants at Spiral Group, Inc.<br><br>
-	 I look forward to your feedback.</p><br>
-
-<p class="topic4"><br>
-Michelle (The Monster) Jones</p><br>
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
 </div>
-
-<div class="accordion">OUR SIGNATURE DISH</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
-
-<div class="accordion">KID'S CORNER</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
+    
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
 
-<div class="accordion">FRESH BREADS</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
 </div>
-
-<div class="accordion">DESSERTS</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
+</div>   
+   
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
 
-<div class="accordion">SIDES</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
 </div>
-
-<div class="accordion">SALADS</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
-
-<div class="accordion">BEVERAGES</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
+   
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
 
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
 </div>
 </div>
 </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+<div class="w3-row-padding" style="background-color:transparent;margin:0;">
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+    
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
 
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+    
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
+
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+    
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
+
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="w3-row-padding" style="background-color:transparent;margin:0;">
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
+
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+    
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
+
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+    
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
+
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+    
+<div class="w3-quarter" style="margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
+<a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/76813829-64bc6b00-67b6-11ea-8991-315167031689.png" style="width:100%;border-radius:2px;"></a>
+
+<div class="content w3-panel" style="padding:0;margin:0;">
+<p align="center" style="font-family:roboto;font-size:12px;color:green;letter-spacing:.5px;padding:10px 0;margin:0;">
+BOGO - 14.99</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
+<p class="topic2">Shop Local</p>
+
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:3px;border-radius:8px 8px 2px 2px;margin:0 0 20px 0;">
+
+<div class="customer-logos slide w3-white" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:5px 5px 0 5px;margin:0;">
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 1</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 2</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 3</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 4</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 5</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 6</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 7</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a>
+<p style="padding:10px 0 5px 0;margin:0;">local advertisement 8</p></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
