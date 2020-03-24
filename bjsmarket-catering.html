@@ -28,6 +28,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script>
@@ -55,8 +57,37 @@ $(document).ready(function(){
 });
 </script>
 
+
+<script>
+$(document).ready(function(){
+    $('.catering').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
+
+
 <style type="text/css">
-/* Slider */
+/* Slider1 */
 .slick-slide {
     margin: 10px 6px;
     padding: 2px ;
@@ -244,12 +275,12 @@ body, html {
 }
 
 .topic {
-font-family: roboto;
-font-size: 13.5px;
-color: #222;
-text-shadow: 0 0 1px #000;
+font-family: roboto condensed;
+font-size: 15px;
+color: #000;
+text-shadow: 0 0 1px #222;
 letter-spacing: .5px;
-text-align: justify;
+text-align: center;
 margin: 0;
 padding: 0;
 }
@@ -257,22 +288,23 @@ padding: 0;
 @media screen and (max-width: 768px) {
   .topic {
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   }
   }
   
   .topic1 {
-font-family: roboto;
-font-size: 15px;
+font-family: open sans condensed;
+font-size: 28px;
 letter-spacing: 0;
-color: #000;
-text-shadow: 0 0 1px #222;
+color: #ccc;
+text-shadow: 0 0 1px #000;
 text-align: center;
 margin: 0;
-padding: 0;
+padding: 0 0 5px 0;
 }
     @media screen and (max-width: 768px) {
   .topic1 {
+  font-size: 22px;
    text-align: center;
   }
   }
@@ -313,23 +345,7 @@ padding: 65px 0 75px 0;
   }
   }
   
-  .topic3a {
-font-family: open sans condensed;
-font-size: 38px;
-letter-spacing: .5px;
-color: #c0c0c0;
-text-shadow: 0 0 1px #c0c0c0;
-text-align: center;
-margin: 0;
-padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic3a {
- font-size: 30px;
-  }
-  }
-  
+   
 .topic4 {
 font-family: roboto;
 font-size: 13.5px;
@@ -594,92 +610,76 @@ body {
 
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-row-padding" style="width:100%;margin:10px 0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion">MAIN DISHES</div>
-<div class="panel">
-<p class="topic4"><br>
-Greetings, Chef:</p>
-
-<p class="topic4"><br>
-&#8226; This is where I will keep you posted on updates about your new website. When your time permits, I suggest viewing the web site on both a desktop (or laptop) and a mobile device.<br><br>
-
-&#8226; After several attempts of trying to get the last menubar to "behave", I decided that it's best to give each link its own web page - this also allows for the online scalability of your business model.<br><br>
-
-&#8226; I have installed a contact form. Submissions can be sent directly to your inbox.<br><br>
-
-&#8226; I can install an online application form so that prospective candidates can apply online for jobs. Like the contact form data, online application submissions can be sent directly to your inbox. Both the contact form and online application form examples are being used at my website.<br><br>
-
-I am also capable of creating an online onboarding and training portal for new employees. Here's a <a href="https://spiralgroup.github.io/themonster/independent-sales-consultants_099.html" target="_blank" style="text-decoration:none;text-shadow:0 0 1px #333;">link to the online training portal</a> for my Independent Sales Consultants at Spiral Group, Inc.<br><br>
-	 I look forward to your feedback.</p><br>
-
-<p class="topic4"><br>
-Michelle (The Monster) Jones</p><br>
+<div class="container w3-card w3-panel" style="width:100%;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/77373200-d51e3b80-6d24-11ea-8100-836b18585eca.jpg" style="border-radius:2px;"></div>
 </div>
-
-<div class="accordion">OUR SIGNATURE DISH</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
-
-<div class="accordion">KID'S CORNER</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
-
-<div class="accordion">FRESH BREADS</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
-
-<div class="accordion">DESSERTS</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
 </div>
-
-<div class="accordion">SIDES</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
-</div>
-
-<div class="accordion">SALADS</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
-</div>
-
-<div class="accordion">BEVERAGES</div>
-<div class="panel">
-<p class="topic4"><br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
-</div>
-
 </div>
 </div>
 </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="margin:0;">
+<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
+<p align="center" style="padding:0;margin:0 0 10px 0;">
+<i class='fas fa-briefcase' style='font-size:38px;color:#004d00;text-shadow:0 0 1px #ddd;'></i></p>
 
+<p class="topic1">
+Corporate Catering</p>
+
+<p class="topic">
+Our signature service is ideal for your all corporate meals. Whether daily or as needed, we’ll easily handle your breakfast, lunch, dinner or snacks for a small or executive meeting, work place training, seminars or a daily meal program for 500.</p>
+
+<p class="w3-button w3-pale-green" style="border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;
+color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 0 0;box-shadow:0 0 12px #ccc;">Learn More</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="margin:0;">
+<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
+<p align="center" style="padding:0;margin:0 0 10px 0;">
+<i class='fas fa-church' style='font-size:38px;color:#004d00;text-shadow:0 0 1px #ddd;'></i></p>
+
+<p class="topic1">
+Wedding Catering</p>
+
+<p class="topic">
+With BJ's Catering & Special Events you are engaging the services of our professionals dedicated to creating incredible memories. On your wedding day, we will pamper your guests and allow you to relax and celebrate with family and friends.</p>
+
+<p class="w3-button w3-pale-green" style="border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;
+color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 0 0;box-shadow:0 0 12px #ccc;">Learn More</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="margin:0;">
+<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
+<p align="center" style="padding:0;margin:0 0 10px 0;">
+<i class='fas fa-birthday-cake' style='font-size:38px;color:#004d00;text-shadow:0 0 1px #ddd;'></i></p>
+
+<p class="topic1">
+Special Events</p>
+
+<p class="topic">
+We provide our exceptional Southern-Style cuisine and impeccable service to stylish cocktail receptions, elegant dinners, product launches, festive seasonal parties and vibrant galas. Our attention to detail will ensure your event is a success.</p>
+
+<p class="w3-button w3-pale-green" style="border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;
+color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 0 0;box-shadow:0 0 12px #ccc;">Learn More</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
