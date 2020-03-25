@@ -90,8 +90,8 @@ $(document).ready(function(){
 /* Slider1 */
 .slick-slide {
     margin: 10px 6px;
-    padding: 2px ;
-    background-color: #fff;
+    padding: 0px ;
+    background-color: #f2f2f2;
     border-radius: 2px;
    }
 .slick-slide img {
@@ -197,8 +197,8 @@ $(document).ready(function(){
 }
 
 .hours {
-  width: 250px;
-  display: block;
+  width: 280px;
+  display: inline-block;
   margin: 0 auto;
   box-sizing: border-box;
   color: #fff;
@@ -216,11 +216,11 @@ $(document).ready(function(){
 background-color: #ccc;
   float: left;
   width: 50%;
-  padding: 6px 4px;
+  padding: 6px 2px;
   box-sizing: border-box;
   list-style-type: none;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #f5f5f5;
   }
 
 
@@ -231,19 +231,21 @@ background-color: #ccc;
   padding: 10px;
   width: 100%;
   margin: 0;
-}
+  }
 
 .nab a {
   float: center;
   font-family: roboto condensed;
-  color: #fff;
+  color: #222;
   text-align: center;
-  padding: 4px 1px 4px 1px;
+  padding: 6px;
   text-decoration: none;
-  font-size: 11.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #fff;
+  font-size: 12.5px;
+  margin: 3px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #222;
+  border: 2px solid #ccc;
+  border-radius: 2px;
 }
 
 .topnav1 a:hover {
@@ -295,9 +297,9 @@ padding: 0;
   .topic1 {
 font-family: open sans condensed;
 font-size: 28px;
-letter-spacing: 0;
-color: #ccc;
-text-shadow: 0 0 1px #000;
+letter-spacing: .5px;
+color: #fff;
+text-shadow: 0 0 1px #fff;
 text-align: center;
 margin: 0;
 padding: 0 0 5px 0;
@@ -427,12 +429,12 @@ li:hover span {
 }
 
 .fa {
-background-color: #fff;
+background-color: #ccc;
   padding: 8px 5px;
-  width: 44px;
+  width: 50px;
   border-radius: 3px;
-  font-size: 21.5px;
-  color: #ccc !important;
+  font-size: 26.5px;
+  color: #fff !important;
   text-decoration: none !important;
   margin: 5px 2px 20px 2px;
   }
@@ -565,11 +567,11 @@ body {
 </style>
 </head>
   
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="container-fluid" style="padding:0;height:170px;">
+<body data-spy="scroll" data-target=".navbar">
+<div class="container-fluid" style="padding:0;margin:0;">
 <div class="w3-row w3-white" style="padding:0;margin:0;">
 <div class="w3-threethird w3-white" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/76715667-9405a600-66ea-11ea-99f7-f0d0d5f3e0f2.png" style="width:100%;padding:0;margin:0;border-radius:2px;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/76715667-9405a600-66ea-11ea-99f7-f0d0d5f3e0f2.png" style="width:100%;padding:0;margin:0;border-radius:2px;padding:0;margin:0;">
 </div>
 </div>
 
@@ -603,7 +605,7 @@ body {
 
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:50px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:80px 0 0 0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic2">Catering</p>
 </div>
@@ -625,13 +627,13 @@ body {
 
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:40px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column" style="margin:0;">
-<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
+<div class="w3-panel" style="background-color:#90ee90;border-radius:3px;padding:10px;margin:0;">
 <p align="center" style="padding:0;margin:0 0 10px 0;">
-<i class='fas fa-briefcase' style='font-size:38px;color:#004d00;text-shadow:0 0 1px #ddd;'></i></p>
+<i class='fas fa-briefcase' style='font-size:38px;color:#fff;text-shadow:0 0 1px #fff;'></i></p>
 
 <p class="topic1">
 Corporate Catering</p>
@@ -639,17 +641,16 @@ Corporate Catering</p>
 <p class="topic">
 Our signature service is ideal for your all corporate meals. Whether daily or as needed, we’ll easily handle your breakfast, lunch, dinner or snacks for a small or executive meeting, work place training, seminars or a daily meal program for 500.</p>
 
-<p class="w3-button w3-pale-green" style="border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;
-color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 0 0;box-shadow:0 0 12px #ccc;">Learn More</p>
+<p class="w3-button" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;">Learn More</p>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column" style="margin:0;">
-<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
+<div class="w3-panel" style="background-color:#90ee90;border-radius:3px;padding:10px;margin:0;">
 <p align="center" style="padding:0;margin:0 0 10px 0;">
-<i class='fas fa-church' style='font-size:38px;color:#004d00;text-shadow:0 0 1px #ddd;'></i></p>
+<i class='fas fa-church' style='font-size:38px;color:#fff;text-shadow:0 0 1px #fff;'></i></p>
 
 <p class="topic1">
 Wedding Catering</p>
@@ -657,17 +658,16 @@ Wedding Catering</p>
 <p class="topic">
 With BJ's Catering & Special Events you are engaging the services of our professionals dedicated to creating incredible memories. On your wedding day, we will pamper your guests and allow you to relax and celebrate with family and friends.</p>
 
-<p class="w3-button w3-pale-green" style="border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;
-color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 0 0;box-shadow:0 0 12px #ccc;">Learn More</p>
+<p class="w3-button" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;">Learn More</p>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column" style="margin:0;">
-<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
+<div class="w3-panel" style="background-color:#90ee90;border-radius:3px;padding:10px;margin:0;">
 <p align="center" style="padding:0;margin:0 0 10px 0;">
-<i class='fas fa-birthday-cake' style='font-size:38px;color:#004d00;text-shadow:0 0 1px #ddd;'></i></p>
+<i class='fas fa-birthday-cake' style='font-size:38px;color:#fff;text-shadow:0 0 1px #fff;'></i></p>
 
 <p class="topic1">
 Special Events</p>
@@ -675,8 +675,7 @@ Special Events</p>
 <p class="topic">
 We provide our exceptional Southern-Style cuisine and impeccable service to stylish cocktail receptions, elegant dinners, product launches, festive seasonal parties and vibrant galas. Our attention to detail will ensure your event is a success.</p>
 
-<p class="w3-button w3-pale-green" style="border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;
-color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 0 0;box-shadow:0 0 12px #ccc;">Learn More</p>
+<p class="w3-button" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;">Learn More</p>
 </div>
 </div>
 </div>
@@ -688,14 +687,13 @@ color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;paddin
 <!-- The Monster Footer Code -->
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:80px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:0 5px;margin:10px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0 0 20px 0;">
-<div class="w3-row-padding" style="margin:0;">
-
-<div class="w3-twothird w3-card" style="background-color:#ccc;margin:0 0 12px 0;padding:0;border-radius:2px 2px 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;">
+<div class="container w3-card w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="margin:0;">
+<div class="w3-twothird w3-white" style="margin:0;padding:0;border-radius:2px 2px 0 0;">
 <div class="column" style="margin:0;">
-<p class="topicfooter">
-Follow Us Around the Web</p><br>
+<p class="topicfooter2">
+FOLLOW US</p>
 
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
@@ -703,24 +701,35 @@ Follow Us Around the Web</p><br>
 <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
 
 <p class="topicfooter2">
-123-456-8890</p>
+773-374-4700</p>
 
 <p class="topicfooter1">
-400 South State Street<br>
-Chicago, IL 60605</p>
+1737 East 96th Street<br>
+Chicago, IL 60617</p>
 </div>
 
-<div class="nab topnav1" style="width:100%;padding:0;margin:33px 0 10px 0;">
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Our Commitment</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Advertise</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
+<center>
+<div class="w3-container" style="width:100%;padding:0 40px;margin:0;">
+<div class="w3-row" style="margin:30px 0 0 0;">
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Our Committment</button></div></div>
+
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Advertise</button></div></div>
+
+<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Your Privacy</button></div></div>
+</div>
 </div>
 </div>
 
-<div class="w3-third w3-card" style="background-color:#ccc;padding:0;margin:0 0 20px 0;">
+<div class="w3-third" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;">
-<div class="w3-container" style="background-color:#ccc;padding:0;margin:0;">
-<p class="topicfooter">Business Hours</p>
+<div class="w3-container" style="background-color:#ccc;padding-bottom:0;margin:0;">
+<p class="topicfooter2">BUSINESS HOURS</p>
 <div class="hours" style="padding:7px 0 0 0;">
 <ul>
 <li class="today w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;border-radius:3px 0 0 0;"></li>
@@ -735,8 +744,8 @@ Chicago, IL 60605</p>
     <li class="hrsfourdaysout"></li>
     <li class="fivedaysout"></li>
     <li class="hrsfivedaysout"></li>
-    <li class="yesterday" style="border-bottom:1px solid #ccc;padding:4px 4px 0 4px;"></li>
-    <li class="hrsyesterday" style="border-bottom:1px solid #ccc;padding:4px 4px 0 4px;"></li>
+    <li class="yesterday" style="border-bottom:1px solid #ccc;padding:6px 4px 0 4px;"></li>
+    <li class="hrsyesterday" style="border-bottom:1px solid #ccc;padding:6px 4px 0 4px;"></li>
   </ul>
   <div class="c"></div>
 </div>
@@ -745,8 +754,6 @@ Chicago, IL 60605</p>
 </div>
 </div>
 </div>
-</div>
-
 
 <script>
 $(document).ready(function(){
@@ -789,11 +796,8 @@ $(document).ready(function(){
 });
 </script>
 
-<div class="w3-container w3-panel" style="padding:0;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird w3-card">
-<div class="column" style="margin:0;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190344.67011110255!2d-87.6208397!3d41.803842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e263373ff54c3%3A0xc351b258e504a347!2s1737%20E%2095th%20St%2C%20Chicago%2C%20IL%2060617!5e0!3m2!1sen!2sus!4v1584244241173!5m2!1sen!2sus" style="width:100%;border:0;border-radius:2px 2px 0 0;vertical-align:bottom;height:248px;" frameborder="0" allowfullscreen=""></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190344.67011110255!2d-87.6208397!3d41.803842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e263373ff54c3%3A0xc351b258e504a347!2s1737%20E%2095th%20St%2C%20Chicago%2C%20IL%2060617!5e0!3m2!1sen!2sus!4v1584244241173!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:248px;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 </div>
@@ -808,7 +812,7 @@ $(document).ready(function(){
 
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:80px 0 0 0;">
 <p class="topic2">Shop Local</p>
 </div>
 
