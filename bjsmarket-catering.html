@@ -223,7 +223,6 @@ background-color: #ccc;
   border-bottom: 2px solid #f5f5f5;
   }
 
-
 .c { clear: both; }
 
  .nab {
@@ -311,6 +310,17 @@ padding: 0 0 5px 0;
   }
   }
     
+  .topic1a {
+font-family: open sans condensed;
+font-size: 24px;
+letter-spacing: .5px;
+color: #000;
+text-shadow: 0 0 1px #000;
+text-align: center;
+margin: 0;
+padding: 0 0 7px 0;
+}
+    
  .topic2 {
 font-family: khand medium;
 font-size: 43px;
@@ -329,24 +339,12 @@ padding: 0;
   }
   
 .topic3 {
-font-family: open sans condensed;
-font-size: 38px;
+font-family: roboto condensed;
+font-size: 12px;
+color: #fff;
 letter-spacing: .5px;
-color: #c0c0c0;
-text-shadow: 0 0 1px #c0c0c0;
-text-align: center;
-margin: 0;
-padding: 65px 0 75px 0;
+text-shadow: 0 0 1px #fff;
 }
-
-@media screen and (max-width: 768px) {
-  .topic3 {
-  padding: 0;
-  font-size: 1px;
-  display: none;
-  }
-  }
-  
    
 .topic4 {
 font-family: roboto;
@@ -431,9 +429,9 @@ li:hover span {
 .fa {
 background-color: #ccc;
   padding: 8px 5px;
-  width: 50px;
+  width: 45px;
   border-radius: 3px;
-  font-size: 26.5px;
+  font-size: 22.5px;
   color: #fff !important;
   text-decoration: none !important;
   margin: 5px 2px 20px 2px;
@@ -509,52 +507,13 @@ background-color: #ccc;
  filter: Alpha(opacity=50); /* IE8 and earlier */
 }
 
-.accordion {
-  font-family: pt sans;
-  font-size: 16px;
-  text-shadow: 0 0 1px #fff;
-  letter-spacing: 1px;
-  background-color: #cb3434;
-  color: #fff;
-  width: 100%;
-  border: none;
-  border-radius: 2px;
-  text-align: center;
-  outline: none;
-  cursor: pointer;
-  padding: 15px;
-  margin: 5px 0;
-  transition: 0.4s;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #fff;
-  float: right;
-  margin-left: 5px;
-}
-
-.active, .accordion:hover {
-  background-color: #004d00;
-}
-
-.panel {
-  padding: 0 12px;
-  margin: 5px 0;
-  background-color: #fff;
-  max-height: 0;
-  border: none;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-
 body {
     position: relative; 
   }
   .affix {
     top:0;
     width: 100%;
-    z-index: 9999 !important;
+    z-index: 1 !important;
   }
   .navbar {
     margin-bottom: 0px;
@@ -564,6 +523,23 @@ body {
    position: relative;
    top: 50px;
   }
+  
+  td {
+  text-align: center;
+  width: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: roboto;
+  font-size: 12px;
+  text-shadow: 0 0 1px #fff;
+  letter-spacing: .5px;
+  float: left;
+  padding-left: 40px !important;
+  border-bottom: 3px solid #ffa333;
+  border-top: none !important;
+  margin: 0 0 2px 0;
+ }
+
 </style>
 </head>
   
@@ -615,7 +591,7 @@ body {
 <div class="w3-row-padding" style="width:100%;margin:10px 0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <div class="container w3-card w3-panel" style="width:100%;padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/77373200-d51e3b80-6d24-11ea-8100-836b18585eca.jpg" style="border-radius:2px;"></div>
+<img src="https://user-images.githubusercontent.com/25410880/77720924-88e22e00-6fa6-11ea-904a-e875e1411f1e.png" style="border-radius:2px;"></div>
 </div>
 </div>
 </div>
@@ -627,7 +603,7 @@ body {
 
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:40px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:7px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 10px 0;">
 <div class="column" style="margin:0;">
@@ -641,7 +617,352 @@ Corporate Catering</p>
 <p class="topic">
 Our signature service is ideal for your all corporate meals. Whether daily or as needed, we’ll easily handle your breakfast, lunch, dinner or snacks for a small or executive meeting, work place training, seminars or a daily meal program for 500.</p>
 
-<p class="w3-button" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;">Learn More</p>
+<button class="w3-button" onclick="document.getElementById('id35').style.display='block'" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;cursor:pointer;">Learn More</button>
+</div>
+</div>
+</div>
+
+<div id="id35" class="w3-modal w3-animate-zoom" style="width:100%;">
+<span onclick="document.getElementById('id35').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
+<div class="w3-container" style="padding:0;margin:5px 0 50px 0;">
+<div class="w3-modal-content w3-card-4" style="max-width:1024px;padding:0;border-radius:3px;">
+ 
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;border-radius:2px 2px 0 0;">
+<img src="https://user-images.githubusercontent.com/25410880/77720924-88e22e00-6fa6-11ea-904a-e875e1411f1e.png" style="width:100%;padding:0;margin:0;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+<div class="w3-row-padding" style="background-color:#ff8c00;margin:0;">
+<div class="w3-half" style="background-color:#ff8c00;margin:10px 0;">
+<p class="topicfooter" style="padding:7px 0 0 0;">MAIN DISHES</p>
+<p class="topic3">INCLUDES 2 SIDES & CHOICE OF BREAD</p>
+
+<p class="topic1">ROASTED OR SMOTHERED CHICKEN</p>
+
+<div class="w3-container" style="width:100%;padding:0;margin:5px 0 0 0;border:none;"> 
+<center>
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;float:center;">
+   <tr>
+   
+<td>1/4 Dark Meat</td>
+<td>$9.29</td>
+    
+<td>1/4 White Meat</td>
+<td>$9.99</td>
+    
+<td>1/2 Chicken</td>
+<td>$10.99</td>
+    
+<td>1/2 Chicken (White)</td>
+<td>$11.99</td>
+    
+<td style="border-bottom:3px solid #ffa333;margin:0 0 2px 0;">1/2 Chicken (Dark)</td>
+<td style="border-bottom:3px solid #ffa333;margin:0 0 2px 0;">$10.69</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+<td style="border-bottom:1px solid #ff8c00;margin:0;">Whole Chicken</td>
+<td style="border-bottom:1px solid #ff8c00;margin:0;">$11.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="topic3" style="color:#222;text-shadow:0 0 1px #000;padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
+Quartered &#151; Does Not Include Sides</p>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+<td style="border-bottom:1px solid #ff8c00;margin:0;">Whole Chicken</td>
+<td style="border-bottom:1px solid #ff8c00;margin:0;">$15.49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="topic3" style="color:#222;text-shadow:0 0 1px #000;padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
+Quartered &#151; Includes 2 Large or 3 Small Sides</p>
+
+<p class="topic1">OUR SIGNATURE DISH</p>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+<td style="border-bottom:1px solid #ff8c00;margin:0;">Mustard-Fried Catfish</td>
+<td style="border-bottom:1px solid #ff8c00;margin:0;">$14.49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="topic3" style="color:#222;text-shadow:0 0 1px #000;padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
+Dipped in Mustard Sauce, Special Breading & Fried Golden Brown</p>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr> 
+ 
+<td>Southern-Fried Catfish</td>
+<td>$11.29</td>
+
+<td>Roasted Turkey Wings</td>
+<td>$12.49</td>
+    
+<td>Chicken</td>
+<td>$14.99</td>
+    
+<td>Beef Ribs</td>
+<td>$14.49</td>
+
+<td>Barbecue Rib Tips</td>
+<td>$13.49</td>
+   
+<td>Baked Catfish Fillet</td>
+<td>$11.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+   
+<td style="border-bottom:1px solid #ff8c00;margin:0;">Vegetarian Sampler</td>
+<td style="border-bottom:1px solid #ff8c00;margin:0;">$9.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="topic3" style="color:#222;text-shadow:0 0 1px #000;padding:0 0 6px 0;border-bottom:3px solid #ffa333;">
+Includes Your Choice of Any 4 Sides</p>
+
+
+<p class="topicfooter" style="padding:7px 0 0 0;">FRESHLY BAKED BREADS</p>
+<p class="topic3">FROM BJ'S OWN KITCHEN</p>
+
+<p class="topic4c">POTATO ROLLS & CORNBREAD MUFFINS</p>
+
+<p class="topic4c">We invite you to take your time and browse our selection of breads, pies, cakes, puddings, and cookies. Stop in to see us. We welcome the opportunity to meet you and show you all we have to offer.</p>
+
+<div class="w3-container" style="width:100%;padding:0;margin:5px 0 0 0;border:none;"> 
+<center>
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;float:center;">
+   <tr>
+   
+<td>Each</td>
+<td>$.65</td>
+
+<td>Half Dozen</td>
+<td>$3.29</td>
+
+<td>Fifteen</td>
+<td>$6.49</td> 
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="background-color:#ff8c00;margin:10px 0;">
+<p class="topicfooter" style="padding:7px 0 0 0;">DESSERTS</p>
+<p class="topic3">FROM BJ'S OWN KITCHEN</p>
+
+<p class="topic1">Sweet Potato Pie</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+   
+<td>Whole Pie</td>
+<td>$11.99</td>
+    
+<td>Per Slice</td>
+<td>$1.99</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="topic1" style="margin:30px 0 0 0;">Cakes</p>
+<p class="topic3" style="color:#fff;text-shadow:0 0 1px #fff;margin:0 0 15px 0;">CARAMEL CAKE & STRAWBERRY SHORTCAKE</p>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+   
+<td>Whole Cake</td>
+<td>$21.99</td>
+    
+<td>Per Slice</td>
+<td>$3.99</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="topic1" style="margin:30px 0 10px 0;">Peach Cobbler</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+<td>Small</td>
+<td>$2.09</td>
+    
+<td>Medium</td>
+<td>$3.99</td>
+    
+<td>Large</td>
+<td>$4.69</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+    
+<p class="topic1" style="margin:30px 0 10px 0;">Bread Pudding</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+<td>Each</td>
+<td>$5.69</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+    
+<p class="topic1" style="margin:30px 0 10px 0;">Banana Pudding</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+<td>Each</td>
+<td>$3.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+    
+    
+
+<p class="topic1" style="margin:30px 0 0 0;">Cookies</p>
+<p class="topic3" style="color:#fff;text-shadow:0 0 1px #fff;margin:0 0 15px 0;">Chocolate Chunk</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+   
+<td>3-Pack</td>
+<td>$3.49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="topic1">BEVERAGES</p>
+<div class="w3-container" style="width:100%;padding:0;margin:0;border:none;">    
+  <div class="table-responsive w3-center" style="width:100%;padding:0;margin:0;border:none;">          
+  <table class="table" style="width:100%;padding:0;margin:0;border:none;">
+   <tbody style="width:100%;padding:0;margin:0;border:none;">
+   <tr>
+<td>Tea</td>
+<td>$1.69</td>
+      
+<td>Canned Soda</td>
+<td>$1.29</td>
+
+<td>Bottled Water</td>
+<td>$1.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="background-color:#ff8c00;margin:0;">
+<div class="w3-threethird" style="background-color:#ff8c00;margin:10px 0 0 0;">
+<p class="topicfooter" style="padding:7px 0 0 0;">sides</p>
+<p class="topic3">FROM BJ'S OWN KITCHEN</p>
+<p class="topic1" style="padding:7px 0 0 0;">SIDES</p>
+
+<div class="w3-third" style="background-color:#ff8c00;margin:10px 0 0 0;">
+<div class="column">    
+<p class="topic">
+Stewed Cabbage<br><br>
+Steamed Broccoli<br><br>
+Baked Macaroni & Cheese</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="background-color:#ff8c00;margin:10px 0 0 0;">
+<div class="column">    
+<p class="topic">
+Cornbread Dressing<br><br>
+Green Beens<br><br>
+Jamaican Rice & Peas</p>
+</div>
+</div>
+
+<div class="w3-third" style="background-color:#ff8c00;margin:10px 0 0 0;">
+<div class="column">    
+<p class="topic">
+Sweet Potatoes<br><br>
+Mashed Potatoes & Gravy<br><br>
+Collard Greens w/ Smoked Turkey</p>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-blue" style="width:100%;padding:20px 0;margin:0;border:none;border-radius:0 0 2px 2px;">    
+<p class="topic1">test</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -658,7 +979,7 @@ Wedding Catering</p>
 <p class="topic">
 With BJ's Catering & Special Events you are engaging the services of our professionals dedicated to creating incredible memories. On your wedding day, we will pamper your guests and allow you to relax and celebrate with family and friends.</p>
 
-<p class="w3-button" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;">Learn More</p>
+<button class="w3-button" onclick="document.getElementById('id35').style.display='block'" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;cursor:pointer;">Learn More</button>
 </div>
 </div>
 </div>
@@ -675,7 +996,7 @@ Special Events</p>
 <p class="topic">
 We provide our exceptional Southern-Style cuisine and impeccable service to stylish cocktail receptions, elegant dinners, product launches, festive seasonal parties and vibrant galas. Our attention to detail will ensure your event is a success.</p>
 
-<p class="w3-button" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;">Learn More</p>
+<button class="w3-button" onclick="document.getElementById('id35').style.display='block'" style="background-color:#fff;border-radius:3px;text-decoration:none;font-family:roboto;font-size:14px;color:#000;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:10px 20px;margin:15px 0 5px 0;box-shadow:0 0 2px #90ee90;cursor:pointer;">Learn More</button>
 </div>
 </div>
 </div>
@@ -690,47 +1011,12 @@ We provide our exceptional Southern-Style cuisine and impeccable service to styl
 <div class="container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;">
 <div class="container w3-card w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-row" style="margin:0;">
-<div class="w3-twothird w3-white" style="margin:0;padding:0;border-radius:2px 2px 0 0;">
-<div class="column" style="margin:0;">
-<p class="topicfooter2">
-FOLLOW US</p>
-
-<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
-<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
-
-<p class="topicfooter2">
-773-374-4700</p>
-
-<p class="topicfooter1">
-1737 East 96th Street<br>
-Chicago, IL 60617</p>
-</div>
-
-<center>
-<div class="w3-container" style="width:100%;padding:0 40px;margin:0;">
-<div class="w3-row" style="margin:30px 0 0 0;">
-<div class="w3-third" style="margin:0 0 12px 0;">
-<div class="column" style="padding:0 2px;margin:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Our Committment</button></div></div>
-
-<div class="w3-third" style="margin:0 0 12px 0;">
-<div class="column" style="padding:0 2px;margin:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Advertise</button></div></div>
-
-<div class="w3-third" style="margin:0 0 12px 0;">
-<div class="column" style="padding:0 2px;margin:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Your Privacy</button></div></div>
-</div>
-</div>
-</div>
-
 <div class="w3-third" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;">
 <div class="w3-container" style="background-color:#ccc;padding-bottom:0;margin:0;">
-<p class="topicfooter2">BUSINESS HOURS</p>
-<div class="hours" style="padding:6px 0 0 0;">
+<div class="hours">
+<p class="topic1" style="padding:5px 0;">Business Hours</p>
+
 <ul>
 <li class="today w3-white w3-text-black" style="border-bottom:1px solid #fff;padding:7px 6px;text-shadow:0 0 1px #222;border-radius:3px 0 0 0;"></li>
 <li class="hrstoday w3-white w3-text-black" style="border-bottom:1px solid #fff;padding:7px 6px;text-shadow:0 0 1px #222;border-radius:0 3px 0 0;"></li>
@@ -755,12 +1041,53 @@ Chicago, IL 60617</p>
 </div>
 </div>
 
+<div class="w3-twothird" style="background-color:#fff;margin:0;padding:15px 0 0 0;">
+<div class="column" style="margin:0;">
+<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
+<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+<p class="topicfooter2">
+773-374-4700</p>
+
+<p class="topicfooter1">
+1737 East 96th Street<br>
+Chicago, IL 60617</p>
+</div>
+
+<center>
+<div class="w3-container w3-white" style="width:100%;padding:0 40px;margin:25px 0 0 0;">
+<div class="w3-row" style="padding:5px 0;margin:0;">
+<p class="topic1a">Quick Links</p>
+
+<div class="w3-quarter" style="margin:0 0 11px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;padding:6px 0;margin:0;"><a href="https://spiralgroup.github.io/themonster/bjsmarket.html" style="font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;">MENU</a></button></div></div>
+
+<div class="w3-quarter" style="margin:0 0 11px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;padding:6px 0;margin:0;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-our_committment.html" style="font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;">OUR COMMITTMENT</a></button></div></div>
+
+<div class="w3-quarter" style="margin:0 0 12px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;padding:6px 0;margin:0;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html" style="font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;">ADVERTISE</a></button></div></div>
+
+<div class="w3-quarter" style="margin:0 0 12px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;padding:6px 0;margin:0;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-privacy.html" style="font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;">YOUR PRIVACY</a></button></div></div>
+</div>
+</div>
+</div>
+
+
+
 <script>
 $(document).ready(function(){
 
    var date = new Date();
    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-   var hours = ['8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm'];
+   var hours = ['10:30am - 8:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm'];
   
    var today = date.getDay();
    var tomorrow = (date.getDay() + 1) % 7;
@@ -820,29 +1147,21 @@ $(document).ready(function(){
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
 <div class="customer-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;margin:0 0 15px 0;border-radius:3px;">
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 1</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 2</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 3</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 4</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 5</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 6</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 7</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 8</p></div>
+<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a></div>
 </div>
 </div>
 </div>
