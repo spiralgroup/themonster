@@ -64,7 +64,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 8000,
+        autoplaySpeed: 5000,
         arrows: false,
         dots: false,
         pauseOnHover: true,
@@ -90,10 +90,8 @@ $(document).ready(function(){
 /* Slider1 */
 .slick-slide {
     margin: 10px 6px;
-    padding: 0px ;
-    background-color: #f2f2f2;
-    border-radius: 2px;
-   }
+    padding: 0;
+    }
 .slick-slide img {
     width: 100%;
 }
@@ -165,7 +163,7 @@ $(document).ready(function(){
     min-height: 1px;
 }[dir='rtl'] .slick-slide
 {
-    float: right;
+    float: left;
 }
 .slick-slide img
 {
@@ -222,6 +220,12 @@ background-color: #ccc;
   text-align: center;
   border-bottom: 2px solid #ccc;
   }
+  
+.today, .hrstoday {
+padding: 20px;
+background-color: dodgerblue;
+}
+
 
 .c { clear: both; }
 
@@ -672,6 +676,7 @@ We provide our exceptional Southern-Style cuisine and impeccable service to styl
 </div>
 </div>
 
+
 <!-- The Monster Footer Code -->
 
 <center>
@@ -679,6 +684,7 @@ We provide our exceptional Southern-Style cuisine and impeccable service to styl
 <div class="w3-row-padding" style="width:100%;margin:100px 0 0 0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic2">Hours & Location</p>
+</div>
 </div>
 
 <center>
@@ -693,8 +699,8 @@ We provide our exceptional Southern-Style cuisine and impeccable service to styl
 <p class="topic1" style="padding:5px 0;">Our Business Hours</p>
 
 <ul>
-<li class="today w3-light-grey w3-text-black" style="padding:7px 6px;text-shadow:0 0 1px #333;border-radius:3px 0 0 3px;"></li>
-<li class="hrstoday w3-light-grey w3-text-black" style="padding:7px 6px;text-shadow:0 0 1px #333;border-radius:0 3px 3px 0;"></li>
+<li class="today w3-white w3-text-black" style="padding:7px 0;text-shadow:0 0 1px #222;border-radius:3px 0 0 3px;"></li>
+<li class="hrstoday w3-white w3-text-black" style="padding:7px 0;text-shadow:0 0 1px #222;border-radius:0 3px 3px 0;"></li>
 
     <li class="tomorrow"></li>
     <li class="hrstomorrow"></li>
@@ -814,29 +820,29 @@ $(document).ready(function(){
 
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
 <p class="topic2">Shop Local</p>
 </div>
 
-<div class="container w3-panel" style="width:100%;padding:0 8px;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
-<div class="customer-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;margin:0 0 15px 0;border-radius:3px;">
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a></div>
+<div class="customer-logos slide" style="width:100%;margin:0;">
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a></div>
 </div>
 </div>
 </div>
