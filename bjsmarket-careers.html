@@ -28,6 +28,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script>
@@ -55,14 +57,41 @@ $(document).ready(function(){
 });
 </script>
 
+
+<script>
+$(document).ready(function(){
+    $('.catering').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
+
+
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
     margin: 10px 6px;
-    padding: 0px ;
-    background-color: #f2f2f2;
-    border-radius: 2px;
-   }
+    padding: 0;
+    }
 .slick-slide img {
     width: 100%;
 }
@@ -134,7 +163,7 @@ $(document).ready(function(){
     min-height: 1px;
 }[dir='rtl'] .slick-slide
 {
-    float: right;
+    float: left;
 }
 .slick-slide img
 {
@@ -189,9 +218,15 @@ background-color: #ccc;
   box-sizing: border-box;
   list-style-type: none;
   text-align: center;
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 2px solid #ccc;
   }
   
+.today, .hrstoday {
+padding: 20px;
+background-color: dodgerblue;
+}
+
+
 .c { clear: both; }
 
  .nab {
@@ -199,19 +234,21 @@ background-color: #ccc;
   padding: 10px;
   width: 100%;
   margin: 0;
-}
+  }
 
 .nab a {
   float: center;
   font-family: roboto condensed;
-  color: #fff;
+  color: #222;
   text-align: center;
-  padding: 4px 1px 4px 1px;
+  padding: 6px;
   text-decoration: none;
-  font-size: 11.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #fff;
+  font-size: 12.5px;
+  margin: 3px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #222;
+  border: 2px solid #ccc;
+  border-radius: 2px;
 }
 
 .topnav1 a:hover {
@@ -259,23 +296,34 @@ padding: 0;
   font-size: 15px;
   }
   }
- 
   
   .topic1 {
-font-family: roboto;
-font-size: 15px;
-letter-spacing: 0;
-color: #000;
-text-shadow: 0 0 1px #222;
+font-family: open sans condensed;
+font-size: 27px;
+letter-spacing: .5px;
+color: #fff;
+text-shadow: 0 0 1px #fff;
 text-align: center;
 margin: 0;
-padding: 0;
+padding: 0 0 5px 0;
 }
     @media screen and (max-width: 768px) {
   .topic1 {
+  font-size: 22px;
    text-align: center;
   }
   }
+    
+  .topic1a {
+font-family: open sans condensed;
+font-size: 18px;
+letter-spacing: .5px;
+color: #000;
+text-shadow: 0 0 1px #000;
+text-align: center;
+margin: 0;
+padding: 0 0 5px 0;
+}
     
  .topic2 {
 font-family: khand medium;
@@ -295,41 +343,13 @@ padding: 0;
   }
   
 .topic3 {
-font-family: open sans condensed;
-font-size: 38px;
+font-family: roboto condensed;
+font-size: 12px;
+color: #fff;
 letter-spacing: .5px;
-color: #c0c0c0;
-text-shadow: 0 0 1px #c0c0c0;
-text-align: center;
-margin: 0;
-padding: 65px 0 75px 0;
+text-shadow: 0 0 1px #fff;
 }
-
-@media screen and (max-width: 768px) {
-  .topic3 {
-  padding: 0;
-  font-size: 1px;
-  display: none;
-  }
-  }
-  
-  .topic3a {
-font-family: open sans condensed;
-font-size: 38px;
-letter-spacing: .5px;
-color: #c0c0c0;
-text-shadow: 0 0 1px #c0c0c0;
-text-align: center;
-margin: 0;
-padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic3a {
- font-size: 30px;
-  }
-  }
-  
+   
 .topic4 {
 font-family: roboto;
 font-size: 13.5px;
@@ -395,7 +415,7 @@ margin: 0;
 
 .topicfooter2 {
 font-family: roboto;
-font-size: 19px;
+font-size: 18px;
 color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
@@ -412,13 +432,13 @@ li:hover span {
 
 .fa {
 background-color: #ccc;
-  padding: 8px 5px;
-  width: 50px;
+  padding: 6px 3px;
+  width: 40px;
   border-radius: 3px;
-  font-size: 26.5px;
+  font-size: 20.5px;
   color: #fff !important;
   text-decoration: none !important;
-  margin: 5px 2px 20px 2px;
+  margin: 0 2px 20px 2px;
   }
 
 .fa:hover {
@@ -481,24 +501,13 @@ background-color: #ccc;
   margin: 0;
  }
 
-.close {
- font-size: 58px;
- color: white;
- text-shadow: 0 0 1px #222;
- opacity: 0.9;
- padding: 0;
- margin-right: 20px;
- filter: Alpha(opacity=50); /* IE8 and earlier */
-}
-
-
 body {
     position: relative; 
   }
   .affix {
     top:0;
     width: 100%;
-    z-index: 9999 !important;
+    z-index: 1 !important;
   }
   .navbar {
     margin-bottom: 0px;
@@ -556,39 +565,76 @@ body {
 
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-row-padding" style="width:100%;margin:10px 0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="margin:0;">
 <p class="topic">
 Are you looking for opportunities in a fast-paced organization where you can engage in meaningful, hands-on work? Do you desire to learn the ropes of running a Soul Food restaurant business? Have you always wanted to work in an environment where you can take on challenges with fun enthusiastic colleagues?<br><br>
 
 If so, BJ's Market & Bakery is the place for you. We are looking for good people who are passionate about Soul Food and are fun to work with. We offer you an 18-month career progression path designed to bring out the best in you, and we do so with the right tools and training.<br><br>
 
-Looking forward to joining our family? Click the button below to apply now.<br>
+Looking forward to joining our family? Click the button below to apply online now.<br>
 Or stop by our new location and pick up an application.</p>
 
 <p><a class="w3-button" href="https://form.jotform.com/82398672847172" target="_blank" style="font-family:calibri;font-size:18px;color:#fff;text-shadow:0 0 1px #fff;background-color:#004d00;border-radius:3px;text-decoration:none;padding:10px 40px;margin:20px 0;box-shadow:0 0 22px #ccc;">APPLY NOW</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <!-- The Monster Footer Code -->
+
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:100px 0 0 0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<p class="topic2">Hours & Location</p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;">
 <div class="container w3-card w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-row" style="margin:0;">
-<div class="w3-twothird w3-white" style="margin:0;padding:0;border-radius:2px 2px 0 0;">
-<div class="column" style="margin:0;">
-<p class="topicfooter2">
-FOLLOW US</p>
+<div class="w3-third" style="padding:0;background-color:#ccc;margin:0;">
+<div class="column" style="padding:0;background-color:#ccc;margin:0;">
 
+<div class="hours">
+<p class="topic1" style="padding:5px 0;">Our Business Hours</p>
+
+<ul>
+<li class="today w3-white w3-text-black" style="padding:7px 0;text-shadow:0 0 1px #222;border-radius:3px 0 0 3px;"></li>
+<li class="hrstoday w3-white w3-text-black" style="padding:7px 0;text-shadow:0 0 1px #222;border-radius:0 3px 3px 0;"></li>
+
+    <li class="tomorrow"></li>
+    <li class="hrstomorrow"></li>
+    <li class="dayafter"></li>
+    <li class="hrsdayafter"></li>
+    <li class="threedaysout"></li>
+    <li class="hrsthreedaysout"></li>
+    <li class="fourdaysout"></li>
+    <li class="hrsfourdaysout"></li>
+    <li class="fivedaysout"></li>
+    <li class="hrsfivedaysout"></li>
+    <li class="yesterday" style="border-bottom:1px solid #ccc;padding:6px 4px 0 4px;"></li>
+    <li class="hrsyesterday" style="border-bottom:1px solid #ccc;padding:6px 4px 0 4px;"></li>
+  </ul>
+ <div class="c"></div>
+</div>
+<div style="clear: both;">
+</div>
+</div>
+</div>
+
+
+<div class="w3-twothird" style="background-color:#fff;margin:0;">
+<div class="column" style="margin:0;padding:10px 0 0 0;">
+<p class="topic1" style="color:#222;text-shadow:0 0 1px #000;">Follow Us</p>
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
@@ -603,58 +649,35 @@ Chicago, IL 60617</p>
 </div>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0 40px;margin:0;">
-<div class="w3-row" style="margin:30px 0 0 0;">
-<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="w3-container w3-white" style="width:100%;padding:0 40px;margin:25px 0 0 0;">
+<div class="w3-row" style="padding:5px 0;margin:13px 0 0 0;">
+<div class="w3-quarter" style="margin:0 0 11px 0;">
 <div class="column" style="padding:0 2px;margin:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Our Committment</button></div></div>
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;padding:8px 0 7px 0;margin:0;" href="https://github.com/spiralgroup/themonster/files/4400202/BJ.s.Market-Catering.Menu.pdf">DOWNLOAD OUR MENU</a></div></div>
 
-<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="w3-quarter" style="margin:0 0 11px 0;">
 <div class="column" style="padding:0 2px;margin:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Advertise</button></div></div>
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;padding:8px 0 7px 0;margin:0;" href="https://spiralgroup.github.io/themonster/bjsmarket-our_committment.html">OUR COMMITTMENT</a></div></div>
 
-<div class="w3-third" style="margin:0 0 12px 0;">
+<div class="w3-quarter" style="margin:0 0 12px 0;">
 <div class="column" style="padding:0 2px;margin:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:15px 0;margin:0;text-decoration:none;">Your Privacy</button></div></div>
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;padding:8px 0 7px 0;margin:0;" href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html">ADVERTISE</a></div></div>
+
+<div class="w3-quarter" style="margin:0 0 12px 0;">
+<div class="column" style="padding:0 2px;margin:0;">
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;border:none;border-radius:2px;font-family:roboto condensed;font-size:12px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #fff;text-decoration:none;padding:8px 0 7px 0;margin:0;" href="https://spiralgroup.github.io/themonster/bjsmarket-privacy.html">YOUR PRIVACY</a></div></div>
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="background-color:#ccc;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;">
-<div class="w3-container" style="background-color:#ccc;padding-bottom:0;margin:0;">
-<p class="topicfooter2">BUSINESS HOURS</p>
-<div class="hours" style="padding:6px 0 0 0;">
-<ul>
-<li class="today w3-white w3-text-black" style="border-bottom:1px solid #fff;padding:7px 6px;text-shadow:0 0 1px #222;border-radius:3px 0 0 0;"></li>
-<li class="hrstoday w3-white w3-text-black" style="border-bottom:1px solid #fff;padding:7px 6px;text-shadow:0 0 1px #222;border-radius:0 3px 0 0;"></li>
-    <li class="tomorrow"></li>
-    <li class="hrstomorrow"></li>
-    <li class="dayafter"></li>
-    <li class="hrsdayafter"></li>
-    <li class="threedaysout"></li>
-    <li class="hrsthreedaysout"></li>
-    <li class="fourdaysout"></li>
-    <li class="hrsfourdaysout"></li>
-    <li class="fivedaysout"></li>
-    <li class="hrsfivedaysout"></li>
-    <li class="yesterday" style="border-bottom:1px solid #ccc;padding:6px 4px 0 4px;"></li>
-    <li class="hrsyesterday" style="border-bottom:1px solid #ccc;padding:6px 4px 0 4px;"></li>
-  </ul>
-  <div class="c"></div>
-</div>
-<div style="clear: both;">
-</div>
-</div>
-</div>
-</div>
+
 
 <script>
 $(document).ready(function(){
 
    var date = new Date();
    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-   var hours = ['8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm'];
+   var hours = ['10:30am - 8:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm'];
   
    var today = date.getDay();
    var tomorrow = (date.getDay() + 1) % 7;
@@ -706,37 +729,29 @@ $(document).ready(function(){
 
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
 <p class="topic2">Shop Local</p>
 </div>
 
-<div class="container w3-panel" style="width:100%;padding:0 8px;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
-<div class="customer-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;margin:0 0 15px 0;border-radius:3px;">
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 1</p></div>
+<div class="customer-logos slide" style="width:100%;margin:0;">
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 2</p></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 3</p></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 4</p></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 5</p></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 6</p></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 7</p></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a></div>
 
-<div class="slide w3-center w3-card w3-white" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a>
-<p style="padding:10px 0 5px 0;margin:0;">local advertisement 8</p></div>
+<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a></div>
 </div>
 </div>
 </div>
