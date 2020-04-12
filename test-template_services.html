@@ -5,7 +5,7 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,32 +21,6 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
-});
-</script>
-
-
-<script>
-$(document).ready(function(){
-    $('.catering').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 8000,
         arrows: false,
         dots: false,
         pauseOnHover: true,
@@ -182,90 +156,84 @@ body, html {
     background-color: #f2f2f2;
  }
 
-.navbar {
- max-width: 1024px;
- background-color: #fff;
- margin: 0 auto;
- padding: 0;
- border: none;
- z-index: 1;
+.navbar-header {
+  float: none;
 }
 
-.header {
-  padding: 0;
-  margin: 0 auto;
-}
-
-.top-container {
-  padding: 0;
-  margin: 0 auto;  
-   }
-   .action {
-  background-color: transparent;
-  border-radius: 3px;
-  border: 2px solid #fff;
-  color: #fff !important;
-  }
-
-.button {
-  background-color: #f2f2f2;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  text-align: center;
-  color: #000 !important;
-  text-shadow: 0 0 1px #222;
-  font-family: calibri;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
- }
-
-.button span:after {
-  content: '';
+.modal-fullscreen-menu .close {
+  color: white;
+  opacity: 1;
+  padding: 10px;
   position: absolute;
- opacity: 0;
   top: 0;
-  right: -10px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 5px;
-  color: #000;
-   text-shadow: 0 0 1px #000;
-}
-
-.button:hover span:after {
- opacity: 1;
   right: 0;
+  z-index: 1;
+  font-size: 5vh;
 }
+.modal-fullscreen-menu .modal-dialog {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  align-items: center;
+}
+.modal-fullscreen-menu .modal-content {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.modal-fullscreen-menu .list-group {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.modal-fullscreen-menu .list-group a {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  border: none;
+  transition: all 0.25s ease;
+  background-color: transparent;
+  color: white;
+  padding: 20px 0;
+  height: 10px;
+    line-height: 2;
+}
+
+.modal-backdrop.in {
+  opacity: 1;
+}
+
+.modal-fullscreen-menu .list-group a:hover {
+  color: black;
+}
+
 
 #timeDiv {
 font-family: roboto;
-  font-size: 15px;
+  font-size: 12.5px;
   position: relative;
-   background: #fff;
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   top: 50%;
   padding: 10px 0;
   display: inline-block;
  }
-
-.open {
+ 
+ .open {
   color: #27ae60;
   text-shadow: 0 0 1px #27ae60;
-  border: none;
+  letter-spacing: .5px;
+  background-color: #fff !important;
+  border: 2px solid #fff;
 }
 
 .closed {
-  color: #222;
-  text-shadow: 0 0 1px #000;
-  border: none;
+  color: #000;
+  text-shadow: 0 0 1px #222;
+  letter-spacing: .5px;
+ border: 2px solid #fff;
+ border-radius: 2px;
+ box-shadow: 0 2px 22px #ccc;
 }
 
 
@@ -295,28 +263,6 @@ text-shadow: 0 0 1px #000;
   display: block;
 }
 
-.nab1 a {
-  float: center;
-  font-family: roboto;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 11.5px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  padding: 9px 6px;
-  margin: 10px 4px;
-  }
-
-.nab1 {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
 li:hover span {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
@@ -338,13 +284,24 @@ background-color: #fff;
   color: #333 !important;
 }
 
+.topic { ;
+font-family: roboto condensed;
+font-size: 14px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+margin: 0;
+padding: 0;
+}
+  
 .topic2 {
 font-family: khand medium;
 font-size: 39px;
 color: #fff;
 text-align: center;
-letter-spacing: 2.5px;
-text-shadow: 0 2px 3px #222;
+letter-spacing: 1px;
+text-shadow: 0 2px 6px #ccc;
 margin: 0;
 padding: 0;
 }
@@ -352,6 +309,23 @@ padding: 0;
 @media screen and (max-width: 768px) {
   .topic2 {
   font-size: 36px;
+  }
+  }
+  
+  .topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3 {
+  font-size: 22px;
   }
   }
   
@@ -377,46 +351,149 @@ padding: 10px 0 0 0;
 margin: 0;
 }
 
+hr.style-one { border: 0; height: 2px; width:30%; background-color: #4da6ff; padding: 0; margin:0 0 15px 0;
+}
+
 </style>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
 </head>
+
+
+<center>
 <body>
-<center>
-<div class="top-container" style="width:100%;padding:0;margin:0;">
-<div class="header" id="myHeader">
-<nav class="navbar navbar-default w3-card" style="border-radius:0;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-<a class="navbar-brand" href="#" style="font-family:open sans condensed;font-size:20px;color:#C0C0C0;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;">BARBER SHOPS</a>
+<nav class='navbar navbar-inverse navbar-fixed-top'>
+<div class='container-fluid'>
+<div class='navbar-header'>
+<a class='navbar-brand' href='#'>Dan Stuart</a>
+<button class='btn navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button'>
+<span class='sr-only'>Open navigation</span>
+<span class='glyphicon glyphicon-menu-hamburger'></span>
+</button>
 </div>
-<div>
-<div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Style Services</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Store</span></a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Join Our Team</span></a></li>
-<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Contact</span></a></li></ul>
-    
-<ul class="nav navbar-nav navbar-right">
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MarketPlace</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>Get In The Game</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/terms-of-use.html"><span>Terms of Use</span></a></li></ul>
-      </div>
-    </div>
-  </div>
+</div>
 </nav>
- 
+<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span class='sr-only'>Close navigation</span>
+<span class='glyphicon glyphicon-remove'></span>
+</button>
+<div class='modal-dialog w3-black'>
+
+<div class="w3-row-padding" style="width:100%;margin:50px 0 0 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="width:100%;padding:0;margin:0 0 10px 0;border-radius:2px;">
+</div>
+</div>
+
+
+<div class="w3-half" style="margin:0;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<nav class='list-group'>
+<a class='list-group-item' href='#'>Home</a>
+<a class='list-group-item' href='#'>Services</a>
+<a class='list-group-item' href='#'>Meet the Team</a>
+<a class='list-group-item' href='#'>Careers</a>
+<a class='list-group-item' href='#'>Contact Us</a>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <center>
+<div class="container w3-panel" style="width:100%;padding:60px 0 0 0;margin:60px 0 0 0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Style Services</p>
+</div>
 
-<div id="timeDiv"></div>
-<div class="btn btn-primary btn-block w3-hover-shadow w3-white" style="font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 20px 0;border:none;border-radius:0;padding:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal1">View Hours</div>
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
+<div id="1" class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:dodgerblue;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Haircut</p>
+<hr class="style-one">
 
+<p class="topic">
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:dodgerblue;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Haircut</p>
+<hr class="style-one">
+
+<p class="topic">
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:dodgerblue;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Haircut</p>
+<hr class="style-one">
+
+<p class="topic">
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div id="2" class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:dodgerblue;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Haircut</p>
+<hr class="style-one">
+
+<p class="topic">
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:dodgerblue;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Haircut</p>
+<hr class="style-one">
+
+<p class="topic">
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:dodgerblue;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Haircut</p>
+<hr class="style-one">
+
+<p class="topic">
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -424,10 +501,19 @@ margin: 0;
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container w3-panel" style="margin:0;padding:0;">
-<div class="w3-row w3-card" style="margin:0;">
-<div class="w3-threethird" style="background-color:#ccc;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;padding:20px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
+<p class="topic2">Hours & Location</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row w3-card" style="margin:10px 0 0 0;">
+<div class="w3-half" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:20px 0;">
+<div id="timeDiv" class="w3-card-4" style="background-color:#fff;">
+</div>
+</div>
+
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
@@ -439,11 +525,33 @@ margin: 0;
 <p class="topicfooter1">
 400 South State Street<br>
 Chicago, IL 60605</p>
+
+<div class="w3-row-padding" style="margin:20px 0 10px 0;">
+<div class="w3-third" style="margin:0;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:12.5px;color:#000;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;margin:5px 0;border:none;border-radius:2px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#myModal1">View Hours</button></div>
+
+<div class="w3-third" style="margin:0;">
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:12.5px;color:#000;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;margin:5px 0;border:none;border-radius:2px;padding:10px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a></div>
+
+<div class="w3-third" style="margin:0;">
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto;font-size:12.5px;color:#000;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #000;margin:5px 0;border:none;border-radius:2px;padding:10px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')">Email Special Offers</a>
+</div>
+</div>
 </div>
 
-<div class="nab1" style="width:100%;padding:36px 0 26px 0;margin:0;color:#ccc;">
-<a class="w3-hover-shadow" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a>
-<a class="w3-hover-shadow" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">Email Special Offers</a>
+<div class="w3-half" style="background-color:transparent;margin:0;">
+<div class="column" style="background-color:transparent;margin:0;padding:0;">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190344.67011110255!2d-87.6208397!3d41.803842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e263373ff54c3%3A0xc351b258e504a347!2s500%20S%20State%20St%2C%20Chicago%2C%20IL%2060600!5e0!3m2!1sen!2sus!4v1584244241173!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:295px;" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -535,13 +643,13 @@ var checkTime = function() {
     minutes = "0" + minutes
   };
 
-  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 20) {
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
     hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
     timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' We\'re Open';
     timeDiv.className = 'open';
   } 
   
-  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 20) {
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
     hour = ((hour + 11) % 12 + 1);
     timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' We\'re Open';
     timeDiv.className = 'open';
@@ -573,30 +681,22 @@ checkTime();
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
-<div class="customer-logos slide" style="width:100%;margin:0;">
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="border-radius:2px;"></a></div>
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="border-radius:2px;"></a></div>
+<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+</div>
+</div>
+</div>
 
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;"></a></div>
-
-<div class="slide w3-center w3-card" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/bjsmarket-advertise.html"><img src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="border-radius:2px;"></a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
 var sc_project=12123020; 
