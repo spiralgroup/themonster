@@ -158,8 +158,37 @@ body, html {
 
 .navbar-header {
   float: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: roboto;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 10.5px;
+  margin: 0 3px 0 3px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+.nab a:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+.topnav1 a:hover {
+  text-decoration: none;
+}
 .modal-fullscreen-menu .close {
   color: white;
   opacity: 1;
@@ -188,24 +217,29 @@ body, html {
   width: 100%;
 }
 .modal-fullscreen-menu .list-group a {
+font-family: open sans condensed;
   font-size: 20px;
-  letter-spacing: 0.05em;
+  letter-spacing: .5px;
   border: none;
   transition: all 0.25s ease;
   background-color: transparent;
   color: white;
-  padding: 20px 0;
-  height: 10px;
-    line-height: 2;
+  text-shadow: 0 0 1px #fff;
+  padding: 5px 0;
+  line-height: 2;
 }
 
 .modal-backdrop.in {
-  opacity: 1;
+ opacity: 1;
 }
 
 .modal-fullscreen-menu .list-group a:hover {
-  color: black;
-}
+color: #000;
+text-shadow: 0 0 1px #222;
+  background-color: #fff;
+  border-radius: 2px;
+  }
+
 
 
 #timeDiv {
@@ -364,20 +398,18 @@ hr.style-one { border: 0; height: 2px; width:30%; background-color: #4da6ff; pad
     window.parent.postMessage("resize", "*");
   }
 </script>
-
-
 </head>
 
 
 <center>
 <body>
-<nav class='navbar navbar-inverse navbar-fixed-top'>
+<nav class='navbar navbar-default navbar-fixed-top' style="padding:0;margin:0;">
 <div class='container-fluid'>
 <div class='navbar-header'>
-<a class='navbar-brand' href='#'>Dan Stuart</a>
+<a class='navbar-brand' href='#' style="font-family:roboto;">test</a>
 <button class='btn navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button'>
-<span class='sr-only'>Open navigation</span>
-<span class='glyphicon glyphicon-menu-hamburger'></span>
+<span class='sr-only' style="padding:0;margin:0;">Open navigation</span>
+<span class='glyphicon glyphicon-menu-hamburger' style="padding:0;margin:0;"></span>
 </button>
 </div>
 </div>
@@ -389,23 +421,36 @@ hr.style-one { border: 0; height: 2px; width:30%; background-color: #4da6ff; pad
 </button>
 <div class='modal-dialog w3-black'>
 
-<div class="w3-row-padding" style="width:100%;margin:50px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
 <div class="w3-half" style="margin:0;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="width:100%;padding:0;margin:0 0 10px 0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="width:100%;padding:0;border-radius:2px;">
 </div>
 </div>
 
 
 <div class="w3-half" style="margin:0;">
-<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<div class="column w3-hover-shadow">
 <nav class='list-group'>
 <a class='list-group-item' href='#'>Home</a>
-<a class='list-group-item' href='#'>Services</a>
-<a class='list-group-item' href='#'>Meet the Team</a>
-<a class='list-group-item' href='#'>Careers</a>
+<a class='list-group-item' href='#'>Our Services</a>
+<a class='list-group-item' href='#'>Store</a>
+<a class='list-group-item' href='#'>Join Our Team</a>
 <a class='list-group-item' href='#'>Contact Us</a>
 </nav>
+</div>
+</div>
+
+<center>
+<div class="w3-threethird" style="margin:20px 0 0 0;padding:0;">
+<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Join Our MarketPlace</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
+<a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
