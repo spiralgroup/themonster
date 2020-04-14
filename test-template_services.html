@@ -216,12 +216,17 @@ font-family: khand medium;
  position: relative;
   width: 100%;
   margin: 0 auto;
-  top: 50%;
   padding: 0;
   display: inline-block;
   background-color: #ccc !important;
  }
  
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 15px;
+  }
+  }
+  
   .open {
   font-family: khand medium;
   font-size: 16.5px;
@@ -248,9 +253,10 @@ max-width: 200px;
 font-family: khand medium;
 color: #222;
 text-shadow: 0 0 1px #000;
-  font-size: 18.5px;
+  font-size: 16.5px;
 float: none;
   text-align: left;
+  line-height: 20px;
     }
 
 .day {
@@ -315,26 +321,20 @@ padding: 0;
 
 @media screen and (max-width: 768px) {
   .topic2 {
-  font-size: 36px;
+  font-size: 34px;
   }
   }
   
   .topic3 {
 font-family: open sans condensed;
 font-size: 28px;
-color: #fff;
+color: #f8f8f8;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #fff;
+text-shadow: 0 0 1px #f8f8f8;
 margin: 0;
 padding: 0;
 }
-
-@media screen and (max-width: 768px) {
-  .topic3 {
-  font-size: 22px;
-  }
-  }
   
   .topichd {
 font-family: open sans condensed;
@@ -396,7 +396,7 @@ padding: 5px 0 0 0;
 margin: 0;
 }
 
-hr.style-one { border: 0; height: 2px; width:30%; background-color: #b3b3b3; padding: 0; margin:0 0 15px 0;
+hr.style-one { border: 0; height: 2px; width:50%; background-color: #d9d9d9; padding: 0; margin:0 0 15px 0;
 }
 
 hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; padding: 0; margin:0;
@@ -414,6 +414,17 @@ hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; pad
   width: 1% !important;
   }
   }
+  
+ .modal-dialog {
+  margin: 60px 0 0 0;
+  }  
+  
+  @media screen and (max-width: 768px) {
+   .modal-dialog {
+   margin: 10px 0;
+  }
+  }
+  
 </style>
 
 <!-- MailerLite Universal -->
@@ -469,37 +480,33 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <div class="modal fade" id="modalNavigation" role="dialog">
 <div class="modal-header" style="border:none;">
-<div class="modal-dialog modal-lg" style="background-color:transparent;margin:60px 0;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
 <div class="w3-container" style="background-color:transparent;width:100%;">
 <div class="w3-row-padding" style="width:100%;margin:0 auto;">
 <div class="col-sm-8">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
 </div>
 
-<div class="col-sm-4" style="padding-top:0;margin-top:0;">
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Home</span></a>
+<div class="col-sm-4" style="padding-top:0;">
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Home</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Our Services</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Our Services</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Online Store</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Visit Our Online Store</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Join Our Team</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Join Our Team</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Contact</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Contact</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
 
-<button class="btn btn-primary btn-block" style="background-color:#777;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
-</div>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Get In The Game</span></a>
 
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Your Privacy</span></a>
 
-<div class="col-sm-8" style="padding:0;margin:0;">
-<div class="nab topnav1" style="width:100%;padding:10px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">GET IN THE GAME</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">FEEDBACK</a>
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
 </div>
 </div>
 </div>
@@ -514,7 +521,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<p class="topic2">Style Services</p>
+<p class="topic2">Our Services</p>
 </div>
 
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
@@ -522,8 +529,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+
 <p class="topic3">Haircut</p>
-<hr class="style-one">
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
 Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
@@ -535,7 +543,7 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
 <p class="topic3">Haircut</p>
-<hr class="style-one">
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
 Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
@@ -547,7 +555,7 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
 <p class="topic3">Haircut</p>
-<hr class="style-one">
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
 Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
@@ -562,7 +570,7 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
 <p class="topic3">Haircut</p>
-<hr class="style-one">
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
 Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
@@ -574,7 +582,7 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
 <p class="topic3">Haircut</p>
-<hr class="style-one">
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
 Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
@@ -586,7 +594,7 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
 <p class="topic3">Haircut</p>
-<hr class="style-one">
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
 Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
@@ -598,7 +606,7 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:70px 0 0 0;">
 <p class="topic2">Hours & Location</p>
 
 
@@ -629,18 +637,18 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 400 South State Street<br>
 Chicago, IL 60605</p>
 
-<div class="w3-row-padding" style="width:100%;margin:25px 0 10px 0;">
+<div class="w3-row-padding" style="width:100%;margin:21px 0 10px 0;">
 <div class="w3-quarter" style="margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a></div>
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a></div>
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
 </div>
 </div>
 </div>
@@ -705,9 +713,9 @@ Chicago, IL 60605</p>
        </div>
        </div>
        
-       <div class="w3-row" style="border-top:1px solid #f2f2f2;padding:0;margin:20px 0 0 0;">
+       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
        <div class="w3-threethird">
-<button class="w3-button" style="background-color:transparent;color:black;font-family:roboto;font-size:11px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px black;margin:0;border:none;padding:8px;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;color:dodgerblue;font-family:roboto;font-size:12px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px dodgerblue;margin:0;border:2px solid#f5f5f5;border-radius:2px;padding:10px;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
      
     </div>
   </div>
