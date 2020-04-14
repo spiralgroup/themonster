@@ -160,6 +160,7 @@ body, html {
   float: none;
   padding-left: 0;
   margin-left: 0;
+  max-width: 1024px;
 }
 
 .nab {
@@ -171,76 +172,38 @@ body, html {
 
 .nab a {
   float: center;
-  font-family: roboto;
-  color: #f1f1f1;
+  font-family: roboto condensed;
+  color: #fff;
   text-align: center;
   padding: 4px 1px 4px 1px;
   text-decoration: none;
-  font-size: 10.5px;
+  font-size: 13px;
   margin: 0 3px 0 3px;
   letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
+  text-shadow: 0 0 1px #fff;
 }
 
 .nab a:hover {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #f2f2f2;
+   padding-bottom: 5px;
+   transition: 0.5s;
 }
 
 .topnav1 a:hover {
   text-decoration: none;
 }
-.modal-fullscreen-menu .close {
-  color: white;
-  opacity: 1;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  font-size: 5vh;
+
+.container-fluid1 {
+max-width: 1024px;
 }
-.modal-fullscreen-menu .modal-dialog {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1024px;
-  height: 100%;
-  align-items: center;
-}
-.modal-fullscreen-menu .modal-content {
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-}
-.modal-fullscreen-menu .list-group {
-  text-align: center;
-  margin: 0 auto;
-  width: 40%;
-}
-.modal-fullscreen-menu .list-group a {
-font-family: open sans condensed;
-  font-size: 20px;
-  letter-spacing: .5px;
-  border: none;
-  transition: all 0.25s ease;
-  background-color: transparent;
-  color: white;
-  text-shadow: 0 0 1px #fff;
-  padding: 5px 0;
-  line-height: 2;
-}
+
+
 
 .modal-backdrop.in {
   background-color: #ccc;
   opacity: 1.0;
-}
-}
-
-.modal-fullscreen-menu .list-group a:hover {
-color: #000;
-text-shadow: 0 0 1px #222;
-  background-color: #fff;
-  border-radius: 2px;
   }
+}
 
 #timeDiv {
 font-family: khand medium;
@@ -257,14 +220,20 @@ text-shadow: 0 2px 6px #ccc;
  }
  
   .open {
-  color: #f2f2f2;
-  text-shadow: 0 0 1px #f2f2f2;
+  font-family: khand medium;
+  font-size: 16.5px;
   letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
   background-color: transparent !important;
   border: none;
 }
 
 .closed {
+ font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
   color: #fff;
   background-color: transparent !important;
   border: none;
@@ -272,28 +241,33 @@ text-shadow: 0 2px 6px #ccc;
 
 
 .dateTime {
-  max-width: 300px;
-  margin: 5px auto;
-  font-family: roboto;
+max-width: 200px;
+font-family: khand medium;
 color: #222;
 text-shadow: 0 0 1px #000;
-  font-size: 13.5px;
-}
+  font-size: 18.5px;
+float: none;
+  text-align: left;
+    }
 
 .day {
-  display: inline;
-  float: left;
-}
+   display: inline-block;
+ }
 
 .time {
-  display: inline;
+   display: inline-block;
   float: right;
+  text-align: right;
 }
 
 .today {
+max-width: 250px;
   color: #ccc !important;
   text-shadow: 0 0 1px #ccc !important;
   background-color: #000 !important;
+  padding: 5px 20px !important;
+  border-radius: 4px !important;
+  border-bottom: 2px solid #ff0099;
   display: block;
 }
 
@@ -318,7 +292,7 @@ background-color: #fff;
   color: #333 !important;
 }
 
-.topic { ;
+.topic { 
 font-family: roboto condensed;
 font-size: 14px;
 color: #fff;
@@ -363,6 +337,44 @@ padding: 0;
   }
   }
   
+  .topichd {
+font-family: open sans condensed;
+font-size: 24px;
+letter-spacing: 1px;
+color: #c0c0c0;
+text-shadow: 0 0 1px #c0c0c0;
+text-align: center;
+margin: 0;
+padding: 20px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topichd {
+  padding: 0;
+  font-size: 1px;
+  display: none;
+  }
+  }
+  
+  .topichd1 {
+font-family: open sans condensed;
+font-size: 18px;
+letter-spacing: .5px;
+color: #c0c0c0;
+text-shadow: 0 0 1px #c0c0c0;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topichd1 {
+  padding: 0;
+  font-size: 1px;
+  display: none;
+  }
+  }
+  
 .topicfooter1 {
 font-family: roboto;
 font-size: 14.5px;
@@ -381,14 +393,14 @@ color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: 1px;
-padding: 2px 0 0 0;
+padding: 5px 0 0 0;
 margin: 0;
 }
 
 hr.style-one { border: 0; height: 2px; width:30%; background-color: #b3b3b3; padding: 0; margin:0 0 15px 0;
 }
 
-hr.style-two { border: 0; height: 2px; width:30%; background-color: #fff; padding: 0; margin:0 0 15px 0;
+hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; padding: 0; margin:0;
 }
 
 .btn-primary:hover span {
@@ -429,13 +441,18 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <center>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="container-fluid1" style="background-color:#fff;padding:0;box-shadow:0 2px 22px #ccc;">
+<div class="container-fluid1" style="width:100%;background-color:#fff;padding:0;box-shadow:0 5px 12px #ddd;border-radius:0 0 2px 2px;">
 <div class="row">
 <div class="col-sm-2">
-<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px;float:left;">
+<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;float:left;border-radius:0 0 0 2px;">
 </div>
 
-<div class="col-sm-10">test</div>
+<center>
+<div class="col-sm-8">
+<p class="topichd">BEAUTY & HEALTH</p>
+<hr class="style-two">
+<p class="topichd1" style="padding:0;margin:0;">Barbers & Barber Shops</p>
+</div>
 </div>
 </div>
 </div>
@@ -443,54 +460,56 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
 <div class='container-fluid'>
 <div class='navbar-header'>
-<button class='w3-white btn navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="margin:5px;border-radius:2px;">
+<button class='w3-white btn navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="margin-top:5px;border-radius:2px;">
 <span class='sr-only' style="padding:0;margin:0;">Open navigation</span>
-<span class='glyphicon glyphicon-menu-hamburger' style="font-size:20px;color:#ccc;padding:3px 0 0 0;margin:0;"></span>
+<span class='glyphicon glyphicon-menu-hamburger' style="font-size:22px;color:#ccc;padding:3px 0 0 0;margin:0;"></span>
 </button>
 </div>
 </div>
 </nav>
-<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
-<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-<span class='sr-only'>Close navigation</span>
-<span class='glyphicon glyphicon-remove'></span>
-</button>
-<div class='modal-dialog'>
 
-<div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
-<div class="w3-half" style="margin:0;">
-<div class="column" style="padding:0 0 20px 0;margin:0;">
+<div class="modal fade" id="modalNavigation" role="dialog">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;margin:60px 0;">
+<div class="w3-container" style="background-color:transparent;width:87%;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-4" style="padding-top:0;margin-top:0;">
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Home</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Our Services</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#777;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+
+<div class="col-sm-8">
 <img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px;">
 </div>
+
+<div class="col-sm-8">
+<div class="nab topnav1" style="width:100%;padding:10px 0 0 0;margin:0;">
+<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">GET IN THE GAME</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">TERMS</a>
+<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">FEEDBACK</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="w3-half" style="margin:0;">
-<div class="column" style="padding:0 0 20px 0;margin:0;">
-<nav class='list-group'>
-<a class='list-group-item' href='#'>Home</a>
-<a class='list-group-item' href='#'>Our Services</a>
-<a class='list-group-item' href='#'>Store</a>
-<a class='list-group-item' href='#'>Join Our Team</a>
-<a class='list-group-item' href='#'>Contact Us</a>
-</nav>
-</div>
-</div>
-
-<center>
-<div class="w3-threethird" style="margin:20px 0 0 0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Join Our MarketPlace</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
-<a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
@@ -576,27 +595,24 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 </div>
 </div>
 </div>
-</div>
-
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
 <p class="topic2">Hours & Location</p>
-</div>
-</div>
-</div>
 
+
+<div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
 <div class="w3-row w3-card" style="width:100%;margin:10px 0 0 0;">
 <div class="w3-third" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:0;">
-<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;">
+<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
 </div>
 </div>
 
 
 <div class="w3-twothird" style="background-color:#ccc;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;padding:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
 <div id="timeDiv">
 </div>
 </div>
@@ -613,17 +629,18 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 400 South State Street<br>
 Chicago, IL 60605</p>
 
+<div class="w3-row-padding" style="width:100%;margin:25px 0 10px 0;">
+<div class="w3-quarter" style="margin:0;">
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
 
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a></div>
 
-<div class="w3-row-padding" style="width:100%;margin:20px 0 10px 0;">
-<div class="w3-third" style="margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a></div>
 
-<div class="w3-third" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a></div>
-
-<div class="w3-third" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a>
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:5px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
 </div>
 </div>
 </div>
@@ -635,8 +652,7 @@ Chicago, IL 60605</p>
 </div>
 
 <div class="modal fade" id="myModal1" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="w3-text-white close" style="font-size:40px;cursor:pointer;" data-dismiss="modal">&times;</button></div>
+<div class="modal-header" style="border:none;padding:0;margin:0;"></div>
 <div class="modal-dialog modal-md">
 <div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
 <div class="modal-body" style="padding:0;margin:0;">
@@ -685,7 +701,10 @@ Chicago, IL 60605</p>
         <div class="day">Sunday</div>
       <div class="time">8am - 8pm</div>
       </div>
-      </div>
+       </div>
+       <hr class="style-one">
+      <button class="btn btn-primary btn-block" style="background-color:#fff;border:none;font-family:roboto condensed;font-size:13.5px;color:#ddd;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;padding:8px;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+     
     </div>
   </div>
 </div>
