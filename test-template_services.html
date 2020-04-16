@@ -39,10 +39,36 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
-    margin: 10px 6px;
+    margin: 0;
     padding: 0;
     }
 .slick-slide img {
@@ -270,8 +296,8 @@ float: none;
 
 .today {
 max-width: 200px;
-  color: dodgerblue !important;
-  text-shadow: 0 0 1px dodgerblue !important;
+  color: green !important;
+  text-shadow: 0 0 1px green !important;
     display: block;
 }
 
@@ -450,30 +476,57 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <center>
 <body>
-<div class="container-fluid1" style="width:100%;background-color:#f2f2f2;padding:0 0 0 15px;">
-<div class="row">
-<div class="col-sm-3">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:90%;padding:0;float:left;border-radius:0 0 2px 2px;">
+<div class="container-fluid1" style="width:100%;background-color:#f2f2f2;padding:0 0 40px 0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+
+<div class="row w3-card-4 w3-white" style="width:100%;padding:0 0 6px 0;border-radius:0 0 3px 3px;">
+<div class="w3-quarter" style="padding:0;margin:0;"> 
+<img src="https://user-images.githubusercontent.com/25410880/79335539-08dd2300-7ed7-11ea-9ade-d63720ee0495.png" style="width:100%;padding:0 0 5px 0;">
+<a style="font-family:khand medium;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:5px 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Barbers & Barber Shops</a>
 </div>
 
-<center>
-<div class="col-sm-7" style="padding:0;margin:0;float:left;">
-<p class="topichd">BEAUTY & HEALTH &#9866; BARBERS & BARBER SHOPS</p>
+<div class="w3-threequarter" style="padding:0;"> 
+<div class="business-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
+<div class="slide" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">apparel & accessories</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">automotive</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/69172566-eb846400-0ab2-11ea-93a5-ea422df751c5.png"></a>
+<p style="padding:6px 0 0 0;margin:0;color:green;text-shadow:0 0 1px green">beauty & health</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/66212805-6e706d00-e673-11e9-9bcd-9fd0f2e3b428.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">entertainment</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">food & drink</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">home services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">personal services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">spiritual growth</p></div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
-<div class='container-fluid'>
-<div class='navbar-header'>
-<button class='w3-white btn navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="margin-top:5px;border-radius:2px;">
-<span class='sr-only' style="padding:0;margin:0;">Open navigation</span>
-<span class='glyphicon glyphicon-menu-hamburger' style="font-size:22px;color:#ccc;padding:3px 0 0 0;margin:0;"></span>
+<div class='container-fluid pull-right' style="width:100%;">
+<div class='navbar-header pull-right' style="padding:0;">
+<button class='w3-button w3-text-grey w3-white pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:5px;border-radius:2px;">
+<span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
 </button>
 </div>
-</div>
-</nav>
+</div></nav>
+
 
 <div class="modal fade" id="modalNavigation" role="dialog">
 <div class="modal-header" style="border:none;">
@@ -489,7 +542,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Our Services</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
 
 <a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Shop Our Online Store</span></a>
 
@@ -512,7 +565,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </div>
-</div>
+
 
 
 <center>
@@ -522,28 +575,16 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
-<div id="1" class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
 
-<p class="topic3">Haircut</p>
+<p class="topic3">Service 1</p>
 <button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
-<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
-<p class="topic3">Haircut</p>
-<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
-
-<p class="topic">
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+Showcase up to 12 of your services. Manage your incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction and pay Sellers their earnings.</p>
 </div>
 </div>
 </div>
@@ -551,38 +592,38 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
-<p class="topic3">Haircut</p>
+<p class="topic3">Service 2</p>
 <button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+Create amazing deals and discounts for your Special Offers section. We help increase brand awareness and sales by featuring select Sellers in our monthly email marketing campaigns.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Service 3</p>
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
+
+<p class="topic">
+Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact is delivered right to your inbox.</p>
 </div>
 </div>
 </div>
 </div>
 
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div id="2" class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
-<p class="topic3">Haircut</p>
+<p class="topic3">Service 4</p>
 <button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
-<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
-<p class="topic3">Haircut</p>
-<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
-
-<p class="topic">
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+Build your subscriber list with Mailerlite. Customers can also sign up to have your Special & Promotional Offers delivered right to their inbox.</p>
 </div>
 </div>
 </div>
@@ -590,11 +631,23 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
 <div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
-<p class="topic3">Haircut</p>
+<p class="topic3">Service 5</p>
 <button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
 
 <p class="topic">
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. We process every transaction pay Sellers their extra special inning earnings.</p>
+Direct your clients to book your service appointments online with Schedulicity. Their free plan allows you to schedule as many as ten bookings per month.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card" style="background-color:#c0c0c0;padding:0;margin:0 0 30px 0;border-radius:2px;">
+<div class="column w3-hover-shadow" style="padding:10px 20px 20px 20px;margin:0;">
+<p class="topic3">Service 6</p>
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
+
+<p class="topic">
+Your logo displayed in our Scrolling Footer Logo Ad section on other Seller Pages. If you don't have a logo, we'll create a temporary for free.</p>
 </div>
 </div>
 </div>
@@ -608,7 +661,7 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 
 
 <div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
-<div class="w3-row w3-card" style="width:100%;margin:10px 0 0 0;">
+<div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
 <div class="w3-third" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:0;">
 <img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
@@ -634,12 +687,12 @@ Showcase up to 12 of your best items. Sellers manage their incoming orders via J
 400 South State Street<br>
 Chicago, IL 60605</p>
 
-<div class="w3-row-padding" style="width:100%;margin:21px 0 10px 0;">
+<div class="w3-row-padding" style="width:100%;margin:20px 0 10px 0;">
 <div class="w3-quarter" style="margin:0;">
 <button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Book Appointment</span></a></div>
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a></div>
 
 <div class="w3-quarter" style="margin:0;">
 <a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a></div>
@@ -658,7 +711,7 @@ Chicago, IL 60605</p>
 
 <div class="modal fade" id="myModal1" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;"></div>
-<div class="modal-dialog modal-md">
+<div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
 <div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
 <div class="modal-body" style="padding:0;margin:0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
@@ -711,11 +764,10 @@ Chicago, IL 60605</p>
        </div>
        
        <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
-       <div class="w3-threethird">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#f5f5f5;color:dodgerblue;font-family:roboto;font-size:12px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px dodgerblue;margin:0;border:2px solid#f5f5f5;border-radius:2px;padding:10px;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
-     
-    </div>
-  </div>
+       <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;background-color:#fff;color:green;font-family:khand medium;font-size:13.5px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px dodgerblue;margin:0;padding:12px 0 8px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+</div>
+</div>
 </div>
  </div>
       </div>
@@ -788,17 +840,17 @@ checkTime();
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 </div>
 </div>
 </div>
