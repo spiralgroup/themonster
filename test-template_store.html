@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
+<style type="text/css">
+/* Slider1 */
+.slick-slide {
+    margin: 0;
+    padding: 0;
+    }
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+* {box-sizing: border-box;}
+
+body, html {
+    max-width: 1024px !important;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+ }
+
+.navbar-header {
+  float: none;
+  max-width: 1024px;
+}
+
+.nab {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.nab a {
+  float: center;
+  font-family: roboto condensed;
+  color: #fff;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 3px 0 3px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nab a {
+  font-size: 11px;
+   letter-spacing: 1px;
+  }
+  }
+
+.nab a:hover {
+  border-bottom: 2px solid #fff;
+   padding-bottom: 2px;
+   transition: 0.5s;
+}
+
+
+.container-fluid1 {
+max-width: 1024px;
+left: 0 !important;
+}
+
+
+
+.modal-backdrop.in {
+  background-color: #ccc;
+  opacity: 1.0;
+  }
+}
+
+#timeDiv {
+font-family: khand medium;
+  font-size: 16.5px;
+ letter-spacing: .5px;
+ position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  background-color: #ccc !important;
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 15px;
+  }
+  }
+  
+  .open {
+  font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+.closed {
+ font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+
+.dateTime {
+max-width: 200px;
+font-family: khand medium;
+color: #222;
+text-shadow: 0 0 1px #000;
+  font-size: 16.5px;
+float: none;
+  text-align: left;
+  line-height: 20px;
+    }
+
+.day {
+   display: inline-block;
+ }
+
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.today {
+max-width: 200px;
+  color: green !important;
+  text-shadow: 0 0 1px green !important;
+    display: block;
+}
+
+li:hover span {
+ background-color: #fff;
+  padding-bottom: 5px;
+   transition: 0.5s;
+}
+
+.fa {
+background-color: #fff;
+  padding: 8px 5px;
+  width: 44px;
+  border-radius: 3px;
+  font-size: 21.5px;
+  color: #ccc !important;
+  text-decoration: none !important;
+  margin: 5px 2px 20px 2px;
+  }
+
+.fa:hover {
+  color: #333 !important;
+}
+
+.topic { 
+font-family: roboto condensed;
+font-size: 14px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+margin: 0;
+padding: 0;
+}
+  
+.topic2 {
+font-family: khand medium;
+font-size: 42px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 2px 2px #bfbfbf;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-size: 34px;
+  }
+  }
+  
+  .topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #f8f8f8;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f8f8f8;
+margin: 0;
+padding: 0;
+}
+  
+  .topichd {
+font-family: open sans condensed;
+font-size: 24px;
+letter-spacing: 1px;
+color: #fff;
+text-shadow: 0 0 1px #fff;
+text-align: left;
+margin: 0;
+padding: 55px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topichd {
+  padding: 0;
+  font-size: 1px;
+  display: none;
+  }
+  }
+  
+  .topichd1 {
+font-family: open sans condensed;
+font-size: 18px;
+letter-spacing: .5px;
+color: #c0c0c0;
+text-shadow: 0 0 1px #c0c0c0;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topichd1 {
+  padding: 0;
+  font-size: 1px;
+  display: none;
+  }
+  }
+  
+.topicfooter1 {
+font-family: roboto;
+font-size: 14.5px;
+color: #000;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: .5px;
+padding: 0;
+margin: 0;
+}
+
+.topicfooter2 {
+font-family: roboto;
+font-size: 19px;
+color: #000;
+text-shadow: 0 0 1px #222;
+text-align: center;
+letter-spacing: 1px;
+padding: 5px 0 0 0;
+margin: 0;
+}
+
+hr.style-one { border: 0; height: 2px; width:50%; background-color: #d9d9d9; padding: 0; margin:0 0 15px 0;
+}
+
+hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; padding: 0; margin:0;
+}
+
+.btn-primary:hover span {
+ color: #000;
+ text-shadow: 0 0 1px #222;
+ transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid1 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+  
+ .modal-dialog {
+  margin: 60px 0 0 0;
+  }  
+  
+  @media screen and (max-width: 768px) {
+   .modal-dialog {
+   margin: 10px 0;
+  }
+  }
+  
+  .accordion {
+  font-family: roboto;
+  font-size: 14px;
+  text-shadow:0 0 1px #222;
+  letter-spacing: .5px;
+  background-color: #f8f8f8;
+  color: #000;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #222;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  background-color: #f0f0f0;
+}
+
+@media all and (max-width: 768px) {
+  .accordion:after, .content {
+  display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .accordion{
+    text-align: center;
+    }
+}
+
+.panel {
+  padding: 0 5px;
+  margin: 5px 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.close {
+ font-size: 58px;
+ color: white;
+ text-shadow: 0 0 1px #222;
+ opacity: 0.9;
+ padding: 0;
+ margin-right: 20px;
+ filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+</style>
+
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
+</script>
+<!-- End MailerLite Universal -->
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+
+
+<center>
+<body>
+<div class="container-fluid1" style="width:100%;background-color:#f2f2f2;padding:0 0 40px 0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+
+<div class="row w3-card-4 w3-white" style="width:100%;padding:0 0 6px 0;border-radius:0 0 3px 3px;">
+<div class="w3-quarter" style="padding:0;margin:0;"> 
+<img src="https://user-images.githubusercontent.com/25410880/79335539-08dd2300-7ed7-11ea-9ade-d63720ee0495.png" style="width:100%;padding:0 0 5px 0;">
+<a style="font-family:khand medium;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:5px 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Barbers & Barber Shops</a>
+</div>
+
+<div class="w3-threequarter" style="padding:0;"> 
+<div class="business-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
+<div class="slide" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">apparel & accessories</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">automotive</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/69172566-eb846400-0ab2-11ea-93a5-ea422df751c5.png"></a>
+<p style="padding:6px 0 0 0;margin:0;color:green;text-shadow:0 0 1px green">beauty & health</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/66212805-6e706d00-e673-11e9-9bcd-9fd0f2e3b428.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">entertainment</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">food & drink</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">home services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">personal services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">spiritual growth</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
+<div class='container-fluid pull-right' style="width:100%;">
+<div class='navbar-header pull-right' style="padding:0;">
+<button class='w3-button w3-text-grey w3-white pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:5px;border-radius:2px;">
+<span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
+</button>
+</div>
+</div></nav>
+
+
+<div class="modal fade" id="modalNavigation" role="dialog">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4" style="padding-top:0;">
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Home</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Our Services</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Get In The Game</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Your Privacy</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Our Online Store</p>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item1" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item2" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438989-21a61100-7f89-11ea-8bcb-da4fd72c9a95.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal2" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item3" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal3" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item4" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal4" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/69305963-c5f27a00-0bda-11ea-9307-426290546d23.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item5" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal5" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item6" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal6" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306161-6a74bc00-0bdb-11ea-86af-c83cadde26bc.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item7" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal7" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306475-672e0000-0bdc-11ea-9b0c-b462cbf5e65e.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item8" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal8" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item9" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+
+<div class="modal fade" id="myModal9" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306343-f686e380-0bdb-11ea-8331-36359556bc40.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
+<p align="center">
+<button class="w3-button" style="background-color:dodgerblue;border:none;border-radius:2px;margin:10px 0 20px 0;padding:8px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #ccc;letter-spacing:.5px;font-family:roboto;font-size:15px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button></p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column1" style="padding:0;margin:0 0 10px 0;background-color:#fff;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
+<p class="topic2">SPECIAL OFFERS</p></div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0;">
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item10" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79439949-4949a900-7f8a-11ea-8b84-4a8e7f109271.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:red;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal10"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+</div>
+
+<div class="modal fade" id="myModal10" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/69305794-1ddcb100-0bda-11ea-84b9-3563c5c2630f.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:26px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Now Only &nbsp;$69.99</p>
+
+<p align="center" style="color:#000;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:open sans condensed;font-size:16px;margin:0 0 30px 0;padding:0;">Reg. $99.99</p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic">
+Details of your Special Offer will be included in this section. Customers can redeem offers online, have them delivered via email using the <b>Email Special Offers</b> button located at the bottom of your Seller Page(s), or print them from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0 0 10px 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
+
+<hr style="width:100%;border-bottom:1px solid dodgerblue;padding:0;margin:0;">
+
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+Use code TSA49 at checkout</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+Discount codes cannot be combined</p></button></a>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:#00b386;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
+
+<hr style="width:100%;border-bottom:1px solid #00b386;padding:0;margin:0;">
+
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:5px 0 0 0;margin:0;">
+Print Special Offer</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:0;margin:0;">
+Present to cashier in-store</p></button></a>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;">
+<div class="column" style="margin:10px 0 0 0;">
+<div class="w3-row" style="margin:0 0 5px 0;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. Each of your Special Offers has a modal for this purpose.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0 0 5px 0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item11" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79440341-ba895c00-7f8a-11ea-92b2-1ae41ae1dfc2.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:red;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal11"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+</div>
+
+<div class="modal fade" id="myModal11" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306720-592caf00-0bdd-11ea-979d-41af878eec51.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:26px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Now Only &nbsp;$69.99</p>
+
+<p align="center" style="color:#000;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:open sans condensed;font-size:16px;margin:0 0 30px 0;padding:0;">Reg. $99.99</p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic">
+Details of your Special Offer will be included in this section. Customers can redeem offers online, have them delivered via email using the <b>Email Special Offers</b> button located at the bottom of your Seller Page(s), or print them from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0 0 10px 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
+
+<hr style="width:100%;border-bottom:1px solid dodgerblue;padding:0;margin:0;">
+
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+Use code TSA49 at checkout</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+Discount codes cannot be combined</p></button></a>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:#00b386;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
+
+<hr style="width:100%;border-bottom:1px solid #00b386;padding:0;margin:0;">
+
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:5px 0 0 0;margin:0;">
+Print Special Offer</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:0;margin:0;">
+Present to cashier in-store</p></button></a>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;">
+<div class="column" style="margin:0;">
+<div class="w3-row" style="margin:0 0 5px 0;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. Each of your Special Offers has a modal for this purpose.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0 0 5px 0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
+<div id="item12" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
+<img src="https://user-images.githubusercontent.com/25410880/79444060-81071f80-7f8f-11ea-98a0-5f76028ac964.png" style="width:100%;border-radius:4px 4px 0 0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:red;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal12"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+</div>
+
+<div class="modal fade" id="myModal12" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/69306933-03a4d200-0bde-11ea-9d71-6a48fbc33ff1.png" style="width:100%;padding:0;margin:0;float:center;">
+
+<p align="center" style="font-family:ubuntu condensed;font-size:26px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Now Only &nbsp;$69.99</p>
+
+<p align="center" style="color:#000;text-shadow:0 0 1px #000;letter-spacing:.5px;font-family:open sans condensed;font-size:16px;margin:0 0 30px 0;padding:0;">Reg. $99.99</p>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;">
+<div class="column" style="padding:10px 5px;margin:0;">
+<p class="topic">
+Details of your Special Offer will be included in this section. Customers can redeem offers online, have them delivered via email using the <b>Email Special Offers</b> button located at the bottom of your Seller Page(s), or print them from a desktop. When delivered to their inbox, customers are also subscribing to your mailing list.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="margin:0 0 10px 0;">
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://form.jotform.com/92823006850151" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:dodgerblue;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0 0 5px 0;margin:0;">BUY ONLINE</p>
+
+<hr style="width:100%;border-bottom:1px solid dodgerblue;padding:0;margin:0;">
+
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:5px 0 0 0;margin:0;">
+Use code TSA49 at checkout</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #ccc;padding:0;margin:0;">
+Discount codes cannot be combined</p></button></a>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a href="https://app.mlsend.com/g6u6l9/" style="text-decoration:none;">
+<button class="btn btn-primary btn-block" style="background-color:#00b386;border:none;border-radius:2px;padding:8px 0;margin:10px 0;">
+<p align="center" style="font-family:roboto;font-size:15px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:0 0 5px 0;margin:0;">REDEEM IN-STORE</p>
+
+<hr style="width:100%;border-bottom:1px solid #00b386;padding:0;margin:0;">
+
+<p align="center" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:5px 0 0 0;margin:0;">
+Print Special Offer</p>
+
+<p align="center" style="font-family:roboto;font-size:11px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f5f5f5;padding:0;margin:0;">
+Present to cashier in-store</p></button></a>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;">
+<div class="column" style="margin:0;">
+<div class="w3-row" style="margin:0 0 5px 0;">
+<div class="accordion">Product Description</div>
+<div class="panel" style="border:none;">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+In this section, we provide the details of your product or service. Each of your Special Offers has a modal for this purpose.</p>
+</div>
+
+<div class="accordion">Buy Online, Pickup In-Store</div>
+<div class="panel">
+<p class="topic" style="margin:0;padding:5px 0 10px 0;">
+Instruct customers on how to retrieve online purchases from your retail location. We've provided the following Buy Online, Pickup In-Store (BOPIS) example.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+BOPIS INSTRUCTION EXAMPLE</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+
+Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Only the purchaser or designated pick-up person can retrieve the purchased item(s).<br><br>
+
+Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+
+<p class="topic2" style="margin:10px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+YOU WILL NEED</p>
+
+<p class="topic" style="margin:0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification<br>
+&#8226; Credit/Debit card used for purchase</p>
+
+<p class="topic2" style="margin:15px 0 0 0;padding:0 0 4px 0;border-bottom:1px solid #f1f1f1;">
+DESIGNATED PERSON WILL NEED</p>
+
+<p class="topic" style="margin:0 0 5px 0;padding:8px 0;">
+&#8226; Valid photo ID<br>
+&#8226; Email notification</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:70px 0 0 0;">
+<p class="topic2">Hours & Location</p>
+
+
+<div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
+<div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
+<div class="w3-third" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:0;">
+<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+
+<div class="w3-twothird" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
+<div id="timeDiv">
+</div>
+</div>
+
+<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
+<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+<p class="topicfooter2">
+123-456-8890</p>
+
+<p class="topicfooter1">
+400 South State Street<br>
+Chicago, IL 60605</p>
+
+<div class="w3-row-padding" style="width:100%;margin:20px 0 10px 0;">
+<div class="w3-quarter" style="margin:0;">
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModalbh"><span>View Business Hours</span></button></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+</div>
+</div>
+</div>
+
+
+<div class="w3-threethird" style="background-color:transparent;margin:0;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190344.67011110255!2d-87.6208397!3d41.803842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e263373ff54c3%3A0xc351b258e504a347!2s500%20S%20State%20St%2C%20Chicago%2C%20IL%2060600!5e0!3m2!1sen!2sus!4v1584244241173!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<div class="modal fade" id="myModalbh" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;"></div>
+<div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
+<div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:2px;">
+
+       <div id="Monday" class="dateTime">
+        <div class="day">Monday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+     <br>         
+     
+      <div id="Tuesday" class="dateTime">
+        <div class="day">Tuesday</div>
+        <div class="time">8am - 8pm</div>
+        </div>
+         <br>
+      <div id="Wednesday" class="dateTime">
+        <div class="day">Wednesday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      
+      <div id="Thursday" class="dateTime">
+        <div class="day">Thursday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Friday" class="dateTime">
+        <div class="day">Friday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Saturday" class="dateTime">
+        <div class="day">Saturday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+       <div id="Sunday" class="dateTime">
+        <div class="day">Sunday</div>
+      <div class="time">8am - 8pm</div>
+      </div>
+       </div>
+       </div>
+       </div>
+       
+       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
+       <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:green;font-family:khand medium;font-size:13.5px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px green;margin:0;padding:12px 0 8px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+</div>
+</div>
+</div>
+ </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var now = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var checkTime = function() {
+  var today = weekday[now.getDay()];
+  var timeDiv = document.getElementById('timeDiv');
+  var dayOfWeek = now.getDay();
+  var hour = now.getHours();
+  var minutes = now.getMinutes();
+
+  //add AM or PM
+  var suffix = hour >= 12 ? " PM" : " AM";
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+    minutes = "0" + minutes
+  };
+
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1);
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else {
+    if (hour == 0 || hour > 12) {
+      hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    }
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Closed';
+    timeDiv.className = 'closed';
+  }
+};
+
+var currentDay = weekday[now.getDay()];
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+setInterval(checkTime, 1000);
+checkTime();
+</script>
+
+
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
+<p class="topic2">Shop Local</p>
+</div>
+
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+</div>
+</div>
+</div>
+
+<!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
+<script type="text/javascript">
+var sc_project=12123020; 
+var sc_invisible=1; 
+var sc_security="200cda4a"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12123020/0/200cda4a/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
