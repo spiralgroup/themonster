@@ -5,7 +5,7 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,14 +14,63 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
 <style type="text/css">
-/* Slider */
+/* Slider1 */
 .slick-slide {
-    margin: 12px 6px;
+    margin: 0;
     padding: 0;
-    background-color: #fff;
-    border-radius: 2px;
-   }
+    }
 .slick-slide img {
     width: 100%;
 }
@@ -93,7 +142,7 @@
     min-height: 1px;
 }[dir='rtl'] .slick-slide
 {
-    float: right;
+    float: left;
 }
 .slick-slide img
 {
@@ -133,143 +182,127 @@ body, html {
     background-color: #f2f2f2;
  }
 
-.navbar {
- max-width: 1024px;
- background-color: #fff;
- margin: 0 auto;
- padding: 0;
- border: none;
- z-index: 1;
+.navbar-header {
+  float: none;
+  max-width: 1024px;
 }
 
-.header {
-  padding: 0;
-  margin: 0 auto;
-}
-
-.top-container {
-  padding: 0;
-  margin: 0 auto;  
-   }
-   .action {
-  background-color: transparent;
-  border-radius: 3px;
-  border: 2px solid #fff;
-  color: #fff !important;
-  }
-
-.button {
-  background-color: #f2f2f2;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  text-align: center;
-  color: #000 !important;
-  text-shadow: 0 0 1px #222;
-  font-family: calibri;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
- }
-
-.button span:after {
-  content: '';
-  position: absolute;
- opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 5px;
-  color: #000;
-   text-shadow: 0 0 1px #000;
-}
-
-.button:hover span:after {
- opacity: 1;
-  right: 0;
-}
-
-#timeDiv {
-font-family: roboto;
-  font-size: 15px;
-  position: relative;
-   background: #fff;
-  width: 100%;
-  margin: 0 auto;
-  top: 50%;
-  padding: 10px 0;
-  display: inline-block;
- }
-
-.open {
-  color: #27ae60;
-  text-shadow: 0 0 1px #27ae60;
-  border: none;
-}
-
-.closed {
-  color: #222;
-  text-shadow: 0 0 1px #000;
-  border: none;
-}
-
-
-.dateTime {
-  max-width: 300px;
-  margin: 5px auto;
-  font-family: roboto;
-color: #222;
-text-shadow: 0 0 1px #000;
-  font-size: 13.5px;
-}
-
-.day {
-  display: inline;
-  float: left;
-}
-
-.time {
-  display: inline;
-  float: right;
-}
-
-.today {
-  color: #ccc !important;
-  text-shadow: 0 0 1px #ccc !important;
-  background-color: #000 !important;
-  display: block;
-}
-
-.nab1 a {
-  float: center;
-  font-family: roboto;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 11.5px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  padding: 9px 6px;
-  margin: 10px 4px;
-  }
-
-.nab1 {
+.nab {
   overflow: hidden;
   padding: 10px;
   width: 100%;
   margin: 0;
 }
 
+.nab a {
+  float: center;
+  font-family: roboto condensed;
+  color: #fff;
+  text-align: center;
+  padding: 4px 1px 4px 1px;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 3px 0 3px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nab a {
+  font-size: 11px;
+   letter-spacing: 1px;
+  }
+  }
+
+.nab a:hover {
+  border-bottom: 2px solid #fff;
+   padding-bottom: 2px;
+   transition: 0.5s;
+}
+
+
+.container-fluid1 {
+max-width: 1024px;
+left: 0 !important;
+}
+
+
+
+.modal-backdrop.in {
+  background-color: #ccc;
+  opacity: 1.0;
+  }
+}
+
+#timeDiv {
+font-family: khand medium;
+  font-size: 16.5px;
+ letter-spacing: .5px;
+ position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  background-color: #ccc !important;
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 15px;
+  }
+  }
+  
+  .open {
+  font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+.closed {
+ font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+
+.dateTime {
+max-width: 200px;
+font-family: khand medium;
+color: #222;
+text-shadow: 0 0 1px #000;
+  font-size: 16.5px;
+float: none;
+  text-align: left;
+  line-height: 20px;
+    }
+
+.day {
+   display: inline-block;
+ }
+
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.today {
+max-width: 200px;
+  color: green !important;
+  text-shadow: 0 0 1px green !important;
+    display: block;
+}
+
 li:hover span {
-  border-bottom: 1px solid #fff;
+ background-color: #fff;
   padding-bottom: 5px;
    transition: 0.5s;
 }
@@ -289,6 +322,114 @@ background-color: #fff;
   color: #333 !important;
 }
 
+.topic { 
+font-family: roboto;
+font-size: 14px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #222;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic {
+  text-align: center;
+  }
+  }
+  
+.topic1 { 
+font-family: roboto condensed;
+font-size: 13px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 0;
+}
+
+
+  
+
+.topic1a { 
+font-family: open sans condensed;
+font-size: 19px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 0;
+}
+  
+.topic2 {
+font-family: khand medium;
+font-size: 42px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 2px 2px #bfbfbf;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-size: 34px;
+  }
+  }
+  
+  .topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #000;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #222;
+margin: 0;
+padding: 0;
+}
+  
+  .topichd {
+font-family: open sans condensed;
+font-size: 24px;
+letter-spacing: 1px;
+color: #fff;
+text-shadow: 0 0 1px #fff;
+text-align: left;
+margin: 0;
+padding: 55px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topichd {
+  padding: 0;
+  font-size: 1px;
+  display: none;
+  }
+  }
+  
+  .topichd1 {
+font-family: open sans condensed;
+font-size: 18px;
+letter-spacing: .5px;
+color: #c0c0c0;
+text-shadow: 0 0 1px #c0c0c0;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topichd1 {
+  padding: 0;
+  font-size: 1px;
+  display: none;
+  }
+  }
+  
 .topicfooter1 {
 font-family: roboto;
 font-size: 14.5px;
@@ -307,61 +448,629 @@ color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: 1px;
-padding: 10px 0 0 0;
+padding: 5px 0 0 0;
 margin: 0;
 }
 
+hr.style-one { border: 0; height: 2px; width:50%; background-color: #d9d9d9; padding: 0; margin:0 0 15px 0;
+}
+
+hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; padding: 0; margin:0;
+}
+
+.btn-primary:hover span {
+ color: #000;
+ text-shadow: 0 0 1px #222;
+ transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid1 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+  
+ .modal-dialog {
+  margin: 60px 0 0 0;
+  }  
+  
+  @media screen and (max-width: 768px) {
+   .modal-dialog {
+   margin: 10px 0;
+  }
+  }
+  
+  .zoom {
+  padding: 2px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
 </style>
+
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
+</script>
+<!-- End MailerLite Universal -->
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
+
+
+<center>
 <body>
-<center>
-<div class="top-container" style="width:100%;padding:0;margin:0;">
-<div class="header" id="myHeader">
-<nav class="navbar navbar-default w3-card" style="border-radius:0;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-<a class="navbar-brand" href="#" style="font-family:open sans condensed;font-size:20px;color:#C0C0C0;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;">BARBER SHOPS</a>
+<div class="container-fluid1" style="width:100%;background-color:#f2f2f2;padding:0 0 40px 0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:5px;border-radius:4px 4px 2px 2px;margin:0;box-shadow:0 12px 33px #ccc;">
+
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/79335539-08dd2300-7ed7-11ea-9ade-d63720ee0495.png" style="width:100.5%;padding:0 0 6px 0;">
+<a style="font-family:khand medium;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:0;margin:0;" href="https://spiralgroup.github.io/themonster/business-listings.html">barbers & barber shops</a>
 </div>
-<div>
-<div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Style Services</span></a></li>
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Store</span></a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Join Our Team</span></a></li>
-<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Contact</span></a></li></ul>
-    
-<ul class="nav navbar-nav navbar-right">
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MarketPlace</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>Get In The Game</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/terms-of-use.html"><span>Terms of Use</span></a></li></ul>
-      </div>
-    </div>
-  </div>
-</nav>
- 
+
+<div class="w3-threequarter" style="padding:0;margin:0;"> 
+<div class="business-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
+<div class="slide" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">apparel & accessories</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">automotive</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/69172566-eb846400-0ab2-11ea-93a5-ea422df751c5.png"></a>
+<p style="padding:6px 0 0 0;margin:0;color:green;text-shadow:0 0 1px green">beauty & health</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/66212805-6e706d00-e673-11e9-9bcd-9fd0f2e3b428.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">entertainment</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">food & drink</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">home services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">personal services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">spiritual growth</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
+<div class='container-fluid pull-right' style="width:100%;">
+<div class='navbar-header pull-right' style="padding:0;">
+<button class='w3-button w3-text-grey w3-white w3-hover-shadow pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:10px 5px;border-radius:2px;">
+<span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
+</button>
+</div>
+</div></nav>
+
+
+<div class="modal fade" id="modalNavigation" role="dialog">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4" style="padding-top:0;">
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>Home</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_services.html"><span>Our Services</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>Get In The Game</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
 <center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Welcome</p>
+</div>
 
-<div id="timeDiv"></div>
-<div class="btn btn-primary btn-block w3-hover-shadow w3-white" style="font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 20px 0;border:none;border-radius:0;padding:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal1">View Hours</div>
+<div class="w3-container" style="width:100%;padding:0 12px;margin:8px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird w3-white" style="padding:0;margin:0;border-radius:4px 4px 0 0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+Started in 2009, with the simple idea of bringing back the neighborhood barbershop. A place where you could kick back, get a great haircut and shoot the breeze. We specialize in both classic and modern haircuts as well as hot lather shaves. This is a real-deal, no nonsense neighborhood barbershop.<br><br>
 
+Our ability to recruit and retain top industry professionals, as well as grow our clientele, remains a phenomenon to this day. We pride ourselves on our ability to provide a welcoming, positive environment that results in a prolific and diverse client base.<br><br>
+
+The experience begins when clients walk through the door, chooses their barber, and delves into local or world events, personal matters, or takes time to reflect quietly while their barber creates magic. We stay connected by keeping a finger on the pulse of the industry and setting trends. Check out the services we offer, and then book an appointment to get you looking and feeling your best.</p>
 </div>
 </div>
 </div>
 
+<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-third">
+<div class="column">
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:10px;margin:5px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/test-template_services.html">OUR SERVICES</a>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="column">
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:10px;margin:5px 0;text-decoration:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">BOOK APPOINTMENT ONLINE</a>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="column">
+<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:10px;margin:5px 0;text-decoration:none;" data-toggle="modal" data-target="#myModal5">VIEW PHOTO GALLERY</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5" role="dialog" style="background-color:#ccc;">
+
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79790704-0167b080-8301-11ea-899a-57b32e0e874e.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807293-4ef31600-831f-11ea-8365-86282c07edd0.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79790715-06c4fb00-8301-11ea-9584-748d9f446314.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807656-6d0d4600-8320-11ea-8a5a-6c2e2151b26a.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807681-7c8c8f00-8320-11ea-9057-f8ddd9293111.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807305-56b2ba80-831f-11ea-8400-d5105d329d84.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79808249-13a61680-8322-11ea-866e-36d675eb8f67.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79808486-c4141a80-8322-11ea-98b7-03484b1e7c56.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79808235-0e48cc00-8322-11ea-9a93-10fddb570d9a.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
+</div>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:20px 0 40px 0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Photo Gallery</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Meet Our Barbers</p>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:2px 2px 0 2px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677065-dfa3e780-81a1-11ea-9491-a24405e744d7.png" style="width:100%;padding:0;border-radius:2px;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal6"> Barber One &#151; Master Barber</button>
+</div>
+
+<div class="modal fade" id="myModal6" role="dialog" style="background-color:#ccc;">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;margin-bottom:45px;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677065-dfa3e780-81a1-11ea-9491-a24405e744d7.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4 barber">
+<div class="w3-panel w3-white" style="padding:2px;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1a">Barber One</p>
+</div>
+</div>
+
+<div class="w3-panel" style="padding:5px 10px;margin:0 0 10px 0;border:2px solid #fff;border-radius:0 0 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p></div>
+</div>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:2px 2px 0 2px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79583959-97da6e80-8082-11ea-82b1-35ff4680fe5d.png" style="width:100%;padding:0;border-radius:2px;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal7"> Barber Two &#151; Master Barber</button>
+</div>
+
+<div class="modal fade" id="myModal7" role="dialog" style="background-color:#ccc;">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;margin-bottom:45px;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79583959-97da6e80-8082-11ea-82b1-35ff4680fe5d.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4 barber">
+<div class="w3-panel w3-white" style="padding:2px;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1a">Barber Two</p>
+</div>
+</div>
+
+<div class="w3-panel" style="padding:5px 10px;margin:0 0 10px 0;border:2px solid #fff;border-radius:0 0 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p></div>
+</div>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:2px 2px 0 2px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677064-d581e900-81a1-11ea-815c-f65b4a514590.png" style="width:100%;padding:0;border-radius:2px;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal8"> Barber Three &#151; Master Barber</button>
+</div>
+
+<div class="modal fade" id="myModal8" role="dialog" style="background-color:#ccc;">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;margin-bottom:45px;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677064-d581e900-81a1-11ea-815c-f65b4a514590.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4 barber">
+<div class="w3-panel w3-white" style="padding:2px;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1a">Barber Three</p>
+</div>
+</div>
+
+<div class="w3-panel" style="padding:5px 10px;margin:0 0 10px 0;border:2px solid #fff;border-radius:0 0 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p></div>
+</div>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:2px 2px 0 2px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677327-e54efc80-81a4-11ea-881b-6cf5f5621ea1.png" style="width:100%;padding:0;border-radius:2px;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal9"> Barber Four &#151; Master Barber</button>
+</div>
+
+<div class="modal fade" id="myModal9" role="dialog" style="background-color:#ccc;">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;margin-bottom:45px;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677327-e54efc80-81a4-11ea-881b-6cf5f5621ea1.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4 barber">
+<div class="w3-panel w3-white" style="padding:2px;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1a">Barber Four</p>
+</div>
+</div>
+
+<div class="w3-panel" style="padding:5px 10px;margin:0 0 10px 0;border:2px solid #fff;border-radius:0 0 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p></div>
+</div>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:2px 2px 0 2px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677292-8ab5a080-81a4-11ea-97a4-ff3627ca15a8.png" style="width:100%;padding:0;border-radius:2px;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal10"> Barber Five &#151; Master Barber</button>
+</div>
+
+<div class="modal fade" id="myModal10" role="dialog" style="background-color:#ccc;">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;margin-bottom:45px;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677292-8ab5a080-81a4-11ea-97a4-ff3627ca15a8.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4 barber">
+<div class="w3-panel w3-white" style="padding:2px;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1a">Barber Five</p>
+</div>
+</div>
+
+<div class="w3-panel" style="padding:5px 10px;margin:0 0 10px 0;border:2px solid #fff;border-radius:0 0 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p></div>
+</div>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:2px 2px 0 2px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677226-cd2aad80-81a3-11ea-8640-873b4f221b4e.png" style="width:100%;padding:0;border-radius:2px;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal11"> Barber Six &#151; Master Barber</button>
+</div>
+
+<div class="modal fade" id="myModal11" role="dialog" style="background-color:#ccc;">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;margin-bottom:45px;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677226-cd2aad80-81a3-11ea-8640-873b4f221b4e.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4 barber">
+<div class="w3-panel w3-white" style="padding:2px;margin:0;border-radius:2px 2px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1a">Barber Six</p>
+</div>
+</div>
+
+<div class="w3-panel" style="padding:5px 10px;margin:0 0 10px 0;border:2px solid #fff;border-radius:0 0 2px 2px;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic1">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p></div>
+</div>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container w3-panel" style="margin:0;padding:0;">
-<div class="w3-row w3-card" style="margin:0;">
-<div class="w3-threethird" style="background-color:#ccc;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;padding:20px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:70px 0 0 0;">
+<p class="topic2">Hours & Location</p>
+
+
+<div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
+<div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
+<div class="w3-third" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:0;">
+<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+
+<div class="w3-twothird" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
+<div id="timeDiv">
+</div>
+</div>
+
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
@@ -373,25 +1082,37 @@ margin: 0;
 <p class="topicfooter1">
 400 South State Street<br>
 Chicago, IL 60605</p>
+
+<div class="w3-row-padding" style="width:100%;margin:20px 0 10px 0;">
+<div class="w3-quarter" style="margin:0;">
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+</div>
+</div>
 </div>
 
-<div class="nab1" style="width:100%;padding:36px 0 26px 0;margin:0;color:#ccc;">
-<a class="w3-hover-shadow" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a>
-<a class="w3-hover-shadow" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">Email Special Offers</a>
+<div class="w3-threethird" style="background-color:transparent;margin:0;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-
 
 <div class="modal fade" id="myModal1" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="w3-text-white close" style="font-size:40px;cursor:pointer;" data-dismiss="modal">&times;</button></div>
-<div class="modal-dialog modal-md">
+<div class="modal-header" style="border:none;padding:0;margin:0;"></div>
+<div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
 <div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="container w3-panel w3-white" style="width:100%;padding:0 0 10px 0;margin:0;border-radius:2px;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="width:100%;padding:0;margin:0 0 10px 0;border-radius:2px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:2px;">
 
        <div id="Monday" class="dateTime">
         <div class="day">Monday</div>
@@ -433,6 +1154,17 @@ Chicago, IL 60605</p>
         <div class="day">Sunday</div>
       <div class="time">8am - 8pm</div>
       </div>
+       </div>
+       </div>
+       </div>
+       
+       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
+       <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:green;font-family:khand medium;font-size:13.5px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px green;margin:0;padding:12px 0 8px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+</div>
+</div>
+</div>
+ </div>
       </div>
     </div>
   </div>
@@ -457,22 +1189,22 @@ var checkTime = function() {
   var minutes = now.getMinutes();
 
   //add AM or PM
-  var suffix = hour >= 12 ? " p.m." : " a.m.";
+  var suffix = hour >= 12 ? " PM" : " AM";
 
   // add 0 to one digit minutes
   if (minutes < 10) {
     minutes = "0" + minutes
   };
 
-  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 20) {
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
     hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
-    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' We\'re Open';
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
     timeDiv.className = 'open';
   } 
   
-  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 20) {
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
     hour = ((hour + 11) % 12 + 1);
-    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' We\'re Open';
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
     timeDiv.className = 'open';
   } 
   
@@ -480,7 +1212,7 @@ var checkTime = function() {
     if (hour == 0 || hour > 12) {
       hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
     }
-    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' We\'re Closed';
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Closed';
     timeDiv.className = 'closed';
   }
 };
@@ -492,6 +1224,31 @@ $(currentDayID).toggleClass("today"); //hightlights today in the view hours moda
 setInterval(checkTime, 1000);
 checkTime();
 </script>
+
+
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
+<p class="topic2">Shop Local</p>
+</div>
+
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+</div>
+</div>
+</div>
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
