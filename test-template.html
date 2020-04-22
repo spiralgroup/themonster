@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Demo SG MarketPlace Seller Page - Home &#124; Spiral Group, Inc.</title>
+<title>Demo SG MarketPlace Seller Page &#124; Spiral Group, Inc.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|Baloo+Bhaina+2|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -188,46 +188,10 @@ body, html {
   max-width: 1024px;
 }
 
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: roboto condensed;
-  color: #fff;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 13px;
-  margin: 0 3px 0 3px;
-  letter-spacing: .5px;
-  text-shadow: 0 0 1px #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .nab a {
-  font-size: 11px;
-   letter-spacing: 1px;
-  }
-  }
-
-.nab a:hover {
-  border-bottom: 2px solid #fff;
-   padding-bottom: 2px;
-   transition: 0.5s;
-}
-
-
 .container-fluid1 {
 max-width: 1024px;
 left: 0 !important;
 }
-
-
 
 .modal-backdrop.in {
   background-color: #ccc;
@@ -324,12 +288,12 @@ background-color: #fff;
 }
 
 .topic { 
-font-family: roboto;
-font-size: 14px;
+font-family: roboto condensed;
+font-size: 15.5px;
 color: #222;
 text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #222;
+text-shadow: 0 0 1px #666;
 margin: 0;
 padding: 0;
 }
@@ -351,16 +315,13 @@ margin: 0;
 padding: 0;
 }
 
-
-  
-
 .topic1a { 
 font-family: open sans condensed;
-font-size: 19px;
-color: #222;
+font-size: 22px;
+color: #fff;
 text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
 margin: 0;
 padding: 0;
 }
@@ -393,44 +354,6 @@ margin: 0;
 padding: 0;
 }
   
-  .topichd {
-font-family: open sans condensed;
-font-size: 24px;
-letter-spacing: 1px;
-color: #fff;
-text-shadow: 0 0 1px #fff;
-text-align: left;
-margin: 0;
-padding: 55px 0 0 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topichd {
-  padding: 0;
-  font-size: 1px;
-  display: none;
-  }
-  }
-  
-  .topichd1 {
-font-family: open sans condensed;
-font-size: 18px;
-letter-spacing: .5px;
-color: #c0c0c0;
-text-shadow: 0 0 1px #c0c0c0;
-text-align: center;
-margin: 0;
-padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topichd1 {
-  padding: 0;
-  font-size: 1px;
-  display: none;
-  }
-  }
-  
 .topicfooter1 {
 font-family: roboto;
 font-size: 14.5px;
@@ -449,7 +372,7 @@ color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: 1px;
-padding: 5px 0 0 0;
+padding: 10px 0 0 0;
 margin: 0;
 }
 
@@ -482,20 +405,28 @@ hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; pad
   }
   }
   
-  .zoom {
-  padding: 2px;
-  transition: transform .2s;
-  width: 200px;
-  height: 200px;
+  .mySlides {display:none;}
+  
+  
+  .container6 {
+  position: relative;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.zoom:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+.container6 img {vertical-align: middle;}
+
+.container6 .content6 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 </style>
+
 
 <!-- MailerLite Universal -->
 <script>
@@ -619,125 +550,15 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <p class="topic2">Welcome</p>
 </div>
 
-<div class="w3-container" style="width:100%;padding:0 12px;margin:8px 0 0 0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
+<div class="w3-container" style="width:100%;padding:0 15px;margin:8px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0 0 3px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird w3-white" style="padding:0;margin:0;border-radius:4px 4px 0 0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic">
-Started in 2009, with the simple idea of bringing back the neighborhood barbershop. A place where you could kick back, get a great haircut and shoot the breeze. We specialize in both classic and modern haircuts as well as hot lather shaves. This is a real-deal, no nonsense neighborhood barbershop.<br><br>
+Started in 2009, with the simple idea of bringing back the neighborhood barbershop. A place where you could kick back, get a great haircut and shoot the breeze. We specialize in both classic and modern haircuts as well as hot lather shaves. This is a real-deal, no nonsense neighborhood barbershop. Our ability to recruit and retain top industry professionals, as well as grow our clientele, remains a phenomenon to this day. We pride ourselves on our ability to provide a welcoming, positive environment that results in a prolific and diverse client base.<br><br>
 
-Our ability to recruit and retain top industry professionals, as well as grow our clientele, remains a phenomenon to this day. We pride ourselves on our ability to provide a welcoming, positive environment that results in a prolific and diverse client base.<br><br>
-
-The experience begins when clients walk through the door, chooses their barber, and delves into local or world events, personal matters, or takes time to reflect quietly while their barber creates magic. We stay connected by keeping a finger on the pulse of the industry and setting trends. Check out the services we offer, and then book an appointment to get you looking and feeling your best.</p>
-</div>
-</div>
-</div>
-
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-third">
-<div class="column">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#737373;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;color:#fff;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:10px;margin:5px 0;text-decoration:none;" href="https://spiralgroup.github.io/themonster/test-template_services.html">OUR SERVICES</a>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="column">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#737373;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;color:#fff;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:10px;margin:5px 0;text-decoration:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">BOOK APPOINTMENT ONLINE</a>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="column">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#737373;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;color:#fff;border:none;border-radius:2px;text-shadow:0 0 1px #fff;padding:10px;margin:5px 0;text-decoration:none;" data-toggle="modal" data-target="#myModal5">VIEW PHOTO GALLERY</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal5" role="dialog" style="background-color:#ccc;">
-
-<div class="modal-dialog modal-lg" style="background-color:transparent;">
-<div class="w3-container" style="background-color:transparent;width:100%;padding:30px 0 0 0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79790704-0167b080-8301-11ea-899a-57b32e0e874e.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807293-4ef31600-831f-11ea-8365-86282c07edd0.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79790715-06c4fb00-8301-11ea-9584-748d9f446314.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807656-6d0d4600-8320-11ea-8a5a-6c2e2151b26a.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807681-7c8c8f00-8320-11ea-9057-f8ddd9293111.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79807305-56b2ba80-831f-11ea-8400-d5105d329d84.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79808249-13a61680-8322-11ea-866e-36d675eb8f67.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 30px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79808486-c4141a80-8322-11ea-98b7-03484b1e7c56.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:5px;margin:0 0 10px 0;border:2px solid #fff;border-radius:4px 4px 2px 2px;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79808235-0e48cc00-8322-11ea-9a93-10fddb570d9a.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
-</div>
-</div>
-
-<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #fff;margin:0 0 30px 0;border:none;padding:0;cursor:pointer;" data-dismiss="modal"><span>Close Photo Gallery</span></button>
-</div>
-</div>
+The experience begins when clients walk through the door, chooses their barber, and delves into local or world events, personal matters, or takes time to reflect quietly while their barber creates magic. We stay connected by keeping a finger on the pulse of the industry and setting trends. Click <a href="https://spiralgroup.github.io/themonster/test-template_services.html">here</a> to check out the services we offer, and then book an appointment so that we can get you looking and feeling your best.</p>
 </div>
 </div>
 </div>
@@ -755,13 +576,14 @@ The experience begins when clients walk through the door, chooses their barber, 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:0;margin:0 0 30px 0;border-radius:4px 4px 2px 2px;">
 <div class="column" style="padding:0;margin:0;">
-
+<div class="container6">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677065-dfa3e780-81a1-11ea-9491-a24405e744d7.png" style="width:100%;padding:0;border-radius:2px;">
-
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal6"> Barber One &#151; Master Barber</button>
+<div class="content6">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:16px;color:#fff;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #fff;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal6"> Barber One &#151; Master Barber</button>
+</div>
 </div>
 
-<div class="modal fade" id="myModal6" role="dialog" style="background-color:#ccc;">
+<div class="modal fade" id="myModal6" role="dialog" style="background-color:#f2f2f2;">
 <div class="modal-header" style="border:none;">
 <div class="modal-dialog modal-lg" style="background-color:transparent;">
 <div class="w3-container" style="background-color:transparent;width:100%;margin-bottom:45px;">
@@ -771,28 +593,28 @@ The experience begins when clients walk through the door, chooses their barber, 
 </div>
 
 <div class="col-sm-4 barber">
-<div class="w3-panel w3-white" style="padding:2px;margin:0;border-radius:2px 2px 0 0;">
+<div class="w3-panel" style="background-color:green;padding:14px 0;margin:0;border-radius:2px 2px 0 0;">
 <div class="column" style="padding:0;margin:0;">
-<p class="topic1a">Barber One</p>
+<p class="topic1a">BARBER ONE</p>
 </div>
 </div>
 
-<div class="w3-panel" style="padding:5px 10px;margin:0 0 10px 0;border:2px solid #fff;border-radius:0 0 2px 2px;">
+<div class="w3-panel w3-white" style="padding:6px 8px 8px 8px;margin:0 0 5px 0;border-radius:0 0 2px 2px;">
 <div class="column" style="padding:0;margin:0;">
-<p class="topic1">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p></div>
+<p style="font-family:roboto;font-size:13px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f5f5f5;padding:0;margin:0;">This barber is a Paul Mitchell Barber School graduate from the Southwest suburbs who specializes in all styles of fades and precision razor work and loves challenging requests. When not in the shop, this barber loves to read.</p>
+</div>
 </div>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:Baloo Bhaina 2;font-size:11.5px;color:green;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px green;margin:5px 0;border:none;border-radius:2px;padding:12px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>BOOK APPOINTMENT</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>Shop Our Online Store</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:Baloo Bhaina 2;font-size:11.5px;color:green;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px green;margin:5px 0;border:none;border-radius:2px;padding:12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>SHOP OUR ONLINE STORE</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:Baloo Bhaina 2;font-size:11.5px;color:green;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px green;margin:5px 0;border:none;border-radius:2px;padding:12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>JOIN OUR TEAM</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:Baloo Bhaina 2;font-size:11.5px;color:green;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px green;margin:5px 0;border:none;border-radius:2px;padding:12px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>CONTACT</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
-
-<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+<button class="btn btn-primary btn-block" style="background-color:#fff;font-family:Baloo Bhaina 2;font-size:11.5px;color:green;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px green;margin:5px 0;border:none;border-radius:2px;padding:12px;cursor:pointer;" data-dismiss="modal"><span>EXIT WINDOW</span></button>
+</div>
 </div>
 </div>
 </div>
@@ -805,9 +627,9 @@ The experience begins when clients walk through the door, chooses their barber, 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:0;margin:0 0 30px 0;border-radius:4px 4px 2px 2px;">
 <div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79583959-97da6e80-8082-11ea-82b1-35ff4680fe5d.png" style="width:100%;padding:0;border-radius:2px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79583959-97da6e80-8082-11ea-82b1-35ff4680fe5d.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
 
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal7"> Barber Two &#151; Master Barber</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto condensed;font-size:16px;color:#fff;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px green;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal7"> Barber Two &#151; Master Barber</button>
 </div>
 
 <div class="modal fade" id="myModal7" role="dialog" style="background-color:#ccc;">
@@ -854,8 +676,9 @@ The experience begins when clients walk through the door, chooses their barber, 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:0;margin:0 0 30px 0;border-radius:4px 4px 2px 2px;">
 <div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677064-d581e900-81a1-11ea-815c-f65b4a514590.png" style="width:100%;padding:0;border-radius:2px;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal8"> Barber Three &#151; Master Barber</button>
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677064-d581e900-81a1-11ea-815c-f65b4a514590.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto condensed;font-size:16px;color:#fff;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px green;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal8"> Barber Three &#151; Master Barber</button>
 </div>
 
 <div class="modal fade" id="myModal8" role="dialog" style="background-color:#ccc;">
@@ -902,8 +725,9 @@ The experience begins when clients walk through the door, chooses their barber, 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:0;margin:0 0 30px 0;border-radius:4px 4px 2px 2px;">
 <div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677327-e54efc80-81a4-11ea-881b-6cf5f5621ea1.png" style="width:100%;padding:0;border-radius:2px;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal9"> Barber Four &#151; Master Barber</button>
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677327-e54efc80-81a4-11ea-881b-6cf5f5621ea1.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto condensed;font-size:16px;color:#fff;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px green;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal9"> Barber Four &#151; Master Barber</button>
 </div>
 
 <div class="modal fade" id="myModal9" role="dialog" style="background-color:#ccc;">
@@ -950,8 +774,9 @@ The experience begins when clients walk through the door, chooses their barber, 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:0;margin:0 0 30px 0;border-radius:4px 4px 2px 2px;">
 <div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677292-8ab5a080-81a4-11ea-97a4-ff3627ca15a8.png" style="width:100%;padding:0;border-radius:2px;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal10"> Barber Five &#151; Master Barber</button>
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677292-8ab5a080-81a4-11ea-97a4-ff3627ca15a8.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto condensed;font-size:16px;color:#fff;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px green;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal10"> Barber Five &#151; Master Barber</button>
 </div>
 
 <div class="modal fade" id="myModal10" role="dialog" style="background-color:#ccc;">
@@ -998,8 +823,9 @@ The experience begins when clients walk through the door, chooses their barber, 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:0;margin:0 0 30px 0;border-radius:4px 4px 2px 2px;">
 <div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677226-cd2aad80-81a3-11ea-8640-873b4f221b4e.png" style="width:100%;padding:0;border-radius:2px;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#222;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px #222;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal11"> Barber Six &#151; Master Barber</button>
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79677226-cd2aad80-81a3-11ea-8640-873b4f221b4e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto condensed;font-size:16px;color:#fff;letter-spacing:.5px;border:none;border-radius:0 0 2px 2px;text-shadow:0 0 1px green;padding:10px 0 8px 0;margin:0;text-decoration:none;" data-toggle="modal" data-target="#myModal11"> Barber Six &#151; Master Barber</button>
 </div>
 
 <div class="modal fade" id="myModal11" role="dialog" style="background-color:#ccc;">
@@ -1055,14 +881,46 @@ The experience begins when clients walk through the door, chooses their barber, 
 
 <div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
 <div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
-<div class="w3-third" style="background-color:#ccc;margin:0;">
+<div class="w3-quarter" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:0;">
-<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79790704-0167b080-8301-11ea-899a-57b32e0e874e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807293-4ef31600-831f-11ea-8365-86282c07edd0.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79790715-06c4fb00-8301-11ea-9584-748d9f446314.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807656-6d0d4600-8320-11ea-8a5a-6c2e2151b26a.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807681-7c8c8f00-8320-11ea-9057-f8ddd9293111.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807305-56b2ba80-831f-11ea-8400-d5105d329d84.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79808249-13a61680-8322-11ea-866e-36d675eb8f67.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79808486-c4141a80-8322-11ea-98b7-03484b1e7c56.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79808235-0e48cc00-8322-11ea-9a93-10fddb570d9a.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
 </div>
 </div>
 
+<script>
+var myIndex = 0;
+carousel();
 
-<div class="w3-twothird" style="background-color:#ccc;margin:0;">
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
+
+<div class="w3-threequarter" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
 <div id="timeDiv">
 </div>
@@ -1080,7 +938,7 @@ The experience begins when clients walk through the door, chooses their barber, 
 400 South State Street<br>
 Chicago, IL 60605</p>
 
-<div class="w3-row-padding" style="width:100%;margin:20px 0 10px 0;">
+<div class="w3-row-padding" style="width:100%;margin:24px 0 4px 0;">
 <div class="w3-quarter" style="margin:0;">
 <button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
 
