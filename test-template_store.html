@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Demo SG MarketPlace Seller Page &#124; Spiral Group, Inc.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|Baloo+Bhaina+2|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -187,46 +188,10 @@ body, html {
   max-width: 1024px;
 }
 
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: roboto condensed;
-  color: #fff;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 13px;
-  margin: 0 3px 0 3px;
-  letter-spacing: .5px;
-  text-shadow: 0 0 1px #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .nab a {
-  font-size: 11px;
-   letter-spacing: 1px;
-  }
-  }
-
-.nab a:hover {
-  border-bottom: 2px solid #fff;
-   padding-bottom: 2px;
-   transition: 0.5s;
-}
-
-
 .container-fluid1 {
 max-width: 1024px;
 left: 0 !important;
 }
-
-
 
 .modal-backdrop.in {
   background-color: #ccc;
@@ -322,13 +287,42 @@ background-color: #fff;
   color: #333 !important;
 }
 
-.topic { 
+.topic {
+font-family: roboto;
+font-size: 13.5px;
+color: #000;
+text-shadow: 0 0 1px #777;
+letter-spacing: .5px;
+text-align: justify;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic {
+  text-align: center;
+  font-size: 13px;
+  }
+  }
+  
+.topic1 { 
 font-family: roboto condensed;
-font-size: 14px;
-color: #fff;
+font-size: 13px;
+color: #222;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #fff;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 0;
+}
+
+.topic1a { 
+font-family: roboto condensed;
+font-size: 17px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #666;
 margin: 0;
 padding: 0;
 }
@@ -346,11 +340,14 @@ padding: 0;
 
 @media screen and (max-width: 768px) {
   .topic2 {
-  font-size: 34px;
+  font-size: 32px;
+  color: #ccc;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #ccc;
   }
   }
   
-  .topic3 {
+.topic3 {
 font-family: open sans condensed;
 font-size: 28px;
 color: #f8f8f8;
@@ -360,44 +357,6 @@ text-shadow: 0 0 1px #f8f8f8;
 margin: 0;
 padding: 0;
 }
-  
-  .topichd {
-font-family: open sans condensed;
-font-size: 24px;
-letter-spacing: 1px;
-color: #fff;
-text-shadow: 0 0 1px #fff;
-text-align: left;
-margin: 0;
-padding: 55px 0 0 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topichd {
-  padding: 0;
-  font-size: 1px;
-  display: none;
-  }
-  }
-  
-  .topichd1 {
-font-family: open sans condensed;
-font-size: 18px;
-letter-spacing: .5px;
-color: #c0c0c0;
-text-shadow: 0 0 1px #c0c0c0;
-text-align: center;
-margin: 0;
-padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topichd1 {
-  padding: 0;
-  font-size: 1px;
-  display: none;
-  }
-  }
   
 .topicfooter1 {
 font-family: roboto;
@@ -417,7 +376,7 @@ color: #000;
 text-shadow: 0 0 1px #222;
 text-align: center;
 letter-spacing: 1px;
-padding: 5px 0 0 0;
+padding: 10px 0 0 0;
 margin: 0;
 }
 
@@ -449,6 +408,8 @@ hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; pad
    margin: 10px 0;
   }
   }
+  
+  .mySlides {display:none;}
   
   .accordion {
   font-family: roboto;
@@ -514,7 +475,25 @@ hr.style-two { border: 0; height: 2px; width:23%; background-color: #b3b3b3; pad
  margin-right: 20px;
  filter: Alpha(opacity=50); /* IE8 and earlier */
 }
+
+ .container7 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container7 img {vertical-align: middle;}
+
+.container7 .content7 {
+  position: absolute;
+  bottom: 70px;
+  background: rgb(0, 128, 0);
+  background: rgba(0, 128, 0, 0.4);
+  width: 100%;
+  padding: 0;
+ }
 </style>
+
 
 <!-- MailerLite Universal -->
 <script>
@@ -527,30 +506,20 @@ _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.ma
 var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
-<script>
-  window.console = window.console || function(t) {};
-</script>
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
 </head>
-
-
 <center>
 <body>
 <div class="container-fluid1" style="width:100%;background-color:#f2f2f2;padding:0 0 40px 0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:5px;border-radius:4px 4px 2px 2px;margin:0;box-shadow:0 12px 33px #ccc;">
 
-<div class="row w3-card-4 w3-white" style="width:100%;padding:0 0 6px 0;border-radius:0 0 3px 3px;">
-<div class="w3-quarter" style="padding:0;margin:0;"> 
-<img src="https://user-images.githubusercontent.com/25410880/79335539-08dd2300-7ed7-11ea-9ade-d63720ee0495.png" style="width:100%;padding:0 0 5px 0;">
-<a style="font-family:khand medium;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:5px 0;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Barbers & Barber Shops</a>
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/79335539-08dd2300-7ed7-11ea-9ade-d63720ee0495.png" style="width:100.5%;padding:0 0 6px 0;">
+<a style="font-family:khand medium;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:0;margin:0;" href="https://spiralgroup.github.io/themonster/business-listings.html">barbers & barber shops</a>
 </div>
 
-<div class="w3-threequarter" style="padding:0;"> 
+<div class="w3-threequarter" style="padding:0;margin:0;"> 
 <div class="business-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
 <div class="slide" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png"></a>
 <p style="padding:6px 0 0 0;margin:0;">apparel & accessories</p></div>
@@ -585,7 +554,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
 <div class='container-fluid pull-right' style="width:100%;">
 <div class='navbar-header pull-right' style="padding:0;">
-<button class='w3-button w3-text-grey w3-white pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:5px;border-radius:2px;">
+<button class='w3-button w3-text-grey w3-white w3-hover-shadow pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:10px 5px;border-radius:2px;">
 <span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
 </button>
 </div>
@@ -601,26 +570,24 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
 </div>
 
-<div class="col-sm-4" style="padding-top:0;">
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Home</span></a>
+<div class="col-sm-4" style="padding-top:3px;">
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>HOME</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Our Services</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_services.html"><span>OUR SERVICES</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>BOOK APPOINTMENT</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Shop Our Online Store</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#666;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>SHOP OUR ONLINE STORE</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Join Our Team</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>JOIN OUR TEAM</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Contact</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>CONTACT</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>BUSINESS LISTINGS</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Get In The Game</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>GET IN THE GAME</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:13.5px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank"><span>Your Privacy</span></a>
-
-<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:12.5px;color:#222;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #000;margin:0;border:none;padding:8px 0 0 0;cursor:pointer;" data-dismiss="modal"><span>Close Menu</span></button>
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
 </div>
 </div>
 </div>
@@ -629,7 +596,6 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </div>
-
 
 
 <center>
@@ -640,11 +606,17 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item1" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item1" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal1" role="dialog">
@@ -656,7 +628,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="container w3-panel w3-white" style="width:100%;padding:0 1px;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;margin:0;float:center;">
 
 <p align="center" style="font-family:ubuntu condensed;font-size:24px;color:#333;text-shadow:0 0 1px #222;letter-spacing:.5px;margin:0;padding:0;">Product Name</p>
 <p align="center">
@@ -710,12 +682,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item2" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438989-21a61100-7f89-11ea-8bcb-da4fd72c9a95.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item2" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal2" role="dialog">
@@ -781,12 +759,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item3" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item3" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal3" role="dialog">
@@ -852,12 +836,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item4" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item4" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal4" role="dialog">
@@ -923,12 +913,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item5" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item5" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal5" role="dialog">
@@ -994,12 +990,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item6" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item6" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal6" role="dialog">
@@ -1065,12 +1067,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item7" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item7" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal7" role="dialog">
@@ -1136,12 +1144,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item8" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item8" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal8" role="dialog">
@@ -1207,12 +1221,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item9" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:green;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:none;border-radius:0 0 2px 2px;padding:5px;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<div id="item9" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal9" role="dialog">
@@ -1293,10 +1313,17 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 
 <div class="w3-row-padding" style="margin:0;">
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item10" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79439949-4949a900-7f8a-11ea-8b84-4a8e7f109271.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:red;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal10"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+<div id="special-offer1" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Special Offer</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal10" role="dialog">
@@ -1405,12 +1432,19 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item11" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79440341-ba895c00-7f8a-11ea-92b2-1ae41ae1dfc2.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:red;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal11"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+
+<div id="specialoffer2" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Special Offer</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal11" role="dialog">
@@ -1519,12 +1553,18 @@ DESIGNATED PERSON WILL NEED</p>
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-third" style="padding:0 5px;margin:0 0 20px 0;">
-<div id="item12" class="column" style="padding:0;margin:0 0 10px 0;border-radius:4px;">
-<img src="https://user-images.githubusercontent.com/25410880/79444060-81071f80-7f8f-11ea-98a0-5f76028ac964.png" style="width:100%;border-radius:4px 4px 0 0;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:red;font-family:roboto;font-size:13.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;border-radius:0 0 2px 2px;border:none;margin:0;padding:5px;" data-toggle="modal" data-target="#myModal12"><i class="material-icons" style="color:white;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:middle;">local_offer</i> View Special Offer</button>
+<div id="specialoffer3" class="w3-third" style="margin:0;border-radius:13px;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<div class="container7">
+<img src="https://user-images.githubusercontent.com/25410880/79438978-1d79f380-7f89-11ea-9c85-99e7c4fbef68.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content7 w3-card">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:15.5px;color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" data-toggle="modal" data-target="#myModal1">View Special Offer</button>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="modal fade" id="myModal12" role="dialog">
@@ -1684,14 +1724,46 @@ for (i = 0; i < acc.length; i++) {
 
 <div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
 <div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
-<div class="w3-third" style="background-color:#ccc;margin:0;">
+<div class="w3-quarter" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:0;">
-<img src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79790704-0167b080-8301-11ea-899a-57b32e0e874e.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807293-4ef31600-831f-11ea-8365-86282c07edd0.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79790715-06c4fb00-8301-11ea-9584-748d9f446314.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807656-6d0d4600-8320-11ea-8a5a-6c2e2151b26a.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807681-7c8c8f00-8320-11ea-9057-f8ddd9293111.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79807305-56b2ba80-831f-11ea-8400-d5105d329d84.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79808249-13a61680-8322-11ea-866e-36d675eb8f67.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79808486-c4141a80-8322-11ea-98b7-03484b1e7c56.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/79808235-0e48cc00-8322-11ea-9a93-10fddb570d9a.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
 </div>
 </div>
 
+<script>
+var myIndex = 0;
+carousel();
 
-<div class="w3-twothird" style="background-color:#ccc;margin:0;">
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 190);
+}
+</script>
+
+<div class="w3-threequarter" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
 <div id="timeDiv">
 </div>
@@ -1709,29 +1781,28 @@ for (i = 0; i < acc.length; i++) {
 400 South State Street<br>
 Chicago, IL 60605</p>
 
-<div class="w3-row-padding" style="width:100%;margin:20px 0 10px 0;">
+<div class="w3-row-padding" style="width:100%;margin:24px 0 4px 0;">
 <div class="w3-quarter" style="margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModalbh"><span>View Business Hours</span></button></div>
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal41"><span>View Business Hours</span></button></div>
 
 <div class="w3-quarter" style="margin:0;">
 <a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')"><span>Email Special Offers</span></a></div>
-
-<div class="w3-quarter" style="margin:0;">
 <a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')"><span>Subscribe</span></a>
 </div>
-</div>
-</div>
 
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
+</div>
+</div>
 
 <div class="w3-threethird" style="background-color:transparent;margin:0;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190344.67011110255!2d-87.6208397!3d41.803842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e263373ff54c3%3A0xc351b258e504a347!2s500%20S%20State%20St%2C%20Chicago%2C%20IL%2060600!5e0!3m2!1sen!2sus!4v1584244241173!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 
-<div class="modal fade" id="myModalbh" role="dialog">
+<div class="modal fade" id="myModal41" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;"></div>
 <div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
 <div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
