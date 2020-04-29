@@ -1,28 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
-<title>Demo Seller Page - Careers &#124; Spiral Group, Inc.</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
-<meta name="google-site-verification" content="BJIZwukE82Cn1letaid7scbh6dUWQVJGT4j4Wq9VgR4" />
-<meta name="yandex-verification" content="1cf8ce3cbc019d20" />
-<meta name="description" content="Join the SG MarketPlace for only $25 per month. You can promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals.">
-<meta name="Keywords" content="Join the SG MarketPlace for only $25 per month. You can promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals." />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Join the SG MarketPlace for only $25 per month. You can promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals." />
-<meta property="og:description" content="Join the SG MarketPlace for only $25 per month. You can promote and sell your products and services, book appointments, provide price quotes, receive customer feedback, and create some of the most amazing deals." />
-<meta property="og:url" content="http://spiralgroup.org" />
-<meta property="og:site_name" content="SpiralGroup.org" />
+<title>Demo SG MarketPlace Seller Page - Careers &#124; Spiral Group, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|Cinzel|Concert+One|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|Baloo+Bhaina+2|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -51,14 +40,38 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
 <style type="text/css">
-/* Slider */
+/* Slider1 */
 .slick-slide {
-    margin: 12px 6px;
+    margin: 0;
     padding: 0;
-    background-color: #fff;
-    border-radius: 2px;
-   }
+    }
 .slick-slide img {
     width: 100%;
 }
@@ -130,7 +143,7 @@ $(document).ready(function(){
     min-height: 1px;
 }[dir='rtl'] .slick-slide
 {
-    float: right;
+    float: left;
 }
 .slick-slide img
 {
@@ -161,65 +174,7 @@ $(document).ready(function(){
     display: none;
 }
 
-.hours {
-  width: 250px;
-  display: block;
-  margin: 0 auto;
-  box-sizing: border-box;
-  color: #fff;
-  font-family: roboto;
-  font-size: 12.5px;
- }
-
-.hours ul {
-  padding-left: 0;
-  float: left;
-  padding: 0;
-  }
-
-.hours li {
-background-color: #ccc;
-  float: left;
-  width: 50%;
-  padding: 6px 4px;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  }
-
-.c { clear: both; }
-
-.nab1 a {
-  float: center;
-  font-family: roboto;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 11.5px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  padding: 9px 6px;
-  margin: 10px 4px;
-  }
-
-.nab1 {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-img {
-    border-radius: 0; 
-    max-width: 100%;
-    height: auto;
-}
+* {box-sizing: border-box;}
 
 body, html {
     max-width: 1024px !important;
@@ -227,155 +182,205 @@ body, html {
     margin: 0 auto;
     background-color: #f2f2f2;
  }
- .navbar {
- max-width: 1024px;
- background-color: #f2f2f2;
- margin: 0 auto;
- padding: 0;
- border: none;
- border-radius: 0;
- z-index: 1;
+
+.navbar-header {
+  float: none;
+  max-width: 1024px;
 }
 
-.header {
-  padding: 0;
+.container-fluid1 {
+max-width: 1024px;
+left: 0 !important;
+}
+
+.modal-backdrop.in {
+  background-color: #ccc;
+  opacity: 1.0;
+  }
+}
+
+#timeDiv {
+font-family: khand medium;
+  font-size: 16.5px;
+ letter-spacing: .5px;
+ position: relative;
+  width: 100%;
   margin: 0 auto;
-}
-
-.top-container {
   padding: 0;
-  margin: 0 auto;  
-   }
-   
-.column {
-    width: 100%;
-    padding: 0;
-    float: center;
-    margin: 0;
+  display: inline-block;
+  background-color: #ccc !important;
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 15px;
+  }
+  }
+  
+  .open {
+  font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+.closed {
+ font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+
+.dateTime {
+max-width: 200px;
+font-family: khand medium;
+color: #222;
+text-shadow: 0 0 1px #000;
+  font-size: 16.5px;
+float: none;
+  text-align: left;
+  line-height: 20px;
+    }
+
+.day {
+   display: inline-block;
  }
 
-.row,
-.row > .column {
-    padding: 0;
-    margin: 0;
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.today {
+max-width: 200px;
+  color: green !important;
+  text-shadow: 0 0 1px green !important;
+    display: block;
 }
 
-@media (max-width: 768px) {
-    .column {
-        width: 100%;
-        float: center;
-       }
+li:hover span {
+ background-color: #fff;
+  padding-bottom: 5px;
+   transition: 0.5s;
 }
 
-@media (max-width: 768px) {
-    .column {
-        width: 100%;
-        float: center;
- }
+.fa {
+background-color: #fff;
+  padding: 8px 5px;
+  width: 44px;
+  border-radius: 3px;
+  font-size: 21.5px;
+  color: #ccc !important;
+  text-decoration: none !important;
+  margin: 5px 2px 20px 2px;
+  }
+
+.fa:hover {
+  color: #333 !important;
 }
 
-hr.style-one { border: 0; height: 1px; background: #66ccff; background-image: linear-gradient(to right, #f1f1f1, #cceeff, #f1f1f1); }
-
-.topic {
-font-family: roboto;
-font-size: 14px;
-letter-spacing: .5px;
-color: #000;
+.topic { 
+font-family: roboto condensed;
+font-size: 15.5px;
+color: #222;
 text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #666;
 margin: 0;
 padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic {
-  text-align: center;  
-  }
-  }
-  
-   .topic1 {
-font-family: roboto;
-font-size: 14px;
-letter-spacing: 0;
-color: #000;
-text-shadow: 0 0 1px #222;
-text-align: justify;
-margin: 0;
-padding: 0;
-}
-    @media screen and (max-width: 768px) {
-  .topic1 {
-   font-size: 13px;  
-   text-align: center;
-  }
-  }
-    
-.topic2 {
-font-family: pt sans;
-font-size: 28.5px;
-color: #c0c0c0;
-text-align: center;
-letter-spacing: 1.5px;
-text-shadow: 0 0 1px #000;
-font-weight: normal;
-padding: 0 0 10px 0;
-margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic2 {
-  font-family: open sans condensed;
-  font-size: 20px;  
-  color: #000;
-  text-shadow: 0 0 1px #000;
   text-align: center;
-  letter-spacing: .5px;
-  padding: 0 0 5px 0;  
   }
   }
   
-  
-.topic3 {
-font-family: open sans condensed;
-font-size: 38px;
-letter-spacing: .5px;
-color: #c0c0c0;
-text-shadow: 0 0 1px #c0c0c0;
-text-align: center;
-margin: 0;
-padding: 65px 0 75px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic3 {
-  padding: 0;
-  font-size: 1px;
-  display: none;
-  }
-  }
-  
-.topic4a {
-font-family: roboto;
-font-size: 17.5px;
-color: #fff;
-text-align: center;
-letter-spacing: .5px;
-padding: 0;
-margin: 0;
-}
-
-.topic4b {
-font-family: open sans condensed;
-font-size: 26px;
+.topic1 { 
+font-family: roboto condensed;
+font-size: 13px;
 color: #222;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 0;
+}
+
+.topic1a { 
+font-family: roboto condensed;
+font-size: 17px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #666;
+margin: 0;
+padding: 0;
+}
+  
+.topic2 {
+font-family: khand medium;
+font-size: 42px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 2px 2px #bfbfbf;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-size: 32px;
+  color: #ccc;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #ccc;
+  }
+  }
+  
+  .topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #000;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #222;
+margin: 0;
+padding: 0;
+}
+ 
+  .topic4a {
+font-family: khand medium;
+font-size: 20px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f1f1f1;
+padding: 0;
+margin: 0 0 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+ .topic4a {
+  font-size: 19px;
+   }
+  }
+  
+  .topic4b {
+font-family: open sans condensed;
+font-size: 22px;
+color: #fff;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f1f1f1;
 padding: 0;
 margin: 0 0 5px 0;
 }
@@ -386,40 +391,6 @@ margin: 0 0 5px 0;
    }
   }
   
-.topic4c {
-font-family: roboto;
-font-size: 14px;
-letter-spacing: .5px;
-color: #000;
-text-shadow: 0 0 1px #000;
-text-align: center;
-margin: 0;
-padding: 0;
-}
-
-.topic4d {
-font-family: open sans condensed;
-font-size: 30px;
-color: #c0c0c0;
-text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #c0c0c0;
-font-weight: normal;
-padding: 0;
-margin: 0;
-}
-
-.topicfooter {
-font-family: roboto;
-font-size: 15px;
-color: #000;
-text-shadow: 0 0 1px #222;
-text-align: center;
-letter-spacing: .5px;
-padding: 7px 0 0 0;
-margin: 0;
-}
-
 .topicfooter1 {
 font-family: roboto;
 font-size: 14.5px;
@@ -442,100 +413,86 @@ padding: 10px 0 0 0;
 margin: 0;
 }
 
-li:hover span {
-  border-bottom: 1px solid #fff;
-  padding-bottom: 5px;
-   transition: 0.5s;
+hr.style-one { border: 0; height: 2px; width:50%; background-color: #d9d9d9; padding: 0; margin:0 0 15px 0;
 }
 
-.fa {
-background-color: #fff;
-  padding: 8px 5px;
-  width: 44px;
-  border-radius: 3px;
-  font-size: 21.5px;
-  color: #ccc !important;
-  text-decoration: none !important;
-  margin: 5px 2px 20px 2px;
-  }
-
-.fa:hover {
-  color: #333 !important;
+hr.style-two { border: 0; height: 2px; width:40%; background-color: #ccc; padding: 0; margin:0;
 }
 
-.active1 {
-  background-color: #fff;
-  border-radius: 3px;
-  color: #000 !important;
+.btn-primary:hover span {
+ color: #000;
+ text-shadow: 0 0 1px #222;
+ transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid1 {
+  display: none;
+  width: 1% !important;
   }
+  }
+  
+ .modal-dialog {
+  margin: 60px 0 0 0;
+  }  
+  
+  @media screen and (max-width: 768px) {
+   .modal-dialog {
+   margin: 10px 0;
+  }
+  }
+  
+  .mySlides {display:none;}
+  
+  
+  .container6 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-.button {
-  background-color: #f2f2f2;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  text-align: center;
-  color: #000 !important;
-  text-shadow: 0 0 1px #222;
-  font-family: calibri;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
- }
+.container6 img {vertical-align: middle;}
 
-.button span:after {
-  content: '';
+.container6 .content6 {
   position: absolute;
- opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 0.5s;
+  bottom: 0;
+  background: rgb(192, 192, 192);
+  background: rgba(192, 192, 192, 0.9);
+  width: 100%;
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
 }
 
-.button:hover span {
-  padding-right: 5px;
-  color: #000;
-   text-shadow: 0 0 1px #000;
+ .container7 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.button:hover span:after {
- opacity: 1;
-  right: 0;
-}
+.container7 img {vertical-align: middle;}
 
-.button1 {
-  background-color: #ccc;
-  border: none;
-  text-align: center;
-  font-family: roboto;
-  font-size: 11.5px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  cursor: pointer;
+.container7 .content7 {
+  position: absolute;
+  bottom: 70px;
+ background: rgb(102, 102, 102);
+  background: rgba(102, 102, 102, 0.8);
+  width: 100%;
   padding: 0;
-  margin: 0;
  }
+    
+ div.example {
+  margin: 0;
+  width: 100% !important;
+  padding: 10px 0 0 0;
+}
 
-body {
-    position: relative; 
+@media screen and (min-width: 600px) {
+  div.example {
+    display: none;
   }
-  .affix {
-    top:0;
-    width: 100%;
-    z-index: 9999 !important;
-  }
-  .navbar {
-    margin-bottom: 0px;
-  }
-
-  .affix ~ .container-fluid {
-   position: relative;
-   top: 50px;
-  }
+}
 </style>
+
 
 <!-- MailerLite Universal -->
 <script>
@@ -548,137 +505,184 @@ _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.ma
 var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
+
+
 </head>
-  
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="container-fluid" style="background-color:#fff;padding:0;height:175px;box-shadow:0 2px 22px #ccc;border-radius:0 0 4px 4px;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="w3-twothird" style="padding:0;margin:0;">
-<p class="topic3">BEAUTY & HEALTH</p>
-</div>
 
-<div class="w3-third" style="padding:4px 5px;margin:0;">
-<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/69280929-33cb8100-0b9c-11ea-88f3-b7597c8b1fd9.png" style="width:100%;padding:0;margin:0;border-radius:2px;padding:0;margin:0;">
-</div>
-</div>
-
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="200">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle w3-light-grey" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>                        
-</button>
-<a class="navbar-brand" href="#" style="font-family:open sans condensed;font-size:20px;color:#C0C0C0;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;">MAKEUP & COSMETICS</a>
-</div>
-<div>
-<div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-<li><a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Our Products</span></a></li>
-<li class="active1"><a href="https://spiralgroup.github.io/themonster/demo-careers.html" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Careers</span></a></li>
-<li><a href="https://form.jotform.com/92186745877172" target="_blank" onclick="window.open(href='https://form.jotform.com/92186745877172'),'scrollbars=yes,toolbar=no,width=700,height=500'))" style="font-family:roboto;font-size:12px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #222;font-weight:normal;padding:16px 0;margin:0 7px;"><span>Contact</span></a></li></ul>
-    
-<ul class="nav navbar-nav navbar-right">
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SG MarketPlace</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>Get In The Game</span></a></li>
-<li style="margin:5px 3px;"><a style="padding:10px 8px;margin:0;" class="button" href="https://spiralgroup.github.io/themonster/terms-of-use.html"><span>Terms of Use</span></a></li></ul>
-      </div>
-    </div>
-  </div>
-</nav>
- </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:8px 8px 2px 2px;margin:0;">
+<body>
+<div class="container-fluid1" style="width:100%;background-color:#f2f2f2;padding:0 0 40px 0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:5px;border-radius:4px 4px 2px 2px;margin:0;box-shadow:0 12px 33px #ccc;">
 
-<div class="w3-row-padding" style="margin:0;">
-<div class="w3-threethird" style="margin:0;">
-<div class="column" style="padding:15px 10px;">
-<p class="topic1">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/80313593-a3274b80-87a0-11ea-86aa-8428e35f5191.png" style="width:100.5%;padding:0 0 6px 0;">
+<a style="font-family:khand medium;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:0;margin:0;" href="https://spiralgroup.github.io/themonster/business-listings.html">makeup & cosmetics</a>
+</div>
+
+<div class="w3-threequarter" style="padding:0;margin:0;"> 
+<div class="business-logos slide" style="font-family:khand medium;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
+<div class="slide" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">apparel & accessories</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">automotive</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/69172566-eb846400-0ab2-11ea-93a5-ea422df751c5.png"></a>
+<p style="padding:6px 0 0 0;margin:0;color:green;text-shadow:0 0 1px green">beauty & health</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/66212805-6e706d00-e673-11e9-9bcd-9fd0f2e3b428.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">entertainment</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">food & drink</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">home services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">personal services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">spiritual growth</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
+<div class='container-fluid pull-right' style="width:100%;">
+<div class='navbar-header pull-right' style="padding:0;">
+<button class='w3-button w3-text-grey w3-white w3-hover-shadow pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:10px 5px;border-radius:2px;">
+<span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
+</button>
+</div>
+</div></nav>
+
+
+<div class="modal fade" id="modalNavigation" role="dialog">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80349571-4bcabf00-8824-11ea-8569-9998e9663306.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+</div>
+
+<div class="col-sm-4" style="padding-top:3px;">
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/demo-home"><span>HOME</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><span>SHOP OUR ONLINE STORE</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://app.mlsend.com/g6u6l9/" target="_blank"><span>VIEW OUR SPECIAL OFFERS</span></a>
+
+<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#666;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/demo-careers.html"><span>JOIN OUR TEAM</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>CONTACT</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>BUSINESS LISTINGS</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>GET IN THE GAME</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="example">
+<p style="font-family:khand medium;font-size:25px;color:green;text-shadow:0 0 1px green;letter-spacing:.5px;padding:0;margin:0;">beauty & health</p>
+
+<hr class="style-two">
+
+<p style="font-family:khand medium;font-size:15px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;padding:5px 0;margin:0;text-decoration:none;"><a style="color:green;text-shadow:0 0 1px green;text-decoration:none;" href="https://spiralgroup.github.io/themonster/business-listings.html">makeup & cosmetics</a></p></div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Join Our Team</p>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0 12px;margin:8px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-twothird w3-white" style="border-radius:3px;padding:5px 10px;margin:0;">
+<div class="column" style="padding:15px 10px;margin:0;">
+<p class="topic">
 We seek energetic and ambitious people to join our team as Independent Sales Consultants. Persons considered hard to employ, due to a criminal past, are encouraged to apply. Ideal candidates will have exceptional service skills, the drive to be successful, and a teachable mentality.<br><br>
 
-You'll work with local small businesses to help them achieve their goals through our <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank" style="text-decoration:none;color:dodgerblue;text-shadow:0 0 1px #ccc;">online marketplace</a> and ad programs. You'll be responsible for identifying and contacting businesses throughout Illinois, Indiana, and Wisconsin that would benefit from selling their products in the SG MarketPlace.<br><br>
+You'll work with local small businesses to help them achieve their goals through our <a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html" target="_blank" style="text-decoration:none;color:green;text-shadow:0 0 1px green;">online marketplace</a> and ad programs. You'll be responsible for identifying and contacting businesses throughout Illinois, Indiana, and Wisconsin that would benefit from selling their products in the SG MarketPlace.<br><br>
 
 Success in this role is measured by exceeding monthly sales goals, honesty, professional ethics, staying ahead of certain daily metrics, asking probing questions, and anticipating customer objections. We provide the resources, training, and creative autonomy you'll need to help our clients grow their small businesses exponentially. With each SG MarketPlace sign-up, you've given a local small business an opportunity to get in the game.<br><br>
 
 This is a commission-based sales opportunity; you'll work as an independent contractor. Confident, ethical, and committed Sales Consultants will earn 25% commission on each Spiral Group, Inc. product and service they sell to new and existing clients.<br><br>
 
-We know it takes an especially dedicated person to work in sales, that's why we are committed to providing you with an enriching and rewarding opportunity. While our performance expectations are high, so is our dedication to your success.  If you have what we're seeking, <a href="https://form.jotform.com/82398672847172" target="_blank" style="text-decoration:none;color:dodgerblue;text-shadow:0 0 1px #ccc;">click here to apply</a>.</p>
-</div>
-</div>
+We know it takes an especially dedicated person to work in sales, that's why we are committed to providing you with an enriching and rewarding opportunity. While our performance expectations are high, so is our dedication to your success.  If you have what we're seeking, <a href="https://form.jotform.com/82398672847172" target="_blank" style="text-decoration:none;color:green;text-shadow:0 0 1px green;">click here to apply now</a>.</p>
 </div>
 </div>
 
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:10px 0 0 0;border-radius:8px 8px 2px 2px;margin:50px 0 0 0;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<p class="topic2">Dedicated to Your Success</p>
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
-<i class="material-icons" style="color:dodgerblue;font-size:33px;">android</i>
+<div class="w3-third" style="margin:0 0 5px 0;">
+<div class="w3-panel w3-card" style="background-color:#ccc;border-radius:3px;width:100%;margin:0;">
+<button class="btn btn-primary btn-block" style="background-color:#ccc;margin:8px 0;border:none;border-radius:0;"></button>
+
+<i class="material-icons" style="color:green;font-size:30px;">android</i>
 <p class="topic4b">Product Knowledge Training</p>
-</div>
-</div>
-</div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
-<i class="material-icons" style="color:dodgerblue;font-size:33px;">textsms</i>
+<hr class="style-two" style="margin:0 0 60px 0;">
+
+<i class="material-icons" style="color:green;font-size:30px;">textsms</i>
 <p class="topic4b">Sales &#8226; Service &#8226; Technical Support</p>
-</div>
-</div>
-</div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
-<i class="material-icons" style="color:dodgerblue;font-size:33px;">content_copy</i>
+<hr class="style-two" style="margin:0 0 60px 0;">
+
+<i class="material-icons" style="color:green;font-size:30px;">content_copy</i>
 <p class="topic4b">Useful Marketing Materials</p>
-</div>
-</div>
-</div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="content w3-panel w3-light-grey w3-hover-shadow" style="border:1px solid #f8f8f8;border-radius:3px;padding:30px 10px;margin:0;">
-<i class="material-icons" style="color:dodgerblue;font-size:33px;">business_center</i>
-<p class="topic4b">All the Benefits of Working from Home</p>
-</div>
-</div>
+<hr class="style-two" style="margin:0 0 60px 0;">
+
+<i class="material-icons" style="color:green;font-size:30px;">business_center</i>
+<p class="topic4b">The Benefits of Working from Home</p>
+
+<hr class="style-two" style="margin:0 0 65px 0;">
 </div>
 </div>
 </div>
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:90px 0 0 0;">
+<p class="topic2">Your Careers Web Page</p>
 
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:15px 0 0 0;border-radius:8px 8px 2px 2px;margin:0;">
-<p class="topic2">
-7 Tips for a Great Careers Web Page</p>
-<div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
-<div class="w3-threethird" style="padding:0;margin:0;border-radius:4px 4px 0 0;">
-<div class="column" style="padding:0 5px;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird w3-white" style="border-radius:3px;padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
 <img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/67964424-8200ec00-fbbd-11e9-85c9-2abcafdeb411.png" style="width:100%;padding:0;margin:0;border-radius:2px;" alt="sg1">
 </div>
+</div>
 
-<div class="column" style="padding:10px 5px 0 5px;margin:0;">
-<p class="topic1">
+<div class="w3-threethird w3-white" style="border-radius:3px;padding:5px 10px;margin:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
 As a small business owner, you can quickly reach a local audience through your Spiral Group, Inc. SG MarketPlace Careers web page. Promote and sell your products and services while using this optional web page to recruit and sell your brand to local job seekers.<br><br>
 
 This can be the place where you differentiate your organization from competitors and sell the company as a place where potential employees may want to work. It's a section within your company's digital brochure and can work to compliment your efforts in social media and other recruitment strategies.<br><br>
 
-In the above section we have provided our own current job posting, but it's merely an example of how we have chosen to use this web page in our demo. When you join our marketplace you decide how you'll use this web page to your company's advantage. The following suggestions can help shape your Careers web page so people will want to work with you. <a data-toggle="collapse" data-target="#demo" style="text-decoration:none;color:dodgerblue;text-shadow:0 0 1px #ccc;cursor:pointer;">Continue Reading...</a></p>
+In the above section we have provided our own current job posting, but it's merely an example of how we have chosen to use this web page in our demo. When you join our marketplace you decide how you'll use this web page to your company's advantage. The following suggestions can help shape your Careers web page so people will want to work with you. <a data-toggle="collapse" data-target="#demo" style="text-decoration:none;color:green;text-shadow:0 0 1px green;cursor:pointer;">Continue Reading...</a></p>
 </div>
   
 <div id="demo" class="collapse">
-<div class="column" style="padding:20px 5px 0 5px;margin:0;">
-<p class="topic1"> 
+<div class="column" style="padding:15px 10px 10px 10px;margin:0;">
+<p class="topic"> 
 1. How will you use this page? Will you be posting jobs only? What type of content do you want &#151; employee testimonials, awards, company news?<br><br>
 
 2. Use your social media platforms to direct people to your SG MarketPlace Seller Page(s). Social media platforms are inexpensive and easy ways to connect with future candidates. Use them to share company success stories, promote your brand, and sell the business as a place to work.<br><br>
@@ -693,12 +697,7 @@ In the above section we have provided our own current job posting, but it's mere
 
 7. Look at what your competitors are doing. Do you see something you like and could incorporate into your Careers web page? What can be added to yours that keeps you on track with competitors, or give you the edge?<br><br>
 
-Discover the right blend of content, visuals, and video, and we can help your Careers web page appeal to a larger local audience. You’re selling to job seekers on why they should want to work for you as much as they're supposed to sell themselves to you on why you should hire them. Following these tips can help differentiate your small business from competitors and sell the company as the place where top talent wants to work.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+Discover the right blend of content, visuals, and video, and we can help your Careers web page appeal to a larger local audience. You’re selling to job seekers on why they should want to work for you as much as they're supposed to sell themselves to you on why you should hire them. Following these tips can help differentiate your small business from competitors and promote the company as the place where top talent wants to work.</p>
 </div>
 </div>
 </div>
@@ -712,19 +711,55 @@ Discover the right blend of content, visuals, and video, and we can help your Ca
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container w3-panel" style="background-color:transparent;padding:0 12px;margin:0;">
-<div class="w3-container w3-panel w3-card" style="padding:0;margin:80px 0 0 0;">
-<div class="w3-row" style="background-color:#ccc;margin:0;">
-<div class="w3-third" style="background-color:#ccc;margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="width:100%;padding:0;margin:0;border-radius:2px 2px 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:90px 0 0 0;">
+<p class="topic2">Hours & Location</p>
+
+<div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
+<div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
+<div class="w3-quarter" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:0;">
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347264-f04b0200-8820-11ea-88c3-0ea4f01c293d.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347243-e88b5d80-8820-11ea-945d-2fb3ef8b7e38.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347251-ec1ee480-8820-11ea-88e2-875282b7e8b7.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347233-e4f7d680-8820-11ea-92e5-8b9e710c8a2b.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347211-df01f580-8820-11ea-9124-40b581db081d.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347225-e2957c80-8820-11ea-85f7-ac5ca15afe6c.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347229-e3c6a980-8820-11ea-8c0a-d61b5743c5b0.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347257-ede8a800-8820-11ea-81c3-6963204bbc77.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/80347483-30aa8000-8821-11ea-860c-0a5c7637d248.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
 </div>
 </div>
 
-<div class="w3-third" style="background-color:#ccc;margin:0 0 8px 0;padding:0;border-radius:2px 2px 0 0;">
-<div class="column" style="background-color:#ccc;margin:0;">
-<p class="topicfooter">
-Follow Us Around the Web</p>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 190);
+}
+</script>
+
+<div class="w3-threequarter" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
+<div id="timeDiv">
+</div>
+</div>
 
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
@@ -737,122 +772,170 @@ Follow Us Around the Web</p>
 <p class="topicfooter1">
 400 South State Street<br>
 Chicago, IL 60605</p>
+
+<div class="w3-row-padding" style="width:100%;margin:24px 0 4px 0;">
+<div class="w3-quarter" style="margin:0;">
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>Subscribe</span></a>
 </div>
 
-<div class="nab1" style="width:100%;padding:36px 0 10px 0;margin:0;color:#ccc;">
-<a href="https://calendly.com/spiralgroup-inc/demo-book-appointment" target="_blank">Book Appointment</a>
-<a onclick="ml_account('webforms', '1534948', 'v1u5k0', 'show')" style="cursor:pointer;">Email Special Offers</a>
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
 </div>
 </div>
 
-<div class="w3-third w3-card" style="background-color:#ccc;padding:0;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;">
-<div class="w3-container" style="background-color:#ccc;padding:0;margin:0;">
-<p class="topicfooter">Business Hours</p>
-<div class="hours" style="padding:7px 0 0 0;">
-<ul>
-<li class="today w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;border-radius:3px 0 0 0;"></li>
-<li class="hrstoday w3-white w3-text-black" style="padding:6px;text-shadow:0 0 1px #222;border-radius:0 3px 0 0;"></li>
-    <li class="tomorrow"></li>
-    <li class="hrstomorrow"></li>
-    <li class="dayafter"></li>
-    <li class="hrsdayafter"></li>
-    <li class="threedaysout"></li>
-    <li class="hrsthreedaysout"></li>
-    <li class="fourdaysout"></li>
-    <li class="hrsfourdaysout"></li>
-    <li class="fivedaysout"></li>
-    <li class="hrsfivedaysout"></li>
-    <li class="yesterday" style="border-bottom:1px solid #ccc;padding:4px 4px 0 4px;"></li>
-    <li class="hrsyesterday" style="border-bottom:1px solid #ccc;padding:4px 4px 0 4px;"></li>
-  </ul>
-  <div class="c"></div>
-</div>
-<div style="clear: both;">
+<div class="w3-threethird" style="background-color:transparent;margin:0;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
+
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;"></div>
+<div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
+<div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:2px;">
+
+       <div id="Monday" class="dateTime">
+        <div class="day">Monday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+     <br>         
+     
+      <div id="Tuesday" class="dateTime">
+        <div class="day">Tuesday</div>
+        <div class="time">8am - 8pm</div>
+        </div>
+         <br>
+      <div id="Wednesday" class="dateTime">
+        <div class="day">Wednesday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      
+      <div id="Thursday" class="dateTime">
+        <div class="day">Thursday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Friday" class="dateTime">
+        <div class="day">Friday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Saturday" class="dateTime">
+        <div class="day">Saturday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+       <div id="Sunday" class="dateTime">
+        <div class="day">Sunday</div>
+      <div class="time">8am - 8pm</div>
+      </div>
+       </div>
+       </div>
+       </div>
+       
+       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
+       <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:green;font-family:khand medium;font-size:13.5px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px green;margin:0;padding:12px 0 8px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
 </div>
 </div>
+</div>
+ </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
-$(document).ready(function(){
+var now = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
-   var date = new Date();
-   var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-   var hours = ['8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm','8:00am - 8:00pm'];
+var checkTime = function() {
+  var today = weekday[now.getDay()];
+  var timeDiv = document.getElementById('timeDiv');
+  var dayOfWeek = now.getDay();
+  var hour = now.getHours();
+  var minutes = now.getMinutes();
+
+  //add AM or PM
+  var suffix = hour >= 12 ? " PM" : " AM";
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+    minutes = "0" + minutes
+  };
+
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
   
-   var today = date.getDay();
-   var tomorrow = (date.getDay() + 1) % 7;
-   var dayafter = (date.getDay() + 2) % 7;
-   var threedaysout = (date.getDay() + 3) % 7;
-   var fourdaysout = (date.getDay() + 4) % 7;
-   var fivedaysout = (date.getDay() + 5) % 7;
-   var yesterday = (date.getDay() + 6) % 7;
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1);
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
   
-   var hrstoday = date.getDay();
-   var hrstomorrow = (date.getDay() + 1) % 7;
-   var hrsdayafter = (date.getDay() + 2) % 7;
-   var hrsthreedaysout = (date.getDay() + 3) % 7;
-   var hrsfourdaysout = (date.getDay() + 4) % 7;
-   var hrsfivedaysout = (date.getDay() + 5) % 7;
-   var hrsyesterday = (date.getDay() + 6) % 7;
-  
-   $('.today').html(days[today]);
-   $('.tomorrow').html(days[tomorrow]);
-   $('.dayafter').html(days[dayafter]);
-   $('.threedaysout').html(days[threedaysout]);
-   $('.fourdaysout').html(days[fourdaysout]);
-   $('.fivedaysout').html(days[fivedaysout]);
-   $('.yesterday').html(days[yesterday]);
-  
-   $('.hrstoday').html(hours[today]);
-   $('.hrstomorrow').html(hours[tomorrow]);
-   $('.hrsdayafter').html(hours[dayafter]);
-   $('.hrsthreedaysout').html(hours[threedaysout]);
-   $('.hrsfourdaysout').html(hours[fourdaysout]);
-   $('.hrsfivedaysout').html(hours[fivedaysout]);
-   $('.hrsyesterday').html(hours[yesterday]);
-});
+  else {
+    if (hour == 0 || hour > 12) {
+      hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    }
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Closed';
+    timeDiv.className = 'closed';
+  }
+};
+
+var currentDay = weekday[now.getDay()];
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+setInterval(checkTime, 1000);
+checkTime();
 </script>
-
-<div class="w3-threethird">
-<div class="column" style="background-color:#ccc;margin:0;">
-<iframe class="w3-card" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d95064.6335696599!2d-87.69824128708129!3d41.87629902245431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!3m2!1d41.876320299999996!2d-87.6282014!5e0!3m2!1sen!2sus!4v1573651236844!5m2!1sen!2sus" style="width:100%;border:0;border-radius:2px 2px 0 0;vertical-align:bottom;height:248px;" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
 <center>
-<div id="scroll" class="w3-container w3-panel" style="background-color:#f2f2f2;width:100%;padding:0;margin:80px 0 0 0;">
-<p align="center" style="padding:0;margin:0;"><a style="font-family:kaushan script;font-size:32px;letter-spacing:.5px;color:#f5f5f5;text-shadow:1px 1px 3px #333;text-decoration:none;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">our sponsors</a></p>
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
+<p class="topic2">Shop Local</p>
+</div>
+
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/78976080-510cd780-7aca-11ea-959b-bf0a9a67971e.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
-</div>
-</div>
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
 </div>
 </div>
 </div>
