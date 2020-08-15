@@ -55,6 +55,31 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+$(document).ready(function(){
+    $('.bca-premium').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
 <style type="text/css">
 /* Slider */
 .slick-slide {
@@ -423,7 +448,6 @@ margin: 0;
   right: 0;
 }
 
-
  main{
   width: 100%;
   overflow: hidden;
@@ -576,7 +600,7 @@ Fire up your food and beverage business with SpiralGroup's local marketing solut
 </div>
 
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:80px 0 30px 0;">
+<div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
 <div class="w3-half" style="margin:0 0 10px 0;">
 <div class="item w3-white" data-aos="fade-right">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/89927303-bf25f000-dbcb-11ea-8ef7-4e8133732a61.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
@@ -591,7 +615,7 @@ Fire up your food and beverage business with SpiralGroup's local marketing solut
 <p class="topic4b">
 Reach diners, boost awareness, and accept delivery and takeout orders online. Build brand awareness and capture revenue with a local marketing campaign that works for you local marketing campaign that works for you.</p>
 
-<p align="center"><button class="w3-button w3-black w3-hover-shadow" style="border-radius:2px;font-family:roboto;font-size:14px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px 25px;margin:30px 0;box-shadow:0 0 22px #ccc;" data-toggle="modal" data-target="#myModal1">Learn More</button></p>
+<p align="center"><button class="w3-button w3-black w3-hover-shadow" style="border-radius:2px;font-family:roboto;font-size:14px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px 25px;margin:30px 0 0 0;box-shadow:0 0 22px #ccc;" data-toggle="modal" data-target="#myModal1">Learn More</button></p>
 </div>
 </div>
 </div>
@@ -601,15 +625,71 @@ Reach diners, boost awareness, and accept delivery and takeout orders online. Bu
 <center>
 <div class="modal fade" id="myModal1" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;">
-<button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px;">&times;</button></div>
+<button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px 30px 5px 30px;">&times;</button></div>
 <div class="modal-dialog modal-lg" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white w3-card" style="width:100%;border-radius:3px 3px 0 0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:30px 0 0 0;">
-<div class="w3-threethird w3-white" style="margin:0 0 5px 0;">
-<div class="column" style="margin:0;">
-<p class="topic1a">Smart Promotion</p>
-<img src="https://user-images.githubusercontent.com/25410880/72575299-c9c01700-3880-11ea-9b90-29d312ecae6f.png" style="width:100%;padding:0;margin:0 0 10px 0;border-radius:2px;">
+<div class="w3-container w3-card w3-white" style="width:100%;margin:0;padding:10px 0 0 0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;">
+<div class="w3-threethird w3-white" style="margin:0;">
+<div class="column w3-card-2 w3-white">
+<img src="https://user-images.githubusercontent.com/25410880/90300086-c0664f80-de4d-11ea-8be0-4bde6be10910.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
+</div>
+</div>
+
+<div class="w3-threethird w3-white" style="margin:20px 0 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic4b1" style="color:dodgerblue;">
+Your Custom Headline</p>
+</div>
+</div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="margin:0;">
+<div class="bca-premium" style="width:100%;margin:0;">
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/90300635-5307ee00-de50-11ea-8216-60bb134ab4dc.png" style="width:100%;margin:0;padding:0 5px;">
+
+<p class="topic4ca1">
+Anti-Aging Cream<br>
+8 oz. Keepsake Container</p>
+<p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
+<a href="#" style="text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Shop Now</a></p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/90300635-5307ee00-de50-11ea-8216-60bb134ab4dc.png" style="width:100%;margin:0;padding:0 5px;">
+
+<p class="topic4ca1">
+Magical Playing Cards<br>
+2, 52-Card Decks</p>
+<p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
+<a href="#" style="text-decoration:none;">$9.99 <i class='fas fa-store-alt'></i> Shop Now</a></p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/90300635-5307ee00-de50-11ea-8216-60bb134ab4dc.png" style="width:100%;margin:0;padding:0 5px;">
+
+<p class="topic4ca1">
+Vibrating Pink Kitty<br>
+Batteries not included</p>
+<p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
+<a href="#" style="text-decoration:none;">$9.99 <i class='fas fa-store-alt'></i> Shop Now</a></p></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/90300635-5307ee00-de50-11ea-8216-60bb134ab4dc.png" style="width:100%;margin:0;padding:0 5px;">
+
+<p class="topic4ca1">
+Noise Reduction Headphones<br>
+Free with any purchase</p>
+<p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
+<a href="#" style="text-decoration:none;"><i class='fas fa-store-alt'></i> Shop Now</a></p></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-threethird" style="margin:0;">
+<div class="column" style="padding:0;margin:10px 0 0 0;">
+<p class="topicprestige">Displays 4 to 6 Items</p>
+<a class="w3-button w3-blue" href="https://form.jotform.com/200181106011129" style="border-radius:2px;text-decoration:none;padding:20px;box-shadow:0 0 22px #333;margin:10px 0;">
+<p class="topic3">$139 Per Month &#8226; Order Now</p></a>
+</div>
+</div>
+
 
 <p class="topic1a">Smart Promotion</p>
 
@@ -625,9 +705,7 @@ We’ll showcase your offer and engage customers using bright, bold images and c
 Custom Control
 
 Tailor an offer to meet your needs. Set a cap on units sold, target new customers only, or add other fine print.</p>
-</div>
-</div>
-</div>
+
 
 <hr/>
 <div class="w3-threethird w3-white" style="margin:0 0 5px 0;">
@@ -646,15 +724,18 @@ Our SG Local Ad Services promotes your offer to customers who are likely to buy,
 We’ll showcase your offer and engage customers using bright, bold images and content about your business or industry.</p>
 </div>
 </div>
-</div>
+
 
 <div class="w3-container w3-light-grey" style="width:100%;border-radius:0 0 3px 3px;margin:0;">
 <div class="w3-row w3-light-grey" style="width:100%;padding:0;margin:25px 0 0 0;">
 <div class="w3-threethird w3-light-grey" style="margin:0;">
 
-<p class="topic1a">Ready for affordable local marketing that actually works?</p>
+<p class="topic1a">Ready for affordable local marketing that works?</p>
 
 <p align="center"><a class="w3-button w3-blue" href="https://form.jotform.com/92823006850151" target="_blank" style="border-radius:2px;font-family:roboto;font-size:16px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px;margin:10px 0 20px 0;box-shadow:0 0 22px #ccc;">Get Started</a></p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -678,7 +759,7 @@ We’ll showcase your offer and engage customers using bright, bold images and c
 <p class="topic4b">
 Manage incoming orders. Get a clear view of how the SG MarketPlace helps your small business grow. Monitor sales, respond to customers, and track payments with our easy-to-use apps and Merchant Center.</p>
 
-<p align="center"><button class="w3-button w3-black w3-hover-shadow" style="border-radius:2px;font-family:roboto;font-size:14px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px 25px;margin:30px 0;box-shadow:0 0 22px #ccc;" data-toggle="modal" data-target="#myModal2">Learn More</button></p>
+<p align="center"><button class="w3-button w3-black w3-hover-shadow" style="border-radius:2px;font-family:roboto;font-size:14px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px 25px;margin:30px 0 0 0;box-shadow:0 0 22px #ccc;" data-toggle="modal" data-target="#myModal2">Learn More</button></p>
 </div>
 </div>
 </div>
@@ -688,28 +769,23 @@ Manage incoming orders. Get a clear view of how the SG MarketPlace helps your sm
 <center>
 <div class="modal fade" id="myModal2" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;">
-<button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px;">&times;</button></div>
+<button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px 30px 5px 30px;">&times;</button></div>
 <div class="modal-dialog modal-lg" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
 <div class="w3-container w3-white w3-card" style="width:100%;border-radius:3px 3px 0 0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:30px 0 0 0;">
 <div class="w3-half w3-white" style="margin:0;">
 <div class="column" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/90178677-dc94be80-dd71-11ea-833e-ea1501037126.gif" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/90291046-9e1c0400-de44-11ea-919b-5c87d04bb645.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
 <div class="w3-half w3-white" style="margin:0;">
 <div class="column" style="margin:0;">
-<p class="topic1a">Smart Promotion</p>
+<p class="topic1a">Complete Online Food Ordering and Delivery System.</p>
 
 <p class="topic">
-With a single setup you get a beautiful restaurant menu, online food ordering & restaurant booking system. All free, no fees, no hidden costs, no commissions – for unlimited food orders and restaurant reservations.</p><br>
-
-<p class="topic1a">Buy Online, Pickup In-Store</p>
-
-<p class="topic">
-Receive and confirm orders from your own smartphone or tablet
+Our online food ordering and delivery system centralizes all pick-up, delivery & dine in orders, so you can easily be in full control of your business.
 
 Get all your restaurant's online orders in one place with the order taking app.
 
@@ -732,18 +808,30 @@ Online Food Ordering For Takeaway / Food Delivery
     Order for later with scheduled fulfilment
     Cash, online payments (premium feature) and other payment options
     Support for tips (for online payments)</p>
+       
+    <p class="topic1a">Take Unlimited Orders from Your SG MarketPlace Seller Pages</p>
+
+<p>With our free restaurant ordering system, you can set up an account & start taking online orders within minutes, straight from your:
+
+    website
+    
+It’s easy to boost your profits & save on food portal commission fees when you rely on a powerful ordering system.</p>
+
 </div>
 </div>
 </div>
 
 <hr/>
-<div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="w3-threethird w3-white" style="padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:30px 0 0 0;">
+<div class="w3-half w3-white" style="margin:0;">
 <div class="column" style="margin:0;">
-<p class="topic1a">Dynamic Presentation</p>
+<img src="https://user-images.githubusercontent.com/25410880/90178677-dc94be80-dd71-11ea-833e-ea1501037126.gif" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
+</div>
 
-<p class="topic">
-Receive and confirm orders from your own smartphone or tablet
+<div class="w3-half w3-white" style="margin:0;">
+<div class="column" style="margin:0;">
+<p class="topic1a">Receive and confirm orders from your own smartphone or tablet
 
 Get all your restaurant's online orders in one place with the order taking app.
 
@@ -764,7 +852,7 @@ Once your order has been processed, you'll receive an email notification. Typica
 <div class="w3-row w3-light-grey" style="width:100%;padding:0;margin:25px 0 0 0;">
 <div class="w3-threethird w3-light-grey" style="margin:0;">
 
-<p class="topic1a">Ready for affordable local marketing that actually works?</p>
+<p class="topic1a">Ready for affordable local marketing that works?</p>
 
 <p align="center"><a class="w3-button w3-blue" href="https://form.jotform.com/92823006850151" target="_blank" style="border-radius:2px;font-family:roboto;font-size:16px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px;margin:10px 0 20px 0;box-shadow:0 0 22px #ccc;">Get Started</a></p>
 </div>
@@ -790,7 +878,7 @@ Once your order has been processed, you'll receive an email notification. Typica
 <p class="topic4b">
 Your SG MarketPlace Seller Pages allows you to connect with customers searching for businesses like yours. In addition, your Seller Pages can serve as a mobile-friendly and fully-equipped starter website if you don't already have a web presence.</p>
 
-<p align="center"><button class="w3-button w3-black w3-hover-shadow" style="border-radius:2px;font-family:roboto;font-size:14px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px 25px;margin:30px 0;box-shadow:0 0 22px #ccc;" data-toggle="modal" data-target="#myModal3">Learn More</button></p>
+<p align="center"><button class="w3-button w3-black w3-hover-shadow" style="border-radius:2px;font-family:roboto;font-size:14px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px 25px;margin:30px 0 0 0;box-shadow:0 0 22px #ccc;" data-toggle="modal" data-target="#myModal3">Learn More</button></p>
 </div>
 </div>
 </div>
@@ -800,34 +888,29 @@ Your SG MarketPlace Seller Pages allows you to connect with customers searching 
 <center>
 <div class="modal fade" id="myModal3" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;">
-<button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px;">&times;</button></div>
+<button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px 30px 5px 30px;">&times;</button></div>
 <div class="modal-dialog modal-lg" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
 <div class="w3-container w3-white w3-card" style="width:100%;border-radius:3px 3px 0 0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:30px 0 0 0;">
-<div class="w3-half w3-white" style="margin:0;">
+<div class="w3-row" style="width:100%;padding:0;margin:20px 0 0 0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/90178677-dc94be80-dd71-11ea-833e-ea1501037126.gif" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/90292820-47182e00-de48-11ea-8e26-5cf2a042da1b.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-half w3-white" style="margin:0;">
+<div class="w3-threethird w3-white" style="margin:0;">
 <div class="column" style="margin:0;">
-<p class="topic1a">Smart Promotion</p>
+<p class="topic1a">Massive Reach</p>
 
 <p class="topic">
-Grow your online presence and connect with local customers searching for businesses like yours—whether you decide to run a Groupon offer or not.</p><br>
+Grow your online presence and connect with local customers searching for businesses like yours.</p><br>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
-
-<p class="topic">
-
-Massive Reach
-
-Groupon Pages puts your business at the fingertips of more than 25 million active customers shopping our marketplace.<br><br>
+<p>Your SG MarketPlace Seller Pages puts your business at the fingertips of active customers shopping our marketplace. discover all the wonderful features and built-in marketing tools designed to help your small business grow in this competitive landscape.<br><br>
 
 
 Customizable Content
+Dynamic Presentation
 
 Add photos and a business description to entice customers, grow your brand, and showcase what you have to offer.<br><br>
 
@@ -838,36 +921,78 @@ Verified customer tips suggest the best ways to experience your business. Join t
 </div>
 </div>
 </div>
-
 <hr/>
-<div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="w3-half w3-white" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/86725610-a6c82180-bfde-11ea-8b25-9ac67573bbc2.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+
+
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="margin:0;">
+<p class="topic2">Seller Page Features</p>
+<p class="topic3">Everything Your Small Business Needs</p>
 </div>
 </div>
 
-<div class="w3-half w3-white" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<p class="topic1a">Dynamic Presentation</p>
+<div class="w3-half" style="margin:0;">
+<div class="column" style="margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71976274-bfd84d00-31ca-11ea-8b66-bbcdd8187225.png" style="width:100%;border-radius:2px 2px 0 0;">
 
-<p class="topic">
-We’ll showcase your offer and engage customers using bright, bold images and content about your business or industry.</p><br>
+<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 5px;margin:0 0 30px 0;">
+<div class="column" style="margin:0;">
+<p class="topic3">
+Create amazing deals and discounts for your Special Offers section. We help increase brand awareness and sales by featuring select Sellers in our monthly email marketing campaigns.</p>
+</div>
+</div>
+</div>
+</div>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<div class="w3-half" style="margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71966362-40408300-31b6-11ea-94e1-736d9abc065b.png" style="width:100%;border-radius:2px 2px 0 0;">
 
-<p class="topic">
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
+<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 10px;margin:0 0 30px 0;">
+<div class="column" style="margin:0;">
+<p class="topic3">
+Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact is delivered right to your inbox.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71966363-40408300-31b6-11ea-846e-62cf8977393b.png" style="width:100%;border-radius:2px 2px 0 0;">
+
+<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 5px;margin:0 0 30px 0;">
+<div class="column" style="margin:0;">
+<p class="topic3">
+Build your subscriber list with Mailerlite. Customers can also sign up to have your Special & Promotional Offers delivered right to their inbox.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="customer-logos slider w3-card" style="width:100%;padding:0;margin:0;">
+<div class="slide"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71973640-450c3380-31c4-11ea-8c68-ebfbc2d4bc43.png" style=" border-radius: 2px 2px 0 0;"></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/71974689-fad88180-31c6-11ea-8f1c-f75276d08fd1.png" style=" border-radius: 2px 2px 0 0;"></div>
+
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/71974690-fb711800-31c6-11ea-9124-b16df3e88a9e.png" style=" border-radius: 2px 2px 0 0;">
+</div>
+</div>
+
+<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 10px;margin:0 0 30px 0;">
+<div class="column" style="margin:0;">
+<p class="topic3">
+Your logo displayed in our Scrolling Footer Logo Ad section on other Seller Pages. If you don't have a logo, we'll create a temporary for free.</p>
 </div>
 </div>
 </div>
 </div>
+
 
 <div class="w3-container w3-light-grey" style="width:100%;border-radius:0 0 3px 3px;margin:0;">
 <div class="w3-row w3-light-grey" style="width:100%;padding:0;margin:25px 0 0 0;">
 <div class="w3-threethird w3-light-grey" style="margin:0;">
 
-<p class="topic1a">Ready for affordable local marketing that actually works?</p>
+<p class="topic1a">Ready for affordable local marketing that works?</p>
 
 <p align="center"><a class="w3-button w3-blue" href="https://form.jotform.com/92823006850151" target="_blank" style="border-radius:2px;font-family:roboto;font-size:16px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px;margin:10px 0 20px 0;box-shadow:0 0 22px #ccc;">Get Started</a></p>
 </div>
