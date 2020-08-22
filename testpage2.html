@@ -423,22 +423,14 @@ margin: 5px 0 0 0;
 .topic4ca2 {
 font-family: roboto;
 font-size: 14px;
-color: #000;
+color: #222;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #000;
 font-weight: normal;
-padding: 20px 0 0 0;
-margin: 5px 0 0 0;
+padding: 0;
+margin: 0;
 }
-
-@media screen and (max-width: 768px) {
-  .topic4ca2 {
-  font-size: 14px;
-  text-align: center;
-  padding: 0;
-  }
-  }
   
 .topic4b1 {
 font-family: open sans condensed;
@@ -451,7 +443,31 @@ padding: 0;
 margin: 0 0 5px 0;
 }
 
+.topicfooter2 {
+font-family: pt sans;
+font-size: 24px;
+color: #fff;
+text-shadow: 0 0 1px #f5f5f5;
+text-align: center;
+letter-spacing: .5px;
+padding: 10px 0 5px 0;
+margin: 0;
+}
 
+@media screen and (max-width: 768px) {
+  .topicfooter2 {
+  font-size: 20px;
+  padding: 10px 0 5px 0;
+ margin: 0;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+  .material-icons {
+  display: none;
+  }
+  }
+  
  .button {
   border-radius: 2px;
   background-color: #f0f0f0;
@@ -580,6 +596,22 @@ font-family: 'Expletus Sans', cursive;
     display: none;
   }
 }
+
+.container8 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container8 img {vertical-align: middle;}
+
+.container8 .content8 {
+  position: absolute;
+  bottom: 65px;
+  background: rgba(248, 248, 255, 0.8);
+  width: 100%;
+  padding: 0;
+ }
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -681,20 +713,22 @@ Reach diners, boost awareness, and accept delivery and takeout orders online. Bu
 <div class="modal fade" id="myModal1" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;">
 <button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px 30px 5px 30px;">&times;</button></div>
-<div class="modal-dialog modal-lg" style="padding:0;margin:10px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px 3px 0 0;margin:0;padding:2px;">   
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="col-sm-12" style="padding:0 2px;">
-<button class="btn btn-primary btn-block w3-white" href="https://form.jotform.com/200181106011129" style="font-family:roboto condensed;font-size:13px;color:dodgerblue;letter-spacing:.5px;border-radius:2px;border:none;padding:8px;box-shadow:0 0 12px #ccc;margin:2px 0;"><a href="#" style="text-decoration:none;color:dodgerblue;">View Business Hours & Location</a></button>
+<div class="modal-dialog modal-lg" style="padding:0;margin:20px;">
+<div class="modal-dialog modal-lg" style="padding:0;margin:20px;">
+<div class="modal-body w3-blue" style="padding:0 10px 10px 10px;margin:0;border-radius:3px;">
+<div class="w3-container" style="width:100%;border-radius:3px;margin:0;padding:10px 0;">
+<div class="w3-container w3-blue" style="width:100%;padding:0;margin:0;">
+<p class="topicfooter2"><i class="material-icons" style="color:white;font-size:35px;vertical-align:top;margin:0;padding:0 0 5px 0;">looks_one</i> Smart Promotion</p>
+</div>
 </div>
 
-<div class="col-sm-7" style="padding:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/90451990-c6109f00-e0b2-11ea-8850-add0c267c1f4.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row w3-white" style="width:100%;margin:0;border-radius:3px;">
+<div class="w3-half" style="padding:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/90962666-4f3f2180-e477-11ea-973a-9d6ac1bd5f4f.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 
-<div class="col-sm-5" style="padding:0;">
-<div class="bca-premium container7" style="width:100%;margin:0 0 -95px 0;padding:2px;">
+<div class="w3-half" style="padding:2px;">
+<div class="bca-premium container7" style="width:100%;margin:0 0 -95px 0;padding:0;">
 
 <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/90352367-ce140480-e008-11ea-996d-2d8b9e900418.png" style="width:100%;margin:0;border-radius:2px;">
 <div class="content7">
@@ -730,45 +764,44 @@ Call Ahead or Order Online</button>
 </div>
 </div>
 </div>
+
+<div class="w3-row-padding w3-white" style="width:100%;margin:20px 0 0 0;border-radius:3px;">
+<div class="w3-half w3-white" style="margin:0;padding:5px 0;">
+<div class="column w3-white" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/90668153-3800f980-e215-11ea-9da5-fc63df685688.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
 </div>
 
+<div class="w3-half w3-white" style="margin:15px 0 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic4ca2">We'll showcase up to four of your menu items with our Exclusive Category Ad, as shown above. When diners click on your featured menu items, they're taken to your Seller Page, where they can order online.<br><br>
+
+An ECA can help your food & beverage business generate awareness, promote specials, or create demand for a best seller. Ads appear on the SG MarketPlace business category (or sub-category) web page of your choice.</p>
+
+<p align="center"><a class="w3-button w3-white w3-text-blue" href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" target="_blank" style="border-radius:2px;font-family:roboto;font-size:12px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px dodgerblue;text-decoration:none;padding:10px 15px;margin:20px 0 15px 0;box-shadow:0 0 20px #dcdcdc;">View Example</a></p>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:10px 0 15px 0;">
 <div class="w3-container w3-blue" style="width:100%;padding:0;margin:0;">
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px;margin:0 0 10px 0;">
-<p class="topic1a">Smart Promotion</p>
-<p class="topicprestige">We'll showcase four to six of your menu items with our Exclusive Category and Sub-Category Ads. When diners click on your ad, they're presented with your featured menu items. When they click on an image, they're taken to your Seller Page so they can order menu items online. We promote your offer to customers who are likely to buy.</p><br>
-
-Our goal is to bring more local diners to your online food & beverage business<br><br>
-
-
-<p class="topic1a">Dynamic Presentation</p>
-
-<p class="topic">
-
-
-Custom Control
-
-Tailor an offer to meet your needs. Set a cap on units sold, target new customers only, or add other fine print.</p>
-</div>
+<p class="topicfooter2"><i class="material-icons" style="color:white;font-size:35px;vertical-align:top;margin:0;padding:0;">looks_two</i> SG Listing Service</p>
 </div>
 </div>
 
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding w3-white" style="width:100%;margin:30px 0;">
-<div class="w3-half w3-white" style="margin:0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;border-radius:3px 3px 0 0;">
+<div class="w3-half w3-white" style="margin:0;padding:5px 0;">
 <div class="column w3-white" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/90322569-806d9e00-df1b-11ea-84d1-3cec5ca6d0b0.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-half w3-white" style="margin:0;">
+<div class="w3-half w3-white" style="margin:15px 0 0 0;">
 <div class="column" style="padding:0;margin:0;">
-<p class="topic1a">SG Listing Service.</p>
+<p class="topic4ca2">
+Show up in more local searches, because being local matters. We created the SG Listing Service to help grow your small business. We register your food & beverage business in only the top electronic business directories such as Bing, FourSquare, Google, and VK.com.</p>
 
-<p class="topic">
-Show up in more local searches, because being local matters. With so many people searching for businesses near them, your small business needs a local listing. A local listing will make it easier for people to find your small business. By leveraging the SG Listing Service, you can be confident that your business information is accurate and consistent. Affording you opportunities to attract the kind of customer you deserve.
-
-We created the SG Listing Service to help grow your small business. We put in the work so you don't have to. We register your small business in only the top electronic business directories such as Bing, FourSquare, Google, and VK.com. Service included when you join the SG MarketPlace.</p>
+<p align="center"><a class="w3-button w3-white w3-text-blue" href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" target="_blank" style="border-radius:2px;font-family:roboto;font-size:12px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px dodgerblue;text-decoration:none;padding:10px 15px;margin:20px 0 15px 0;box-shadow:0 0 20px #dcdcdc;">Complete Details</a></p>
 
 </div>
 </div>
@@ -819,79 +852,99 @@ Manage incoming orders. Get a clear view of how the SG MarketPlace helps your sm
 <div class="modal-header" style="border:none;padding:0;margin:0;">
 <button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px 30px 5px 30px;">&times;</button></div>
 <div class="modal-dialog modal-lg" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white w3-card" style="width:100%;border-radius:3px 3px 0 0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:30px 0 0 0;">
-<div class="w3-half w3-white" style="margin:0;">
-<div class="column" style="margin:0;">
+<div class="modal-body w3-blue" style="padding:0 10px 10px 10px;margin:0;border-radius:3px;">
+<div class="w3-container" style="width:100%;border-radius:3px;margin:0;padding:10px 0;">
+<div class="w3-container w3-blue" style="width:100%;padding:0;margin:0;">
+<p class="topicfooter2"><i class="material-icons" style="color:white;font-size:35px;vertical-align:top;margin:0;padding:0 0 5px 0;">looks_one</i> Online Food Ordering System</p>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:1px;margin:0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;border-radius:3px;">
+<div class="w3-half w3-white" style="margin:0;padding:5px 0;">
+<div class="column w3-white" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/90291046-9e1c0400-de44-11ea-919b-5c87d04bb645.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-half w3-white" style="margin:0;">
-<div class="column" style="margin:0;">
-<p class="topic1a">Complete Online Food Ordering and Delivery System.</p>
+<div class="w3-half w3-white" style="margin:15px 0 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic4ca2">This online ordering and delivery system centralizes all pick-up, delivery & dine in orders, so you can easily be in full control of your business. you can easily start taking online orders & grow your business. Take Unlimited Orders from Your SG MarketPlace Seller Pages<br><br>
 
-<p class="topic">
-Our online food ordering and delivery system centralizes all pick-up, delivery & dine in orders, so you can easily be in full control of your business.
+When someone places an order on your SG MarketPlace Seller Page, it instantly gets pushed to your Android or iOS device.
 
-Get all your restaurant's online orders in one place with the order taking app.
-
-How this works: when someone places an order on your website, Facebook or mobile app, it instantly gets pushed to your Android or iOS device.
-
-With this free food ordering app for restaurants, you can easily start taking online orders & grow your business.... without worrying about fees & commissions.<br><br>
-
-Suitable for any type of cuisine, including complex pizza or burger menus
     With support for promotions
-    Responsive design
-
-Online Food Ordering For Takeaway / Food Delivery
-
+    
     User friendly, single page checkout
     Data auto-fill for returning customers
     Restaurant app for receiving orders (Android / iOS)
     Real time confirmation of the order and fulfilment time
-    Different opening hours for pick-up and delivery
-    Multiple delivery zones with different minimum order value / delivery fee
     Order for later with scheduled fulfilment
     Cash, online payments (premium feature) and other payment options
     Support for tips (for online payments)</p>
-       
-    <p class="topic1a">Take Unlimited Orders from Your SG MarketPlace Seller Pages</p>
-
-<p>With our free restaurant ordering system, you can set up an account & start taking online orders within minutes, straight from your:
-
-    website
     
-It’s easy to boost your profits & save on food portal commission fees when you rely on a powerful ordering system.</p>
-
+    <p align="center"><a class="w3-button w3-white w3-text-blue" href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" target="_blank" style="border-radius:2px;font-family:roboto;font-size:12px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px dodgerblue;text-decoration:none;padding:10px 15px;margin:20px 0 15px 0;box-shadow:0 0 20px #dcdcdc;">View Demo</a></p>
 </div>
 </div>
 </div>
 
-<hr/>
-<div class="w3-row-padding" style="width:100%;margin:30px 0 0 0;">
-<div class="w3-half w3-white" style="margin:0;">
-<div class="column" style="margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:10px 0 15px 0;">
+<div class="w3-container w3-blue" style="width:100%;padding:0;margin:0;">
+<p class="topicfooter2"><i class="material-icons" style="color:white;font-size:35px;vertical-align:top;margin:0;padding:0;">looks_two</i> Receive Orders on Your Smartphone</p>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:1px;margin:0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;border-radius:3px 3px 0 0;">
+<div class="w3-half w3-white" style="margin:0;padding:5px 0;">
+<div class="column w3-white" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/90178677-dc94be80-dd71-11ea-833e-ea1501037126.gif" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-half w3-white" style="margin:0;">
-<div class="column" style="margin:0;">
-<p class="topic1a">Receive and confirm orders from your own smartphone or tablet
+<div class="w3-half w3-white" style="margin:15px 0 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic4ca2">Receive and confirm orders from your own smartphone or tablet
 
 Get all your restaurant's online orders in one place with the order taking app.
 
-How this works: when someone places an order on your website, Facebook or mobile app, it instantly gets pushed to your Android or iOS device.
 
-With this free food ordering app for restaurants, you can easily start taking online orders & grow your business.... without worrying about fees & commissions.</p><br>
+Included in our FREE service plan
+Free Website Ordering Widget
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+The widget will add a "See MENU & Order" button to your website and start sending orders your way.
+Free Facebook Ordering App
 
-<p class="topic">
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.</p>
-</div>
+This app adds a "See MENU & Order" button to your Facebook page so your fans can order directly.
+Free Mobile Ordering
+
+Our online ordering works also for mobile devices. Your customers can conveniently order from anywhere they are.
+Real-time Ordering
+
+We keep your customer engaged while you review the order and display the order confirmation in real time.
+Table Reservations Widget
+
+The widget will add a “Table Reservations” button to your website so that customers can easily book a table in advance.
+Order Ahead for Reservations
+
+When enabled, this feature allows customers to order food in advance when making a table reservation.
+Pictures in Menu
+
+We supply a free photo stock of delicious food images. Feel free to use them or upload your own to create great-looking menus.
+Order for Later
+
+Allows your customers to order now and schedule a later pickup or delivery. This way you can take orders 24/7 and make money while you sleep!
+Detailed Reports
+
+Take business decisions based on relevant data from the reporting dashboard.
+Run a Promo or Coupon Deal
+
+Set-up almost any promo logic you can think of. Now it's time to run that promo you've always wanted.
+Optional Paid Services
+Online / Credit Card Payment Service
+
+Connects the ordering system with your payment gateway. This way you accept online payments directly into your account (the money does not pass through us).
+US$29 per month</p>
 </div>
 </div>
 </div>
@@ -903,6 +956,8 @@ Once your order has been processed, you'll receive an email notification. Typica
 <p class="topic1a">Affordable local marketing that works.</p>
 
 <p align="center"><a class="w3-button w3-blue" href="https://form.jotform.com/92823006850151" target="_blank" style="border-radius:2px;font-family:roboto;font-size:16px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px;margin:10px 0 20px 0;box-shadow:0 0 22px #ccc;">Get Started</a></p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -924,7 +979,7 @@ Once your order has been processed, you'll receive an email notification. Typica
 <p class="topic2a">Boost Your Exposure</p>
 
 <p class="topic4b">
-Your SG MarketPlace Seller Pages allows you to connect with customers searching for businesses like yours. In addition, your Seller Pages can serve as a mobile-friendly and fully-equipped starter website if you don't already have a web presence.</p>
+Your SG MarketPlace Seller Pages allows you to connect with customers searching for businesses like yours. Don't have a website? Your Seller Pages can serve as a mobile-friendly and fully-equipped starter website.</p>
 
 <p align="center"><button class="w3-button w3-black w3-hover-shadow" style="border-radius:2px;font-family:roboto;font-size:14px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px 25px;margin:30px 0 0 0;box-shadow:0 0 22px #ccc;" data-toggle="modal" data-target="#myModal3">Learn More</button></p>
 </div>
@@ -938,23 +993,26 @@ Your SG MarketPlace Seller Pages allows you to connect with customers searching 
 <div class="modal-header" style="border:none;padding:0;margin:0;">
 <button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#fff;padding:30px 30px 5px 30px;">&times;</button></div>
 <div class="modal-dialog modal-lg" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white w3-card" style="width:100%;border-radius:3px 3px 0 0;margin:0;">
-<div class="w3-row" style="width:100%;padding:0;margin:20px 0 0 0;">
-<div class="w3-half w3-white" style="margin:0;padding:0;">
-<div class="column" style="margin:0;">
+<div class="modal-body w3-blue" style="padding:0 10px 10px 10px;margin:0;border-radius:3px;">
+<div class="w3-container" style="width:100%;border-radius:3px;margin:0;padding:10px 0;">
+<div class="w3-container w3-blue" style="width:100%;padding:0;margin:0;">
+<p class="topicfooter2"><i class="material-icons" style="color:white;font-size:35px;vertical-align:top;margin:0;padding:0 0 5px 0;">looks_one</i> Massive Reach</p>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:1px;margin:0;">
+<div class="w3-row-padding w3-white" style="width:100%;margin:0;border-radius:3px;">
+<div class="w3-half w3-white" style="margin:0;padding:5px 0;">
+<div class="column w3-white" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/90322664-8617b380-df1c-11ea-95f7-8268918fb076.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-half w3-white" style="margin:0;">
-<div class="column" style="margin:0;">
-<p class="topic1a">Massive Reach</p>
+<div class="w3-half w3-white" style="margin:15px 0 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<p class="topic4ca2">Grow your online presence and connect with local customers searching for businesses like yours.<br>
 
-<p class="topic">
-Grow your online presence and connect with local customers searching for businesses like yours.</p><br>
-
-<p>Your SG MarketPlace Seller Pages puts your business at the fingertips of active customers shopping our marketplace. discover all the wonderful features and built-in marketing tools designed to help your small business grow in this competitive landscape.<br><br>
+Your SG MarketPlace Seller Pages puts your business at the fingertips of active customers shopping our marketplace. discover all the wonderful features and built-in marketing tools designed to help your small business grow in this competitive landscape.<br><br>
 
 
 Customizable Content
@@ -969,23 +1027,20 @@ Verified customer tips suggest the best ways to experience your business. Join t
 </div>
 </div>
 </div>
-<hr/>
+
+<div class="w3-container" style="width:100%;padding:0;margin:10px 0 15px 0;">
+<div class="w3-container w3-blue" style="width:100%;padding:0;margin:0;">
+<p class="topicfooter2"><i class="material-icons" style="color:white;font-size:35px;vertical-align:top;margin:0;padding:0;">looks_two</i> Seller Pages Features</p>
+</div>
 </div>
 
-
-<div class="w3-row-padding w3-white" style="width:100%;margin:0;">
-<div class="w3-threethird w3-white" style="margin:0;padding:0;">
-<div class="column" style="margin:0;">
-<p class="topic2">Seller Page Features</p>
-<p class="topic3">Everything Your Small Business Needs</p>
-</div>
-</div>
+<div class="w3-row-padding w3-white" style="width:100%;padding-top:15px;margin:0;border-radius:3px 3px 0 0;">
 
 <div class="w3-half" style="margin:0;">
 <div class="column" style="margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71976274-bfd84d00-31ca-11ea-8b66-bbcdd8187225.png" style="width:100%;border-radius:2px 2px 0 0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71976274-bfd84d00-31ca-11ea-8b66-bbcdd8187225.png" style="width:100%;border-radius:2px;">
 
-<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 5px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:20px 5px;margin:0 0 30px 0;">
 <div class="column" style="margin:0;">
 <p class="topic3">
 Create amazing deals and discounts for your Special Offers section. We help increase brand awareness and sales by featuring select Sellers in our monthly email marketing campaigns.</p>
@@ -995,9 +1050,9 @@ Create amazing deals and discounts for your Special Offers section. We help incr
 </div>
 
 <div class="w3-half" style="margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71966362-40408300-31b6-11ea-94e1-736d9abc065b.png" style="width:100%;border-radius:2px 2px 0 0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71966362-40408300-31b6-11ea-94e1-736d9abc065b.png" style="width:100%;border-radius:2px;">
 
-<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 10px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:20px 10px;margin:0 0 30px 0;">
 <div class="column" style="margin:0;">
 <p class="topic3">
 Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact is delivered right to your inbox.</p>
@@ -1006,9 +1061,9 @@ Ensure excellent service with your very own contact form. Customers can submit f
 </div>
 
 <div class="w3-half" style="margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71966363-40408300-31b6-11ea-846e-62cf8977393b.png" style="width:100%;border-radius:2px 2px 0 0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71966363-40408300-31b6-11ea-846e-62cf8977393b.png" style="width:100%;border-radius:2px;">
 
-<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 5px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:20px 5px;margin:0 0 30px 0;">
 <div class="column" style="margin:0;">
 <p class="topic3">
 Build your subscriber list with Mailerlite. Customers can also sign up to have your Special & Promotional Offers delivered right to their inbox.</p>
@@ -1018,15 +1073,15 @@ Build your subscriber list with Mailerlite. Customers can also sign up to have y
 
 <div class="w3-half" style="margin:0;">
 <div class="customer-logos slider w3-card" style="width:100%;padding:0;margin:0;">
-<div class="slide"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71973640-450c3380-31c4-11ea-8c68-ebfbc2d4bc43.png" style=" border-radius: 2px 2px 0 0;"></div>
+<div class="slide"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71973640-450c3380-31c4-11ea-8c68-ebfbc2d4bc43.png" style="border-radius:2px;"></div>
 
-<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/71974689-fad88180-31c6-11ea-8f1c-f75276d08fd1.png" style=" border-radius: 2px 2px 0 0;"></div>
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/71974689-fad88180-31c6-11ea-8f1c-f75276d08fd1.png" style="border-radius:2px;"></div>
 
-<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/71974690-fb711800-31c6-11ea-9124-b16df3e88a9e.png" style=" border-radius: 2px 2px 0 0;">
+<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/71974690-fb711800-31c6-11ea-9124-b16df3e88a9e.png" style="border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-panel w3-hover-shadow" style="background-color:#fff;padding:20px 10px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:20px 10px;margin:0 0 30px 0;">
 <div class="column" style="margin:0;">
 <p class="topic3">
 Your logo displayed in our Scrolling Footer Logo Ad section on other Seller Pages. If you don't have a logo, we'll create a temporary for free.</p>
@@ -1034,7 +1089,6 @@ Your logo displayed in our Scrolling Footer Logo Ad section on other Seller Page
 </div>
 </div>
 </div>
-
 
 <div class="w3-container w3-light-grey" style="width:100%;border-radius:0 0 3px 3px;margin:0;">
 <div class="w3-row w3-light-grey" style="width:100%;padding:0;margin:25px 0 0 0;">
@@ -1049,7 +1103,8 @@ Your logo displayed in our Scrolling Footer Logo Ad section on other Seller Page
 </div>
 </div>
 </div>
-
+</div>
+</div>
 
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:50px 0 0 0;">
@@ -1100,28 +1155,28 @@ Solutions Designed for Your Small Business</p>
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:15px 0 0 0;">
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="item container8" data-aos="fade-up">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/86301450-c4e6e980-bbba-11ea-9133-69143bdc2657.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="content7">
+<div class="content8">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="https://spiralgroup.github.io/themonster/sg-listing-service.html">BUSINESS LISTING SERVICE</a>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="item container8" data-aos="fade-up">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/65482728-d5f61380-de4e-11e9-9e9e-d79068289b26.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="content7">
+<div class="content8">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="https://spiralgroup.github.io/themonster/share-the-magic.html">LOCAL AD SERVICES</a>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="item container8" data-aos="fade-up">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/86301358-8cdfa680-bbba-11ea-9039-a3f254547a56.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="content7">
+<div class="content8">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="https://spiralgroup.github.io/themonster/business-excellence.html">MYSTERY SHOPPING SERVICES</a>
 </div>
 </div>
