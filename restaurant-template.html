@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Nova+Slim|Dorsa|Kaushan+Script|Expletus+Sans|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Ubuntu|Ubuntu+Condensed" rel="stylesheet">  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' id='gloriafood-style-css'  href='https://pronto-wp.com/wp-content/themes/gloriafood-restaurant/style.css?ver=1.0.4' type='text/css' media='all' />
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+<style type="text/css">
+/* Slider1 */
+.slick-slide {
+    margin: 0;
+    padding: 0;
+    }
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+body, html {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+ main{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Expletus Sans', cursive;
+  }
+
+.hero{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  position: relative; 
+  color: #f5f5f5;
+  text-shadow:0 1px 1px #000;
+  }
+
+.hero h1{
+font-family: 'Expletus Sans', cursive;
+ font-size: 6.90em;
+  margin: auto;
+  position: absolute; 
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.hero p{
+  font-size: 3.0em;
+  margin: auto;
+  position: absolute; 
+  top: 230px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 0;
+}
+
+.hero img{
+  width: 100%;
+}
+
+
+@media all and (max-width: 768px) {
+  .hero{
+    height: auto;
+  }
+  .hero h1{
+    font-size: 10vw;
+    top: 10vw;
+     }
+  .hero p{
+    font-size: 5vw;
+    top: 21vw;
+  }
+}
+
+.fa {
+background-color: #fff;
+  padding: 8px 5px;
+  width: 44px;
+  border-radius: 3px;
+  font-size: 21.5px;
+  color: #ccc !important;
+  text-decoration: none !important;
+  margin: 5px 2px 20px 2px;
+  }
+
+.fa:hover {
+  color: #333 !important;
+}
+
+#timeDiv {
+font-family: khand medium;
+color: #222;
+  font-size: 16.5px;
+ letter-spacing: .5px;
+ position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  background-color: #ccc !important;
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 15px;
+  }
+  }
+  
+  .open {
+  font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #222;
+  background-color: transparent !important;
+  border: none;
+}
+
+.closed {
+ font-family: khand medium;
+  font-size: 16.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 6px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+
+.dateTime {
+max-width: 200px;
+font-family: khand medium;
+color: #222;
+text-shadow: 0 0 1px #000;
+  font-size: 16.5px;
+float: none;
+  text-align: left;
+  line-height: 20px;
+    }
+
+.day {
+   display: inline-block;
+ }
+
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.today {
+max-width: 200px;
+  color: green !important;
+  text-shadow: 0 0 1px green !important;
+    display: block;
+}
+
+</style>
+
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
+</script>
+<!-- End MailerLite Universal -->
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+<div class="w3-bar w3-white" id="myNavbar" style="max-width:1200px;margin:0;padding:10px 0;">
+<a href="https://pronto-wp.com/" style="padding:40px;"><img src="https://pronto-wp.com/wp-content/uploads/2019/05/logo.png" width="150" height="40" loading="lazy"  /></a>
+
+<!-- Right-sided navbar links -->
+<div class="w3-right w3-hide-small">
+<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true">Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a href="#team"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" >See Menu & Order</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" data-toggle="modal" data-target="#myModal1">Business Hours</span></a>
+
+<a href="https://form.jotform.com/92186745877172" target="_blank"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" href="https://form.jotform.com/92186745877172" target="_blank">Contact</span></a>
+
+<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</span></a>
+</div>
+
+<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+<a href="javascript:void(0)" class="w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+<i class="fa fa-bars" style="margin:0;"></i></a>
+</div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="width:400px;" id="mySidebar">
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true">Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" >See Menu & Order<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" data-toggle="modal" data-target="#myModal1">Business Hours</a>
+
+<a href="https://form.jotform.com/92186745877172" target="_blank" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" href="https://form.jotform.com/92186745877172" target="_blank">Contact</a>
+
+<a href="#about" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</a><br><br>
+
+<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
+<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+</nav>
+
+
+
+
+<!-- Header with full-height image -->
+<header>
+<center>
+<main>
+<div class="container w3-panel" style="width:100%;padding:0;margin:50px 0;">
+<div class="container w3-panel w3-card-2 w3-round-small" style="background-color:#f5f5f5;width:100%;padding:0;margin:65px 0 20px 0;">
+<div class="hero w3-round-small">
+<h1>introducing</h1>
+<p style="text-decoration:none;color:#fff;">our new exclusive category ads</p>
+<img class="w3-round-small" src="https://pronto-wp.com/wp-content/uploads/2019/05/header.jpg" />
+</main>
+</div>
+</header>
+
+<center>
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
+<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+ <h2>We Are Pronto NY</h2>
+ 
+ ABOUT US
+<p>At Restaurant Pronto we pride ourselves with the ability to offer our customers delicious and authentic Italian food, created at the highest standards. Every single meal we make is unique. We guarantee that you won’t get disappointed.</p>
+<p>The key to our success is simple: providing exquisite meals, made out of only the purest and freshest of ingredients that taste great every single time.</p>
+<p>Our goal is to help you enjoy the little things in life that matter. So eat delicious food. Grab a drink. But most of all, relax! We thank you from the bottom of our hearts for your continued support.</p>
+    </div>
+    </div>
+  
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
+<img src="https://user-images.githubusercontent.com/25410880/54066951-d4843700-41ed-11e9-897f-7fdfc9fc3a33.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand, sans-serif;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
+bars & pubs</p>
+ </div>
+    </div>
+    </div>
+    
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
+<img src="https://user-images.githubusercontent.com/25410880/54077550-d6daa580-426e-11e9-943e-7b2edded1f37.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand, sans-serif;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
+breweries & wineries</p>
+    </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<center>
+<div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Our Specials</p>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card w3-hover-shadow" style="background-color:#c0c0c0;padding:0 10px;border-radius:3px;margin:0 0 30px 0;">
+<div class="column" style="background-color:#c0c0c0;padding:0 5px 5px 5px;margin:0;">
+
+<p class="topic3">Service 1</p>
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
+
+<p class="topic">
+Best Friends Deal
+SHARING IS CARING
+
+2 Medium Pizzas
+Soft Drinks
+Garlic Bread or Potato Wedges
+Salad to share</p>
+</div>
+
+<div>
+<a class="btn btn-primary btn-block" style="font-family:roboto condensed;font-size:13.5px;color:#fff;text-shadow:0 0 1px #fff;letter-spacing:.5px;padding:10px;margin:10px 0;background-color:#ccc;border:2px solid #ccc;border-radius:2px;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">Book Appointment</a>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card w3-hover-shadow" style="background-color:#c0c0c0;padding:0 10px;border-radius:3px;margin:0 0 30px 0;">
+<div class="column" style="background-color:#c0c0c0;padding:0 5px 5px 5px;margin:0;">
+
+<p class="topic3">Service 2</p>
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
+
+<p class="topic">
+Buy 1 Get 1 FREE
+THIS WEEK ONLY
+
+Hope you are hungry. Buy one regular priced pizza online and get a second pizza totally free!
+
+Online only!</p>
+</div>
+
+<div>
+<a class="btn btn-primary btn-block" style="font-family:roboto condensed;font-size:13.5px;color:#fff;text-shadow:0 0 1px #fff;letter-spacing:.5px;padding:10px;margin:10px 0;background-color:#ccc;border:2px solid #ccc;border-radius:2px;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">Book Appointment</a>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel w3-card w3-hover-shadow" style="background-color:#c0c0c0;padding:0 10px;border-radius:3px;margin:0 0 30px 0;">
+<div class="column" style="background-color:#c0c0c0;padding:0 5px 5px 5px;margin:0;">
+
+<p class="topic3">Service 3</p>
+<button class="w3-button topicfooter1" style="color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px;margin:0 0 20px 0;background-color:#fff;border-radius:2px;">$49</button>
+
+<p class="topic">
+Awesome Foursome
+SUNDAYS ONLY
+
+6 Delicious regular size pizzas to choose from: Margherita, Capricciosa, Prosciutto e Funghi, Diavola, Calzone, Primavera.</p>
+</div>
+
+<div>
+<a class="btn btn-primary btn-block" style="font-family:roboto condensed;font-size:13.5px;color:#fff;text-shadow:0 0 1px #fff;letter-spacing:.5px;padding:10px;margin:10px 0;background-color:#ccc;border:2px solid #ccc;border-radius:2px;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">Book Appointment</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Images Section -->
+<center>
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-2.jpg" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+    
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-3.jpg" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+</div>
+</div>
+    
+    
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+    
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="column" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:2px 2px 0 0;">
+</div>
+</div>
+</div>
+
+
+<div class="widget_text container-fluid glf-background-card"><div  id="custom_html-4" class="widget_text container glf-card"><div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="col text-center">
+	<h2>Catering</h2>
+	<span class="glf-card-subbtitle-container text-center">
+	<span class="glf-card-subtitle-dash ml-auto"></span>
+		<span class="glf-card-subtitle mr-auto subtitle">Party time</span></span></div>
+
+<p style="text-align: center">Restaurant Pronto can cater to any party or event irrespective of how big or small. We specialize in catering with personalised service and special menus on request. In our menu palette, you’ll discover unique and sophisticated tastes - all of which will help you uncover the true greatness of the Italian cuisine.
+<br><br>
+Tell us about your event at office@pronto-wp.com</p></div></div></div></div>
+
+
+<center>
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
+<div class="w3-half" style="margin:0 0 10px 0;">
+<div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+ <h2>Food Delivery</h2>
+ 
+ ABOUT US
+Looking for food delivery nearby? Not everybody knows or has the time to prepare tasty food.</p>
+<p>When you want to get served like a king then food delivery from restaurant Pronto will be your best choice.</p>
+<p>Simply select "Delivery" at the checkout screen and we hope you'll appreciate our food delivery service.</p>
+    </div>
+    </div>
+  
+
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
+<img src="https://user-images.githubusercontent.com/25410880/54066951-d4843700-41ed-11e9-897f-7fdfc9fc3a33.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand, sans-serif;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
+bars & pubs</p>
+ </div>
+    </div>
+    </div>
+    
+<div class="w3-quarter" style="margin:0 0 10px 0;">
+<div class="column w3-hover-shadow" style="background-color:#fff;padding:2px;margin:0 0 15px 0;border-radius:3px;">
+<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
+<img src="https://user-images.githubusercontent.com/25410880/54077550-d6daa580-426e-11e9-943e-7b2edded1f37.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<div class="content w3-panel" style="background-color:#fff;padding:0;margin:0;">
+<p style="font-family:khand, sans-serif;font-size:14.5px;color:#000;letter-spacing:1px;text-shadow:0 0 1px #000;padding:6px 0 4px 0;margin:0;">
+breweries & wineries</p>
+    </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:70px 0 0 0;">
+<p class="topic2">Hours & Location</p>
+
+
+
+
+<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
+<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+<p class="topicfooter2">
+123-456-8890</p>
+
+<p class="topicfooter1">
+400 South State Street<br>
+Chicago, IL 60605</p>
+
+<div class="w3-row-padding" style="width:100%;margin:24px 0 4px 0;">
+<div class="w3-quarter" style="margin:0;">
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>Subscribe</span></a>
+</div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
+</div>
+</div>
+
+<div class="w3-threethird" style="background-color:transparent;margin:0;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;"></div>
+<div class="modal-dialog modal-lg" style="width:100%;padding:0;margin:20px 0;">
+<div class="w3-modal-content w3-card-4" style="max-width:475px;padding:5px;border-radius:2px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:2px;">
+
+<div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
+<div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
+<div class="w3-threethird" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
+<div id="timeDiv">
+</div>
+</div>
+
+       <div id="Monday" class="dateTime">
+        <div class="day">Monday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+     <br>         
+     
+      <div id="Tuesday" class="dateTime">
+        <div class="day">Tuesday</div>
+        <div class="time">8am - 8pm</div>
+        </div>
+         <br>
+      <div id="Wednesday" class="dateTime">
+        <div class="day">Wednesday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      
+      <div id="Thursday" class="dateTime">
+        <div class="day">Thursday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Friday" class="dateTime">
+        <div class="day">Friday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Saturday" class="dateTime">
+        <div class="day">Saturday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+       <div id="Sunday" class="dateTime">
+        <div class="day">Sunday</div>
+      <div class="time">8am - 8pm</div>
+      </div>
+       </div>
+       </div>
+       </div>
+       
+<div class="w3-threethird" style="background-color:transparent;margin:0;">
+<p class="topicfooter2">
+123-456-8890</p>
+
+<p class="topicfooter1">
+400 South State Street<br>
+Chicago, IL 60605</p>
+</div>
+
+       <div class="w3-threethird" style="background-color:transparent;margin:0;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe></div>
+
+
+       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
+       <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:green;font-family:khand medium;font-size:13.5px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px green;margin:0;padding:12px 0 8px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>    
+</div>
+
+<script>
+var now = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var checkTime = function() {
+  var today = weekday[now.getDay()];
+  var timeDiv = document.getElementById('timeDiv');
+  var dayOfWeek = now.getDay();
+  var hour = now.getHours();
+  var minutes = now.getMinutes();
+
+  //add AM or PM
+  var suffix = hour >= 12 ? " PM" : " AM";
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+    minutes = "0" + minutes
+  };
+
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1);
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else {
+    if (hour == 0 || hour > 12) {
+      hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    }
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Closed';
+    timeDiv.className = 'closed';
+  }
+};
+
+var currentDay = weekday[now.getDay()];
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+setInterval(checkTime, 1000);
+checkTime();
+</script>
+
+
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
+<p class="topic2">Shop Local</p>
+</div>
+
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;" alt="Game Day Barber Shop"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710680-0288a280-8aa4-11ea-8b91-257ee6afe641.png" style="border-radius:2px;" alt="Hamunaptra Cosmetics"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710685-05839300-8aa4-11ea-9851-6041c8349518.png" style="border-radius:2px;" alt="The Prestige Beauty Supplies"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710689-074d5680-8aa4-11ea-8058-8b3edc63c506.png" style="border-radius:2px;" alt="Stick It Tattoos & Piercings"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710696-07e5ed00-8aa4-11ea-9573-5612a851a547.png" style="border-radius:2px;" alt="Zambuka Night Club"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710698-087e8380-8aa4-11ea-9677-39a95541f02b.png" style="border-radius:2px;" alt="Onyx Business Systems"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="border-radius:2px;" alt="Levinna Purses & Bags"></a></div>
+
+<div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710703-0a484700-8aa4-11ea-9366-51b1162290fd.png" style="border-radius:2px;" alt="Gortex Fitness Apparel"></a></div>
+</div>
+</div>
+</div>
+
+<!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
+<script type="text/javascript">
+var sc_project=12123020; 
+var sc_invisible=1; 
+var sc_security="200cda4a"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12123020/0/200cda4a/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
