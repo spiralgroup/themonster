@@ -636,9 +636,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <!-- Right-sided navbar links -->
 <div class="w3-right w3-hide-small">
-<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true">Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;">Table Reservations</span></a>
 
-<a href="#team"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" >See Menu & Order</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#team"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;">See Menu & Order</span></a>
 
 <a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" data-toggle="modal" data-target="#myModal1">Business Hours</span></a>
 
@@ -647,6 +647,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</span></a>
 </div>
 
+
 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 <a href="javascript:void(0)" class="w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
 <i class="fa fa-bars" style="margin:0;"></i></a>
@@ -654,12 +655,13 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="width:400px;" id="mySidebar">
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+<nav class="w3-sidebar w3-white w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="width:400px;" id="mySidebar">
+<p style="background-color;#f5f5f5;padding:20px;"><img src="https://pronto-wp.com/wp-content/uploads/2019/05/logo.png" style="background-color;#f5f5f5;width:50%;padding:10px;" loading="lazy"  /></p>
 
-<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true">Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" >See Menu & Order<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;">Table Reservations</a>
+
+<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" >See Menu & Order</a>
 
 <a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" data-toggle="modal" data-target="#myModal1">Business Hours</a>
 
@@ -671,8 +673,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
 <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
-</nav>
 
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+</nav>
 
 <center>
 <main>
@@ -1237,24 +1240,16 @@ Easy - StatCounter"></div></noscript>
 <!-- End of Statcounter Code -->
 
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
 
 function w3_open() {
-  if (mySidebar.style.display === 'block') {
+  if (mySidebar.style.display === 'none') {
     mySidebar.style.display = 'none';
   } else {
-    mySidebar.style.display = 'block';
+    mySidebar.style.display = 'none';
   }
 }
 
