@@ -627,45 +627,37 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </head>
 
 <body>
-<div class="w3-top">
-<div class="w3-bar" id="myNavbar" style="background-color:#f5f5f5;max-width:1200px;margin:0;padding:10px;">
-<a href="#about"><span class="w3-button w3-white"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71974690-fb711800-31c6-11ea-9124-b16df3e88a9e.png" width="90px" height="40px"></span></a>
-
-<!-- Right-sided navbar links -->
-<div class="w3-right w3-hide-small">
-<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;">Table Reservations</span></a>
-
-<a href="#team"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;">See Menu & Order</span></a>
-
-<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" data-toggle="modal" data-target="#myModal1">Business Hours</span></a>
-
-<a href="https://form.jotform.com/92186745877172" target="_blank"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" href="https://form.jotform.com/92186745877172" target="_blank">Contact</span></a>
-
-<a href="#about"><span class="w3-button w3-green" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</span></a>
+<center>
+<div class="top-container" style="width:100%;padding:0;margin:0;">
+<div class="header" id="myHeader">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Create Account</span>
+<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
 </div>
-
-<!-- Hide right-floated links on small screens and replace them with a menu icon -->
-<a href="javascript:void(0)" class="w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-<i class="fa fa-bars" style="margin:0;"></i></a>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
+<li><a href="https://www.spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
+<li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
+</ul></ul>
+<ul class="nav navbar-nav navbar-right" style="margin:0 1px;">
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button w3-blue" href="#test"><span>GET STARTED</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SHOP IN THE SG MARKETPLACE</span></a></li>
+</ul>
 </div>
 </div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-white w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="width:100%;padding:10px;" id="mySidebar">
-
-<p style="background-color;#f5f5f5;padding:5px;"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="background-color;#f5f5f5;width:100%;border-radius:3px;" loading="lazy"  /></p>
-
-<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;">Table Reservations</a>
-
-<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" >See Menu & Order</a>
-
-<a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" data-toggle="modal" data-target="#myModal1">Business Hours</a>
-
-<a href="https://form.jotform.com/92186745877172" target="_blank" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" href="https://form.jotform.com/92186745877172" target="_blank">Contact</a>
-
-<a href="#about" class="w3-bar-item btn btn-primary btn-block" style="font-size:14px;padding:10px 15px;border-radius:3px;font-family:roboto;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</a>
-
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16" style="font-size:14px;padding:10px 15px;font-family:roboto;">Open Website</a>
 </nav>
 
 <center>
