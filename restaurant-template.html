@@ -48,6 +48,16 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+$(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+</script>
+
+
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
@@ -155,6 +165,8 @@ $(document).ready(function(){
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
 body, html {
     max-width: 1200px;  
     height: 100%;
@@ -162,46 +174,29 @@ body, html {
     background-color: #f2f2f2;
   }
 
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+
+
+.navbar-fixed-top.scrolled {
+  background-color:rgba(60, 60, 60, 0.99) !important;
+  box-shadow: 0 2px 12px #222 !important;
+  transition: background-color 200ms linear;
+}
+
  main{
   width: 100%;
   overflow: hidden;
-  font-family: 'Expletus Sans', cursive;
-  }
+   }
 
 .hero{
   width: 100%;
   max-width: 1200px;
   height: auto;
-  text-align: center;
   margin: 0;
   padding: 0;
   background: transparent;
   position: relative; 
-  color: #f5f5f5;
-  text-shadow:0 1px 1px #000;
   }
-
-.hero h1{
-font-family: 'Expletus Sans', cursive;
- font-size: 6.90em;
-  margin: auto;
-  position: absolute; 
-  top: 220px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-.hero p{
-  font-size: 3.0em;
-  margin: auto;
-  position: absolute; 
-  top: 330px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-   z-index: 0;
-}
 
 .hero img{
   width: 100%;
@@ -212,15 +207,7 @@ font-family: 'Expletus Sans', cursive;
   .hero{
     height: auto;
   }
-  .hero h1{
-    font-size: 10vw;
-    top: 10vw;
-     }
-  .hero p{
-    font-size: 5vw;
-    top: 21vw;
   }
-}
 
 .fa {
 background-color: #fff;
@@ -393,21 +380,22 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </head>
 
 <body>
-<div class="w3-top">
-<div class="w3-bar" id="myNavbar" style="max-width:1200px;background-color:#f2f2f2;margin:0;border-radius:0 0 3px 3px;">
-<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #ccc;margin:0;vertical-align:middle;">SpiralGroup.org</a>
+<center>
+<div id="navigation" class="navbar navbar-dark navbar-fixed-top">	
+<div class="w3-bar" id="myNavbar" style="max-width:1180px;background-color:transparent;margin:0;border-radius:0 0 3px 3px;">
+<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:22px;color:#f1f1f1;letter-spacing:.5px;text-shadow:0 0 1px #f1f1f1;margin:0;vertical-align:middle;">SpiralGroup.org</a>
 
 <!-- Right-sided navbar links -->
 <div class="w3-right w3-hide-small">
-<a href="#about"><span class="w3-button" style="background-color:#fff;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true">Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#about"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;text-decoration:none;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true">Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a href="#team"><span class="w3-button" style="background-color:#fff;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" >See Menu & Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#team"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" >See Menu & Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a href="#about"><span class="w3-button" style="background-color:#fff;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" data-toggle="modal" data-target="#myModal1">Hours & Location</span></a>
+<a href="#about"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" data-toggle="modal" data-target="#myModal1">Hours & Location</span></a>
 
-<a href="https://form.jotform.com/92186745877172" target="_blank"><span class="w3-button" style="background-color:#fff;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px;margin:6px 2px;border-radius:3px;" href="https://form.jotform.com/92186745877172" target="_blank">Contact</span></a>
+<a href="https://form.jotform.com/92186745877172" target="_blank"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" href="https://form.jotform.com/92186745877172" target="_blank">Contact</span></a>
 
-<a href="#about"><span class="w3-button" style="background-color:#fff;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</span></a>
+<a href="#about"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</span></a>
 </div>
 
 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -417,21 +405,21 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="background-color:#ccc;width:100%;padding:10px;" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="background-color:#222;width:100%;padding:10px; z-index:9999;" id="mySidebar">
 
-<p style="background-color;#f5f5f5;padding:5px;"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="background-color;#f5f5f5;width:100%;border-radius:3px;" loading="lazy"  /></p>
+<p style="background-color;#f5f5f5;padding:5px;"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="background-color;#f5f5f5;width:100%;border-radius:3px;" loading="lazy"  />
 
-<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> See Menu & Order Online<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> See Menu & Order Online<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block"style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;" data-toggle="modal" data-target="#myModal1"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Hours & Location</a>
+<a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" data-toggle="modal" data-target="#myModal1"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Hours & Location</a>
 
-<a href="https://form.jotform.com/92186745877172" target="_blank" class="w3-bar-item btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Contact</a>
+<a href="https://form.jotform.com/92186745877172" target="_blank" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Contact</a>
 
-<a href="#about" class="w3-bar-item btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Subscribe</a>
+<a href="#about" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Subscribe</a>
 
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Come Inside<a>
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Come Inside</a></p>
 <br><br>
 
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
@@ -447,11 +435,10 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <header>
 <center>
 <main>
-<div class="container w3-panel" style="width:100%;padding:0 8px;margin:0;">
-<div class="container w3-panel w3-card" style="background-color:#ccc;width:100%;padding:20px;margin:100px 0 0 0;border-radius:3px;">
-<div class="hero w3-round-small">
-
-<img class="w3-round-small" src="https://user-images.githubusercontent.com/25410880/91539967-bfb6ca00-e8df-11ea-8857-4618bacd551d.png" />
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel w3-card" style="width:100%;padding:0;margin:0;border-radius:3px;">
+<div class="hero">
+<img src="https://user-images.githubusercontent.com/25410880/91811322-f26d0500-ebf4-11ea-8fbb-a012fd5f3ca1.png" style="border-radius:3px;" />
 </div>
 </div>
 </div>
