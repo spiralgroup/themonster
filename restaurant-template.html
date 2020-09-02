@@ -183,6 +183,12 @@ body, html {
   transition: background-color 200ms linear;
 }
 
+.navbar-brand {
+padding: 3px;
+margin: 0;
+height: auto;
+}
+
  main{
   width: 100%;
   overflow: hidden;
@@ -243,13 +249,14 @@ font-family: kaushan script;
   }
   .hero h1{
     font-size: 10vw;
-    top: 13vw;
+    top: 18vw;
      }
   .hero p{
-    font-size: 5vw;
-    top: 25vw;
+    font-size: 4vw;
+    top: 30vw;
   }
 }
+
 .fa {
 background-color: #fff;
   padding: 8px 5px;
@@ -416,6 +423,47 @@ padding: 10px 0 0 0;
 margin: 0;
 }
 
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5 !important;
+  text-align: center;
+  font-family:roboto condensed;
+  font-size: 14.5px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #f5f5f5;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 22px 0 0 0;
+  float: right;
+ }
+ 
+ .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '';
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+  right: 0;
+}
 </style>
 
 <!-- MailerLite Universal -->
@@ -434,24 +482,24 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <body>
 <center>
 <div id="navigation" class="navbar navbar-dark navbar-fixed-top">	
-<div class="w3-bar" id="myNavbar" style="max-width:1180px;background-color:transparent;margin:0;border-radius:0 0 3px 3px;">
-<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:22px;color:#f1f1f1;letter-spacing:.5px;text-shadow:0 0 1px #f1f1f1;margin:0;vertical-align:middle;">SpiralGroup.org</a>
+<div class="w3-bar" id="myNavbar" style="max-width:1180px;background-color:transparent;border-radius:0 0 3px 3px;">
+<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/91937389-6f60b300-ecb7-11ea-9f2d-e5f919368d38.png" style="padding:0;margin:0;width:15%;float:left;"></a>
 
 <!-- Right-sided navbar links -->
-<div class="w3-right w3-hide-small">
-<a href="#about"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;text-decoration:none;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true">Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<div class="w3-hide-small" style="width:100%;">
+<button class="button" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')" style="color:#f5f5f5;"><span>Subscribe</span></button>
 
-<a href="#team"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" >See Menu & Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<button class="button"><a href="https://form.jotform.com/92186745877172" target="_blank" style="color:#f5f5f5;"><span>Contact</span></a></button>
 
-<a href="#about"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" data-toggle="modal" data-target="#myModal1">Hours & Location</span></a>
+<button class="button" data-toggle="modal" data-target="#myModal1" style="color:#f5f5f5;"><span>Hours & Location</span></button>
 
-<a href="https://form.jotform.com/92186745877172" target="_blank"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" href="https://form.jotform.com/92186745877172" target="_blank">Contact</span></a>
+<button class="button"><a href="#"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" style="color:#f5f5f5;"><span>Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a></button>
 
-<a href="#about"><span class="w3-button" style="font-family:roboto condensed;font-size:14.5px;color:#f5f5f5;text-shadow:0 0 1px #f5f5f5;letter-spacing:.5px;padding:10px;margin:6px 1px;border-radius:3px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')">Subscribe</span></a>
+<button class="button type:reservations;"><a href="#" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true" style="color:#f5f5f5;"><span>Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a></button>
 </div>
 
 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-<a href="javascript:void(0)" class="w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+<a href="javascript:void(0)" class="w3-button w3-blue w3-top w3-hide-large w3-hide-medium" style="background-color:transparent;" onclick="w3_open()">
 <i class="fa fa-bars" style="margin:0;"></i></a>
 </div>
 </div>
@@ -459,19 +507,19 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="background-color:#222;width:100%;padding:10px; z-index:9999;" id="mySidebar">
 
-<p style="background-color;#f5f5f5;padding:5px;"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="background-color;#f5f5f5;width:100%;border-radius:3px;" loading="lazy"  />
+<p style="background-color;#222;padding:5px;"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="background-color;#222;width:100%;border-radius:3px;" loading="lazy"  />
 
-<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> See Menu & Order Online<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> See Menu & Order Online<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" data-toggle="modal" data-target="#myModal1"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Hours & Location</a>
+<a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" data-toggle="modal" data-target="#myModal1"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Hours & Location</a>
 
-<a href="https://form.jotform.com/92186745877172" target="_blank" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Contact</a>
+<a href="https://form.jotform.com/92186745877172" target="_blank" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Contact</a>
 
-<a href="#about" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Subscribe</a>
+<a href="#about" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Subscribe</a>
 
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block w3-black" style="font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Come Inside</a></p>
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Come Inside</a></p>
 <br><br>
 
 <a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
@@ -482,36 +530,30 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 
 <center>
-<div class="container w3-panel w3-card" style="width:100%;padding:0;margin:0 0 10px 0;border-radius:3px;">
+<div class="container w3-panel w3-card" style="width:100%;padding:0;margin:0 0 10px 0;border-radius:0 0 3px 3px;">
 <div class="hero">
 <h1>Local Restaurant</h1>
 <p>BEST FOOD IN CHICAGOLAND</p>
-<img src="https://user-images.githubusercontent.com/25410880/91823468-e1c18c80-ebfe-11ea-856b-8da4e2c1fd76.png" style="border-radius:3px;" />
-
+<img src="https://user-images.githubusercontent.com/25410880/91927984-821bbd80-eca0-11ea-9be9-8687f0850979.png" style="border-radius:0 0 3px 3px;" />
+</div>
+</div>
 </div>
 </div>
 
 <center>
 <p class="topicfooter3"><i class="material-icons" style="color:#333;font-size:20px;vertical-align:top;margin:0;padding:0 0 5px 0;">verified_user</i> WE OFFER TAKEOUT & FOOD DELIVERY</p>
 
+
 <div class="container w3-panel" style="width:100%;padding:0 5px;margin:80px 0 0 0;">
-<div class="w3-row" style="padding:20px 0;background-color:transparent;width:100%;margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
 <div class="column" style="margin:0 0 15px 0;">
-<div class="w3-twothird" style="margin:0 0 10px 0;">
+<div class="w3-threethird" style="margin:0 0 10px 0;">
  <h2>We Are Pronto NY</h2>
  
  ABOUT US
 <p>At ourselves with the ability to offer our customers delicious and authentic Italian food, created at the highest standards. Every single meal we make is unique. We guarantee that you won’t get disappointed.</p>
 <p>The key to our success is simple: providing exquisite meals, made out of only the purest and freshest of ingredients that taste great every single time.</p>
 <p>Our goal is to help you enjoy the little things in life that matter. So eat delicious food. Grab a drink. But most of all, relax! We thank you for your continued support.</p>
-    </div>  
-
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="padding:0 5px;margin:0 0 15px 0;">
-<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
-<img src="https://user-images.githubusercontent.com/25410880/54066951-d4843700-41ed-11e9-897f-7fdfc9fc3a33.png" style="width:100%;border-radius:2px;"></a>
-</div>
-</div>
 </div>
 </div>
 
@@ -636,9 +678,9 @@ SUNDAYS ONLY
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0 5px;margin:80px 0 0 0;">
-<div class="w3-row" style="padding:20px 0;background-color:transparent;width:100%;margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
 <div class="column" style="margin:0 0 15px 0;">
-<div class="w3-twothird" style="margin:0 0 10px 0;">
+<div class="w3-threethird" style="margin:0 0 10px 0;">
 	<h2>Catering</h2>
 	
 <p>Restaurant Pronto can cater to any party or event irrespective of how big or small. We specialize in catering with personalised service and special menus on request. In our menu palette, you’ll discover unique and sophisticated tastes - all of which will help you uncover the true greatness of the Italian cuisine.
@@ -646,36 +688,26 @@ SUNDAYS ONLY
 Tell us about your event at office@pronto-wp.com</p>
 </div>
 </div>
-
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;border-radius:3px;">
-<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
-<img src="https://user-images.githubusercontent.com/25410880/54066951-d4843700-41ed-11e9-897f-7fdfc9fc3a33.png" style="width:100%;border-radius:3px;"></a>
-</div>
-</div>
 </div>
 </div>
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0 5px;margin:80px 0 0 0;">
-<div class="w3-row" style="padding:20px 0;background-color:transparent;width:100%;margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
 <div class="column" style="margin:0 0 15px 0;">
-<div class="w3-twothird" style="margin:0 0 10px 0;">
+<div class="w3-threethird" style="margin:0 0 10px 0;">
  <h2>Food Delivery</h2>
  
- ABOUT US
-Looking for food delivery nearby? Not everybody knows or has the time to prepare tasty food.</p>
-<p>When you want to get served like a king then food delivery from restaurant Pronto will be your best choice.</p>
-<p>Simply select "Delivery" at the checkout screen and we hope you'll appreciate our food delivery service.</p>
+<p> ABOUT US
+Looking for food delivery nearby? Not everybody knows or has the time to prepare tasty food.
+When you want to get served like a king then food delivery from restaurant Pronto will be your best choice.
+Simply select "Delivery" at the checkout screen and we hope you'll appreciate our food delivery service.</p>
     </div>
     </div>
-  
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;">
-<a href="https://spiralgroup.github.io/themonster/business-listings.html" target="_blank">
-<img src="https://user-images.githubusercontent.com/25410880/54066951-d4843700-41ed-11e9-897f-7fdfc9fc3a33.png" style="width:100%;border-radius:3px;"></a>
 </div>
 </div>
+</div>
+    </div>
 </div>
 </div>
 
@@ -838,12 +870,11 @@ checkTime();
 
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:10px 0;margin:0;border-radius:3px;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 <p class="topic2">Shop Local</p>
-</div>
 
-<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
 <div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;" alt="Game Day Barber Shop"></a></div>
@@ -866,12 +897,7 @@ checkTime();
 </div>
 </div>
 </div>
-</div>
 
-
-<center>
-<div class="w3-container" style="width:100%;padding:0;margin:120px 0 0 0;">
-<div class="w3-container" style="width:100%;background-color:#fff;padding:10px 0;margin:0;border-radius:10px 10px 2px 2px;">
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
 <p align="center" style="font-family:roboto condensed;font-size:22px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">www.SpiralGroup.org</p>
