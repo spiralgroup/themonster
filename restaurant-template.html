@@ -464,6 +464,21 @@ margin: 0;
  opacity: 1;
   right: 0;
 }
+
+.button1 {
+  background-color: transparent;
+  border: none;
+  color: #222 !important;
+  text-align: center;
+  font-family:roboto condensed;
+  font-size: 14.5px;
+  letter-spacing: .5px;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding-left: 150px !important;
+   }
+ 
 </style>
 
 <!-- MailerLite Universal -->
@@ -479,14 +494,17 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <!-- End MailerLite Universal -->
 </head>
 
-<body>
+
 <center>
+<body>
+
 <div id="navigation" class="navbar navbar-dark navbar-fixed-top">	
 <div class="w3-bar" id="myNavbar" style="max-width:1180px;background-color:transparent;border-radius:0 0 3px 3px;">
 <a class="navbar-brand" href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/91937389-6f60b300-ecb7-11ea-9f2d-e5f919368d38.png" style="padding:0;margin:0;width:15%;float:left;"></a>
 
+
 <!-- Right-sided navbar links -->
-<div class="w3-hide-small" style="width:100%;">
+<div class="w3-hide-small">
 <button class="button" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')" style="color:#f5f5f5;"><span>Subscribe</span></button>
 
 <button class="button"><a href="https://form.jotform.com/92186745877172" target="_blank" style="color:#f5f5f5;"><span>Contact</span></a></button>
@@ -497,12 +515,12 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <button class="button type:reservations;"><a href="#" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true" style="color:#f5f5f5;"><span>Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a></button>
 </div>
+</div>
 
 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-<a href="javascript:void(0)" class="w3-button w3-blue w3-top w3-hide-large w3-hide-medium" style="background-color:transparent;" onclick="w3_open()">
-<i class="fa fa-bars" style="margin:0;"></i></a>
+<a href="javascript:void(0)" class="button1 w3-top w3-hide-large w3-hide-medium" style="width:50%;background-color:transparent;" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </div>
-</div>
+
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="background-color:#222;width:100%;padding:10px; z-index:9999;" id="mySidebar">
@@ -527,6 +545,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
 <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
 </nav>
+</div>
 
 
 <center>
