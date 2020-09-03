@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
+<title>Demo SG MarketPlace Seller Page &#124; Spiral Group, Inc.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Nova+Slim|Dorsa|Kaushan+Script|Expletus+Sans|Nova+Flat|PT+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Ubuntu|Ubuntu+Condensed" rel="stylesheet">  
-
-<link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|Baloo+Bhaina+2|Dorsa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,11 +14,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
-
-<link rel='stylesheet' id='online-css-css'  href='https://www.fbgcdn.com/embedder/css/order-online.css?ver=5.5' type='text/css' media='all' />
-
-<link rel='stylesheet' id='restaurant_system_public_style-css'  href='https://pronto-wp.com/wp-content/plugins/menu-ordering-reservations/css/public-style.css?ver=1.4.1' type='text/css' media='all' />
+<link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
 
 <script>
 $(document).ready(function(){
@@ -49,11 +42,27 @@ $(document).ready(function(){
 </script>
 
 <script>
-$(function () {
-  $(document).scroll(function () {
-	  var $nav = $(".navbar-fixed-top");
-	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	});
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
 });
 </script>
 
@@ -166,145 +175,33 @@ $(function () {
     display: none;
 }
 
+* {box-sizing: border-box;}
 
 body, html {
-    max-width: 1200px;  
+    max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
     background-color: #f2f2f2;
+ }
+
+.navbar-header {
+  float: none;
+  max-width: 1200px;
+}
+
+.container-fluid1 {
+max-width: 1200px;
+left: 0 !important;
+}
+
+.modal-backdrop.in {
+  background-color: #ccc;
+  opacity: 1.0;
   }
-
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
-
-
-.navbar-fixed-top.scrolled {
-  background-color:rgba(60, 60, 60, 0.99) !important;
-  box-shadow: 0 2px 12px #222 !important;
-  transition: background-color 200ms linear;
-}
-
-.navbar-brand {
-padding: 3px;
-margin: 0;
-height: auto;
-}
-
- main{
-  width: 100%;
-  overflow: hidden;
-   }
-
-.hero{
-  width: 100%;
-  max-width: 1366px;
-  height: auto;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  position: relative; 
-  color: #ccc;
-  text-shadow: 0 12px 22px #222;
-  
-  }
-
-.hero h1{
-font-family: kaushan script;
- color: #f2f2f2;
- text-shadow: 0 1px 1px #f5f5f5;
- font-size: 6.90em;
- letter-spacing: .01em;
-  margin: auto;
-  position: absolute; 
-  top: 230px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-.hero p{
-  font-family: pt sans;
-  color: #fff;
-  text-shadow: 0 0 1px #ccc;
-  font-size: 2.2em;
-   letter-spacing: .02em;
-  margin: auto;
-  position: absolute; 
-  top: 349px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-   z-index: 0;
-}
-
-.hero img{
-  width: 100%;
-}
-
-
-@media all and (max-width: 768px) {
-  .hero{
-    height: auto;
-  }
-  .hero h1{
-    font-size: 10vw;
-    top: 18vw;
-     }
-  .hero p{
-    font-size: 4vw;
-    top: 30vw;
-  }
-}
-
-.fa {
-background-color: #fff;
-  padding: 8px 5px;
-  width: 44px;
-  border-radius: 3px;
-  font-size: 21.5px;
-  color: #ccc !important;
-  text-decoration: none !important;
-  margin: 5px 2px 20px 2px;
-  }
-
-.fa:hover {
-  color: #333 !important;
-}
-
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: roboto;
-  color: #222;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
-}
-
-
-.nab a:hover {
-  border-bottom: 1px solid #ccc;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
 }
 
 #timeDiv {
-font-family: roboto condensed;
-color: green;
-text-shadow: 0 0 1px #ddd;
+font-family: khand, sans-serif;
   font-size: 16.5px;
  letter-spacing: .5px;
  position: relative;
@@ -312,7 +209,7 @@ text-shadow: 0 0 1px #ddd;
   margin: 0 auto;
   padding: 0;
   display: inline-block;
-  background-color: #fff !important;
+  background-color: #ccc !important;
  }
  
  @media screen and (max-width: 768px) {
@@ -322,17 +219,17 @@ text-shadow: 0 0 1px #ddd;
   }
   
   .open {
-  font-family: khand medium;
+  font-family: khand, sans-serif;
   font-size: 16.5px;
   letter-spacing: .5px;
   text-shadow: 0 2px 6px #ccc;
-  color: #222;
+  color: #fff;
   background-color: transparent !important;
   border: none;
 }
 
 .closed {
- font-family: khand medium;
+ font-family: khand, sans-serif;
   font-size: 16.5px;
   letter-spacing: .5px;
   text-shadow: 0 2px 6px #ccc;
@@ -370,6 +267,66 @@ max-width: 200px;
     display: block;
 }
 
+li:hover span {
+ background-color: #fff;
+  padding-bottom: 5px;
+   transition: 0.5s;
+}
+
+.fa {
+background-color: #fff;
+  padding: 8px 5px;
+  width: 44px;
+  border-radius: 3px;
+  font-size: 21.5px;
+  color: #ccc !important;
+  text-decoration: none !important;
+  margin: 5px 2px 20px 2px;
+  }
+
+.fa:hover {
+  color: #333 !important;
+}
+
+.topic { 
+font-family: roboto condensed;
+font-size: 15.5px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #666;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic {
+  text-align: center;
+  }
+  }
+  
+.topic1 { 
+font-family: roboto condensed;
+font-size: 13px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 0;
+}
+
+.topic1a { 
+font-family: roboto condensed;
+font-size: 17px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #666;
+margin: 0;
+padding: 0;
+}
+  
 .topic2 {
 font-family: khand, sans-serif;
 font-size: 42px;
@@ -390,7 +347,18 @@ padding: 0;
   }
   }
   
-  .topicfooter1 {
+  .topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #000;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #222;
+margin: 0;
+padding: 0;
+}
+  
+.topicfooter1 {
 font-family: roboto;
 font-size: 14.5px;
 color: #000;
@@ -412,77 +380,86 @@ padding: 10px 0 0 0;
 margin: 0;
 }
 
-.topicfooter3 {
-font-family: roboto condensed;
-font-size: 15px;
-color: #000;
-text-shadow: 0 0 1px #222;
-text-align: center;
-letter-spacing: 1px;
-padding: 10px 0 0 0;
-margin: 0;
+hr.style-one { border: 0; height: 2px; width:50%; background-color: #d9d9d9; padding: 0; margin:0 0 15px 0;
 }
 
+hr.style-two { border: 0; height: 2px; width:40%; background-color: #ccc; padding: 0; margin:0;
+}
 
-.button {
-  background-color: transparent;
-  border: none;
-  color: #f5f5f5 !important;
-  text-align: center;
-  font-family:roboto condensed;
-  font-size: 14.5px;
-  letter-spacing: .5px;
-  text-shadow: 0 0 1px #f5f5f5;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 22px 0 0 0;
-  float: right;
- }
- 
- .button span {
-  cursor: pointer;
-  display: inline-block;
+.btn-primary:hover span {
+ color: #000;
+ text-shadow: 0 0 1px #222;
+ transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid1 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+  
+ .modal-dialog {
+  margin: 60px 0 0 0;
+  }  
+  
+  @media screen and (max-width: 768px) {
+   .modal-dialog {
+   margin: 10px 0;
+  }
+  }
+  
+  .mySlides {display:none;}
+  
+  
+  .container6 {
   position: relative;
-  transition: 0.5s;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.button span:after {
-  content: '';
+.container6 img {vertical-align: middle;}
+
+.container6 .content6 {
   position: absolute;
- opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+  bottom: 0;
+  background: rgb(192, 192, 192);
+  background: rgba(192, 192, 192, 0.9);
+  width: 100%;
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
 }
 
-.button:hover span {
-  padding-right: 10px;
+ .container7 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.button:hover span:after {
- opacity: 1;
-  right: 0;
-}
+.container7 img {vertical-align: middle;}
 
-.button1 {
-  background-color: transparent;
-  border: none;
-  color: #222 !important;
-  text-align: center;
-  font-family:roboto condensed;
-  font-size: 14.5px;
-  letter-spacing: .5px;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 0;
+.container7 .content7 {
+  position: absolute;
+  bottom: 70px;
+ background: rgb(102, 102, 102);
+  background: rgba(102, 102, 102, 0.8);
+  width: 100%;
   padding: 0;
-  float: right !important;
-  position: absolute;
-   }
-	
+ }
+    
+ div.example {
+  margin: 0;
+  width: 100% !important;
+  padding: 10px 0 0 0;
+}
+
+@media screen and (min-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
 </style>
+
 
 <!-- MailerLite Universal -->
 <script>
@@ -495,28 +472,50 @@ _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.ma
 var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </script>
 <!-- End MailerLite Universal -->
+
+
 </head>
-
-
 <center>
 <body>
+<div class="container-fluid1" style="width:100%;background-color:transparent;padding:0 0 40px 0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel w3-card" style="background-color:transparent;width:100%;padding:0 2px;border-radius:0 0 2px 2px;margin:0;">
 
-<div id="navigation" class="navbar navbar-dark navbar-fixed-top">	
-<div class="w3-bar" id="myNavbar" style="max-width:1180px;background-color:transparent;border-radius:0 0 3px 3px;">
-<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/"><img src="https://user-images.githubusercontent.com/25410880/91937389-6f60b300-ecb7-11ea-9f2d-e5f919368d38.png" style="padding:0;margin:0;width:15%;float:left;"></a>
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/79335539-08dd2300-7ed7-11ea-9ade-d63720ee0495.png" style="width:100.5%;padding:0 0 6px 0;">
+<a style="font-family:khand, sans-serif;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:0;margin:0;" href="https://spiralgroup.github.io/themonster/business-listings.html">barbers & barber shops</a>
+</div>
 
+<div class="w3-threequarter" style="padding:0;margin:0;"> 
+<div class="business-logos slide" style="font-family:khand, sans-serif;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
+<div class="slide" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">apparel & accessories</p></div>
 
-<!-- Right-sided navbar links -->
-<div class="w3-hide-small">
-<button class="button" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')" style="color:#f5f5f5;"><span>Subscribe</span></button>
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">automotive</p></div>
 
-<button class="button"><a href="https://form.jotform.com/92186745877172" target="_blank" style="color:#f5f5f5;"><span>Contact</span></a></button>
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/69172566-eb846400-0ab2-11ea-93a5-ea422df751c5.png"></a>
+<p style="padding:6px 0 0 0;margin:0;color:green;text-shadow:0 0 1px green">beauty & health</p></div>
 
-<button class="button" data-toggle="modal" data-target="#myModal1" style="color:#f5f5f5;"><span>Hours & Location</span></button>
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/66212805-6e706d00-e673-11e9-9bcd-9fd0f2e3b428.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">entertainment</p></div>
 
-<button class="button"><a href="#"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" style="color:#f5f5f5;"><span>Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a></button>
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">food & drink</p></div>
 
-<button class="button type:reservations;"><a href="#" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true" style="color:#f5f5f5;"><span>Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a></button>
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">home services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">personal services</p></div>
+
+<div class="slide w3-center" style="border-radius:2px;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png"></a>
+<p style="padding:6px 0 0 0;margin:0;">spiritual growth</p></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -528,58 +527,85 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </button>
 </div>
 </div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="background-color:#222;width:100%;padding:10px; z-index:9999;" id="mySidebar">
-
-<p style="background-color;#222;padding:5px;"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="background-color;#222;width:100%;border-radius:3px;" loading="lazy"  />
-
-<a href="#about" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
-
-<a href="#team" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> See Menu & Order Online<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
-
-<a href="#contact" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" data-toggle="modal" data-target="#myModal1"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Hours & Location</a>
-
-<a href="https://form.jotform.com/92186745877172" target="_blank" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Contact</a>
-
-<a href="#about" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Subscribe</a>
-
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item btn btn-primary btn-block" style="background-color:#595959;font-family:roboto condensed;font-size:14px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border-radius:2px;padding:11px;"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Come Inside</a></p>
-<br><br>
-
-<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
-<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
 </nav>
+
+<div class="modal fade" id="modalNavigation" role="dialog">
+<div class="modal-header" style="border:none;">
+<div class="modal-dialog modal-lg" style="background-color:transparent;">
+<div class="w3-container" style="background-color:transparent;width:100%;">
+<div class="w3-row-padding" style="width:100%;margin:0 auto;">
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
 </div>
 
+<div class="col-sm-4" style="padding-top:3px;">
+<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#666;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>HOME</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"> <i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> Table Reservations<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><i class="material-icons" style="color:white;font-size:12px;vertical-align:middle;margin:0;padding:0;">radio_button_checked</i> See Menu & Order Online<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_services.html"><span>OUR SERVICES</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>BOOK APPOINTMENT</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>SHOP OUR ONLINE STORE</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>JOIN OUR TEAM</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>CONTACT</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>BUSINESS LISTINGS</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>GET IN THE GAME</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="example">
+<p style="font-family:khand medium;font-size:25px;color:green;text-shadow:0 0 1px green;letter-spacing:.5px;padding:0;margin:0;">beauty & health</p>
+
+<hr class="style-two">
+
+<p style="font-family:khand medium;font-size:15px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;padding:5px 0;margin:0;text-decoration:none;"><a style="color:green;text-shadow:0 0 1px green;text-decoration:none;" href="https://spiralgroup.github.io/themonster/business-listings.html">barbers & barber shops</a></p></div>
 
 <center>
-<div class="container w3-panel w3-card" style="width:100%;padding:0;margin:0 0 10px 0;border-radius:0 0 3px 3px;">
-<div class="hero">
-<h1>Local Restaurant</h1>
-<p>BEST FOOD IN CHICAGOLAND</p>
-<img src="https://user-images.githubusercontent.com/25410880/91927984-821bbd80-eca0-11ea-9be9-8687f0850979.png" style="border-radius:0 0 3px 3px;" />
-</div>
-</div>
-</div>
+<div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Welcome</p>
 </div>
 
-<center>
-<p class="topicfooter3"><i class="material-icons" style="color:#333;font-size:20px;vertical-align:top;margin:0;padding:0 0 5px 0;">verified_user</i> WE OFFER TAKEOUT & FOOD DELIVERY</p>
-
-
-<div class="container w3-panel" style="width:100%;padding:0 5px;margin:80px 0 0 0;">
-<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
-<div class="column" style="margin:0 0 15px 0;">
-<div class="w3-threethird" style="margin:0 0 10px 0;">
- <h2>We Are Pronto NY</h2>
- 
+<div class="w3-container" style="width:100%;padding:0 12px;margin:8px 0 0 0;">
+<div class="container w3-panel" style="background-color:#fff;width:100%;padding:0;border-radius:2px;margin:0 0 3px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-twothird w3-white" style="padding:5px 10px;margin:0;">
+<div class="column" style="padding:15px 10px 10px 10px;margin:0;">
+<p class="topic">
+We Are Pronto NY 
  ABOUT US
-<p>At ourselves with the ability to offer our customers delicious and authentic Italian food, created at the highest standards. Every single meal we make is unique. We guarantee that you won’t get disappointed.</p>
-<p>The key to our success is simple: providing exquisite meals, made out of only the purest and freshest of ingredients that taste great every single time.</p>
-<p>Our goal is to help you enjoy the little things in life that matter. So eat delicious food. Grab a drink. But most of all, relax! We thank you for your continued support.</p>
+At ourselves with the ability to offer our customers delicious and authentic Italian food, created at the highest standards. Every single meal we make is unique. We guarantee that you won’t get disappointed.<br><br>
+
+The key to our success is simple: providing exquisite meals, made out of only the purest and freshest of ingredients that taste great every single time. Our goal is to help you enjoy the little things in life that matter. So eat delicious food. Grab a drink. But most of all, relax! We thank you for your continued support.<br><br>
+
+The experience begins when clients walk through the door, chooses their barber, and delves into local or world events, personal matters, or takes time to reflect quietly while their barber creates magic.<br><br>
+
+We stay connected by keeping a finger on the pulse of the industry and setting trends. Click <a href="https://spiralgroup.github.io/themonster/test-template_services.html" style="text-decoration:none;color:green;text-shadow:0 0 1px green;">here</a> to check out the services we offer, and then book an appointment so that we can get you looking and feeling your best.</p>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0;margin:0;">
+<div class="column" style="margin:0;padding:0 1px;">
+
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/92049830-1e050200-ed51-11ea-98b0-90d44d5ba3b3.png" style="width:100%;padding:0;border-radius:2px;">
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -736,40 +762,91 @@ Simply select "Delivery" at the checkout screen and we hope you'll appreciate ou
     </div>
 </div>
 </div>
+</div>
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
+<div class="w3-container" style="width:100%;padding:0;margin:70px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0 14px;margin:0;">
+<div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:10px 0 0 0;">
+<div class="w3-quarter" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:0;">
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/92049547-5c4df180-ed50-11ea-8a8e-caaf4f36ec83.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/92049807-16ddf400-ed51-11ea-8478-a1d7f6c62a3c.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+<img class="mySlides" src="https://user-images.githubusercontent.com/25410880/92049830-1e050200-ed51-11ea-98b0-90d44d5ba3b3.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
+
+</div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 190);
+}
+</script>
+
+<div class="w3-threequarter" style="background-color:#ccc;margin:0;">
+<div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
+<div id="timeDiv">
+</div>
+</div>
+
+<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
+<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+<p class="topicfooter2">
+123-456-8890</p>
+
+<p class="topicfooter1">
+400 South State Street<br>
+Chicago, IL 60605</p>
+
+<div class="w3-row-padding" style="width:100%;margin:24px 0 4px 0;">
+<div class="w3-quarter" style="margin:0;">
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank"><span>Book Appointment</span></a></div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>Subscribe</span></a>
+</div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
+</div>
+</div>
+
+<div class="w3-threethird" style="background-color:transparent;margin:0;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+
 <div class="modal fade" id="myModal1" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;"></div>
-<div class="modal-dialog modal-lg" style="width:100%;padding:0;margin:20px 0;">
-<div class="w3-modal-content w3-card-4" style="max-width:475px;padding:5px;border-radius:2px;">
+<div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
+<div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
 <div class="modal-body" style="padding:0;margin:0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="w3-row" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/79089177-f954b300-7cf9-11ea-8fd2-b832866a878e.png" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:2px;">
 
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="background-color:#fff;width:100%;">
-<div class="w3-threethird">
-<div class="column">
-<div id="timeDiv">
-</div>
-</div>
-</div>
-</div>
-
-<div class="w3-container" style="width:100%;padding:0;margin:10px 0 0 0;">
-<div class="w3-row" style="background-color:#f2f2f2;width:100%;padding:10px 0;margin:10px 0;border-radius:2px;">
-<div class="w3-threethird" style="background-color:#f2f2f2;margin:0;">
-<div class="column" style="background-color:#f2f2f2;margin:0;padding:5px 0;">
-<div id="Sunday" class="dateTime">
-        <div class="day">Sunday</div>
-      <div class="time">8am - 8pm</div>
-      </div>
-      <br>
-      
-<div id="Monday" class="dateTime">
+       <div id="Monday" class="dateTime">
         <div class="day">Monday</div>
         <div class="time">8am - 8pm</div>
       </div>
@@ -803,40 +880,26 @@ Simply select "Delivery" at the checkout screen and we hope you'll appreciate ou
         <div class="day">Saturday</div>
         <div class="time">8am - 8pm</div>
       </div>
+      
+      <br>
+       <div id="Sunday" class="dateTime">
+        <div class="day">Sunday</div>
+      <div class="time">8am - 8pm</div>
       </div>
        </div>
        </div>
        </div>
        
-<div class="w3-threethird" style="background-color:transparent;margin:0;">
-<p class="topicfooter2">
-123-456-8890</p>
-
-<p class="topicfooter1">
-400 South State Street<br>
-Chicago, IL 60605</p>
-</div>
-</div>
-
-       <div class="w3-threethird w3-card" style="background-color:transparent;margin:20px 0 0 0;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:295px;" frameborder="0" allowfullscreen=""></iframe></div></div>
-
-
-       <div class="w3-row" style="padding:0;margin:0;">
+       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
        <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:#222;font-family:khand, sans-serif;font-size:13.5px;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #222;margin:0;padding:12px 0 8px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:green;font-family:khand medium;font-size:13.5px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px green;margin:0;padding:12px 0 8px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>    
+ </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -896,11 +959,12 @@ checkTime();
 
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
-<div class="w3-container" style="width:100%;padding:10px 0;margin:0;border-radius:3px;">
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
 <p class="topic2">Shop Local</p>
+</div>
 
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
 <div class="slide w3-card" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;" alt="Game Day Barber Shop"></a></div>
@@ -921,27 +985,6 @@ checkTime();
 </div>
 </div>
 </div>
-</div>
-</div>
-
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="w3-threethird" style="margin:0;padding:0;">
-<p align="center" style="font-family:roboto condensed;font-size:22px;color:#222;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">www.SpiralGroup.org</p>
-
-<div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
-</div>
-
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">Business Listings</a>
-<a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">Join Our MarketPlace</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Your Privacy</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
@@ -957,33 +1000,5 @@ src="https://www.statcounter.com/counter/counter.js" async></script>
 src="https://c.statcounter.com/12123020/0/200cda4a/1/" alt="Web Analytics Made
 Easy - StatCounter"></div></noscript>
 <!-- End of Statcounter Code -->
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
 </body>
 </html>
