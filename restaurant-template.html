@@ -520,10 +520,14 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 
-<!-- Hide right-floated links on small screens and replace them with a menu icon -->
-<a href="javascript:void(0)" class="button1 w3-top w3-hide-large w3-hide-medium" style="background-color:transparent;" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+<nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
+<div class='container-fluid pull-right' style="width:100%;">
+<div class='navbar-header pull-right' style="padding:0;">
+<button class='w3-button w3-text-grey w3-white w3-hover-shadow pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:10px 5px;border-radius:2px;">
+<span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
+</button>
 </div>
-
+</div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large display:none" style="background-color:#222;width:100%;padding:10px; z-index:9999;" id="mySidebar">
