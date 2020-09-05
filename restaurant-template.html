@@ -478,6 +478,53 @@ hr.style-two { border: 0; height: 2px; width:40%; background-color: #ccc; paddin
 hr.style-one { border: 0; height: 1px; width:50%; background-color: #f2f2f2; padding: 0; margin:0 0 15px 0;
 }
 
+.container99 {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.image {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.overlayv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  overflow: hidden;
+  width: 75%;
+  height: 95%;
+  border-radius: 0 4px 0 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container99:hover .overlayv {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 </style>
 
 
@@ -599,24 +646,23 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </div>
-</div>
-
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p class="topic2">Welcome</p>
-</div>
 
-<div class="w3-container" style="width:100%;padding:0 12px;margin:8px 0 0 0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:2px;margin:0 0 3px 0;border-radius:30px;">
-<div class="w3-row" style="background-color:#fff;width:100%;margin:0;">
-<div class="w3-twothird" style="padding:5px 10px;margin:0;">
-<div class="column" style="padding:10px;margin:0;">
+<center>
+<div class="w3-container" style="width:100%;padding:0 17px;margin:8px 0 50px 0;">
+<div class="w3-container" style="width:100%;padding:0 17px;margin:0;">
+<div class="row">
+<div class="w3-twothird" style="background-color:#fff;border-radius:4px;">
+<div class="column" style="padding:10px 15px;margin:0;border-radius:3px 3px 0 0;">
+
 <p class="topic">
-Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd always feel at home. A place where they could get no-nonsense food at down-to-earth prices, and where they'd be treated right by people who had a passion to serve.<br><br>       
+Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome. A place where they could get no-nonsense food at down-to-earth prices. A place where they'd be treated right by people who had a passion to serve.<br><br>       
 
-The culture at the SG MarketPlace Restaurant was instilled by Michelle Jones long before a mission statement was ever written down on paper, and is still evident today. At the SG, guests, team members, and community are all treated with respect.<br><br>
+The culture at the SG MarketPlace Restaurant was instilled by Michelle Jones long before a mission statement was ever written, and is still evident today. At the SG, guests, team members, and community are all treated with respect.<br><br>
 
 We're loved for our hand-breaded Boneless Buffalo Wings, our signature Broiled Sirloin Tips, our frosted mugs of beer, and more. All are served in a distinctly hearty New England style, enjoyed over good times with great family and friends. Simple, honest, genuine food.<br><br>
 
@@ -624,11 +670,10 @@ Providing stellar service is our key to success. It's what makes new guests feel
 </div>
 </div>
 
-<div class="w3-third" style="padding:0;margin:0;">
-<div class="column" style="margin:0;padding:0 1px;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/92291947-89c9a500-eee0-11ea-950d-31e0238ab464.png" style="width:100%;padding:0;border-radius:2px;">
-</div>
-</div>
+<div class="w3-third">
+<div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
+
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/92291947-89c9a500-eee0-11ea-950d-31e0238ab464.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
 </div>
 </div>
 </div>
@@ -636,8 +681,8 @@ Providing stellar service is our key to success. It's what makes new guests feel
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p class="topic2">Our Specials</p>
 </div>
 
@@ -647,7 +692,7 @@ Providing stellar service is our key to success. It's what makes new guests feel
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #f5f5f5;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Daily</button>
+<button class="btn btn-primary btn-block" style="background-color:#e6e6e6;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Daily</button>
 
 <p class="topic3">BROILED SIRLOIN TIPS</p>
 <hr class="style-one">
@@ -667,7 +712,7 @@ Served with penne pasta and rustic bread.</p>
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #f5f5f5;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Weekly</button>
+<button class="btn btn-primary btn-block" style="background-color:#e6e6e6;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Weekly</button>
 
 <p class="topic3">BROILED SIRLOIN TIPS</p>
 <hr class="style-one">
@@ -687,7 +732,7 @@ Served with penne pasta and rustic bread.</p>
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #f5f5f5;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Online Only</button>
+<button class="btn btn-primary btn-block" style="background-color:#e6e6e6;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Online Only</button>
 
 <p class="topic3">BROILED SIRLOIN TIPS</p>
 <hr class="style-one">
@@ -699,52 +744,51 @@ Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
 <button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
-</div>
-</div>
 </div>
 </div>
 </div>
 
 <center>
-<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:50px 0 0 0;">
-<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;">
-<img class="w3-card-2" src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:3px;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<p class="topic2">Catering</p>
+
+<div class="row">
+<div class="w3-threethird" style="background-color:#fff;border-radius:4px;">
+<div class="column" style="padding:10px 15px;margin:0;border-radius:3px 3px 0 0;">
+
+<p class="topic">
+The friendly and professional staff at Clark Catering Inc. provides institutional, corporate and private catering. Whether it's boxed lunches, a cocktail reception for 25 people or a seated dinner for 250, Clark Catering Inc is fully committed to helping our customers achieve their catering needs. Put our expertise to work for you. With prestigious clients such as Soft Sheen Products, BET, AT&T to name a few, Clark Catering Inc. has proved to be the best in Chicago. Call us today for a free consultation.</p>
+</div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;">
-<img class="w3-card-2" src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-2.jpg" style="width:100%;border-radius:3px;">
-</div>
-</div>
-    
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;">
-<img class="w3-card-2" src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-3.jpg" style="width:100%;border-radius:3px;">
-</div>
-</div>
-</div>
-</div>
-    
-<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:10px 0 0 0;">
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:-10px 0 0 0;">
 <div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;">
-<img class="w3-card-2" src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:3px;">
+<div class="w3-third">
+<div class="container99">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-2.jpg" class="image">
+<div class="overlayv">
+<div class="text">Hello World</div>
 </div>
-</div>
-    
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;">
-<img class="w3-card-2" src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:3px;">
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0 0 15px 0;">
-<img class="w3-card-2" src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" style="width:100%;border-radius:3px;">
+<div class="w3-third">
+<div class="container99">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-3.jpg" class="image">
+<div class="overlayv">
+<div class="text">Hello World</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="container99">
+<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-5.jpg" class="image">
+<div class="overlayv">
+<div class="text">Hello World</div>
+</div>
 </div>
 </div>
 </div>
