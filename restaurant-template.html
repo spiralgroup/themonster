@@ -490,11 +490,55 @@ hr.style-one { border: 0; height: 1px; width:50%; background-color: #f2f2f2; pad
   position: absolute;
   bottom: 0;
   background: rgb(192, 192, 192);
-  background: rgba(192, 192, 192, 0.9);
+  background: rgba(192, 192, 192, 0.6);
   width: 100%;
   padding: 10px;
   border-radius: 0 0 2px 2px;
 }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: transparent;
+  }
+
+/* Slides */
+.mySlides1 {
+  display: none;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
 </style>
 
 
@@ -623,27 +667,29 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <p class="topic2">Welcome</p>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0 17px;margin:8px 0 50px 0;">
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="row-padding">
-<div class="w3-twothird w3-white" style="border-radius:4px;">
-<div class="column" style="padding:15px;margin:0;border-radius:3px 3px 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 50px 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-twothird" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="border:1px solid #f5f5f5;padding:15px;margin:0;border-radius:3px 3px 0 0;">
 
 <p class="topic">
-Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome. A place where they could get no-nonsense food at down-to-earth prices. A place where they'd be treated right by people who had a passion to serve.<br><br>       
+Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome, could get no-nonsense food at down-to-earth prices, and where they'd be treated right by people who had a passion to serve.<br><br>       
 
-The culture at the SG MarketPlace Restaurant was instilled by Michelle Jones long before a mission statement was ever written, and is still evident today. At the SG, guests, team members, and community are all treated with kindness and respect.<br><br>
+The culture at the SG MarketPlace Restaurant was instilled by Michelle long before a mission statement was ever written. At the SG, guests, team members, and community are all treated with kindness and respect.<br><br>
 
 We're loved for our hand-breaded Boneless Buffalo Wings, our signature Broiled Sirloin Tips, our frosted mugs of beer, and more. All are served in a distinctly hearty New England style, enjoyed over good times with great family and friends. Simple, honest, genuine food.<br><br>
 
 Providing stellar service is our key to success. It's what makes new guests feel welcome and regulars feel right at home. So eat delicious food. Grab a drink. But most of all, relax.</p>
 </div>
 </div>
+</div>
 
-<div class="w3-third" style="padding:0;margin:0;">
-<div class="column" style="margin:0;padding:0 1px;">
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
 <div class="container6">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/92318012-3d5b9380-efcc-11ea-8e0d-029abe8e6783.png" style="width:100%;padding:0;border-radius:3px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/92418366-c7bb0900-f12c-11ea-9993-3e81c146573e.png" style="width:100%;padding:0;border-radius:3px;">
 <div class="content6">
 <button type="button" class="btn btn-primary btn-block" style="background-color:transparent;padding:10px 0;margin:0;border:none;border-radius:0 0 2px 2px;"><a style="text-decoration:none;font-family:roboto condensed;font-size:14.5px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #fff;" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">DOWNLOAD OUR MENU</a></button>
 </div>
@@ -722,20 +768,103 @@ Served with penne pasta and rustic bread.</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0 17px;margin:90px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p class="topic2">Catering</p>
 
-<div class="row-padding">
-<div class="w3-threethird" style="background-color:#fff;border-radius:4px;">
-<div class="column" style="padding:10px 15px;margin:0;border-radius:3px 3px 0 0;">
-
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 50px 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-twothird" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="border:1px solid #f5f5f5;padding:15px;margin:0;border-radius:3px 3px 0 0;">
 <p class="topic">
 The friendly and professional staff at Spiral Group, Inc. provides institutional, corporate, and private catering. Whether it's boxed lunches, a cocktail reception for 25 people, or a seated dinner for 250, we're fully committed to helping our customers achieve their catering needs.<br><br>
 
-Put our expertise to work for you. With prestigious clients such as Soft Sheen Products, BET, Microsoft, Google, Mozilla, Apple, and AT&T &#151; to name a few &#151; Spiral Group, Inc. has proven to be the best in Chicago. Call us at 773-242-0705 for a free consultation, or tell us about your event at catering@spiralgroup.org.</p>
+From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation. You provide the concept along with desired cuisine. We will incorporate your theme, budget and desired outcome to ensure a successful and spectacular culinary event.<br><br>
+
+Put our expertise to work for you. With prestigious clients such as Soft Sheen Products, BET, Microsoft, Google, Mozilla, Apple, and AT&T, Spiral Group, Inc. has proven to be the best in Chicago.<br><br>
+
+Call us at 773-242-0705 for a free consultation, or tell us about your event at catering@spiralgroup.org. Call us at 773-242-0705 for a free consultation, or tell us about your event at catering@spiralgroup.org.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="slideshow-container">
+
+<div class="mySlides1">
+<img src="https://user-images.githubusercontent.com/25410880/92049830-1e050200-ed51-11ea-98b0-90d44d5ba3b3.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
+</div>
+
+<div class="mySlides1">
+<img src="https://user-images.githubusercontent.com/25410880/92049807-16ddf400-ed51-11ea-8478-a1d7f6c62a3c.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
+</div>
+
+<div class="mySlides1">
+<img src="https://user-images.githubusercontent.com/25410880/92049547-5c4df180-ed50-11ea-8a8e-caaf4f36ec83.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
+</div>
+
+<div class="mySlides1">
+<i class="fa fa-cutlery" style="font-size:44px;margin:0;padding:0;"></i>
+<p class="topic3">FLORAL ARRANGEMENTS</p>
+
+<p class="topic1">
+From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation. You provide the concept along with desired cuisine. We will incorporate your theme, budget and desired outcome to ensure a successful and spectacular culinary event.</p>
+</div>
+
+<div class="mySlides1">
+<i class="fa fa-skyatlas" style="font-size:44px;margin:0;padding:0;"></i>
+<p class="topic3">THEME DEVELOPMENT</p>
+
+<p class="topic1">
+From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation. You provide the concept along with desired cuisine. We will incorporate your theme, budget and desired outcome to ensure a successful and spectacular culinary event.</p>
+</div>
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
 </div>
 </div>
 </div>
@@ -786,66 +915,10 @@ We will work closely with you to ensure your well thought out theme is just what
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
-<div class="w3-third">
-<div class="column" style="padding:0;margin:0 0 18px 0;border-radius:3px;">
-<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-2.jpg" style="width:100%;padding:0;margin:0;border-radius:3px;">
-</div>
-</div>
-
-<div class="w3-third">
-<div class="column" style="padding:0;margin:0 0 18px 0;border-radius:3px;">
-<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-2.jpg" style="width:100%;padding:0;margin:0;border-radius:3px;">
-</div>
-</div>
-
-<div class="w3-third">
-<div class="column" style="padding:0;margin:0 0 18px 0;border-radius:3px;">
-<img src="https://pronto-wp.com/wp-content/uploads/2019/05/gallery-2.jpg" style="width:100%;padding:0;margin:0;border-radius:3px;">
-</div>
-</div>
-</div>
-</div>
-
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0 17px;margin:90px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p class="topic2">Food Delivery</p>
-
-<div class="row-padding">
-<div class="w3-threethird" style="background-color:#fff;border-radius:4px;">
-<div class="column" style="padding:10px 15px;margin:0;border-radius:3px 3px 0 0;">
-
-<p class="topic">
-Takeout Food & Delivery
-
-We're located in New York and are delighted to take your online order.
-
-Take your time to browse our interactive online menu and place the order when ready. It takes us about a minute to confirm your order and give you an estimated ready time.<br><br>
-
-Looking for food delivery nearby? Not everybody knows or has the time to prepare tasty food.
-When you want to get served like a king then food delivery from restaurant Pronto will be your best choice.
-Simply select "Delivery" at the checkout screen and we hope you'll appreciate our food delivery service.
-
-
-Food delivery in New York
-
-Looking for food delivery nearby? Not everybody knows or has the time to prepare tasty food.
-
-
-Delivery fee
-Zone 1, Min - $0.00, Fee - $0.00
-Zone 2, Min - $7.00, Fee - $2.00
-Zone 3, Min - $10.00, Fee - $3.00</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
+<p class="topic2">Hours & Location</p>
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
@@ -859,7 +932,6 @@ Zone 3, Min - $10.00, Fee - $3.00</p>
 <img class="mySlides" src="https://user-images.githubusercontent.com/25410880/92049807-16ddf400-ed51-11ea-8478-a1d7f6c62a3c.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
 
 <img class="mySlides" src="https://user-images.githubusercontent.com/25410880/92049830-1e050200-ed51-11ea-98b0-90d44d5ba3b3.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
-
 </div>
 </div>
 
@@ -876,9 +948,10 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 190);
+  setTimeout(carousel, 290);
 }
 </script>
+
 
 <div class="w3-threequarter" style="background-color:#ccc;margin:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
