@@ -287,13 +287,15 @@ color: #222;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #222;
-padding: 10px 0 0 0;
+padding: 50px 0 0 0;
 margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic4c {
   font-size: 19px;
+  padding: 0;
+  margin: 5px 0 0 0;
   }
   }
   
@@ -449,13 +451,19 @@ font-family: 'Expletus Sans', cursive;
  
  .carousel {
   background: #f5f5f5;
+  padding: 0 20px;
 }
+
+ @media screen and (max-width: 768px) {
+  .carousel {
+  padding: 0;  
+  }
+  }
 
 .carousel-cell {
   width: 100%;
   height: auto;
   counter-increment: gallery-cell;
-  padding: 0 10px !important;
   }
 
 /* cell number */
@@ -463,6 +471,7 @@ font-family: 'Expletus Sans', cursive;
   display: block;
   text-align: center;
   content: counter(gallery-cell);
+ display: none;
 }
 
 .flickity-enabled {
@@ -508,14 +517,15 @@ font-family: 'Expletus Sans', cursive;
 
 .flickity-button {
   position: absolute;
-  background: hsla(0, 0%, 100%, 0.75);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   color: #333;
+  cursor: pointer;
   display: none;
-}
+ }
 
 .flickity-button:hover {
-  background: white;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -525,7 +535,7 @@ font-family: 'Expletus Sans', cursive;
 }
 
 .flickity-button:active {
-  opacity: 0.6;
+  opacity: 0.1;
 }
 
 .flickity-button:disabled {
@@ -543,8 +553,8 @@ font-family: 'Expletus Sans', cursive;
 
 .flickity-prev-next-button {
   top: 50%;
-  width: 44px;
-  height: 44px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   /* vertically center */
   transform: translateY(-50%);
@@ -587,8 +597,8 @@ font-family: 'Expletus Sans', cursive;
 
 .flickity-page-dots .dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   margin: 0 8px;
   background: #333;
   border-radius: 50%;
@@ -692,10 +702,8 @@ Discover how our online marketing solutions can help you grow.</p>
 <div class="panel">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="item" data-aos="fade-up">
+<div class="w3-half" style="margin:0 0 10px 0;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71972635-e47bf700-31c1-11ea-888a-1793b3bc5592.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
 </div>
 
 <div class="w3-half" style="padding:0;margin:0;"> 
@@ -732,15 +740,13 @@ A. With more than 900 million units sold, we know how to set your business up fo
 
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
-<div class="w3-half" style="margin:0;">
-<div class="item" data-aos="fade-up">
+<div class="w3-half" style="margin:0 0 10px 0;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71976274-bfd84d00-31ca-11ea-8b66-bbcdd8187225.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
-</div>
 
-<div class="w3-half" style="padding:0 20px;margin:0;">
-<div class="business-logos slide" style="font-family:khand, sans-serif;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
-<div class="slide">
+<div class="w3-half" style="padding:0;margin:0;"> 
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+<div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px dodgerblue;font-size:22px;vertical-align:middle;margin:0;padding:0 0 5px 0;">verified_user</i> Quality Customers</p>
 
@@ -750,7 +756,7 @@ SpiralGroup customers are collectors of new experiences, but loyal to the places
 SpiralGroup customers are collectors of new experiences, but loyal to the places they love. They spend more at great businesses and recommend favorite spots to friends and recommend favorite spots.</p>
 </div>
 
-<div class="slide">
+<div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px dodgerblue;font-size:22px;vertical-align:middle;margin:0;padding:0 0 5px 0;">verified_user</i> Quality Customers</p>
 
@@ -760,7 +766,7 @@ SpiralGroup customers are collectors of new experiences, but loyal to the places
 SpiralGroup customers are collectors of new experiences, but loyal to the places they love. They spend more at great businesses and recommend favorite spots to friends and recommend favorite spots.</p>
 </div>
 
-<div class="slide">
+<div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px dodgerblue;font-size:22px;vertical-align:middle;margin:0;padding:0 0 5px 0;">verified_user</i> Quality Customers</p>
 
@@ -776,15 +782,13 @@ SpiralGroup customers are collectors of new experiences, but loyal to the places
 
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
-<div class="w3-half" style="margin:0;">
-<div class="item" data-aos="fade-up">
+<div class="w3-half" style="margin:0 0 10px 0;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/71973640-450c3380-31c4-11ea-8c68-ebfbc2d4bc43.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
-</div>
 
-<div class="w3-half" style="padding:0 20px;margin:0;"> 
-<div class="business-logos slide" style="font-family:khand, sans-serif;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
-<div class="slide">
+<div class="w3-half" style="padding:0;margin:0;"> 
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+<div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px dodgerblue;font-size:22px;vertical-align:middle;margin:0;padding:0 0 5px 0;">verified_user</i> New Ways to Grow</p>
 
@@ -794,7 +798,7 @@ Boost your online presence and connect with customers on your SpiralGroup Seller
 Boost your online presence and connect with customers on your SpiralGroup Seller Pages, drive revenue through full-priced offerings, and manage demand via online booking.</p>
 </div>
 
-<div class="slide">
+<div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px dodgerblue;font-size:22px;vertical-align:middle;margin:0;padding:0 0 5px 0;">verified_user</i> New Ways to Grow</p>
 
@@ -804,7 +808,7 @@ Boost your online presence and connect with customers on your SpiralGroup Seller
 Boost your online presence and connect with customers on your SpiralGroup Seller Pages, drive revenue through full-priced offerings, and manage demand via online booking.</p>
 </div>
 
-<div class="slide">
+<div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons" style="color:dodgerblue;text-shadow:0 0 1px dodgerblue;font-size:22px;vertical-align:middle;margin:0;padding:0 0 5px 0;">verified_user</i> New Ways to Grow</p>
 
@@ -818,12 +822,13 @@ Boost your online presence and connect with customers on your SpiralGroup Seller
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<script>
-AOS.init({
-  duration: 1200,
-})
-</script>
 
 <center>
 <div id="test" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
@@ -833,8 +838,8 @@ Solutions Designed for Your Small Business</p>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:15px 0 0 0;">
-<div class="w3-third" style="margin:0 0 25px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="item container7">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
 <div class="content7">
@@ -843,8 +848,8 @@ Solutions Designed for Your Small Business</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 25px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="item container7">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content7">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Beauty & Health</a>
@@ -852,8 +857,8 @@ Solutions Designed for Your Small Business</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 25px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="item container7">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content7">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Cultural Activities & Events</a>
@@ -861,8 +866,8 @@ Solutions Designed for Your Small Business</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 25px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="item container7">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content7">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Home & Auto Services</a>
@@ -870,8 +875,8 @@ Solutions Designed for Your Small Business</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 25px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="item container7">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content7">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Physical Goods</a>
@@ -879,8 +884,8 @@ Solutions Designed for Your Small Business</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 25px 0;">
-<div class="item container7" data-aos="fade-up">
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="item container7">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 <div class="content7">
 <a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:13.5px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Spiritual Growth</a>
