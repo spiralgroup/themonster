@@ -192,11 +192,11 @@ background-color: #f5f5f5;
 
 .footer {
  max-width: 1366px;
-margin: 0 auto;
-background-color: #222;
+ margin: 0 auto;
+ background-color: #f2f2f2;
  border: none;
-}
-
+  }
+  
 .top-container {
    padding: 0;
   margin: 0 auto;
@@ -209,13 +209,13 @@ padding: 20px 0;
 
 .topnav1 a {
   font-family: roboto;
-  color: #fff;
+  color: #222;
   padding: 0;
   text-decoration: none;
   font-size: 12px;
   margin: 0;
   letter-spacing: 1px;
-  text-shadow: 0 0 1px #f2f2f2;
+  text-shadow: 0 0 1px #222;
 }
 
 .topnav1 a:hover {
@@ -239,7 +239,7 @@ margin: 0 0 10px 0;
 
 .topic1 {
 font-family: roboto;
-font-size: 13px;
+font-size: 16px;
 color: #000;
 text-align: center;
 letter-spacing: 0;
@@ -285,6 +285,24 @@ margin: 0;
 @media screen and (max-width: 768px) {
   .topic2a {
    font-size: 18px;
+  }
+  }
+  
+   .topic2c {
+text-align: center;
+font-family: roboto condensed;
+font-size: 25px;
+letter-spacing: .5px;
+color: dodgerblue;
+text-shadow: 0 0 1px dodgerblue;
+padding: 20px 0 0 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2c {
+   font-size: 20px;
+   padding: 5px 0;
   }
   }
   
@@ -506,6 +524,21 @@ font-family: 'Expletus Sans', cursive;
   width: 100%;
   padding: 0;
  }
+ 
+ .panel {
+  padding: 0 30px;
+  margin: 0;
+  background-color: #f5f5f5;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .panel {
+  padding: 0;  
+  }
+  }
+  
+ hr.style-one { border: 0; height: 2px; width:100%; box-shadow: 0 2px 2px #ccc;}
+  
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -592,7 +625,8 @@ Advertise with us and never worry about elaborate online advertising compensatio
 </div>
 </div>
 
-<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="panel">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
 <div class="w3-half" style="margin:0;">
 <div class="item" data-aos="fade-up">
@@ -687,6 +721,8 @@ Boost your online presence and connect with customers on your SpiralGroup Seller
 </div>
 </div>
 </div>
+</div>
+</div>
 
 <script>
 AOS.init({
@@ -697,7 +733,7 @@ AOS.init({
 <center>
 
 <div id="test" class="w3-container w3-panel" style="width:100%;padding:0 7px;margin:0;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:20px 0 0 0;margin:100px 0 0 0;border-radius:8px 8px 2px 2px;">
+<div class="w3-container w3-panel" style="width:100%;padding:20px 0 0 0;margin:100px 0 0 0;">
 <p style="font-family:roboto;font-size:18px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;">
 Solutions Designed for Your Small Business</p>
 
@@ -769,7 +805,7 @@ Discover how our online marketing solutions can help you grow.</p>
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
 <div class="w3-threethird" style="margin:0 0 20px 0;">
-<p style="font-family:roboto;font-size:18px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;">
+<p class="topic2c">
 Grow Your Small Business: Become a SpiralGroup Merchant</p>
 
 <p align="center"><a class="w3-button w3-blue" href="#test" style="border-radius:2px;font-family:roboto;font-size:16px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px;margin:30px 0 80px 0;box-shadow:0 0 22px #ccc;">Get Started</a></p>
@@ -801,18 +837,18 @@ $(document).ready(function() {
 });</script>
 
 <center>
-<div class="footer" style="background-color:#222;">
+<div class="footer w3-card-4" style="border-radius:3px 3px 0 0;">
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<p align="center" style="font-family:roboto;font-size:24px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #f2f2f2;padding:0;margin:10px 0 0 0;">www.SpiralGroup.org</p>
+<p align="center" style="font-family:roboto;font-size:24px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">www.SpiralGroup.org</p>
 
 <div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
 </div>
 </div>
 
-<hr>
-<div class="row-padding" style="background-color:#222;">
-<div class="w3-quarter nab topnav1" style="background-color:#222;">
+<hr class="style-one">
+<div class="row-padding" style="background-color:#f2f2f2;">
+<div class="w3-quarter nab topnav1" style="background-color:#f2f2f2;">
 <p><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">Join Our MarketPlace</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">Join Our MarketPlace</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">Join Our MarketPlace</a></p>
@@ -820,21 +856,21 @@ $(document).ready(function() {
 </div>
 
 
-<div class="w3-quarter nab topnav1" style="background-color:#222;">
+<div class="w3-quarter nab topnav1" style="background-color:#f2f2f2;">
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 </div>
 
-<div class="w3-quarter nab topnav1" style="background-color:#222;">
+<div class="w3-quarter nab topnav1" style="background-color:#f2f2f2;">
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a></p>
 </div>
 
-<div class="w3-quarter nab topnav1" style="background-color:#222;">
+<div class="w3-quarter nab topnav1" style="background-color:#f2f2f2;">
 <p><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a></p>
 <p><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a></p>
 <p><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a></p>
