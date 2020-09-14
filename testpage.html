@@ -434,18 +434,6 @@ font-family: 'Expletus Sans', cursive;
   padding: 0;
  }
  
- .panel {
-  padding: 0;
-  margin: 0;
-  background-color: #f5f5f5;
-  }
-  
-  @media screen and (max-width: 768px) {
-  .panel {
-  padding: 0;  
-  }
-  }
-  
  hr.style-one { border: 0; height: 3px; width:97%; background-color:#fff; padding:0; margin: 0;}
  
  .carousel {
@@ -904,24 +892,6 @@ Reach More Local Customers: Become a SpiralGroup Merchant</p>
 </div>
 </div>
 </div>
-
-<script>
-var $ = jQuery;
-
-$(document).ready(function() {
-  $('nav a[href*=\\#]').bind('click', function(e) {
-    e.preventDefault(); 
-    var target = $(this).attr("href"); 
-
-    $('html, body').stop().animate({
-      scrollTop: ( $(target).offset().top - 100 ) 
-    }, 600, function() {
-      location.hash = target;
-    });
-
-    return false;
-  });
-});</script>
 
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin-bottom:-5px;">
