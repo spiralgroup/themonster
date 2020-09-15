@@ -112,13 +112,14 @@ color: #000;
 text-align: center;
 letter-spacing: 0;
 text-shadow: 0 0 1px #ccc;
-padding: 0;
+padding: 0 12px;
 margin: 10px 0 30px 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic1 {
-  font-size: 14px;  
+  font-size: 14px; 
+  padding: 0;
   margin: 5px 0 10px 0;
   }
   }
@@ -497,7 +498,7 @@ hr.style-eight:after {
  
  .carousel {
   background: #f5f5f5;
-  padding: 0 20px;
+ 
 }
 
  @media screen and (max-width: 768px) {
@@ -509,6 +510,7 @@ hr.style-eight:after {
 .carousel-cell {
   width: 100%;
   height: auto;
+  padding: 0 25px;
   counter-increment: gallery-cell;
   }
 
@@ -528,6 +530,7 @@ hr.style-eight:after {
 .flickity-viewport {
   overflow: hidden;
   position: relative;
+  padding: 0 20px;
   height: 100%;
 }
 
@@ -535,6 +538,7 @@ hr.style-eight:after {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding: 0 20px;
 }
 
 /* draggable */
@@ -564,9 +568,8 @@ hr.style-eight:after {
   position: absolute;
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  color: #333;
+  color: dodgerblue;
   cursor: pointer;
-  display: none;
  }
 
 .flickity-button:hover {
@@ -576,7 +579,7 @@ hr.style-eight:after {
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  box-shadow: 0 0 0 2px #19F;
 }
 
 .flickity-button:active {
@@ -597,13 +600,19 @@ hr.style-eight:after {
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top: 60%;
+  top: 70.5%;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   /* vertically center */
-  transform: translateY(-50%);
+  transform: translateY(-90%);
 }
+
+@media screen and (max-width: 768px) {
+  .flickity-prev-next-button {
+   top: 36%;  
+  }
+  }
 
 .flickity-prev-next-button.previous { left: 10px; }
 .flickity-prev-next-button.next { right: 10px; }
@@ -635,7 +644,7 @@ hr.style-eight:after {
   
   @media screen and (max-width: 768px) {
   .flickity-page-dots {
-  width: 82%;
+  width: 84%;
   position: absolute;
   }
   }
@@ -647,7 +656,7 @@ hr.style-eight:after {
   width: 8px;
   height: 8px;
   margin: 0 7px;
-  background: #333;
+  background: dodgerblue;
   border-radius: 50%;
   opacity: 0.25;
   cursor: pointer;
@@ -757,7 +766,7 @@ day. Discover how our online marketing solutions can help you grow.</p>
 </div>
 
 <div class="w3-half" style="margin:10px 0 0 0;"> 
-<div class="carousel" data-flickity='{ "autoPlay": true }'>
+<div class="carousel" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
 <div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons">verified_user</i> Profit-Driven Marketing</p>
@@ -802,7 +811,7 @@ Promoting your brand to people who matter has never been this easy or affordable
 </div>
 
 <div class="w3-half" style="margin:10px 0 0 0;"> 
-<div class="carousel" data-flickity='{ "autoPlay": true }'>
+<div class="carousel" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
 <div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons">verified_user</i> 
@@ -849,7 +858,7 @@ Ensure excellent service with your very own contact form. Customers can submit f
 </div>
 
 <div class="w3-half" style="margin:10px 0 0 0;"> 
-<div class="carousel" data-flickity='{ "autoPlay": true }'>
+<div class="carousel" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
 <div class="carousel-cell">
 <p class="topic4c">
 <i class="material-icons">verified_user</i> SG MarketPlace Seller Pages</p>
@@ -874,7 +883,15 @@ Promoting your brand to people who matter has never been this easy or affordable
 <div class="carousel-cell">
 <p class="topic4b">Other Seller Pages Features</p>
 <p class="topic1">
-Unique Seller Page URL Social Media Follow Icons Business Hours Display Embedded Google Map Business Contact Information About Us Section Meet Our Team Section Careers Web Page (Optional)</p>
+Unique Seller Page URL Social Media Follow Icons Business Hours Display Embedded Google Map Business Contact Information About Us Section Meet Our Team Section Careers Web Page (Optional). It's easy to start selling in the SG MarketPlace. After creating your account, we develop your Seller Page(s) and list your small business in its respective business category within 7 business days. There is no need to learn how to code or download any complicated software programs because we do all the work.</p>
+
+<p class="topic3a">
+Promoting your brand to people who matter has never been this easy or affordable.</p></div>
+
+<div class="carousel-cell">
+<p class="topic4b">No Software &#124; No Coding</p>
+<p class="topic1">
+It's easy to start selling in the SG MarketPlace. After creating your account, we develop your Seller Page(s) and list your small business in its respective business category within 7 business days. There is no need to learn how to code or download any complicated software programs because we do all the work.</p>
 
 <p class="topic3a">
 Promoting your brand to people who matter has never been this easy or affordable.</p></div>
@@ -981,7 +998,7 @@ Reach More Local Customers: Become a SpiralGroup Merchant</p>
 
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin-bottom:-5px;">
-<div class="footer w3-card-2" style="border-radius:3px 3px 0 0;padding:0 3px;margin:0;">
+<div class="footer w3-card-4" style="border-radius:3px 3px 0 0;padding:0 3px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
 <p align="center" style="font-family:roboto condensed;font-size:18px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #ccc;padding:0;margin:20px 0 0 0;">www.SpiralGroup.org</p>
