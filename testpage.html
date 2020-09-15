@@ -302,7 +302,7 @@ margin: 0;
 @media screen and (max-width: 768px) {
   .topic4c {
   font-size: 18px;
-  padding: 2px 0 0 0;
+  padding: 30px 0 0 0;
   }
   }
   
@@ -629,8 +629,15 @@ hr.style-eight:after {
 
 .flickity-page-dots {
   position: static;
-  width: 95%;
+  width: 100%;
   margin: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .flickity-page-dots {
+  width: 83%;
+  position: absolute;
+  }
   }
   
 .flickity-rtl .flickity-page-dots { direction: rtl; }
