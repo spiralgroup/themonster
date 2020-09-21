@@ -103,21 +103,35 @@ margin: 0 0 10px 0;
 }
 
 .topic1 {
-font-family: roboto;
+font-family: roboto condensed;
 font-size: 16px;
-color: #000;
+color: #777;
 text-align: center;
-letter-spacing: 0;
-text-shadow: 0 0 1px #ccc;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #ddd;
 padding: 0 12px;
-margin: 10px 0 30px 0;
+margin: 15px 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic1 {
   font-size: 14px; 
   padding: 0 6px;
-  margin: 5px 0 10px 0;
+  margin: 10px 0;
+  }
+  }
+
+.topic1c {
+font-size: 120px;
+color: white;
+text-shadow: 2px 2px 2px dodgerblue;
+padding-top: 0 !important;
+margin-top: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .topic1c {
+  font-size: 50px;
   }
   }
 
@@ -147,7 +161,7 @@ margin: 0;
 .topic2c {
 text-align: center;
 font-family: roboto condensed;
-font-size: 25px;
+font-size: 35px;
 letter-spacing: .5px;
 color: dodgerblue;
 text-shadow: 0 0 1px dodgerblue;
@@ -157,8 +171,8 @@ margin: 0;
 
 @media screen and (max-width: 768px) {
   .topic2c {
-   font-size: 20px;
-   padding: 5px 0;
+   font-size: 25px;
+   padding: 0;
   }
   }
   
@@ -175,28 +189,65 @@ padding: 0;
  
 .topic3a {
 font-family: roboto;
-font-size: 13px;
-color: #222;
+font-size: 12px;
+color: dodgerblue;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #ccc;
 text-align: center;
 padding: 0;
-margin: 0 0 10px 0;
+margin: 0;
 }
-  
+
+.topic3b {
+font-family: roboto;
+font-size: 12px;
+color: dodgerblue;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #ccc;
+text-align: center;
+padding: 0;
+margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3b {
+   margin: 0 0 10px 0;
+  }
+  }
+    
+  .topic3c {
+font-family: roboto condensed;
+font-size: 22px;
+color: dodgerblue;
+letter-spacing: .5px;
+text-shadow: 0 0 1px dodgerblue;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3c {
+   font-size: 16px;
+  }
+  }
+   
 .topic4b {
 font-family: roboto condensed;
-font-size: 23px;
-color: #222;
+font-size: 25px;
+color: dodgerblue;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #222;
-padding: 30px 0 0 0;
+text-shadow: 0 0 1px dodgerblue;
+padding: 15px 0 0 0;
 margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic4b {
   font-size: 18px;
-  padding: 2px 0 0 0; 
+  padding: 5px 0 0 0; 
   }
   }
   
@@ -207,14 +258,14 @@ color: dodgerblue;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px dodgerblue;
-padding: 120px 0 0 0;
+padding: 50px 0 0 0;
 margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic4c {
   font-size: 18px;
-  padding: 30px 0 0 0;
+  padding: 80px 0 0 0;
   }
   }
   
@@ -235,18 +286,20 @@ margin: 0;
   }
   }
   
-  .material-icons {
+  
+.fa {
    color: dodgerblue;
-   text-shadow: 0 0 1px dodgerblue;
-   font-size: 35px;
+   text-shadow: 1px 1px 1px #ccc;
+   font-size: 18px;
    vertical-align: middle;
    margin: 0;
-   padding: 0 0 5px 0;
-  }
+   padding: 0 0 3px 0;
+    }
   
 @media screen and (max-width: 768px) {
-  .material-icons {
-  font-size: 20px;
+  .fa {
+  font-size: 16px;
+  padding: 0 0 2px 0;
   }
   }
 
@@ -292,35 +345,6 @@ margin: 0;
   right: 0;
 }
 
- main{
-  width: 100%;
-  overflow: hidden;
-   }
-
-.hero{
-  width: 100%;
-  max-width: 1366px;
-  height: auto;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  position: relative; 
-  color: #f5f5f5;
-  text-shadow:0 0 1px #fff;
-  }
-
-.hero img{
-  width: 100%;
-}
-
-
-@media all and (max-width: 768px) {
-  .hero{
-    height: auto;
-  }
-  }
-
 .container7 {
   position: relative;
   max-width: 800px;
@@ -332,9 +356,11 @@ margin: 0;
 .container7 .content7 {
   position: absolute;
   bottom: 65px;
-  background: rgba(255, 255, 255, 0.9);
+ background: rgb(192, 192, 192);
+  background: rgba(192, 192, 192, 0.9);
+  opacity: .2;
   width: 100%;
-  padding: 0;
+  padding: 10px;
  }
  
  .carousel {
@@ -350,7 +376,7 @@ margin: 0;
 .carousel-cell {
   width: 100%;
   height: auto;
-  padding: 0 25px;
+  padding: 0 35px;
   counter-increment: gallery-cell;
   }
   
@@ -412,6 +438,7 @@ margin: 0;
   border: none;
   color: dodgerblue;
   cursor: pointer;
+  display: none;
  }
 
 .flickity-button:hover {
@@ -535,6 +562,24 @@ margin: 0 0 100px 0;
   .item1 {
 margin: 0 0 10px 0;
 }
+
+ .container6 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+ }
+
+.container6 img {vertical-align: middle;}
+
+.container6 .content6 {
+  position: absolute;
+  bottom: 50px;
+  background: transparent;
+  width: 100%;
+  padding: 3px;
+  border-radius: 0 0 2px 2px;
+}
+
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -583,22 +628,18 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </nav>
-
-<center>
-<main>
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
-<div class="container w3-panel w3-card-2 w3-round-small" style="width:100%;padding:0;margin:58px 0 0 0;">
-<div class="hero w3-round-small">
-<img class="w3-round-small" src="https://user-images.githubusercontent.com/25410880/91536461-58e2e200-e8da-11ea-8d0c-3f3acab9a5cd.png" />
-</div>
 </div>
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 50px 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-twothird" style="margin:0;">
+<div class="w3-panel w3-white" style="padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="border:1px solid #f5f5f5;padding:15px;margin:0;border-radius:3px 3px 0 0;">
+
 <p class="topic2c">
-Grow Your Small Business in the SG MarketPlace Join the SG MarketPlace and reach more local customers. Promote and sell your products and services, create some amazing deals, and more for only $25 per month.</p>
+Grow Your Small Business in the SG MarketPlace Join the SG MarketPlace and reach more local customers. Promote and sell your products and services, create some amazing deals, and more for only $25 per month. Solutions Designed for Your Small Business</p>
 
 <p class="topic1">Find new customers, increase brand awareness, and discover realistic ways to grow for only $25 per month. Discover how our online marketing solutions can help you grow tools designed to help your small business grow in this competitive landscape.  Added Value From Our Partners deliver exceotional customer experiences with expert tools that yield desired results. Online marketing has never been this easy.</p>
 
@@ -606,6 +647,22 @@ Grow Your Small Business in the SG MarketPlace Join the SG MarketPlace and reach
 </div>
 </div>
 </div>
+
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0;">
+<div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/72163211-42ead600-3378-11ea-9f21-4d98cc5cf804.png" style="width:100%;padding:0;border-radius:3px;">
+<div class="content6" style="padding:5px;margin:0;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#222;padding:12px 0;margin:0;border:none;border-radius:3px;"><a style="text-decoration:none;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #fff;padding:0;margin:0;" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Download Our Menu</a></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 7px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
@@ -618,26 +675,32 @@ Grow Your Small Business in the SG MarketPlace Join the SG MarketPlace and reach
 <div class="w3-half" style="margin:10px 0 0 0;"> 
 <div class="carousel item1" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
 <div class="carousel-cell">
-
 <p class="topic4c">
 SG MarketPlace Seller Pages</p>
-<p class="topic3a">Everything Your Small Business Needs</p></div>
+<p class="topic3a">Everything Your Small Business Needs</p>
+
+<p class="topic1c">&#128718;</p>
+</div>
 
 <div class="carousel-cell">
 <p class="topic4b">Sell Your Products & Services</p>
 <p class="topic3a">No need to establish a payment gateway.</p>
 
 <p class="topic1">
-Your SG MarketPlace Seller Pages puts your products and services at the fingertips of active, local customers shopping our marketplace. Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. </p>
+Your SG MarketPlace Seller Pages puts your products and services at the fingertips of active, local customers shopping our marketplace local customers shopping our marketplace. shopping.<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">We process transactions and pay Sellers their earnings.</a></p></div>
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. local customers shopping our marketplace shopping our marketplace.</p>
+
+<p class="topic3b">We process all SG MarketPlace transactions.</p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Create Some Amazing Deals</p>
 <p class="topic3a">Get our Amazing Deals Guide when you join.</p>
 
 <p class="topic1">
-You can effectively use the Special Offers section on your SG MarketPlace Seller Page(s) to meet your objectives, build customer loyalty, and increase revenues. Customers can download and print coupons from your Seller Page(s), take advantage of your discount and coupon codes when making online purchases, and sign up to receive your promotional offers via email.</p>
+You can effectively use the Special Offers section on your designated SG MarketPlace Seller Page to meet your objectives, build customer loyalty, and increase revenues loyalty, and increase revenues.<br><br>
+
+Customers can download and print coupons from your Seller Pagea, take advantage of your discount codes when making online purchases, and sign up to receive promotional offers via email.</p>
 
 <p class="topic3a">
 Get ready to create some amazing deals.</p></div>
@@ -647,18 +710,22 @@ Get ready to create some amazing deals.</p></div>
 <p class="topic3a">We do all the work.</p>
 
 <p class="topic1">
-It's easy to start selling in the SG MarketPlace. After creating your account, we develop your Seller Page(s) and list your small business in its respective business category within 7 business days. There is no need to learn how to code or download any complicated software programs because we do all the work.</p>
+It's easy to start selling in the SG MarketPlace. After creating your account, we develop your Seller Page(s) and list your small business in its respective business category within 7 business days.<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">View Demo</a></p></div>
+There is no need to learn how to code or download any complicated software programs because our web developers are delighted to create your SG MarketPlace Seller Pages Seller Pages.</p>
+
+<p class="topic3a">Start gathering all your business information.</p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Other Seller Pages Features</p>
 <p class="topic3a">Yes, there's a lot more.</p>
 
 <p class="topic1">
-Unique Seller Page URL. Social Media Follow Icons. Business Hours Display. Embedded Google Map. Business Contact Information. About Us Section. Meet Our Team Section (optional). Careers Web Page (optional). we develop your Seller Pages within 7 business days. Dont have a website? Your seller pages can serve as a mobile-friendly and fully-equipped starter website.</p>
+Unique Seller Page URL. Social Media Follow Icons. Business Hours Display. Embedded Google Map. Business Contact Information. About Us Section. *Meet Our Team Section. *Careers Web Page.<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Get Started</a></p></div>
+We develop your Seller Pages within 7 business days. Dont have a website? Your seller pages can serve as a mobile-friendly and fully-equipped starter website fully-equipped starter website.</p>
+
+<p class="topic3b"><a href="#test" style="text-decoration:none;">Let's get started.</a></p></div>
 </div>
 </div>
 </div>
@@ -686,27 +753,33 @@ New Ways to Grow Your Small Business</p></div>
 <p class="topic3a">Bring shoppers to your products.</p>
 
 <p class="topic1">
-Become a SpiralGroup Merchant and we'll showcase your products and services with our Smart Promotion Ads&trade;. SG MarketPlace shoppers are presented with up to six of your featured products and services. When they click on an ad image or link, they're taken to your SG MarketPlace Seller Page where they can order online.</p>
+Become a SpiralGroup Merchant and we'll showcase your products and services with our Smart Promotion Ads&trade;. SG MarketPlace shoppers are presented with up to six of your featured products<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Click here for an SPA demo.</a></p></div>
+When they click on an ad image or link, they're taken to your designated SG MarketPlace Seller Page where they can learn more about your products and services or order online.</p>
+
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">View our SPA demos.</a></p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Scrolling Footer Logo Ad&trade;</p>
 <p class="topic3a">Outshine your competitors.</p>
 
 <p class="topic1">
-Your logo is the most valuable advertising asset you can use in your marketing efforts. An SFLA will help you stand out from the competition and establish brand identity with our shoppers. When SG MarketPlace shoppers click on your SFLA, they're taken to your SG MarketPlace Seller Page. It works in perfect tandem with your SPA. If you don't have a logo, we'll create a temporary for free.</p>
+Your logo is the most valuable advertising asset you can use in your marketing efforts. An SFLA will help you stand out from the competition and establish brand identity with our shoppers.<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Check it out.</a></p></div>
+When SG MarketPlace shoppers click on your SFLA, they're taken to your SG MarketPlace Seller Page. It works in perfect tandem with your SPA. If you don't have a logo, we'll create a temporary for free.</p>
+
+<p class="topic3b">SFLA's appear on all Seller Pages.</p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">SG Listing Service&trade;</p>
 <p class="topic3a">Your business needs a local listing.</p>
 
 <p class="topic1">
-With so many people searching for businesses near them, you need a local business listing. We developed the SG Listing Service to help you grow by increasing brand awareness. When you join the SG MarketPlace, we register your small business in the top electronic business directories such as Bing, FourSquare, Google, and VK.com. We put in the initial work so you don't have to.</p>
+With so many people searching for businesses near them, you need a local business listing. We developed the SG Listing Service to help to help you to help you grow by increasing brand awareness.<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about the SG Listing Service&trade;.</a></p></div>
+Join the SG MarketPlace and we'll register your small business in the top electronic business directories such as Bing, FourSquare, Google, and VK.com. We put in the initial work so you don't have to.</p>
+
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about the SG Listing Service&trade;.</a></p></div>
 </div>
 </div>
 </div>
@@ -716,13 +789,13 @@ With so many people searching for businesses near them, you need a local busines
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 7px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
 <div class="w3-half" style="padding:0;margin:0;border-radius:3px;">
-<div class="item w3-card" data-aos="zoom-in-down">
+<div class="w3-card" data-aos="zoom-in-down">
 <img src="https://user-images.githubusercontent.com/25410880/71976274-bfd84d00-31ca-11ea-8b66-bbcdd8187225.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
 <div class="w3-half" style="margin:10px 0 0 0;"> 
-<div class="carousel item1" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
+<div class="carousel" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
 <div class="carousel-cell">
 <p class="topic4c">
 Added Value From Our Partners</p>
@@ -731,32 +804,36 @@ Added Value From Our Partners</p>
 
 <div class="carousel-cell">
 <p class="topic4b">Mailerlite&reg;</p>
-<p class="topic3a">Lead generation at its best & more.</p>
+<p class="topic3a">Pop-up subscribe forms ... and more.</p>
 
 <p class="topic1">
-Email list builder. SpiralGroup customers are collectors of new experiences, but loyal to the places they love. They spend more at great businesses and recommend favorite spots to friends. Become an email marketing expert with advanced tools made easy for you. customers can download and print coupons from Seller Pages. customers can download and print coupons from Seller Pages.</p>
+Join the SG MarketPlace and we'll help you convert your visitors into subscribers, with a dynamic pop-up form. Choose from a variety of pop-ups and then customize your settings your settings.<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Mailerlite&reg;.</a></p></div>
+MailerLite also provides the latest email marketing features designed to help you grow subscribers and build strong relationships. When you join our marketplace, we create your free Mailerlite account.</p>
+
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Mailerlite&reg;.</a></p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Schedulicity&reg;</p>
 <p class="topic3a">Online booking has never been more fun.</p>
 
 <p class="topic1">
-Book clients, flag no-shows, and tweak appointments on the fly. Open up to 25m+ consumers with Schedulicity's Marketing by adding your listing to their Marketplace. Booking has never been easier for you and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc.</p>
+Book clients, flag no-shows, and tweak appointments on the fly. Open up to 25m+ consumers with Schedulicity's Marketing by adding your listing to their Marketplace. Booking has never been easier for<br><br>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Schedulicity&reg;.</a></p></div>
+and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
+
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Schedulicity&reg;.</a></p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Jotform&reg;</p>
 <p class="topic3a">Manage incoming orders & more.</p>
 
 <p class="topic1">
-Manage incoming orders via JotForm. 
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact is.<br><br>
 
-Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact is delivered right to your inbox.</p>
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact is.</p>
 
-<p class="topic3a"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Jotform&reg;.</a></p></div>
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Jotform&reg;.</a></p></div>
 </div>
 </div>
 </div>
@@ -767,69 +844,88 @@ Ensure excellent service with your very own contact form. Customers can submit f
   AOS.init();
 </script>
 
-
 <center>
 <div id="test" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:100px 0 0 0;margin:0;">
-<p class="topic4d">
-Solutions Designed for Your Small Business</p>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:150px 0 20px 0;">
+<p class="topic2c">
+Join the SG MarketPlace</p>
+</div>
+</div>
+</div>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:15px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="container7">
+<div class="container6">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="content7">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:16px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Food & Drink</a>
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.9;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Food & Drink</a></button>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="container7">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="content7">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:16px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Beauty & Health</a>
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.9;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Beauty & Health</a></button>
+</div>
+</div>
+</div>
+
+
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.9;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Cultural Activities & Events</a></button>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="container7">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="content7">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:16px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Cultural Activities & Events</a>
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.9;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Home & Auto Services</a></button>
 </div>
 </div>
 </div>
 
+
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="container7">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="content7">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:16px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Home & Auto Services</a>
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.9;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Physical Goods</a></button>
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 30px 0;">
-<div class="container7">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="content7">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:16px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Physical Goods</a>
-</div>
-</div>
-</div>
 
 <div class="w3-third" style="margin:0 0 30px 0;">
-<div class="container7">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="content7">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:transparent;font-family:roboto condensed;font-size:16px;color:#222;text-shadow:0 0 1px #000;letter-spacing:.5px;padding:30px 0;margin:0;border:none;" href="http://www.spiralgroup.org">Spiritual Growth</a>
-</div>
-</div>
-</div>
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.9;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Spiritual Growth</a></button>
 </div>
 </div>
 </div>
@@ -840,7 +936,7 @@ Solutions Designed for Your Small Business</p>
 <div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
 <div class="w3-threethird" style="margin:0 0 20px 0;">
 <p class="topic2c">
-Local marketing from SpiralGroup can help you reach more customers. Ready to Find new customers, increase brand awareness, and discover realistic ways to grow gain back your loyal customers and acquire new ones? Reach More Local Customers: Become a SpiralGroup Merchant</p>
+Reach More Local Customers</p>
 
 <p align="center"><a class="w3-button w3-blue" href="#test" style="border-radius:2px;font-family:roboto;font-size:16px;text-align:center;letter-spacing:.5px;text-shadow:0 0 1px #c0c0c0;text-decoration:none;padding:15px;margin:30px 0 80px 0;">Get Started</a></p>
 </div>
