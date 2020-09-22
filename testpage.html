@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Dorsa|Great+Vibes|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Expletus+Sans|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -26,11 +27,149 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+});
+</script>
+
+
 <style type="text/css">
+/* Slider1 */
+.slick-slide {
+    margin: 30px auto 0 auto;
+        }
+.slick-slide img {
+    width: 100%;
+    padding: 5px 0 0 0;
+    margin: 60px auto 5px auto;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
 body, html {
     max-width: 1200px;
     height: 100%;
@@ -104,13 +243,13 @@ margin: 0 0 10px 0;
 
 .topic1 {
 font-family: roboto condensed;
-font-size: 16px;
-color: #777;
+font-size: 16.5px;
+color: #fff;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #ddd;
-padding: 0 12px;
-margin: 15px 0;
+padding: 0 20px;
+margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -122,11 +261,11 @@ margin: 15px 0;
   }
 
 .topic1c {
-font-size: 120px;
+font-size: 50px;
 color: white;
-text-shadow: 2px 2px 2px dodgerblue;
-padding-top: 0 !important;
-margin-top: 0 !important;
+text-shadow: 2px 2px 2px #777;
+padding: 0 !important;
+margin: 0 !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -163,8 +302,8 @@ text-align: center;
 font-family: roboto condensed;
 font-size: 35px;
 letter-spacing: .5px;
-color: dodgerblue;
-text-shadow: 0 0 1px dodgerblue;
+color: #33ccff;
+text-shadow: 0 0 1px #33ccff;
 padding: 20px 0 0 0;
 margin: 0;
 }
@@ -188,39 +327,47 @@ padding: 0;
 }
  
 .topic3a {
-font-family: roboto;
-font-size: 12px;
-color: dodgerblue;
+font-family: roboto condensed;
+font-size: 11px;
+color: #fff;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #ccc;
 text-align: center;
-padding: 0;
+padding: 0 0 20px 0;
 margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .topic3a {
+  padding: 0;
+   margin: 0 0 10px 0;
+  }
+  }
+  
 .topic3b {
-font-family: roboto;
-font-size: 12px;
-color: dodgerblue;
+font-family: roboto condensed;
+font-size: 11px;
+color: white;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #ccc;
 text-align: center;
-padding: 0;
-margin: 0 0 20px 0;
+padding: 20px 0;
+margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic3b {
-   margin: 0 0 10px 0;
+  padding: 2px 0;
+   margin: 0 0 13px 0;
   }
   }
     
   .topic3c {
 font-family: roboto condensed;
 font-size: 22px;
-color: dodgerblue;
+color: #33ccff;
 letter-spacing: .5px;
-text-shadow: 0 0 1px dodgerblue;
+text-shadow: 0 0 1px #33ccff;
 text-align: center;
 text-decoration: none;
 padding: 0;
@@ -235,37 +382,37 @@ margin: 0;
    
 .topic4b {
 font-family: roboto condensed;
-font-size: 25px;
-color: dodgerblue;
+font-size: 21px;
+color: #fff;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px dodgerblue;
-padding: 15px 0 0 0;
+text-shadow: 0 0 1px #33ccff;
+padding: 40px 0 0 0;
 margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic4b {
   font-size: 18px;
-  padding: 5px 0 0 0; 
+  padding: 0; 
   }
   }
   
 .topic4c {
 font-family: roboto condensed;
-font-size: 26px;
-color: dodgerblue;
+font-size: 25px;
+color: white;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px dodgerblue;
-padding: 50px 0 0 0;
+text-shadow: 0 0 1px #33ccff;
+padding: 10px 0 0 0;
 margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic4c {
   font-size: 18px;
-  padding: 80px 0 0 0;
+  padding: 5px 0 0 0;
   }
   }
   
@@ -288,7 +435,7 @@ margin: 0;
   
   
 .fa {
-   color: dodgerblue;
+   color: #33ccff;
    text-shadow: 1px 1px 1px #ccc;
    font-size: 18px;
    vertical-align: middle;
@@ -305,9 +452,8 @@ margin: 0;
 
  .button {
   border-radius: 2px;
-  background-color: #f0f0f0;
   border: none;
-  color: #000;
+  color: #fff !important;
   text-align: center;
   font-family: calibri;
   font-size: 10.5px;
@@ -364,7 +510,7 @@ margin: 0;
  }
  
  .carousel {
-  background: #f5f5f5;
+ background-color: white;
 }
 
  @media screen and (max-width: 768px) {
@@ -375,8 +521,9 @@ margin: 0;
 
 .carousel-cell {
   width: 100%;
+background-color: transparent;
   height: auto;
-  padding: 0 35px;
+  padding: 0;
   counter-increment: gallery-cell;
   }
   
@@ -385,6 +532,25 @@ margin: 0;
   padding: 0 10px;  
   }
   }
+
+
+.carousel-cell1 {
+  width: 100%;
+background-color: transparent;
+  height: auto;
+  padding: 0 20px;
+  counter-increment: gallery-cell;
+  }
+  
+   @media screen and (max-width: 768px) {
+  .carousel-cell1 {
+  padding: 0 15px;  
+  }
+  }
+
+
+
+
 
 /* cell number */
 .carousel-cell:before {
@@ -395,6 +561,7 @@ margin: 0;
 
 .flickity-enabled {
   position: relative;
+  background-color: transparent;
 }
 
 .flickity-enabled:focus { outline: none; }
@@ -402,12 +569,14 @@ margin: 0;
 .flickity-viewport {
   overflow: hidden;
   position: relative;
+  background-color: transparent;
   padding: 0 20px;
   height: 100%;
 }
 
 .flickity-slider {
   position: absolute;
+  background-color: transparent;
   width: 100%;
   height: 100%;
   padding: 0 20px;
@@ -434,17 +603,17 @@ margin: 0;
 
 .flickity-button {
   position: absolute;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
+  background: rgba(255, 255, 255, 1.0);
+  border: 5px solid #fff;
   color: dodgerblue;
   cursor: pointer;
-  display: none;
+  display: inline-block;
  }
 
 .flickity-button:hover {
-  background: transparent;
+  background: white;
   cursor: pointer;
-}
+  }
 
 .flickity-button:focus {
   outline: none;
@@ -452,7 +621,7 @@ margin: 0;
 }
 
 .flickity-button:active {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .flickity-button:disabled {
@@ -468,12 +637,12 @@ margin: 0;
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top: 61%;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
+  top: 93%;
+  border-radius: 3px;
+  padding: 6px;
+  opacity: 0.9;
   /* vertically center */
-  transform: translateY(-90%);
+ 
 }
 
 @media screen and (max-width: 768px) {
@@ -520,15 +689,17 @@ margin: 0;
 /* ---- page dots ---- */
 
 .flickity-page-dots {
-  position: absolute;
+  position: relative;
   width: 93.5%;
+  padding: 0 0 10px 0;
   margin: 0;
   }
   
   @media screen and (max-width: 768px) {
   .flickity-page-dots {
   width: 82%;
-  position: absolute;
+   margin: 0;
+   padding: 0 0 10px 0;
   }
   }
   
@@ -539,7 +710,7 @@ margin: 0;
   width: 8px;
   height: 8px;
   margin: 0 7px;
-  background: dodgerblue;
+  background: white;
   border-radius: 50%;
   opacity: 0.25;
   cursor: pointer;
@@ -621,9 +792,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
 </ul></ul>
 <ul class="nav navbar-nav navbar-right" style="margin:0 1px;">
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SHOP IN THE SG MARKETPLACE</span></a></li>
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button w3-blue" href="#test"><span>TERMS OF USE</span></a></li>
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button w3-blue" href="#test"><span>YOUR PRIVACY</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button w3-pink" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SHOP IN THE SG MARKETPLACE</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;background-color:#33ccff;" class="button" href="#test"><span>TERMS OF USE</span></a></li>
+<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;background-color:#33ccff;" class="button" href="#test"><span>YOUR PRIVACY</span></a></li>
 </ul>
 </div>
 </div>
@@ -661,62 +832,96 @@ Grow Your Small Business in the SG MarketPlace Join the SG MarketPlace and reach
 </div>
 </div>
 </div>
-</div>
 
-
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 7px;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
-<div class="w3-half" style="padding:0;margin:0;border-radius:3px;">
-<div class="item w3-card" data-aos="zoom-in-down">
-<img src="https://user-images.githubusercontent.com/25410880/71972635-e47bf700-31c1-11ea-888a-1793b3bc5592.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
-</div>
-</div>
-
-<div class="w3-half" style="margin:10px 0 0 0;"> 
-<div class="carousel item1" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
-<div class="carousel-cell">
-<p class="topic4c">
+<center>
+<div class="w3-container" style="width:100%;background-color:transparent;padding:0 15px;margin:0;">
+<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:100px 0 0 0;box-shadow:0 10px 22px #ccc;">
+<div class="w3-container w3-white" style="width:100%;padding:20px 0 0 0;margin:0;border-radius:3px;">
+<p class="topic3c">
 SG MarketPlace Seller Pages</p>
-<p class="topic3a">Everything Your Small Business Needs</p>
 
-<p class="topic1c">&#128718;</p>
+<p class="topic3a" style="color:#33ccff;">
+Everything your small business needs</p>
 </div>
 
-<div class="carousel-cell">
+<div class="w3-container w3-panel" style="width:100%;padding:1px 0 5px 0;margin:1px 0 0 0;">
+<div class="w3-row-padding" style="background-color:#33ccff;width:100%;margin:0;border-radius:3px;">
+<div class="w3-half" style="margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/93830736-aaab2d80-fc36-11ea-852b-dd0eeffdfe5b.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
+
+
+<div class="w3-half" style="margin:0;"> 
+<div class="carousel" data-flickity='{ "autoPlay": false }' style="margin:0;padding:0;">
+<div class="carousel-cell" style="padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="padding:0;width:100%;margin:0;">
+<div class="w3-threethird business-logos slide" style="font-family:khand, sans-serif;font-size:12px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;">
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png">
+<p style="padding:0;margin:0;">apparel & accessories</p></div>
+
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png">
+<p style="padding:0;margin:0;">automotive</p></div>
+
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/69172566-eb846400-0ab2-11ea-93a5-ea422df751c5.png">
+<p style="padding:0;margin:0;">beauty & health</p></div>
+
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/66212805-6e706d00-e673-11e9-9bcd-9fd0f2e3b428.png">
+<p style="padding:0;margin:0;">entertainment</p></div>
+
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png">
+<p style="padding:0;margin:0;">food & drink</p></div>
+
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png">
+<p style="padding:0;margin:0;">home services</p></div>
+
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png">
+<p style="padding:0;margin:0;">personal services</p></div>
+
+<div class="slide" style="padding:0 5px;"><img class="w3-card" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png">
+<p style="padding:0;margin:0;">spiritual growth</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="carousel-cell1">
 <p class="topic4b">Sell Your Products & Services</p>
 <p class="topic3a">No need to establish a payment gateway.</p>
 
 <p class="topic1">
-Your SG MarketPlace Seller Pages puts your products and services at the fingertips of active, local customers shopping our marketplace local customers shopping our marketplace. shopping.<br><br>
+Your SG MarketPlace Seller Pages puts your products and services at the fingertips of active, local customers shopping our marketplace local customers shopping our marketplace.<br><br>
 
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. local customers shopping our marketplace shopping our marketplace.</p>
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. local customers shopping our marketplace shopping.</p>
 
 <p class="topic3b">We process all SG MarketPlace transactions.</p></div>
 
-<div class="carousel-cell">
+<div class="carousel-cell1">
 <p class="topic4b">Create Some Amazing Deals</p>
 <p class="topic3a">Get our Amazing Deals Guide when you join.</p>
 
 <p class="topic1">
-You can effectively use the Special Offers section on your designated SG MarketPlace Seller Page to meet your objectives, build customer loyalty, and increase revenues loyalty, and increase revenues.<br><br>
+You can effectively use the Special Offers section on your designated SG MarketPlace Seller Page to meet your objectives, build customer loyalty, and increase revenues loyalty, ands.<br><br>
 
 Customers can download and print coupons from your Seller Pagea, take advantage of your discount codes when making online purchases, and sign up to receive promotional offers via email.</p>
 
-<p class="topic3a">
+<p class="topic3b">
 Get ready to create some amazing deals.</p></div>
 
-<div class="carousel-cell">
+<div class="carousel-cell1">
 <p class="topic4b">No Software &#124; No Coding</p>
 <p class="topic3a">We do all the work.</p>
 
 <p class="topic1">
-It's easy to start selling in the SG MarketPlace. After creating your account, we develop your Seller Page(s) and list your small business in its respective business category within 7 business days.<br><br>
+It's easy to start selling in the SG MarketPlace. After creating your account, we develop your Seller Page(s) and list your small business in its respective business category within 7 business.<br><br>
 
 There is no need to learn how to code or download any complicated software programs because our web developers are delighted to create your SG MarketPlace Seller Pages Seller Pages.</p>
 
-<p class="topic3a">Start gathering all your business information.</p></div>
+<p class="topic3b">Start gathering all your business information.</p></div>
 
-<div class="carousel-cell">
+<div class="carousel-cell1">
 <p class="topic4b">Other Seller Pages Features</p>
 <p class="topic3a">Yes, there's a lot more.</p>
 
@@ -725,28 +930,33 @@ Unique Seller Page URL. Social Media Follow Icons. Business Hours Display. Embed
 
 We develop your Seller Pages within 7 business days. Dont have a website? Your seller pages can serve as a mobile-friendly and fully-equipped starter website fully-equipped starter website.</p>
 
-<p class="topic3b"><a href="#test" style="text-decoration:none;">Let's get started.</a></p></div>
+<p class="topic3b"><a href="#test" style="text-decoration:none;color:#fff;">Let's get started.</a></p></div>
 </div>
 </div>
 </div>
 </div>
-</div>
-
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 7px;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
-<div class="w3-half" style="padding:0;margin:0;border-radius:3px;">
-<div class="item w3-card" data-aos="zoom-in-down">
-<img src="https://user-images.githubusercontent.com/25410880/71973640-450c3380-31c4-11ea-8c68-ebfbc2d4bc43.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-half" style="margin:10px 0 0 0;"> 
-<div class="carousel item1" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
-<div class="carousel-cell">
-<p class="topic4c">
+<center>
+<div class="w3-container" style="width:100%;background-color:transparent;padding:0 15px;margin:200px 0;">
+<div class="w3-container w3-panel w3-pale-blue" style="width:100%;padding:0;margin:0;border-radius:4px;">
+<div class="w3-row" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
+<div class="w3-half" style="padding:8px 4px;margin:0;">
+<div>
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/93755377-c972db00-fbc8-11ea-9992-fa0db50b793d.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
+</div>
+
+<div class="w3-half w3-blue" style="margin:0 auto;padding:8px 10px;"> 
+<div class="carousel" data-flickity='{ "autoPlay": false }'>
+<div class="carousel-cell" style="background-color:dodgerblue;">
+<i class="fa fa-coffee" style="color:white;font-size:40px;vertical-align:bottom;padding:60px 0 20px 0;"></i>
+<p class="topic4b" style="padding:0;">
 Profit-Driven Marketing</p>
 <p class="topic3a">
-New Ways to Grow Your Small Business</p></div>
+New Ways to Grow Your Small Business</p>
+</div>
 
 <div class="carousel-cell">
 <p class="topic4b">Smart Promotion Ads&trade;</p>
@@ -785,18 +995,21 @@ Join the SG MarketPlace and we'll register your small business in the top electr
 </div>
 </div>
 </div>
+</div>
 
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 7px;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:50px 0 30px 0;">
-<div class="w3-half" style="padding:0;margin:0;border-radius:3px;">
-<div class="w3-card" data-aos="zoom-in-down">
-<img src="https://user-images.githubusercontent.com/25410880/71976274-bfd84d00-31ca-11ea-8b66-bbcdd8187225.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<center>
+<div class="w3-container" style="width:100%;background-color:transparent;padding:0 15px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;background-color:dodgerblue;padding:0;margin:0;border-radius:4px;">
+<div class="w3-row" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
+<div class="w3-half" style="padding:8px 4px;margin:0;">
+<div>
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/93755377-c972db00-fbc8-11ea-9992-fa0db50b793d.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 </div>
 
-<div class="w3-half" style="margin:10px 0 0 0;"> 
-<div class="carousel" data-flickity='{ "autoPlay": false }' data-aos="zoom-in-down">
-<div class="carousel-cell">
+<div class="w3-half" style="background-color:dodgerblue;margin:0 auto;padding:8px 10px;"> 
+<div class="carousel" data-flickity='{ "autoPlay": false }'>
+<div class="carousel-cell" style="background-color:dodgerblue;">
 <p class="topic4c">
 Added Value From Our Partners</p>
 
@@ -840,9 +1053,7 @@ Manage incoming orders via JotForm. Ensure excellent service with your very own 
 </div>
 </div>
 
-<script>
-  AOS.init();
-</script>
+
 
 <center>
 <div id="test" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
