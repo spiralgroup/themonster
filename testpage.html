@@ -197,7 +197,7 @@ left: 0 !important;
   }
   
   .modal-backdrop.in {
-  background-color: #33ccff;
+  background-color: #ccc;
   opacity: 1.0;
   }
 }
@@ -747,7 +747,7 @@ margin: 0;
   border-radius: 0 0 2px 2px;
 }
 
-article:nth-of-type(1) {left:0; top:20px;
+article:nth-of-type(1) {left:0; top:200px;
 -webkit-transition-delay: 0.5s;
 -moz-transition-delay: 0.5s;
 -o-transition-delay: 0.5s;
@@ -781,17 +781,16 @@ article:nth-of-type(6) {left:66.6%; top:510px;}
 
 nav {position:absolute; left:0; top:5px; width:100%;}
 nav ul {padding:0; margin:0 1%; list-style:none; position:relative;}
-nav ul li {display:block; position:absolute; top:0; width:12%; margin:0 0.25%;
+nav ul li {display:inline-block; position:absolute; top:0; width:12%; margin:10px 0;
 -webkit-transition:0.5s;
 -moz-transition:0.5s;
 -o-transition:0.5s;
 transition:0.5s;
 }
-nav ul li a {display:block; width:100%; text-decoration:none; text-align:center; height:40px; background-color:#33ccff; color:#222; white-space:nowrap; border-radius:2px;
-box-shadow:0 10px 5px rgba(0,0,0,0.6);
+nav ul li a {display:inline-block; width:100%; text-decoration:none; text-align:center; height:auto; white-space:nowrap; border-radius:2px; box-shadow:0 2px 8px #ccc;
 font:normal 16px/40px 'Euphemia';
 }
-nav ul li a:hover {background-color:#ccc;}
+nav ul li a:hover {background-color:#fff;}
 
 nav ul li:nth-of-type(1) {left:0; transition-delay:0.7s;}
 nav ul li:nth-of-type(2) {left:12.5%; transition-delay:0.6s;}
@@ -1064,22 +1063,16 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="w3-row-padding" style="width:100%;margin:0 auto;">
 <nav>
 <ul>
-<li><a href="#url">test000</a></li>
-<li><a href="#url">tes1t</a></li>
-<li><a href="#url">test000000</a></li>
-<li><a href="#url">test</a></li>
-<li><a href="#url">test</a></li>
-<li><a href="#url">test</a></li>
-<li><a href="#url">test</a></li>
-<li><a href="#url">test</a></li>
+<li class="w3-button w3-yellow" style="padding:0;"><a class="topic" href="#url">Michelle</a></li>
+<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Jones</a></li>
+<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Is</a></li>
+<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">The Monster.</a></li>
+<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">John M.</a></li>
+<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Call</a></li>
+<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Me...Please?</a></li>
+<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url" data-dismiss="modal">close</a></li>
 </ul>
 </nav>
-</div>
-</div>
-</div>
-</div>
-
-<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
 </div>
 </div>
 </div>
