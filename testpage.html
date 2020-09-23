@@ -18,7 +18,8 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Dorsa|Great+Vibes|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Expletus+Sans|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Expletus+Sans|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -247,7 +248,7 @@ font-size: 16.5px;
 color: #fff;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #ddd;
+text-shadow: 0 0 1px #ccc;
 padding: 0 20px;
 margin: 0;
 }
@@ -347,7 +348,7 @@ margin: 0;
 .topic3b {
 font-family: roboto condensed;
 font-size: 11px;
-color: white;
+color: #fff;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #ccc;
 text-align: center;
@@ -387,31 +388,30 @@ color: #fff;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #33ccff;
-padding: 40px 0 0 0;
+padding: 10px 0 0 0;
 margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic4b {
   font-size: 18px;
-  padding: 0; 
+  padding: 10px 0 0 0; 
   }
   }
   
 .topic4c {
 font-family: roboto condensed;
-font-size: 25px;
-color: white;
+font-size: 30px;
+color: #fff;
 text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #33ccff;
+text-shadow: 0 0 1px #ccc;
 padding: 10px 0 0 0;
 margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic4c {
-  font-size: 18px;
+  font-size: 24px;
   padding: 5px 0 0 0;
   }
   }
@@ -434,19 +434,19 @@ margin: 0;
   }
   
   
-.fa {
-   color: #33ccff;
-   text-shadow: 1px 1px 1px #ccc;
-   font-size: 18px;
+.material-icons {
+   color: #fff;
+   text-shadow: 0 0 1px #ccc;
+   font-size: 20px;
    vertical-align: middle;
    margin: 0;
    padding: 0 0 3px 0;
     }
   
 @media screen and (max-width: 768px) {
-  .fa {
-  font-size: 16px;
-  padding: 0 0 2px 0;
+  .material-icons {
+  font-size: 17px;
+  padding: 0 0 5px 0;
   }
   }
 
@@ -521,35 +521,18 @@ margin: 0;
 
 .carousel-cell {
   width: 100%;
-background-color: transparent;
+ background-color: transparent;
   height: auto;
   padding: 0;
+  margin: 0 auto;
   counter-increment: gallery-cell;
   }
   
    @media screen and (max-width: 768px) {
   .carousel-cell {
-  padding: 0 10px;  
+  padding: 0;  
   }
   }
-
-
-.carousel-cell1 {
-  width: 100%;
-background-color: transparent;
-  height: auto;
-  padding: 0 20px;
-  counter-increment: gallery-cell;
-  }
-  
-   @media screen and (max-width: 768px) {
-  .carousel-cell1 {
-  padding: 0 15px;  
-  }
-  }
-
-
-
 
 
 /* cell number */
@@ -616,7 +599,7 @@ background-color: transparent;
   }
 
 .flickity-button:focus {
-  outline: 2px solid #777;
+  outline: none;
   box-shadow: 0 0 0 2px #19F;
 }
 
@@ -637,7 +620,7 @@ background-color: transparent;
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top: 93%;
+  top: 82%;
   border-radius: 3px;
   padding: 16px;
   opacity: 0.9;
@@ -693,6 +676,8 @@ background-color: transparent;
   width: 93.5%;
   padding: 0 0 10px 0;
   margin: 0;
+  background-color: transparent;
+  margin: 0;
   }
   
   @media screen and (max-width: 768px) {
@@ -710,7 +695,7 @@ background-color: transparent;
   width: 8px;
   height: 8px;
   margin: 0 7px;
-  background: white;
+  background-color: #fff;
   border-radius: 50%;
   opacity: 0.25;
   cursor: pointer;
@@ -819,9 +804,11 @@ Grow Your Small Business in the SG MarketPlace Join the SG MarketPlace and reach
 </div>
 </div>
 
+
+
 <div class="w3-third" style="margin:0 0 20px 0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0;">
-<div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="background-color:#33ccff;padding:0;margin:0;border-radius:3px 3px 0 0;">
 <div class="container6">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/72163211-42ead600-3378-11ea-9f21-4d98cc5cf804.png" style="width:100%;padding:0;border-radius:3px;">
 <div class="content6" style="padding:5px;margin:0;">
@@ -876,24 +863,25 @@ Everything your small business needs</p>
 
 
 <center>
-<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="w3-container" data-aos="zoom-in-down" style="width:100%;background-color:transparent;padding:0;margin:100px 0 0 0;box-shadow:0 10px 22px #ccc;">
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;border-radius:3px;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 
-<div class="w3-row-padding" style="background-color:#33ccff;width:100%;margin:0;border-radius:3px;">
-<div class="w3-half" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/93830736-aaab2d80-fc36-11ea-852b-dd0eeffdfe5b.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="background-color:#ccc;width:100%;margin:0;padding:10px 0 0 0;border-radius:3px;">
+<div class="w3-half" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+
+<img src="https://user-images.githubusercontent.com/25410880/93878849-5a68b580-fca0-11ea-89c2-6afa4ba8578c.png" style="width:35%;padding:0;margin:30px 0 0 0;">
+<p class="topic4c">
+Join the SG MarketPlace</p>
+<p class="topic3a">Reach More Local Customers</p>
+</div>
 </div>
 
-
-<div class="w3-half" style="margin:0;"> 
-<div class="carousel" data-flickity='{ "autoPlay": false }' style="margin:0;padding:0;">
-<div class="carousel-cell">
-<p class="topic4c">
-SG MarketPlace Seller Pages</p>
-
-<p class="topic3a">Everything Your Small Business Needs</p></div>
-
+<div class="w3-half" style="margin:10px 0;padding:0 10px;">
+<div class="column w3-card w3-round" style="background-color:#33ccff;margin:0;">
+<div class="carousel" data-flickity='{ "autoPlay": false }'>
 <div class="carousel-cell">
 <p class="topic4b">Sell Your Products & Services</p>
 <p class="topic3a">No need to establish a payment gateway.</p>
@@ -944,29 +932,30 @@ We develop your Seller Pages within 7 business days. Dont have a website? Your s
 </div>
 </div>
 </div>
-
-<center>
-<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:0;">
-<div class="w3-container" data-aos="zoom-in-down" style="width:100%;background-color:transparent;padding:0;margin:100px 0 0 0;box-shadow:0 10px 22px #ccc;">
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;border-radius:3px;">
-
-<div class="w3-row-padding" style="background-color:#33ccff;width:100%;margin:0;border-radius:3px;">
-<div class="w3-half" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/93830736-aaab2d80-fc36-11ea-852b-dd0eeffdfe5b.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
 
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" data-aos="zoom-in-down" style="width:100%;background-color:transparent;padding:0;margin:100px 0 0 0;box-shadow:0 10px 22px #ccc;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 
-<div class="w3-half" style="margin:0;"> 
-<div class="carousel" data-flickity='{ "autoPlay": false }' style="margin:0;padding:0;">
-<div class="carousel-cell">
-<p class="topic4b">
+<div class="w3-row" style="background-color:#ccc;width:100%;margin:0;padding:10px 0 0 0;border-radius:3px;">
+<div class="w3-half" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/93944390-4651a200-fcfa-11ea-907c-9290c10abeef.png" style="width:50%;padding:0;margin:0;">
+
+<p class="topic4c">
 Profit-Driven Marketing</p>
 <p class="topic3a">
 New Ways to Grow Your Small Business</p>
 </div>
+</div>
 
+<div class="w3-half" style="margin:10px 0;padding:0 10px;">
+<div class="column w3-card w3-round" style="background-color:#33ccff;margin:0;">
+<div class="carousel" data-flickity='{ "autoPlay": false }'>
 <div class="carousel-cell">
-<p class="topic4b">Smart Promotion Ads&trade;</p>
+<p class="topic4b">Smart Promotion Ads</p>
 <p class="topic3a">Bring shoppers to your products.</p>
 
 <p class="topic1">
@@ -974,7 +963,7 @@ Become a SpiralGroup Merchant and we'll showcase your products and services with
 
 When they click on an ad image or link, they're taken to your designated SG MarketPlace Seller Page where they can learn more about your products and services or order online.</p>
 
-<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">View our SPA demos.</a></p></div>
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;color:#fff;">View our SPA demos.</a></p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Scrolling Footer Logo Ad&trade;</p>
@@ -996,7 +985,7 @@ With so many people searching for businesses near them, you need a local busines
 
 Join the SG MarketPlace and we'll register your small business in the top electronic business directories such as Bing, FourSquare, Google, and VK.com. We put in the initial work so you don't have to.</p>
 
-<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about the SG Listing Service&trade;.</a></p></div>
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;color:#fff;">Learn more about the SG Listing Service&trade;.</a></p></div>
 </div>
 </div>
 </div>
@@ -1005,19 +994,23 @@ Join the SG MarketPlace and we'll register your small business in the top electr
 </div>
 
 <center>
-<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 <div class="w3-container" data-aos="zoom-in-down" style="width:100%;background-color:transparent;padding:0;margin:100px 0 0 0;box-shadow:0 10px 22px #ccc;">
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;border-radius:3px;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 
-<div class="w3-row-padding" style="background-color:#33ccff;width:100%;margin:0;border-radius:3px;">
-<div class="w3-half" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/93830736-aaab2d80-fc36-11ea-852b-dd0eeffdfe5b.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="background-color:#ccc;width:100%;margin:0;padding:10px 0 5px 0;border-radius:3px;">
+<div class="w3-half" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<p style="font-family:pt sans;color:white;font-size:40px;padding:0;margin:120px 0 0 0;">Phase<br>1</p>
+</div>
 </div>
 
-
-<div class="w3-half" style="margin:0;"> 
-<div class="carousel" data-flickity='{ "autoPlay": false }' style="margin:0;padding:0;">
+<div class="w3-half" style="margin:0;padding:0 10px;">
+<div class="column w3-card w3-round" style="background-color:#33ccff;margin:10px 0;">
+<div class="carousel" data-flickity='{ "autoPlay": false }'>
 <div class="carousel-cell">
+<img src="https://user-images.githubusercontent.com/25410880/93878849-5a68b580-fca0-11ea-89c2-6afa4ba8578c.png" style="width:35%;padding:0;margin:30px 0 0 0;">
+
 <p class="topic4c">
 Added Value From Our Partners</p>
 
@@ -1032,7 +1025,7 @@ Join the SG MarketPlace and we'll help you convert your visitors into subscriber
 
 MailerLite also provides the latest email marketing features designed to help you grow subscribers and build strong relationships. When you join our marketplace, we create your free Mailerlite account.</p>
 
-<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Mailerlite&reg;.</a></p></div>
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;color:#fff;">Learn more about Mailerlite&reg;.</a></p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Schedulicity&reg;</p>
@@ -1043,7 +1036,7 @@ Book clients, flag no-shows, and tweak appointments on the fly. Open up to 25m+ 
 
 and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
 
-<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Schedulicity&reg;.</a></p></div>
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;color:#fff;">Learn more about Schedulicity&reg;.</a></p></div>
 
 <div class="carousel-cell">
 <p class="topic4b">Jotform&reg;</p>
@@ -1054,7 +1047,12 @@ Manage incoming orders via JotForm. Ensure excellent service with your very own 
 
 Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact is.</p>
 
-<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;">Learn more about Jotform&reg;.</a></p></div>
+<p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;color:#fff;">Learn more about Jotform&reg;.</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
