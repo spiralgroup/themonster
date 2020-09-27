@@ -197,7 +197,7 @@ left: 0 !important;
   }
   
   .modal-backdrop.in {
-  background-color: #ccc;
+  background-color: #b3b300;
   opacity: 1.0;
   }
 }
@@ -421,28 +421,30 @@ margin: 0;
   }
   }
   
-     .topic3e {
-font-family: roboto condensed;
-font-size: 30px;
-color: #b3b300;
-text-shadow: 0 0 1px #ccc;
+ .topic3e {
+font-family: calibri;
+font-size: 25px;
+color: #fff;
+letter-spacing: .5px;
 text-align: center;
-text-decoration: none;
 padding: 0;
-margin: 0;
+margin: 10px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic3e {
-   font-size: 16px;
+   font-size: 24px;
+   padding: 0;
+   margin: 10px 0 0 0;
   }
   }
   
 .topic3f {
 font-family: roboto condensed;
-font-size: 14px;
-color: #b3b300;
+font-size: 16.5px;
+color: #fff;
 text-shadow: 0 0 1px #ccc;
+letter-spacing: .5px;
 text-align: center;
 text-decoration: none;
 padding: 0;
@@ -451,7 +453,9 @@ margin: 0;
 
 @media screen and (max-width: 768px) {
 .topic3f {
-   font-size: 14px;
+font-size: 14px;
+padding: 0;
+margin: 0 0 5px 0;
   }
   }
    
@@ -518,10 +522,7 @@ margin: 0;
   
 @media screen and (max-width: 768px) {
   .material-icons {
-  font-size: 80px;
-  text-shadow: 3px 3px 3px #ccc;
-  margin: 10px 0 0 0;
-  padding: 0;
+  display: none;
   }
   }
 
@@ -786,142 +787,7 @@ margin: 0;
   width: 100%;
   border-radius: 0 0 2px 2px;
 }
-
-article:nth-of-type(1) {left:0; top:200px;
--webkit-transition-delay: 0.5s;
--moz-transition-delay: 0.5s;
--o-transition-delay: 0.5s;
-transition-delay: 0.5s;
-}
-article:nth-of-type(2) {left:33.3%; top:200px;
--webkit-transition-delay:0.4s;
--moz-transition-delay:0.4s;
--o-transition-delay:0.4s;
-transition-delay:0.4s;
-}
-article:nth-of-type(3) {left:66.6%; top:200px;
--webkit-transition-delay:0.3s;
--moz-transition-delay:0.3s;
--o-transition-delay:0.3s;
-transition-delay:0.3s;
-}
-article:nth-of-type(4) {left:0%; top:510px;
--webkit-transition-delay:0.2s;
--moz-transition-delay:0.2s;
--o-transition-delay:0.2s;
-transition-delay:0.2s;
-}
-article:nth-of-type(5) {left:33.3%; top:510px;
--webkit-transition-delay:0.1s;
--moz-transition-delay:0.1s;
--o-transition-delay:0.1s;
-transition-delay:0.1s;
-}
-article:nth-of-type(6) {left:66.6%; top:510px;}
-
-nav {position:absolute; left:0; top:5px; width:100%;}
-nav ul {padding:0; margin:0 1%; list-style:none; position:relative;}
-nav ul li {display:inline-block; position:absolute; top:0; width:12%; margin:10px 0;
--webkit-transition:0.5s;
--moz-transition:0.5s;
--o-transition:0.5s;
-transition:0.5s;
-}
-nav ul li a {display:inline-block; width:100%; text-decoration:none; text-align:center; height:auto; white-space:nowrap; border-radius:2px; box-shadow:0 2px 8px #ccc;
-font:normal 16px/40px 'Euphemia';
-}
-nav ul li a:hover {background-color:#fff;}
-
-nav ul li:nth-of-type(1) {left:0; transition-delay:0.7s;}
-nav ul li:nth-of-type(2) {left:12.5%; transition-delay:0.6s;}
-nav ul li:nth-of-type(3) {left:25%; transition-delay:0.5s;}
-nav ul li:nth-of-type(4) {left:37.5%; transition-delay:0.4s;}
-nav ul li:nth-of-type(5) {left:50%; transition-delay:0.3s;}
-nav ul li:nth-of-type(6) {left:62.5%; transition-delay:0.2s;}
-nav ul li:nth-of-type(7) {left:75%; transition-delay:0.1s;}
-nav ul li:nth-of-type(8) {left:87.5%; transition-delay:0s;}
-
-
-@media only screen and (max-width:1024px) {
-header h1 {font:normal 60px/60px 'Shadows Into Light Two', arial, sans-serif; padding-top:15px;}
-header h1 span:nth-of-type(2) {display:block;}
-
-section {height:1210px;}
-
-article {width:48%;}
-article:nth-of-type(1) {left:0; top:240px;}
-article:nth-of-type(2) {left:50%; top:240px;}
-
-article:nth-of-type(3) {left:0%; top:550px;}
-article:nth-of-type(4) {left:50%; top:550px;}
-
-article:nth-of-type(5) {left:0%; top:860px;}
-article:nth-of-type(6) {left:50%; top:860px;}
-
-nav ul li {width:24.5%; margin:0 0.25%;}
-nav ul li:nth-of-type(1) {left:0%;}
-nav ul li:nth-of-type(2) {left:25%;}
-nav ul li:nth-of-type(3) {left:50%;}
-nav ul li:nth-of-type(4) {left:75%;}
-nav ul li:nth-of-type(5) {left:0%; top:45px;}
-nav ul li:nth-of-type(6) {left:25%; top:45px;}
-nav ul li:nth-of-type(7) {left:50%; top:45px;}
-nav ul li:nth-of-type(8) {left:75%; top:45px;}
-}
-
-@media only screen and (max-width:1024px) and (orientation:landscape) {
-header h1 {font:normal 40px/40px 'Shadows Into Light Two', euphemia; padding-top:10px;}
-header h1 span {display:block;}
-
-section {height:800px;}
-
-article {width:98%;}
-article:nth-of-type(1) {left:0%; top:330px;}
-article:nth-of-type(2) {left:0%; top:640px;}
-
-article:nth-of-type(3) {left:0%; top:950px;}
-article:nth-of-type(4) {left:0%; top:1260px;}
-
-article:nth-of-type(5) {left:0%; top:1570px;}
-article:nth-of-type(6) {left:0%; top:1880px;}
-
-nav ul li {width:49.5%; margin:0 0.25%;}
-nav ul li:nth-of-type(1) {left:0%;}
-nav ul li:nth-of-type(2) {left:50%;}
-nav ul li:nth-of-type(3) {left:0%; top:45px;}
-nav ul li:nth-of-type(4) {left:50%; top:45px;}
-nav ul li:nth-of-type(5) {left:0%; top:90px;}
-nav ul li:nth-of-type(6) {left:50%; top:90px;}
-nav ul li:nth-of-type(7) {left:0%; top:135px;}
-nav ul li:nth-of-type(8) {left:50%; top:135px;}
-}
-
-@media only screen and (max-width:480px) {
-header h1 {font:normal 40px/40px 'Shadows Into Light Two', arial, sans-serif; padding-top:10px;}
-header h1 span {display:block;}
-
-section {height:2230px;}
-
-article {width:98%;}
-article:nth-of-type(1) {left:0%; top:330px;}
-article:nth-of-type(2) {left:0%; top:640px;}
-
-article:nth-of-type(3) {left:0%; top:950px;}
-article:nth-of-type(4) {left:0%; top:1260px;}
-
-article:nth-of-type(5) {left:0%; top:1570px;}
-article:nth-of-type(6) {left:0%; top:1880px;}
-
-nav ul li {width:49.5%; margin:0 0.25%;}
-nav ul li:nth-of-type(1) {left:0%;}
-nav ul li:nth-of-type(2) {left:50%;}
-nav ul li:nth-of-type(3) {left:0%; top:45px;}
-nav ul li:nth-of-type(4) {left:50%; top:45px;}
-nav ul li:nth-of-type(5) {left:0%; top:90px;}
-nav ul li:nth-of-type(6) {left:50%; top:90px;}
-nav ul li:nth-of-type(7) {left:0%; top:135px;}
-nav ul li:nth-of-type(8) {left:50%; top:135px;}
-}
+     
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -1025,94 +891,30 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="modal-header" style="border:none;">
 <div class="modal-dialog modal-lg" style="background-color:transparent;">
 <div class="w3-container" style="background-color:transparent;width:100%;">
-<div class="container w3-panel" style="width:100%;padding:0 10px;margin:88px 0 0 0;">
-<div class="container w3-panel w3-white w3-card" style="width:100%;padding:8px 4px;border-radius:4px 4px 2px 2px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
-
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0 2px;border-radius:3px;margin:0 auto;">
-</div>
-
-<div class="w3-threequarter" style="padding:0;margin:0;"> 
-<div class="business-logos slide" style="width:100%;padding:0;margin:0;">
-
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Food & Drink</a></button></div></div>
-
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Beauty & Health</a></button></div></div>
-
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Cultural Activities & Events</a></button></div></div>
-
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Home & Auto Services</a></button></div></div>
-
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Physical Goods</a></button></div></div>
-
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="fa fa-gear"></i> Spiritual Growth</a></button></div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-
 <div class="w3-row-padding" style="width:100%;margin:0 auto;">
-<nav>
-<ul>
-<li class="w3-button w3-yellow" style="padding:0;"><a class="topic" href="#url">Michelle Jones</a></li>
-<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Is The</a></li>
-<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Monster.</a></li>
-<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Thanks,</a></li>
-<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">So Much</a></li>
-<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Sincere...</a></li>
-<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url">Holla Back!</a></li>
-<li class="w3-button w3-blue" style="padding:0;"><a class="topic" href="#url" data-dismiss="modal">close</a></li>
-</ul>
-</nav>
+<div class="col-sm-8">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/92293137-b4b6f780-eee6-11ea-8ffb-c427ae541fbf.png" style="width:100%;margin:0 0 3px 0;padding:0;border-radius:3px;">
+</div>
+
+<div class="col-sm-4" style="padding-top:3px;">
+<a class="w3-card btn btn-primary btn-block" style="background-color:#f1f1f1;font-family:roboto condensed;font-size:14px;color:#666;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>HOME</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#cccc00;font-family:roboto condensed;font-size:14px;color:#f1f1f1;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #cccc00;border-radius:2px;padding:8px;cursor:pointer;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"><span>TABLE RESERVATIONS</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><span>MENU &#124; ORDER ONLINE</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>SHOP OUR ONLINE STORE</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>JOIN OUR TEAM</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>CONTACT</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>BUSINESS LISTINGS</span></a>
+
+<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>GET IN THE GAME</span></a>
+
+<button class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
+</div>
 </div>
 </div>
 </div>
@@ -1135,16 +937,12 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 
-<center>
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 10px;margin:30px 0 0 0;">
-<div class="w3-threethird" style="margin:0;">
 
+<div> 
 <p class="topic2c">
 Join the SG MarketPlace</p>
 
 <p class="topic3c">Local marketing from SpiralGroup can help you find new customers, increase brand awareness & improve overall profitability.</p>
-</div>
-</div>
 </div>
 
 <div class="container w3-panel" style="width:100%;padding:0 14px;margin:60px 0 30px 0;">
@@ -1154,8 +952,8 @@ Join the SG MarketPlace</p>
 <div class="w3-container" style="width:100%;padding:0px;margin:0;">
 <div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
 <div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
-<div class="column" style="padding:0;margin:0;">
-<i class="material-icons">nfc</i>
+<div class="column w3-card" style="background-color:#b3b300;padding:90px 10px;margin:4px;border-radius:3px;">
+<img src="http://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:14.5%;"><br>
 <p class="topic3e">
 SG MarketPlace</p>
 
@@ -1173,7 +971,7 @@ SG MarketPlace</p>
 <p class="topic1">
 Discover how our online marketing solutions can helpe. Your SG MarketPlace Seller Pages puts your products and services at the fingertips of active, local customers shopping our marketplace local customers shopping our marketplace.<br><br>
 
-Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway. local customers shopping our marketplace shopping.</p>
+Showcase up to 12 of your best items. Sellers manage their incoming orders via JotForm. Sellers manage their incoming orders via JotForm. No need to establish a Payment Gateway.</p>
 
 <p class="topic3b">We process all SG MarketPlace transactions.</p></div>
 
@@ -1226,8 +1024,8 @@ We develop your Seller Pages within 7 business days. Dont have a website? Your s
 <div class="w3-container" style="width:100%;padding:0px;margin:0;">
 <div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
 <div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
-<div class="column" style="padding:0;margin:0;">
-<i class="material-icons">local_activity</i>
+<div class="column w3-card" style="background-color:#b3b300;padding:90px 10px;margin:4px;border-radius:3px;">
+<img src="http://samherbert.net/svg-loaders/svg-loaders/circles.svg" style="width:15%;"><br>
 <p class="topic3e">
 Profit-Driven Marketing</p>
 
@@ -1245,7 +1043,7 @@ Profit-Driven Marketing</p>
 <p class="topic1">
 Become a SpiralGroup Merchant and we'll showcase your products and services with our Smart Promotion Ads&trade;. SG MarketPlace shoppers are presented with up to six of your featured products Helping Deliver Exceptional Customer Experiences<br><br>
 
-When they click on an ad image or link, they're taken to your designated SG MarketPlace Seller Page where they can learn more about your products and services or order online. learn more about your products and services or order online.</p>
+When they click on an ad image or link, they're taken to your designated SG MarketPlace Seller Page where they can learn more about your products and services or order online.</p>
 
 <p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;color:#fff;">View our SPA demos.</a></p></div>
 
@@ -1287,12 +1085,12 @@ Join the SG MarketPlace and we'll register your small business in the top electr
 <div class="w3-container" style="width:100%;padding:0px;margin:0;">
 <div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
 <div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
-<div class="column" style="padding:0;margin:0;">
-<i class="material-icons">mood</i>
+<div class="column w3-card" style="background-color:#b3b300;padding:90px 10px;margin:4px;border-radius:3px;">
+<img src="http://samherbert.net/svg-loaders/svg-loaders/grid.svg" style="width:15%;"><br>
 <p class="topic3e">
 From Our Partners</p>
 
-<p class="topic3f">Helping Deliver Exceptional Customer Experiences</p>
+<p class="topic3f">Delivering Exceptional Customer Experiences</p>
 </div>
 </div>
 
@@ -1306,7 +1104,7 @@ From Our Partners</p>
 <p class="topic1">
 Join the SG MarketPlace and we'll help you convert your visitors into subscribers, with a dynamic pop-up form. Choose from a variety of pop-ups and then customize your settings your settings. Helping Deliver Exceptional Customer Experiences<br><br>
 
-MailerLite also provides the latest email marketing features designed to help you grow subscribers and build strong relationships. When you join our marketplace, we create your free Mailerlite. When you join our marketplace, we create your free Mailerlite.</p>
+MailerLite also provides the latest email marketing features designed to help you grow subscribers and build strong relationships. When you join our marketplace, we create your free Mailerlite.</p>
 
 <p class="topic3b"><a href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" style="text-decoration:none;color:#fff;">Learn more about Mailerlite&reg;.</a></p></div>
 
