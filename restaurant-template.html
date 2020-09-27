@@ -58,7 +58,7 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 1
             }
         }, {
             breakpoint: 520,
@@ -74,15 +74,20 @@ $(document).ready(function(){
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
-    margin: 0;
+    margin: 2px 0;
     padding: 0;
+    background-color: transparent;
     }
 .slick-slide img {
     width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 2px;
 }
 .slick-slider
 {
     position: relative;
+     background-color: transparent;
     display: block;
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -179,24 +184,25 @@ $(document).ready(function(){
     display: none;
 }
 
-* {box-sizing: border-box;}
-
 body, html {
     max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
     background-color: #f2f2f2;
  }
-
-.navbar-header {
-  float: none;
-  max-width: 1200px;
-}
-
-.container-fluid1 {
+ 
+.container-fluid2 {
 max-width: 1200px;
 left: 0 !important;
 }
+
+@media screen and (max-width: 768px) {
+  .container-fluid2 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+  
 
 .modal-backdrop.in {
   background-color: #ccc;
@@ -213,7 +219,7 @@ font-family: khand, sans-serif;
   margin: 0 auto;
   padding: 0;
   display: inline-block;
-  background-color: #ccc !important;
+  background-color: #b3b300 !important;
  }
  
  @media screen and (max-width: 768px) {
@@ -283,7 +289,7 @@ background-color: #fff;
   width: 44px;
   border-radius: 3px;
   font-size: 21.5px;
-  color: #ccc !important;
+  color: #b3b300 !important;
   text-decoration: none !important;
   margin: 5px 2px 20px 2px;
   }
@@ -334,10 +340,9 @@ padding: 0;
 .topic2 {
 font-family: Yanone Kaffeesatz;
 font-size: 52px;
-color: #fff;
+color: #b3b300;
 text-align: center;
 letter-spacing: 1px;
-text-shadow: 0 2px 2px #bfbfbf;
 margin: 0;
 padding: 0;
 }
@@ -358,9 +363,26 @@ color: #222;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #ccc;
-margin: 10px 0 0 0;
+margin: 20px 0 0 0;
 padding: 0;
 }
+
+ .topic3d {
+font-family: roboto condensed;
+font-size: 14px;
+color: #b3b300;
+text-shadow: 0 0 1px #ccc;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3d {
+   font-size: 16px;
+  }
+  }
   
 .topicfooter1 {
 font-family: roboto;
@@ -407,13 +429,6 @@ hr.style-two { border: 0; height: 2px; width:40%; background-color: #ccc; paddin
  text-shadow: 0 0 1px #222;
  transition: 0.5s;
 }
-
-@media screen and (max-width: 768px) {
-  .container-fluid1 {
-  display: none;
-  width: 1% !important;
-  }
-  }
     
  .modal-dialog {
   margin: 60px 0 0 0;
@@ -496,6 +511,20 @@ hr.style-one { border: 0; height: 1px; width:50%; background-color: #f2f2f2; pad
   border-radius: 0 0 2px 2px;
 }
 
+.container8 {
+  position: relative;
+  margin: 0 3px;
+  padding: 0;
+ }
+
+.container8 .content8 {
+  position: absolute;
+  bottom: 60px;
+  background: transparent;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -534,11 +563,16 @@ hr.style-one { border: 0; height: 1px; width:50%; background-color: #f2f2f2; pad
   background-color: #717171;
 }
 
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
 
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
+.material-icons {
+   color: #b3b300 !important;
+   text-shadow: 1px 1px 1px #ccc;
+   font-size: 15.5px;
+   margin: 3px 0 0 0;
+   vertical-align: middle;
+   padding: 0 0 5px 0;
+   }
+  
 </style>
 
 
@@ -558,42 +592,71 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </head>
 <center>
 <body>
-<div class="container-fluid1" style="width:100%;background-color:transparent;padding:0 17px;margin:0;">
-<div class="w3-container w3-panel w3-card-4" style="background-color:#ccc;width:100%;padding:0 0 5px 0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#ccc;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#ccc;width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
-
+<div class="container w3-panel" style="width:100%;padding:0 5px;margin:8px 0 0 0;">
+<div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:15px 2px 8px 2px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/92293083-5db12280-eee6-11ea-91f9-45020954ba0f.png" style="width:100.22%;padding:0 0 6px 0;">
-<a style="font-family:khand, sans-serif;font-size:14px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;text-decoration:none;cursor:pointer;padding:0;margin:0;" href="https://spiralgroup.github.io/themonster/business-listings.html">restaurants</a>
+<div class="container-fluid2" style="width:100%;background-color:transparent;padding:0px;margin:0;">
+<div class="w3-quarter" style="padding:0 2px;margin:0;">
+<img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100.046%;padding:0;border-radius:2px;margin:0;">
+</div>
 </div>
 
+
 <div class="w3-threequarter" style="padding:0;margin:0;"> 
-<div class="business-logos slide" style="font-family:khand, sans-serif;font-size:14px;color:#222;letter-spacing:.5px;text-shadow:0 0 1px #222;width:100%;padding:0;margin:0;">
-<div class="slide" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/apparel-and-accessories.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52531018-a6313b80-2cc3-11e9-8a7f-a1127fdc9362.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">apparel & accessories</p></div>
+<div class="business-logos slide" style="width:100%;padding:0;margin:0;">
 
-<div class="slide w3-center" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/automotive.html" target="_blank"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520618-4170d500-2c20-11e9-87da-5e89fef2762b.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">automotive</p></div>
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="slide w3-center" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/beauty-and-health.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/69172566-eb846400-0ab2-11ea-93a5-ea422df751c5.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">beauty & health</p></div>
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
 
-<div class="slide w3-center" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/entertainment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/66212805-6e706d00-e673-11e9-9bcd-9fd0f2e3b428.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">entertainment</p></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Food & Drink</a></button></div></div>
 
-<div class="slide w3-center" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/food-and-drink.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520806-a0cfe480-2c22-11e9-8375-f7fe7fd1810d.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">food & drink</p></div>
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="slide w3-center" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/home-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520621-43d32f00-2c20-11e9-9068-6e51efe45e71.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">home services</p></div>
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
 
-<div class="slide w3-center" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/personal-services.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520718-a8db5480-2c21-11e9-8432-d98612ac5deb.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">personal services</p></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Beauty & Health</a></button></div></div>
 
-<div class="slide w3-center" style="border-radius:2px;padding:0;"><a href="https://spiralgroup.github.io/themonster/spiritual-enrichment.html"><img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520622-446bc580-2c20-11e9-9785-61c639f97885.png"></a>
-<p style="padding:6px 0 0 0;margin:0;">spiritual growth</p></div>
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
+
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Cultural Activities & Events</a></button></div></div>
+
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
+
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Home & Auto Services</a></button></div></div>
+
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
+
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Physical Goods</a></button></div></div>
+
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.9;">
+
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Spiritual Growth</a></button></div></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -605,7 +668,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
 <div class='container-fluid pull-right' style="width:100%;">
 <div class='navbar-header pull-right' style="padding:0;">
-<button class='w3-button w3-text-grey w3-white w3-hover-shadow pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="padding:8px 8px 5px 8px;margin:10px 5px;border-radius:2px;">
+<button class='w3-button w3-card w3-hover-shadow pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="background-color:white;color:#b3b300;padding:8px 8px 5px 8px;margin:8px 5px;border-radius:3px;opacity:0.7;">
 <span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
 </button>
 </div>
@@ -646,21 +709,6 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 
-<div class="example">
-<div class="w3-container w3-panel " style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/92293083-5db12280-eee6-11ea-91f9-45020954ba0f.png" style="width:80%;padding:0;margin:0;border-radius:3px;">
-
-<p style="font-family:khand, sans-serif;font-size:15px;color:green;letter-spacing:.5px;text-shadow:0 0 1px green;padding:5px 0;margin:0;text-decoration:none;"><a style="color:green;text-shadow:0 0 1px green;text-decoration:none;" href="https://spiralgroup.github.io/themonster/business-listings.html">restaurants</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
@@ -671,7 +719,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-twothird" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:15px;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:15px;margin:0;border-radius:3px 3px 0 0;">
 
 <p class="topic">
 Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome, could get no-nonsense food at down-to-earth prices, and where they'd be treated right by people who had a passion to serve.<br><br>       
@@ -709,10 +757,10 @@ Providing stellar service is our key to success. It's what makes new guests feel
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 30px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block" style="background-color:#e6e6e6;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Daily</button>
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Daily</button>
 
 <p class="topic3">BROILED SIRLOIN TIPS</p>
 <hr class="style-one">
@@ -723,16 +771,16 @@ Providing stellar service is our key to success. It's what makes new guests feel
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
-<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#b3b300;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 30px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block" style="background-color:#e6e6e6;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Weekly</button>
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Weekly</button>
 
 <p class="topic3">BROILED SIRLOIN TIPS</p>
 <hr class="style-one">
@@ -743,16 +791,16 @@ Served with penne pasta and rustic bread.</p>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
-<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#b3b300;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 30px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block" style="background-color:#e6e6e6;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:0;">Online Only</button>
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Online Only</button>
 
 <p class="topic3">BROILED SIRLOIN TIPS</p>
 <hr class="style-one">
@@ -763,7 +811,7 @@ Served with penne pasta and rustic bread.</p>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
-<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#777;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
+<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#b3b300;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
 </div>
 </div>
 </div>
@@ -783,7 +831,7 @@ Served with penne pasta and rustic bread.</p>
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-twothird" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:15px;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:15px;margin:0;border-radius:3px 3px 0 0;">
 <p class="topic">
 The friendly and professional staff at Spiral Group, Inc. provides institutional, corporate, and private catering. Whether it's boxed lunches, a cocktail reception for 25 people, or a seated dinner for 250, we're fully committed to helping our customers achieve their catering needs.<br><br>
 
@@ -816,7 +864,7 @@ Call us at 773-242-0705 for a free consultation, or tell us about your event at 
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:0 10px 10px 10px;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0 10px 10px 10px;margin:0;border-radius:3px 3px 0 0;">
 <i class="fa fa-skyatlas" style="font-size:54px;margin:0;padding:0;"></i>
 <p class="topic3">MENU PLANNING</p>
 <hr class="style-one">
@@ -829,7 +877,7 @@ From concept to execution our seasoned event management team is ready to help yo
 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:0 10px 10px 10px;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0 10px 10px 10px;margin:0;border-radius:3px 3px 0 0;">
 
 <i class="fa fa-skyatlas" style="font-size:54px;margin:0;padding:0;"></i>
 <p class="topic3">FLORAL ARRANGEMENTS</p>
@@ -843,7 +891,7 @@ No matter what the occasion our floral arrangement and design staff will make yo
 
 <div class="w3-third" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
-<div class="column" style="border:1px solid #f5f5f5;padding:0 10px 10px 10px;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0 10px 10px 10px;margin:0;border-radius:3px 3px 0 0;">
 <i class="fa fa-skyatlas" style="font-size:54px;margin:0;padding:0;"></i>
 <p class="topic3">THEME DEVELOPMENT</p>
 
@@ -862,11 +910,12 @@ We will work closely with you to ensure your well thought out theme is just what
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-container" style="width:100%;padding:0 17px;margin:0;">
-<div class="w3-row w3-card" style="background-color:#ccc;width:100%;margin:5px 0 0 0;">
-<div class="w3-quarter" style="background-color:#ccc;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;padding:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
+<div class="w3-row w3-card" style="background-color:#b3b300;width:100%;margin:0;border-radius:3px 3px 0 0;">
+<div class="w3-quarter" style="background-color:#b3b300;margin:0;">
+<div class="column" style="background-color:#b3b300;margin:0;padding:0;">
 <img class="mySlides" src="https://user-images.githubusercontent.com/25410880/92049547-5c4df180-ed50-11ea-8a8e-caaf4f36ec83.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
 
 <img class="mySlides" src="https://user-images.githubusercontent.com/25410880/92049807-16ddf400-ed51-11ea-8478-a1d7f6c62a3c.png" style="width:100%;padding:0;border-radius:2px 2px 0 0;">
@@ -888,13 +937,13 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 290);
+  setTimeout(carousel, 60);
 }
 </script>
 
 
-<div class="w3-threequarter" style="background-color:#ccc;margin:0;">
-<div class="column" style="background-color:#ccc;margin:0;padding:10px 0 5px 0;">
+<div class="w3-threequarter" style="background-color:#b3b300;margin:0;">
+<div class="column" style="background-color:#b3b300;margin:0;padding:10px 0 5px 0;">
 <div id="timeDiv">
 </div>
 </div>
