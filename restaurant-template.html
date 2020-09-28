@@ -71,6 +71,33 @@ $(document).ready(function(){
 </script>
 
 
+
+<script>
+$(document).ready(function(){
+    $('.menu-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
@@ -193,10 +220,13 @@ body, html {
  
 .container-fluid2 {
 max-width: 1200px;
-left: 0 !important;
+float: center;
+display: block;
+padding: 0;
+margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .container-fluid2 {
   display: none;
   width: 1% !important;
@@ -541,19 +571,6 @@ hr.style-one { border: 0; height: 1px; width:50%; background-color: #f2f2f2; pad
   width: 100%;
 }
 
-.container9 {
-  position: relative;
-  margin: 0 3px;
-  padding: 0;
- }
-
-.container9 .content9 {
-  position: absolute;
-  bottom: 30px;
-  background: transparent;
-  width: 100%;
-  border-radius: 0 0 2px 2px;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -721,33 +738,95 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </nav>
 
+<center>
 <div class="modal fade" id="modalNavigation" role="dialog">
 <div class="modal-header" style="border:none;">
-<div class="modal-dialog modal-lg" style="background-color:transparent;">
-<div class="w3-container" style="background-color:transparent;width:100%;">
-<div class="w3-row-padding" style="width:100%;margin:0 auto;">
-<div class="col-sm-8">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/92293137-b4b6f780-eee6-11ea-8ffb-c427ae541fbf.png" style="width:100%;margin:0 0 3px 0;padding:0;border-radius:3px;">
+<div class="modal-dialog" style="width:1200px;margin:0;background-color:transparent;">
+<div class="container-fluid2" style="width:100%;background-color:transparent;margin:0;padding:50px 30px;">
+<div class="w3-container w3-card-4" style="background-color:#b3b300;width:100%;padding:5px;margin:0;border-radius:3px;">
+<div class="w3-row" style="background-color:#b3b300;width:100%;margin:0 auto;">
+<div class="w3-half" style="margin:0;padding:0;">
+<div class="w3-panel" style="margin:0;padding:0 5px 0 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;border-radius:2px;margin:0;">
+</div>
+</div>
 </div>
 
-<div class="col-sm-4" style="padding-top:3px;">
-<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#666;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>HOME</span></a>
+<div class="w3-quarter" style="margin:0;padding-top:10px;">
+<div class="w3-panel" style="padding:0;margin:0 0 18px 0;">
+<p>our menu</p>
+<div class="column" style="padding:0 10px;margin:0;">
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>Home</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;type:reservations;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true"><span>TABLE RESERVATIONS</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><span>Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;"  data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><span>MENU &#124; ORDER ONLINE</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_store.html"><span>SHOP OUR ONLINE STORE</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>JOIN OUR TEAM</span></a>
+<button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
+</div>
+</div>
+</div>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>CONTACT</span></a>
+<div class="w3-quarter" style="margin:0;padding-top:10px;">
+<div class="w3-panel" style="padding:0;margin:0 0 18px 0;">
+<p>sg menu</p>
+<div class="column" style="padding:0 10px;margin:0;">
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>BUSINESS LISTINGS</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>GET IN THE GAME</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>Business Listings</span></a>
 
-<button class="btn btn-primary btn-block" style="background-color:#ccc;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>Get In The Game</span></a>
+
+<button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="example">
+<div class="container w3-panel" style="width:100%;padding:0 17px;margin:-20px 0 0 0;">
+<div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:10px 2px 2px 2px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0 2px;margin:0;">
+<p class="topic2" style="color:#fff;">FOOD & DRINK</p>
+
+<p class="topic">Restaurants</p>
+<img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100.046%;padding:0;border-radius:2px;margin:0 0 4px 0;">
+</div>
+</div>
+
+<div class="w3-threethird" style="margin:0;">
+<div class="w3-panel" style="padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="padding:15px;margin:0;border-radius:3px 3px 0 0;">
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>Home</span></a>
+
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><span>Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
+
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
+
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>BUSINESS LISTINGS</span></a>
+
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>GET IN THE GAME</span></a>
+
+<button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -762,72 +841,11 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter" style="padding:0 2px;margin:0;">
+<div class="w3-threethird" style="padding:0 2px;margin:0;">
+<p class="topic2" style="color:#fff;">Business Category: FOOD & DRINK</p>
+
+<p class="topic">Sub Category: Restaurants</p>
 <img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100.046%;padding:0;border-radius:2px;margin:0 0 4px 0;">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:4px 2px;border-radius:4px 4px 2px 2px;margin:10px 0 0 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
-
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-threequarter" style="padding:0;margin:0;"> 
-<div class="business-logos slide" style="width:100%;padding:0;margin:0;">
-
-<div class="slide container9">
-<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content9">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:10px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div></div>
-
-<div class="slide container9">
-<img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content9">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:10px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Beauty & Health</a></button></div></div>
-
-<div class="slide container9">
-<img src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content9">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:10px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Cultural Activities & Events</a></button></div></div>
-
-<div class="slide container9">
-<img src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content9">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:10px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Home & Auto Services</a></button></div></div>
-
-<div class="slide container9">
-<img src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content9">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:10px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Physical Goods</a></button></div></div>
-
-<div class="slide container9">
-<img src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content9">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:10px 0;border-radius:0;border:none;opacity:0.9;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Spiritual Growth</a></button></div></div>
-</div>
 </div>
 </div>
 </div>
@@ -843,8 +861,6 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p class="topic2">Welcome</p>
-
-<center>
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 50px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-twothird" style="margin:0;">
