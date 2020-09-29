@@ -69,6 +69,7 @@ $(document).ready(function(){
     });
 });
 </script>
+
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
@@ -198,24 +199,24 @@ body, html {
   
 .container-fluid2 {
 max-width: 1200px;
-float: center;
 display: block;
+background-color: transparent;
 padding: 0;
 margin: 0;
 }
 
 @media screen and (max-width: 600px) {
   .container-fluid2 {
-  display: none;
-  width: 1% !important;
-  }
+  display: none !important;
+  background-color: transparent;
+  width: 1px !important;
+   }
   }
   
 .modal-backdrop.in {
   background-color: #ccc;
   opacity: 1.0;
   }
-}
 
 #timeDiv {
 font-family: khand, sans-serif;
@@ -466,11 +467,23 @@ hr.style-two { border: 0; height: 2px; width:40%; background-color: #ccc; paddin
  div.example {
   margin: 0;
   width: 100% !important;
-  padding: 10px 0 0 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 600px) {
   div.example {
+    display: none;
+  }
+}
+
+ div.example1 {
+  margin: 0;
+  width: 100% !important;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  div.example1 {
     display: none;
   }
 }
@@ -586,7 +599,7 @@ hr.style-two { border: 0; height: 2px; width:50%; background-color: #fff; paddin
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 }
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
 .fa-2x {
 font-size: 2em;
 }
@@ -595,15 +608,15 @@ font-size: 2em;
 position: relative;
 display: table-cell;
 width: 60px;
-height: 36px;
+height: 46px;
 text-align: center;
 vertical-align: middle;
-font-size:20px;
+font-size: 19px;
 }
 
 .main-menu:hover,nav.main-menu.expanded {
 width:250px;
-overflow:visible;
+overflow: hidden;
 }
 
 .main-menu {
@@ -628,7 +641,7 @@ margin:7px 0;
 
 .main-menu li {
 position:relative;
-display:block;
+display:inline-block;
 width:250px;
 }
 
@@ -664,7 +677,7 @@ vertical-align:middle;
 text-align: left;
 width:190px;
 padding-left: 15px;
-  font-family: 'Titillium Web', sans-serif;
+font-family: roboto condensed;
 }
 
 .main-menu>ul.logout {
@@ -706,17 +719,10 @@ background-color:transparent;
 
 .area {
 float: left;
-background: #e2e2e2;
+background: transparent;
 width: 100%;
 height: 100%;
 }
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
-
 
 @media screen and (max-width: 600px) {
   .main-menu, .area, .nav {
@@ -742,7 +748,8 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </head>
 <center>
 <body>
-<div class="area"></div><nav class="main-menu">
+<div class="area"></div>
+<nav class="main-menu">
 <ul>
 <li><a href="#test">
 <i class="fa fa-home fa-2x"></i>
@@ -778,14 +785,14 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <i class="fa fa-power-off fa-2x"></i>
 <span class="nav-text">Logout</span></a></li></ul></nav>
 
-
+<div class="container-fluid2" style="width:100%;background-color:transparent;padding:0px;margin:0;">
 <div id="test" class="container w3-panel" style="width:100%;padding:0 5px;margin:8px 0 0 0;">
 <div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:15px 2px 8px 2px;border-radius:4px 4px 2px 2px;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="container-fluid2" style="width:100%;background-color:transparent;padding:0px;margin:0;">
+
 <div class="w3-quarter" style="padding:0 2px;margin:0;">
 <img class="w3-card-4"  src="https://user-images.githubusercontent.com/25410880/94547271-ac678900-0214-11eb-815b-fe3bb7e294f5.png" style="width:100.046%;padding:0;border-radius:2px;margin:0;">
 </div>
@@ -849,9 +856,10 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </div>
+</div>
 
 
-<div class="example">
+<div class="example1">
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
 <div class='container-fluid pull-right' style="width:100%;">
 <div class='navbar-header pull-right' style="padding:0;">
@@ -861,39 +869,24 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </nav>
+</div>
+
 
 <center>
 <div class="modal fade" id="modalNavigation" role="dialog">
 <div class="modal-header" style="border:none;">
-<div class="modal-dialog" style="width:1200px;margin:0;background-color:transparent;">
-<div class="container-fluid2" style="width:100%;background-color:transparent;margin:0;padding:50px 30px;">
-</div>
-</div>
-
-<div class="w3-container w3-panel" style="width:100%;padding:0 40px;margin:-30px 0 30px 0;">
-<div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:-2px 0 0 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
+<div class="modal-dialog modal-large" style="margin:0;background-color:transparent;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 40px;margin:0;">
+<div class="w3-container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:-2px 0 0 0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic2" style="color:#fff;padding:7px 0 0 0;margin:0;">
 Food & Drink</p>
-</div>
 
-<div class="w3-threethird" style="padding:0;margin:0;">
 <img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;border-radius:2px;margin:0;">
 
 <p class="topic2" style="font-size:20px;color:#fff;padding:5px 0 0 0;">Restaurants</p>
-</div>
-</div>
-</div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:10px solid #fff;border-radius:3px;padding:2px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>Home</span></a>
 
@@ -917,29 +910,20 @@ Food & Drink</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
 
 <div class="example">
-<div class="container w3-panel" style="width:100%;padding:0 17px;margin:0;">
-<div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:-2px 0 0 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 17px;margin:0;">
+<div class="w3-container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic2" style="color:#fff;padding:7px 0 0 0;margin:0;">
 Food & Drink</p>
-</div>
 
-<div class="w3-threethird" style="padding:0;margin:0;">
 <img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;border-radius:2px;margin:0;">
 
 <p class="topic2" style="font-size:20px;color:#fff;padding:5px 0 0 0;">Restaurants</p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1054,7 +1038,6 @@ Served with penne pasta and rustic bread.</p>
 </div>
 </div>
 
-
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
 <p class="topic2">Catering</p>
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 50px 0;">
@@ -1091,7 +1074,6 @@ Put our expertise to work for you. With prestigious clients such as Soft Sheen P
 <p class="topic2" style="font-size:28px;padding:0;margin:0;">Catering Services Include</p>
 <div class="w3-row-padding" style="width:100%;margin:0;padding:0;">
 
-
 <div class="w3-third" style="margin:0;padding:0 5px;">
 <div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
@@ -1101,7 +1083,7 @@ Put our expertise to work for you. With prestigious clients such as Soft Sheen P
 <p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
 From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation.<br><br>
 
-You provide the concept along with desired cuisine. We will incorporate your theme, budget and desired outcome to ensure a successful and spectacular culinary event.</p>
+You provide the concept along with desired cuisine. We'll incorporate your theme, budget, and desired outcome to ensure a successful and spectacular culinary event.</p>
 </div>
 </div>
 </div>
@@ -1113,8 +1095,8 @@ You provide the concept along with desired cuisine. We will incorporate your the
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Floral Arrangements</button>
 
 <p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
-No matter what the occasion our floral arrangement and design staff will make your event one that all your guests will remember. We will<br><br>
-incorporate your color schemes, budget, favourite flowers and seasonal recommendations to produce a visually stunning display that will compliment your event/occasion.</p>
+No matter the occasion, our floral arrangement and design staff will make your event pleasantly memorable.<br><br>
+We'll incorporate your color schemes, budget, favorite flowers, and seasonal recommendations to produce a stunning display that will compliment the occasion.</p>
 </div>
 </div>
 </div>
@@ -1126,8 +1108,8 @@ incorporate your color schemes, budget, favourite flowers and seasonal recommend
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Theme Development</button>
 
 <p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
-We will work closely with you to ensure your well thought out theme is just what you envisioned. Whether a graduation, wedding, retirement or<br><br>
-corporate event, we stay within the occasion and create out the box concepts while staying true to your theme. while staying true to your theme. while staying true to your theme.</p>
+We work closely with you to ensure your the theme of your event is what you envisioned of your event is what you envisioned.<br><br>
+Whether a graduation, wedding, retirement, or corporate event, we stay within the occasion and create unique concepts while staying true to your theme.</p>
 </div>
 </div>
 </div>
@@ -1284,12 +1266,6 @@ Chicago, IL 60605</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <script>
 var now = new Date();
@@ -1374,21 +1350,6 @@ checkTime();
 </div>
 </div>
 </div>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
