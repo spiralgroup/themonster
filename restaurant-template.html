@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|Baloo+Bhaina+2|Changa|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 
@@ -16,7 +17,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet"> 
 
@@ -69,35 +69,6 @@ $(document).ready(function(){
     });
 });
 </script>
-
-
-
-<script>
-$(document).ready(function(){
-    $('.menu-logos').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
-});
-</script>
-
-
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
@@ -215,15 +186,7 @@ body, html {
     max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
-    padding-left: 10px;
-    background-color: #f2f2f2;
- }
- 
-    body, html {
-    max-width: 1200px !important;
-    height: 100%;
-    margin: 0 auto;
-    padding-left: 10px;
+    padding-left: 25px;
     background-color: #f2f2f2;
  }
  
@@ -232,6 +195,7 @@ body, html {
    padding-left: 0px;
   }
   }
+  
 .container-fluid2 {
 max-width: 1200px;
 float: center;
@@ -247,7 +211,6 @@ margin: 0;
   }
   }
   
-
 .modal-backdrop.in {
   background-color: #ccc;
   opacity: 1.0;
@@ -273,25 +236,24 @@ font-family: khand, sans-serif;
   }
   
   .open {
-  font-family: khand, sans-serif;
+  font-family: roboto condensed;
   font-size: 16.5px;
   letter-spacing: .5px;
-  text-shadow: 0 2px 6px #ccc;
+  text-shadow: 0 0 1px #ccc;
   color: #fff;
   background-color: transparent !important;
   border: none;
 }
 
 .closed {
- font-family: khand, sans-serif;
+ font-family: roboto condensed;
   font-size: 16.5px;
   letter-spacing: .5px;
-  text-shadow: 0 2px 6px #ccc;
+  text-shadow: 0 0 1px #ccc;
   color: #fff;
   background-color: transparent !important;
   border: none;
 }
-
 
 .dateTime {
 max-width: 200px;
@@ -327,36 +289,6 @@ li:hover span {
    transition: 0.5s;
 }
 
-.fa {
-background-color: #fff;
-  padding: 8px 5px;
-  width: 44px;
-  border-radius: 3px;
-  font-size: 21.5px;
-  color: #b3b300 !important;
-  text-decoration: none !important;
-  margin: 5px 2px 20px 2px;
-  }
-
-.fa:hover {
-  color: #333 !important;
-}
-
-.fa-skyatlas {
-  font-size: 54px;
-  color: #ff0099;
-  margin: 0;
-  padding: 0;
-  }
-
-@media screen and (min-width: 600px) {
-  .fa-skyatlas {
-  font-size: 154px;
-  margin: 0;
-  padding: 0;
-  }
-  }
-
 .topic { 
 font-family: roboto condensed;
 font-size: 15.5px;
@@ -377,7 +309,7 @@ padding: 0;
 .topic1 { 
 font-family: roboto condensed;
 font-size: 15.5px;
-color: #222;
+color: #666;
 text-align: center;
 letter-spacing: .5px;
 text-shadow: 0 0 1px #222;
@@ -652,6 +584,9 @@ hr.style-two { border: 0; height: 2px; width:50%; background-color: #fff; paddin
   }
 }
 
+.fab:hover {
+  color: #333 !important;
+}
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 }
@@ -659,6 +594,7 @@ hr.style-two { border: 0; height: 2px; width:50%; background-color: #fff; paddin
 .fa-2x {
 font-size: 2em;
 }
+
 .fa {
 position: relative;
 display: table-cell;
@@ -668,7 +604,6 @@ text-align: center;
 vertical-align: middle;
 font-size:20px;
 }
-
 
 .main-menu:hover,nav.main-menu.expanded {
 width:250px;
@@ -706,7 +641,7 @@ position:relative;
 display:table;
 border-collapse:collapse;
 border-spacing:0;
-color:#666;
+color:#b3b300;
  font-family: arial;
 font-size: 14px;
 text-decoration:none;
@@ -730,7 +665,9 @@ font-size:18px;
 position:relative;
 display:table-cell;
 vertical-align:middle;
+text-align: left;
 width:190px;
+padding-left: 15px;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -768,7 +705,7 @@ padding:0;
 }
 .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
 color:#b3b300;
-background-color:#5fa2db;
+background-color:transparent;
 }
 
 .area {
@@ -810,100 +747,44 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <center>
 <body>
 <div class="area"></div><nav class="main-menu">
-            <ul>
-                <li>
-                    <a href="http://justinfarrow.com">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                            Dashboard
-                        </span>
-                    </a>
-                  
-                </li>
-                <li class="has-subnav">
-                    <a href="#">
-                        <i class="fa fa-laptop fa-2x"></i>
-                        <span class="nav-text">
-                            Stars Components
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="#">
-                       <i class="fa fa-list fa-2x"></i>
-                        <span class="nav-text">
-                            Forms
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="#">
-                       <i class="fa fa-folder-open fa-2x"></i>
-                        <span class="nav-text">
-                            Pages
-                        </span>
-                    </a>
-                   
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-bar-chart-o fa-2x"></i>
-                        <span class="nav-text">
-                            Graphs and Statistics
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-font fa-2x"></i>
-                        <span class="nav-text">
-                           Quotes
-                        </span>
-                    </a>
-                </li>
-                <li>
-                   <a href="#">
-                       <i class="fa fa-table fa-2x"></i>
-                        <span class="nav-text">
-                            Tables
-                        </span>
-                    </a>
-                </li>
-                <li>
-                   <a href="#">
-                        <i class="fa fa-map-marker fa-2x"></i>
-                        <span class="nav-text">
-                            Maps
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                       <i class="fa fa-info fa-2x"></i>
-                        <span class="nav-text">
-                            Documentation
-                        </span>
-                    </a>
-                </li>
-            </ul>
+<ul>
+<li><a href="#test">
+<i class="fa fa-home fa-2x"></i>
+<span class="nav-text">Home</span></a></li>
 
-            <ul class="logout">
-                <li>
-                   <a href="#">
-                         <i class="fa fa-power-off fa-2x"></i>
-                        <span class="nav-text">
-                            Logout
-                        </span>
-                    </a>
-                </li>  
-            </ul>
-        </nav>
+<li style="cursor:pointer;"><i class="fa fa-laptop fa-2x" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" style="color:#b3b300;"></i>
+<span class="nav-text" style="color:#b3b300;">See Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></li>
+
+<li style="cursor:pointer"><i class="fa fa-list fa-2x" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" data-glf-reservation="true" style="color:#b3b300;"></i><span class="nav-text" style="color:#b3b300;">Table Reservations</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></li>
+
+<li><a href="https://spiralgroup.github.io/themonster/test-template_store.html">
+<i class="fa fa-folder-open fa-2x"></i>
+<span class="nav-text">Shop Our Online Store</span></a></li>
+
+<li><a href="https://spiralgroup.github.io/themonster/test-template_careers.html">
+<i class="fa fa-font fa-2x"></i>
+<span class="nav-text">Join Our Team</span></a></li>
+
+<li><a href="https://form.jotform.com/92186745877172" target="_blank">
+<i class="fa fa-table fa-2x"></i>
+<span class="nav-text">Contact</span></a></li>
+
+<li><a href="https://spiralgroup.github.io/themonster/business-listings.html">
+<i class="fa fa-map-marker fa-2x"></i>
+<span class="nav-text">Business Listings</span></a></li>
+
+<li><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank">
+<i class="fa fa-info fa-2x"></i>
+<span class="nav-text">Get In The Game</span></a></li></ul>
+
+<ul class="logout">
+<li><a href="#">
+<i class="fa fa-power-off fa-2x"></i>
+<span class="nav-text">Logout</span></a></li></ul></nav>
 
 
-<div class="container-fluid2" style="width:100%;background-color:transparent;padding:0px;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0 5px;margin:8px 0 0 0;">
+<div id="test" class="container-fluid2" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0 20px;margin:8px 0 0 0;">
 <div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:15px 2px 3px 2px;border-radius:4px 4px 2px 2px;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
@@ -1070,17 +951,12 @@ Food & Drink</p>
 </div>
 </div>
 </div>
-
-<center>
-<div class="fixed">
-This div element has position: fixed;
 </div>
 
-
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 15px;margin:50px 0 0 0;">
 <p class="topic2">Welcome</p>
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 50px 0;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-twothird" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:15px;margin:0;border-radius:3px 3px 0 0;">
@@ -1113,15 +989,15 @@ Providing stellar service is our key to success. It's what makes new guests feel
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p class="topic2">Our Specials</p>
 </div>
 
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Daily</button>
@@ -1130,8 +1006,8 @@ Providing stellar service is our key to success. It's what makes new guests feel
 <hr class="style-one">
 
 
-<p class="topic1">
- Our Signature Broiled Sirloin Tips<br>
+<p class="topic" style="text-align:center;">
+Our Signature Broiled Sirloin Tips<br>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
@@ -1140,8 +1016,8 @@ Served with penne pasta and rustic bread.</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Weekly</button>
@@ -1150,8 +1026,8 @@ Served with penne pasta and rustic bread.</p>
 <hr class="style-one">
 
 
-<p class="topic1">
- Our Signature Broiled Sirloin Tips<br>
+<p class="topic" style="text-align:center;">
+Our Signature Broiled Sirloin Tips<br>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
@@ -1160,8 +1036,8 @@ Served with penne pasta and rustic bread.</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Online Only</button>
@@ -1170,8 +1046,8 @@ Served with penne pasta and rustic bread.</p>
 <hr class="style-one">
 
 
-<p class="topic1">
- Our Signature Broiled Sirloin Tips<br>
+<p class="topic" style="text-align:center;">
+Our Signature Broiled Sirloin Tips<br>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
@@ -1182,17 +1058,13 @@ Served with penne pasta and rustic bread.</p>
 </div>
 </div>
 </div>
-</div>
 
 
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
 <p class="topic2">Catering</p>
 
-<center>
-<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 20px 0;">
+<div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-twothird" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:15px;margin:0;border-radius:3px 3px 0 0;">
@@ -1224,15 +1096,18 @@ Call us at 773-242-0705 for a free consultation, or tell us about your event at 
 </div>
 </div>
 
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
+<p class="topic2" style="font-size:28px;padding:0;margin:0;">Catering Services Include</p>
+<div class="w3-row-padding" style="width:100%;margin:0;padding:0;">
+
+
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Menu Planning</button>
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Menu Planning</button>
 
-<p class="topic1" style="padding:0 12px 12px 12px;">
+<p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
 From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation.<br><br>
 
 You provide the concept along with desired cuisine. We will incorporate your theme, budget and desired outcome to ensure a successful and spectacular culinary event.</p>
@@ -1240,28 +1115,30 @@ You provide the concept along with desired cuisine. We will incorporate your the
 </div>
 </div>
 
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Floral Arrangements</button>
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Floral Arrangements</button>
 
-<p class="topic1" style="padding:0 12px 12px 12px;">
-No matter what the occasion our floral arrangement and design staff will make your event one that all your guests will remember. Our staff will<br><br>
+<p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
+No matter what the occasion our floral arrangement and design staff will make your event one that all your guests will remember. We will<br><br>
 incorporate your color schemes, budget, favourite flowers and seasonal recommendations to produce a visually stunning display that will compliment your event/occasion.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0;">
-<div class="w3-panel" style="background-color:#fff;padding:4px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Theme Development</button>
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Theme Development</button>
 
-<p class="topic1" style="padding:0 12px 12px 12px;">
+<p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
 We will work closely with you to ensure your well thought out theme is just what you envisioned. Whether a graduation, wedding, retirement or<br><br>
 corporate event, we stay within the occasion and create out the box concepts while staying true to your theme. while staying true to your theme. while staying true to your theme.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1312,10 +1189,14 @@ function carousel() {
 </div>
 </div>
 
-<a href="https://www.vk.com"><i class="fa fa-vk"></i></a>
-<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.vk.com"><i class="fab fa-vk" style="background-color:#fff;padding:8px;width:44px;border-radius:3px;font-size:25px;color:#b3b300;
+text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
+<a href="https://www.facebook.com"><i class="fab fa-facebook" style="background-color:#fff;padding:8px;width:44px;border-radius:3px;font-size:25px;color:#b3b300;
+text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
+<a href="https://www.instagram.com"><i class="fab fa-instagram" style="background-color:#fff;padding:8px;width:44px;border-radius:3px;font-size:25px;color:#b3b300;
+text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
+<a href="https://www.linkedin.com"><i class="fab fa-linkedin" style="background-color:#fff;padding:8px;width:44px;border-radius:3px;font-size:25px;color:#b3b300;
+text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
 
 <p class="topicfooter2">
 123-456-8890</p>
@@ -1324,19 +1205,19 @@ function carousel() {
 400 South State Street<br>
 Chicago, IL 60605</p>
 
-<div class="w3-row-padding" style="width:100%;margin:24px 0 4px 0;">
+<div class="w3-row-padding" style="width:100%;margin:18px 0 10px 0;">
 <div class="w3-quarter" style="margin:0;">
-<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+<button class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:10px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a></div>
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:10px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>Subscribe</span></a>
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:10px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>Subscribe</span></a>
 </div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:13px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:7px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
+<a class="btn btn-primary btn-block" style="background-color:transparent;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ddd;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:10px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
 </div>
 </div>
 
