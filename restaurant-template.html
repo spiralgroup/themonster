@@ -215,6 +215,7 @@ body, html {
     max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
+    padding-left: 10px;
     background-color: #f2f2f2;
  }
  
@@ -662,7 +663,7 @@ overflow:visible;
 }
 
 .main-menu {
-background:#212121;
+background: #fff;
 border-right:1px solid #e5e5e5;
 position: fixed;
 top:0;
@@ -692,7 +693,7 @@ position:relative;
 display:table;
 border-collapse:collapse;
 border-spacing:0;
-color:#999;
+color:#666;
  font-family: arial;
 font-size: 14px;
 text-decoration:none;
@@ -753,9 +754,10 @@ margin:0;
 padding:0;
 }
 .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color:#fff;
+color:#b3b300;
 background-color:#5fa2db;
 }
+
 .area {
 float: left;
 background: #e2e2e2;
@@ -769,6 +771,12 @@ height: 100%;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
 
+
+@media screen and (max-width: 600px) {
+  .main-menu, .area, .nav {
+    display: none;
+  }
+}
 </style>
 
 
@@ -952,6 +960,8 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 
+
+<div class="example">
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
 <div class='container-fluid pull-right' style="width:100%;">
 <div class='navbar-header pull-right' style="padding:0;">
@@ -967,56 +977,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="modal-header" style="border:none;">
 <div class="modal-dialog" style="width:1200px;margin:0;background-color:transparent;">
 <div class="container-fluid2" style="width:100%;background-color:transparent;margin:0;padding:50px 30px;">
-<div class="w3-container w3-card-4" style="background-color:#b3b300;width:100%;padding:5px;margin:0;border-radius:3px;">
-<div class="w3-row" style="background-color:#b3b300;width:100%;margin:0 auto;">
-<div class="w3-half" style="margin:0;padding:0;">
-<div class="w3-panel" style="margin:0;padding:0 5px 0 0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;border-radius:2px;margin:0;">
-</div>
 </div>
 </div>
 
-<div class="w3-quarter" style="margin:0;padding-top:10px;">
-<div class="w3-panel" style="padding:0;margin:0 0 18px 0;">
-<p>our menu</p>
-<div class="column" style="padding:0 10px;margin:0;">
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>Home</span></a>
-
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><span>Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
-
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
-
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
-
-<button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
-</div>
-</div>
-</div>
-
-<div class="w3-quarter" style="margin:0;padding-top:10px;">
-<div class="w3-panel" style="padding:0;margin:0 0 18px 0;">
-<p>sg menu</p>
-<div class="column" style="padding:0 10px;margin:0;">
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
-
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
-
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>Business Listings</span></a>
-
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>Get In The Game</span></a>
-
-<button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="example">
 <div class="w3-container w3-panel" style="width:100%;padding:0 40px;margin:-30px 0 30px 0;">
 <div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:-2px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
