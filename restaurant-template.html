@@ -197,6 +197,19 @@ body, html {
   }
   }
   
+  .container-fluid1 {
+display: none;;
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid1 {
+  display: none !important;
+  background-color: transparent;
+  width: 1px !important;
+   }
+  }
+  
+  
 .container-fluid2 {
 max-width: 1200px;
 display: block;
@@ -219,8 +232,8 @@ margin: 0;
   }
 
 #timeDiv {
-font-family: khand, sans-serif;
-  font-size: 16.5px;
+font-family: roboto condensed;
+  font-size: 15px;
  letter-spacing: .5px;
  position: relative;
   width: 100%;
@@ -238,7 +251,7 @@ font-family: khand, sans-serif;
   
   .open {
   font-family: roboto condensed;
-  font-size: 16.5px;
+  font-size: 15px;
   letter-spacing: .5px;
   text-shadow: 0 0 1px #ccc;
   color: #fff;
@@ -248,7 +261,7 @@ font-family: khand, sans-serif;
 
 .closed {
  font-family: roboto condensed;
-  font-size: 16.5px;
+  font-size: 15px;
   letter-spacing: .5px;
   text-shadow: 0 0 1px #ccc;
   color: #fff;
@@ -258,7 +271,7 @@ font-family: khand, sans-serif;
 
 .dateTime {
 max-width: 200px;
-font-family: khand, sans-serif;
+font-family: roboto condensed;
 color: #222;
 text-shadow: 0 0 1px #000;
   font-size: 16.5px;
@@ -279,8 +292,8 @@ float: none;
 
 .today {
 max-width: 200px;
-  color: #777 !important;
-  text-shadow: 0 0 1px #777 !important;
+  color: #b3b300 !important;
+  text-shadow: 0 0 1px #ccc !important;
     display: block;
 }
 
@@ -291,12 +304,12 @@ li:hover span {
 }
 
 .topic { 
-font-family: roboto condensed;
-font-size: 16.5px;
+font-family: Yanone Kaffeesatz;
+font-size: 18px;
 color: #222;
 text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #666;
+text-shadow: 0 0 1px #f2f2f2;
 margin: 0;
 padding: 0;
 }
@@ -304,6 +317,30 @@ padding: 0;
 @media screen and (max-width: 768px) {
   .topic {
   text-align: center;
+  }
+  }
+  
+  .topic-monster {
+font-family: Yanone Kaffeesatz;
+font-size: 19px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f2f2f2;
+margin: 0;
+padding: 0;
+}
+  
+  @media screen and (max-width: 768px) {
+  .topic-monster {
+font-family: roboto condensed;
+font-size: 14px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #666;
+margin: 0;
+padding: 0;
   }
   }
   
@@ -345,14 +382,14 @@ padding: 0;
 color: #b3b300;
 text-align: center;
 letter-spacing: 1px;
-margin: 0;
+margin: 0 0 -5px 0;
 padding: 0;
   }
   }
   
   .topic3 {
-font-family: khand, sans-serif;
-font-size: 22px;
+font-family: Yanone Kaffeesatz;
+font-size: 29px;
 color: #222;
 text-align: center;
 letter-spacing: .5px;
@@ -380,9 +417,9 @@ margin: 0;
   
 .topicfooter1 {
 font-family: roboto;
-font-size: 14.5px;
-color: #000;
-text-shadow: 0 0 1px #222;
+font-size: 14px;
+color: #fff;
+text-shadow: 0 0 1px #ccc;
 text-align: center;
 letter-spacing: .5px;
 padding: 0;
@@ -391,12 +428,12 @@ margin: 0;
 
 .topicfooter2 {
 font-family: roboto;
-font-size: 19px;
-color: #000;
-text-shadow: 0 0 1px #222;
+font-size: 22px;
+color: #fff;
+text-shadow: 0 0 1px #ccc;
 text-align: center;
 letter-spacing: 1px;
-padding: 10px 0 0 0;
+padding: 16px 0 0 0;
 margin: 0;
 }
 
@@ -600,18 +637,14 @@ hr.style-two { border: 0; height: 2px; width:50%; background-color: #fff; paddin
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 }
 
-.fa-2x {
-font-size: 2em;
-}
-
 .fa {
 position: relative;
 display: table-cell;
 width: 60px;
-height: 46px;
+height: 56px;
 text-align: center;
 vertical-align: middle;
-font-size: 19px;
+font-size: 20px;
 }
 
 .main-menu:hover,nav.main-menu.expanded {
@@ -621,7 +654,7 @@ overflow: hidden;
 
 .main-menu {
 background: #fff;
-border-right:1px solid #e5e5e5;
+border-right:3px solid #fff;
 position: fixed;
 top:0;
 bottom:0;
@@ -753,7 +786,7 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <ul>
 <li><a href="#test">
 <i class="fa fa-home fa-2x"></i>
-<span class="nav-text">Home</span></a></li>
+<span class="nav-text">Top of Page &#124; Home</span></a></li>
 
 <li style="cursor:pointer;"><i class="fa fa-laptop fa-2x" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" style="color:#b3b300;"></i>
 <span class="nav-text" style="color:#b3b300;">See Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></li>
@@ -771,6 +804,10 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <li><a href="https://form.jotform.com/92186745877172" target="_blank">
 <i class="fa fa-table fa-2x"></i>
 <span class="nav-text">Contact</span></a></li>
+
+<li><a href="#shop-local">
+<i class="fa fa-map-marker fa-2x"></i>
+<span class="nav-text">Shop Local</span></a></li>
 
 <li><a href="https://spiralgroup.github.io/themonster/business-listings.html">
 <i class="fa fa-map-marker fa-2x"></i>
@@ -887,20 +924,32 @@ Food & Drink</p>
 
 <img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;border-radius:2px;margin:0;">
 
-<p class="topic2" style="font-size:20px;color:#fff;padding:5px 0 0 0;">Restaurants</p>
+<p class="topic2" style="font-size:25px;color:#fff;padding:8px 0;">Restaurants</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
+<div class="w3-container w3-panel" style="width:100%;padding:0 17px;margin:0;">
+<div class="w3-container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
 <div class="column" style="padding:0;margin:0;">
 <a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:15px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:10px solid #fff;border-radius:3px;padding:2px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template.html"><span>Home</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><span>Menu &#124; Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-glf-cuid="" data-glf-ruid="ac4a6b17-c1a7-4cee-9d15-8f133982a3b3" ><span> See Menu & Order Online</span><script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></a>
 
 <a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/test-template_careers.html"><span>Join Our Team</span></a>
 
 <a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>BUSINESS LISTINGS</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/business-listings.html"><span>Business Listings</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>GET IN THE GAME</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 12px 0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html" target="_blank"><span>Get In The Game</span></a>
 
 <button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:15px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0;border:2px solid #b3b200;border-radius:2px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
 </div>
@@ -926,7 +975,7 @@ Food & Drink</p>
 
 <img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;border-radius:2px;margin:0;">
 
-<p class="topic2" style="font-size:20px;color:#fff;padding:5px 0 0 0;">Restaurants</p>
+<p class="topic2" style="font-size:20px;color:#fff;padding:5px 0 0 0;margin:0;">Restaurants</p>
 </div>
 </div>
 </div>
@@ -936,26 +985,26 @@ Food & Drink</p>
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <p class="topic2">Welcome</p>
-<div class="w3-container" style="width:100%;padding:0;margin:8px 0 50px 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:4px 0 50px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-twothird" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:6px;border-radius:3px;margin:0 0 18px 0;">
-<div class="column" style="border:1px solid #ffffe6;padding:12px 15px;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:13px 15px;margin:0;border-radius:3px 3px 0 0;">
 
 <p class="topic">
 Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome, could get great food at down-to-earth prices, and where they'd be treated right by people with a passion to serve.<br><br>       
 
-We're loved for our hand-breaded Boneless Buffalo Wings, signature Broiled Sirloin Tips, frosted mugs of beer, and more. Simple, honest, genuine food. All served in a distinct New England style and enjoyed with family and friends.<br><br>
+We're loved for our hand-breaded Boneless Buffalo Wings, Broiled Sirloin Tips, frosted mugs of beer, and more. Simple, hearty, delectable food. All served in a distinct Chicago-style and enjoyed with family and friends.<br><br>
 
-The culture at the SG MarketPlace Restaurant was instilled by Michelle long before a mission statement was ever developed &#151; providing stellar service is our key to success. It's what makes all our guests feel right at home. So eat delicious food. Grab a drink. But most of all, relax.</p>
+The culture at the SG MarketPlace Restaurant was instilled by Michelle long before a mission statement was ever developed &#151; providing stellar service is our key to success. It's what makes all our guests feel right at home. So, join us for some delicious food and a drink. But most of all, relax.</p>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 20px 0;">
-<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0;">
 <div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
 <div class="container6">
 <img src="https://user-images.githubusercontent.com/25410880/94541923-cc477e80-020d-11eb-907c-795370181243.png" style="width:99.40%;padding:0;border-radius:3px;">
@@ -978,61 +1027,64 @@ The culture at the SG MarketPlace Restaurant was instilled by Michelle long befo
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="w3-third" style="margin:0;padding:0 5px;">
-<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Daily</button>
 
-<p class="topic3">BROILED SIRLOIN TIPS</p>
+<p class="topic3">Broiled Sirloin Tips</p>
 <hr class="style-one">
 
-
-<p class="topic" style="text-align:center;">
+<p class="topic-monster">
 Our Signature Broiled Sirloin Tips<br>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
-<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#b3b300;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
+<hr class="style-one" style="margin:20px 0 0 0;">
+
+<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:17px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px 0;margin:5px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0;padding:0 5px;">
-<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Weekly</button>
 
-<p class="topic3">BROILED SIRLOIN TIPS</p>
+<p class="topic3">Broiled Sirloin Tips</p>
 <hr class="style-one">
 
-
-<p class="topic" style="text-align:center;">
+<p class="topic-monster">
 Our Signature Broiled Sirloin Tips<br>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
-<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#b3b300;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
+<hr class="style-one" style="margin:20px 0 0 0;">
+
+<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:17px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px 0;margin:5px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0;padding:0 5px;">
-<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
 <button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 20px 0;border:none;border-radius:2px;">Online Only</button>
 
-<p class="topic3">BROILED SIRLOIN TIPS</p>
+<p class="topic3">Broiled Sirloin Tips</p>
 <hr class="style-one">
 
-
-<p class="topic" style="text-align:center;">
+<p class="topic-monster">
 Our Signature Broiled Sirloin Tips<br>
 Hand cut and marinated with our secret recipe.<br>
 Served with penne pasta and rustic bread.</p>
 
-<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:15.5px;color:#b3b300;text-shadow:0 0 1px #ccc;letter-spacing:1px;padding:10px 0;margin:20px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
+<hr class="style-one" style="margin:20px 0 0 0;">
+
+<button class="btn btn-primary btn-block w3-hover-shadow" style="font-family:roboto condensed;font-size:17px;color:#222;text-shadow:0 0 1px #222;letter-spacing:.5px;padding:10px 0;margin:5px 0 0 0;background-color:#fff;border:none;" href="https://www.schedulicity.com/scheduling/SGI3U8" target="_blank">$19.99 &#124; Order Online</button>
 </div>
 </div>
 </div>
@@ -1047,12 +1099,12 @@ Served with penne pasta and rustic bread.</p>
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-twothird" style="margin:0;">
 <div class="w3-panel" style="background-color:#fff;padding:6px;border-radius:3px;margin:0 0 18px 0;">
-<div class="column" style="border:1px solid #ffffe6;padding:12px 15px;margin:0;border-radius:3px 3px 0 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:13px 15px;margin:0;border-radius:3px 3px 0 0;">
 
 <p class="topic">
 The service-oriented staff at Spiral Group, Inc. provides institutional, corporate, and private catering. Whether it's boxed lunches, a cocktail reception for 25 people, or a seated dinner for 250, we're fully committed to helping our customers achieve their catering needs.<br><br>
 
-From concept to execution, our seasoned event management team is ready to help you create a custom menu and unique presentation. You provide the concept and desired cuisine &#151; we'll incorporate your theme, budget, and desired outcome to ensure a spectacular culinary event.<br><br>
+From concept to execution, our event management team is ready to help you create a remarkable presentation. We'll incorporate your theme, budget, and desired outcome to ensure a spectacular event.<br><br>
 
 Put our expertise to work for you. With prestigious clients such as Soft Sheen Products, BET, Microsoft, Google, Mozilla, Apple, and AT&T, we've proven to be the best in Chicago. Call us at 773-242-0705 for a free consultation, or tell us about your event at catering@spiralgroup.org.</p>
 </div>
@@ -1071,48 +1123,56 @@ Put our expertise to work for you. With prestigious clients such as Soft Sheen P
 </div>
 </div>
 </div>
-</div>
 
-<div class="w3-container" style="width:100%;padding:0 12px;margin:8px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
 <p class="topic2" style="font-size:28px;padding:0;margin:0;">Catering Services Include</p>
-<div class="w3-row-padding" style="width:100%;margin:0;padding:0;">
-
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="w3-third" style="margin:0;padding:0 5px;">
-<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 18px 0;border:none;border-radius:2px;">Menu Planning</button>
 
-<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Menu Planning</button>
+<p class="topic-monster" style="padding:0 20px;">
+From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation.</p>
 
-<p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
-From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation.<br><br>
+<hr class="style-one" style="margin:10px 0;">
 
-You provide the concept along with desired cuisine. We'll incorporate your theme, budget, and desired outcome to ensure a successful and spectacular culinary event.</p>
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0;padding:0 5px;">
-<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
-<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
-
-<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Floral Arrangements</button>
-
-<p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
-No matter the occasion, our floral arrangement and design staff will make your event pleasantly memorable.<br><br>
-We'll incorporate your color schemes, budget, favorite flowers, and seasonal recommendations to produce a stunning display that will compliment the occasion.</p>
+<p class="topic-monster" style="padding:0 20px; margin:0 0 10px 0;">
+You provide the concept along with desired cuisine. We'll incorporate your theme, budget, and desired outcome to ensure a spectacular event.</p>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0;padding:0 5px;">
-<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 30px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
 <div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
 
-<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 15px 0;border:none;border-radius:2px;">Theme Development</button>
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 18px 0;border:none;border-radius:2px;">Floral Arrangements</button>
 
-<p class="topic" style="text-align:center;padding:0 9px 9px 9px;">
-We work closely with you to ensure your the theme of your event is what you envisioned of your event is what you envisioned.<br><br>
-Whether a graduation, wedding, retirement, or corporate event, we stay within the occasion and create unique concepts while staying true to your theme.</p>
+<p class="topic-monster" style="padding:0 20px;">
+No matter the occasion, our floral arrangement and professional design staff will make your event pleasantly memorable.</p>
+
+<hr class="style-one" style="margin:10px 0;">
+
+<p class="topic-monster" style="padding:0 20px; margin:0 0 10px 0;">
+We'll incorporate your color schemes, budget, and favorite flowers to produce a stunning display that will compliment the occasion.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
+
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 18px 0;border:none;border-radius:2px;">Theme Development</button>
+
+<p class="topic-monster" style="padding:0 20px;">
+We work closely with you to ensure your the theme of your event is what you envisioned of your event is what you envisioned.</p>
+
+<hr class="style-one" style="margin:10px 0;">
+
+<p class="topic-monster" style="padding:0 20px; margin:0 0 10px 0;">
+Whether a graduation, wedding, retirement, or corporate event, we stay within the occasion and create concepts that are true to your theme.</p>
 </div>
 </div>
 </div>
@@ -1121,7 +1181,7 @@ Whether a graduation, wedding, retirement, or corporate event, we stay within th
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:90px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p class="topic2">Hours & Location</p>
 
@@ -1129,7 +1189,7 @@ Whether a graduation, wedding, retirement, or corporate event, we stay within th
 <center>
 <div class="container w3-panel" style="width:100%;padding:0 14px;margin:0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:4px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
 <div class="w3-row w3-card" style="background-color:#b3b300;width:100%;margin:0;border-radius:3px 3px 0 0;">
 <div class="w3-quarter" style="background-color:#b3b300;margin:0;">
 <div class="column" style="background-color:#b3b300;margin:0;padding:0;">
@@ -1160,19 +1220,19 @@ function carousel() {
 
 
 <div class="w3-threequarter" style="background-color:#b3b300;margin:0;padding:0;">
-<div class="column" style="background-color:#b3b300;margin:0;padding:14px 0 0 0;">
+<div class="column" style="background-color:#b3b300;margin:0;padding:7px 0 3px 0;">
 <div id="timeDiv">
 </div>
 </div>
 
 <a href="https://www.vk.com"><i class="fab fa-vk" style="background-color:#fff;padding:7px;width:44px;border-radius:3px;font-size:23px;color:#b3b300;
-text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
+text-decoration:none;margin:5px 2px;"></i></a>
 <a href="https://www.facebook.com"><i class="fab fa-facebook" style="background-color:#fff;padding:7px;width:44px;border-radius:3px;font-size:23px;color:#b3b300;
-text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
+text-decoration:none;margin:5px 2px;"></i></a>
 <a href="https://www.instagram.com"><i class="fab fa-instagram" style="background-color:#fff;padding:7px;width:44px;border-radius:3px;font-size:23px;color:#b3b300;
-text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
+text-decoration:none;margin:5px 2px;"></i></a>
 <a href="https://www.linkedin.com"><i class="fab fa-linkedin" style="background-color:#fff;padding:7px;width:44px;border-radius:3px;font-size:23px;color:#b3b300;
-text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
+text-decoration:none;margin:5px 2px;"></i></a>
 
 <p class="topicfooter2">
 123-456-8890</p>
@@ -1181,26 +1241,27 @@ text-decoration:none;margin:5px 2px 8px 2px;"></i></a>
 400 South State Street<br>
 Chicago, IL 60605</p>
 
-<div class="w3-row-padding" style="width:100%;margin:17px 0 9px 0;">
+<div class="w3-row-padding" style="width:100%;margin:28px 0 8px 0;">
 <div class="w3-quarter" style="margin:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;font-family:roboto;font-size:13.5px;letter-spacing:0;color:#b3b300;text-decoration:none;text-shadow:0 0 1px #ccc;margin:5px 0;border:1px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
+<button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 5px 0;border:3px solid #fff;border-radius:3px;padding:5px;cursor:pointer;" data-toggle="modal" data-target="#myModal1"><span>View Business Hours</span></button></div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;font-family:roboto;font-size:13.5px;letter-spacing:0;color:#b3b300;text-decoration:none;text-shadow:0 0 1px #ccc;margin:5px 0;border:1px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a></div>
-
-<div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;font-family:roboto;font-size:13.5px;letter-spacing:0;color:#b3b300;text-decoration:none;text-shadow:0 0 1px #ccc;margin:5px 0;border:1px solid #fff;border-radius:2px;padding:8px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>Subscribe</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 5px 0;border:3px solid #fff;border-radius:3px;padding:5px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Contact</span></a>
 </div>
 
 <div class="w3-quarter" style="margin:0;">
-<a class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;font-family:roboto;font-size:13.5px;letter-spacing:0;color:#b3b300;text-decoration:none;text-shadow:0 0 1px #ccc;margin:5px 0;border:1px solid #fff;border-radius:2px;padding:8px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 5px 0;border:3px solid #fff;border-radius:3px;padding:5px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>Subscribe</span></a>
+</div>
+
+<div class="w3-quarter" style="margin:0;">
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14.5px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:0 0 5px 0;border:3px solid #fff;border-radius:3px;padding:5px;cursor:pointer;"  href="https://spiralgroup.github.io/themonster/privacy-policy.html" target="_blank"><span>Your Privacy</span></a></div>
 </div>
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;margin:8px 0 0 0;">
+<div class="w3-row" style="width:100%;margin:8px 0 0 0;padding:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-threethird" style="background-color:transparent;margin:0;padding:0;">
+<div class="w3-threethird" style="background-color:#fff;margin:0;padding:0;">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7688109650912!2d-87.63039008493084!3d41.876320279222284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca2b145aa29%3A0xf4a8c625e99ffc96!2sHarold%20Washington%20Library%2C%20400%20S%20State%20St%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1587362712839!5m2!1sen!2sus" style="width:100%;border:0;padding:0;margin:0;height:245px;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
@@ -1272,6 +1333,10 @@ Chicago, IL 60605</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
 
 <script>
 var now = new Date();
@@ -1330,7 +1395,7 @@ checkTime();
 
 
 <center>
-<div class="w3-container" style="width:100%;margin:100px 0 0 0;">
+<div id="shop-local" class="w3-container" style="width:100%;margin:60px 0 0 0;">
 <p class="topic2">Shop Local</p>
 </div>
 
