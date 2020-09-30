@@ -551,6 +551,7 @@ margin: 0;
  }
  
  .carousel {
+ position: relative;
 background-color: transparent;
 height: auto;
 padding: 0;
@@ -558,19 +559,20 @@ margin: 0;
 width: 100%;
 }
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 600px) {
   .carousel {
-  padding: 0;  
+  display: none;  
   }
   }
 
 .carousel-cell {
-  width: 100%;
- background-color: transparent;
-  
-  padding: 0;
-  margin: 0 auto;
-  counter-increment: gallery-cell;
+position: absolute;
+background-color: transparent;
+height: auto;
+padding: 0;
+margin: 0;
+width: 100%;
+counter-increment: gallery-cell;
   }
   
    @media screen and (max-width: 768px) {
