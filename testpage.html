@@ -18,7 +18,7 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Kanit+ ExtraBold|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -380,7 +380,7 @@ margin: 20px 0 8px 0;
 @media screen and (max-width: 768px) {
   .topic3b {
   font-size: 15px;
-   margin: 20px 0 40px 0;
+   margin: 20px 0;
   }
   }
     
@@ -514,21 +514,6 @@ margin: 0;
   }
   }
   
- 
-.material-icons {
-   color: #b3b300;
-   text-shadow: 1px 1px 1px #ccc;
-   font-size: 58px;
-   margin: 100px 0 0 0;
-   padding: 0;
-   }
-  
-@media screen and (max-width: 768px) {
-  .material-icons {
-  display: none;
-  }
-  }
-
  .container7 {
   position: relative;
   max-width: 800px;
@@ -601,171 +586,58 @@ position: absolute;
 hr.style-one { border: 0; height: 2px; width:30%; background-color: #fff; padding: 0; margin:0 0 15px 0;
 }
 
-.radio {
-display: inline-block;
-color: #ff0099;
-}
 
-.images {
-  overflow: hidden;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-
-.images-inner {
-  width: 500%;
-  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-.image-slide {
-  width: 20%;
-  float: left;
-}
-.image-slide,
-.fake-radio,
-.radio-btn {
-  transition: all 0.5s ease-out;
-}
-.fake-radio {
-  float: center;
-}
-
-
-/* Move slides overflowed container */
-#slide1:checked ~ .images .images-inner {
-  margin-left: 0;
-}
-#slide2:checked ~ .images .images-inner {
-  margin-left: -100%;
-}
-#slide3:checked ~ .images .images-inner {
-  margin-left: -200%;
-}
-
-
-#slide4:checked ~ .images .images-inner {
-  margin-left: 0;
-}
-#slide5:checked ~ .images .images-inner {
-  margin-left: -100%;
-}
-#slide6:checked ~ .images .images-inner {
-  margin-left: -200%;
-}
-
-
-/* Color of bullets */
-#slide1:checked ~ div .fake-radio .radio-btn:nth-child(1),
-#slide2:checked ~ div .fake-radio .radio-btn:nth-child(2),
-#slide3:checked ~ div .fake-radio .radio-btn:nth-child(3) {
-  background: #fff;
-}
-
-#slide4:checked ~ div .fake-radio .radio-btn:nth-child(4),
-#slide5:checked ~ div .fake-radio .radio-btn:nth-child(5),
-#slide6:checked ~ div .fake-radio .radio-btn:nth-child(6) {
-  background: #fff;
-}
-
-
-.radio-btn {
-  width: 9px;
-  height: 9px;
-  border-radius: 5px;
+/* Slideshow container */
+.slideshow-container99 {
   background: #b3b300;
-  display: inline-block !important;
-  margin: 0 1px;
-  cursor: pointer;
-}
-/* Color of bullets - END */
-
-/* Text of slides */
-#slide1:checked ~ .labels .label:nth-child(1),
-#slide2:checked ~ .labels .label:nth-child(2),
-#slide3:checked ~ .labels .label:nth-child(3) {
-  opacity: 1;
 }
 
-.label {
-  opacity: 0;
-  position: absolute;
+/* Slides */
+.mySlides99 {
+  display: none;
+  padding: 10px 20px;
+  text-align: center;
 }
-/* Text of slides - END */
 
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;  
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px; 
+}
 
-/* Calculate AUTOPLAY for BULLETS */
-@keyframes bullet {
-  0%, 33.32333333333334%	{
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255,0.8);
+  color: #b3b300;
+}
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
     background: #b3b300;
-  }
-  33.333333333333336%, 100% {
-    background: gray;
-  }
 }
 
-
-
-#play1:checked ~ div .fake-radio .radio-btn:nth-child(1) {
-  animation: bullet 12300ms infinite -1000ms;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
 }
 
-#play1:checked ~ div .fake-radio .radio-btn:nth-child(2) {
-  animation: bullet 12300ms infinite 3100ms;	
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #80ffff;
 }
-
-#play1:checked ~ div .fake-radio .radio-btn:nth-child(3) {
-  animation: bullet 12300ms infinite 7200ms;	
-}
-/* Calculate AUTOPLAY for BULLETS - END */
-
-
-
-/* Calculate AUTOPLAY for SLIDES */
-@keyframes slide {
-  0%, 25.203252032520325%	{ margin-left: 0; }
-  33.333333333333336%, 58.53658536585366%	{ margin-left: -100%; }
-  66.66666666666667%, 91.869918699187%	{ margin-left: -200%; }
-}
-
-
-.st-slider > #play1:checked ~ .images .images-inner {
-  animation: slide 12300ms infinite;	
-}
-/* Calculate AUTOPLAY for SLIDES - END */
-
-
-
-
-
-/* Calculate AUTOPLAY for CAPTION */
-@keyframes caption {
-  0%, 33.32333333333334%	{
-    opacity: 1;
-  }
-  33.333333333333336%, 100% {
-    opacity: 0;
-  }
-}
-
-
-#play1:checked ~ .labels .label:nth-child(1) {
-  animation: caption 12300ms infinite -1000ms;
-}
-
-#play1:checked ~ .labels .label:nth-child(2) {
-  animation: caption 12300ms infinite 3100ms;	
-}
-
-#play1:checked ~ .labels .label:nth-child(3) {
-  animation: caption 12300ms infinite 7200ms;	
-}
-/* Calculate AUTOPLAY for CAPTION - END */
-
-
 
 </style>
 <!-- MailerLite Universal -->
@@ -1173,147 +1045,37 @@ Manage incoming orders via JotForm. Ensure excellent service with your very own 
 
 <div class="w3-twothird" style="margin:0;padding:0;border-radius:3px;">
 <div class="column w3-card" style="background-color:#b3b300;padding:0;margin:4px;border-radius:2px;">
-<div id="homepage-slider" class="st-slider">
-<input type="radio" class="cs_anchor radio" name="slider" id="slide1">
-<input type="radio" class="cs_anchor radio" name="slider" id="slide2">
-<input type="radio" class="cs_anchor radio" name="slider" id="slide3">
-       
-   <div class="images">
-       <div class="images-inner">
-        <div class="image-slide">
-        <p class="topic4b">1Jotform&reg;</p>
-<p class="topic3a">Manage incoming orders & more.</p>
+<div class="slideshow-container99" style="width:100%;">
 
+<div class="mySlides99">
 <p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+22and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
 
+<p class="topic3b">Learn more about Schedulicity&reg;.</p>
+</div>
+
+<div class="mySlides99">
 <p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+33and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
 
-<p class="topic3b">Learn more about Jotform&reg;.</p>
+<p class="topic3b">Learn more about Schedulicity&reg;.</p>
 </div>
 
-
-<div class="image-slide">
-<p class="topic4b">2Jotform&reg;</p>
-<p class="topic3a">Manage incoming orders & more.</p>
+<div class="mySlides99">
 <p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+44and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
 
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic3b">Learn more about Jotform&reg;.</p>
+<p class="topic3b">Learn more about Schedulicity&reg;.</p>
 </div>
 
-<div class="image-slide">
-<p class="topic4b">3Jotform&reg;</p>
-<p class="topic3a">Manage incoming orders & more.</p>
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic3b">Learn more about Jotform&reg;.</p>
-</div>
-</div>
-</div>
-    
-<div class="fake-radio w3-green w3-center">
-<label for="slide1" class="radio-btn"></label>
-<label for="slide2" class="radio-btn"></label>
-<label for="slide3" class="radio-btn"></label>
-</div> 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<a class="prev" onclick="plusSlides(-1)" style="float:left;">❮</a>
+<a class="next" onclick="plusSlides(1)" style="float:right;">❯</a>
 </div>
 
-
-
-<div class="container w3-panel" style="width:100%;padding:0 14px;margin:40px 0 20px 0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:0;">
-<div class="w3-container" style="width:100%;padding:0px;margin:0;">
-<div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
-<div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
-<div class="column w3-card" style="background-color:#b3b300;padding:93px 0;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.5%;"><br>
-<p class="topic3e">2From Our Partners</p>
-
-<p class="topic3f">Delivering Exceptional Customer Experiences</p>
-</div>
-</div>
-
-<div class="w3-twothird" style="margin:0;padding:0;border-radius:3px;">
-<div class="column w3-card" style="background-color:#b3b300;padding:0;margin:4px;border-radius:2px;">
-<div id="homepage-slider" class="st-slider">
-   
-   
-    <input type="radio" class="cs_anchor radio" name="slider" id="slide4">
-    <input type="radio" class="cs_anchor radio" name="slider" id="slide5">
-    <input type="radio" class="cs_anchor radio" name="slider" id="slide6">
-       
-   <div class="images">
-       <div class="images-inner">
-        <div class="image-slide">
-        <p class="topic4b">11Jotform&reg;</p>
-<p class="topic3a">Manage incoming orders & more.</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic3b">Learn more about Jotform&reg;.</p>
-</div>
-
-
-<div class="image-slide">
-<p class="topic4b">2Jotform&reg;</p>
-<p class="topic3a">Manage incoming orders & more.</p>
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic3b">Learn more about Jotform&reg;.</p>
-</div>
-
-<div class="image-slide">
-<p class="topic4b">33Jotform&reg;</p>
-<p class="topic3a">Manage incoming orders & more.</p>
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic3b">Learn more about Jotform&reg;.</p>
-</div>
-</div>
-</div>
-    
-<div class="fake-radio w3-green w3-center">
-<label for="slide4" class="radio-btn"></label>
-<label for="slide5" class="radio-btn"></label>
-<label for="slide6" class="radio-btn"></label>
-</div> 
+<div class="dot-container">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 </div>
 </div>
@@ -1328,10 +1090,12 @@ Manage incoming orders via JotForm. Ensure excellent service with your very own 
 
 <center>
 <div id="get-started" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:70px 0 10px 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <p class="topic3c" style="margin:0;padding:0;">Select Local Marketing by Business Type</p>
 </div>
 </div>
+
+<p class="topic2"><a href="https://spark.adobe.com/video/Wz26pxWsQQha2">learn more</a></p>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
@@ -1476,6 +1240,36 @@ this easy or affordable.</p>
 </div>
 </div>
 </div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides99");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
