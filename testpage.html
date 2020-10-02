@@ -603,8 +603,9 @@ hr.style-one { border: 0; height: 2px; width:30%; background-color: #fff; paddin
 
 .radio {
 display: inline-block;
-text-color: #ff0099;
+color: #ff0099;
 }
+
 .images {
   overflow: hidden;
   top: 0;
@@ -613,6 +614,7 @@ text-color: #ff0099;
   right: 0;
   width: 100%;
 }
+
 .images-inner {
   width: 500%;
   transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
@@ -628,7 +630,7 @@ text-color: #ff0099;
   transition: all 0.5s ease-out;
 }
 .fake-radio {
-  float: right;
+  float: center;
 }
 
 
@@ -644,12 +646,31 @@ text-color: #ff0099;
 }
 
 
+#slide4:checked ~ .images .images-inner {
+  margin-left: 0;
+}
+#slide5:checked ~ .images .images-inner {
+  margin-left: -100%;
+}
+#slide6:checked ~ .images .images-inner {
+  margin-left: -200%;
+}
+
+
 /* Color of bullets */
 #slide1:checked ~ div .fake-radio .radio-btn:nth-child(1),
 #slide2:checked ~ div .fake-radio .radio-btn:nth-child(2),
 #slide3:checked ~ div .fake-radio .radio-btn:nth-child(3) {
-  background: #b3b300;
+  background: #fff;
 }
+
+#slide4:checked ~ div .fake-radio .radio-btn:nth-child(4),
+#slide5:checked ~ div .fake-radio .radio-btn:nth-child(5),
+#slide6:checked ~ div .fake-radio .radio-btn:nth-child(6) {
+  background: #fff;
+}
+
+
 .radio-btn {
   width: 9px;
   height: 9px;
@@ -687,6 +708,7 @@ text-color: #ff0099;
 }
 
 
+
 #play1:checked ~ div .fake-radio .radio-btn:nth-child(1) {
   animation: bullet 12300ms infinite -1000ms;
 }
@@ -699,7 +721,6 @@ text-color: #ff0099;
   animation: bullet 12300ms infinite 7200ms;	
 }
 /* Calculate AUTOPLAY for BULLETS - END */
-
 
 
 
@@ -1153,15 +1174,14 @@ Manage incoming orders via JotForm. Ensure excellent service with your very own 
 <div class="w3-twothird" style="margin:0;padding:0;border-radius:3px;">
 <div class="column w3-card" style="background-color:#b3b300;padding:0;margin:4px;border-radius:2px;">
 <div id="homepage-slider" class="st-slider">
-  <input type="radio" class="cs_anchor radio" name="slider" id="slide1"/>
-    <input type="radio" class="cs_anchor radio" name="slider" id="slide2"/>
-    <input type="radio" class="cs_anchor radio" name="slider" id="slide3"/>
-    <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked=""/>
-   
-    <div class="images">
+<input type="radio" class="cs_anchor radio" name="slider" id="slide1">
+<input type="radio" class="cs_anchor radio" name="slider" id="slide2">
+<input type="radio" class="cs_anchor radio" name="slider" id="slide3">
+       
+   <div class="images">
        <div class="images-inner">
         <div class="image-slide">
-        <p class="topic4b">Jotform&reg;</p>
+        <p class="topic4b">1Jotform&reg;</p>
 <p class="topic3a">Manage incoming orders & more.</p>
 
 <p class="topic1">
@@ -1171,29 +1191,130 @@ Manage incoming orders via JotForm. Ensure excellent service with your very own 
 Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
 
 <p class="topic3b">Learn more about Jotform&reg;.</p>
-  
-  
-
-          <div class="image bg-yellow" style="background-color:yellow;">image slide 1</div>
-        </div>
-        <div class="image-slide">
-          <div class="image bg-blue" style="background-color:pink;">imager slide 2</div>
-        </div>
-        <div class="image-slide">
-          <div class="image bg-red" style="background-color:orange;">image slide 3</div>
-        </div>
-      </div>
-    </div>
-    
-      
-        <div class="fake-radio">
-          <label for="slide1" class="radio-btn"></label>
-          <label for="slide2" class="radio-btn"></label>
-          <label for="slide3" class="radio-btn"></label>
-        </div>
-    </div>
 </div>
-      
+
+
+<div class="image-slide">
+<p class="topic4b">2Jotform&reg;</p>
+<p class="topic3a">Manage incoming orders & more.</p>
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic3b">Learn more about Jotform&reg;.</p>
+</div>
+
+<div class="image-slide">
+<p class="topic4b">3Jotform&reg;</p>
+<p class="topic3a">Manage incoming orders & more.</p>
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic3b">Learn more about Jotform&reg;.</p>
+</div>
+</div>
+</div>
+    
+<div class="fake-radio w3-green w3-center">
+<label for="slide1" class="radio-btn"></label>
+<label for="slide2" class="radio-btn"></label>
+<label for="slide3" class="radio-btn"></label>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container w3-panel" style="width:100%;padding:0 14px;margin:40px 0 20px 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0px;margin:0;">
+<div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
+<div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
+<div class="column w3-card" style="background-color:#b3b300;padding:93px 0;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.5%;"><br>
+<p class="topic3e">2From Our Partners</p>
+
+<p class="topic3f">Delivering Exceptional Customer Experiences</p>
+</div>
+</div>
+
+<div class="w3-twothird" style="margin:0;padding:0;border-radius:3px;">
+<div class="column w3-card" style="background-color:#b3b300;padding:0;margin:4px;border-radius:2px;">
+<div id="homepage-slider" class="st-slider">
+   
+   
+    <input type="radio" class="cs_anchor radio" name="slider" id="slide4">
+    <input type="radio" class="cs_anchor radio" name="slider" id="slide5">
+    <input type="radio" class="cs_anchor radio" name="slider" id="slide6">
+       
+   <div class="images">
+       <div class="images-inner">
+        <div class="image-slide">
+        <p class="topic4b">11Jotform&reg;</p>
+<p class="topic3a">Manage incoming orders & more.</p>
+
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic3b">Learn more about Jotform&reg;.</p>
+</div>
+
+
+<div class="image-slide">
+<p class="topic4b">2Jotform&reg;</p>
+<p class="topic3a">Manage incoming orders & more.</p>
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic3b">Learn more about Jotform&reg;.</p>
+</div>
+
+<div class="image-slide">
+<p class="topic4b">33Jotform&reg;</p>
+<p class="topic3a">Manage incoming orders & more.</p>
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic1">
+Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
+
+<p class="topic3b">Learn more about Jotform&reg;.</p>
+</div>
+</div>
+</div>
+    
+<div class="fake-radio w3-green w3-center">
+<label for="slide4" class="radio-btn"></label>
+<label for="slide5" class="radio-btn"></label>
+<label for="slide6" class="radio-btn"></label>
+</div> 
+</div>
 </div>
 </div>
 </div>
