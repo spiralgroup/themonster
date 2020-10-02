@@ -18,7 +18,7 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Kanit+ ExtraBold|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,6 +29,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -380,7 +383,7 @@ margin: 20px 0 8px 0;
 @media screen and (max-width: 768px) {
   .topic3b {
   font-size: 15px;
-   margin: 20px 0;
+   margin: 20px 0 40px 0;
   }
   }
     
@@ -514,6 +517,21 @@ margin: 0;
   }
   }
   
+ 
+.material-icons {
+   color: #b3b300;
+   text-shadow: 1px 1px 1px #ccc;
+   font-size: 58px;
+   margin: 100px 0 0 0;
+   padding: 0;
+   }
+  
+@media screen and (max-width: 768px) {
+  .material-icons {
+  display: none;
+  }
+  }
+
  .container7 {
   position: relative;
   max-width: 800px;
@@ -532,7 +550,210 @@ margin: 0;
   padding: 10px;
  }
  
-.container5 {
+ .carousel {
+ position: relative;
+background-color: transparent;
+height: auto;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+ @media screen and (max-width: 600px) {
+  .carousel {
+  display: none;  
+  }
+  }
+
+.carousel-cell {
+position: absolute;
+background-color: transparent;
+height: auto;
+padding: 0;
+margin: 0;
+width: 100%;
+counter-increment: gallery-cell;
+  }
+  
+   @media screen and (max-width: 768px) {
+  .carousel-cell {
+  padding: 0;  
+  }
+  }
+
+
+/* cell number */
+.carousel-cell:before {
+  display: none;
+  text-align: center;
+  content: counter(gallery-cell);
+ }
+
+.flickity-enabled {
+  position: relative;
+  background-color: transparent;
+}
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.flickity-button {
+  position: absolute;
+  background: rgba(255, 255, 255, 1.0);
+  color: #b3b300;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+ }
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+  }
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e6e600;
+}
+
+.flickity-button:active {
+  opacity: 0.9;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 79%;
+  border-radius: 50px;
+  padding: 15px;
+  opacity: 0.9;
+  /* vertically center */ 
+}
+
+@media screen and (max-width: 768px) {
+  .flickity-prev-next-button {
+   display: none !important;
+  }
+  }
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+.flickity-prev-next-button.previous {
+display: none;
+}
+
+.flickity-prev-next-button.next {
+display: none; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  display: none;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+ display: none;
+}
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: relative;
+  width: 93.5%;
+  padding: 0 0 10px 0;
+  background-color: transparent;
+  margin: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .flickity-page-dots {
+  width: 98%;
+  position: absolute;
+  padding: 0;
+  background-color: transparent;
+  margin: -30px 0 0 0;
+  }
+  }
+  
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+ .container5 {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -564,6 +785,7 @@ margin: 0;
   border-radius: 0 0 2px 2px;
 }
 
+
 .container8 {
 position: relative;
 display: inline-block;
@@ -583,60 +805,8 @@ position: absolute;
   border-radius: 0 0 2px 2px;
 }
      
+     
 hr.style-one { border: 0; height: 2px; width:30%; background-color: #fff; padding: 0; margin:0 0 15px 0;
-}
-
-
-/* Slideshow container */
-.slideshow-container99 {
-  background: #b3b300;
-}
-
-/* Slides */
-.mySlides99 {
-  display: none;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;  
-  padding: 5px 10px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 3px; 
-}
-
-
-.prev:hover, .next:hover {
-  background-color: rgba(255, 255, 255,0.8);
-  color: #b3b300;
-}
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #b3b300;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 8px;
-  width: 8px;
-  margin: 0 2px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #80ffff;
 }
 
 </style>
@@ -745,7 +915,7 @@ Join the SG MarketPlace</p>
 <div class="container-fluid1" style="width:100%;background-color:transparent;padding:0;margin:0;">
 <div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
 <div class="column w3-card" style="background-color:#b3b300;padding:93px 0;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.5%;"><br>
+<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.4%;"><br>
 <p class="topic3e">
 SG MarketPlace</p>
 
@@ -758,11 +928,13 @@ SG MarketPlace</p>
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
 <div class="w3-third" style="background-color:transparent;margin:0;padding:0;">
-<div class="column" style="background-color:transparent;padding:20px 0;margin:0;">
+<div class="column" style="background-color:transparent;padding:20px 0 0 0;margin:0;">
 <p class="topic3e">
 SG MarketPlace</p>
 
 <p class="topic3f">New Ways to Grow Your Small Business</p>
+
+<p align="center"><a class="w3-button w3-hover-shadow" href="https://spiralgroup.github.io/themonster/mobile-slider_1.html" style="background-color:#b3b300;border-radius:2px;font-family:roboto condensed;font-size:15px;text-align:center;letter-spacing:1px;color:#fff;text-shadow:0 0 1px #ccc;text-decoration:none;padding:10px 30px;margin:10px 0;">Learn More</a></p>
 </div>
 </div>
 </div>
@@ -852,7 +1024,7 @@ We develop your Seller Pages within 7 business days. Dont have a website? Your s
 <div class="container-fluid1" style="width:100%;background-color:transparent;padding:0;margin:0;">
 <div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
 <div class="column w3-card" style="background-color:#b3b300;padding:93px 0;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.5%;"><br>
+<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.4%;"><br>
 <p class="topic3e">Profit-Driven Marketing</p>
 
 <p class="topic3f">Reach More Local Customers</p>
@@ -864,10 +1036,12 @@ We develop your Seller Pages within 7 business days. Dont have a website? Your s
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
 <div class="w3-third" style="background-color:transparent;margin:0;padding:0;">
-<div class="column" style="background-color:transparent;padding:20px 0;margin:0;">
+<div class="column" style="background-color:transparent;padding:20px 0 0 0;margin:0;">
 <p class="topic3e">Profit-Driven Marketing</p>
 
 <p class="topic3f">Reach More Local Customers</p>
+
+<p align="center"><a class="w3-button w3-hover-shadow" href="https://spiralgroup.github.io/themonster/mobile-slider_1.html" style="background-color:#b3b300;border-radius:2px;font-family:roboto condensed;font-size:15px;text-align:center;letter-spacing:1px;color:#fff;text-shadow:0 0 1px #ccc;text-decoration:none;padding:10px 30px;margin:10px 0;">Learn More</a></p>
 </div>
 </div>
 </div>
@@ -934,7 +1108,7 @@ Join the SG MarketPlace and we'll register your small business in the top electr
 <div class="container-fluid1" style="width:100%;background-color:transparent;padding:0;margin:0;">
 <div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
 <div class="column w3-card" style="background-color:#b3b300;padding:93px 0;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.5%;"><br>
+<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.4%;"><br>
 <p class="topic3e">From Our Partners</p>
 
 <p class="topic3f">Delivering Exceptional Customer Experiences</p>
@@ -946,10 +1120,12 @@ Join the SG MarketPlace and we'll register your small business in the top electr
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
 <div class="w3-third" style="background-color:transparent;margin:0;padding:0;">
-<div class="column" style="background-color:transparent;padding:20px 0;margin:0;">
+<div class="column" style="background-color:transparent;padding:20px 0 0 0;margin:0;">
 <p class="topic3e">From Our Partners</p>
 
 <p class="topic3f">Delivering Exceptional Customer Experiences</p>
+
+<p align="center"><a class="w3-button w3-hover-shadow" href="https://spiralgroup.github.io/themonster/mobile-slider_1.html" style="background-color:#b3b300;border-radius:2px;font-family:roboto condensed;font-size:15px;text-align:center;letter-spacing:1px;color:#fff;text-shadow:0 0 1px #ccc;text-decoration:none;padding:10px 30px;margin:10px 0;">Learn More</a></p>
 </div>
 </div>
 </div>
@@ -1006,96 +1182,12 @@ Manage incoming orders via JotForm. Ensure excellent service with your very own 
 </div>
 </div>
 
-
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:100px 0;">
-<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
-<div class="w3-third" style="background-color:transparent;margin:0;padding:0;">
-<div class="column" style="background-color:transparent;padding:20px 0;margin:0;">
-<p class="topic4b">Jotform&reg;</p>
-<p class="topic3a">Manage incoming orders & more.</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic1">
-Manage incoming orders via JotForm. Ensure excellent service with your very own contact form. Customers can submit feedback, ask questions, and request price quotes. Each customer contact</p>
-
-<p class="topic3b">Learn more about Jotform&reg;.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container w3-panel" style="width:100%;padding:0 14px;margin:40px 0 20px 0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-container" style="width:100%;background-color:transparent;padding:0;margin:0;">
-<div class="w3-container" style="width:100%;padding:0px;margin:0;">
-<div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
-<div class="w3-third" style="margin:0;padding:0;border-radius:3px;">
-<div class="column w3-card" style="background-color:#b3b300;padding:93px 0;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/bars.svg" style="width:7.5%;"><br>
-<p class="topic3e">From Our Partners</p>
-
-<p class="topic3f">Delivering Exceptional Customer Experiences</p>
-</div>
-</div>
-
-<div class="w3-twothird" style="margin:0;padding:0;border-radius:3px;">
-<div class="column w3-card" style="background-color:#b3b300;padding:0;margin:4px;border-radius:2px;">
-<div class="slideshow-container99" style="width:100%;">
-
-<div class="mySlides99">
-<p class="topic1">
-22and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
-
-<p class="topic3b">Learn more about Schedulicity&reg;.</p>
-</div>
-
-<div class="mySlides99">
-<p class="topic1">
-33and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
-
-<p class="topic3b">Learn more about Schedulicity&reg;.</p>
-</div>
-
-<div class="mySlides99">
-<p class="topic1">
-44and your clients. Keep full control of your calendar and your clients. Keep full control of your calendar with customizable policies for booking, deposits, etc. policies for booking, deposits, etc.</p>
-
-<p class="topic3b">Learn more about Schedulicity&reg;.</p>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)" style="float:left;">❮</a>
-<a class="next" onclick="plusSlides(1)" style="float:right;">❯</a>
-</div>
-
-<div class="dot-container">
-<span class="dot" onclick="currentSlide(1)"></span> 
-<span class="dot" onclick="currentSlide(2)"></span> 
-<span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 <center>
 <div id="get-started" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:70px 0 10px 0;">
 <p class="topic3c" style="margin:0;padding:0;">Select Local Marketing by Business Type</p>
 </div>
 </div>
-
-<p class="topic2"><a href="https://spiralgroup.github.io/themonster/mobile-slider_1.html">learn more</a></p>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
@@ -1216,7 +1308,7 @@ this easy or affordable.</p>
 
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
 <p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> THE COMPANY</p>
-<p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html">About Us</a></p>
+<p style="margin-top:15px;"><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">About Us</a></p>
 <p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Community Outreach</a></p>
 <p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Free Consultation</a></p>
 <p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Join Our Team</a></p>
@@ -1240,36 +1332,6 @@ this easy or affordable.</p>
 </div>
 </div>
 </div>
-
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides99");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
