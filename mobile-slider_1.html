@@ -19,6 +19,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 
 <style>
@@ -251,22 +255,23 @@ counter-increment: gallery-cell;
 
 .flickity-page-dots {
   position: relative;
-  width: 93.5%;
+  width: 100%;
   padding: 0;
   background-color: transparent;
-  padding: 0 0 15px 0;
+  padding: 5px 0;
+  margin: 10px 0 0 0;
   }
     
 .flickity-rtl .flickity-page-dots { direction: rtl; }
 
 .flickity-page-dots .dot {
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   margin: auto 7px;
   background-color: #fff;
-  border-radius: 50%;
-  opacity: 0.25;
+  border-radius: 60%;
+  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -286,9 +291,9 @@ SG MarketPlace</p>
 <p class="topic3f">New Ways to Grow Your Small Business</p>
 </div>
 
-<div class="column w3-card-2" style="background-color:#b3b300;margin:0;padding:0;border-radius:0 0 2px 2px;border:2px solid #666;">
+<div class="column w3-card-2" style="background-color:#b3b300;margin:0;padding:0;border-radius:0 0 2px 2px;">
 <div class="carousel" data-flickity='{ "autoPlay": false }'>
-<div class="carousel-cell" style="margin:0;padding:0;border:2px solid #666;">
+<div class="carousel-cell" style="margin:0;padding:0;">
 <p class="topic4b">Sell Your Products & Services</p>
 <p class="topic3a">No need to establish a payment gateway.</p>
 
@@ -296,11 +301,11 @@ SG MarketPlace</p>
 Discover how our online marketing solutions can help grow your small business. Your space in our marketplace puts your products at the fingertips of active, local shoppers.</p>
 
 <p class="topic1">
-Showcase 12 of your best items and manage incoming orders via JotForm. There's no need to establish a payment gateway.</p>
+Showcase 12 of your best items and manage incoming orders via JotForm. No need to enable a payment gateway.</p>
 
 <p class="topic3b">We process all SG MarketPlace transactions.</p></div>
 
-<div class="carousel-cell" style="margin:0;padding:0;border:2px solid #666;">
+<div class="carousel-cell" style="margin:0;padding:0;">
 <p class="topic4b">Create Some Amazing Deals</p>
 <p class="topic3a">Get our Amazing Deals Guide when you join.</p>
 
@@ -312,7 +317,7 @@ Customers can download & print coupons, take advantage of your discount codes wh
 
 <p class="topic3b">Get ready to create some amazing deals.</p></div>
 
-<div class="carousel-cell" style="margin:0;padding:0;border:2px solid #666;">
+<div class="carousel-cell" style="margin:0;padding:0;">
 <p class="topic4b">No Software &#124; No Coding</p>
 <p class="topic3a">We do all the work.</p>
 
@@ -324,24 +329,24 @@ There's no need to learn code or download any software. We're happy to create yo
 
 <p class="topic3b">Start gathering all your business information.</p></div>
 
-<div class="carousel-cell" style="margin:0;padding:0;border:2px solid #666;">
+<div class="carousel-cell" style="margin:0;padding:0;">
 <p class="topic4b">Bonus SG MarketPlace Features</p>
 <p class="topic3a">Yes, there's a lot more.</p>
 
 <p class="topic1">
-Unique Page URLs. Social Media Follow Icons. Business Hours & Contact Information. Google Map. "About" & "Meet Our Team" Sections. "Careers" Page. SEO Optimization.</p>
+Unique Page URLs. Social Media Follow Icons. Business Hours & Contact Information. Google Map. SEO Optimization.</p>
 
 <p class="topic1">
 We develop your content within 7 business days. Dont have a website? Your space in our marketplace can serve as a mobile-friendly, fully-equipped, starter website.</p>
 
 <p class="topic3b">Let's get started.</p></div>
 
-<div class="carousel-cell" style="margin:0;padding:0;border:2px solid #666;">
+<div class="carousel-cell" style="margin:0;padding:0;">
 <p class="topic4b">Premium SG MarketPlace Features</p>
 <p class="topic3a">Yes, there's a lot more.</p>
 
 <p class="topic1">
-Unique Page URLs. Social Media Follow Icons. Business Hours & Contact Information. Google Map. "About" & "Meet Our Team" Sections. "Careers" Page. SEO Optimization.</p>
+Unique Page URLs. Social Media Follow Icons. Business Hours & Contact Information. Google Map. SEO Optimization.</p>
 
 <p class="topic1">
 We develop your content within 7 business days. Dont have a website? Your space in our marketplace can serve as a mobile-friendly, fully-equipped, starter website.</p>
@@ -352,15 +357,23 @@ We develop your content within 7 business days. Dont have a website? Your space 
 </div>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-<div class="w3-row" style="width:100%;margin:10px 0 0 0;padding:0;">
-<div class="w3-third" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;border-radius:2px;border:none;font-family:roboto condensed;font-size:18px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:12px 20px;margin:10px 0;"><a href="https://www.spiralgroup.org" style="text-decoration:none;">Get Started</a></button></div>
+next
+<div class="w3-row-padding" style="width:100%;margin:10px 0 0 0;">
+<div class="w3-third" style="margin:0;">
+<p style="background-color:#fff;border-radius:2px;border:none;font-family:roboto condensed;font-size:18px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:12px 20px;margin:10px 0;"><a href="https://www.spiralgroup.org" style="text-decoration:none;">SG MarketPlace</a></p>
 
-<div class="w3-third" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;border-radius:2px;border:none;font-family:roboto condensed;font-size:18px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:12px 20px;margin:10px 0;"><a href="https://www.spiralgroup.org" style="text-decoration:none;">Get Started</a></button></div>
+<p>New Ways to Grow Your Small Business</p></div>
 
-<div class="w3-third" style="margin:0;padding:0;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="background-color:#fff;border-radius:2px;border:none;font-family:roboto condensed;font-size:18px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:12px 20px;margin:10px 0;"><a href="https://www.spiralgroup.org" style="text-decoration:none;">Get Started</a></button></div>
+<div class="w3-third" style="margin:0;">
+<p style="background-color:#fff;border-radius:2px;border:none;font-family:roboto condensed;font-size:18px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:12px 20px;margin:10px 0;"><a href="https://www.spiralgroup.org" style="text-decoration:none;">Profit-Driven Marketing</a></p>
+
+<p>Reach More Local Customers</p></div>
+
+<div class="w3-third" style="margin:0;">
+<p style="background-color:#fff;border-radius:2px;border:none;font-family:roboto condensed;font-size:18px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:12px 20px;margin:10px 0;"><a href="https://www.spiralgroup.org" style="text-decoration:none;">From Our Partners</a></p>
+
+<p>Delivering Exceptional Customer Experiences</p>
+</div>
 </div>
 </div>
 </body>
