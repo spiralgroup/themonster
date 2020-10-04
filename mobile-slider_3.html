@@ -18,7 +18,35 @@
     <link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">
       <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/cover/cover.css" rel="stylesheet">
+    
+    
+    <style>
+    .pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  font-family: khand medium;
+  float: left;
+  padding: 6px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border-radius: 2px;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+    </style>
+    
   </head>
+  
+  
   <body class="text-center">
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
@@ -45,6 +73,20 @@
         <div class="inner">
           <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
+        
+        
+        
+        <center>
+<div class="w3-container w3-panel" style="width:100%;padding:0 0 15px 0;margin:0;">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+</div>
       </footer>
     </div>
 
