@@ -1,26 +1,112 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Carousel Template for Bootstrap</title>
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 
-    <title>Carousel Template for Bootstrap</title>
+<style>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+body, html {
+    background-color: #f2f2f2;
+ }
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+.topic1 {
+font-family: Yanone Kaffeesatz;
+font-size: 18px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #b3b300;
+padding: 0 10px;
+margin: 0 0 12px 0;
+}
 
-    <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">
-  </head>
+.topic3a {
+font-family: Yanone Kaffeesatz;
+font-size: 15.5px;
+color: #80ffff;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #b3b300;
+text-align: center;
+padding: 0;
+margin: 0 0 15px 0;
+}
+ 
+.topic3b {
+font-family: Yanone Kaffeesatz;
+font-size: 15.5px;
+color: #80ffff;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #b3b300;
+text-align: center;
+padding: 0;
+margin: 15px 0 0 0;
+}
+
+ .topic3e {
+font-family: Yanone Kaffeesatz;
+font-size: 34.5px;
+color: #b3b300;
+text-shadow: 0 0 1px #fff;
+letter-spacing: 1px;
+text-align: center;
+padding: 0;
+margin: 0 0 -10px 0;
+}
+ 
+.topic3f {
+font-family: Yanone Kaffeesatz;
+font-size: 17px;
+color: #b3b300;
+text-shadow: 0 0 1px #fff;
+letter-spacing: 1px;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0 0 2px 0;
+}
+
+h1 {
+font-family: Yanone Kaffeesatz;
+font-size: 34px;
+color: #fff;
+text-align: center;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #b3b300;
+padding: 10px 0 0 0;
+margin: 0 0 -7px 0;
+}
+  .material-icons {
+   color: #fff !important;
+   text-shadow: 1px 1px 1px #ccc;
+   font-size: 25px;
+   margin: auto;
+   vertical-align: middle;
+   padding: 0;
+   }
+   
+   @media screen and (min-width: 300px) {
+   .arrow {
+   display: none !important;
+   }
+   }
+  </style>
+
+
+</head>
   <body>
 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <header class="w3-blue" style="margin-bottom:-20px;">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
         <a class="navbar-brand" href="#">Carousel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,14 +119,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+                      </ul>
         </div>
       </nav>
     </header>
@@ -54,30 +133,37 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-            <div class="container">
+          <div class="carousel-item active" style="background-color:#b3b300;">
+                       <div class="container" style="padding:0;margin:0 auto;">
               <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption text-right">
+                              <h1>Sell Your Products & Services</h1>
+<p class="topic3a">No need to establish a payment gateway.</p>
+
+<p class="topic1">
+Discover how our online marketing solutions can help grow your small business. Your space in our marketplace puts your products at the fingertips of active, local shoppers.</p>
+
+<p class="topic1">
+Showcase 12 of your best items and manage incoming orders via JotForm. No need to establish a payment gateway.</p>
+
+<p class="topic3b">We process all SG MarketPlace transactions.</p>
+</div>
+</div>
+</div>
+
+<div class="carousel-item w3-blue">
+<div class="container">
+<div class="carousel-caption">
+<h1>Another example headline.</h1>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+               
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+
+<div class="carousel-item w3-blue">
+<div class="container">
+<div class="carousel-caption text-right">
                 <h1>One more for good measure.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
@@ -185,6 +271,6 @@
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
   </body>
 </html>
