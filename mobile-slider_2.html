@@ -1,35 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+<title>Bootstrap Example</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Carousel Template for Bootstrap</title>
-<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
-<link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
+<meta name="google-site-verification" content="BJIZwukE82Cn1letaid7scbh6dUWQVJGT4j4Wq9VgR4" />
+<meta name="yandex-verification" content="1cf8ce3cbc019d20" />
+<meta name="description" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month.">
+<meta name="Keywords" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month. on the bus ... on the plane ... on the train ... on the floor ... in the bed ... in the closet ... on the porch ... in the dark ... in the light ... i do it every where - coding." />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month." />
+<meta property="og:description" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month." />
+<meta property="og:url" content="https://spiralgroup.org" />
+<meta property="og:site_name" content="SpiralGroup.org" />
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 
 <style>
-
 body, html {
-    background-color: #f2f2f2;
+    max-width: 1200px !important;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #b3b300;
  }
 
 .topic1 {
 font-family: Yanone Kaffeesatz;
-font-size: 18px;
+font-size: 22px;
 color: #fff;
 text-align: center;
 letter-spacing: 1px;
 text-shadow: 0 0 1px #b3b300;
-padding: 0 10px;
-margin: 0 0 12px 0;
+padding: 0 20px;
+margin: 0 0 15px 0;
 }
 
+
+.topic2c {
+font-family: Yanone Kaffeesatz;
+font-size: 52px;
+color: #b3b300;
+text-align: center;
+letter-spacing: 1px;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2c {
+   font-size: 28px;
+   padding: 0;
+  }
+  }
+  
+.topic3 {
+font-family: open sans condensed;
+font-size: 18px;
+color: #ccc;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #222;
+margin: 10px 0 0 0;
+padding: 0;
+}
+ 
 .topic3a {
 font-family: Yanone Kaffeesatz;
 font-size: 15.5px;
@@ -40,7 +83,15 @@ text-align: center;
 padding: 0;
 margin: 0 0 15px 0;
 }
- 
+
+@media screen and (max-width: 768px) {
+  .topic3a {
+  font-size: 15px;
+  padding: 0;
+   margin: 0 0 10px 0;
+  }
+  }
+  
 .topic3b {
 font-family: Yanone Kaffeesatz;
 font-size: 15.5px;
@@ -49,94 +100,169 @@ letter-spacing: 1px;
 text-shadow: 0 0 1px #b3b300;
 text-align: center;
 padding: 0;
-margin: 15px 0 0 0;
+margin: 20px 0 8px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .topic3b {
+  font-size: 15px;
+   margin: 20px 0 40px 0;
+  }
+  }
+    
+  .topic3c {
+font-family: Yanone Kaffeesatz;
+font-size: 25px;
+color: #b3b300;
+text-align: center;
+letter-spacing: 1px;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3c {
+   font-size: 22px;
+   padding: 0 10px;
+  }
+  }
+   
+     .topic3d {
+font-family: Yanone Kaffeesatz;
+font-size: 19px;
+color: #b3b300;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3d {
+   font-size: 22px;
+  }
+  }
+  
  .topic3e {
 font-family: Yanone Kaffeesatz;
-font-size: 34.5px;
-color: #b3b300;
-text-shadow: 0 0 1px #fff;
+font-size: 35px;
+color: #80ffff;
+text-shadow: 0 0 1px #b3b300;
 letter-spacing: 1px;
 text-align: center;
 padding: 0;
-margin: 0 0 -10px 0;
+margin: 10px 0 0 0;
 }
- 
+
+@media screen and (max-width: 768px) {
+  .topic3e {
+   font-size: 32px;
+   color: #b3b300;
+   text-shadow: 0 0 1px #fff;
+   letter-spacing: 1px;
+   padding: 0;
+   margin: 0;
+  }
+  }
+  
 .topic3f {
 font-family: Yanone Kaffeesatz;
-font-size: 17px;
-color: #b3b300;
-text-shadow: 0 0 1px #fff;
+font-size: 18px;
+color: #fff;
+text-shadow: 0 0 1px #b3b300;
 letter-spacing: 1px;
 text-align: center;
 text-decoration: none;
 padding: 0;
-margin: 0 0 2px 0;
+margin: 0 0 6px 0;
 }
 
-h1 {
+@media screen and (max-width: 768px) {
+.topic3f {
+font-size: 14px;
+color: #b3b300;
+text-shadow: 0 0 1px #fff;
+padding: 0;
+margin: 0;
+  }
+  }
+   
+.topic4b {
 font-family: Yanone Kaffeesatz;
-font-size: 34px;
+font-size: 27px;
 color: #fff;
 text-align: center;
 letter-spacing: 1px;
 text-shadow: 0 0 1px #b3b300;
-padding: 10px 0 0 0;
-margin: 0 0 -7px 0;
+padding: 8px 0 0 0;
+margin: 0;
 }
-  .material-icons {
-   color: #fff !important;
-   text-shadow: 1px 1px 1px #ccc;
-   font-size: 25px;
-   margin: auto;
-   vertical-align: middle;
-   padding: 0;
-   }
-   
-   @media screen and (min-width: 300px) {
-   .arrow {
-   display: none !important;
-   }
-   }
-  </style>
 
+@media screen and (max-width: 768px) {
+  .topic4b {
+  font-size: 23px;
+    }
+  }
 
+.topic4c {
+font-family: roboto condensed;
+font-size: 30px;
+color: #fff;
+text-align: center;
+text-shadow: 0 0 1px #ccc;
+padding: 10px 0 0 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic4c {
+  font-size: 24px;
+  padding: 5px 0 0 0;
+  }
+  }
+  
+  .topic4d {
+font-family: roboto condensed;
+font-size: 20.5px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+padding: 10px 0 0 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic4d {
+  font-size: 16px;
+  }
+  }
+  
+.carousel-inner {
+width: 100%;
+height: 100%;
+padding: 20px 0;
+margin: 0 auto;
+background-color: #b3b300;
+  }
+
+</style>
 </head>
-  <body>
+<body>
 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
-        <a class="navbar-brand" href="#">Carousel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-                      </ul>
-        </div>
-      </nav>
-    </header>
+<div id="demo" class="carousel slide w3-green" data-ride="carousel" style="width:100%;padding:3px;">
+<ul class="carousel-indicators">
+<li data-target="#demo" data-slide-to="0" class="active"></li>
+<li data-target="#demo" data-slide-to="1"></li>
+<li data-target="#demo" data-slide-to="2"></li>
+<li data-target="#demo" data-slide-to="3"></li>
+</ul>
 
-    <main role="main">
-
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active" style="background-color:#b3b300;">
-                       <div class="container" style="padding:0;margin:0 auto;">
-              <div class="carousel-caption text-left">
-                              <h1>Sell Your Products & Services</h1>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<p class="topic4b">Sell Your Products & Services</p>
 <p class="topic3a">No need to establish a payment gateway.</p>
 
 <p class="topic1">
@@ -146,131 +272,41 @@ Discover how our online marketing solutions can help grow your small business. Y
 Showcase 12 of your best items and manage incoming orders via JotForm. No need to establish a payment gateway.</p>
 
 <p class="topic3b">We process all SG MarketPlace transactions.</p>
+    </div>
+    <div class="carousel-item">
+      <p class="topic4b">Sell Your Products & Services</p>
+<p class="topic3a">No need to establish a payment gateway.</p>
+
+<p class="topic1">
+Discover how our online marketing solutions can help grow your small business. Your space in our marketplace puts your products at the fingertips of active, local shoppers.</p>
+
+<p class="topic1">
+Showcase 12 of your best items and manage incoming orders via JotForm. No need to establish a payment gateway.</p>
+
+<p class="topic3b">We process all SG MarketPlace transactions.</p>
+    </div>
+    <div class="carousel-item">
+   <p class="topic4b">Sell Your Products & Services</p>
+<p class="topic3a">No need to establish a payment gateway.</p>
+
+<p class="topic1">
+Discover how our online marketing solutions can help grow your small business. Your space in our marketplace puts your products at the fingertips of active, local shoppers.</p>
+
+<p class="topic1">
+Showcase 12 of your best items and manage incoming orders via JotForm. No need to establish a payment gateway.</p>
+
+<p class="topic3b">We process all SG MarketPlace transactions.</p>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
-</div>
-</div>
 
-<div class="carousel-item w3-blue">
-<div class="container">
-<div class="carousel-caption">
-<h1>Another example headline.</h1>
-<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-               
-<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-</div>
-</div>
-</div>
-
-<div class="carousel-item w3-blue">
-<div class="container">
-<div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-      </div><!-- /.container -->
-
-
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-    </main>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
-  </body>
+</body>
 </html>
