@@ -31,7 +31,7 @@ max-width: 1200px;
 height: 100%;
 padding: 0;
 margin: 0;
-background-color: #b3b300;
+background-color: #f2f2f2;
 }
 
 @media screen and (max-width: 768px) {
@@ -39,11 +39,38 @@ body, html {
 max-width: 1200px;
 height: 100%;
 padding: 0;
-background-color: #b3b300;
 margin: 0 auto;
 }
   }
 
+.topnav1 {
+margin: 0;
+padding: 20px 0 0 0;
+}
+
+.topnav1 a {
+  font-family: Yanone Kaffeesatz;
+  color: #fff;
+  padding: 5px 0 0 0;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #b3b300;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav1 a {
+  text-shadow: 0 0 1px #fff;
+  }
+  }
+  
+.topnav1 a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  padding: 0 0 2px 0;
+  transition: 0.3s;
+}
 .topic1 {
 font-family: Yanone Kaffeesatz;
 font-size: 18px;
@@ -74,9 +101,19 @@ letter-spacing: 1px;
 text-shadow: 0 0 1px #b3b300;
 text-align: center;
 padding: 0;
-margin: 15px 0 0 0;
+margin: 15px 0 5px 0;
 }
 
+ .topic3c {
+font-family: Yanone Kaffeesatz;
+font-size: 25px;
+color: #b3b300;
+text-align: center;
+letter-spacing: 1px;
+margin: 0;
+padding: 0 10px;
+}
+   
  .topic3e {
 font-family: Yanone Kaffeesatz;
 font-size: 34.5px;
@@ -111,7 +148,7 @@ padding: 10px 0 0 0;
 margin: 0 0 -7px 0;
 }
   .material-icons {
-   color: #fff !important;
+   color: #b3b300 !important;
    text-shadow: 1px 1px 1px #ccc;
    font-size: 25px;
    margin: auto;
@@ -257,19 +294,19 @@ counter-increment: gallery-cell;
   width: 100%;
   padding: 0;
   background-color: transparent;
-  padding: 5px 0;
-  margin: 10px 0;
+  padding: 5px 0 10px 0;
+  margin: 0 0 20px 0;
   }
     
 .flickity-rtl .flickity-page-dots { direction: rtl; }
 
 .flickity-page-dots .dot {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 35px;
+  height: 8px;
   margin: auto 7px;
   background-color: #fff;
-  border-radius: 60%;
+  border-radius: 2px;
   opacity: 0.5;
   cursor: pointer;
 }
@@ -278,13 +315,28 @@ counter-increment: gallery-cell;
   opacity: 1;
 }
 
+.container6 {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+ }
+
+.container6 img {vertical-align: middle;}
+
+.container6 .content6 {
+  position: absolute;
+  bottom: 50px;
+  background: transparent;
+  width: 100%;
+  padding: 3px;
+  border-radius: 0 0 2px 2px;
+}
 </style>
 </head>
-
 <center>
 <body>
 <div class="w3-container" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;padding:10px 0 0 0;margin:0;">
 <p class="topic3e">
 SG MarketPlace</p>
 
@@ -322,10 +374,10 @@ Customers can download & print coupons, take advantage of your discount codes wh
 <p class="topic3a">We do all the work.</p>
 
 <p class="topic1">
-Start selling your products  & services within 7 business days. Just create your account. When finished, we'll take it from there.</p>
+Start selling your products  & services within 7 business days. Just create your account and we'll take it from there.</p>
 
 <p class="topic1">
-There's no need to learn code or download any software. We're happy to create your space in our marketplace.</p>
+There's no need to learn how to code during a 14-day free trial or download any software. We're happy to create your space in our marketplace.</p>
 
 <p class="topic3b">Start gathering all your business information.</p></div>
 
@@ -356,8 +408,8 @@ We develop your content within 7 business days. Dont have a website? Your space 
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="background-color:#80ffff;width:100%;padding:0 10px;margin:0;">
-<p style="font-family:Yanone Kaffeesatz;color:#b3b300;font-size:25px;letter-spacing:1px;text-shadow:0 0 1px #b3b300;margin:15px 0 0 0;padding:0;">Up Next</p>
+<div class="w3-container w3-panel" style="width:100%;padding:0 15px;margin:15px 0 0 0;">
+<p class="topic3c">Up Next</p>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;margin:0;padding:0;">
 <div class="w3-row" style="background-color:transparent;width:100%;margin:0;border-radius:3px;padding:0;">
@@ -366,6 +418,8 @@ We develop your content within 7 business days. Dont have a website? Your space 
 <p class="topic3e"><a href="https://spiralgroup.github.io/themonster/mobile-slider_2.html" style="font-size:30px;text-decoration:none;color:#b3b300;padding:0;margin:0;">Profit-Driven Marketing</a></p>
 
 <p class="topic3f">Reach More Local Customers</p>
+
+<p align="center"><a class="w3-button w3-hover-shadow" href="https://spiralgroup.github.io/themonster/mobile-slider_2.html" style="background-color:#b3b300;border-radius:2px;font-family:roboto condensed;font-size:15px;text-align:center;letter-spacing:1px;color:#fff;text-shadow:0 0 1px #ccc;text-decoration:none;padding:10px 30px;margin:10px 0 0 0;">Learn More</a></p>
 </div>
 </div>
 
@@ -374,10 +428,179 @@ We develop your content within 7 business days. Dont have a website? Your space 
 <p class="topic3e"><a href="https://spiralgroup.github.io/themonster/mobile-slider_3.html" style="font-size:30px;text-decoration:none;color:#b3b300;padding:0;margin:0;">From Our Partners</a></p>
 
 <p class="topic3f">Delivering Exceptional Customer Experiences</p>
+
+<p align="center"><a class="w3-button w3-hover-shadow" href="https://spiralgroup.github.io/themonster/mobile-slider_3.html" style="background-color:#b3b300;border-radius:2px;font-family:roboto condensed;font-size:15px;text-align:center;letter-spacing:1px;color:#fff;text-shadow:0 0 1px #ccc;text-decoration:none;padding:10px 30px;margin:10px 0 0 0;">Learn More</a></p>
 </div>
 </div>
 </div>
 </div>
 </div>
+</div>
+
+<center>
+<div id="get-started" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:70px 0 10px 0;">
+<p class="topic3c" style="margin:0;padding:0;">Select Local Marketing by Business Type</p>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.95;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.95;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Beauty & Health</a></button>
+</div>
+</div>
+</div>
+
+
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.95;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Cultural Activities & Events</a></button>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.95;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Home & Auto Services</a></button>
+</div>
+</div>
+</div>
+
+
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.95;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Physical Goods</a></button>
+</div>
+</div>
+</div>
+
+
+<div class="w3-third" style="margin:0 0 30px 0;">
+<div class="container6">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png"  style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content6" style="padding:20px 15px;">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0;padding:30px 0;border:none;border-radius:2px;opacity:0.95;">
+
+<a class="topic3c" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Spiritual Growth</a></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 10px;margin:0;">
+<div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
+<div class="w3-threethird" style="margin:0 0 20px 0;">
+<p class="topic3c" style="margin:0;padding:0;">
+Online marketing has never been<br>
+this easy or affordable.</p>
+
+<p align="center"><a class="w3-button w3-hover-shadow" href="#get-started" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 30px;margin:10px 0 80px 0;">Get Started</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
+<div class="container w3-panel w3-card" style="background-color:#b3b300;width:100%;padding:4px;border-radius:3px 3px 0 0;margin:0;">
+
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
+<p align="center" style="font-family:Yanone Kaffeesatz;font-size:28px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0;margin:10px 0 0 0;">www.SpiralGroup.org</p>
+
+<div class="sharethis-inline-share-buttons" style="padding:0;margin:10px 0 30px 0;">
+</div>
+</div>
+
+<div class="row-padding" style="background-color:#b3b300;margin:0 0 10px 0;">
+<div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0;">
+<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> MARKETING BY BUSINESS TYPE</p>
+<p style="color:#fff;text-decoration:none;text-shadow:0 0 1px #b3b300;margin-top:15px;"><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Beauty & Health</a></p>
+<p style="color:#fff;text-decoration:none;text-shadow:0 0 1px #b3b300;"><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Cultural Activities & Events</a></p>
+<p style="color:#fff;text-decoration:none;text-shadow:0 0 1px #b3b300;"><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Food & Drink</a></p>
+<p style="color:#fff;text-decoration:none;text-shadow:0 0 1px #b3b300;"><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Home & Auto Services</a></p>
+<p style="color:#fff;text-decoration:none;text-shadow:0 0 1px #b3b300;"><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Physical Goods</a></p>
+<p style="color:#fff;text-decoration:none;text-shadow:0 0 1px #b3b300;margin-bottom:15px;"><a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Spiritual Growth</a></p>
+</div>
+
+<div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
+<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> THE COMPANY</p>
+<p style="margin-top:15px;"><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">About Us</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Community Outreach</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Free Consultation</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Join Our Team</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Get In Touch</a></p>
+<p style="margin-bottom:10px;"><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Subscribe</a></p>
+</div>
+
+<div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
+<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> RESOURCES</p>
+<p style="margin-top:15px;"><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Customer Success</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Community Partners Connection</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Small Business Resources</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">HR Compliance</a></p>
+<p><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Common Health Code Violations</a></p>
+<p style="margin-bottom:10px;"><a href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank">Mock Health Inspection</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
+<script type="text/javascript">
+var sc_project=12123020; 
+var sc_invisible=1; 
+var sc_security="200cda4a"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12123020/0/200cda4a/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
 </body>
 </html>
