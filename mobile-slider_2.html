@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Bootstrap Example</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
-<meta name="google-site-verification" content="BJIZwukE82Cn1letaid7scbh6dUWQVJGT4j4Wq9VgR4" />
-<meta name="yandex-verification" content="1cf8ce3cbc019d20" />
-<meta name="description" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month.">
-<meta name="Keywords" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month. on the bus ... on the plane ... on the train ... on the floor ... in the bed ... in the closet ... on the porch ... in the dark ... in the light ... i do it every where - coding." />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month." />
-<meta property="og:description" content="Local marketing from SpiralGroup can help you reach more customers. Join the SG MarketPlace for only $25 per month." />
-<meta property="og:url" content="https://spiralgroup.org" />
-<meta property="og:site_name" content="SpiralGroup.org" />
-<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
-
-<style>
-body, html {
-    max-width: 1200px !important;
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dorsa|PT+Sans|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner {
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
     background-color: #b3b300;
- }
-
-.topic1 {
+  }
+  
+  .topic1 {
 font-family: Yanone Kaffeesatz;
 font-size: 22px;
 color: #fff;
@@ -240,28 +224,22 @@ margin: 0;
   }
   }
   
-.carousel-inner {
-width: 100%;
-height: 100%;
-padding: 20px 0;
-margin: 0 auto;
-background-color: #b3b300;
-  }
-
-</style>
+  </style>
 </head>
 <body>
 
-<div id="demo" class="carousel slide w3-green" data-ride="carousel" style="width:100%;padding:3px;">
-<ul class="carousel-indicators">
-<li data-target="#demo" data-slide-to="0" class="active"></li>
-<li data-target="#demo" data-slide-to="1"></li>
-<li data-target="#demo" data-slide-to="2"></li>
-<li data-target="#demo" data-slide-to="3"></li>
-</ul>
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-<div class="carousel-inner">
-<div class="carousel-item active">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+   <div class="carousel-item active">
 <p class="topic4b">Sell Your Products & Services</p>
 <p class="topic3a">No need to establish a payment gateway.</p>
 
@@ -297,6 +275,7 @@ Showcase 12 of your best items and manage incoming orders via JotForm. No need t
 
 <p class="topic3b">We process all SG MarketPlace transactions.</p>
     </div>
+  </div>
   </div>
   
   <!-- Left and right controls -->
