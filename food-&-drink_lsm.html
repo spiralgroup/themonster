@@ -63,7 +63,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
     $('.bca-premium').slick({
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -467,17 +467,29 @@ hr.style-two { border: 0; height: 4px; width:65%; background-color: #fff; paddin
  }
  
  .close {
- font-size: 28px;
-   color: dodgerblue;
-   text-shadow: 0 0 1px dodgerblue;
+ font-size: 58px;
+ color: #ffff97;
+ text-shadow: 0 0 1px #f1f1f1;
+ margin: 30px 10px;
+ cursor: pointer;
  opacity: 0.9;
- padding: 0 0 2px 0;
+}
+ 
+ .close1 {
+ font-family: Yanone Kaffeesatz;
+ font-size: 19px;
+ color: #b3b300;
+ letter-spacing: 1px;
+ text-shadow: 0 0 1px #f1f1f1;
+ align: center;
  margin: 0;
+ cursor: pointer;
 }
  
 @media screen and (max-width: 768px) {
   .close {
-  font-size: 17px;
+  font-size: 37px;
+  margin: 10px 0;
   }
   }
   
@@ -488,6 +500,9 @@ hr.style-two { border: 0; height: 4px; width:65%; background-color: #fff; paddin
  }
  }
 
+.w3-modal {
+background-color: #ff0099;
+}
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -727,35 +742,38 @@ Our Smart Promotion Ads can help generate awareness about your food & beverage b
 <center>
 <div class="modal fade" id="myModal3" role="dialog">
 <div class="modal-header" style="border:none;padding:0;margin:0;">
-<button class="close" data-dismiss="modal" style="button;font-family:roboto;font-size:65.5px;color:#666;padding:10px 5px;">&times;</button></div>
+</div>
 <div class="modal-dialog">
 
 <center>
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0 10px;margin:0;">
 <div class="w3-row" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
 <div class="alert" style="border:none;">
-<a href="#" class="close" data-dismiss="alert" aria-label="close"><i class='fab fa-adversal'></i></a>
+<a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-close"></i></a>
 <div class="column" style="background-color:#f5f5f5;padding:0;margin:0;">
-<a onclick="document.getElementById('id37').style.display='block'" style="cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/95466583-19c89780-0942-11eb-8730-d7beeee52a24.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<a onclick="document.getElementById('id37').style.display='block'" style="cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/95487667-3d97d780-095a-11eb-9b3b-250289062d32.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
 </div>
 </div>
 
 <div id="id37" class="w3-modal w3-animate-zoom" style="width:100%;">
 <span onclick="document.getElementById('id37').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
-<div class="w3-container" style="padding:0;margin:0 0 50px 0;">
-<div class="w3-modal-content w3-card-4" style="max-width:800px;padding:0;border-radius:3px;">
+<div class="w3-container" style="padding:0;margin:0;">
+<div class="w3-modal-content" style="max-width:800px;padding:5px;border-radius:3px;">
  
 <div class="w3-row" style="padding:0;width:100%;margin:0;">
-<div class="w3-threethird" style="margin:0;padding:0">
-<img src="https://user-images.githubusercontent.com/25410880/95468666-5dbc9c00-0944-11eb-81a8-1b4dea0b01c1.png" style="width:100%;padding:0;margin:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
+<img src="https://user-images.githubusercontent.com/25410880/95509912-c3c41600-097a-11eb-9de7-ce2928714095.png" style="width:100%;padding:0;margin:0;border-radius:2px 2px 3px 3px;">
+</div>
 </div>
 </div>
 
-<div class="w3-container" style="width:100%;padding:5px;margin:0;">
+<center>
+<div class="w3-container w3-white" style="width:74%;padding:5px 11px 5px 9px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="w3-threethird " style="margin:0;padding:0;">
-<div class="bca-premium" style="width:100%;margin:0;padding:0;">
-<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:0 3px;margin:0;border-radius:3px;">
+<div class="bca-premium" style="width:100%;margin:0;">
+<div class="slide" style="margin:0;border-radius:5px;">
+<img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:3px;margin:0;border-radius:5px;">
 
 <p class="topic4ca1">
 Anti-Aging Cream<br>
@@ -763,7 +781,8 @@ Anti-Aging Cream<br>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
 <a href="#" style="text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Shop Now</a></p></div>
 
-<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:0 3px;margin:0;border-radius:3px;">
+<div class="slide" style="margin:0;border-radius:5px;">
+<img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:3px;margin:0;border-radius:5px;">
 
 <p class="topic4ca1">
 Magical Playing Cards<br>
@@ -771,7 +790,8 @@ Magical Playing Cards<br>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
 <a href="#" style="text-decoration:none;">$9.99 <i class='fas fa-store-alt'></i> Shop Now</a></p></div>
 
-<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:0 3px;margin:0;border-radius:3px;">
+<div class="slide" style="margin:0;border-radius:5px;">
+<img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:3px;margin:0;border-radius:5px;">
 
 <p class="topic4ca1">
 Vibrating Pink Kitty<br>
@@ -779,7 +799,8 @@ Batteries not included</p>
 <p align="center" style="font-family:roboto;font-size:12px;color:dodgerblue;letter-spacing:.5px;margin:5px 0 0 0;">
 <a href="#" style="text-decoration:none;">$9.99 <i class='fas fa-store-alt'></i> Shop Now</a></p></div>
 
-<div class="slide"><img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:0 3px;margin:0;border-radius:3px;">
+<div class="slide" style="margin:0;border-radius:5px;">
+<img src="https://user-images.githubusercontent.com/25410880/91608726-b3f8f100-e93b-11ea-836a-61001193489c.png" style="width:100%;padding:3px;margin:0;border-radius:5px;">
 
 <p class="topic4ca1">
 Noise Reduction Headphones<br>
@@ -794,8 +815,8 @@ Free with any purchase</p>
 </div>
 </div>
 
-
-<div class="w3-row" style="width:100%;margin:0;border-radius:0 0 3px 3px;">
+<center>
+<div class="w3-row" style="width:100%;margin:60px 0;">
 <div class="w3-half" style="margin:0;padding:5px 0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/90668153-3800f980-e215-11ea-9da5-fc63df685688.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
@@ -813,15 +834,16 @@ When customers click on those items, they're taken to your SG MarketPlace seller
 <p align="center" style="font-family:Yanone Kaffeesatz;font-size:16px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;padding:0;margin:20px 0 10px 0;">
 Complimentary SPA's displayed for 30 days.</p>
 
-<p align="center"><a class="w3-button w3-hover-shadow" href="https://spiralgroup.github.io/themonster/branded-category-ad-example.html" target="_blank" style="background-color:#fff;border-radius:2px;font-family:Yanone Kaffeesatz;font-size:17px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #fff;text-decoration:none;padding:15px 25px;margin:10px 0 30px 0;">Learn About All Ad Products</a></p>
+<button class="close1 w3-button" data-dismiss="modal" style="background-color:#fff;padding:10px 20px;margin:20px 0 0 0;">Exit Window</button>
 </div>
 </div>
+
 </div>
 </div>
 
 <div class="w3-container" style="width:100%;margin:30px 0;">
 <hr class="style-one">
-<div class="w3-row" style="width:100%;padding:0;margin:5px 0 0 0;">
+<div class="w3-row" style="width:100%;padding:0;margin:5px 0 20px 0;">
 <div class="w3-threethird" style="margin:0;">
 
 <p class="topic3c">Affordable local marketing that works.</p>
