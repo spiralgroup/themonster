@@ -26,16 +26,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -201,30 +197,15 @@ $(document).ready(function(){
 }
 
 body, html {
-    width: 1200px !important;
+    max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
+    padding: 0;
+    float: center;
     background-color: #f1f1f1;
  }
+  
  
- .modal-backdrop.in {
-  background-color: #f5f5f5;
-  opacity: 1.0;
-  }
-  
-  .modal-dialog {
-  width: 80%;
-  height: 80%;
-  padding: 0;
-  margin: 0;
-  }
-    
-@media screen and (max-width: 768px) {
-  .modal-dialog {
-  width: 100%;
-  }
-  }
-  
 .topnav1 {
 margin: 0;
 padding: 20px 0 0 0;
@@ -526,7 +507,18 @@ margin: -20px 0 0 0;
  padding: 0 0 5px 0 !important;
  }
  }
-
+.modal-dialog {
+  width: 80%;
+  height: 80%;
+  padding: 0;
+  margin: 0;
+  }
+    
+@media screen and (max-width: 768px) {
+  .modal-dialog {
+  width: 100%;
+  }
+  }
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -990,22 +982,6 @@ Grow your food & beverage business.</p>
 </div>
 </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
