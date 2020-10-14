@@ -474,7 +474,7 @@ hr.style-two { border: 0; height: 4px; width:65%; background-color: #fff; paddin
 }
 .alert {
  background-color: #b3daff;
- padding: 0;
+ padding: 10px;
  margin: 0;
  }
  
@@ -517,9 +517,15 @@ hr.style-two { border: 0; height: 4px; width:65%; background-color: #fff; paddin
 background-color: #b3daff;
 width: 100%;
 height: auto;
-padding: 25px 0;
+padding: 10px;
 margin: -20px 0 0 0;
 }
+
+ @media screen and (max-width: 768px) {
+  .w3-modal {
+ padding: 0 0 5px 0 !important;
+ }
+ }
 
 </style>
 <!-- MailerLite Universal -->
@@ -764,21 +770,22 @@ Our Smart Promotion Ads can help generate awareness about your food & beverage b
 <center>
 <div class="w3-container w3-panel" style="width:85%;padding:0;margin:20px 0 0 0;">
 <div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="alert" style="background-color:#b3daff;border:none;">
+<div class="alert" style="border:none;">
 <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-close"></i></a>
-<div class="column" style="padding:0;margin:0;">
-<a onclick="document.getElementById('id37').style.display='block'" style="cursor:pointer;"><img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/95669030-223af100-0b41-11eb-935d-fc6384e9a8b1.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;border-radius:3px;">
+<a onclick="document.getElementById('id37').style.display='block'" style="cursor:pointer;"><img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/95669030-223af100-0b41-11eb-935d-fc6384e9a8b1.png" style="width:100%;margin:0;border-radius:3px;"></a>
 </div>
 </div>
 
+
 <div id="id37" class="w3-modal w3-animate-zoom">
-<div class="w3-container" style="background-color:#b3daff;width:100%;padding:10px;margin:30px 0 0 0;border-radius:8px 8px 4px 4px;">
-<div class="w3-modal-content w3-card" style="width:100%;padding:0;margin:0;">
- 
-<div class="w3-row" style="width:100%;padding:0;margin:0 0 30px 0;">
-<div class="w3-threethird" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/95669030-223af100-0b41-11eb-935d-fc6384e9a8b1.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
+<div class="w3-container w3-panel" style="width:100%;padding:10px;margin:0;">
+<div class="w3-modal-content" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="width:100%;margin:0;padding:4px;">
+<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/95669030-223af100-0b41-11eb-935d-fc6384e9a8b1.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
 </div>
 </div>
 
@@ -788,19 +795,20 @@ Our Smart Promotion Ads can help generate awareness about your food & beverage b
 <p class="topic3b" style="font-size:28.5px;color:#fff;text-shadow:0 0 1px #b3daff;letter-spacing:1.5px;margin:0;padding:0;">
 Free delivery for online orders.</p>
 
-<div class="w3-row" style="width:100%;margin:3px 0 0 0;padding:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px 0;margin:0;">
+<div class="column" style="padding:0 0 10px 0;margin:0;">
 <div class="bca-premium" style="width:100%;margin:0;padding:0;">
- 
 <div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
 <div class="column" style="border:1px solid #e6f3ff;border-radius:3px;padding:8px;margin:0;">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/90352374-d2d8b880-e008-11ea-86ef-fb7a8a015082.png" style="width:100%;padding:0;border-radius:1%;">
 
 <p class="topic4ca1" style="color:#fff;text-shadow:0 0 1px #cce6ff;">
 Meal One</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
+
 <p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#777;letter-spacing:.5px;text-decoration:none;padding:0;">$19.99 <i class='fas fa-store-alt'></i> First Responder Discount</a></p></div></div>
+<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div></div>
 
 <div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
 <div class="column" style="border:1px solid #e6f3ff;border-radius:3px;padding:8px;margin:0;">
@@ -808,8 +816,10 @@ Meal One</p>
 
 <p class="topic4ca1" style="color:#fff;text-shadow:0 0 1px #cce6ff;">
 Meal Two</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
+
 <p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></p></div></div>
+<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div></div>
 
 <div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
 <div class="column" style="border:1px solid #e6f3ff;border-radius:3px;padding:8px;margin:0;">
@@ -817,8 +827,10 @@ Meal Two</p>
 
 <p class="topic4ca1" style="color:#fff;text-shadow:0 0 1px #cce6ff;">
 Meal Three</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
+
 <p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#777;letter-spacing:.5px;text-decoration:none;">$12.99 <i class='fas fa-store-alt'></i> Order Online</a></p></div></div>
+<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div></div>
 
 <div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
 <div class="column" style="border:1px solid #e6f3ff;border-radius:3px;padding:8px;margin:0;">
@@ -826,10 +838,10 @@ Meal Three</p>
 
 <p class="topic4ca1" style="color:#fff;text-shadow:0 0 1px #cce6ff;">
 Meal Four</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
+
 <p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#777;letter-spacing:.5px;text-decoration:none;">$12.99 <i class='fas fa-store-alt'></i> Military Special</a></p></div>
-</div>
-</div>
+<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div></div>
 </div>
 </div>
 </div>
@@ -837,38 +849,44 @@ Meal Four</p>
 </div>
 </div>
 
-<hr class="style-one" style="width:85%;margin:50px 0 30px 0;opacity:0.4;">
+<hr class="style-one" style="width:85%;margin:50px 0 70px 0;opacity:0.4;">
 
+<center>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
+
+<div class="w3-half" style="margin:0 0 3px 0;border-radius:3px;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#d9ecff;padding:0;margin:4px;border-radius:2px;">
+<img src="https://user-images.githubusercontent.com/25410880/95657923-c50d5400-0adc-11eb-8a8a-75a9a77b5550.gif" style="width:100%;padding:0;margin:0;border-radius:2px;">
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0;">
+<div class="column" style="padding:20px 30px;margin:0;">
+<p class="topic3b" style="font-size:37px;color:#ffbf80;text-shadow:0 0 1px #b3daff;margin:0 0 -5px 0;padding:0;">
+Join Our MarketPlace</p>
+
+<p class="topic3b" style="font-size:18px;color:dodgerblue;text-shadow:0 0 1px #b3daff;margin:0;padding:0;">
+Promote your merchandise too.</p>
+
+<hr class="style-one" style="height:2px;width:40%;margin:3px 0 24px 0;opacity:0.5;">
+
+<p class="topic3c" style="color:#ffbf80;text-shadow:0 0 1px #b3daff;margin:0;">
+We'll showcase up to six of your delectable menu items as shown in the Smart Promotion Ad demo above. When customers tap your items, they're taken to your space in our marketplace where they can order online for take-out or delivery. Minimum of four menu items for your new SPA.</p>
+</div>
+</div>
+</div>
+</div>
+
+<p class="topic3c" style="margin:80px 0 0 0;"><a href="https://form.jotform.com/82323651984159" target="_blank" style="color:#ffbf80;text-shadow:0 0 1px #b3daff;">Schedule a free marketing consultation.</a></p>
+
+<hr class="style-one" style="margin:10px 0 20px 0;opacity:0.4;">
 
 <center>
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
-<div class="w3-container w3-panel w3-card" style="background-color:#d9ecff;width:100%;padding:0;margin:50px 0 0 0;border-radius:3px;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="w3-half" style="margin:0;">
-<div class="column" style="padding:5px;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/95657923-c50d5400-0adc-11eb-8a8a-75a9a77b5550.gif" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-</div>
-
-<div class="w3-half" style="margin:0;">
-<div class="column" style="padding:20px 40px 10px 40px;margin:0;">
-<p class="topic3b" style="font-size:31px;color:#ffbf80;text-shadow:0 0 1px #b3daff;margin:0 0 -5px 0;padding:0;">
-Join Our MarketPlace</p>
-
-<p class="topic3b" style="font-size:18px;color:#ffbf80;text-shadow:0 0 1px #b3daff;margin:0;padding:0;">
-Promote your merchandise too.</p>
-
-<hr class="style-one" style="height:2px;width:40%;margin:3px 0 28px 0;opacity:0.5;">
-
-<p class="topic3b" style="font-size:21px;color:#ffbf80;text-shadow:0 0 1px #b3daff;margin:0 0 12px 0;">
-Become an SG Merchant and we'll showcase up to six of your delectable menu items as shown in the Smart Promotion Ad demo above. When customers tap your items, they're taken to your space in our marketplace where they can order online for take-out or delivery.</p>
-
-<p class="topic3b" style="font-size:21px;color:#ffbf80;text-shadow:0 0 1px #b3daff;margin:0 0 25px 0;">
-Minimum of four menu items for your new SPA.</p>
-<hr class="style-one" style="height:2px;width:40%;margin:0 0 5px 0;padding:0;opacity:0.5;">
-
-<button class="w3-button topic3b" style="color:#ffbf80;text-shadow:0 0 1px #b3daff;cursor:pointer;margin:0 0 5px 0;padding:0 5px;" onclick="document.getElementById('id37').style.display='none'">Close ad.</button>
-</div>
+<button class="close1" data-dismiss="modal" style="border:none;padding:0;margin:0;text-align:center;">Close this ad.</button>
 </div>
 </div>
 </div>
@@ -881,7 +899,7 @@ Minimum of four menu items for your new SPA.</p>
 <div class="w3-row" style="width:100%;padding:0;margin:5px 0 20px 0;">
 <div class="w3-threethird" style="margin:0;">
 
-<button class="close1" data-dismiss="modal" style="border:none;padding:0;margin:0;text-align:center;">Exit Window</button>
+<button class="close1" data-dismiss="modal" style="border:none;padding:0;margin:0;text-align:center;">Close this window.</button>
 </div>
 </div>
 </div>
