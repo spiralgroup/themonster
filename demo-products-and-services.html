@@ -211,7 +211,7 @@ body, html {
  }
 
 .modal-backdrop.in {
-  background-color: #ccc;
+  background-color: #f2f2f2;
   opacity: 1.0;
   }
 }
@@ -450,9 +450,19 @@ position: absolute;
 width: 100%;
 margin: 0;
 bottom: 80px;
-padding: 0 10px;
-border-radius: 0 0 2px 2px;
+padding: 0 50px;
 }
+
+.content7:hover {
+  transition: 0.5s;
+   padding: 15px 50px;
+   }
+   
+  @media screen and (max-width: 768px) {
+   .content7 {
+   bottom: 60px;
+  }
+  }
 
  .container8 {
 position: relative;
@@ -473,25 +483,12 @@ position: absolute;
   border-radius: 0 0 2px 2px;
 }
  
- div.example {
-  margin: 0;
-  width: 100% !important;
-  padding: 10px 0 0 0;
-}
-
-@media screen and (min-width: 600px) {
-  div.example {
-    display: none;
-  }
-}
-
 .fab:hover {
   color: #333 !important;
 }
 
 .fab {
 background-color: transparent;
-
 font-size: 20px;
 color: #b3b300;
   padding: 10px 0;
@@ -790,14 +787,14 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div id="item1" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item1" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal1">View Product Details</button>
 </div>
 </div>
 </div>
@@ -850,14 +847,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 
-<div id="item2" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item2" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal2">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal2">View Product Details</button>
 </div>
 </div>
 </div>
@@ -910,14 +907,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 
-<div id="item3" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item3" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal3">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal3">View Product Details</button>
 </div>
 </div>
 </div>
@@ -970,14 +967,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 
-<div id="item4" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item4" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/69305963-c5f27a00-0bda-11ea-9307-426290546d23.png" style="width:100%;padding:0;border-radius:3px;">
-<div class="content7">
 
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal4">View Product Details</button>
+<div class="content7">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal4">View Product Details</button>
 </div>
 </div>
 </div>
@@ -1030,14 +1027,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 
-<div id="item5" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item5" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;border-radius:3px;">
-<div class="content7">
 
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal5">View Product Details</button>
+<div class="content7">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal5">View Product Details</button>
 </div>
 </div>
 </div>
@@ -1090,14 +1087,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 
-<div id="item6" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item6" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/69306161-6a74bc00-0bdb-11ea-86af-c83cadde26bc.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal6">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal6">View Product Details</button>
 </div>
 </div>
 </div>
@@ -1150,14 +1147,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 
-<div id="item7" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item7" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/69306475-672e0000-0bdc-11ea-9b0c-b462cbf5e65e.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal7">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal7">View Product Details</button>
 </div>
 </div>
 </div>
@@ -1209,14 +1206,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 </div>
-<div id="item8" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item8" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal8">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal8">View Product Details</button>
 </div>
 </div>
 </div>
@@ -1268,14 +1265,14 @@ Only purchaser or designated pickup person can retrieve items. You'll need a val
 </div>
 </div>
 </div>
-<div id="item9" class="w3-third" style="margin:0;border-radius:13px;">
+<div id="item9" class="w3-third" style="margin:0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/69306343-f686e380-0bdb-11ea-8331-36359556bc40.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal9">View Product Details</button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;" data-toggle="modal" data-target="#myModal9">View Product Details</button>
 </div>
 </div>
 </div>
@@ -1350,7 +1347,7 @@ for (i = 0; i < acc.length; i++) {
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:100px 0 0 0;">
 <div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
 <p class="topic2c">Special Offers</p></div>
@@ -1366,8 +1363,7 @@ for (i = 0; i < acc.length; i++) {
 <img src="https://user-images.githubusercontent.com/25410880/69306933-03a4d200-0bde-11ea-9d71-6a48fbc33ff1.png" style="width:100%;padding:0;border-radius:3px;">
 
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="background-color:#fff;padding:20px 0;margin:0;border:none;opacity:0.8;">
-<a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;"><a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
 </div>
 </div>
 </div>
@@ -1380,8 +1376,7 @@ for (i = 0; i < acc.length; i++) {
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/69305794-1ddcb100-0bda-11ea-84b9-3563c5c2630f.png" style="width:100%;padding:0;border-radius:3px;">
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="background-color:#fff;padding:20px 0;margin:0;border:none;opacity:0.7;">
-<a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;"><a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
 </div>
 </div>
 </div>
@@ -1394,8 +1389,7 @@ for (i = 0; i < acc.length; i++) {
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/69306720-592caf00-0bdd-11ea-979d-41af878eec51.png" style="width:100%;padding:0;border-radius:3px;">
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="background-color:#fff;padding:20px 0;margin:0;border:none;opacity:0.8;">
-<a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;"><a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
 </div>
 </div>
 </div>
@@ -1408,8 +1402,7 @@ for (i = 0; i < acc.length; i++) {
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;border-radius:3px;">
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="background-color:#fff;padding:20px 0;margin:0;border:none;opacity:0.8;">
-<a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;"><a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
 </div>
 </div>
 </div>
@@ -1422,8 +1415,7 @@ for (i = 0; i < acc.length; i++) {
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;border-radius:3px;">
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="background-color:#fff;padding:20px 0;margin:0;border:none;opacity:0.8;">
-<a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;"><a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
 </div>
 </div>
 </div>
@@ -1436,8 +1428,7 @@ for (i = 0; i < acc.length; i++) {
 <div class="container7">
 <img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png" style="width:100%;padding:0;border-radius:3px;">
 <div class="content7">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow w3-card" style="background-color:#fff;padding:20px 0;margin:0;border:none;opacity:0.8;">
-<a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:3px;border:none;padding:20px 0;margin:0;opacity:0.8;"><a href="https://preview.mailerlite.com/i0y0x6" target="_blank" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;text-decoration:none;">View Special Offer</a></button>
 </div>
 </div>
 </div>
@@ -1448,12 +1439,12 @@ for (i = 0; i < acc.length; i++) {
 
 <!-- Begin The Monster Footer Code for Spiral Group, Inc. -->
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:70px 0 0 0;">
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;">
 <p class="topic2c">Hours & Location</p>
 
 <center>
 <div class="w3-container" style="width:100%;padding:0 17px;margin:0;">
-<div class="container w3-panel w3-white" style="width:100%;padding:0 2px;margin:10px 0 0 0;border-radius:4px">
+<div class="container w3-panel w3-white" style="width:100%;padding:0 2px;margin:0;border-radius:4px">
 <div class="w3-row" style="margin:0;padding:0">
 <div class="w3-third" style="background-color:#ccc;margin:0;padding:0;">
 <div class="column" style="background-color:#ccc;margin:0;padding:0;">
@@ -1637,7 +1628,7 @@ checkTime();
 <p class="topic2c">Shop Local</p>
 </div>
 
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0 11px 0 9px;margin:0;">
 <div class="customer-logos slider" style="width:100%;">
 <div class="slide" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;cursor:pointer;" alt="Game Day Barber Shop"></a></div>
 
@@ -1656,15 +1647,11 @@ checkTime();
 <div class="slide" style="margin:10px 6px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710703-0a484700-8aa4-11ea-9366-51b1162290fd.png" style="border-radius:2px;cursor:pointer;" alt="Gortex Fitness Apparel"></a></div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+
 <div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
 <div class="container w3-panel w3-card" style="background-color:#b3b300;width:100%;padding:4px;border-radius:3px 3px 0 0;margin:0;">
 
