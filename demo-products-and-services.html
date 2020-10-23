@@ -253,18 +253,18 @@ li:hover span {
 
 .topic {
 font-family: roboto;
-font-size: 12px;
-color: #000;
-text-shadow: 0 0 1px #777;
+font-size: 14px;
+color: #222;
+text-shadow: 0 0 1px #f1f1f1;
 letter-spacing: .5px;
-text-align: justify;
+text-align: center;
 margin: 0;
-padding: 0;
+padding: 0 0 10px 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic {
-  text-align: center;
+  font-size: 12.5px;
   }
   }
   
@@ -280,19 +280,19 @@ padding: 0;
 }
 
 .topic1a { 
-font-family: roboto condensed;
-font-size: 20px;
-color: #222;
+ font-family: Yanone Kaffeesatz;
+font-size: 28px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #f1f1f1;
 text-align: center;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #222;
 margin: 0;
 padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic1a {
- font-size: 18px;
+ font-size: 21px;
   }
   }
   
@@ -511,7 +511,7 @@ color: #b3b300;
 hr.style-one { border: 0; height: 7px; width:65%; background-color: #fff; padding: 0; margin:0 0 15px 0; border-radius:5px;
 }
 
-hr.style-two { border: 0; height: 2px; width:40%; background-color: #fff; padding: 0; margin:10px 0 5px 0; border-radius:5px; opacity: 0.2;
+hr.style-two { border: 0; height: 5px; width:100%; background-color: #b3b300; padding: 0; margin:10px 0 0 0; border-radius:5px;
 }
 
 #timeDiv {
@@ -580,6 +580,65 @@ max-width: 200px;
     display: block;
 }
 
+.accordion {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #f1f1f1;
+text-align: center;
+padding: 5px;
+margin: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #b3b300;
+  text-shadow: 0 0 1px #f1f1f1;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 12px;
+}
+
+.panel {
+  padding: 0 10px;
+  margin: 5px 0 0 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+@media all and (max-width: 768px) {
+  .accordion{
+  font-size: 19px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .accordion:after, .content {
+  display: none;
+  }
+}
 </style>
 
 
@@ -747,31 +806,38 @@ take advantage of yours being an essential business.
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -800,31 +866,38 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -853,31 +926,38 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -906,31 +986,38 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69305963-c5f27a00-0bda-11ea-9307-426290546d23.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -959,31 +1046,38 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1012,31 +1106,38 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69306161-6a74bc00-0bdb-11ea-86af-c83cadde26bc.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1065,31 +1166,36 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69306475-672e0000-0bdc-11ea-9b0c-b462cbf5e65e.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
 </div>
 </div>
 </div>
@@ -1098,7 +1204,8 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 </div>
 </div>
 </div>
-
+</div>
+</div>
 <div id="item8" class="w3-third" style="margin:0;border-radius:13px;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
@@ -1118,31 +1225,36 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
 </div>
 </div>
 </div>
@@ -1151,7 +1263,8 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 </div>
 </div>
 </div>
-
+</div>
+</div>
 <div id="item9" class="w3-third" style="margin:0;border-radius:13px;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
@@ -1171,31 +1284,36 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <button type="button" class="close" data-dismiss="modal">&times;</button></div>
 <div class="modal-dialog modal-md" style="padding:0;margin:20px;">
 <div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:5px;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white w3-card" style="margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
 <div class="column" style="padding:0;margin:0;">
 <img src="https://user-images.githubusercontent.com/25410880/69306343-f686e380-0bdb-11ea-8331-36359556bc40.png" style="width:100%;padding:0;margin:0;float:center;">
 
-<button class="w3-button w3-card" style="background-color:green;border:none;border-radius:2px;margin:0 0 25px 0;padding:18px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #f1f1f1;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#b3b300;border:none;border-radius:2px;margin:0 0 25px 0;padding:15px 22px;"><a href="https://form.jotform.com/92823006850151" style="color:#fff;text-shadow:0 0 1px #b3b300;letter-spacing:.5px;font-family:roboto;font-size:18px;text-align:center;text-decoration:none;">$99.99 &#124; Buy Now</a></button>
 </div>
 
 <center>
-<div class="w3-threethird w3-light-grey" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;padding:0;">
 <div class="column" style="padding:10px;margin:0;">
 <p class="topic1a">Product Name</p>
 
 <p class="topic">
-In this section, we provide the details of your product or service. The name of your product or service is installed beneath its corresponding image. A <b>Buy Now</b> button, including price, is installed for ease of purchase.</p><br>
+In this section, we'll include the details of your product or service.</p>
 
-<p class="topic1a">Buy Online, Pickup In-Store</p>
+<hr class="style-two">
+</div>
 
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion">BOPIS Instructions</div>
+<div class="panel">
 <p class="topic">
-Select items and proceed to online checkout. Select <b>In-Store Pickup</b> from the available delivery methods for each item.<br><br>
+Choose an item and click Buy Now. Select additional items via the online order form. Select In-Store Pickup from the available delivery methods for each item.<br><br>
 
-Once your order has been processed, you'll receive an email notification. Typically, orders are ready for pick-up 1 hour after being placed. Orders will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card at the end of the holding period.<br><br>
+Once order has been processed, you'll receive an email notification. Orders are ready for pickup 1 hour after being placed, and will be held for 7 days. If not picked up after 7 days, we'll cancel the order and refund your card.<br><br>
 
-Only the purchaser or designated pick-up person can retrieve purchased item(s). You'll need a valid photo ID, email notification, and credit/debit card used for purchase.</p>
+Only purchaser or designated pickup person can retrieve items. You'll need a valid photo ID, email notification, and card used for purchase.</p>
 </div>
 </div>
 </div>
@@ -1206,6 +1324,25 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 </div>
 </div>
 </div>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
@@ -1213,7 +1350,7 @@ Only the purchaser or designated pick-up person can retrieve purchased item(s). 
 <div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="w3-row-padding" style=" background-color:#f2f2f2;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0 0 10px 0;">
-<p class="topic2c">SPECIAL OFFERS</p></div>
+<p class="topic2c">Special Offers</p></div>
 </div>
 </div>
 </div>
@@ -1497,7 +1634,7 @@ checkTime();
 <p class="topic2c">Shop Local</p>
 </div>
 
-<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 12px;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
