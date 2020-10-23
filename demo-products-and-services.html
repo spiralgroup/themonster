@@ -514,6 +514,72 @@ hr.style-one { border: 0; height: 7px; width:65%; background-color: #fff; paddin
 hr.style-two { border: 0; height: 2px; width:40%; background-color: #fff; padding: 0; margin:10px 0 5px 0; border-radius:5px; opacity: 0.2;
 }
 
+#timeDiv {
+font-family: roboto condensed;
+  font-size: 15px;
+ letter-spacing: .5px;
+ position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  background-color: #b3b300 !important;
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 15px;
+  }
+  }
+  
+  .open {
+  font-family: roboto condensed;
+  font-size: 15px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+.closed {
+ font-family: roboto condensed;
+  font-size: 15px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+.dateTime {
+max-width: 200px;
+font-family: roboto condensed;
+color: #222;
+text-shadow: 0 0 1px #000;
+  font-size: 16.5px;
+float: none;
+  text-align: left;
+  line-height: 20px;
+    }
+
+.day {
+   display: inline-block;
+ }
+
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.today {
+max-width: 200px;
+  color: #b3b300 !important;
+  text-shadow: 0 0 1px #ccc !important;
+    display: block;
+}
+
 </style>
 
 
@@ -1372,44 +1438,58 @@ Chicago, IL 60617</p>
 </div>
 
 <script>
-$(document).ready(function(){
+var now = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
-   var date = new Date();
-   var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-   var hours = ['10:30am - 8:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm','11:00am - 9:00pm'];
+var checkTime = function() {
+  var today = weekday[now.getDay()];
+  var timeDiv = document.getElementById('timeDiv');
+  var dayOfWeek = now.getDay();
+  var hour = now.getHours();
+  var minutes = now.getMinutes();
+
+  //add AM or PM
+  var suffix = hour >= 12 ? " PM" : " AM";
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+    minutes = "0" + minutes
+  };
+
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
   
-   var today = date.getDay();
-   var tomorrow = (date.getDay() + 1) % 7;
-   var dayafter = (date.getDay() + 2) % 7;
-   var threedaysout = (date.getDay() + 3) % 7;
-   var fourdaysout = (date.getDay() + 4) % 7;
-   var fivedaysout = (date.getDay() + 5) % 7;
-   var yesterday = (date.getDay() + 6) % 7;
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1);
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
   
-   var hrstoday = date.getDay();
-   var hrstomorrow = (date.getDay() + 1) % 7;
-   var hrsdayafter = (date.getDay() + 2) % 7;
-   var hrsthreedaysout = (date.getDay() + 3) % 7;
-   var hrsfourdaysout = (date.getDay() + 4) % 7;
-   var hrsfivedaysout = (date.getDay() + 5) % 7;
-   var hrsyesterday = (date.getDay() + 6) % 7;
-  
-   $('.today').html(days[today]);
-   $('.tomorrow').html(days[tomorrow]);
-   $('.dayafter').html(days[dayafter]);
-   $('.threedaysout').html(days[threedaysout]);
-   $('.fourdaysout').html(days[fourdaysout]);
-   $('.fivedaysout').html(days[fivedaysout]);
-   $('.yesterday').html(days[yesterday]);
-  
-   $('.hrstoday').html(hours[today]);
-   $('.hrstomorrow').html(hours[tomorrow]);
-   $('.hrsdayafter').html(hours[dayafter]);
-   $('.hrsthreedaysout').html(hours[threedaysout]);
-   $('.hrsfourdaysout').html(hours[fourdaysout]);
-   $('.hrsfivedaysout').html(hours[fivedaysout]);
-   $('.hrsyesterday').html(hours[yesterday]);
-});
+  else {
+    if (hour == 0 || hour > 12) {
+      hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    }
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Closed';
+    timeDiv.className = 'closed';
+  }
+};
+
+var currentDay = weekday[now.getDay()];
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+setInterval(checkTime, 1000);
+checkTime();
 </script>
 
 <center>
