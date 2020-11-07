@@ -196,11 +196,13 @@ position: absolute;
 }
  
  .dropbtn {
-  background-color: #4CAF50;
+  background-color: #f2f2f2;
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+  padding: 10px 30px;
+  font-family: Yanone Kaffeesatz;;
+  font-size: 22px;
+  border: 1px solid #f5f5f5;
+  margin: 12px 0 0 0;
 }
 
 .dropdown {
@@ -228,7 +230,31 @@ position: absolute;
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #b3b300;}
+
+.container-fluid2 {
+max-width: 1200px;
+left: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid2 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+  
+  div.example {
+  margin: 0;
+  background: transparent;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 600px) {
+  div.example {
+    display: none;
+  }
+}  
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -245,15 +271,11 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <center>
 <body>
-<div class="container w3-panel" style="width:100%;padding:0 5px;margin:8px 0 0 0;">
-<div class="container w3-panel" style="width:100%;padding:5px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:18px 0 0 0;">
 
-<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
-<div class="col-sm-2" style="margin:0;">
-<div class="column" style="border:2px solid #f5f5f5;background-color:transparent;padding:5px;margin:0 0 15px 0;border-radius:3px;">
+<div class="w3-row" style="width:100%;padding:0;margin:0;">
+<div class="container-fluid2">
+<div class="col-sm-2" style="padding:0;margin:0;padding:0;">
 <div class="dropdown">
   <button class="dropbtn">All Categories</button>
   <div class="dropdown-content">
@@ -268,31 +290,22 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
   </div>
 </div>
 </div>
-</div>
 
-<div class="col-sm-8" style="margin:0;">
-<div class="column" style="border:2px solid #f5f5f5;background-color:transparent;padding:5px;margin:0 0 15px 0;border-radius:3px;">
+<div class="col-sm-9" style="padding:0;margin:0;">
 <script async src="https://cse.google.com/cse.js?cx=016616883236652968303:jwuz8z2ogbm"></script>
-<div class="gcse-search"></div>
-</div>
-</div>
-
-<div class="col-sm-2" style="margin:0 0 5px 0;">
-<div class="column" style="border:2px solid #f5f5f5;background-color:transparent;padding:5px;margin:0;border-radius:3px;">
-test
-</div>
+<div class="gcse-search" style="width:100%;padding:0;margin:0;"></div>
 </div>
 
-<div class="col-sm-2" style="margin:0 0 5px 0;">
-<div class="column" style="border:2px solid #f5f5f5;background-color:transparent;padding:5px;margin:0;border-radius:3px;">
-test
-</div>
-</div>
+<div class="col-sm-1" style="margin:0;padding:0;">
+<div class="column" style="border:2px solid #f5f5f5;background-color:transparent;padding:5px;margin:0 0 15px 0;border-radius:3px;">
+Sign Up
 </div>
 </div>
 </div>
 </div>
 
+
+<div class="example">
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
 <div class='container-fluid pull-right' style="width:100%;">
 <div class='navbar-header pull-right' style="padding:0;">
@@ -302,6 +315,33 @@ test
 </div>
 </div>
 </nav>
+
+<div class="example">
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
+<div class="w3-third" style="background-color:transparent;margin:0;padding:0;">
+<div class="column" style="background-color:transparent;padding:15px 10px 3px 10px;margin:0;">
+<p class="topic3e">
+Sell Your Products & Services</p>
+
+<hr class="style-one">
+
+<p class="topic3f-mobile">Showcase up to 12 of your best items.</p>
+
+<p class="topic3f-mobile">Create some amazing deals and special offers.</p>
+
+<p class="topic3f-mobile">Manage all incoming orders.</p>
+
+<p class="topic3f-mobile">No need to set up a payment gateway.</p>
+
+<p class="topic3f-mobile">No coding required. No software to download.</p>
+
+<p class="topic3f-mobile">We do all the work after you join.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="modal fade" id="modalNavigation" role="dialog" style="background-color:#a9a9a9;">
 <div class="modal-header" style="border:none;">
@@ -325,7 +365,7 @@ test
 
 <a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>JOIN OUR TEAM</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/" target="_blank"><span>COMMUNITY OUTREACH</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/" target="_blank"><span>SUPPORT</span></a>
 
 <button class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
 </div>
@@ -432,7 +472,6 @@ test
 </div>
 </div>
 </div>
-</div>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 10px;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
@@ -441,7 +480,7 @@ test
 Online shopping has never been<br>
 this easy or rewarding.</p>
 
-<p align="center"><a class="w3-button w3-hover-shadow" href="#get-started" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 30px;margin:10px 0 80px 0;">Subscribe</a></p>
+<p align="center"><a class="w3-button w3-hover-shadow" href="#get-started" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 30px;margin:10px 0 80px 0;">Sign Up</a></p>
 </div>
 </div>
 </div>
