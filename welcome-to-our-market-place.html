@@ -48,18 +48,8 @@ body, html {
   color: #585858;
   margin: 0 auto;
   max-width: 1200px;
-  float: center;
-  display: block;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
- width: 100%;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
+  
+  }
 
 .topnav1 {
 margin: 0;
@@ -93,10 +83,9 @@ padding: 20px 0 0 0;
 .topnav7 {
   overflow: hidden;
   background-color: transparent;
-  bottom: 5px;
-  padding: 10px 12px 10px 0;
+  padding: 0 12px 0 0;
   width: 100%;
-  margin: 15px 0 0 0;
+  margin: -3px 0 0 0;
 }
 
 .topnav7 a {
@@ -104,15 +93,15 @@ padding: 20px 0 0 0;
   font-family: roboto,sans-serif;
   color: #b3b300;
   text-align: center;
-  padding: 8px;
+  padding: 12px 0 2px 0;
   text-decoration: none;
   font-size: 12px;
   letter-spacing: .5px;
-  margin: 0 6px 0 6px;
+  margin: 0 16px 0 16px;
 }
 
 .topnav7 a:hover {
-  border-bottom: 2px solid #b3b300;
+  border-bottom: 1px solid #b3b300;
   text-decoration: none;
 }
 
@@ -162,7 +151,7 @@ color: #222;
 text-shadow: 0 0 1px #f1f1f1;
 letter-spacing: .5px;
 text-align: center;
-padding: 20px 0 0 0;
+padding: 10px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -260,15 +249,15 @@ left: 0 !important;
 }  
 
 .dropbtn {
-  background-color: #b3b300;
-  color: #fff;
-  padding: 10px 30px;
+  background-color: #fff;
+  color: #b3b300;
+  padding: 8px 15px;
   font-family: roboto,sans-serif;
   letter-spacing: .5px;
-  font-size: 14px;
-  border: none;
+  font-size: 12px;
+  border: 1px solid #f2f2f2;
   border-radius: 2px;
-  margin: 15px 0 0 0;
+  margin: 0;
 }
 
 .dropdown {
@@ -279,7 +268,7 @@ left: 0 !important;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #fff;
   min-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -287,7 +276,7 @@ left: 0 !important;
 
 .dropdown-content a {
   font-family: roboto,sans-serif;
-  color: #666;
+  color: #b3b300;
   font-size: 12px;
   letter-spacing: .5px;
   padding: 12px 16px;
@@ -296,11 +285,11 @@ left: 0 !important;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #b3b300; color: #fff;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #b3b300;}
+.dropdown:hover .dropbtn {background-color: #fff;}
 
 </style>
 <!-- MailerLite Universal -->
@@ -318,23 +307,22 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <center>
 <body>
-<div class="container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
-<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:5px 0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:3px;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;border-radius:3px 3px 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:15px 0 7px 0;margin:0;">
 <div class="header" id="myHeader" style="width:100%;margin:0;padding:0;">
 
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="col-sm-2" style="padding:0;margin:0;padding:0;">
 
-<p class="topic"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html">SG MarketPlace</a></p>
+<p align="center" style="font-family:Yanone Kaffeesatz;font-size:27px;color:#b3b300;letter-spacing:.75px;text-shadow:0 0 1px #fff;padding:0;margin:0;">Spiral Group, Inc.</p>
 </div>
 
-<div class="col-sm-1" style="padding:0;margin:0;padding:0;">
+<div class="col-sm-2" style="padding:0;margin:0;">
 <div class="dropdown">
-  <button class="dropbtn">Categories</button>
+  <button class="dropbtn">Categories <i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:18px;vertical-align:top;margin:0;padding:0;">expand_more</i></button>
   <div class="dropdown-content">
     <a href="#">Apparel & Accessories</a>
     <a href="#">Automotive</a>
@@ -348,18 +336,26 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
    </div>
     </div>
     
-<div class="col-sm-9" style="padding:0;margin:0;padding:0;">
+<div class="col-sm-8" style="padding:0;margin:0;padding:0;">
 <div class="topnav7" id="myTopnav7"> 
 <a href="https://spiralgroup.github.io/themonster/showcase-demo-page6.html">Support</a>
+<a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html">Join Our Team</a>
 <a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html">Join Our Team</a>
 <a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html">Merchant Sign Up</a>
 <a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Shopper Sign Up</a>
 <a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html">Business Gift Ideas</a>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-row w3-white" style="width:100%;padding:0;margin:0;">
+<div class="w3-row" style="width:100%;padding:0;margin:0;border-radius:3px;">
 <div class="container-fluid2">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <script async src="https://cse.google.com/cse.js?cx=016616883236652968303:jwuz8z2ogbm"></script>
