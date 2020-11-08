@@ -100,7 +100,7 @@ padding: 20px 0 0 0;
 }
 
 .topnav7 a {
-  float: center;
+  float: right;
   font-family: roboto,sans-serif;
   color: #b3b300;
   text-align: center;
@@ -280,15 +280,19 @@ left: 0 !important;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  font-family: roboto,sans-serif;
+  color: #666;
+  font-size: 12px;
+  letter-spacing: .5px;
   padding: 12px 16px;
   text-decoration: none;
+  text-align: left;
   display: block;
 }
 
@@ -332,14 +336,14 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="dropdown">
   <button class="dropbtn">Categories</button>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
+    <a href="#">Apparel & Accessories</a>
+    <a href="#">Automotive</a>
+    <a href="#">Beauty & Health</a>
+    <a href="#">Entertainment</a>
+    <a href="#">Food</a>
+    <a href="#">Home Services</a>
+    <a href="#">Personal Services</a>
+    <a href="#">Spiritual Growth</a>
   </div>
    </div>
     </div>
@@ -570,7 +574,7 @@ Sell Your Products & Services</p>
 Online shopping has never been<br>
 this easy or rewarding.</p>
 
-<p align="center"><a class="w3-button w3-hover-shadow" href="#get-started" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 30px;margin:10px 0 80px 0;">Subscribe</a></p>
+<p align="center"><a class="w3-button w3-hover-shadow" onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 30px;margin:10px 0 80px 0;">Sign Up</a></p>
 </div>
 </div>
 </div>
