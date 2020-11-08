@@ -93,25 +93,26 @@ padding: 20px 0 0 0;
 .topnav7 {
   overflow: hidden;
   background-color: transparent;
+  bottom: 5px;
   padding: 10px 12px 10px 0;
   width: 100%;
-  margin: 1px;
+  margin: 15px 0 0 0;
 }
 
 .topnav7 a {
   float: center;
   font-family: roboto,sans-serif;
-  color: #000000;
-  text-align: right;
+  color: #b3b300;
+  text-align: center;
   padding: 8px;
   text-decoration: none;
   font-size: 12px;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   margin: 0 6px 0 6px;
 }
 
 .topnav7 a:hover {
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #b3b300;
   text-decoration: none;
 }
 
@@ -154,6 +155,21 @@ li:hover span {
    transition: 0.5s;
 }
   
+  .topic {
+font-family: roboto;
+font-size: 18px;
+color: #222;
+text-shadow: 0 0 1px #f1f1f1;
+letter-spacing: .5px;
+text-align: center;
+padding: 20px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic {
+  font-size: 12.5px;
+  }
+  }
 .topic2c {
 font-family: Yanone Kaffeesatz;
 font-size: 110px;
@@ -219,6 +235,69 @@ padding: 0 4px;
   border-radius: 0 0 2px 2px;
 }
 
+.container-fluid2 {
+max-width: 1200px;
+left: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid2 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+  
+  div.example {
+  margin: 0;
+  background: transparent;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 600px) {
+  div.example {
+    display: none;
+  }
+}  
+
+.dropbtn {
+  background-color: #b3b300;
+  color: #fff;
+  padding: 10px 30px;
+  font-family: roboto,sans-serif;
+  letter-spacing: .5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  margin: 15px 0 0 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #b3b300;}
+
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -235,29 +314,69 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 
 <center>
 <body>
-<body>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:18px 0 0 0;">
-<div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;border-radius:3px 3px 0 0;margin:0;">
 <div class="header" id="myHeader" style="width:100%;margin:0;padding:0;">
 
-<div class="topnav7" id="myTopnav7">
-<a style="font-family:kaushan script;font-size:23px;letter-spacing:2px;color:#000000;" href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html">SpiralGroup.org</a>
-<a href="https://spiralgroup.github.io/themonster/showcase-demo-page2.html">About</a>
-<a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html">Our Products & Services</a>
-<a href="https://spiralgroup.github.io/themonster/showcase-demo-page4.html">E-Gift Cards</a>
-<a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html">Special Offers</a>
-<a href="https://spiralgroup.github.io/themonster/showcase-demo-page6.html">Photo Gallery</a>
-<a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html">Job Opportunities</a>
-<a href="https://spiralgroup.github.io/themonster/showcase-demo-page8.html">Contact</a>
-<a href="javascript:void(0);" class="icon" onclick="myFunction7()">
-<i class="material-icons" style="color:#585858;font-size:19px;">dehaze</i></a>
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="col-sm-2" style="padding:0;margin:0;padding:0;">
+
+<p class="topic"><a href="https://spiralgroup.github.io/themonster/showcase-demo-page1_intro.html">SG MarketPlace</a></p>
+</div>
+
+<div class="col-sm-1" style="padding:0;margin:0;padding:0;">
+<div class="dropdown">
+  <button class="dropbtn">Categories</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+  </div>
+   </div>
+    </div>
+    
+<div class="col-sm-9" style="padding:0;margin:0;padding:0;">
+<div class="topnav7" id="myTopnav7"> 
+<a href="https://spiralgroup.github.io/themonster/showcase-demo-page3.html">Business Gift Ideas</a>
+<a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')">Shopper Sign Up</a>
+<a href="https://spiralgroup.github.io/themonster/showcase-demo-page5.html">Merchant Sign Up</a>
+<a href="https://spiralgroup.github.io/themonster/showcase-demo-page6.html">Support</a>
+<a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html">Join Our Team</a>
+<a href="https://spiralgroup.github.io/themonster/showcase-demo-page6.html">Support</a>
+<a href="https://spiralgroup.github.io/themonster/showcase-demo-page7.html">Join Our Team</a>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row w3-white" style="width:100%;padding:0;margin:0;">
+<div class="container-fluid2">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<script async src="https://cse.google.com/cse.js?cx=016616883236652968303:jwuz8z2ogbm"></script>
+<div class="gcse-search" style="width:100%;padding:0;margin:0;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 
-
-<center>
+<div class="example">
 <nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
 <div class='container-fluid pull-right' style="width:100%;">
 <div class='navbar-header pull-right' style="padding:0;">
@@ -267,6 +386,33 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </nav>
+
+<div class="example">
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-row" style="background-color:transparent;width:100%;margin:0;padding:0;border-radius:3px;">
+<div class="w3-third" style="background-color:transparent;margin:0;padding:0;">
+<div class="column" style="background-color:transparent;padding:15px 10px 3px 10px;margin:0;">
+<p class="topic3e">
+Sell Your Products & Services</p>
+
+<hr class="style-one">
+
+<p class="topic3f-mobile">Showcase up to 12 of your best items.</p>
+
+<p class="topic3f-mobile">Create some amazing deals and special offers.</p>
+
+<p class="topic3f-mobile">Manage all incoming orders.</p>
+
+<p class="topic3f-mobile">No need to set up a payment gateway.</p>
+
+<p class="topic3f-mobile">No coding required. No software to download.</p>
+
+<p class="topic3f-mobile">We do all the work after you join.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="modal fade" id="modalNavigation" role="dialog" style="background-color:#a9a9a9;">
 <div class="modal-header" style="border:none;">
@@ -278,19 +424,19 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 
 <div class="col-sm-4" style="padding-top:3px;">
-<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0;border:2px solid #b3b300;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/demo-home"><span>LET'S SHOP</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0;border:2px solid #b3b300;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/demo-home"><span>ALL CATEGORIES</span></a>
 
 <a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/demo-products-and-services.html"><span>BUSINESS GIFT IDEAS</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://preview.mailerlite.com/i0y0x6" target="_blank"><span>SPECIAL OFFERS</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://preview.mailerlite.com/i0y0x6" target="_blank"><span>SHOPPER SIGN UP</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf"><span>JOIN OUR TEAM</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/#get-started"><span>MERCHANT SIGN UP</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>CONTACT</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>GIVE US YOUR FEEDBACK</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>SUBSCRIBE</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" onclick="ml_account('webforms', '2010464', 'v3a4j5', 'show')"><span>JOIN OUR TEAM</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/" target="_blank"><span>GET IN THE GAME</span></a>
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/" target="_blank"><span>SUPPORT</span></a>
 
 <button class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
 </div>
@@ -299,8 +445,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 </div>
 </div>
 </div>
+</div>
 
-<div id="get-started" class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
 <p class="topic2c">Let's Shop</p>
 
