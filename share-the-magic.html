@@ -32,61 +32,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
-<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 
 <script>
 $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
-});
-</script>
-
-<script>
-$(document).ready(function(){
-    $('.business-logos').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 2
-            }
-        }]
-    });
-});
-</script>
-
-<script>
-$(document).ready(function(){
-    $('.bca-premium').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
@@ -108,6 +57,33 @@ $(document).ready(function(){
     });
 });
 </script>
+
+<script>
+$(document).ready(function(){
+    $('.bca-premium').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
@@ -340,22 +316,23 @@ margin: 10px 0 0 0;
 
 .topic2c {
 font-family: Yanone Kaffeesatz;
-font-size: 52px;
-color: #b3b300;
-text-align: center;
+font-size: 22px;
+color: #b3b300 !important;
+text-align: left;
+text-shadow: 0 0 1px #f2f2f2;
 letter-spacing: 1px;
-margin: 0;
+margin: 0 0 10px 0;
+border-bottom: 4px solid #fff;
 padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic2c {
-   font-size: 40px;
-   padding: 0;
+   font-size: 80px;
   }
   }
   
-.topic3b {
+  .topic3b {
 font-family: Yanone Kaffeesatz;
 font-size: 20px;
 color: #b3b300;
@@ -906,11 +883,8 @@ Marketing agencies seeking high-quality, low cost advertising solutions for thei
 <div id="products" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
 <div class="w3-threethird" style="margin:0;">
-<p class="topic2c">
-Smart Promotion Ads</p>
-
-<p class="topic3c">
-Acquire territory for your small business in the SG MarketPlace. An ECA can help you market your products to a specific audience.</p>
+<p class="topic2c"><button class="w3-button" style="background-color:#fff;letter-spacing:1px;padding-top:12px;border:none;border-radius:3px 3px 0 0;">
+Smart Promotion Ads</button></p>
 
 <center>
 <div class="container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
@@ -1021,7 +995,7 @@ Your Custom Headline</p>
 
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;">
-<div class="bca-premium" style="width:100%;padding:0;margin:0;">
+<div class="bca-premium slide" style="width:100%;padding:0;margin:0;">
 <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/66706503-2a6f0f00-ece8-11e9-8c33-f6257d00ed5c.png" style="width:100%;padding:0;margin:0;">
 
 <p class="topic4ca1">
@@ -1106,6 +1080,34 @@ When our shoppers click on your ECA, they're presented with your featured produc
 </div>
 </div>
 
+<div class="w3-half" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Brings Shoppers to Your Products</p>
+
+<hr class="style-two">
+
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
+ An ECA can help you market your products to a specific audience.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-half" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Brings Shoppers to Your Products</p>
+
+<hr class="style-two">
+
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
+Acquire territory for your small business in the SG MarketPlace.</p>
+</div>
+</div>
+</div>
+
 <center>
 <div class="container" style="width:100%;padding:0;margin:60px 0 0 0;">
 <p class="topic2c">How to Get Started</p>
@@ -1141,9 +1143,6 @@ When our shoppers click on your ECA, they're presented with your featured produc
 <p class="topic2c">
 Scrolling Footer Logo Ads</p>
 
-<p class="topic3c">
-Scrolling Footer Logo Ads appear on all SG MarketPlace Seller Pages. Don't have a logo? We'll create a temporary for free.</p>
-
 <center>
 <div class="container w3-panel" style="width:100%;padding:0 5px;margin:8px 0 0 0;">
 <div class="container w3-panel" style="background-color:#f2f2f2;width:100%;padding:3px;border-radius:4px 4px 2px 2px;margin:0;">
@@ -1152,7 +1151,7 @@ Scrolling Footer Logo Ads appear on all SG MarketPlace Seller Pages. Don't have 
 <div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<div class="bca-premium slide" style="width:100%;padding:0;margin:0;">
+<div class="customer-logos slide" style="width:100%;padding:0;margin:0;">
 <div class="slide">
 <img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
@@ -1200,6 +1199,10 @@ Scrolling Footer Logo Ads appear on all SG MarketPlace Seller Pages. Don't have 
 <a class="w3-button w3-blue" href="https://form.jotform.com/200182657601146" style="border-radius:2px;text-decoration:none;padding:20px;box-shadow:0 0 22px #ccc;margin:10px 0;">
 <p class="topic3">$90 for 90 Days &#8226; Order Now</p>
 </a>
+
+
+<p class="topic3c">
+Scrolling Footer Logo Ads appear on all SG MarketPlace Seller Pages. Don't have a logo? We'll create a temporary for free.</p>
 
 <center>
 <div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:60px 0 0 0;">
@@ -1317,7 +1320,7 @@ Your Custom Headline</p>
 
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;">
-<div class="bca-premium" style="width:100%;padding:0;margin:0;">
+<div class="bca-premium slide" style="width:100%;padding:0;margin:0;">
 <div class="slide"><img src="https://user-images.githubusercontent.com/25410880/66706503-2a6f0f00-ece8-11e9-8c33-f6257d00ed5c.png" style="width:100%;padding:0;margin:0;">
 
 <p class="topic4ca1">
