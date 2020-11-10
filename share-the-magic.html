@@ -36,6 +36,31 @@
 
 <script>
 $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
     $('.business-logos').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -62,7 +87,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
     $('.bca-premium').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -86,9 +111,9 @@ $(document).ready(function(){
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
-    margin: 2px 0;
+    margin: 30px 1px;
     padding: 0;
-    background-color: transparent;
+    border: 2px solid #fff;
     }
 .slick-slide img {
     width: 100%;
@@ -303,12 +328,12 @@ background-color: transparent;
 }
 
 .topic {
-font-family: roboto;
-font-size: 14px;
-color: #fff;
+font-family: Yanone Kaffeesatz;
+font-size: 21px;
+color: #666;
 text-align: center;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #666;
+text-shadow: 0 0 1px #fff;
 padding: 0;
 margin: 10px 0 0 0;
 }
@@ -319,14 +344,13 @@ font-size: 52px;
 color: #b3b300;
 text-align: center;
 letter-spacing: 1px;
-text-shadow: 0 0 1px #f1f1f1;
 margin: 0;
 padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic2c {
-   font-size: 28px;
+   font-size: 40px;
    padding: 0;
   }
   }
@@ -440,14 +464,14 @@ margin: 0;
   }
    
    .topic42 {
-font-family: roboto;
-font-size: 16px;
-color: dodgerblue;
-text-shadow: 0 0 1px dodgerblue;
+font-family: roboto condensed;
+font-size: 14px;
+color: #b3b300;
+text-shadow: 0 0 1px #f2f2f2;
 text-align: justify;
-letter-spacing: .5px;
+letter-spacing: .75px;
 padding: 0;
-margin: 0 0 5px 0;
+margin: 5px 0;
 }
 
  @media screen and (max-width: 768px) {
@@ -614,27 +638,16 @@ margin: 10px 0;
 
 .dropdown:hover .dropbtn {background-color: #fff;}
 
-.city {
-padding: 30px 0 0 0;
-margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .city {
-  padding: 10px 0 0 0;
-  }
-  }
-  
   .alert {
- background-color: #f5f5f5;
- padding: 0 0 170px 0;
- margin: 30px 0 20px 0;
+ 
+ padding: 0;
+ margin: 30px 0;
  }
  
  .close {
  font-size: 28px;
-   color: dodgerblue;
-   text-shadow: 0 0 1px dodgerblue;
+ color: #b3b300;
+ text-shadow: 0 0 1px #f2f2f2;
  opacity: 0.9;
  padding: 0 0 2px 0;
  margin: 0;
@@ -675,8 +688,8 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
   <button class="dropbtn">Select Ad Product <i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:15px;vertical-align:top;margin:0;padding:0;">expand_more</i></button> 
   <div class="dropdown-content">
     <a href="#check-it-out1">Smart Promotion Ads</a>
-    <a href="#check-it-out1">Google Search Ads</a>
-    <a href="#check-it-out1">Scrolling Footer Logo</a>
+    <a href="#check-it-out1">Google Keyword Search Ads</a>
+    <a href="#check-it-out1">Scrolling Footer Logo Ad</a>
     <a href="#check-it-out1">The Prestige&trade;</a>
        </div>
   </div>
@@ -797,6 +810,9 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
 <p class="topic2c">
+SG Local Ad Services</p>
+
+<p class="topic3c">
 Finding the right advertising solution for your small business can be complicated and time-consuming. With so many online advertising compensation models, it's no wonder. However, it's still important to educate consumers about your brand through online marketing efforts.<br><br>
 
 That's why we developed SG Local Ad Services. Our new ad products and pricing model were created with the small business owner in mind. Advertise with us and never worry about paying for CPA's, CPC's, or CPI's. Promoting your brand to people who matter has never been this easy.</p>
@@ -804,40 +820,79 @@ That's why we developed SG Local Ad Services. Our new ad products and pricing mo
 </div>
 
 <center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-<p class="topic2">Our Ads Are Ideal For</p>
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 8px;margin:50px 0 30px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
-<p align="center" style="padding:0;margin:0 0 10px 0;">
-<i class='fas fa-bullhorn' style='font-size:28px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i></p>
+<div class="w3-half w3-card" style="padding:0;margin:0 0 10px 0;border-radius:3px;">
+<div class="column">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
+</div>
+</div>
 
-<p class="topic">
+<div class="w3-half" style="margin:0;">
+<div class="w3-column" style="padding:0;margin:0;">
+<p class="topic3ca">Grow Your Food & Beverage Business</p>
+
+<hr class="style-one" style="height:5px;opacity:0.5;">
+
+<p class="topic3bb">
+Put your f -&- b business at the fingertips of local customers shopping our marketplace. Our online marketing solutions can help you reach more consumers, showcase your brand, and increase profitability.</p>
+
+<p class="topic3bb">
+With dining rooms currently being restricted, today's consumers can only enjoy food from their favorite eateries via take-out and delivery.</p>
+
+<p class="topic3bb">
+That's why we've been working strategically to bring you the most practical, most affordable online marketing solutions designed to help your small business grow in ways limited only by your imagination.</p>
+
+<p align="center"><a class="w3-button w3-hover-shadow" href="#check-it-out" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:10px 20px;margin:15px 0 30px 0;">Check It Out</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="check-it-out" class="w3-container w3-panel" style="width:100%;padding:20px 0 0 0;margin:0;">
+<p class="topic3c">
+Stay in the game with our solutions.</p>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
+<div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Online Food Ordering System</p>
+
+<hr class="style-two">
+
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
 Business owners looking to promote and sell their products and services locally.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
-<p align="center" style="padding:0;margin:0 0 10px 0;">
-<i class='fas fa-store-alt' style='font-size:28px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i></p>
+<div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Sell Your Merchandise</p>
 
-<p class="topic">
+<hr class="style-two">
+
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
 Small business owners who sell their products in the SG MarketPlace.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel" style="border:2px solid #fff;border-radius:3px;padding:20px 10px;margin:0;">
-<p align="center" style="padding:0;margin:0 0 10px 0;">
-<i class='fab fa-adversal' style='font-size:28px;color:dodgerblue;text-shadow:0 0 1px dodgerblue;'></i></p>
+<div class="w3-third" style="margin:0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Smart Promotion Ads</p>
 
-<p class="topic">
+<hr class="style-two">
+
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
 Marketing agencies seeking high-quality, low cost advertising solutions for their clients.</p>
 </div>
 </div>
@@ -849,56 +904,35 @@ Marketing agencies seeking high-quality, low cost advertising solutions for thei
 
 <center>
 <div id="products" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
-<p class="topic2">Select a Product to Learn More</p>
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-third" style="margin:0 0 8px 0;">
-<div class="column">
-<div class="w3-panel tablink w3-bottombar w3-white w3-hover-shadow" style="padding:10px;margin:0;border-radius:2px;">
-<a href="javascript:void(0)" onclick="openCity(event, 'ECA');" style="text-decoration:none;">
-<p class="topic33">Exclusive Category Ads</p></a>
-</div>
-</div>
-</div>
-    
-<div class="w3-third" style="margin:0 0 8px 0;">
-<div class="column">
-<div class="w3-panel tablink w3-bottombar w3-white w3-hover-shadow" style="padding:10px;margin:0;border-radius:2px;">
-<a href="javascript:void(0)" onclick="openCity(event, 'SFLA');" style="text-decoration:none;">
-<p class="topic33">Scrolling Footer Logo Ads</p></a>
-</div>
-</div>
-</div>
+<div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
+<div class="w3-threethird" style="margin:0;">
+<p class="topic2c">
+Smart Promotion Ads</p>
 
-<div class="w3-third" style="margin:0 0 8px 0;">
-<div class="column">
-<div class="w3-panel tablink w3-bottombar w3-white w3-hover-shadow" style="padding:10px;margin:0;border-radius:2px;">
-<a href="javascript:void(0)" onclick="openCity(event, 'Prestige');" style="text-decoration:none;">
-<p class="topic33">The Prestige</p></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="ECA" class="city" style="display:none;width:100%;">
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0 0 30px 0;">
-<div class="w3-threethird" style="background-color:#f5f5f5;margin:0;">
-<p class="topic4c1">Exclusive Category Ads</p>
-
-<p class="topic4b">
-Acquire territory for your small business in the SG MarketPlace. An ECA can help you market your products to a specific audience.
-</p>
+<p class="topic3c">
+Acquire territory for your small business in the SG MarketPlace. An ECA can help you market your products to a specific audience.</p>
 
 <center>
-<div class="container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:30px 0 0 0;">
-<div class="w3-row" style="background-color:#f5f5f5;width:95%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
+<div class="w3-half" style="margin:0;">
 <div class="alert" style="border:none;">
 <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class='fab fa-adversal'></i></a>
-<div class="column w3-card-2" style="background-color:#f5f5f5;padding:0;margin:0 0 5px 0;">
-<a onclick="document.getElementById('id35').style.display='block'" style="cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/72575299-c9c01700-3880-11ea-9b90-29d312ecae6f.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
-</div>
-<div></div><p class="topic42">Standard &#124; $99 Per Month</p>
+<div class="column" style="padding:0;margin:0 0 5px 0;">
+<a onclick="document.getElementById('id35').style.display='block'" style="cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/66706839-0661fc80-eced-11e9-8876-f391d3c0750d.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<p class="topic42">Your Ad Content Here. (Standard &#124; $99 Per Month)</p>
+</div></div>
+<div></div></div>
+
+<div class="w3-half" style="margin:0;">
+<div class="alert" style="border:none;">
+<a href="#" class="close" data-dismiss="alert" aria-label="close"><i class='fab fa-adversal'></i></a>
+<div class="column" style="padding:0;margin:0 0 5px 0;">
+<a onclick="document.getElementById('id37').style.display='block'" style="cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/66706643-1b895c00-ecea-11e9-98cc-90c8e7a83fbd.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<p class="topic42">Your Ad Content Here. (Premium &#124; $139 Per Month)</p>
+</div></div>
+<div></div></div>
+
 
 <div id="id35" class="w3-modal w3-animate-zoom" style="width:100%;">
 <span onclick="document.getElementById('id35').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
@@ -965,17 +999,6 @@ Batteries not included</p>
 </div>
 </div>
 </div>
-
-<center>
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<div class="w3-row" style="background-color:#f5f5f5;width:95%;padding:0;margin:0;">
-<div class="alert" style="border:none;">
-<a href="#" class="close" data-dismiss="alert" aria-label="close"><i class='fab fa-adversal'></i></a>
-<div class="column w3-card-2" style="background-color:#f5f5f5;padding:0;margin:0 0 5px 0;">
-<a onclick="document.getElementById('id37').style.display='block'" style="cursor:pointer;"><img src="https://user-images.githubusercontent.com/25410880/72575299-c9c01700-3880-11ea-9b90-29d312ecae6f.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
-</div>
-<div></div><p class="topic42">Premium &#124; $139 Per Month</p>
 
 <div id="id37" class="w3-modal w3-animate-zoom" style="width:100%;">
 <span onclick="document.getElementById('id37').style.display='none'" class="w3-display-topright" style="color:#fff;font-size:50px;cursor:pointer;">&times;</span>
@@ -1049,77 +1072,61 @@ Free with any purchase</p>
 </div>
 </div>
 </div>
-</div>
 
 <center>
-<div class="w3-container" style="background-color:#f5f5f5;width:100%;padding:0;margin:60px 0 0 0;">
-<p class="topic2">Benefits of Exclusive Category Ads</p>
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel w3-dark-grey w3-hover-shadow" style="border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic1">You Control Your Marketing Spend</p>
+<div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
+<p class="topic2c">Benefits of Smart Promotion Ads</p>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
+<div class="w3-half" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">You Control Your Marketing Spend</p>
 
-<p class="topic4ca">
+<hr class="style-two">
+
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
 No need to worry about cost per click, which can lead to click fraud. You pay for ECA's on a monthly basis. You're in control of how much you spend by paying only for the months you want your ads displayed.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel w3-dark-grey w3-hover-shadow" style="border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic1">Brings Shoppers to Your Products</p>
-<p class="topic4ca">
+<div class="w3-half" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Brings Shoppers to Your Products</p>
+
+<hr class="style-two">
+
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
 When our shoppers click on your ECA, they're presented with your featured products. When they click on a Shop Now link, they're taken to your external landing page or SG MarketPlace Seller Page.</p>
-</div>
-</div>
 </div>
 </div>
 </div>
 
 <center>
 <div class="container" style="width:100%;padding:0;margin:60px 0 0 0;">
-<p class="topic2">How to Get Started</p>
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel w3-dark-grey w3-hover-shadow" style="border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic1">1</p>
+<p class="topic2c">How to Get Started</p>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
+<div class="w3-half" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">1. Choose the products and/or services you want to advertise.</p>
 
-<p class="topic4ca">Choose the products and/or services you want to advertise.</p>
-</div>
-</div>
-</div>
-
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel w3-dark-grey w3-hover-shadow" style="border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic1">2</p>
-
-<p class="topic4ca">Click on the ECA Style you want above to begin the ordering process.</p>
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">2. Click on the ECA Style you want above to begin the ordering process.</p>
 </div>
 </div>
 </div>
 
-<div class="w3-half" style="margin:0 0 20px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel w3-dark-grey w3-hover-shadow" style="border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic1">3</p>
+<div class="w3-half" style="margin:0 0 4px 0;border-radius:3px;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">3. Schedule phone confirmation and submit payment.</p>
 
-<p class="topic4ca">Schedule phone confirmation and submit payment.</p>
-</div>
-</div>
-</div>
-
-<div class="w3-half" style="margin:0 0 30px 0;">
-<div class="column" style="margin:0;">
-<div class="w3-panel w3-dark-grey w3-hover-shadow" style="border-radius:3px;padding:20px 10px;margin:0;">
-<p class="topic1">4</p>
-
-<p class="topic4ca">Enjoy your new ECA within 7 business days.</p>
-</div>
-</div>
+<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">4. Enjoy your new ECA within 7 business days.</p>
 </div>
 </div>
 </div>
@@ -1128,79 +1135,58 @@ When our shoppers click on your ECA, they're presented with your featured produc
 </div>
 </div>
 
-<div id="SFLA" class="city" style="display:none;width:100%;">
-<div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
-<div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0 0 10px 0;">
-<div class="w3-threethird" style="background-color:#f5f5f5;margin:0;">
-<p class="topic4c1">Scrolling Footer Logo Ads</p>
+<div id="SFLA" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
+<div class="w3-threethird" style="margin:0;">
+<p class="topic2c">
+Scrolling Footer Logo Ads</p>
 
-<p class="topic4b">
+<p class="topic3c">
 Scrolling Footer Logo Ads appear on all SG MarketPlace Seller Pages. Don't have a logo? We'll create a temporary for free.</p>
 
 <center>
-<div class="container-fluid2" style="width:100%;background-color:transparent;padding:0px;margin:0;">
-<div id="test" class="container w3-panel" style="width:100%;padding:0 5px;margin:8px 0 0 0;">
-<div class="container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:15px 2px 8px 2px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0 5px;margin:8px 0 0 0;">
+<div class="container w3-panel" style="background-color:#f2f2f2;width:100%;padding:3px;border-radius:4px 4px 2px 2px;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-
-<div class="w3-quarter" style="padding:0 2px;margin:0;">
-<img class="w3-card-4"  src="https://user-images.githubusercontent.com/25410880/94547271-ac678900-0214-11eb-815b-fe3bb7e294f5.png" style="width:100.046%;padding:0;border-radius:2px;margin:0;">
-</div>
-
-<div class="w3-threequarter" style="padding:0;margin:0;"> 
-<div class="business-logos slide" style="width:100%;padding:0;margin:0;">
-
-<div class="slide container8">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="bca-premium slide" style="width:100%;padding:0;margin:0;">
+<div class="slide">
 <img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:15px 0;border-radius:0;border:none;">
 
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Food & Drink</a></button></div></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div>
 
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:15px 0;border-radius:0;border:none;">
 
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Beauty & Health</a></button></div></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div>
 
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53982392-af96a380-40c9-11e9-8513-2d87227acf31.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:15px 0;border-radius:0;border:none;">
 
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Cultural Activities & Events</a></button></div></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div>
 
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:.93;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:15px 0;border-radius:0;border:none;">
 
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Home & Auto Services</a></button></div></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div>
 
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/54082466-31a1ea80-42cb-11e9-9cad-1409fed84017.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:15px 0;border-radius:0;border:none;">
 
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Physical Goods</a></button></div></div>
-
-<div class="slide container8">
-<img src="https://user-images.githubusercontent.com/25410880/53689052-04b96a80-3d02-11e9-8a78-28a0052af481.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
-
-<div class="content8">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
-
-<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;"><i class="material-icons">settings</i> Spiritual Growth</a></button></div></div>
-</div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div>
 </div>
 </div>
 </div>
@@ -1211,7 +1197,7 @@ Scrolling Footer Logo Ads appear on all SG MarketPlace Seller Pages. Don't have 
 </div>
 </div>
 
-<a class="w3-button w3-blue" href="https://form.jotform.com/200182657601146" style="border-radius:2px;text-decoration:none;padding:20px;box-shadow:0 0 22px #ccc;margin:0 0 10px 0;">
+<a class="w3-button w3-blue" href="https://form.jotform.com/200182657601146" style="border-radius:2px;text-decoration:none;padding:20px;box-shadow:0 0 22px #ccc;margin:10px 0;">
 <p class="topic3">$90 for 90 Days &#8226; Order Now</p>
 </a>
 
@@ -1289,13 +1275,8 @@ When SG MarketPlace shoppers click on your SFLA, they're taken to your external 
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-<div id="Prestige" class="city" style="display:none;width:100%;">
+<div id="Prestige" style="width:100%;">
 <div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="background-color:#f5f5f5;width:100%;margin:0;">
 <div class="w3-threethird" style="background-color:#f5f5f5;margin:0;">
@@ -1388,18 +1369,49 @@ Free with any purchase</p>
 
 <center>
 <div class="w3-container w3-panel" style="background-color:#f5f5f5;width:100%;padding:0;margin:30px 0 0 0;">
-<div class="bca-premium slider" style="width:100%;padding:0;margin:0;">
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/62096929-3a736880-b23a-11e9-9bc1-0045dfb6bd2f.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="container w3-panel" style="width:100%;padding:0 11px 0 10px;margin:0;">
+<div class="customer-logos slide" style="width:100%;">
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" alt="Hamunaptra Cosmetics" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52395053-86024200-2a61-11e9-9ce3-2188d5b9ab95.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div></div>
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52399699-d6819b80-2a71-11e9-8587-129e9ca2a1c2.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" alt="Hamunaptra Cosmetics" style="width:100%;padding:0;margin:0;border-radius:2px;">
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/56190414-02c01800-5fdf-11e9-8ee6-8fb8b2a3010d.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
 
-<div class="slide w3-card"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/52398209-2dd13d00-2a6d-11e9-854b-26814a4e2ff6.png" style="border-radius:2px;" alt="Your Company Name"></a></div>
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div></div>
+
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" alt="Hamunaptra Cosmetics" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
+
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div></div>
+
+
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" alt="Hamunaptra Cosmetics" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
+
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div></div>
+
+
+<div class="slide container8">
+<img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" alt="Hamunaptra Cosmetics" style="width:100%;padding:0;margin:0;border-radius:2px;">
+
+<div class="content8">
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" style="background-color:white;margin:0 auto;padding:15px 0;border-radius:0;border:none;opacity:0.93;">
+
+<a class="topic3d" href="https://github.com/spiralgroup/themonster/files/4145012/Michelle.Jones.Resume.pdf" target="_blank" style="text-decoration:none;">Food & Drink</a></button></div></div>
 </div>
 </div>
 </div>
@@ -1612,22 +1624,6 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
-}
-</script>
-
-<script>
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-border-red";
 }
 </script>
 
