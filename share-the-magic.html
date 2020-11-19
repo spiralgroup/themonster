@@ -689,9 +689,18 @@ margin: 10px 0;
  }
 
 .w3-modal {
-background-color: #b3daff;
+background-color: #fff;
 width: 100%;
+padding: 10px 0;
+margin: 0;
 z-index: 9999;
+}
+
+@media all and (max-width: 768px) {
+  .w3-modal {
+  padding: 5px;
+margin: 0;
+  }
 }
 
 .close1 {
@@ -774,9 +783,10 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
   <button class="dropbtn">Select Ad Product <i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:15px;vertical-align:top;margin:0;padding:0;">expand_more</i></button> 
   <div class="dropdown-content">
     <a href="#SPA">Smart Promotion Ads</a>
+    <a href="#SFLA">Scrolling Footer Logo Ads</a>
     <a href="#GKSA">Google Keyword Search Ads</a>
-    <a href="#SFLA">Scrolling Footer Logo Ad</a>
     <a href="#PRESTIGE">The Prestige&trade;</a>
+    <a href="#FAQ">FAQ's</a>
     </div>
   </div>
   <button class="w3-button" style="font-family:roboto,sans-serif;font-size:12px;color:#666;" href="#">Local Ad Services</button>
@@ -978,11 +988,14 @@ Smart Promotion Ads</button></p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
 
 <center>
-<div id="id31" class="w3-modal w3-animate-zoom" style="width:100%;margin:0;padding:0;">
-<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:90%;padding:3px 1px 0 0;margin:10px 0;border-radius:4px;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div id="id31" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:90%;padding:3px 1px 0 0;border-radius:4px;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0 0 10px 0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-quarter" style="margin:0 0 10px 0;padding:1px 3px 1px 2px;">
 <div class="column" style="padding:0;margin:0;">
@@ -1066,12 +1079,12 @@ Create some amazing meal deals.</p>
 <hr class="style-one" style="height:2px;width:40%;margin:2px 0 18px 0;opacity:0.5;">
 
 <p class="topic3b" style="letter-spacing:.75px;font-size:19px;margin:0;text-shadow:0 0 1px #80c1ff;">
-We'll showcase four of your savory menu items, as shown in the SPA demo above. Customers arrive at <a href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="font-size:19px;color:#fff;text-shadow:0 0 1px #80c1ff;margin:0;">your space in our marketplace</a> where they can order online, as well as view your entire menu. We can also implement curbside pick-up or delivery at online checkout.<br><br>
+We'll showcase four of your savory menu items. Customers arrive at <a href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="font-size:19px;color:#fff;text-shadow:0 0 1px #80c1ff;margin:0;">your space in our marketplace</a> when they click any link inside your SPA. They can view your entire menu and order online. We'll even implement curbside pick-up or delivery at online checkout.<br><br>
 
-Join our marketplace and you'll get to try this wonderful marketing tool free for 30 days. Only $139 per month if your're not an SG Merchant.</p> 
+Smart Promotion Ad included when you become an SG Merchant.<br>
+Only $139 per month for all other marketers.</p> 
 
 <p align="center"><a class="w3-button w3-hover-shadow" href="https://form.jotform.com/200181106011129" target="_blank" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;color:#80c1ff;text-shadow:0 0 1px #fff;font-size:20px;text-align:center;letter-spacing:.5px;text-decoration:none;padding:10px 20px;margin:15px 0 30px 0;">Order Now</a></p>
-</div>
 </div>
 </div>
 </div>
@@ -1093,11 +1106,13 @@ Join our marketplace and you'll get to try this wonderful marketing tool free fo
 </div>
 </div>
 </div>
+</div>
+</div>
 
 <center>
-<div id="id32" class="w3-modal w3-animate-zoom" style="width:100%;margin:0;padding:0;">
-<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:90%;padding:3px 1px 0 0;margin:10px 0;border-radius:4px;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div id="id32" class="w3-modal w3-animate-zoom" style="width:100%;margin:0;padding:10px 0 0 0;">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:90%;padding:3px 1px 0 0;border-radius:4px;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0 0 10px 0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-quarter" style="margin:0 0 10px 0;padding:1px 3px 1px 2px;">
 <div class="column" style="padding:0;margin:0;">
@@ -1180,10 +1195,11 @@ Create some amazing deals.</p>
 
 <hr class="style-one" style="height:2px;width:40%;margin:2px 0 18px 0;opacity:0.5;">
 
-<p class="topic3b" style="letter-spacing:.75px;font-size:22px;margin:0;">
-We'll showcase four of your products, as shown in the SPA demo above. Shoppers arrive at <a href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="font-size:22px;color:#fff;text-shadow:0 0 1px #b3daff;margin:0;">your space in our marketplace</a> where they can order online, as well as view your entire product catalog.<br><br>
+<p class="topic3b" style="letter-spacing:.75px;font-size:20px;margin:0;">
+We'll showcase four of your products. Shoppers arrive at <a href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="font-size:20px;color:#fff;text-shadow:0 0 1px #b3daff;margin:0;">your space in our marketplace</a> where they can order online. If you have a physical location, we'll implement curbside pick-up at online checkout absolutely free.<br><br>
 
-If you have a physical location, we'll implement curbside pick-up at online checkout absolutely free. Consider using this wonderful marketing tool for your small business to reach more local shoppers and increase sales.</p> 
+Smart Promotion Ad included when you become an SG Merchant.<br>
+Only $139 per month for all other marketers.</p> 
 
 <p align="center"><a class="w3-button w3-hover-shadow" href="https://form.jotform.com/200181106011129" target="_blank" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;color:#80c1ff;text-shadow:0 0 1px #fff;font-size:20px;text-align:center;letter-spacing:.5px;text-decoration:none;padding:10px 20px;margin:15px 0 30px 0;">Order Now</a></p>
 </div>
@@ -1210,9 +1226,9 @@ If you have a physical location, we'll implement curbside pick-up at online chec
 </div>
 
 <center>
-<div id="id33" class="w3-modal w3-animate-zoom" style="width:100%;margin:0;padding:0;">
-<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:90%;padding:3px 1px 0 0;margin:10px 0;border-radius:4px;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div id="id33" class="w3-modal w3-animate-zoom" style="width:100%;margin:0;padding:10px 0 0 0;">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:90%;padding:3px 1px 0 0;border-radius:4px;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0 0 10px 0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-quarter" style="margin:0 0 10px 0;padding:1px 3px 1px 2px;">
 <div class="column" style="padding:0;margin:0;">
@@ -1295,8 +1311,11 @@ Create some amazing beauty deals.</p>
 
 <hr class="style-one" style="height:2px;width:40%;margin:2px 0 18px 0;opacity:0.5;">
 
-<p class="topic3b" style="letter-spacing:.75px;font-size:22px;margin:0;">
-We'll showcase up to four of your services, as shown in the Smart Promotion Ad demo above. When clients tap on a service, they're taken to <a href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="letter-spacing:.75px;font-size:22px;color:#fff;text-shadow:0 0 1px #b3daff;margin:0;">your space in our marketplace</a> where they can learn more & book online. We'll also We'll also display your <a href="https://www.dermalogica.com/pages/in-this-together" target="_blank" style="letter-spacing:.75px;font-size:22px;color:#fff;text-shadow:0 0 1px #b3daff;margin:0;">Clean Health Certificate</a>.</p>
+<p class="topic3b" style="letter-spacing:.75px;font-size:20px;margin:0;">
+We'll showcase up to four of your services. When clients tap on a service, they're taken to <a href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="letter-spacing:.75px;font-size:20px;color:#fff;text-shadow:0 0 1px #b3daff;margin:0;">your space in our marketplace</a> where they can learn more & book online. Want to display your electronic <a href="https://www.dermalogica.com/pages/in-this-together" target="_blank" style="letter-spacing:.75px;font-size:20px;color:#fff;text-shadow:0 0 1px #b3daff;margin:0;">Clean Health Certificate</a>? We can do that too.<br><br>
+
+Smart Promotion Ad included when you become an SG Merchant.<br>
+Only $139 per month for all other marketers.</p> 
 
 <p align="center"><a class="w3-button w3-hover-shadow" href="https://form.jotform.com/200181106011129" target="_blank" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;color:#80c1ff;text-shadow:0 0 1px #fff;font-size:20px;text-align:center;letter-spacing:.5px;text-decoration:none;padding:10px 20px;margin:15px 0 30px 0;">Order Now</a></p>
 </div>
@@ -1323,8 +1342,8 @@ We'll showcase up to four of your services, as shown in the Smart Promotion Ad d
 </div>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:0;">
-<p class="topic3c" style="text-align:center">Benefits of Smart Promotion Ads</p>
+<div class="w3-container" style="width:100%;padding:0;margin:30px 0 0 0;">
+<p class="topic3c" style="text-align:center">Why Our Smart Promotion Ads?</p>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
 <div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
 <div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
@@ -1435,7 +1454,7 @@ Scrolling Footer Logo Ads</button></p>
 
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
-<p class="topic3c" style="text-align:center">Benefits of Scrolling Footer Logo Ads</p>
+<p class="topic3c" style="text-align:center">Why Our Scrolling Footer Logo Ads?</p>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
 <div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
 <div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
@@ -1485,7 +1504,7 @@ When SG MarketPlace shoppers click on your SFLA, they're taken to your external 
 </div>
 
 <center>
-<div id="GKSA" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div id="GKSA" class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0 0 10px 0;">
 <div class="w3-threethird" style="margin:0;">
 <p class="topic2c"><button class="w3-button" style="background-color:#fff;letter-spacing:1px;padding-top:12px;border:none;border-radius:3px 3px 0 0;">
@@ -1499,7 +1518,7 @@ Google Keyword Search Ads</button></p>
 
 <center>
 <div class="w3-container" style="width:100%;padding:0;margin:50px 0 0 0;">
-<p class="topic3c" style="text-align:center">Benefits of Google Keyword Search Ads</p>
+<p class="topic3c" style="text-align:center">Why Google Keyword Search Ads?</p>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
 <div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
 <div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
@@ -1562,7 +1581,7 @@ The Prestige</button></p>
 </div>
 
 <center>
-<div id="FAQ's" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div id="FAQ" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0;">
 <p class="topic2c"><button class="w3-button" style="background-color:#fff;letter-spacing:1px;padding-top:12px;border:none;border-radius:3px 3px 0 0;">
@@ -1579,7 +1598,7 @@ Absolutely. Our Smart Promotion Ads can help your small business generate awaren
 
 The goal of our Scrolling Footer Logo Ads is to help you establish credibility and brand identity with our marketplace shoppers. These ads allow you to connect with them intellectually and emotionally so they're motivated to take action when they see your Smart Promotion Ads.<br><br>
 
-Providing opportunities for small business owners to promote their products and services in our marketplace search results for only $1 a day was a real no-brainer. If you haven't already tried the search engine on our site, we encourage you to do so and imagine your small business ad located in that coveted spot. Who doesn't want to be number one on Google?</p>
+Providing opportunities for small business owners to promote their products and services in our marketplace search results for only $2 a day was a real no-brainer. If you haven't already tried the search engine on our site, we encourage you to do so and imagine your ad located in that coveted spot. Who doesn't want to be number one on Google?</p>
 </div>
 
 <div class="accordion">Where will these ads appear?</div>
