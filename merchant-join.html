@@ -534,6 +534,55 @@ text-shadow: 0 0 1px dodgerblue;
  margin: 5px 0;
 border: none;
 }
+
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fed;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
 </style>
 </head>
 
@@ -1079,6 +1128,7 @@ Stay in the game with our solutions.</p>
 <div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
 <div class="w3-container w3-panel w3-card" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
 <div class="column" style="background-color:dodgerblue;padding:20px 20px 0 20px;margin:4px;border-radius:2px;">
+<div class="lds-ripple"><div></div><div></div></div>
 <p class="topic3c" style="color:#fff;text-shadow:0 0 1px dodgerblue;">Online Questionnaire</p>
 
 <hr class="style-three">
