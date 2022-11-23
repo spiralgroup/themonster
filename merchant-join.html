@@ -150,14 +150,14 @@ color: #000;
 text-shadow: 0 0 1px #222;
 letter-spacing: .5px;
 text-align: justify;
-padding: 1px 0 0 0;
+padding: 10px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic {
   font-size: 12.5px;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 5px 0;
   }
   }
   
@@ -293,7 +293,7 @@ padding: 0;
   
   .topic3g {
 font-family: Yanone Kaffeesatz;
-font-size: 32px;
+font-size: 23px;
 color: #b3b300;
 text-align: center;
 letter-spacing: 1px;
@@ -310,12 +310,13 @@ padding: 0;
    
   .topic9c {
 font-family: Yanone Kaffeesatz;
-font-size: 32.5px;
+font-size: 29px;
 color: #b3b300 !important;
 text-align: center;
 text-shadow: 0 0 1px #f1f1f1;
 letter-spacing: 1px;
 padding: 10px 0 3px 0;
+margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -440,8 +441,16 @@ left: 0 !important;
 
 .dropdown:hover .dropbtn {background-color: #fff;}
    
-hr.style-one { border: 0; height: 7px; width:45%; background-color: #fff; opacity: 0.4; padding: 0; margin:0 0 10px 0; border-radius:5px;
+hr.style-one { border: 0; height: 3px; width: 95%; background-color: #fff; opacity: 0.9; padding: 0; margin: 80px 0; border-radius:5px;
 }
+
+@media screen and (max-width: 768px) {
+  hr.style-one {
+  margin: 35px 0 45px 0;
+  width: 85%;
+  }
+  }
+
 hr.style-two { border: 0; height: 3px; width:85%; background-color: #fff; opacity: 0.4; padding: 0; margin: 0; border-radius:5px;
 }
 hr.style-three { border: 0; height: 2px; width:45%; background-color: #fff; opacity: 0.4; padding: 0; margin:0 0 15px 0; border-radius:5px;
@@ -450,8 +459,8 @@ hr.style-four { border: 0; height: 3px; width:70%; background-color: #fff; opaci
 }
 
 .accordion {
-  font-family: Yanone Kaffeesatz;
-font-size: 21.5px;
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
 color: #b3b300;
 letter-spacing: 1px;
 text-shadow: 0 0 1px #f1f1f1;
@@ -542,7 +551,7 @@ border: none;
 }
 .lds-ripple div {
   position: absolute;
-  border: 4px solid #ccc;
+  border: 4px solid #fff;
   opacity: 1;
   border-radius: 50%;
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
@@ -780,8 +789,15 @@ Our Sales Consultants help to ensure your success by working to create a mutuall
 </div>
 </div>
 
-<hr class="style-one" style="margin:50px 0;padding:0;">
-<div id="profit" class="w3-row-padding" style="width:100%;">
+<div>
+<hr id="profit" class="style-one">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding" style="width:100%;">
 <div class="w3-third w3-card" style="background-color:#fff;padding:0;border-radius:3px;">
 <img style="width:100%;background-color:#fff;border-radius:2px;" src="https://user-images.githubusercontent.com/25410880/96610231-006c0780-12c1-11eb-8d35-8c84251c8d18.gif">
 </div>
@@ -818,9 +834,15 @@ Profit-Driven Marketing</button>
 </div>
 </div>
 
-<hr class="style-one" style="margin:50px 0;padding:0;">
+<div>
+<hr id="bonus" class="style-one">
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div id="bonus" class="w3-row-padding" style="width:100%;">
+<div class="w3-row-padding" style="width:100%;">
 <div class="w3-third w3-card" style="background-color:#fff;padding:0;border-radius:3px;">
 <img style="width:100%;background-color:#fff;border-radius:2px;" src="https://user-images.githubusercontent.com/25410880/96354588-dd154280-109d-11eb-9701-fbe32e33a616.gif">
 </div>
@@ -1446,7 +1468,7 @@ Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog
 
 <div class="w3-third" style="margin:0 0 30px 0;padding:0 10px;">
 <img src="https://user-images.githubusercontent.com/25410880/96313189-f8ffe200-0fd2-11eb-8bc5-767c8eae5c1c.gif" style="width:100%;padding:0;margin:0;border-radius:3px;">
-<button type="button" class="btn btn-primary btn-block w3-hover-shadow" onclick="document.getElementById('id32').style.display='block'" style="background-color:#fff;margin:0;padding:13px 0;border:none;border-radius:3px;opacity:0.99;"><p class="topic3c"><a href="https://www.spiralgroup.org">Help Build Our MarketPlace</a></button>
+<button type="button" class="btn btn-primary btn-block w3-hover-shadow" onclick="document.getElementById('id32').style.display='block'" style="background-color:#fff;margin:0;padding:13px 0;border:none;border-radius:3px;opacity:0.99;"><p class="topic3c"><a style="color:#b3b300;" href="https://www.spiralgroup.org">Help Build Our MarketPlace</a></button>
 </div>
 </div>
 </div>
@@ -1455,9 +1477,9 @@ Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog
 </div>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 10px;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:40px 0 0 0;">
 <div class="w3-threethird" style="margin:0 0 20px 0;">
-<p class="topic3g" style="margin:0;padding:0;">
+<p class="topic3g" style="margin:80px 0 0 0;padding:0;">
 Online marketing has never been<br>
 this easy or affordable.</p>
 
