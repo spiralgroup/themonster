@@ -40,6 +40,7 @@ body, html {
     height: 100%;
     margin: 0 auto;
     background-color: #f2f2f2;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -146,7 +147,7 @@ li:hover span {
   
   .topic {
 font-family: roboto;
-font-size: 18px;
+font-size: 16px;
 color: #222;
 text-shadow: 0 0 1px #f1f1f1;
 letter-spacing: .5px;
@@ -156,7 +157,7 @@ padding: 10px 0 0 0;
 
 @media screen and (max-width: 768px) {
   .topic {
-  font-size: 12.5px;
+  font-size: 15px;
   }
   }
 .topic2c {
@@ -171,7 +172,7 @@ padding: 0;
 
 @media screen and (max-width: 768px) {
   .topic2c {
-   font-size: 100px;
+   font-size: 95px;
    padding: 0;
   }
   }
@@ -344,7 +345,7 @@ hr.style-two { border: 0; height: 7px; width:85%; background-color: #fff; paddin
     <a href="#">Marketing Materials</a>
     </div>
   </div>
-  <button class="w3-button" style="font-family:roboto,sans-serif;font-size:12px;color:#fff;"><a href="#library">Visit Your Library</a></button>
+  <button class="w3-button" style="font-family:roboto,sans-serif;font-size:12px;color:#fff;"><a href="#home">Work from Home</a></button>
     </div>
     
 <div class="col-sm-7" style="padding:0;margin:0;padding:0;">
@@ -411,30 +412,37 @@ hr.style-two { border: 0; height: 7px; width:85%; background-color: #fff; paddin
 </nav>
 
 <div class="example">
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-
-
-<div class="modal fade" id="modalNavigation" role="dialog" style="background-color:#a9a9a9;">
-<div class="modal-header" style="border:none;">
+<div class="container" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="modal fade" id="modalNavigation" role="dialog" style="background-color:#f2f2f2;width:100%;padding:5px 0 15px 0;margin:0;">
+<div class="modal-header" style="border:none;width:100%;padding:0;margin:0;">
 <div class="modal-dialog modal-lg" style="background-color:transparent;">
-<div class="w3-container" style="background-color:transparent;width:100%;">
-<div class="w3-row-padding" style="width:100%;margin:0 auto;">
-<div class="col-sm-8">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/94547271-ac678900-0214-11eb-815b-fe3bb7e294f5.png" style="width:100%;margin:0 0 10px 0;padding:0;border-radius:2px;">
+<div class="w3-row-padding" style="width:100%;">
+<div class="w3-threethird">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/204295094-0416a322-a94d-4696-8785-31f9cc832dd9.png" style="width:100%;margin:0;padding:0;border-radius:3px;">
+</div>
+</div>
+</div>
 </div>
 
-<div class="col-sm-4" style="padding-top:3px;">
-<a class="btn btn-primary btn-block" style="background-color:#b3b300;font-family:roboto condensed;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0;border:2px solid #b3b300;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/"><span>SHOP OUR MARKETPLACE</span></a>
+<div class="w3-container w3-panel" style="width:100%;padding:0 17px;margin:0;">
+<div class="w3-container w3-panel w3-card-4" style="background-color:#b3b300;width:100%;padding:5px 0;border-radius:4px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 2px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://www.spiralgroup.org"><span>Shop Our MarketPlace</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/sg-giftcard.html"><span>HOLIDAY GIFT IDEAS</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://form.jotform.com/222675560970159"><span>Holiday Gift Ideas</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span>COMMUNITY SERVICES</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://form.jotform.com/222675560970159"><span>Community Outreach</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;"href="https://spiralgroup.github.io/themonster/careers.html"><span>WORK FOR US</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://form.jotform.com/92186745877172" target="_blank"><span>Join Our Team</span></a>
 
-<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;"href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank"><span>PRIVACY POLICY</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://form.jotform.com/82323651984159"><span>Merchant Sign-Up</span></a>
 
-<button class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
+<button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0;border:none;border-radius:4px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
+</div>
 </div>
 </div>
 </div>
@@ -455,81 +463,57 @@ hr.style-two { border: 0; height: 7px; width:85%; background-color: #fff; paddin
 </div>
 
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
-<p class="topic2c">Join Our Team</p>
+<div id="home" class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
+<p class="topic2c">Work at Home</p>
 
-
-
-<div id="shop" class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
 <p class="topic">
-We seek creative, energetic, self-motivated, and ambitious people to join our team as Independent Sales Consultants. Ideal candidates will have previous outbound sales experience, exceptional service skills, the drive to be successful, and a teachable mentality. You'll ensure the success of local small businesses by helping them achieve their goals through our online marketplace and various ad products. You'll be totally responsible for both identifying and contacting small business owners throughout the Greater Chicagoland area who would benefit from selling their products and services in the SG MarketPlace. Success in this role is measured by exceeding sales goals, professional ethics, staying ahead of certain daily metrics, asking probing questions, and anticipating customer objections.</p>
+We seek creative, energetic, self-motivated, and ambitious people to join our team as Independent Sales Consultants. Ideal candidates will have previous outbound sales experience, exceptional service skills, the drive to be successful, and a teachable mentality. You'll ensure the success of local small businesses by helping them achieve their goals through our online marketplace and various ad products.<br><br>
+
+You'll be totally responsible for identifying and contacting small business owners by phone throughout Macon County, Illinois who would benefit from selling their products and services in the SG MarketPlace. Success in this role is measured by exceeding sales goals, professional ethics, staying ahead of certain daily metrics, asking probing questions, and anticipating customer objections. <a href="https://github.com/spiralgroup/themonster/files/10103732/Spiral.Group.Job.Posting.pdf" style="cursor:pointer;">Click here to view complete job description.</a></p>
 </div>
 </div>
 </div>
 
 <center>
-<div id="merchants" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
 <div class="w3-threethird" style="margin:0;">
 <p class="topic9c"><button class="w3-button" style="background-color:#fff;letter-spacing:1px;padding-top:12px;border:none;border-radius:3px 3px 0 0;">
-Earning While Learning</button></p>
-
+Support Your Community</button></p>
 
 <p class="topic">
-We provide the resources, training, support, and creative autonomy you'll need to help our clients grow their small businesses. With each product sold, you've given a local small business an opportunity to stay in the game. This is a commission-based sales opportunity. Confident, ethical, and committed Sales Consultants will earn 25% commission on each product sold.</p>
+We provide the resources, training, support, and creative autonomy you'll need to help our clients grow their small businesses. With each product sold, you've given a local small business an opportunity to stay in the game by providing them an affordable opportunity to get their products and services in front of a larger local audience. This is a commission-based sales opportunity. Confident, ethical, and committed Sales Consultants will earn 20% commission on each product sold. To be considered, applicants must be 18 years of age or older. Access to either a laptop or desktop computer is required for this position.</p>
 </div>
 </div>
 </div>
 
 <center>
-<div id="Your Local Library" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div id="Your Local Library" class="container w3-panel" style="width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
 <div class="w3-threethird" style="margin:0;">
 <p class="topic9c"><button class="w3-button" style="background-color:#fff;letter-spacing:1px;padding-top:12px;border:none;border-radius:3px 3px 0 0;">
-Visit Your Local Library</button></p>
-
+Your Local Library</button></p>
 
 <p class="topic">
-We provide the resources, training, support, and creative autonomy you'll need to help our clients grow their small businesses. With each product sold, you've given a local small business an opportunity to stay in the game. This is a commission-based sales opportunity. Confident, ethical, and committed Sales Consultants will earn 25% commission on each product sold.<br><br>
+If you don't have immediate acces to a laptop or desktop computer, you can visit your local library. Many of them allow free access to their computers, and all you'll need is a valid ID and library card. If you're interested in an enriching opportunity and have what we're seeking, we want to talk to you.</p>
 
-If you're seeking an enriching and rewarding opportunity and have what we're seeking, <a href="https://form.jotform.com/82398672847172" target="_blank" style="text-decoration:none;color:#b3b300;text-shadow:0 0 1px #f2f2f2;">click here to apply now</a>.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 10px;margin:0;">
-<div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
-<div class="w3-threethird" style="margin:0 0 20px 0;">
-<p class="topic3c" style="color:#b3b300;margin:0;padding:0;">
-Get paid to support small business in your community.</p>
-
-<p align="center"><a class="w3-button w3-hover-shadow" href="https://form.jotform.com/222675560970159" style="cursor:pointer;background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 30px;margin:10px 0 80px 0;">Apply Now</a></p>
+<p align="center"><a class="w3-button w3-hover-shadow" href="https://form.jotform.com/222675560970159" style="cursor:pointer;background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 20px;margin:10px 0 80px 0;">Apply Now</a></p>
 </div>
 </div>
 </div>
 </div>
 
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:80px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:60px 0 0 0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-
 <div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
-<div class="container w3-panel w3-card" style="background-color:#b3b300;width:100%;padding:4px;border-radius:3px 3px 0 0;margin:0;">
-
+<div class="container w3-panel w3-card" style="background-color:#b3b300;width:100%;padding:10px 4px 0 4px;border-radius:3px 3px 0 0;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<p align="center" style="font-family:Yanone Kaffeesatz;font-size:28px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0;margin:10px 0 0 0;">www.SpiralGroup.org</p>
-
-<p align="center" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0;margin:0;">
-217-848-6332</p>
-
-<div class="sharethis-inline-share-buttons" style="padding:0;margin:10px 0 30px 0;">
-</div>
-</div>
+<p align="center" style="font-family:Yanone Kaffeesatz;font-size:38px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0 0 10px 0;margin:0;"><a style="color:#fff;" href="https://www.spiralgroup.org">www.SpiralGroup.org</a></p>
 
 <div class="row-padding" style="background-color:#b3b300;margin:0 0 10px 0;">
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0;">
@@ -544,16 +528,16 @@ Get paid to support small business in your community.</p>
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
 <p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> MARKETPLACE SHOPPERS</p>
 <p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/">Shop Our MarketPlace</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/sg-giftcard.html">Holiday Gift Ideas</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/careers.html">Work for Us</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" target="_blank">Are You Ready?</a></p>
+<p><a href="https://form.jotform.com/222675560970159">Holiday Gift Ideas</a></p>
+<p><a href="https://form.jotform.com/82398672847172">Work for Us</a></p>
+<p><a href="https://form.jotform.com/222675560970159">Community Outreach</a></p>
 <p style="margin-bottom:10px;"><a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a></p>
 </div>
 
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
 <p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> LOCAL MERCHANT RESOURCES</p>
 <p style="margin-top:15px;"><a href="https://form.jotform.com/82323651984159">Join Our MarketPlace</a></p>
-<p><a href="https://form.jotform.com/82323651984159">SG Business Listing Service&trade;</a></p>
+<p><a href="https://form.jotform.com/82323651984159">SG Listing Service&trade;</a></p>
 <p><a href="https://form.jotform.com/82323651984159">Special Offers Guide</a></p>
 <p><a href="https://form.jotform.com/82323651984159">SG Local Ad Services&trade;</a></p>
 <p style="margin-bottom:10px;"><a href="https://form.jotform.com/82323651984159">Free Consultation</a></p>
