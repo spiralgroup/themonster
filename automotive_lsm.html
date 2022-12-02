@@ -27,153 +27,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
-
-<script>
-$(document).ready(function(){
-    $('.bca-premium').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
-});
-</script>
 
 <style type="text/css">
-/* Slider1 */
-.slick-slide {
-    margin: 2px 0;
-    padding: 0;
-    background-color: transparent;
-    }
-.slick-slide img {
-    width: 100%;
-    margin: 0 auto;
-    background-color: transparent;
-    border-radius: 2px;
-}
-.slick-slider
-{
-    position: relative;
-     background-color: transparent;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden; 
-    padding: 0;
-    }
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-   }
-.slick-track:before,
-.slick-track:after
-{display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}[dir='rtl'] .slick-slide
-{
-    float: left;
-}
-.slick-slide img
-{
-    display: block;
-   }
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{ display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-
 body, html {
     max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
     padding: 0;
     background-color: #f1f1f1;
+    scroll-behavior: smooth;
  }
   
  
@@ -223,8 +85,8 @@ margin: 10px 0 0 0;
 
 .topic2c {
 font-family: Yanone Kaffeesatz;
-font-size: 52px;
-color: #b3b300;
+font-size: 150px;
+color: #fff !important;
 text-align: center;
 letter-spacing: 1px;
 margin: 0;
@@ -233,15 +95,15 @@ padding: 0;
 
 @media screen and (max-width: 768px) {
   .topic2c {
-   font-size: 40px;
-   padding: 0;
+   font-size: 85px;
+   padding: 0 10px;
   }
   }
   
 .topic3b {
 font-family: Yanone Kaffeesatz;
-font-size: 19px;
-color: #b3b300;
+font-size: 29px;
+color: #222;
 letter-spacing: 1px;
 text-shadow: 0 0 1px #f1f1f1;
 text-align: center;
@@ -251,7 +113,7 @@ margin: 0;
 
 @media screen and (max-width: 768px) {
   .topic3b {
-  font-size: 17.5px;
+  font-size: 27px;
   }
   }
   
@@ -271,58 +133,57 @@ margin: 0;
   letter-spacing: 1px;
   }
   }
+   .topic3bb {
+font-family: roboto condensed;
+font-size: 17.5px;
+color: #222;
+text-shadow: #f1f1f1;
+letter-spacing: .5px;
+text-align: center;
+margin: 0;
+padding: 20px 20px 15px 20px;
+}
+
+@media screen and (max-width: 768px) {
   .topic3bb {
+  font-size: 17px;
+  text-align: center;
+  padding: 10px 10px 15px 10px;
+  }
+  }
+  
+  .topic3c {
 font-family: Yanone Kaffeesatz;
-font-size: 19.5px;
-color: #b3b300;
-letter-spacing: 1px;
+font-size: 33px;
+color: #222;
 text-shadow: 0 0 1px #f1f1f1;
 text-align: center;
-padding: 0 20px;
-margin: 20px 0 10px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic3bb {
-  font-size: 18px;
-   margin: 10px 0;
-   padding: 0;
-  }
-  }
-    
-  .topic3c {
-font-family: Yanone Kaffeesatz;
-font-size: 24.5px;
-color: #b3b300;
-text-align: center;
 letter-spacing: 1px;
-margin: 0;
-padding: 0 4px;
+margin: -40px 0 40px 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic3c {
-   font-size: 22px;
+   font-size: 23px;
+   margin: -20px 0 20px 0;
   }
   }
  
  .topic3ca {
  font-family: Yanone Kaffeesatz;
-font-size: 34px;
-color: #b3b300;
+font-size: 24px;
+color: #222;
 text-align: center;
 text-shadow: 0 0 1px #f1f1f1;
-letter-spacing: 1.25px;
-margin: 10px 0 0 0;
+letter-spacing: .5px;
+margin: 20px 0 0 0;
 padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic3ca {
    font-size: 22px;
-   letter-spacing: .75px;
-   padding: 0;
-   margin: 10px 0 0 0;
+   margin: 15px 0 0 0;
   }
   }
  
@@ -362,33 +223,7 @@ margin: 0;
   }
   }
 
-.topic4ca1 {
-font-family: Yanone Kaffeesatz;
-font-size: 30px;
-color: #ffbf80;
-text-align: center;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #f1f1f1;
-padding: 0;
-margin: 13px 0 0 0;
-}
 
- .topicpanel {
-font-family: Yanone Kaffeesatz;
-font-size: 18px;
-color: #b3b300;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #f1f1f1;
-text-align: justify;
-padding: 0;
-margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topicpanel {
-  font-size: 16px;
-  }
-  }
 .material-icons {
    color: #b3b300;
    text-shadow: 1px 1px 1px #ccc;
@@ -402,26 +237,7 @@ margin: 0;
   display: none;
   }
   }
-
-.container8 {
-position: relative;
-display: inline-block;
-width: 100%;
-height: auto;
-margin: 0 2px;
-padding: 0;
-  }
-
-.content8 {
-position: absolute;
-  background: transparent;
-  width: 100%;
-  margin: 0;
-  bottom: 80px;
-  padding: 0 10px;
-  border-radius: 0 0 2px 2px;
-}
-
+  
 .container-fluid2 {
 max-width: 1200px;
 left: 0 !important;
@@ -494,25 +310,12 @@ left: 0 !important;
 hr.style-one { border: 0; height: 7px; width:65%; background-color: #fff; padding: 0; margin:0 0 15px 0; border-radius:5px;
 }
 
-hr.style-two { border: 0; height: 3px; width:50%; background-color: #fff; padding: 0; margin:0 0 15px 0; border-radius:5px; opacity: 0.4;
+hr.style-two { border: 0; height: 3px; width:50%; background-color: #fff; padding: 0; margin:0 0 15px 0; border-radius:5px;
 }
-.alert {
- padding: 0;
- margin: 0;
- }
-  
-  .column1 {
-   padding: 30px;
-   margin: 0 0 100px 0;   
-}   
 
-@media screen and (max-width: 768px) {
-  .column1 {
-  padding: 10px 0;
-   margin: 0 0 20px 0;  
-  }
-  }
-  
+hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padding: 0; margin:5px 0 0 0; border-radius:5px;
+}
+
 .w3-modal {
 background-color: #b3daff;
 width: 100%;
@@ -537,20 +340,6 @@ margin: 0;
  padding: 0;
  width: 100%;
  margin: 0;
-}
-
-.w3-container55 {
-width: 85%;
-padding: 10px;
-margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .w3-container55 {
-  width: 100%;
-padding: 10px;
-margin: 0;
-}
 }
 
 .topnav7 {
@@ -588,18 +377,54 @@ margin: 0;
   padding: 8px 5px 0 5px;
   margin: 0 6px 0 6px;
 }
-</style>
-<!-- MailerLite Universal -->
-<script>
-(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
-</script>
-<!-- End MailerLite Universal -->
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.10s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 15px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    opacity: 9;
+      }
+  4.9% {
+    top: 15px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    opacity: 9;
+  }
+  5% {
+    top: 15px;
+    left: 0px;
+    width: 0;
+    height: 0;
+      }
+    
+  100% {
+    top: 15px;
+    left: 0px;
+    width: 32px;
+    height: 32px;
+    opacity: 9;
+  }
+}
+
+</style>
 </head>
 
 <center>
@@ -747,223 +572,87 @@ var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
 <p class="topic2c">
 Get More Clients</p>
 
-<p class="topic3c">Join our Automotive marketplace and reach more local customers. Easily promote your products and services. All for $299 per year.</p>
+<p class="topic3c">Join our Automotive Marketplace for $329 per year.</p>
 </div>
 </div>
 
 <center>
-<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 8px;margin:50px 0 30px 0;">
+<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 10px;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-half w3-card" style="padding:0;margin:0 0 10px 0;border-radius:3px;">
-<div class="column">
+<div class="w3-third w3-card" style="padding:0;margin:0 0 10px 0;border-radius:3px;">
 <img src="https://user-images.githubusercontent.com/25410880/54055812-fdcba580-41a2-11e9-87e4-454e297cfa6f.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
 </div>
-</div>
 
-<div class="w3-half" style="margin:0;">
-<div class="w3-column" style="padding:0;margin:0;">
-<p class="topic3ca">Decreased Retail & Workshop Business</p>
-
-<hr class="style-one" style="height:5px;opacity:0.5;">
-
+<div class="w3-twothird" style="margin:0;">
 <p class="topic3bb">
-Many people are delaying inspections or discretionary repairs, and some government transportation agencies are relaxing deadlines for mandatory technical controls and inspections. Consumers with lower incomes are also delaying avoidable repairs. These changes are dramatically reducing visits to garages, service stations, and repair workshops, even though these businesses are typically allowed to remain open and can still ... <a href="https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/beyond-coronavirus-the-road-ahead-for-the-automotive-aftermarket#" target="_blank">continued</a></p>
+Winning over new customers can be a struggle. You rely on walk-ins and word of mouth. If you're proactive, you may have grown your business through traditional advertising and marketing channels, but these require time and money. Like any business, it's important to maintain an online presence. A website that's simple to use, easy to navigate, and engaging for the customer.<br><br>
 
-<p align="center"><a class="w3-button w3-hover-shadow" href="#check-it-out" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:10px 20px;margin:15px 0 30px 0;">Check It Out</a></p>
-</div>
+Being a home and personal services provider, you may realize that adding online appointment scheduling to your website is a necessity. By making the process accessible and easy-to-use, you increase your chances of acquiring new customers and understanding their needs prior to meeting with them for a scheduled appointment. Become an SG MarketPlace Merchant and we'll have you falling in love with our service, prices, ad products, and business solutions.</p>
 </div>
 </div>
 </div>
 </div>
 
-<div id="check-it-out" class="w3-container w3-panel" style="width:100%;padding:20px 0 0 0;margin:0;">
-<p class="topic3c">
+<div class="w3-container w3-panel" style="width:100%;margin:80px 0 0 0;">
+<p class="topic3b" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
 Stay in the game with our solutions.</p>
 
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;">
-<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
+<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;">
 
-<div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
-<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
-<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Book Appointments Online</p>
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
+<div class="lds-ripple"><div></div><div></div></div>
+<p class="topic3ca">Acquire New Clients Online</p>
 
-<hr class="style-two">
+<hr class="style-three">
 
-<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
-If you require clients to complete a questionnaire prior to scheduling an appointment, we've got you covered. After joining our marketplace, your clients will be able to complete your <a href="https://form.jotform.com/92946245259165" target="_blank" style="color:#fff;text-shadow:0 0 1px #b3b300;">HIPPA-Compliant form, online</a>.</p>
-</div>
-</div>
-</div>
-
-<div class="w3-third" style="margin:0 0 4px 0;border-radius:3px;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
-<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
-<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Healthy Interactions Guide</p>
-
-<hr class="style-two">
-
-<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
-Sharpen your skills with this useful <a href="https://www.chicago.gov/content/dam/city/sites/covid/reopen-businesses-portal/guidelines/BeSafe.Personal-Services-City-of-Chicago-Phase-4-Guidelines.pdf" target="_blank" style="color:#fff;text-shadow:0 0 1px #b3b300;">Healthy Interactions Guide</a>. Although developed for home and personal services providers, automotive industry professionals can benefit from learning these enhanced service safety protocols.</p>
-</div>
+<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+Don't have a website for your small business? We've got you covered. You can effectively use your space in the SG MarketPlace to build customer loyalty, increase brand awareness, and improve overall profitability.</p>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0;border-radius:3px;">
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
-<div class="column w3-card" style="background-color:#b3b300;padding:22px 20px;margin:4px;border-radius:2px;">
-<img src="https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg" style="width:12%;padding:0;margin:0 0 15px 0;"><br>
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
+<div class="lds-ripple"><div></div><div></div></div>
+<p class="topic3ca" style="color:#222;text-shadow:0 0 1px #f1f1f1;">Online Appointment Scheduling</p>
 
-<p class="topic3c" style="color:#fff;text-shadow:0 0 1px #b3b300;">Smart Promotion Ads</p>
+<hr class="style-three">
 
-<hr class="style-two">
+<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+Would it be more efficient for your automotive services business if clients could schedule appointments online? You bet. Become a merchant in our marketplace, and your clients can book appointments on your page and more.</p>
+</div>
+</div>
 
-<p class="topic3b" style="color:#fff;text-shadow:0 0 1px #b3b300;">
-Our Smart Promotion Ads can help generate awareness about your food & beverage business and increase sales. Promoting your brand to more local diners has never been this easy or affordable. <a href="https://spiralgroup.github.io/themonster/share-the-magic.html#SPA" style="cursor:pointer;color:#fff;text-shadow:0 0 1px #b3b300;">View our SPA demos.</a></p>
-</div>
-</div>
-</div>
-</div>
+<div class="w3-third" style="margin:0 0 15px 0;">
+<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
+<div class="lds-ripple"><div></div><div></div></div>
+<p class="topic3ca" style="color:#222;text-shadow:0 0 1px #f1f1f1;">Smart Promotion Ads</p>
+
+<hr class="style-three">
+
+<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+Our Smart Promotion Ads can help generate awareness about your automotive services business. Become an SG MarketPlace Merchant and receive a SPA free for 30 days. Check out our demos by <a href="https://spiralgroup.github.io/themonster/share-the-magic.html#SPA" style="color:#222;text-shadow:0 0 1px #f1f1f1;">clicking here.</a></p>
 </div>
 </div>
 </div>
 
-<center>
-<div id="id37" class="w3-modal w3-animate-zoom">
-<div class="w3-container55 w3-panel">
-<div class="w3-modal-content" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<img class="w3-card-2" src="https://user-images.githubusercontent.com/25410880/96610013-c7339780-12c0-11eb-8ce9-281cf5935cae.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
-</div>
-</div>
-
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<p class="topic3b9" style="color:#b3b300;text-shadow:0 0 1px #fff;">
-Buy Online, Pickup In-Store.</p>
-
-<div class="w3-row" style="width:100%;margin:5px 0 0 0;padding:0;">
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:0 0 10px 0;margin:0;">
-<div class="bca-premium" style="width:100%;margin:0;padding:0;">
-<div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
-<div class="column w3-card" style="border:2px solid transparent;border-radius:3px;padding:8px;margin:5px 0 0 0;">
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/96612651-a02a9500-12c3-11eb-81ed-54b6f5589136.jpg" style="width:100%;padding:0;border-radius:1%;">
-
-<p class="topic4ca1" style="color:#b3b300;text-shadow:0 0 1px #fff;">
-Product One</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div>
-</div>
-
-<div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
-<div class="column w3-card" style="border:2px solid transparent;border-radius:3px;padding:8px;margin:5px 0 0 0;">
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/96614697-087a7600-12c6-11eb-85df-9f5cd37ea055.jpg" style="width:100%;padding:0;border-radius:1%;">
-
-<p class="topic4ca1" style="color:#b3b300;text-shadow:0 0 1px #fff;">
-Product Two</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div>
-</div>
-
-<div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
-<div class="column w3-card" style="border:2px solid transparent;border-radius:3px;padding:8px;margin:5px 0 0 0;">
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/96614690-07494900-12c6-11eb-9b4a-1d2396f92ec5.jpg" style="width:100%;padding:0;border-radius:1%;">
-
-<p class="topic4ca1" style="color:#b3b300;text-shadow:0 0 1px #fff;">
-Product Three</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div>
-</div>
-
-<div class="slide" style="border-radius:2%;padding:0 8px;margin:0 0 10px 0;">
-<div class="column w3-card" style="border:2px solid transparent;border-radius:3px;padding:8px;margin:5px 0 0 0;">
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/96614689-06b0b280-12c6-11eb-82f1-7f62b2eb7a03.jpg" style="width:100%;padding:0;border-radius:1%;">
-
-<p class="topic4ca1" style="color:#b3b300;text-shadow:0 0 1px #fff;">
-Product Four</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="margin:0 0 7px 0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#666;letter-spacing:.5px;text-decoration:none;">$19.99 <i class='fas fa-store-alt'></i> Order Online</a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<hr class="style-one" style="width:85%;margin:50px 0 70px 0;opacity:0.4;">
-<div class="w3-row-padding" style="background-color:transparent;width:100%;margin:0;border-radius:3px;">
-
-<div class="w3-half" style="margin:0 0 3px 0;border-radius:3px;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:4px 4px 2px 2px;margin:0;">
-<div class="column w3-card" style="background-color:#d9ecff;padding:0;margin:4px;border-radius:2px;">
-<img src="https://user-images.githubusercontent.com/25410880/96610231-006c0780-12c1-11eb-8d35-8c84251c8d18.gif" style="width:100%;padding:0;margin:0;border-radius:2px;">
-</div>
-</div>
-</div>
-
-<div class="w3-half" style="margin:0;">
-<div class="column1">
-<p class="topic3b" style="font-size:35px;color:#b3b300;text-shadow:0 0 1px #fff;margin:0 0 -5px 0;padding:0;">
-Join Our MarketPlace</p>
-
-<p class="topic3b" style="font-size:17px;color:#b3b300;text-shadow:0 0 1px #fff;margin:0;padding:0;">
-Create some amazing deals.</p>
-
-<hr class="style-one" style="height:2px;width:40%;margin:2px 0 18px 0;opacity:0.5;">
-
-<p class="topic3c" style="letter-spacing:.75px;font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;margin:0;">
-We'll showcase up to four of your products, as shown in the Smart Promotion Ad demo above. When customers tap an item, they're taken to <a href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="font-size:22px;color:#b3b300;text-shadow:0 0 1px #fff;margin:0;">your space in our marketplace</a> where they can learn more and order online. Have a physical location? We'll implement BOPIS at online checkout.</p> 
-
-<p align="center"><a class="w3-button w3-hover-shadow" href="https://spiralgroup.github.io/themonster/restaurant-template.html" target="_blank" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #fff;text-decoration:none;padding:10px 20px;margin:15px 0 30px 0;">Check It Out</a></p>
-</div>
-</div>
-</div>
-</div>
-
-<p class="topic3c" style="color:#b3b300;text-shadow:0 0 1px #fff;">Questions? Call us at 773-603-2093.</p>
-
-<hr class="style-one" style="margin:10px 0 15px 0;opacity:0.4;">
-
-<center>
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
-<button onclick="document.getElementById('id37').style.display='none'" class="close1" style="border:none;padding:0;margin:0;text-align:center;">Close this ad.</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
-<div class="w3-threethird" style="margin:0 0 10px 0;">
-<p class="topic3c" style="margin:0;padding:0;">
+<div class="w3-threethird" style="margin:0;">
+<p class="topic3b" style="text-shadow: 0 0 1px #f1f1f1;margin:0 0 -20px 0;">
 Ideal Concepts</p>
 
-<p class="topic3bb" style="margin:0;padding:0 10px;">
-Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking (valet) services. Party bus rentals. Remote starter installation. Towing services. Windshield repair and replacement.</p> 
+<p class="topic3bb" style="text-shadow: 0 0 1px #f1f1f1;">
+Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking (valet) services. Party bus rentals. Towing services. Windshield repair and replacement.</p>
 </div>
 </div>
 </div>
 </div>
+
+
+
+
+
 <hr class="style-one" style="margin:60px 0;">
 <center>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
@@ -972,58 +661,47 @@ Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and 
 <p class="topic3c" style="margin:0;padding:0;">
 Grow your automotive business.</p>
 
-<p align="center"><a class="w3-button w3-hover-shadow" href="#get-started" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #ccc;text-decoration:none;padding:15px 30px;margin:10px 0 60px 0;">Get Started</a></p>
+<p align="center"><a class="w3-button w3-hover-shadow" href="#get-started" style="background-color:#fff;border-radius:2px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#222;text-shadow:0 0 1px #fff;text-decoration:none;padding:15px 30px;margin:10px 0 60px 0;">Get Started</a></p>
 </div>
 </div>
 </div>
 </div>
 
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:60px 0 0 0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
-<div class="container w3-panel w3-card" style="background-color:#b3b300;width:100%;padding:4px;border-radius:3px 3px 0 0;margin:0;">
-
+<div class="container w3-panel w3-card" style="background-color:#b3b300;width:100%;padding:10px 4px 0 4px;border-radius:3px 3px 0 0;margin:0;">
 <div class="w3-row" style="width:100%;margin:0;padding:0;">
 <div class="w3-threethird" style="margin:0;padding:0;">
-<p align="center" style="font-family:Yanone Kaffeesatz;font-size:28px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0;margin:10px 0 0 0;">www.SpiralGroup.org</p>
-
-<p align="center" style="font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0;margin:0;">
-773-603-2093</p>
-
-<div class="sharethis-inline-share-buttons" style="padding:0;margin:10px 0 30px 0;">
-</div>
-</div>
+<p align="center" style="font-family:Yanone Kaffeesatz;font-size:38px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0 0 10px 0;margin:0;"><a style="color:#fff;" href="https://www.spiralgroup.org">www.SpiralGroup.org</a></p>
 
 <div class="row-padding" style="background-color:#b3b300;margin:0 0 10px 0;">
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0;">
 <p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> MARKETING BY BUSINESS TYPE</p>
-<p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/automotive_lsm.html">Automotive</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/beauty-&-health_lsm.html">Beauty & Health</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/cultural-activities_lsm.html">Cultural Activities & Events</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/food-&-drink_lsm.html">Food & Drink</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/home&personal-services_lsm.html">Home or Personal Services</a></p>
-<p style="margin-bottom:15px;"><a href="https://spiralgroup.github.io/themonster/physical-goods_lsm.html">Physical Goods</a></p>
+<p style="margin-top:15px;"><a href="https://form.jotform.com/82323651984159">Automotive Services</a></p>
+<p><a href="https://form.jotform.com/82323651984159">Beauty & Health</a></p>
+<p><a href="https://form.jotform.com/82323651984159">Food & Beverage</a></p>
+<p><a href="https://form.jotform.com/82323651984159">Home & Personal Services</a></p>
+<p style="margin-bottom:15px;"><a href="https://form.jotform.com/82323651984159">Physical Goods</a></p>
 </div>
 
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
-<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> THE COMPANY</p>
+<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> MARKETPLACE SHOPPERS</p>
 <p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/">Shop Our MarketPlace</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/careers" target="_blank">Join Our Team</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" target="_blank">Community Outreach</a></p>
-<p><a href="https://form.jotform.com/92946245259165" target="_blank">Give Us Your Feedback</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/privacy-policy" target="_blank">Privacy Policy</a></p>
-<p style="margin-bottom:10px;"><a href="https://spiralgroup.github.io/themonster/terms-of-use.html" target="_blank">Terms of Use</a></p>
+<p><a href="https://form.jotform.com/222675560970159">Holiday Gift Ideas</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/careers.html">Work for Us</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html">Community Outreach</a></p>
+<p style="margin-bottom:10px;"><a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a></p>
 </div>
 
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
-<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> RESOURCES</p>
-<p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/SG-MarketPlace_faqs.html#getting-started">Merchant Journey</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/SG-MarketPlace_faqs.html#ideal-concepts">Ideal Concepts</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/SG-MarketPlace_faqs.html#partner-resources">Partner Resources</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/share-the-magic.html">SG Local Ad Services&trade;</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/sg-listing-service.html">SG Listing Service&trade;</a></p>
-<p style="margin-bottom:10px;"><a href="https://spiralgroup.github.io/themonster/SG-MarketPlace_faqs.html#sba-training">SBA Training Modules</a></p>
-</div>
+<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> LOCAL MERCHANT RESOURCES</p>
+<p style="margin-top:15px;"><a href="https://form.jotform.com/82323651984159">Join Our MarketPlace</a></p>
+<p><a href="https://form.jotform.com/82323651984159">SG Listing Service&trade;</a></p>
+<p><a href="https://form.jotform.com/82323651984159">Special Offers Guide</a></p>
+<p><a href="https://form.jotform.com/82323651984159">SG Local Ad Services&trade;</a></p>
+<p style="margin-bottom:10px;"><a href="https://form.jotform.com/82323651984159">Free Consultation</a></p>
 </div>
 </div>
 </div>
