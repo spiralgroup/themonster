@@ -370,6 +370,62 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
     opacity: 9;
   }
 }
+
+
+
+
+
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 300px;
+  padding: 1px 16px;
+  height: 500px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
 </style>
 </head>
 
@@ -632,30 +688,32 @@ Grow your home & personal business.</p>
 
 <center>
 <div id="id35" class="w3-modal w3-animate-zoom w3-white" style="width:100%;z-index:9999;margin:0;padding:2px 0 0 0;">
-<div class="w3-modal-content w3-card" style="background-color:#f2f2f2;width:98%;margin:15px 5px;padding:0 0 5px 0;border-radius:4px;">
-<div class="w3-container w3-panel w3-green" style="width:100%;padding:10px;margin:0;">
-<p class="topic2cc">
-What you'll need while completing the order form below<br>
-Business email. After validation you'll be able to  Business Name, Address  Phone Numberet More Diners</p>
+<div class="w3-modal-content" style="width:100%;margin:0 0 5px 0;padding:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:2px;margin:0;">
+<div class="container w3-panel" style="width:100%;background-color:#fff;padding:0;margin:0 0 10px 0;border-radius:4px;">
+<div class="sidebar">
+  <a class="active" href="#home">1. Create Your Merchant Account. We recommend visiting our live demo so you will know the kind of information needed to create your new Spiral Group, Inc. SG MarketPlace Seller Page(s). Then click here.</a>
+<a href="#news">2. Select Business Category. Select a category by clicking the image that corresponds to it. To learn more about a category, click on it's label. If you don't see your category, choose the one that most closely characterizes your Small Business.</a>
 
-<div class="container w3-panel w3-card" style="width:100%;background-color:#fff;padding:1px;margin:0 0 10px 0;border-radius:4px;">
-<div class="row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="margin:0 0 1px 0;padding:1px 3px 1px 2px;">
+<a href="#contact">3. Completing the Order Form. You'll need to provide your business information when you arrive at the online order form. It may help to have this information handy.</a>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:1px 0;">
-<p class="topic3c" style="color:#b3b300;text-shadow:0 0 1px #f1f1f1;margin:50px 0 -10px 0;padding:0;">
-Grow your home & personal business.</p>
+<a href="#about">3.1 Your Product Images. We prefer that images used for showcasing your products in the SG MarketPlace be of the highest quality.</a>
+</div>
+
+<div class="content">
+<p class="topic3bb">
+What you'll need while completing the order form below. Business email. After validation you'll be able to  Business Name, Address  Phone Numberet More Diners
+It's easy to start selling your products and services in the SG MarketPlace. Begin by gathering all your pertinent business information, setting aside 45 minutes, and following these instructions.</p>
+
+<div class="container w3-panel w3-card-4" style="width:100%;background-color:#fff;padding:1px;margin:0;border-radius:4px;">
 <script type="text/javascript" src="https://form.jotform.com/jsform/200181106011129"></script>
 </div>
-</div>
-</div>
-</div>
 
+<center>
 <div class="w3-container w3-panel w3-orange" style="width:100%;padding:0;margin:10px 0;">
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
 
-
-<p class="topic3g" style="color:#fff;text-shadow:0 0 1px #b3b300;">Questions? Call us at 217-848-6332.</p>
+<p class="topic3bb">Questions? Call us at 217-848-6332.</p>
 
 <hr class="style-four">
 
@@ -666,6 +724,12 @@ Grow your home & personal business.</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+
+
 </div>
 </div>
 </div>
