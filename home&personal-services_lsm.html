@@ -70,14 +70,22 @@ padding: 20px 0 0 0;
 }
 
 .topic {
-font-family: roboto;
-font-size: 13px;
-color: #fff;
-text-align: center;
+font-family: roboto condensed;
+font-size: 18px;
+color: #222;
+text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #222;
-padding: 0;
-margin: 10px 0 0 0;
+text-shadow: 0 0 1px #fff;
+padding: 4px;
+margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+.topic {
+font-family: roboto condensed;
+font-size: 16px;
+text-align: center;
+}
 }
 
 .topic2c {
@@ -133,13 +141,13 @@ margin: 0;
   }
    .topic3bb {
 font-family: roboto condensed;
-font-size: 17.5px;
+font-size: 18px;
 color: #222;
 text-shadow: #f1f1f1;
-letter-spacing: .5px;
+letter-spacing: 0;
 text-align: center;
 margin: 0;
-padding: 20px 20px 15px 20px;
+padding: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -374,7 +382,7 @@ hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opac
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 300px;
+  width: 350px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -399,9 +407,9 @@ hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opac
 }
 
 div.content {
-  margin-left: 300px;
+  margin-left: 350px;
   padding: 1px 16px;
-  height: 500px;
+  height: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -424,17 +432,17 @@ div.content {
 .close1 {
  background-color: transparent;
  font-family: Yanone Kaffeesatz;
- font-size: 17px;
-color: #222;
-text-shadow: 0 0 1px transparent;
- letter-spacing: 1px;
+ font-size: 20px;
+color: #fff;
+text-shadow: 0 0 1px #000080;
+ letter-spacing: .5px;
  cursor: pointer;
- padding: 0;
+ padding: 10px 0;
  width: 100%;
- margin: 0 0 15px 0;
- background-color: #fff;
-border: 1px solid #222;
-border-radius: 3px
+ margin: 15px 0 0 0;
+ background-color: #000080;
+border: none;
+border-radius: 2px 2px 0 0;
 }
 
 </style>
@@ -702,26 +710,17 @@ Grow your home & personal business.</p>
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;background-color:#fff;padding:0;margin:0 0 10px 0;">
 <div class="sidebar w3-card-4">
-<p class="topic3bb">
-Tips
-Begin by gathering all your pertinent business information, setting aside 45 minutes, and following these instructions.</p>
 
-<p class="w3-pale-blue topic3bb">
-1. Create Your Merchant Account.</p>
+<p class="topic3bb" style="margin:0 0 -15px 0;">
+Gather pertinent business info. Process takes about 20 minutes to complete. Call if you need help, 24/7.</p>
 
-<p class="w3-pale-blue topic3bb">
-1. Create Your Merchant Account.</p>
+<p class="topic3ca" style="color:#222;text-shadow:0 0 1px #f1f1f1;margin-bottom:-15px;">Your Images</p>
 
-<p class="w3-pale-blue topic3bb">
-Completing the Order Form.</p>
+<p class="topic3bb" style="margin:0 0 -15px 0;">
+We prefer images used for showcasing products/services be the highest quality and large in size. Do not crop, resize, or otherwise alter images.<br><br>
+If images don't meet requirements, upload what you have and we'll substitute with similar ones. We will submit them for your approval before publishing to your SG Merchant Seller Page.</p>
 
-<p class="w3-pale-blue topic3bb">
-3. Your Product Images. We prefer that images used for showcasing your products in the SG MarketPlace be of the highest quality.</p>
-
-<p class="w3-pale-blue topic3bb">
-Questions? Call us at 217-848-6332.</p>
-
-<button onclick="document.getElementById('id35').style.display='none'" class="close1">Exit Form</button>
+<button onclick="document.getElementById('id35').style.display='none'" class="close1">Exit Order Form</button>
 </div>
 </div>
 
