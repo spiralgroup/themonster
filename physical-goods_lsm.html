@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>LSM - Physical Goods &#9779; Join the SG MarketPlace &#9779; Spiral Group, Inc.</title>
+<title>LSM - Home & Personal &#9779; Join the SG MarketPlace &#9779; Spiral Group, Inc.</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
@@ -70,14 +70,22 @@ padding: 20px 0 0 0;
 }
 
 .topic {
-font-family: roboto;
-font-size: 13px;
-color: #fff;
-text-align: center;
+font-family: roboto condensed;
+font-size: 18px;
+color: #222;
+text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #222;
-padding: 0;
-margin: 10px 0 0 0;
+text-shadow: 0 0 1px #fff;
+padding: 4px;
+margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+.topic {
+font-family: roboto condensed;
+font-size: 16px;
+text-align: center;
+}
 }
 
 .topic2c {
@@ -133,13 +141,13 @@ margin: 0;
   }
    .topic3bb {
 font-family: roboto condensed;
-font-size: 17.5px;
+font-size: 18px;
 color: #222;
 text-shadow: #f1f1f1;
-letter-spacing: .5px;
+letter-spacing: 0;
 text-align: center;
 margin: 0;
-padding: 20px 20px 15px 20px;
+padding: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -162,7 +170,8 @@ margin: -40px 0 40px 0;
 
 @media screen and (max-width: 768px) {
   .topic3c {
-   font-size: 23px;
+   font-size: 20px;
+   letter-spacing: .5px;
    margin: -20px 0 20px 0;
   }
   }
@@ -285,6 +294,10 @@ hr.style-one { border: 0; height: 7px; width: 85%; background-color: #fff; paddi
 hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padding: 0; margin:5px 0 0 0; border-radius:5px;
 }
 
+hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opacity: 0.8; padding: 0; margin:5px 0; border-radius:5px;
+}
+
+
 .topnav7 {
   overflow: hidden;
   background-color: transparent;
@@ -366,6 +379,72 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
     opacity: 9;
   }
 }
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 350px;
+  padding: 1px 16px;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.close1 {
+ background-color: transparent;
+ font-family: Yanone Kaffeesatz;
+ font-size: 20px;
+color: #fff;
+text-shadow: 0 0 1px #000080;
+ letter-spacing: .5px;
+ cursor: pointer;
+ padding: 10px 0;
+ width: 100%;
+ margin: 15px 0 0 0;
+ background-color: #000080;
+border: none;
+border-radius: 2px 2px 0 0;
+}
+
 </style>
 </head>
 
@@ -391,13 +470,13 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
   <div class="dropdown-content">
     <a href="https://spiralgroup.github.io/themonster/automotive_lsm.html">Automotive</a>
     <a href="https://spiralgroup.github.io/themonster/beauty-&-health_lsm.html">Beauty & Health</a>
-    <a href="https://spiralgroup.github.io/themonster/food-&-drink_lsm.html">Food & Drink</a>
-    <a href="https://spiralgroup.github.io/themonster/home&personal-services_lsm.html">Home & Personal Services</a>
-    <a class="active" href="https://spiralgroup.github.io/themonster/physical-goods_lsm.html">Physical Goods</a>
+    <a href="https://spiralgroup.github.io/themonster/food-&-drink_lsm.html">Food & Beverage</a>
+    <a class="active" href="https://spiralgroup.github.io/themonster/home&personal-services_lsm.html">Home & Personal Services</a>
+    <a href="https://spiralgroup.github.io/themonster/physical-goods_lsm.html">Physical Goods</a>
     </div>
   </div>
     
-  <button class="w3-button" style="font-family:roboto,sans-serif;font-size:12px;color:#666;" href="#">Automotive</button>
+  <button class="w3-button" style="font-family:roboto,sans-serif;font-size:12px;color:#666;padding:4px;" href="#">Home & Personal</button>
     </div>
     
 <div class="col-sm-7" style="padding:0;margin:0;padding:0;">
@@ -470,7 +549,7 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
 <div class="modal-dialog modal-lg" style="background-color:transparent;">
 <div class="w3-row-padding" style="width:100%;">
 <div class="w3-threethird">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/204295094-0416a322-a94d-4696-8785-31f9cc832dd9.png" style="width:100%;margin:0;padding:0;border-radius:3px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/203662470-9946fead-ae42-4100-b2aa-84e51f09383d.png" style="width:100%;margin:0;padding:0;border-radius:3px;">
 </div>
 </div>
 </div>
@@ -485,13 +564,13 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
 <div class="column" style="padding:0;margin:0;">
 <a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://www.spiralgroup.org"><span>Shop Our MarketPlace</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/sg-giftcard.html"><span>Business Gift Ideas</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://form.jotform.com/222675560970159"><span>Holiday Gift Ideas</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/sg-listing-service.html"><span>SG Listing Service&trade;</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html"><span>Community Outreach</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/share-the-magic.html"><span>SG Local Ad Sevices&trade;</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/careers.html"><span>Join Our Team</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://form.jotform.com/82323651984159"><span>Free Consultation</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:9px;cursor:pointer;" href="https://form.jotform.com/82323651984159"><span>Merchant Sign-Up</span></a>
 
 <button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0;border:none;border-radius:4px;padding:9px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
 </div>
@@ -519,7 +598,7 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
 <p class="topic2c">
 More Clients</p>
 
-<p class="topic3c">Join our Automotive Marketplace for $329 per year.</p>
+<p class="topic3c">Join our marketplace for $329 per year.</p>
 </div>
 </div>
 
@@ -527,14 +606,16 @@ More Clients</p>
 <div class="container w3-panel" style="background-color:transparent;width:100%;padding:0 10px;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-half w3-card" style="padding:0;margin:0 0 10px 0;border-radius:3px;">
-<img src="https://user-images.githubusercontent.com/25410880/54055812-fdcba580-41a2-11e9-87e4-454e297cfa6f.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
+<img src="https://user-images.githubusercontent.com/25410880/53668900-234c3280-3c2a-11e9-8cf1-b40e866e1d9e.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
 </div>
 
 <div class="w3-half" style="margin:0;">
 <p class="topic3bb">
-Winning over new customers can be a struggle. You rely on walk-ins and word of mouth. If you're proactive, you may have grown your business through traditional advertising and marketing channels, but these require time and money. Like any business, it's important to maintain an online presence. A website that's simple to use, easy to navigate, and engaging for the customer.<br><br>
+When you have a home or personal services business, potential clients will want to know more. If their educated consumers, they'll begin by conducting an online search to find out more information about you. They will want to learn more about the services you provide and quality of your work. Some may even require that you provide complete confidentiality, because the kind of services you provide are personal. They'll probably want to read testimonials from actual clients and get your contact details before approaching you.<br><br>
 
-Being a home and personal services provider, you may realize that adding online appointment scheduling to your website is a necessity. By making the process accessible and easy-to-use, you increase your chances of acquiring new customers and understanding their needs prior to meeting with them for a scheduled appointment.<br><br>
+According to Google Trends, searches for home and personal services providers have surged by 58% in the last five years. Become an SG MarketPlace Merchant and we can you capitalize on this current online search trend, boost your agency’s online presence, and get a significant share of the business in your area.<br><br>
+
+We can help you stand apart from competitors by Making sure your agency has a client intake feature so you can post the ‘Request Services Here’ button and links on your website. Our goal is to ensure you avoid getting so caught up in asserting your online presence, and continue providing outstanding services to your clients. 
 
 Become an SG MarketPlace Merchant and we'll have you falling in love with our service, prices, ad products, and business solutions.</p>
 </div>
@@ -552,24 +633,28 @@ Stay in the game with our solutions.</p>
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <div class="lds-ripple"><div></div><div></div></div>
-<p class="topic3ca">Acquire New Clients Online</p>
+<p class="topic3ca">Online Questionnaire</p>
 
 <hr class="style-three">
 
 <p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
-Don't have a website for your small business? We've got you covered. You can effectively use your space in the SG MarketPlace to build customer loyalty, increase brand awareness, and improve overall profitability.</p>
+If you require clients to complete a questionnaire prior to scheduling an appointment, we've got you covered. After joining our marketplace, your clients will be able to complete your HIPPA-Compliant form, online.</p>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 15px 0;">
 <div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <div class="lds-ripple"><div></div><div></div></div>
-<p class="topic3ca" style="color:#222;text-shadow:0 0 1px #f1f1f1;">Online Appointment Scheduling</p>
+<p class="topic3ca" style="color:#222;text-shadow:0 0 1px #f1f1f1;">Complementary Partnerships</p>
 
 <hr class="style-three">
 
 <p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
-Would it be more efficient for your automotive services business if clients could schedule appointments online? You bet. Become a merchant in our marketplace, and your clients can book appointments on your page and more.</p>
+There are likely to be several complementary businesses in your local community that target the same client segment with whom you can collaborate. This can enable both parties to extend their client reach, promote their brand, and deliver better services.
+
+Other ways these sorts of partnerships can help to find new clients cost-effectively is through co-sponsored events and webinars, shared advertising and media buys, and joint negotiations with various vendors.
+
+Complementary businesses might include rehab centers, hospice agencies, or skilled home health agencies. While they may provide medical care, there is often a need for non-medical personal care and other support services that your agency can fill – and vice versa. </p>
 </div>
 </div>
 
@@ -581,7 +666,7 @@ Would it be more efficient for your automotive services business if clients coul
 <hr class="style-three">
 
 <p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
-Our Smart Promotion Ads can help generate awareness about your automotive services business. Become an SG MarketPlace Merchant and receive a SPA free for 30 days. Check out our demos by <a href="https://spiralgroup.github.io/themonster/share-the-magic.html#SPA" style="color:#222;text-shadow:0 0 1px #f1f1f1;">clicking here.</a></p>
+Our Smart Promotion Ads can help generate awareness about your home or personal services business and increase sales. Promoting your brand to more local customers has never been this easy or affordable. <a href="https://spiralgroup.github.io/themonster/share-the-magic.html#SPA" style="cursor:pointer;color:#fff;text-shadow:0 0 1px #008000;">Check out our SPA demos.</a></p>
 </div>
 </div>
 </div>
@@ -589,10 +674,17 @@ Our Smart Promotion Ads can help generate awareness about your automotive servic
 <div class="w3-row-padding" style="width:100%;margin:60px 0 0 0;">
 <div class="w3-threethird" style="margin:0;">
 <p class="topic3b9">
-Ideal Concepts</p>
+Ideal Concepts &#151; Home Services</p>
 
 <p class="topic3bb" style="text-shadow: 0 0 1px #f1f1f1;">
-Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking (valet) services. Party bus rentals. Towing services. Windshield repair and replacement.</p>
+Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog-walking and other pet services. Duct cleaning. Flooring installation. General contractors. Gutter cleaning. Handymen. Home alarm installation. House-keeping services. HVAC technicians. Laundry services. Movers. Painters. Pest control. Plumbers. Remodeling services. Upholstery cleaning. Window cleaning. Etc.</p><br>
+
+<p class="topic3b9">
+Ideal Concepts &#151; Personal Services</p>
+
+<p class="topic3bb" style="text-shadow: 0 0 1px #f1f1f1;">
+Art lessons. Boxing lessons. Business, Career & Life coaching. Computer training. Cooking lessons. Dance studios. Electronics repair. Event planning. Flying lessons. Golf lessons. Martial arts training. Mentoring services. Music lessons. Online learning courses. Printing services. Sailing lessons. Sports training. Tax preparation services. Tennis lessons. Voice lessons. Etc.</p>
+</div>
 </div>
 </div>
 </div>
@@ -604,9 +696,39 @@ Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and 
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0 0 20px 0;">
 <p class="topic3c" style="color:#b3b300;text-shadow:0 0 1px #f1f1f1;margin:0;padding:0;">
-Grow your automotive business.</p>
+Grow your home & personal business.</p>
 
-<p align="center"><a class="w3-button w3-hover-shadow" href="https://form.jotform.com/200181106011129" style="background-color:#fff;border-radius:4px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #fff;text-decoration:none;padding:15px 30px;margin:10px 0 60px 0;border-radius:4px;">Let's Go</a></p>
+<p align="center"><a onclick="document.getElementById('id35').style.display='block'" class="w3-button w3-hover-shadow" style="background-color:#fff;border-radius:4px;font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:1px;color:#b3b300;text-shadow:0 0 1px #fff;text-decoration:none;padding:15px 30px;margin:10px 0 60px 0;border-radius:4px;">BUY NOW</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="id35" class="w3-modal w3-animate-zoom w3-white" style="width:100%;z-index:9999;margin:0;padding:0;">
+<div class="w3-modal-content" style="width:100%;margin:0 0 5px 0;padding:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="container w3-panel" style="width:100%;background-color:#fff;padding:0;margin:0 0 10px 0;">
+<div class="sidebar w3-card-4">
+
+<p class="topic3bb" style="margin:0 0 -15px 0;">
+Gather pertinent business info. Process takes about 20 minutes to complete. Call if you need help, 24/7.</p>
+
+<p class="topic3ca" style="color:#222;text-shadow:0 0 1px #f1f1f1;margin-bottom:-15px;">Your Images</p>
+
+<p class="topic3bb" style="margin:0 0 -15px 0;">
+We prefer images used for showcasing products/services be the highest quality and large in size. Do not crop, resize, or otherwise alter images.<br><br>
+If images don't meet requirements, upload what you have and we'll substitute with similar ones. We will submit them for your approval before publishing to your SG Merchant Seller Page.</p>
+
+<button onclick="document.getElementById('id35').style.display='none'" class="close1">Exit Order Form</button>
+</div>
+</div>
+
+<div class="content">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<script type="text/javascript" src="https://form.jotform.com/jsform/200181106011129"></script>
+</div>
+</div>
 </div>
 </div>
 </div>
