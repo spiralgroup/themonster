@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo SG MarketPlace Seller Page - Online Store &#124; Spiral Group, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|Yanone Kaffeesatz|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2,
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+<style type="text/css">
+/* Slider1 */
+.slick-slide {
+    margin: 0;
+    padding: 5px 0;
+    }
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: inline-block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: inline-block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+* {box-sizing: border-box;}
+
+body, html {
+    max-width: 1200px !important;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+ }
+
+.modal-backdrop.in {
+  background-color: #ccc;
+  opacity: 9;
+  }
+}
+
+.topnav1 {
+margin: 0;
+padding: 20px 0 0 0;
+}
+
+.topnav1 a {
+  font-family: Yanone Kaffeesatz;
+  color: #fff;
+  padding: 5px 0 0 0;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #b3b300;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav1 a {
+  text-shadow: 0 0 1px #fff;
+  }
+  }
+  
+.topnav1 a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  padding: 0 0 2px 0;
+  transition: 0.3s;
+}
+
+li:hover span {
+ background-color: #fff;
+  padding-bottom: 5px;
+   transition: 0.5s;
+}
+
+.topic {
+font-family: roboto;
+font-size: 16px;
+color: #222;
+text-shadow: 0 0 1px #f1f1f1;
+letter-spacing: .5px;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic {
+  font-size: 13px;
+  }
+  }
+  
+.topic1 { 
+font-family: roboto condensed;
+font-size: 13.5px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #000;
+margin: 0;
+padding: 0;
+}
+
+.topic1a { 
+ font-family: Yanone Kaffeesatz;
+font-size: 28px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #f1f1f1;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic1a {
+ font-size: 21px;
+  }
+  }
+  
+.topic2 {
+font-family: roboto condensed;
+font-size: 16px;
+color: #222;
+text-align: right;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+margin: 250px 10px 0 10px;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-size: 14px;
+  color: #ccc;
+  letter-spacing: .5px;
+  text-align: center;
+  text-shadow: 0 0 1px #ccc;
+  }
+  }
+  
+  .topic2c {
+font-family: Yanone Kaffeesatz;
+font-size: 52px;
+color: #b3b300;
+text-align: center;
+letter-spacing: 1px;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2c {
+   font-size: 40px;
+   padding: 0;
+  }
+  }
+  
+.topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #f8f8f8;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f8f8f8;
+margin: 0;
+padding: 0;
+}
+
+ .topic3d {
+font-family: Yanone Kaffeesatz;
+font-size: 18px;
+color: #b3b300;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3d {
+   font-size: 20px;
+  }
+  }
+  
+.topic3e {
+font-family: Yanone Kaffeesatz;
+font-size: 22px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3e {
+   font-size: 20px;
+  }
+  }
+  
+.topicfooter1 {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #b3b300;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+letter-spacing: 1px;
+padding: 0;
+margin: 0;
+}
+
+.topicfooter2 {
+font-family: Yanone Kaffeesatz;
+font-size: 32px;
+color: #b3b300;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+letter-spacing: 1px;
+padding: 10px 0 0 0;
+margin: 0;
+}
+
+.btn-primary:hover span {
+ color: #000;
+ text-shadow: 0 0 1px #666;
+ transition: 0.5s;
+}
+
+.monster {
+background-color: #b3b300;
+padding: 20px;
+margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .monster {
+  background-color: transparent;
+     }
+  }
+
+
+.container-fluid {
+max-width: 1200px;
+background-color: transparent;
+}
+
+
+@media screen and (max-width: 720px) {
+  .container-fluid {
+  max-width: 720px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+     }
+  }
+  
+  
+hr.thefuck { border: 0; height: 5px; width:100%; background-color: #b3b300; padding: 0; margin:10px 0 0 0; border-radius:5px;
+}
+hr.style-two { border: 0; height: 5px; width:100%; background-color: #b3b300; padding: 0; margin:10px 0 0 0; border-radius:5px;
+}
+
+#timeDiv {
+font-family: roboto condensed;
+  font-size: 15px;
+ letter-spacing: .5px;
+ position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  background-color: #b3b300 !important;
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 15px;
+  }
+  }
+  
+  .open {
+  font-family: roboto condensed;
+  font-size: 15px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+.closed {
+ font-family: roboto condensed;
+  font-size: 15px;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #ccc;
+  color: #fff;
+  background-color: transparent !important;
+  border: none;
+}
+
+.dateTime {
+max-width: 200px;
+font-family: roboto condensed;
+color: #222;
+text-shadow: 0 0 1px #666;
+  font-size: 16.5px;
+float: none;
+  text-align: left;
+  line-height: 20px;
+    }
+
+.day {
+   display: inline-block;
+ }
+
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.today {
+max-width: 200px;
+  color: #b3b300 !important;
+  text-shadow: 0 0 1px #f1f1f1 !important;
+    display: block;
+}
+
+.accordion {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #f1f1f1;
+text-align: center;
+padding: 5px;
+margin: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #c0c0c0;
+  text-shadow: 0 0 1px #f1f1f1;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 12px;
+}
+
+.panel {
+  padding: 0 10px;
+  margin: 5px 0 0 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+@media all and (max-width: 768px) {
+  .accordion{
+  font-size: 19px;
+  }
+}
+
+.container-fluid2 {
+width: 100%;
+margin: 0;
+padding: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid2 {
+  display: none;
+  width: 0% !important;
+  }
+  }
+  
+  .monster {
+  width: 100%;
+  background-color: #fff;
+margin: 100px 0 0 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .monster {
+  margin: -10px 0 0 0 !important;
+  padding: 0;
+  }
+  }
+  
+  .pull {
+  float: right;
+  padding-right: 5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .pull {
+ padding: 0 12px 0 15px;
+ margin-top: 5px;
+  }
+  }
+  
+  
+  .close {
+ font-size: 58px;
+ color: white;
+ text-shadow: 0 0 1px #fff;
+ opacity: 0.9;
+ padding: 0;
+ margin-right: 20px;
+ filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+</style>
+</head>
+
+<center>
+<body>
+<div class="container-fluid2" style="width:100%;">
+<div class="w3-container w3-panel" style="background-color:#fff;width:100%;padding:0;margin:5px 0 0 0;border-radius:4px;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;box-shadow:8px 8px 10px #ccc;padding:0;margin:0;border-radius:4px 4px 2px 2px;">
+<div class="row w3-white" style="width:100%;margin:0;padding:0;border-radius:4px 4px 2px 2px;">
+<div class="w3-quarter" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/80710685-05839300-8aa4-11ea-9851-6041c8349518.png" style="width:100%;padding:0;margin:0;">
+</div>
+
+<div class="w3-threequarter" style="padding:36px 0 0 0;margin:0;">
+<div class="business-logos slide" style="width:100%;padding:0;margin:0;">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png">
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png">
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/204868630-14867f17-e12a-40e5-bddb-4e4559ae8cfe.png">
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/207798438-0b5c2e0e-2e00-4a38-bd0b-3a39d9491388.png">
+</div>
+
+<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png">
+</div>
+
+<div class="w3-row-padding" style="background-color:#fff;padding:0 1px 0 2px;margin:24px 0 0 0;">
+<div class="w3-quarter" style="margin:0;padding:0 2px;">
+<a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
+
+<div class="w3-quarter" style="margin:0;padding:0 2px;">
+<a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
+
+<div class="w3-quarter" style="margin:0;padding:0 2px;">
+<a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
+
+<div class="w3-quarter" style="margin:0;padding:0 2px;">
+<a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<nav class='navbar navbar-default navbar-fixed-top' style="background-color:transparent;border:none;">
+<div class='container-fluid pull' style="width:100%;">
+<div class='navbar-header pull'>
+<button class='w3-button w3-border w3-hover-shadow pull-right' data-target='#modalNavigation' data-toggle='modal' type='button' style="background-color:transparent;color:#ccc;text-shadow:#f1f1f1;padding:8px 8px 5px 8px;border-radius:3px;">
+<span class='glyphicon glyphicon-menu-hamburger' style="font-size:19px;"></span>
+</button>
+</div>
+</div>
+</nav>
+</div>
+
+<div class="modal fade" id="modalNavigation" role="dialog">
+<div class="modal-header" style="width:100%;padding:0;margin:0;">
+<div class="modal-dialog" style="width:100%;background-color:transparent;padding:0;margin:0;">
+
+<div class="w3-row" style="background-color:white;margin:0;">
+<div class="w3-quarter" style="margin:0;padding:0;background-color:#fff;">
+<img src="https://user-images.githubusercontent.com/25410880/52399007-c7015300-2a6f-11e9-8340-c8b0633ce0b2.png" style="width:100%;margin:0 0 5px 0;">
+
+
+<i class="material-icons" style="font-size:48px;color:red">pin_drop</i>
+<i class="material-icons" style="font-size:48px;color:red">important_devices</i>
+<i class="material-icons" style="font-size:48px;color:red">store-mall_directory</i>
+<i class="material-icons" style="font-size:48px;color:red">input</i>
+<i class="material-icons" style="font-size:48px;color:red">launch</i>
+<i class="material-icons" style="font-size:48px;color:red">loyalty</i>
+<i class="material-icons" style="font-size:48px;color:red">redeem</i>
+<i class="material-icons" style="font-size:48px;color:red">phonelink</i>
+<i class="material-icons" style="font-size:48px;color:red">watch</i>
+
+
+<a href="https://www.vk.com"><i class="fab fa-vk"></i></a>
+<a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+<p style="margin:20px 0;"><a style="background-color:#fff;box-shadow:0 4px 4px #f8f8f8;border-radius:2px;font-family:Yanone Kaffeesatz;font-size:18px;color:#b3b300;letter-spacing:1px;text-shadow:0 0 1px #fff;text-decoration:none;padding:10px 15px;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal99">View Business Hours</a></p>
+
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+      <input type="hidden" name="daddr" value="10 East Ontario Ave Chicago, IL 60606 (The Monster Lives Here)" />
+   <input type="submit" value="Get directions" />
+</form>
+    
+<p class="topicfooter2">
+773-374-4700</p>
+
+<p class="topicfooter1">
+1737 East 96th Street<br>
+Chicago, IL 60617</p>
+</div>
+
+<div class="w3-quarter" style="margin:0;padding:0;background-color:#fff;">
+&nbsp;
+</div>
+
+<div class="w3-half" style="margin:0;">
+<p class="topic2">The best way to help our clients achieve the desired outcome is by encouraging them to prepare their teams and operations for growth so they are equipped to welcome and service new clients.<br><br>
+
+They will also need to enhance their marketing efforts through word-of-mouth marketing, effective social media marketing, and by further developing their online business listings that we create after they become part of the SG MarketPlace community.</p>
+
+<button class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-container w3-panel" style="width:100%;box-shadow:8px 8px 10px #ccc;background-color:#fff;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-container w3-panel" style="width:100%;background-color:#fff;">
+<div class="w3-row-padding monster">
+<div id="item01" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal1" src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">Product Name</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal2" src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">Product Name</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal3" src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">Product Name</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal04" src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">Product Name</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal04" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal05" src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">Product Name</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal05" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal06" src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">Product Name</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal06" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal99" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;"></div>
+<div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
+<div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
+<div class="w3-row" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:2px;">
+
+       <div id="Monday" class="dateTime">
+        <div class="day">Monday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+     <br>         
+     
+      <div id="Tuesday" class="dateTime">
+        <div class="day">Tuesday</div>
+        <div class="time">8am - 8pm</div>
+        </div>
+         <br>
+      <div id="Wednesday" class="dateTime">
+        <div class="day">Wednesday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      
+      <div id="Thursday" class="dateTime">
+        <div class="day">Thursday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Friday" class="dateTime">
+        <div class="day">Friday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Saturday" class="dateTime">
+        <div class="day">Saturday</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+       <div id="Sunday" class="dateTime">
+        <div class="day">Sunday</div>
+      <div class="time">8am - 8pm</div>
+      </div>
+       </div>
+       </div>
+       </div>
+       
+       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
+       <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
+<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:#222;font-family:roboto;font-size:12px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;margin:0;padding:12px 0 6px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var now = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var checkTime = function() {
+  var today = weekday[now.getDay()];
+  var timeDiv = document.getElementById('timeDiv');
+  var dayOfWeek = now.getDay();
+  var hour = now.getHours();
+  var minutes = now.getMinutes();
+
+  //add AM or PM
+  var suffix = hour >= 12 ? " PM" : " AM";
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+    minutes = "0" + minutes
+  };
+
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1);
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else {
+    if (hour == 0 || hour > 12) {
+      hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    }
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Closed';
+    timeDiv.className = 'closed';
+  }
+};
+
+var currentDay = weekday[now.getDay()];
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+setInterval(checkTime, 1000);
+checkTime();
+</script>
+
+<center>
+<div class="w3-container" style="width:100%;background-color:#fff;padding:4px 4px 0 4px;margin:70px 0 0 0;border-radius:3px 3px 2px 2px;">
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;cursor:pointer;" alt="Game Day Barber Shop"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710680-0288a280-8aa4-11ea-8b91-257ee6afe641.png" style="border-radius:2px;cursor:pointer;" alt="Hamunaptra Cosmetics"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710685-05839300-8aa4-11ea-9851-6041c8349518.png" style="border-radius:2px;cursor:pointer;" alt="The Prestige Beauty Supplies"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710689-074d5680-8aa4-11ea-8058-8b3edc63c506.png" style="border-radius:2px;cursor:pointer;" alt="Stick It Tattoos & Piercings"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710696-07e5ed00-8aa4-11ea-9573-5612a851a547.png" style="border-radius:2px;cursor:pointer;" alt="Zambuka Night Club"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710698-087e8380-8aa4-11ea-9677-39a95541f02b.png" style="border-radius:2px;cursor:pointer;" alt="Onyx Business Systems"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="border-radius:2px;cursor:pointer;" alt="Levinna Purses & Bags"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710703-0a484700-8aa4-11ea-9366-51b1162290fd.png" style="border-radius:2px;cursor:pointer;" alt="Gortex Fitness Apparel"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
+<script type="text/javascript">
+var sc_project=12123020; 
+var sc_invisible=1; 
+var sc_security="200cda4a"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12123020/0/200cda4a/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
