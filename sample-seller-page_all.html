@@ -45,9 +45,9 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
     $('.business-logos').slick({
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         dots: false,
@@ -71,7 +71,7 @@ $(document).ready(function(){
 /* Slider1 */
 .slick-slide {
     margin: 0;
-    padding: 5px 0;
+    padding: 0;
     }
 .slick-slide img {
     width: 100%;
@@ -185,7 +185,7 @@ body, html {
  }
 
 .modal-backdrop.in {
-  background-color: #ccc;
+  background-color: #fff;
   opacity: 9;
   }
 }
@@ -272,22 +272,22 @@ padding: 0;
   
 .topic2 {
 font-family: roboto condensed;
-font-size: 16px;
+font-size: 18px;
 color: #222;
 text-align: right;
-letter-spacing: 1px;
+letter-spacing: .5px;
 text-shadow: 0 0 1px #fff;
-margin: 250px 10px 0 10px;
-padding: 0;
+margin: 0;
+padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .topic2 {
   font-size: 14px;
-  color: #ccc;
+  color: #222;
   letter-spacing: .5px;
   text-align: center;
-  text-shadow: 0 0 1px #ccc;
+  text-shadow: 0 0 1px #fff;
   }
   }
   
@@ -358,7 +358,7 @@ margin: 0;
 .topicfooter1 {
 font-family: Yanone Kaffeesatz;
 font-size: 20px;
-color: #b3b300;
+color: #222;
 text-shadow: 0 0 1px #fff;
 text-align: center;
 letter-spacing: 1px;
@@ -368,8 +368,8 @@ margin: 0;
 
 .topicfooter2 {
 font-family: Yanone Kaffeesatz;
-font-size: 32px;
-color: #b3b300;
+font-size: 20px;
+color: #222;
 text-shadow: 0 0 1px #fff;
 text-align: center;
 letter-spacing: 1px;
@@ -413,6 +413,25 @@ background-color: transparent;
   }
   
   
+.fab:hover {
+  color: #333 !important;
+}
+
+.fab {
+background-color: transparent;
+font-size: 20px;
+color: #222;
+  padding: 10px 0;
+  width: 44px;
+  border-radius: 3px;
+  margin: 5px 3px 20px 3px;
+   }
+
+.fab:hover {
+  color: #ccc !important;
+}
+
+
 hr.thefuck { border: 0; height: 5px; width:100%; background-color: #b3b300; padding: 0; margin:10px 0 0 0; border-radius:5px;
 }
 hr.style-two { border: 0; height: 5px; width:100%; background-color: #b3b300; padding: 0; margin:10px 0 0 0; border-radius:5px;
@@ -420,35 +439,24 @@ hr.style-two { border: 0; height: 5px; width:100%; background-color: #b3b300; pa
 
 #timeDiv {
 font-family: roboto condensed;
-  font-size: 15px;
+  font-size: 13px;
  letter-spacing: .5px;
- position: relative;
+ 
   width: 100%;
   margin: 0 auto;
   padding: 0;
   display: inline-block;
-  background-color: #b3b300 !important;
  }
  
  @media screen and (max-width: 768px) {
   #timeDiv {
-  font-size: 15px;
+  font-size: 14px;
   }
   }
-  
-  .open {
-  font-family: roboto condensed;
-  font-size: 15px;
-  letter-spacing: .5px;
-  text-shadow: 0 0 1px #ccc;
-  color: #fff;
-  background-color: transparent !important;
-  border: none;
-}
 
 .closed {
  font-family: roboto condensed;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: .5px;
   text-shadow: 0 0 1px #ccc;
   color: #fff;
@@ -457,14 +465,14 @@ font-family: roboto condensed;
 }
 
 .dateTime {
-max-width: 200px;
+max-width: 150px;
 font-family: roboto condensed;
 color: #222;
 text-shadow: 0 0 1px #666;
-  font-size: 16.5px;
+  font-size: 13px;
 float: none;
   text-align: left;
-  line-height: 20px;
+  line-height: 1;
     }
 
 .day {
@@ -478,7 +486,7 @@ float: none;
 }
 
 .today {
-max-width: 200px;
+max-width: 150px;
   color: #b3b300 !important;
   text-shadow: 0 0 1px #f1f1f1 !important;
     display: block;
@@ -579,7 +587,6 @@ padding: 0;
   }
   }
   
-  
   .close {
  font-size: 58px;
  color: white;
@@ -589,6 +596,7 @@ padding: 0;
  margin-right: 20px;
  filter: Alpha(opacity=50); /* IE8 and earlier */
 }
+  
 </style>
 </head>
 
@@ -600,11 +608,11 @@ padding: 0;
 <div class="w3-container w3-panel" style="width:100%;box-shadow:8px 8px 10px #ccc;padding:0;margin:0;border-radius:4px 4px 2px 2px;">
 <div class="row w3-white" style="width:100%;margin:0;padding:0;border-radius:4px 4px 2px 2px;">
 <div class="w3-quarter" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/80710685-05839300-8aa4-11ea-9851-6041c8349518.png" style="width:100%;padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/52399007-c7015300-2a6f-11e9-8340-c8b0633ce0b2.png" style="width:100%;padding:0;margin:0;">
 </div>
 
-<div class="w3-threequarter" style="padding:36px 0 0 0;margin:0;">
-<div class="business-logos slide" style="width:100%;padding:0;margin:0;">
+<div class="w3-threequarter" style="padding:0;margin:12px 0 0 0;">
+<div class="business-logos slide" style="width:100%;padding:0 0 7px 0;margin:0;">
 <div class="slide">
 <img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png">
 </div>
@@ -624,9 +632,11 @@ padding: 0;
 <img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png">
 </div>
 
-<div class="w3-row-padding" style="background-color:#fff;padding:0 1px 0 2px;margin:24px 0 0 0;">
+
+<div class="w3-row-padding" style="background-color:#fff;margin:0;">
+
 <div class="w3-quarter" style="margin:0;padding:0 2px;">
-<a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
+<a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">Shopper Sign Up</a></div>
 
 <div class="w3-quarter" style="margin:0;padding:0 2px;">
 <a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
@@ -634,7 +644,7 @@ padding: 0;
 <div class="w3-quarter" style="margin:0;padding:0 2px;">
 <a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
 
-<div class="w3-quarter" style="margin:0;padding:0 2px;">
+<div class="w3-quarter" style="margin:0;padding:0 0 0 2px;">
 <a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:14px;letter-spacing:1px;color:#222;text-decoration:none;text-shadow:0 0 1px #fff;margin:0;border:none;border-top:2px solid #f2f2f2;border-radius:4px 4px 0 0;padding:5px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank">SG MarketPlace&trade;</a></div>
 </div>
 </div>
@@ -658,332 +668,26 @@ padding: 0;
 
 <div class="modal fade" id="modalNavigation" role="dialog">
 <div class="modal-header" style="width:100%;padding:0;margin:0;">
-<div class="modal-dialog" style="width:100%;background-color:transparent;padding:0;margin:0;">
+<div class="modal-dialog" style="width:100%;background-color:#ccc;padding:0;margin:0;">
 
-<div class="w3-row" style="background-color:white;margin:0;">
-<div class="w3-quarter" style="margin:0;padding:0;background-color:#fff;">
+<div class="w3-row" style="background-color:transparent;margin:0;">
+<div class="w3-quarter" style="margin:0;padding:0;background-color:#ccc;">
 <img src="https://user-images.githubusercontent.com/25410880/52399007-c7015300-2a6f-11e9-8340-c8b0633ce0b2.png" style="width:100%;margin:0 0 5px 0;">
-
-
-<i class="material-icons" style="font-size:48px;color:red">pin_drop</i>
-<i class="material-icons" style="font-size:48px;color:red">important_devices</i>
-<i class="material-icons" style="font-size:48px;color:red">store-mall_directory</i>
-<i class="material-icons" style="font-size:48px;color:red">input</i>
-<i class="material-icons" style="font-size:48px;color:red">launch</i>
-<i class="material-icons" style="font-size:48px;color:red">loyalty</i>
-<i class="material-icons" style="font-size:48px;color:red">redeem</i>
-<i class="material-icons" style="font-size:48px;color:red">phonelink</i>
-<i class="material-icons" style="font-size:48px;color:red">watch</i>
-
-
 <a href="https://www.vk.com"><i class="fab fa-vk"></i></a>
 <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
 <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
 <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-
-<p style="margin:20px 0;"><a style="background-color:#fff;box-shadow:0 4px 4px #f8f8f8;border-radius:2px;font-family:Yanone Kaffeesatz;font-size:18px;color:#b3b300;letter-spacing:1px;text-shadow:0 0 1px #fff;text-decoration:none;padding:10px 15px;margin:0;cursor:pointer;" data-toggle="modal" data-target="#myModal99">View Business Hours</a></p>
-
-<form action="http://maps.google.com/maps" method="get" target="_blank">
-      <input type="hidden" name="daddr" value="10 East Ontario Ave Chicago, IL 60606 (The Monster Lives Here)" />
-   <input type="submit" value="Get directions" />
-</form>
-    
-<p class="topicfooter2">
-773-374-4700</p>
-
-<p class="topicfooter1">
-1737 East 96th Street<br>
-Chicago, IL 60617</p>
 </div>
 
-<div class="w3-quarter" style="margin:0;padding:0;background-color:#fff;">
-&nbsp;
-</div>
+<div class="w3-quarter" style="margin:0;padding:30px 0;background-color:#ccc;">
+<i class="material-icons" style="font-size:28px;color:red">input</i>
+<i class="material-icons" style="font-size:28px;color:red">launch</i>
+<i class="material-icons" style="font-size:28px;color:red">loyalty</i>
+<i class="material-icons" style="font-size:28px;color:red">redeem</i>
+<i class="material-icons" style="font-size:28px;color:red">phonelink</i>
+<i class="material-icons" style="font-size:28px;color:red">watch</i>
 
-<div class="w3-half" style="margin:0;">
-<p class="topic2">The best way to help our clients achieve the desired outcome is by encouraging them to prepare their teams and operations for growth so they are equipped to welcome and service new clients.<br><br>
-
-They will also need to enhance their marketing efforts through word-of-mouth marketing, effective social media marketing, and by further developing their online business listings that we create after they become part of the SG MarketPlace community.</p>
-
-<button class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:14px;color:#b3b300;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #f1f1f1;margin:5px 0;border:2px solid #fff;border-radius:2px;padding:11px;cursor:pointer;" data-dismiss="modal"><span>EXIT MENU</span></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="w3-container w3-panel" style="width:100%;box-shadow:8px 8px 10px #ccc;background-color:#fff;margin:0;border-radius:0 0 2px 2px;">
-<div class="w3-container w3-panel" style="width:100%;background-color:#fff;">
-<div class="w3-row-padding monster">
-<div id="item01" class="w3-third" style="margin:0 0 30px 0;">
-<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal1" src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
-
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion w3-white">Product Name</div>
-<div class="panel">
-
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px;margin:0;">
-<p class="topic">
-we include the details of your product or service here.</p>
-
-<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal1" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button></div>
-<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
-<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal2" src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
-
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion w3-white">Product Name</div>
-<div class="panel">
-
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px;margin:0;">
-<p class="topic">
-we include the details of your product or service here.</p>
-
-<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal2" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button></div>
-<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
-<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal3" src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
-
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion w3-white">Product Name</div>
-<div class="panel">
-
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px;margin:0;">
-<p class="topic">
-we include the details of your product or service here.</p>
-
-<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal3" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button></div>
-<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
-<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal04" src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
-
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion w3-white">Product Name</div>
-<div class="panel">
-
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px;margin:0;">
-<p class="topic">
-we include the details of your product or service here.</p>
-
-<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal04" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button></div>
-<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
-<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal05" src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
-
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion w3-white">Product Name</div>
-<div class="panel">
-
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px;margin:0;">
-<p class="topic">
-we include the details of your product or service here.</p>
-
-<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal05" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button></div>
-<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="item11" class="w3-third" style="margin:0;">
-<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal06" src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
-
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="accordion w3-white">Product Name</div>
-<div class="panel">
-
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="column" style="padding:10px;margin:0;">
-<p class="topic">
-we include the details of your product or service here.</p>
-
-<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal06" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;">
-<button type="button" class="close" data-dismiss="modal">&times;</button></div>
-<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird w3-white" style="margin:0;padding:0;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;margin:0;float:center;">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="myModal99" role="dialog">
-<div class="modal-header" style="border:none;padding:0;margin:0;"></div>
-<div class="modal-dialog modal-md" style="width:100%;padding:0;margin:20px 0;">
-<div class="w3-modal-content w3-card-4" style="max-width:375px;padding:5px;border-radius:2px;">
-<div class="modal-body" style="padding:0;margin:0;">
-<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:0;border-radius:2px;">
-<div class="w3-row" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;margin:0 0 20px 0;border-radius:2px;">
+<div class="container w3-panel" style="width:100%;padding:30px 0 0 0;margin:0;border-radius:2px;">
 
        <div id="Monday" class="dateTime">
         <div class="day">Monday</div>
@@ -1025,20 +729,6 @@ we include the details of your product or service here.</p>
         <div class="day">Sunday</div>
       <div class="time">8am - 8pm</div>
       </div>
-       </div>
-       </div>
-       </div>
-       
-       <div class="w3-row" style="padding:0;margin:17px 0 0 0;">
-       <div class="w3-threethird" style="border-top:2px solid #f5f5f5;">
-<button class="btn btn-primary btn-block w3-hover-shadow" style="border:none;border-radius:0;background-color:#fff;color:#222;font-family:roboto;font-size:12px;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #222;margin:0;padding:12px 0 6px 0;cursor:pointer;" data-dismiss="modal"><span>Close Window</span></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 
@@ -1096,6 +786,291 @@ $(currentDayID).toggleClass("today"); //hightlights today in the view hours moda
 setInterval(checkTime, 1000);
 checkTime();
 </script>
+
+<div class="w3-half w3-white" style="margin:0;">
+<p class="topic2">The best way to help our clients achieve the desired outcome is by encouraging them to prepare their teams and operations for growth so they are equipped to welcome and service new clients.<br><br>
+
+They will also need to enhance their marketing efforts through word-of-mouth marketing, effective social media marketing, and by further developing online business listings we create after joining the SG MarketPlace community.</p>
+
+<p class="topicfooter2">
+773-374-4700. 1737 East 96th Street Chicago, IL 60617 <a class="topicfooter2" data-dismiss="modal">Exit menu</a></p>
+
+<form style="background-color:#fff;font-size:18px;color:#222;outline:none;" action="http://maps.google.com/maps" method="get" target="_blank">
+      <input style="background-color:#fff;border:none;" type="hidden" name="daddr" value="10 East Ontario Ave Chicago, IL 60606 (The Monster Lives Here)" />
+   <input style="background-color:#fff;border:none;" type="submit" value="Get directions" />
+</form>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;box-shadow:8px 8px 10px #ccc;background-color:#fff;margin:0;border-radius:0 0 2px 2px;">
+<div class="w3-container w3-panel" style="width:100%;background-color:#fff;">
+<div class="w3-row-padding monster">
+<div id="item01" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal1" src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">look inside</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal2" src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">lipstick & nail polish</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal3" src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">headphones</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal04" src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">playing cards</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal04" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal05" src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">liquid foundation</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal05" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="item11" class="w3-third" style="margin:0;">
+<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal06" src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
+
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0;">
+<div class="accordion w3-white">mystery item</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0;">
+<p class="topic">
+we include the details of your product or service here.</p>
+
+<div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-517118035" itemtype="http://schema.org/Product" data-single-product-id="517118035"><div class="ecsp-title" itemprop="name" style="display:none;" content="product 2"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal06" role="dialog">
+<div class="modal-header" style="border:none;padding:0;margin:0;">
+<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+<div class="modal-dialog modal-md" style="padding:0;margin:20px;">
+<div class="modal-body" style="padding:0;margin:0;">
+<div class="w3-container w3-white" style="width:100%;border-radius:3px;padding:2px;margin:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-threethird w3-white" style="margin:0;padding:0;">
+<div class="column" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;margin:0;float:center;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <center>
 <div class="w3-container" style="width:100%;background-color:#fff;padding:4px 4px 0 4px;margin:70px 0 0 0;border-radius:3px 3px 2px 2px;">
