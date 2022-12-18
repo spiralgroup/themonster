@@ -37,7 +37,7 @@ body, html {
     max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
-    background-color: #f2f2f2;
+    background-color: #f1f1f1;
     scroll-behavior: smooth;
 }
 
@@ -155,7 +155,7 @@ padding: 0 10px;
 
 @media screen and (max-width: 768px) {
   .topic {
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 0;
   padding: 5px 0 0 0;
@@ -164,11 +164,13 @@ padding: 0 10px;
 
 .topic1 {
 font-family: roboto condensed;
-font-size: 17.5px;
-letter-spacing: 0;
+font-size: 17px;
 color: #222;
+text-shadow: 0 0 1px #fff;
 text-align: center;
+letter-spacing: .25px;
 padding: 10px;
+margin: 0;
 }
 
 .topic2c {
@@ -201,7 +203,7 @@ margin: 130px 20px 2px 0;
 @media screen and (max-width: 768px) {
   .topic3c {
    font-size: 11.5px;
-   letter-spacing: .75px;
+  text-align: center;
    margin: 0;
   }
   }
@@ -310,13 +312,13 @@ hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opac
 
 .accordion {
 font-family: ubuntu condensed;
-font-size: 20px;
-letter-spacing: .5px;
+font-size: 19px;
+letter-spacing: .25px;
  color: #b3b300;
-  text-shadow: 1px 1px 1px #f2f2f2;
+  text-shadow: 0 0 1px #fff;
 text-align: center;
-background-color: #f2f2f2;
-box-shadow: 0 10px 20px #ccc;
+background-color: #fff;
+box-shadow: 0 3px 4px #ccc;
 padding: 20px 30px;
 margin: 0;
   width: 100%;
@@ -350,8 +352,8 @@ margin: 0;
 }
 
 .panel {
-  padding: 0 12px;
-  margin: 3px 0 22px 0;
+  padding: 0;
+  margin: 3px 0 10px 0;
   background-color: #fff;
   max-height: 0;
   border: none;
@@ -381,14 +383,28 @@ margin: 0;
  .monster {
 width: 65%;
 height: auto;
-float: left;
+align: left;
 padding: 0;
 margin: 0 0 54px 0;
 }
 
 @media all and (max-width: 768px) {
-  .monster{
-  margin: -35px 0 0 0;
+  .monster {
+  width: 40%;
+align: center;
+padding: 0;
+margin: 0;
+  }
+}
+
+
+.monster1 {
+width: 90%;
+}
+
+@media all and (max-width: 768px) {
+  .monster1 {
+ width: 100%;
   }
 }
 
@@ -511,9 +527,9 @@ margin: 0 0 54px 0;
 
 <a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://www.spiralgroup.org"><span>Shop Our MarketPlace</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #fff;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/gifts.html"><span>Gift Ideas</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300f;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/gifts.html"><span>Gift Ideas</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html"><span>Sell In Our Marketplace</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #fff;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html"><span>Buy Your Seller Page Now</span></a>
 
 <a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/careers.html"><span>Join Our Team</span></a>
 
@@ -548,8 +564,7 @@ margin: 0 0 54px 0;
 <div class="w3-row" style="width:100%;">
 <div class="w3-twothird" style="padding:0;">
 <p class="topic3c">
-GIVE YOUR FAVORITE ENTREPRENEUR A GIFT THAT SAYS</p>
-<hr class="style-one">
+GIVE YOUR FAVORITE ENTREPRENEUR A GIFT THAT SAYS:</p>
 
 <p class="topic">I'd like to help your small business succeed.</p>
 </div>
@@ -560,22 +575,29 @@ GIVE YOUR FAVORITE ENTREPRENEUR A GIFT THAT SAYS</p>
 </div>
 </div>
 
-<div class="w3-row-padding" style="width:90%;margin:0;">
+<div class="w3-row-padding monster1">
 <div class="w3-threethird" style="padding:10px;margin:0 0 50px 0;">
 <div id="ads" class="accordion">
-SG LOCAL AD SERVICES&trade;</div>
+SG Local Ad Services &trade;</div>
 <div class="panel">
-<p class="topic1">
-Our Smart Promotion Ads can help your small business generate awareness of your products or services, promote seasonal items, or create more demand for a best seller.
-
-The goal of our Scrolling Footer Logo Ads is to help you establish credibility and brand identity with our marketplace shoppers. These ads allow you to connect with them intellectually and emotionally so they're motivated to take action when they see your Smart Promotion Ads.
-
-Providing opportunities for small business owners to promote their products and services in our marketplace search results for only $2 a day was a real no-brainer. If you haven't already tried the search engine on our site, we encourage you to do so and imagine your ad located in that coveted spot. Who doesn't want to be number one on Google? <a>Explore each og our ad products by clicking here</a>
-Our new ad products were created with the small business owner in mind. We've designed our products to help the entrepreneur stand out and increase sales. They're perfect for those who want to build brand awareness or promote their products and services.</p>
+<div class="w3-third" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/64921373-5776e300-d777-11e9-8f7b-d1f6bc04e279.png" style="width:100%;padding:0;margin:0;">
 </div>
 
-<div id="listings" class="accordion">SG BUSINESS LISTING SERVICE&trade;</div>
+<div class="w3-twothird" style="padding:10px;margin:0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming. That's why we designed our ad products to help the small business owner stand apart from their competitors, while increasing sales. Promoting their products and services to people who matter has never been this easy or affordable.<br><br>
+
+<a href="https://spiralgroup.github.io/themonster/share-the-magic.html">Click here to discover more</a> about each of our marketing solutions. We know you'll find the perfect <b>gift</b> for the entrepreneur in your life.</p>
+</div>
+</div>
+
+<div id="listings" class="accordion">SG Business Listing Service&trade;</div>
 <div class="panel">
+<div class="w3-third" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/64921373-5776e300-d777-11e9-8f7b-d1f6bc04e279.png" style="width:100%;padding:0;margin:0;">
+</div>
+
+<div class="w3-twothird" style="padding:10px;margin:0;">
 <p class="topic1">
 Help the small business owner in your life attract more local customers with the SG Listing Service. We'll manually register their business in only the top electronic business directories. Affording them opportunities to attract the kind of customer their small business deserves.  We created the SG Listing Service to help grow your small business. When you become an SG Merchant, we register your small business in only the top electronic business directories such as Bing, FourSquare, Google, and VK.com.
 
@@ -594,11 +616,16 @@ If you still have questions about our business listing service, call us at 773-6
 
 <p align="center" style="font-family:roboto;font-size:12px;color:#000;padding:5px 0 0 0;margin:0;"><a href="https://spiralgroup.github.io/themonster/special-offers.html" target="_blank" style="text-decoration:none;">Check out our Special Offers.</a></p>
 </div>
+</div>
 
-<div id="covert" class="accordion">SG MYSTERY SHOPPER SERVICES&trade;</div>
+<div id="covert" class="accordion">Customized Mystery Shop Program</div>
 <div class="panel">
-<p class="topic1">
-A Mystery Shopping Program can provide the small business owner in your life with the kind of insights that large companies use to improve the customer experience. We can customize a program that provides honest and in-depth views from the perspective of their customers.<br><br>
+<div class="w3-third" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/64921373-5776e300-d777-11e9-8f7b-d1f6bc04e279.png" style="width:100%;padding:0;margin:0;">
+</div>
+
+<div class="w3-twothird" style="padding:10px;margin:0;">
+<p class="topic1">A Mystery Shopping Program can provide the small business owner in your life with the kind of insights that large companies use to improve the customer experience. We can customize a program that provides honest and in-depth views from the perspective of their customers.<br><br>
 
 A Mystery Shopping Program can provide your small business with the kind of operational insights that large companies use to improve the overall customer experience.
 
@@ -608,9 +635,15 @@ Our shoppers will deliver a comprehensive, professional, and unbiased view of yo
 
 Does not reflect cost to conduct each shop. concepts served: Franchised Concepts Grocery QSR & Fast Casual Retail</p>
 </div>
+</div>
 
-<div id="training" class="accordion">FREE SBA DIGITAL TRAINING COURSES</div>
+<div id="training" class="accordion">SBA Digital Training Courses</div>
 <div class="panel">
+<div class="w3-third" style="padding:0;margin:0;">
+<img src="https://user-images.githubusercontent.com/25410880/64921373-5776e300-d777-11e9-8f7b-d1f6bc04e279.png" style="width:100%;padding:0;margin:0;">
+</div>
+
+<div class="w3-twothird" style="padding:10px;margin:0;">
 <p class="topic1">
 SBA's digital learning platform has the tools and resources necessary to empower and educate small business owners every step of the way.</p>
 
@@ -645,7 +678,8 @@ SBA's digital learning platform has the tools and resources necessary to empower
 </div>
 </div>
 </div>
-
+</div>
+</div>
 
 <div class="container w3-panel" style="width:100%;padding:0 12px;margin:100px 0 0 0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
