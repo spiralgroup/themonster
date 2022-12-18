@@ -18,9 +18,7 @@
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=Dorsa|Khand+Medium|Open+Sans+Condensed:300|Nova+Slim|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|PT+Sans|Titillium Web+Web|Shrikhand|Yanone+Kaffeesatz|Roboto+Condensed|Roboto|Khand|Secular+One|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -147,7 +145,7 @@ li:hover span {
 font-family: kaushan script;
 font-size: 30px;
 color: #b3b300;
-text-shadow: 0 1px 1px #ccc;
+text-shadow: 0 0 1px #f2f2f2;
 letter-spacing: 0;
 text-align: right;
 padding: 0 10px;
@@ -155,10 +153,11 @@ padding: 0 10px;
 
 @media screen and (max-width: 768px) {
   .topic {
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
-  letter-spacing: 0;
-  padding: 5px 0 0 0;
+  letter-spacing: .5px;
+  text-shadow: 0 0 1px #fff;
+  padding: 5px 0 10px 0;
   }
   }
 
@@ -169,35 +168,26 @@ color: #222;
 text-shadow: 0 0 1px #fff;
 text-align: center;
 letter-spacing: .25px;
-padding: 10px;
+padding: 25px 40px;
 margin: 0;
-}
-
-.topic2c {
-font-family: Yanone Kaffeesatz;
-font-size: 150px;
-color: #fff !important;
-text-align: center;
-letter-spacing: 1px;
-margin: 0;
-padding: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .topic2c {
-   font-size: 100px;
-   padding: 0;
+  .topic1 {
+   font-size: 16px;
+   padding: 5px;
   }
   }
   
+
    .topic3c {
 font-family: roboto;
-font-size: 12px;
+font-size: 13px;
 color: #b3b300;
-text-shadow: 2px 1px 2px #f2f2f2;
+text-shadow: 0 0 1px #f2f2f2;
 text-align: right;
 letter-spacing: .75px;
-margin: 130px 20px 2px 0;
+margin: 130px 0 2px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -284,35 +274,10 @@ left: 0 !important;
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #fff;}
-   
-hr.style-one { 
-border: 0; height: 0; width: 0; background-color: transparent; padding: 0; margin: 0;
-display none;
-}
-
-@media screen and (max-width: 768px) {
-  hr.style-one {
-  border: 0; height: 2px; width: 75%; background-color: #fff; padding: 0; margin: 5px 0 10px 0; border-radius:5px;
-  }
-  }
-
-hr.style-two { border: 0; height: 3px; width:85%; background-color: #fff; opacity: 0.4; padding: 0; margin: 0; border-radius:5px;
-}
-hr.style-three { border: 0; height: 2px; width:45%; background-color: #fff; opacity: 0.4; padding: 0; margin:0 0 15px 0; border-radius:5px;
-}
-hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opacity: 0.8; padding: 0; margin:5px 0; border-radius:5px;
-}
-
-@media screen and (max-width: 768px) {
-  hr.style-four {
-  width: 55%;
-  opacity: 0.4;
-  }
-  }
 
 .accordion {
 font-family: ubuntu condensed;
-font-size: 19px;
+font-size: 20px;
 letter-spacing: .25px;
  color: #b3b300;
   text-shadow: 0 0 1px #fff;
@@ -322,8 +287,7 @@ box-shadow: 0 3px 4px #ccc;
 padding: 20px 30px;
 margin: 0;
   width: 100%;
-  border: 1px solid #f1f1f1;
-  border-radius: 5px;
+   border-radius: 4px;
   text-align: left;
   outline: none;
   cursor: pointer;
@@ -346,7 +310,7 @@ margin: 0;
 .active, .accordion:hover {
   background-color: #fff;
   border: none;
-   border-radius: 3px;
+   border-radius: 4px;
    transition: 0.2s;
    padding: 30px;
 }
@@ -357,16 +321,23 @@ margin: 0;
   background-color: #fff;
   max-height: 0;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   box-shadow: 0px 2px 0px #ccc;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
 
 @media all and (max-width: 768px) {
+  .panel {
+  padding: 0;
+  margin: 3px 0 5px 0;
+}
+}
+
+@media all and (max-width: 768px) {
   .accordion{
   font-size: 19px;
-   padding: 12px;
+   padding: 14px;
    text-align: center;
   }
 }
@@ -380,12 +351,13 @@ margin: 0;
    padding: 10px;
 }
 }
+
  .monster {
-width: 65%;
+width: 100%;
 height: auto;
 align: left;
 padding: 0;
-margin: 0 0 54px 0;
+margin: 0;
 }
 
 @media all and (max-width: 768px) {
@@ -396,7 +368,6 @@ padding: 0;
 margin: 0;
   }
 }
-
 
 .monster1 {
 width: 90%;
@@ -559,18 +530,22 @@ width: 90%;
 </div>
 </div>
  
-<div class="container w3-panel" style="width:100%;margin:0 0 10px 0;">
+<div class="w3-container w3-panel" style="width:90%;margin:0 0 10px 0;">
 
-<div class="w3-row" style="width:100%;">
-<div class="w3-twothird" style="padding:0;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="col-sm-8" style="padding:0;margin:0;">
 <p class="topic3c">
 GIVE YOUR FAVORITE ENTREPRENEUR A GIFT THAT SAYS:</p>
 
 <p class="topic">I'd like to help your small business succeed.</p>
 </div>
 
-<div class="w3-third" style="padding:0;margin:0;">
+<div class="col-sm-3" style="padding:0;margin:0;">
 <img class="monster" src="https://user-images.githubusercontent.com/25410880/206917334-dac6900d-08b1-45d5-b3c9-8aebf20f2939.png">
+</div>
+
+<div class="col-sm-1" style="padding:0;margin:0;">
+&nbsp;
 </div>
 </div>
 </div>
@@ -585,9 +560,11 @@ SG Local Ad Services &trade;</div>
 </div>
 
 <div class="w3-twothird" style="padding:10px;margin:0;">
-<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming. That's why we designed our ad products to help the small business owner stand apart from their competitors, while increasing sales. Promoting their products and services to people who matter has never been this easy or affordable.<br><br>
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming. That's why we designed our ad products to help the small business owner stand apart from their competitors, while increasing sales.<br><br>
 
-<a href="https://spiralgroup.github.io/themonster/share-the-magic.html">Click here to discover more</a> about each of our marketing solutions. We know you'll find the perfect <b>gift</b> for the entrepreneur in your life.</p>
+Promoting their products and services to people who matter has never been this easy or affordable. <a href="https://spiralgroup.github.io/themonster/share-the-magic.html" style="text-decoration:none;color:#222;">Click here to discover more</a> about each of our marketing solutions.<br><br>
+
+We know you'll find the perfect <font color="#b3b300">gift</font> for the entrepreneur in your life.</p>
 </div>
 </div>
 
