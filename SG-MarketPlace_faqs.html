@@ -219,9 +219,9 @@ padding: 0;
 .topic3ca {
  font-family: Yanone Kaffeesatz;
 font-size: 24px;
-color: #222;
+color: #b3b300;
 text-align: center;
-text-shadow: 0 0 1px #f1f1f1;
+text-shadow: 0 0 1px #fff;
 letter-spacing: .5px;
 margin: 20px 0 0 0;
 padding: 0;
@@ -271,19 +271,19 @@ margin: 0;
   }
    
  .topicpanel {
-font-family: calibri;
-font-size: 19px;
+font-family: roboto condensed;
+font-size: 16px;
 color: #222;
-text-shadow: 0 0 1px #f1f1f1;
-text-align: justify;
-padding: 15px 20px;
-margin: 0;
+letter-spacing: .5px;
+text-align: right;
+padding: 0 15px;
 }
 
 @media screen and (max-width: 768px) {
   .topicpanel {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  padding: 5px 0 0 0;
   }
   }
 .material-icons {
@@ -317,31 +317,30 @@ hr.style-one { border: 0; height: 7px; width:65%; background-color: #fff; paddin
 hr.style-two { border: 0; height: 4px; width:65%; background-color: #fff; padding: 0; margin:0 0 15px 0; border-radius:5px;
 }
  
- .accordion {
-  font-family: Yanone Kaffeesatz;
-font-size: 22px;
-color: #222;
-letter-spacing: .5px;
+.accordion {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #b3b300;
+letter-spacing: 1px;
 text-shadow: 0 0 1px #fff;
 text-align: center;
 background-color: #fff;
-padding: 18px;
-margin: 2px 0;
+padding: 18px 18px 14px 18px;
+margin: 0;
   width: 100%;
-  border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   text-align: left;
-  outline: none;
+  border: none;
   cursor: pointer;
   transition: 0.4s;
 }
 
 .accordion:after {
-  content: '\002B';
-  color: #222;
-  text-shadow: 0 0 1px #f1f1f1;
+  content: '\022b6';
+  font-size: 20px;
+  color: #b3b300;
+  text-shadow: 1px 1px 1px #ccc;
   float: right;
-  margin-left: 5px;
 }
 
 .active:after {
@@ -353,17 +352,17 @@ margin: 2px 0;
   border: none;
    border-radius: 3px;
    transition: 0.2s;
-   padding: 12px;
+   padding: 20px;
 }
 
 .panel {
-  padding: 0 12px;
-  margin: 0 0 20px 0;
+  padding: 0 21px 0 40px;
+  margin: 0 0 9.75px 0;
   background-color: #fff;
   max-height: 0;
   border: none;
   border-radius: 3px;
-  box-shadow: 0px 5px 10px #ccc;
+  box-shadow: 0px 2px 2px #ccc;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
@@ -371,15 +370,20 @@ margin: 2px 0;
 @media all and (max-width: 768px) {
   .accordion{
   font-size: 19px;
-   padding: 12px;
+   padding: 14px 14px 10px 10px;
    text-align: center;
+   box-shadow: 0 2px 5px #ccc;
   }
 }
 
 @media all and (max-width: 768px) {
-  .accordion:after, .content {
-  display: none;
-  }
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 10px;
+}
 }
 
 .dropbtn {
@@ -426,54 +430,7 @@ margin: 2px 0;
 
 .dropdown:hover .dropbtn {background-color: #fff;}
 
-.lds-ripple {
-  display: inline-block;
-  position: relative;
-  width: 32px;
-  height: 32px;
-}
-.lds-ripple div {
-  position: absolute;
-  border: 4px solid #fff;
-  border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-}
-.lds-ripple div:nth-child(2) {
-  animation-delay: -0.10s;
-}
-@keyframes lds-ripple {
-  0% {
-    top: 15px;
-    left: 0px;
-    width: 0;
-    height: 0;
-    opacity: 9;
-      }
-  4.9% {
-    top: 15px;
-    left: 0px;
-    width: 0;
-    height: 0;
-    opacity: 9;
-  }
-  5% {
-    top: 15px;
-    left: 0px;
-    width: 0;
-    height: 0;
-      }
-    
-  100% {
-    top: 15px;
-    left: 0px;
-    width: 32px;
-    height: 32px;
-    opacity: 9;
-  }
-}
-
-
-hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padding: 0; margin:5px 0 0 0; border-radius:5px;
+hr.style-three { border: 0; height: 3px; width:50%; background-color: #b3b300; padding: 0; margin:5px 0 0 0; border-radius:5px;
 }
 
 </style>
@@ -512,7 +469,7 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
 <a href="https://spiralgroup.github.io/themonster/careers.html">Join Our Team</a>
 <a href="https://spiralgroup.github.io/themonster/merchant-join.html">Sell In Our Marketplace</a>
 <a href="https://form.jotform.com/222675560970159">Shopper Sign Up</a>
-<a href="https://spiralgroup.github.io/themonster/sg-giftcard.html">Gift Ideas</a>
+<a href="https://spiralgroup.github.io/themonster/gifts.html">Gift Ideas</a>
 </div>
 </div>
 </div>
@@ -576,7 +533,8 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
 <div class="modal-dialog modal-lg" style="background-color:transparent;">
 <div class="w3-row-padding" style="width:100%;">
 <div class="w3-threethird">
-<img class="w3-card-4" src="https://user-images.githubusercontent.com/25410880/206582830-16059a36-e448-4a92-85a7-344d6c4aff92.gif" style="width:100%;margin:0;padding:0;border-radius:3px;">
+
+<img src="https://user-images.githubusercontent.com/25410880/206917334-dac6900d-08b1-45d5-b3c9-8aebf20f2939.png" style="width:100%;margin:0;padding:0;border-radius:3px;">
 </div>
 </div>
 </div>
@@ -588,16 +546,18 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
 <div class="w3-container w3-panel" style="width:100%;padding:0;border-radius:0 0 4px 4px;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
+
 <div class="column" style="padding:0;margin:0;">
-<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #fff;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://form.jotform.com/200181106011129" target="_blank"><span>Get Your Seller Page Now</span></a>
+
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://form.jotform.com/222675560970159" target="_blank"><span>Shopper Sign Up</span></a>
 
 <a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://www.spiralgroup.org"><span>Shop Our MarketPlace</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/sg-listing-service.html"><span>SG Listing Service&trade;</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300f;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/gifts.html"><span>Gift Ideas</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/share-the-magic.html"><span>SG Local Ad Services&trade;</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#fff;font-family:Yanone Kaffeesatz;font-size:22px;color:#b3b300;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #fff;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html"><span>Buy Your Seller Page Now</span></a>
 
-<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://form.jotform.com/82323651984159"><span>Free Consultation</span></a>
+<a class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0 0 8px 0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/careers.html"><span>Join Our Team</span></a>
 
 <button class="w3-card btn btn-primary btn-block" style="background-color:#b3b300;font-family:Yanone Kaffeesatz;font-size:22px;color:#fff;letter-spacing:1px;text-decoration:none;text-shadow:0 0 1px #b3b300;margin:0;border:none;border-radius:4px;padding:12px 12px 8px 12px;cursor:pointer;" data-dismiss="modal"><span>Exit Menu</span></button>
 </div>
@@ -621,11 +581,9 @@ hr.style-three { border: 0; height: 5px; width:50%; background-color: #fff; padd
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:90px 0 30px 0;">
+<div id="faq" class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:80px 0 30px 0;">
 <div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
 <div class="w3-threethird" style="margin:0;">
-<p id="faq" class="topic2c"><button class="w3-button" style="background-color:#fff;color:#222;text-shadow:0 0 1px #fff;letter-spacing:1px;padding-top:12px;border:none;border-radius:3px 3px 0 0;">
-SG MarketPlace FAQ's</button></p>
 </div>
 
 <div class="accordion">What is the SG MarketPlace?</div>
@@ -637,39 +595,39 @@ The SG MarketPlace is an online transactional platform that connects local buyer
 <div class="accordion">What are the benefits of becoming an SG Merchant?</div>
 <div class="panel">
 <p class="topicpanel">
-INCREASED REACH<br>
+<b>increased reach</b><br>
 With more than 80% of internet users shopping online, selling in the SG MarketPlace is an easy and economical way for small businesses to get their products in front of a larger, local audience.</p>
 
 <p class="topicpanel">
-NO SOFTWARE TO INSTALL & NO CODING REQUIRED<br>
-It's easy to start selling in the SG MarketPlace, because we do all the work for our clients. After placing an order for your SG MarketPlace Seller Page, we develop it within 7 days. Unlike our competitors, there is no need for our merchants to learn how to write any web languages during a 14-day free trial period or install complicated software programs.</p>
+<b>no software to install & no coding required</b><br>
+It's easy to start selling in our marketplace, because we do all the work for our merchants. After placing an order for your SG MarketPlace Seller Page, we develop it within 7 days. Unlike our competitors, there is no need for you to learn how to write any web languages during a 14-day free trial period or install complicated software programs.</p>
 
 <p class="topicpanel">
-UPDATES & MAINTENANCE<br>
-We update and maintain Seller Pages. Our merchants only have to submit information changes to their Sales Consultant via email. Changes will be reflected within 24 hours.</p>
+<b>updates & maintenance</b><br>
+We update and maintain seller pages. Our merchants only have to submit information changes to their Sales Consultant via email. Changes will be reflected within 24 hours.</p>
 
 <p class="topicpanel">
-NO NEED TO ESTABLISH PAYMENT GATEWAY<br>
+<b>no need to establish a payment gateway</b><br>
 We process every transaction and pay sellers their earnings, minus commissions, via PayPal.</p>
 
 <p class="topicpanel">
-ORDER PROCESSING<br>
-Sellers manage their incoming orders via JotForm.</p>
+<b>order processing</b><br>
+Sellers manage their incoming orders.</p>
 
 <p class="topicpanel">
-GREAT STARTER WEBSITE<br>
+<b>great starter website</b><br>
 Small businesses that don’t already have a web presence, their Seller Page can serve as a fully-equipped starter website.</p>
 
 <p class="topicpanel">
-LOWEST COMMISSION FEES<br>
-Our fees, per transaction, are much lower than any of our competitors. Not only do we process each transaction for our merchants, we charge a flat fee of only 12% per transaction. With 2.9% + 30 cents reimbursed to PayPal for providing the secure online payment gateway. Although our competitors don't charge upfront fees to begin selling in their marketplaces, most collect up to 50% on each transaction.</p>
+<b>lowest commission fees</b><br>
+Our fees, per transaction, are much lower than any of our competitors. We charge a flat fee of only 12% per transaction. With 2.9% + 30 cents of that reimbursed to PayPal for providing the secure online payment gateway. Although our competitors don't charge upfront fees to begin selling in their marketplaces, most collect up to 50% on each transaction.</p>
 
 <p class="topicpanel">
-NO SURPRISE PRICE REDUCTIONS<br>
+<b>no surprise price reductions</b><br>
 Unlike Groupon, we do not take responsibility for discounting any of the products or services offered in our marketplace by sellers.</p>
 
 <p class="topicpanel">
-GENERATE NEW LEADS<br>
+<b>generate new leads</b><br>
 Selling in the SG MarketPlace can be a powerful and effective way for small businesses to generate new leads. Shoppers can stay up to date by subscribing to Sellers’ mailing lists.</p>
 </div>
 
@@ -678,58 +636,56 @@ Selling in the SG MarketPlace can be a powerful and effective way for small busi
 <p class="topicpanel">
 You'll have to decide. We believe joining the SG MarketPlace is a great way to compliment your small business marketing strategy, but operational excellence will set you apart from competitors. Therefore, it is imperative our sellers understand the best way to achieve local marketing objectives is by determining their level of preparedness prior to rolling out a marketing campaign.<br><br>
 
-After joining, we encourage that you enhance local marketing efforts through word-of-mouth marketing, social media marketing, and by further developing online business listings that we create and claim for your small business if you have purchased our SG Listing Service&trade;.<br><br>
+After joining, we encourage that you enhance local marketing efforts through word-of-mouth marketing, social media marketing, and by further developing online business listings that we create and claim for your small business if you have purchased our SG Business Listing Service&trade;.<br><br>
 
-Get to know your primary marketing objectives. Are they to increase brand awareness or promote a product or service. How much can you afford to spend on ad products? Which ad products are right for your small business? Finding the right advertising solution for your small business can be both complicated and time-consuming. With so many online advertising compensation models, it's no wonder. However, it's still important to educate consumers about your brand through online marketing efforts.<br><br>
-
-Ultimately, as an SG MarketPlace Merchant, we believe the best way to achieve the desired marketing outcome is by preparing your teams and operations for growth so you're ahead of the game when it comes to welcoming and servicing new clients.</p>
+We hope you understand your primary marketing objectives. Are they to increase brand awareness? Promote a product or service? How much can you afford to spend on ad products? Which ad products are right for your small business.</p>
 </div>
 
 <div class="accordion">How do I sell in the SG MarketPlace?</div>
 <div class="panel">
 <p class="topicpanel">
-It's easy to start selling your products and services in the SG MarketPlace. Begin by gathering all your pertinent business information, setting aside 30 minutes, then <a href="https://spiralgroup.github.io/themonster/merchant-join.html#get-started" target="_blank">click here.</a></p>
+It's easy to start selling your products and services. Begin by gathering all your pertinent business information, setting aside 30 minutes, then <a href="https://spiralgroup.github.io/themonster/merchant-join.html#get-started" target="_blank" style="color:green;text-shadow:0 0 1px #fff;">click here.</a></p>
 
 <p class="topicpanel">
-SELECT BUSINESS CATEGORY<br>
-Select a category by clicking the image that corresponds to it. When you arrive at that category's page, you'll also discover the kinds of products or services that are ideal for our marketplace. Click on the "Make The Purchase" button to arrive at our online order form.</p>
+<b>select business category</b><br>
+Select a category for your small business. When you arrive at that category's page, discover the kinds of products and/or services that are ideal for our marketplace. Click on the <font color="green">"Make The Purchase"</font> button to arrive at our online order form.</p>
 
 <p class="topicpanel">
-COMPLETING THE ORDER FORM<br>
+<b>completing the order form</b><br>
 You'll need to provide your business information when you arrive at the online order form. We provide tips along the way to help your transaction go smoothly.</p>
 
 <p class="topicpanel">
-YOUR IMAGES<br>
-Images used for showcasing your products and services in the SG MarketPlace must be of the highest quality. However, if you don't have any images, we have stock photos at no additional charge.</p>
+<b>your images</b><br>
+Images used for showcasing your products and/or services in the SG MarketPlace must be of the highest quality. However, if you don't have any images, we have stock photos we'll use at no additional charge.</p>
 
 <p class="topicpanel">
-YOUR SPECIAL OFFERS<br>
-You can create some amazing deals and promotional offers for your seller page. It may help to determine your offers before signing up to join our marketplace &#151; it will save lots of time. We've developed this handy <a href="https://spiralgroup.github.io/themonster/special-offers-guide.html" target="_blank">Amazing Deals Guide</a> to give you an idea about the kind of offers you may want to consider.</p>
+<b>your special offers</b><br>
+You can create some amazing deals and promotional offers for your seller page. It may help to determine your offers before signing up to join our marketplace; it will save you lots of time. We've developed this handy <a href="https://spiralgroup.github.io/themonster/special-offers-guide.html" target="_blank" style="color:green;text-shadow:0 0 1px #fff;">Amazing Deals Guide</a> to give you an idea about the kind of offers you may want to consider.</p>
 
 <p class="topicpanel">
-PHONE CONFIRMATION<br>
+<b>phone confirmation</b><br>
 You'll be contacted by our web developer to complete the process of creating your new Spiral Group, Inc. SG MarketPlace Seller Page.</p>
 
 <p class="topicpanel">
-REFUNDS<br>
+<b>refunds</b><br>
 We cannot offer refunds.</p>
 
 <hr />
 
 
 <p class="topicpanel">
-QUESTIONS<br>
-If you have more questions about the ordering process, call us at 217-848-6332. We're open everyday from 8am to 8pm. Here to help local small business owners achieve their objectives realistically and economically.</p>
+<b>questions</b><br>
+If you have more questions about the ordering process, call us at 217-848-6332. We're open everyday from 8am to 8pm to help local small business owners achieve their objectives realistically and economically.</p>
 </div>
 
 <div class="accordion">How do SG MarketPlace shoppers benefit?</div>
 <div class="panel">
 <p class="topicpanel">
-USER-FRIENDLY & COMPREHENSIVE<br>
+<b>user-friendly & comprehensive</b><br>
 The SG MarketPlace is user-friendly and easy to navigate. We don't crowd our web pages with irrelevant content and outside ads. Our ad products are strategically located and only enhance the shopper experience. Our Smart Promotion Ads&trade; are non-intrusive and easily dismissed with one click.</p>
 
 <p class="topicpanel">
-BETTER DISCOVERY<br>
+<b>better discovery</b><br>
 There is no need for our marketplace shoppers to visit several websites to discover information they seek about a particular SG MarketPlace Merchant. All pertinent information is located on each seller's page.</p>
 </div>
 
@@ -772,7 +728,7 @@ We strive for excellent customer service. Shoppers can submit feedback on all ma
 <div class="accordion">Is there a Seller Page Demo?</div>
 <div class="panel">
 <p class="topicpanel">
-Yes. <a href="https://spiralgroup.github.io/themonster/demo-products-and-services.html" target="_blank">Check it out</a>.
+Yes. <a href="https://spiralgroup.github.io/themonster/sample-seller-page_all" target="_blank">Check it out</a>.
 </div>
     
 <div class="accordion">Don't see your question?</div>
@@ -781,95 +737,83 @@ Yes. <a href="https://spiralgroup.github.io/themonster/demo-products-and-service
 If you still have questions about the SG MarketPlace, call us at 217-848-6332. We're open every day from 8am to 8pm.</p>
 </div>
 </div>
-</div>
-</div>
 
 <center>
-<div  class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
+<div id="ideal-concepts" class="container w3-panel" style="width:100%;padding:0;margin:80px 0 0 0;">
 <div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
 <div class="w3-threethird" style="margin:0;">
-<p id="ideal-concepts" class="topic2c"><button class="w3-button" style="background-color:#fff;color:#222;text-shadow:0 0 1px #fff;letter-spacing:1px;padding-top:12px;border:none;border-radius:3px 3px 0 0;">
-Ideal Concepts</button></p>
 </div>
 
 <div class="w3-third" style="margin:0 0 15px 0;">
-<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
-<div class="lds-ripple"><div></div><div></div></div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <p class="topic3ca">Apparel & Accessories</p>
 
 <hr class="style-three">
 
-<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+<p class="topic3bb">
 Adult toys. Apparel for men, women, and children. Handbags, luggage, and travel bags. Jewelry and watches. Novelty items. Perfumes and colognes. Personalized items.</p>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 15px 0;">
-<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
-<div class="lds-ripple"><div></div><div></div></div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <p class="topic3ca">Automotive</p>
 
 <hr class="style-three">
 
-<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+<p class="topic3bb">
 Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking (valet) services. Party bus rentals. Remote starter installation. Towing services. Windshield repair and replacement.</p>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 15px 0;">
-<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
-<div class="lds-ripple"><div></div><div></div></div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <p class="topic3ca">Beauty & Health</p>
 
 <hr class="style-three">
 
-<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+<p class="topic3bb">
 Barbers and barber shops. Blowouts. Braids, weaves, and sew-ins. Cosmetic dentistry. Cuts, styles, and coloring. Face and skin care. Fitness centers. Hair removal. Lashes and brows. Makeup artistry. Makeup and cosmetics. Massage therapy. Nail services. Nutritionists. Salons and salon packages. Tattoos and piercings.</p>
 </div>
 </div>
-</div>
-</div>
 
-<div class="w3-row-padding" style="width:100%;margin:0 0 30px 0;">
 <div class="w3-third" style="margin:0 0 15px 0;">
-<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
-<div class="lds-ripple"><div></div><div></div></div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <p class="topic3ca">Food & Beverage</p>
 
 <hr class="style-three">
 
-<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+<p class="topic3bb">
 Bakeries. Bars and pubs. Breweries. Cafés. Ethnic restaurants. Fast casual dining concepts. Fine dining concepts. Full service restaurants. Gourmet cuisine. Grocers. Ice cream/frozen yogurt bars. Juice bars. Pizzerias. Prepared meals. Sandwich shops. Steak houses. Taprooms. Wine and spirits. Wineries.</p>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 15px 0;">
-<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
-<div class="lds-ripple"><div></div><div></div></div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <p class="topic3ca">Home Services</p>
 
 <hr class="style-three">
 
-<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+<p class="topic3bb">
 Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog-walking and other pet services. Duct cleaning. Flooring installation. General contractors. Gutter cleaning. Handymen. Home alarm installation. House-keeping services. HVAC technicians. Laundry services. Movers. Painters. Pest control. Pet supplies. Plumbers. Remodeling services. Upholstery cleaning. Window cleaning. Etc.</p>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 15px 0;">
-<div class="w3-container w3-panel w3-card" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
-<div class="lds-ripple"><div></div><div></div></div>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:0 12px;border-radius:4px;margin:0;">
 <p class="topic3ca">Personal Services</p>
 
 <hr class="style-three">
 
-<p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
+<p class="topic3bb">
 Art lessons. Boxing lessons. Business, Career & Life coaching. Computer training. Cooking lessons. Dance studios. Electronics repair. Event planning. Flying lessons. Golf lessons. Martial arts training. Mentoring services. Music lessons. Online learning courses. Printing services. Sailing lessons. Sports training. Tax preparation services. Tennis lessons. Voice lessons. Etc.</p>
 </div>
 </div>
 </div>
 </div>
+</div>
 
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:60px 0 0 0;">
+<div class="container w3-panel" style="width:100%;padding:0 12px;margin:140px 0 0 0;">
 <div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
@@ -892,18 +836,19 @@ Art lessons. Boxing lessons. Business, Career & Life coaching. Computer training
 <p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> MARKETPLACE SHOPPERS</p>
 <p style="margin-top:15px;"><a href="https://form.jotform.com/222675560970159">Shopper Sign Up</a></p>
 <p><a href="https://www.spiralgroup.org">Shop Our MarketPlace</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/careers.html">Work for Us</a></p>
+<p><a href="https://spiralgroup.github.io/themonster/gifts.html">Gift Ideas</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html">Community Outreach</a></p>
 <p style="margin-bottom:10px;"><a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a></p>
 </div>
 
 <div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
 <p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> LOCAL MERCHANT RESOURCES</p>
-<p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/merchant-join.html">Join Our MarketPlace</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/sg-listing-service.html">SG Listing Service&trade;</a></p>
-<p><a href="https://form.jotform.com/82323651984159">Special Offers Guide</a></p>
+<p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/merchant-join.html">Join SG MarketPlace</a></p>
 <p><a href="https://spiralgroup.github.io/themonster/share-the-magic.html">SG Local Ad Services&trade;</a></p>
-<p style="margin-bottom:10px;"><a href="https://form.jotform.com/82323651984159">Free Consultation</a></p>
+<p><a href="https://www.handbooks.io/#app" target="_blank">Employee Handbook Builder</a></p>
+<p><a href="https://form.jotform.com/82323651984159">Free Phone Consultation</a></p>
+<p style="margin-bottom:10px;"><a href="https://www.thebalancemoney.com/what-is-marketing-2296057" target="_blank">Defining Marketing by Laura Lake</a>
+</p>
 </div>
 </div>
 </div>
