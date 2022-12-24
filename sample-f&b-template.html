@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo - SG MarketPlace Seller Page - Online Store &#124; Spiral Group, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Dorsa|Yanone Kaffeesatz|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2,
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
+
+<style type="text/css">
+/* Slider1 */
+.slick-slide {
+    margin: 0;
+    padding: 4px 2px;
+    }
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: inline-block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: inline-block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+* {box-sizing: border-box;}
+
+body, html {
+    max-width: 1250px !important;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+ }
+ 
+.topnav1 {
+margin: 0;
+padding: 20px 0 0 0;
+}
+
+.topnav1 a {
+  font-family: Yanone Kaffeesatz;
+  color: #fff;
+  padding: 5px 0 0 0;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #b3b300;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav1 a {
+  text-shadow: 0 0 1px #fff;
+  }
+  }
+  
+.topnav1 a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  padding: 0 0 2px 0;
+  transition: 0.3s;
+}
+
+.topic {
+font-family: roboto condensed;
+font-size: 16px;
+color: #b3b300;
+text-shadow: 0 0 1px #fff;
+letter-spacing: .5px;
+text-align: left;
+margin: 0;
+padding: 0 0 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .topic {
+  font-size: 13px;
+  text-align: center;
+  }
+  }
+  
+.topic1 { 
+font-family: roboto condensed;
+font-size: 16px;
+color: #222;
+text-align: left;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #333;
+margin: 0;
+padding: 0;
+}
+
+.topic1a { 
+ font-family: Yanone Kaffeesatz;
+font-size: 28px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #f1f1f1;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic1a {
+ font-size: 21px;
+  }
+  }
+  
+.topic2 {
+font-family: roboto condensed;
+font-size: 17px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+margin: 0;
+padding: 10px 8px 0 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2 {
+  font-size: 17px;
+  color: #222;
+  letter-spacing: .5px;
+  text-align: center;
+  text-shadow: 0 0 1px #fff;
+  }
+  }
+  
+ .topic2c { 
+font-family: Yanone Kaffeesatz;
+font-size: 18px;
+color: #222;
+text-align: justify;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f2f2f2;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic2c {
+  text-align: center;
+  }
+  }
+  
+.topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #f8f8f8;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f8f8f8;
+margin: 0;
+padding: 0;
+}
+
+ .topic3d {
+font-family: Yanone Kaffeesatz;
+font-size: 18px;
+color: #b3b300;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3d {
+   font-size: 20px;
+  }
+  }
+  
+.topic3e {
+font-family: Yanone Kaffeesatz;
+font-size: 22px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3e {
+   font-size: 20px;
+  }
+  }
+  
+.topicfooter1 {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #222;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+letter-spacing: 1px;
+padding: 0;
+margin: 0;
+}
+
+.topicfooter2 {
+font-family: Yanone Kaffeesatz;
+font-size: 26px;
+color: #222;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+letter-spacing: 1px;
+padding: 0;
+margin: 0;
+}
+
+ .topic-monster {
+font-family: Yanone Kaffeesatz;
+font-size: 19px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f2f2f2;
+margin: 0;
+padding: 0;
+}
+  
+  @media screen and (max-width: 768px) {
+  .topic-monster {
+font-family: roboto condensed;
+font-size: 14px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #666;
+margin: 0;
+padding: 0;
+  }
+  }
+.btn-primary:hover span {
+ color: #000;
+ text-shadow: 0 0 1px #666;
+ transition: 0.5s;
+}
+
+.container-fluid {
+max-width: 1200px;
+background-color: transparent;
+}
+
+@media screen and (max-width: 720px) {
+  .container-fluid {
+  max-width: 720px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+     }
+  }
+  
+#timeDiv {
+font-family: roboto condensed;
+  font-size: 16px;
+  color: #222;
+  letter-spacing: .5px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 16px;
+  }
+  }
+
+.dateTime {
+max-width: 150px;
+font-family: roboto condensed;
+color: #fff;
+text-shadow: 0 0 1px #ccc;
+  font-size: 16px;
+float: none;
+  text-align: left;
+  line-height: .73;
+    }
+
+.day {
+   display: inline-block;
+ }
+
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.today {
+max-width: 150px;
+  color: #222 !important;
+  text-shadow: 0 0 1px #ccc !important;
+    display: block;
+}
+
+.accordion {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+background-color: #fff;
+padding: 18px 18px 14px 18px;
+margin: 0;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\022b6';
+  font-size: 20px;
+  color: #b3b300;
+  text-shadow: 1px 1px 1px #ccc;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 20px;
+}
+
+.panel {
+  padding: 0;
+  margin: 0 0 5px 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px #ccc;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+@media all and (max-width: 768px) {
+  .accordion {
+  font-size: 19px;
+   padding: 14px 14px 10px 10px;
+   text-align: center;
+    }
+}
+
+@media all and (max-width: 768px) {
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 10px;
+}
+}
+
+.container-fluid2 {
+width: 100%;
+margin: 0;
+padding: 0;
+
+}
+ 
+@media all and (max-width: 768px) {
+  .container-fluid2 {
+  display: none;
+  }
+}
+</style>
+</head>
+
+<center>
+<body>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;border-radius:4px;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;border-radius:4px 4px 2px 2px;">
+<div class="row" style="width:100%;margin:0;padding:0;border-radius:4px 4px 2px 2px;">
+<div class="w3-quarter" style="background-color:transparent;">
+<div style="width:100%;background-color:transparent;padding:0 3px 0 0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="width:100%;border-radius:4px;padding:0;margin:0;background-color:transparent;">
+</div>
+</div>
+
+<div class="business-logos slide container-fluid2" style="width:100%;margin:0;padding:0 4px 0 0;">
+<div class="w3-threequarter">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54082485-5c8c3e80-42cb-11e9-8a77-6982ea2fb668.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Apparel & Other Items</a>
+</div>
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54055812-fdcba580-41a2-11e9-87e4-454e297cfa6f.png" style="border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Automotive Services</a>
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Beauty & Health</a>
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Food & Beverage</a>
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/53668900-234c3280-3c2a-11e9-8cf1-b40e866e1d9e.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Home & Personal Services</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;margin:10px 0 0 0;padding:10px;border-radius:0 0 5px 5px;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;border-radius:0 0 5px 5px;">
+<div class="w3-threethird" style="width:100%;padding:0;margin:0 0 5px 0;border-radius:0 0 5px 5px;">
+<div class="accordion">Main Menu</div>
+<div class="panel">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<p>Served on your choice of tortilla, with onions, cilantro, and lime.</p>
+<div class="w3-row-padding" style="width:100%;">
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521952637881786+416214.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521909539207657+416166.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+</div>
+
+<div class="w3-row-padding" style="width:100%;">
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521952637881786+416214.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521909539207657+416166.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion">
+Sides & Salads</div>
+<div class="panel">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;">
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521952637881786+416214.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521909539207657+416166.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion">
+Desserts</div>
+<div class="panel">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;">
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521952637881786+416214.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521909539207657+416166.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion">
+Beverages</div>
+<div class="panel">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-row-padding" style="width:100%;">
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521952637881786+416214.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<img style="width:100%;padding:0;border-radius:3px;" src="https://menufyproduction.imgix.net/637521909539207657+416166.png">
+</div>
+
+<div class="w3-quarter" style="margin:10px 0;">
+<p class="topic1">For the entrepreneur, finding the right advertising solution can be complicated and time-consuming.<br><br>
+$19.99</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion">
+Catering</div>
+<div class="panel">
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 50px 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-twothird" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:6px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:13px 15px;margin:0;border-radius:3px 3px 0 0;">
+
+<p class="topic2c">
+The service-oriented staff at Spiral Group, Inc. provides institutional, corporate, and private catering. Whether it's boxed lunches, a cocktail reception for 25 people, or a seated dinner for 250, we're fully committed to helping our customers achieve their catering needs.<br><br>
+
+From concept to execution, our event management team is ready to help you create a remarkable presentation. We'll incorporate your theme, budget, and desired outcome to ensure a spectacular event.<br><br>
+
+Put our expertise to work for you. With prestigious clients such as Soft Sheen Products, BET, Microsoft, Google, Apple, and Plex TV, we've proven to be the best in Decatur. <a href="https://form.jotform.com/92186745877172" target="_blank" style="color:#222;">Click here to tell us</a> about your event and to schedule a free consultation.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="container6">
+<img src="https://user-images.githubusercontent.com/25410880/94541923-cc477e80-020d-11eb-907c-795370181243.png" style="width:99.40%;padding:0;border-radius:3px;">
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container" style="width:100%;padding:0;margin:8px 0 0 0;">
+<p class="topic2">Catering Services Include</p>
+<div class="w3-row" style="width:100%;margin:0;padding:0;">
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 18px 0;border:none;border-radius:2px;">Menu Planning</button>
+
+<p class="topic-monster" style="padding:0 20px;">
+From concept to execution our seasoned event management team is ready to help you create a custom menu and unique presentation.</p>
+
+<hr class="style-one" style="margin:10px 0;">
+
+<p class="topic-monster" style="padding:0 20px; margin:0 0 10px 0;">
+You provide the concept along with desired cuisine. We'll incorporate your theme, budget, and desired outcome to ensure a spectacular event.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
+
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 18px 0;border:none;border-radius:2px;">Floral Arrangements</button>
+
+<p class="topic-monster" style="padding:0 20px;">
+No matter the occasion, our floral arrangement and professional design staff will make your event pleasantly memorable.</p>
+
+<hr class="style-one" style="margin:10px 0;">
+
+<p class="topic-monster" style="padding:0 20px; margin:0 0 10px 0;">
+We'll incorporate your color schemes, budget, and favorite flowers to produce a stunning display that will compliment the occasion.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0;padding:0 5px;">
+<div class="w3-panel" style="background-color:#fff;padding:3px;border-radius:3px;margin:0 0 20px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:0;margin:0;border-radius:3px 3px 0 0;">
+
+<button class="btn btn-primary btn-block w3-card" style="background-color:#b3b300;font-family:kaushan script;font-size:22.5px;color:#fff;text-shadow:0 2px 12px #bfbfbf;letter-spacing:.5px;padding:10px;margin:0 0 18px 0;border:none;border-radius:2px;">Theme Development</button>
+
+<p class="topic-monster" style="padding:0 20px;">
+We work closely with you to ensure your the theme of your event is what you envisioned of your event is what you envisioned.</p>
+
+<hr class="style-one" style="margin:10px 0;">
+
+<p class="topic-monster" style="padding:0 20px; margin:0 0 10px 0;">
+Whether a graduation, wedding, retirement, or corporate event, we stay within the occasion and create concepts that are true to your theme.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion">About Us</div>
+<div class="panel">
+
+<div class="w3-container" style="width:100%;padding:0;margin:4px 0 50px 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-twothird" style="margin:0;">
+<div class="w3-panel" style="background-color:#fff;padding:6px;border-radius:3px;margin:0 0 18px 0;">
+<div class="column" style="border:1px solid #ffffe6;padding:13px 15px;margin:0;border-radius:3px 3px 0 0;">
+
+<p class="topic2c">
+Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome, could get great food at down-to-earth prices, and where they'd be treated right by people with a passion to serve.<br><br>       
+
+We're loved for our hand-breaded Boneless Buffalo Wings, Broiled Sirloin Tips, frosted mugs of beer, and more. Simple, hearty, delectable food. All served in a distinct Chicago-style and enjoyed with family and friends. <a href="https://form.jotform.com/92186745877172" target="_blank" style="color:#222;">Download our menu here.</a><br><br>
+
+The culture at the SG MarketPlace Restaurant was instilled by Michelle long before a mission statement was ever developed &#151; providing stellar service is our key to success. It's what makes all our guests feel right at home. So, join us for some delicious food and a drink. But most of all, relax.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="margin:0 0 20px 0;">
+<div class="w3-panel" style="background-color:#fff;padding:7px;border-radius:3px;margin:0;">
+<div class="column" style="padding:0;margin:0;border-radius:3px 3px 0 0;">
+<div class="container6">
+<img src="https://user-images.githubusercontent.com/25410880/94541923-cc477e80-020d-11eb-907c-795370181243.png" style="width:99.40%;padding:0;border-radius:3px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row" style="background-color:#f2f2f2;margin:0;padding:0;">
+<div class="w3-third" style="background-color:#ccc;padding:0 8px;margin:0;">
+<div id="timeDiv" style="color:#222;font-size:16px;padding:11px 0 7px 0;text-shadow:0 0 1px #333;letter-spacing:.5px;">
+</div>
+
+<div class="w3-container w3-panel" style="background-color:#ccc;width:100%;padding:14px 0 16px 0;margin:0;">
+       <div id="Monday" class="dateTime">
+        <div class="day">Mon</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+     <br>         
+     
+      <div id="Tuesday" class="dateTime">
+        <div class="day">Tue</div>
+        <div class="time">8am - 8pm</div>
+        </div>
+         <br>
+      <div id="Wednesday" class="dateTime">
+        <div class="day">Wed</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      
+      <div id="Thursday" class="dateTime">
+        <div class="day">Thu</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Friday" class="dateTime">
+        <div class="day">Fri</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+      <div id="Saturday" class="dateTime">
+        <div class="day">Sat</div>
+        <div class="time">8am - 8pm</div>
+      </div>
+      
+      <br>
+       <div id="Sunday" class="dateTime">
+        <div class="day">Sun</div>
+      <div class="time">8am - 8pm</div>
+      </div>
+      </div>
+      </div>
+
+<div class="w3-twothird">
+<p class="topic2">Achieve the desired outcome for local marketing campaigns by preparing your teams and operations for welcoming and servicing new customers. Call 217-848-6332 with questions about this template.</p><br>
+
+<p class="topicfooter2">217-424-1311</p>
+
+<p class="topic2">
+333 South Franklin Street<br>
+Decatur, IL 62523</p>
+
+<a class="btn btn-primary btn-block" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#222;letter-spacing:.5px;text-decoration:none;text-shadow:0 0 1px #ccc;margin:6px 0;border:none;padding:8px 8px 7px 8px;cursor:pointer;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank"><span>Get Directions</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:100px 0 0 0;border-radius:3px 3px 2px 2px;">
+<div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;cursor:pointer;" alt="Game Day Barber Shop"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710680-0288a280-8aa4-11ea-8b91-257ee6afe641.png" style="border-radius:2px;cursor:pointer;" alt="Hamunaptra Cosmetics"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710685-05839300-8aa4-11ea-9851-6041c8349518.png" style="border-radius:2px;cursor:pointer;" alt="The Prestige Beauty Supplies"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710689-074d5680-8aa4-11ea-8058-8b3edc63c506.png" style="border-radius:2px;cursor:pointer;" alt="Stick It Tattoos & Piercings"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710696-07e5ed00-8aa4-11ea-9573-5612a851a547.png" style="border-radius:2px;cursor:pointer;" alt="Zambuka Night Club"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710698-087e8380-8aa4-11ea-9677-39a95541f02b.png" style="border-radius:2px;cursor:pointer;" alt="Onyx Business Systems"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="border-radius:2px;cursor:pointer;" alt="Levinna Purses & Bags"></a></div>
+
+<div class="slide" style="margin:0;padding:0;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710703-0a484700-8aa4-11ea-9366-51b1162290fd.png" style="border-radius:2px;cursor:pointer;" alt="Gortex Fitness Apparel"></a></div>
+</div>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var now = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var checkTime = function() {
+  var today = weekday[now.getDay()];
+  var timeDiv = document.getElementById('timeDiv');
+  var dayOfWeek = now.getDay();
+  var hour = now.getHours();
+  var minutes = now.getMinutes();
+
+  //add AM or PM
+  var suffix = hour >= 12 ? " PM" : " AM";
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+    minutes = "0" + minutes
+  };
+
+  if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else if ((dayOfWeek == 0 || dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5 || dayOfWeek == 6) && hour >= 08 && hour <= 19) {
+    hour = ((hour + 11) % 12 + 1);
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Open';
+    timeDiv.className = 'open';
+  } 
+  
+  else {
+    if (hour == 0 || hour > 12) {
+      hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    }
+    timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' &#151; We\'re Closed';
+    timeDiv.className = 'closed';
+  }
+};
+
+var currentDay = weekday[now.getDay()];
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+setInterval(checkTime, 1000);
+checkTime();
+</script>
+
+<!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
+<script type="text/javascript">
+var sc_project=12123020; 
+var sc_invisible=1; 
+var sc_security="200cda4a"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12123020/0/200cda4a/1/" alt="Web Analytics Made
+Easy - StatCounter"></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
