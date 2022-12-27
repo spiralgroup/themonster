@@ -407,6 +407,44 @@ margin: 0;
    padding: 12px;
 }
 
+.accordion1 {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #ff0099;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #f1f1f1;
+text-align: center;
+padding: 5px;
+margin: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion1:after {
+  content: '\26af';
+  color: #c0c0c0;
+  text-shadow: 0 0 1px #f1f1f1;
+  float: right;
+  margin-left: 5px;
+}
+
+.active1:after {
+  content: "\2212";
+}
+
+.active1, .accordion1:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 12px;
+}
+
+
 .panel {
   padding: 0 10px;
   margin: 5px 0 0 0;
@@ -464,6 +502,12 @@ padding: 0;
  margin-right: 20px;
  filter: Alpha(opacity=50); /* IE8 and earlier */
 }
+
+@media screen and (max-width: 768px) {
+  .monster {
+  padding: 0 10px;
+  }
+  }
 </style>
 </head>
 
@@ -508,36 +552,29 @@ padding: 0;
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:30px 0 0 0;border-radius:3px;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0 0 0;border-radius:3px;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="w3-row" style="border-bottom:1px solid #ccc;padding:0;margin:0;">
-<div class="w3-quarter" style="background-color:#fff;padding:20px 0 15px 0;margin:0;">
-<a class="topicfooter1" href="#shop">Shop Levinna</a>
+<div class="container w3-panel w3-white" style="width:100%;padding:0;margin:50px 0 0 0;border-radius:5px;">
+<div class="container w3-panel" style="width:100%;padding:10px 4px 0 4px;border-radius:3px 3px 0 0;margin:0;">
+<div class="row-padding" style="width:100%;margin:0;">
+<div class="w3-quarter" style="padding:0 4px;margin:0;">
+<p class="w3-card w3-round-small" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><a class="topicfooter1" href="#shop">Shop Levinna</a></p>
 </div>    
 
-<div class="w3-quarter" style="background-color:#fff;padding:20px 0 15px 0;margin:0;">
-<a class="topicfooter1" href="#info">Business Info</a>
+<div class="w3-quarter " style="padding:0 4px;margin:0;">
+<p class="w3-card w3-round-small" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><a class="topicfooter1" href="#info">Business Info</a></p>
+</div>
+
+<div class="w3-quarter " style="padding:0 4px;margin:0;">
+<p class="w3-card w3-round-small" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><a class="topicfooter1" href="https://form.jotform.com/92186745877172" target="_blank">Subscribe</a></p>
 </div> 
 
-<div class="w3-quarter" style="background-color:#fff;padding:20px 0 15px 0;margin:0;">
-<a class="topicfooter1" href="https://form.jotform.com/92186745877172" target="_blank">Subscribe</a>
-</div> 
-
-<div class="w3-quarter" style="background-color:#fff;padding:20px 0 15px 0;margin:0;">
-<a class="topicfooter1" href="https://spiralgroup.github.io/themonster/">SG MarketPlace Home</a>
-</div>   
-</div>
-</div>
+<div class="w3-quarter " style="padding:0 4px;margin:0;">
+<p class="w3-card w3-round-small" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><a class="topicfooter1" href="https://spiralgroup.github.io/themonster/">SG MarketPlace Home</a></p>
+</div>  
 </div>
 </div>
 
-<div class="w3-row" style="width:100%;padding:0;margin:0;border-radius:3px;">
+<div class="w3-row" style="width:100%;padding:0;margin:20px 0 0 0;">
 <div class="w3-threethird w3-white" style="width:100%;padding:30px 0 0 0;margin:0 0 5px 0;border-radius:3px;">
 <div class="w3-row-padding" style="width:100%;margin:0;border-radius:3px;">
 <div id="shop" class="w3-third" style="margin:0 0 30px 0;">
@@ -583,7 +620,7 @@ we include the details of your product or service here.</p>
 </div>
 </div>
 
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div id="item02" class="w3-third" style="margin:0 0 30px 0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal2" src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
@@ -626,7 +663,7 @@ we include the details of your product or service here.</p>
 </div>
 </div>
 
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div id="item03" class="w3-third" style="margin:0 0 30px 0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal3" src="https://user-images.githubusercontent.com/25410880/67864288-a045e980-fae2-11e9-833f-c534ef204524.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
@@ -669,7 +706,7 @@ we include the details of your product or service here.</p>
 </div>
 </div>
 
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div id="item04" class="w3-third" style="margin:0 0 30px 0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal04" src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
@@ -712,7 +749,7 @@ we include the details of your product or service here.</p>
 </div>
 </div>
 
-<div id="item11" class="w3-third" style="margin:0 0 30px 0;">
+<div id="item05" class="w3-third" style="margin:0 0 30px 0;">
 <div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0;">
 <img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal05" src="https://user-images.githubusercontent.com/25410880/67868174-cbcbd280-fae8-11e9-8112-2e900ea56a51.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
@@ -755,8 +792,8 @@ we include the details of your product or service here.</p>
 </div>
 </div>
 
-<div id="item11" class="w3-third" style="margin:0;">
-<div class="w3-panel" style="padding:0;margin:0 0 30px 0;">
+<div id="item06" class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-panel" style="padding:0;margin:0 0 10px 0;">
 <div class="column" style="padding:0;margin:0;">
 <img class="btn btn-primary btn-block" style="font-family:Yanone Kaffeesatz;font-size:22px;background-color:#fff;color:#b3b300;text-shadow:0 0 1px #fff;letter-spacing:1px;text-align:center;text-decoration:none;border-radius:0 0 3px 3px;border:none;padding:10px 0;margin:0;" data-toggle="modal" data-target="#myModal06" src="https://user-images.githubusercontent.com/25410880/54080886-fe516280-42ae-11e9-8c29-f141a9f1d374.png" style="width:100%;padding:0;border-radius:3px 3px 0 0;"></div>
 
@@ -800,9 +837,17 @@ we include the details of your product or service here.</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="w3-row" style="width:100%;margin:50px 0 0 0;padding:0;">
-<div id="info" class="w3-row" style="background-color:#DC143C;margin:0;border-radius:3px;">
+<div id="info" class="accordion1 w3-round-small" style="background-color:#fff;margin:20px 0 0 0;padding:15px 35px 10px 35px;border-radius:3px 3px 0 0;font-size:22px;color:#222;">About Levinna</div>
+<div class="panel" style="background-color:#DC143C;padding:0;margin:5px 0 0 0;">
+<div class="w3-row" style="padding:0;margin:0;">
 <div class="w3-third" style="background-color:#fff;padding:0;margin:0;">
 <div id="timeDiv" style="padding:11px 0 7px 0;">
 </div>
@@ -849,7 +894,7 @@ we include the details of your product or service here.</p>
       <div class="time">8am - 8pm</div>
       </div><br>
       
-      <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-linkedin"></a>
 <a href="#" class="fa fa-instagram"></a>
@@ -857,19 +902,15 @@ we include the details of your product or service here.</p>
       </div>
       </div>
 
-<div class="w3-twothird">
-<p class="topic3e">About Levinna</p>
-<p class="topic2">Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome, could get great food at down-to-earth prices, and where they'd be treated right by people with a passion to serve.</p>
+<div class="w3-twothird" style="padding:0;margin:0;border-radius:0;">
+<p class="topic2">Our founder, Michelle Jones, had an idea to create a restaurant that was more than a place that served great food. She wanted to give locals a place where they'd feel welcome, could get great food at down-to-earth prices, and where they'd be treated right by people with a passion to serve.<br><br>
 
-<p class="topic2">We're loved for our hand-crafted Smart Promotion and Scrolling Footer Logo Ads, SG Business Listing Service, and our customized Mystery Shopping Programs. All delivered in a distinct Chicago-style and enjoyed with family and friends. <a href="https://spiralgroup.github.io/themonster/merchant-join.html" target="_blank" style="color:#fff;">Learn more about our products and services here.</a></p>
+<p class="topic2">We're loved for our hand-crafted Smart Promotion and Scrolling Footer Logo Ads, SG Business Listing Service, and our customized Mystery Shopping Programs. All delivered in a distinct Chicago-style and enjoyed with family and friends. <a href="https://spiralgroup.github.io/themonster/merchant-join.html" target="_blank" style="color:#fff;">Learn more about our products and services by clicking here.</a><br><br>
 
-<p class="topic2">The culture at the SG MarketPlace was instilled by Michelle long before a mission statement was ever developed &#151; providing stellar service is our key to success. It's what makes all our guests feel right at home. So, join us for a fun and colorful time. But most of all, achieve the desired outcome for local marketing campaigns by preparing your teams and operations for welcoming and servicing new customers. By the way, click on the street address below to get directions to that location.</p><br>
+<p class="topic2">The culture at the SG MarketPlace was instilled by Michelle long before a mission statement was ever developed &#151; providing stellar service is our key to success. It's what makes all our guests feel right at home. So, join us for a fun and colorful time. But most of all, achieve the desired outcome for local marketing campaigns by preparing your teams and operations for welcoming and servicing new customers. By the way, click on the street address below to get directions to that location. Call 217-848-6332 if you have questions about this sample seller page.</p><br>
 
 <p style="font-family:Yanone Kaffeesatz;font-size:22px;letter-spacing:.75px;color:#fff;text-shadow:0 0 1px #fff;margin:0;padding:0;">217 424 1311</p>
 <a class="topic1a" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 South Franklin Street, Decatur, IL 62523</a>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -907,6 +948,23 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion1");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
