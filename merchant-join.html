@@ -147,7 +147,7 @@ font-family: roboto condensed;
 font-size: 16px;
 color: #222;
 letter-spacing: .5px;
-text-align: justify;
+text-align: right;
 padding: 0 15px;
 }
 
@@ -492,7 +492,6 @@ font-size: 20px;
 color: #b3b300;
 letter-spacing: 1px;
 text-shadow: 0 0 1px #fff;
-text-align: center;
 background-color: #fff;
 padding: 18px 18px 14px 18px;
 margin: 0;
@@ -536,11 +535,16 @@ margin: 0;
   transition: max-height 0.5s ease-out;
 }
 
+@media screen and (max-width: 768px) {
+  .panel {
+  padding: 0 10px;
+  }
+  }
 @media all and (max-width: 768px) {
   .accordion{
   font-size: 19px;
-   padding: 14px 14px 10px 10px;
-   text-align: center;
+   padding: 14px;
+   text-align: left;
    }
 }
 
@@ -581,37 +585,6 @@ border-radius: 3px;
   }
 }
 
- .container6 {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
- }
-
-.container6 img {vertical-align: middle;}
-
-.container6 .content6 {
-  position: absolute;
-  bottom: 50px;
-  background: transparent;
-  width: 100%;
-  padding: 3px;
-  border-radius: 0 0 2px 2px;
-}
-
-
-div.fixed {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  
-}
-
-@media all and (max-width: 768px) {
-  div.fixed{
- bottom: 0;
-  right: 20px;
-  }
-}
 </style>
 </head>
 
@@ -857,7 +830,7 @@ there's no need to set up any payment processing gateways. we process all online
 
 <div class="accordion">No Coding - No Software</div>
 <div class="panel">
-<p class="topic" style="text-align:right;">
+<p class="topic">
 <b>we do all the work</b><br>
 
 there's no need for you to learn how to read and write any web languages during a free-trial period. or download software to "get you started". we believe your time would be better spent operating your small business, and not on DIY website design platforms.<br><br>
