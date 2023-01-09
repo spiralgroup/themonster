@@ -1,550 +1,939 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
-<title>Special Offers Section Guide &#124; Spiral Group, Inc.</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="yandex-verification" content="1cf8ce3cbc019d20" />
-<meta name="description" content="Online Marketing, Internet Marketing. If you're seeking affordable Online Marketing Solutions, we've got you covered.">
-<meta name="Keywords" content="Online Marketing, Internet Marketing. Spiral Group, Incorporated, Employment Preparation, Small Business Solutions, Free, Mystery Shop, Program, Chicagoland, Michelle Jones, Monster, The Monster, Ex-Offender, Ex-Con, Web Master, Web Mistress, Master, Meech, The Meech">
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Sign up for a free consultation so we can help you formulate and implement a strategy that increases overall profitability." />
-<meta property="og:url" content="http://www.spiralgroup.org" />
-<meta property="og:site_name" content="SpiralGroup.org" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Demo SG MarketPlace Physical Goods Seller Page &#124; Spiral Group, Inc.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="//www.gstatic.com/bfe/images/favicon/gmb-favicon_v3.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css?family=ABeeZee|Abel|Nova+Slim|Bellefair|Arizonia|Akronim|PT+Sans|Concert+One|Cookie|Courgette|Cuprum|Dorsa|Economica|Great+Vibes|Kaushan+Script|Expletus+Sans|Dorsa|Monda|Nanum+Brush+Script|Nanum+Pen+Script|Nova+Flat|Old+Standard+TT|Open+Sans+Condensed:300|Pathway+Gothic+One|Philosopher|Playball|Poiret+One|Rajdhani|Roboto|Tangerine|Teko|Ubuntu|Ubuntu+Condensed|Unica+One|Yanone+Kaffeesatz" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Kaushan+Script|Khand|Yanone Kaffeesatz|PT+Sans|Open+Sans+Condensed:300|Roboto|Open+Sans|Ubuntu|Ubuntu+Condensed" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c2673fed02b6e0010eca4d0&product='inline-share-buttons" async="async"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2,
+            }
+        }]
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
 
 <style type="text/css">
-img {
-    border-radius: 0; 
-    max-width: 100%;
-    height: auto;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.column2 {
-    width: 50%;
-    float: left;
-    padding: 0;
+/* Slider1 */
+.slick-slide {
     margin: 0;
- }
-
-.row,
-.row > .column2 {
-    padding: 0 13px 0 13px;
+    padding: 0 2px;
+    }
+.slick-slide img {
+    width: 100%;
 }
-
-.row:after {
-    content: "";
-    display: table;
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
     clear: both;
 }
-
-.content {
-    padding: 0;
-    margin: 0;
+.slick-loading .slick-track
+{
+    visibility: hidden;
 }
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: inline-block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: inline-block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+* {box-sizing: border-box;}
 
 body, html {
-    max-width: 1024px;
+    max-width: 1250px !important;
     height: 100%;
     margin: 0 auto;
-    background-image: linear-gradient(to left, #f5f5f5, #f5f5f5);
-}
- .navbar {
-max-width: 1024px;
- margin: 0 auto;
-   background-color: #f5f5f5;
- border: none;
- z-index: 1;
-}
-
-.header {
-  padding: 0;
-  margin: 0 auto;
-}
-.top-container {
-   padding: 0;
-  margin: 0 auto;
-  
-   }
-
-.nab {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab a {
-  float: center;
-  font-family: roboto;
-  color: #f1f1f1;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 10.5px;
-  margin: 0 3px 0 3px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #000;
-}
-
-.nab a:hover {
-  border-bottom: 1px solid #ccc;
-}
-
-.topnav1 a:hover {
-  text-decoration: none;
-}
-
-
-.nab1 {
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-  margin: 0;
-}
-
-.nab1 a {
-  float: center;
-  font-family: roboto;
-  color: #222;
-  text-align: center;
-  padding: 4px 1px 4px 1px;
-  text-decoration: none;
-  font-size: 11.5px;
-  margin: 0 2px 0 2px;
-  letter-spacing: .5px;
-  text-shadow: 0 0 1px #222;
-}
-
-.nab1 a:hover {
-  border-bottom: 1px solid #444;
-}
-
-.topnav2 a:hover {
-  text-decoration: none;
-}
-
-.active {
-  background-color: #717171;
-}
-
-.column2 {
-    width: 100%;
-    margin: 0 1px 0 1px;
-    padding: 0;
-    display: inline-block;
-    float: center;
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
  }
-}
-
-@media (max-width: 900px) {
-    .column2 {
-        width: 100%;
-        float: center;
-       }
-}
-
-.column {
-    width: 100%;
-    float: left;
-    padding: 0;
-    margin: 0;
- }
-
-.row,
-.row > .column {
-    padding: 0 10px;
-    margin: 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.active1 {
-  background-color: #e6e6e6;}
-
-.topic1 {
-font-family: pt sans;
-font-size: 38.5px;
-color: #c0c0c0;
-text-align: center;
-letter-spacing: 1.5px;
-text-shadow: 0 0 1px #000;
-font-weight: normal;
-padding: 0 0 10px 0;
+ 
+ .topic {
+font-family: roboto condensed;
+font-size: 17px;
+color: #222;
+text-shadow: 0 0 1px #fff;
+letter-spacing: .5px;
+text-align: left;
 margin: 0;
+padding: 0 0 0 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .topic1 {
-  font-family: open sans condensed;
-  font-size: 22px;  
-  color: #000;
-  text-shadow: 0 0 1px #000;
+  .topic {
+  font-size: 16px;
   text-align: center;
-  letter-spacing: .5px;
-  padding: 0;  
-   }
+  }
+  }
+  
+.topic1 { 
+font-family: roboto condensed;
+font-size: 16px;
+color: #222;
+text-align: left;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #333;
+margin: 0;
+padding: 0;
+}
+
+.topic1a { 
+ font-family: ubuntu condensed;
+font-size: 18px;
+color: #222;
+text-shadow: 0 0 1px #f2f2f2;
+text-align: center;
+margin: 0;
+padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .topic1a {
+ font-size: 17px;
+  }
   }
   
 .topic2 {
-font-family: roboto;
-font-size: 14px;
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
 color: #222;
 text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #222;
-padding-bottom: 5px;
-padding: 0;
+text-shadow: 0 0 1px #fff;
 margin: 0;
+padding: 0 0 20px 0;
 }
 
 @media screen and (max-width: 768px) {
   .topic2 {
-  text-align: center;  
-  font-size: 12.5px;
-  padding: 0 0 5px 0;  
-  margin: 0;
+  padding: 0;
   }
   }
-.active {
-  background-color: #717171;
-}
-  
-  .topic4 {
-font-family: roboto;
-font-size: 16px;
-color: #000;
-text-align: left;
+    
+ .topic4 { 
+font-family: Yanone Kaffeesatz;
+font-size: 21px;
+color: #222;
+text-align: justify;
 letter-spacing: .5px;
-text-shadow: 0 0 1px #000;
+text-shadow: 0 0 1px #fff;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic4 {
+  font-size: 20px;
+  padding: 10px;
+  }
+  }
+  
+.topic3 {
+font-family: open sans condensed;
+font-size: 28px;
+color: #f8f8f8;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #f8f8f8;
+margin: 0;
+padding: 0;
+}
+
+ .topic3d {
+font-family: Yanone Kaffeesatz;
+font-size: 19px;
+color: #222;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
 padding: 0;
 margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .topic3d {
+   font-size: 20px;
+  }
+  }
+  
+.topic3e {
+font-family: Yanone Kaffeesatz;
+font-size: 22px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3e {
+   font-size: 20px;
+  }
+  }
+  
+.topicfooter1 {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #222;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+letter-spacing: 1px;
+padding: 0;
+margin: 0;
+}
+
+.topicfooter2 {
+font-family: ubuntu condensed;
+font-size: 22px;
+color: #222;
+text-shadow: 0 0 1px #ccc;
+text-align: center;
+letter-spacing: .5px;
+padding: 0 0 5px 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topicfooter2 {
+   font-size: 20px;
+   }
+  }
+  
+.topicsfla {
+font-family: Yanone Kaffeesatz;
+font-size: 150px;
+color: #fff !important;
+text-align: center;
+letter-spacing: 1px;
+margin: 0;
+padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .topicsfla {
+   font-size: 85px;
+   }
+  }
+  
+ .topic-monster {
+font-family: Yanone Kaffeesatz;
+font-size: 22px;
+color: #222;
+text-align: center;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #ccc;
+margin: 0;
+padding: 0 8px;
+}
   
   @media screen and (max-width: 768px) {
-  .topic4 {
-  text-align: center;  
-  padding: 0 0 2px 0;  
-  margin: 0;
+  .topic-monster {
+font-size: 19px;
   }
   }
   
-.button {
-  border-radius: 2px;
-  background-color: #f0f0f0;
-  border: none;
-  color: #000;
-  text-align: center;
-  font-family: calibri;
-  font-size: 10.5px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px #ccc;
-  text-decoration: none;
-  transition: all 0.5s;
-  cursor: pointer;
+.btn-primary:hover span {
+ color: #000;
+ text-shadow: 0 0 1px #666;
+ transition: 0.5s;
+}
+
+.container-fluid {
+max-width: 1200px;
+background-color: transparent;
+}
+
+@media screen and (max-width: 720px) {
+  .container-fluid {
+  max-width: 720px;
+  position: fixed;
   padding: 0;
   margin: 0;
+  background-color: transparent;
+     }
+  }
+  
+#timeDiv {
+font-family: ubuntu condensed;
+  font-size: 19px;
+  color: #222;
+  text-shadow: 0 0 1px #f2f2f2;
+  background-color: #ddd;
+  letter-spacing: .5px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  
+ }
+ 
+ @media screen and (max-width: 768px) {
+  #timeDiv {
+  font-size: 17px;
+  }
+  }
+
+.dateTime {
+max-width: 150px;
+font-family: roboto condensed;
+color: #fff;
+text-shadow: 0 0 1px #ccc;
+  font-size: 18px;
+float: none;
+  text-align: left;
+  line-height: .80;
+  }
+
+.day {
+   display: inline-block;
  }
 
-.button span {
+.time {
+   display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.today {
+max-width: 150px;
+  color: #ccc;
+  text-shadow: 0 0 1px #222;
+    display: block;
+}
+
+ .topic-meechmonster {
+font-family: Yanone Kaffeesatz;
+font-size: 22px;
+color: #222;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #f1f1f1;
+text-align: center;
+padding: 12px 15px;
+margin: 2px 0 0 0;
+}
+  
+  @media screen and (max-width: 768px) {
+  .topic-meechmonster {
+font-size: 19px;
+  }
+  }
+  
+.accordion {
+font-family: Yanone Kaffeesatz;
+font-size: 23px;
+color: #333;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+padding: 12px 15px;
+margin: 2px 0 0 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom:1px solid #ddd;
+  background-color: #fff;
+  border-radius: 3px;
   cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
-.button span:after {
-  content: '';
-  position: absolute;
- opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.accordion:after {
+  content: '\002B';
+  color: #c0c0c0;
+  text-shadow: 0 0 1px #f1f1f1;
+  float: right;
+  margin-left: 5px;
 }
 
-.button:hover span {
-  padding-right: 10px;
+.active:after {
+  content: "\2212";
 }
 
-.button:hover span:after {
- opacity: 1;
-  right: 0;
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+  color: #222;
+  text-shadow: 0 0 1px #fff;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 12px;
 }
- 
-main{
-  width: 100%;
-  overflow: hidden;
-  font-family: 'Expletus Sans', cursive;
-  }
 
-.hero{
-  width: 100%;
-  max-width: 1024px;
-  height: auto;
-  text-align: center;
-  margin: 0;
+.panel {
   padding: 0;
-  background: transparent;
-  position: relative; 
-  color: #f5f5f5;
-  text-shadow:0 1px 1px #000;
-  }
-
-.hero h1{
-font-family: 'Expletus Sans', cursive;
- font-size: 6.90em;
-  margin: auto;
-  position: absolute; 
-  top: 120px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
+  margin: 0 0 5px 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px #ccc;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
-.hero p{
-  font-size: 3.0em;
-  margin: auto;
-  position: absolute; 
-  top: 230px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-   z-index: 0;
-}
-
-.hero img{
-  width: 100%;
-}
-
 
 @media all and (max-width: 768px) {
-  .hero{
-    height: auto;
-  }
-  .hero h1{
-    font-size: 10vw;
-    top: 10vw;
-     }
-  .hero p{
-    font-size: 5vw;
-    top: 21vw;
+  .accordion {
+  font-size: 21px;
+   padding: 14px 14px 10px 10px;
+   text-align: center;
+    }
+}
+
+@media all and (max-width: 768px) {
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 10px;
+}
+}
+
+.container-fluid2 {
+width: 100%;
+margin: 0;
+padding: 0;
+
+}
+ 
+@media all and (max-width: 768px) {
+  .container-fluid2 {
+  display: none;
   }
 }
-</style>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+.fa {
+  padding: 10px 32px 10px 15px;
+  font-size: 22px;
+  width: 20px;
+  float: center !important;
+  background: #ccc;
+  color: #222;
+  text-decoration: none;
+  margin: 15px 0 0 0;
+  border-radius: 2px;
+}
 
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+.fa:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    }
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+   .close {
+ font-size: 58px;
+ color: #f2f2f2;
+ text-shadow: 0 0 1px #ccc;
+ opacity: 0.9;
+ padding: 0;
+ margin-right: 20px;
+ filter: Alpha(opacity=50); /* IE8 and earlier */
+}
 
-<!-- MailerLite Universal -->
-<script>
-(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+   .close1 {
+ font-family: Yanone Kaffeesatz;
+ font-size: 17px;
+ color: #222;
+ text-shadow: 0 0 1px #f2f2f2;
+ letter-spacing: 1px;
+ padding: 0;
+ border: none;
+ background-color: transparent;
+ margin: 20px 0;
+}
 
-var ml_account = ml('accounts', '1673158', 'v9z4h9t9p9', 'load');
-</script>
-<!-- End MailerLite Universal -->
+</style>
 </head>
+
+<center>
 <body>
-<center>
-<div class="top-container" style="width:100%;padding:0;margin:0;">
-<div class="header" id="myHeader">
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-<span class="navbar-toggle" style="border:0;font-size:11px;color:#585858;padding:11px 0 0 0;background-color:transparent;text-shadow:0 1px 2px #cccccc;">Amazing Deals</span>
-<a class="navbar-brand" href="https://spiralgroup.github.io/themonster/" style="font-family:nova slim;font-size:17px;color:#585858;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">SpiralGroup.org</a>
-</div>
-<div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family:roboto;font-size:12.5px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Our Menu <span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="https://spiralgroup.github.io/themonster/careers.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Careers</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/about-us.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">About Us</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">EP Tool-Kit&reg;</a></li><br>
-<li><a href="https://www.spiralgroup.org" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Online Marketing</a></li><br>
-<li><a href="https://spiralgroup.github.io/themonster/business-excellence.html" style="font-family:roboto;font-size:12px;letter-spacing:.5px;text-shadow:0 1px 2px #cccccc;">Business Excellence</a></li>
-</ul></ul>
-<ul class="nav navbar-nav navbar-right" style="margin:0 1px;">
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button w3-blue" href="https://spiralgroup.github.io/themonster/merchant-solutions_step01.html"><span>SELL ONLINE</span></a></li>
-<li style="margin:3px 2px;"><a style="padding:10px 8px;margin:3px 0;" class="button" href="https://spiralgroup.github.io/themonster/welcome-to-our-market-place.html"><span>SHOP IN THE SG MARKETPLACE</span></a></li>
-</ul>
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:5px 0 0 0;border-radius:4px;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;border-radius:4px 4px 2px 2px;">
+<div class="w3-row" style="width:100%;margin:0;padding:0;border-radius:4px 4px 2px 2px;">
+<div class="w3-quarter" style="background-color:transparent;">
+<div style="width:100%;background-color:transparent;padding:0 3px 0 0;margin:0;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/211364213-b5ad27a6-9ff2-485d-936a-d80de1ff8055.png" style="width:100%;border-radius:4px;padding:0;margin:0;background-color:transparent;">
 </div>
 </div>
-</nav>
 
-<center>
-<main>
-<div class="container w3-panel" style="width:100%;padding:0 12px;margin:0;">
-<div class="container w3-panel w3-card-2 w3-round-small" style="background-color:#f5f5f5;width:100%;padding:0;margin:65px 0 20px 0;">
-<div class="hero w3-round-small">
-<h1>amazing deals</h1>
-<p style="text-decoration:none;color:#fff;">special offers section guide</p>
-<img class="w3-round-small" src="https://user-images.githubusercontent.com/25410880/72163241-4e3e0180-3378-11ea-93f1-7568a10f1bd2.png" />
+<div class="business-logos slide container-fluid2" style="width:100%;margin:0;padding:0 4px 0 0;">
+<div class="w3-threequarter">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54082485-5c8c3e80-42cb-11e9-8a77-6982ea2fb668.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Apparel & Other Items</a>
 </div>
 </div>
-</div>
-</main>
 
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54055812-fdcba580-41a2-11e9-87e4-454e297cfa6f.png" style="border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Automotive Services</a>
+</div>
 
-<center>
-<div class="container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
-<p class="topic1">Creating Amazing Deals</p>
-<div class="container w3-panel" style="width:100%;padding:0 10px;margin:0;">
-<div class="container w3-panel" style="background-color:#fff;width:100%;padding:20px 0;border-radius:8px 8px 2px 2px;margin:0 0 20px 0;">
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Beauty & Health</a>
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Food & Beverage</a>
+</div>
+
+<div class="slide">
+<img src="https://user-images.githubusercontent.com/25410880/53668900-234c3280-3c2a-11e9-8cf1-b40e866e1d9e.png" style="width:100%;border-radius:2px 2px 0 0;">
+<a class="btn btn-primary btn-block" style="background-color:#fff;font-family:roboto condensed;font-size:16px;letter-spacing:.5px;color:#222;text-decoration:none;border:none;text-shadow:0 0 1px #fff;margin:0;border-radius:0 0 4px 4px;padding:10px 5px;cursor:pointer;" href="https://spiralgroup.github.io/themonster/merchant-join.html">Home & Personal Services</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:50px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:15px 0 10px 0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="w3-threethird" style="padding:0;margin:0;">
-<div class="column" style="padding:0 10px;margin:0;">
-<p class="topic2">If you start with a clear goal in mind, firm understanding of your brand, and willingness to experiment, you can effectively use the Special Offers section on your SG MarketPlace Seller Page to meet your objectives, build customer loyalty, and increase revenues.<br><br>
+<div class="w3-third" style="padding:0 4px;margin:0;">
+<p class="w3-card w3-round-small" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;border-radius:5px;"><a class="topicfooter1" href="#shop">Shop Levinna</a></p>
+</div>    
 
-If you have a physical location, why not implement a Buy Online, Pickup In-Store (BOPIS) option to increase sales? Encourage your staff to leverage these particular interactions with customers by pre-planning what could/should be suggested with the item(s) being picked up. This also gives you a chance to create a pleasant and personalized in-store experience for the online shopper. Huge opportunities to increase sales lie in the BOPIS option, take advantage of it.<br><br>
+<div class="w3-third" style="padding:0 4px;margin:0;">
+<p class="w3-card w3-round-small" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;border-radius:5px;"><a class="topicfooter1" href="https://forms.gle/n57sEdrfH31kQYC2A" target="_blank">Subscribe & More</a></p>
+</div> 
 
-Ultimately, you'll need to consider the kind of offers that are right for your small business. This will involve a lot of experimentation to understand what works best. Choose a goal for every campaign and offer, start small, and measure the results.</p><br>
+<div class="w3-third" style="padding:0 4px;margin:0;">
+<p class="w3-card w3-round-small" style="background-color:#f2f2f2;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;border-radius:5px;"><a class="topicfooter1" href="https://spiralgroup.github.io/themonster/">SG MarketPlace Home</a></p>
+</div>
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0 0 50px;border-radius:7px;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
+<div class="w3-threethird" style="margin:0;">
 
 <p class="topic2">
-There are many kinds of discounts and offers you can use for your Special Offers section. Below is a list of the kind of deals, discounts, and promotional offers you may want to consider creating for your Special Offers section.</p><br>
+Offers, coupons, discounts and deals. There will come a time when most online merchants will be faced with the decision of whether to offer discounts, when to offer discounts and how much the discounts should be worth.<br><br>
 
-<p class="topic4">Percentage-Based Discounts</p>
+Offering discounts for your online store can be a powerful weapon in your conversion arsenal to drive customer loyalty. But, used haphazardly, you can do significant damage to your brand or, worse, become unprofitable.<br><br>
+
+Here, we’ll review some of the pros and cons of offering deals for your online store, look at some of the most popular ways you can use discounts to drive customer loyalty and conversions and, of course, how to most effectively use them.</p>
+</div>
+
+<center>
+<div class="w3-container w3-white" style="width:100%;padding:20px;border-radius:4px;">
+<p align="center" style="font-family:roboto;font-size:20px;color:#444;letter-spacing:.5px;text-shadow:0 0 1px #000;margin:0 0 25px 0;padding:0;">Table of Contents</p>
+
+<p class="topic4">
+<a href="#cld">Customer Loyalty</a></p>
+<hr />
+
+<p class="topic4">
+<a href="#yoursb">What Kind of Offers Are Ideal for Your Small Business?</a></p>
+<hr />
+
+<p class="topic4">
+<a href="#types">Types of Offers, Coupons & Discounts</a></p>
+<hr />
+
+<p class="topic4">
+<a href="#use">Using Offers to Drive Sales & Customer Loyalty</a></p>
+<hr />
+
+<p class="topic4">
+<a href="#make">Make the Most of Your Offers, Coupons & Discounts</a></p>
+
+<hr />
+
+<p id="cld" class="topic4">Customer Loyalty</p>
+
+<p class="topic2">
+Loyalty is more than just behavior. It is a mistake to assume that a customer is loyal just because they continue to buy from you. There are many reasons why a customer frequents your business that may have little to do with being loyal. Consider the following:</p><br>
+
+<p class="topic2">
+&#10144; There is a contractual arrangement with your company.</p>
+
+<p class="topic2">
+&#10144; It takes too much effort or money to change suppliers.</p>
+
+<p class="topic2">
+&#10144; You are currently the low cost provider.</p>
+
+<p class="topic2">
+&#10144; Their relationship is with one of your employees and not with your company.</p>
+ 
+<p class="topic2">
+&#10144; They may actually be in the process of finding an alternative supplier.</p><br>
+
+<p class="topic2">
+True customer loyalty is far more than repeat business. Customers make decisions about where to spend their time and money every day. That's why is important to make your product or service offering the preferred choice. You can do this by building offers that will:</p><br>
+
+<p class="topic2">
+&#10144; Set you apart from competitors</p>
+<p class="topic2">
+&#10144; Generate significant demand by customers</p>
+<p class="topic2">
+&#10144; Demonstrate superior value</p>
+<p class="topic2">
+&#10144; Build customer loyalty</p>
+
+<hr />
+
+<a name="yoursb"></a>
+<p class="topic4">What Kind of Offers Are Ideal for Your Small Business?</p>
+
+<p class="topic2">Online store offers can be an effective tool for both customer acquisition and customer loyalty. Taking into consideration your overall brand strategy before offering discounts can be useful in determining how you can best meet your sales goals.<br><br>
+
+If you want to position yourself as a higher-end brand, you may want to consider sticking to customer loyalty-type offers as opposed to weekly sales. On the other hand, deep discounting and weekly/monthly sales might be better for reaching your goals.<br><br>
+
+Ultimately, you will need to consider the kind of offers that are right for your brand. Building an online business will generally involve a lot of experimentation to understand what works best. The best approach is to choose a goal for every campaign and offer, start small, and measure the results.</p>
+
+<hr />
+
+<a name="types"></a>
+<p class="topic4">Types of Offers, Coupons & Discounts</p>
+
+<p class="topic2">There are several types of discounts and offers you have at your disposal. Here are some of the most common.</p><br>
+
+<p class="topic4">&#10144; Percentage-Based Discount.</p>
 
 <p class="topic2">This can include small incentive percentages like 5% or 10% off, larger discounts to really drive sales like 20% and 25%, or significant percentages like 50%+ to liquidate merchandise that’s old or isn’t moving.</p><br>
 
-<p class="topic4">Free Shipping Offers</p>
+<p class="topic4">&#10144; Free Shipping.</p>
 
-<p class="topic2">Shipping costs are one major reason for shopping cart abandonment. Offering free shipping is a great way to mitigate this and increase conversions. You can use free shipping offers in conjunction with a minimum purchase requirement to increase your average order value.</p><br>
+<p class="topic2">Shipping costs are one major reason for shopping cart abandonment. Offering free shipping is a great way to mitigate this and increase conversions.<br><br>
 
-<p class="topic4">Free Gift Offers</p>
+Use free shipping offers in conjunction with a minimum purchase requirement to increase your average order value.</p><br>
 
-<p class="topic2">A free gift with a purchase can be a great way to provide additional value to the customer. If used strategically, it can also be used to increase average order size and/or to get rid of product that isn’t moving.</p><br>
+<p class="topic4">&#10144; Free Gift.</p>
 
+<p class="topic2">A free gift with a purchase can be a great way to provide additional value to customer. If used strategically, it can also be used to increase average order size and/or to get rid of product that isn’t moving.</p>
+
+<hr />
+
+<a name="use"></a>
+<p class="topic4">Using Offers to Drive Sales & Customer Loyalty</p>
+
+<p class="topic2">There are many ways you can use sales, offers, discounts, and deals to drive customer loyalty, acquisition, and conversions. Below are some of the most popular.</p><br>
+
+<p class="topic4">
+<a href="#a">&#10144; Weekly & Monthly Discounts</a></p><br>
+
+<p class="topic4">
+<a href="#b">&#10144; Prelaunch Offers</a></p><br>
+
+<p class="topic4">
+<a href="#c">&#10144; Holiday & Seasonal Deals</a></p><br>
+
+<p class="topic4">
+<a href="#d">&#10144; Email/Newsletter Subscription Offer</a></p><br>
+
+<p class="topic4">
+<a href="#e">&#10144; Social Media Incentives</a></p><br>
+
+<p class="topic4">
+<a href="#f">&#10144; Referral Promos</a></p><br>
+
+<p class="topic4">
+<a href="#g">&#10144; First-Time Shopper Offer</a></p><br>
+
+<p class="topic4">
+<a href="#h">&#10144; Minimum Purchase Discount</a></p><br>
+
+<p class="topic4">
+<a href="#i">&#10144; Exclusive Social Offers</a></p><br>
+
+<p class="topic4">
+<a href="#j">&#10144; Customer Loyalty Offers</a></p><br>
+
+<p class="topic4">
+<a href="#k">&#10144; Customer Loyalty Program Membership Incentives</a></p><br>
+
+<p class="topic4">
+<a href="#l">&#10144; Offers for Purchasing Online</a></p><br>
+
+<p class="topic4">
+<a href="#m">&#10144; Coupons for Purchasing In-Store</a></p><br>
+
+<p class="topic4">
+<a href="#n">&#10144; Event Attendance Offers</a></p><br>
+
+<p class="topic4">
+<a href="#o">&#10144; Customer Milestone Discounts</a></p>
+
+<hr />
+
+<a name="a"></a>
+<p class="topic4">Weekly & Monthly Discounts</p>
+
+<p class="topic2">These are traditional sales used to drive conversions. Many times sales are used at the end of a month or quarter to increase revenues. The online photo department at Walgreens has <a href="https://photo.walgreens.com/store/deals" target="_blank" rel="nofollow noopener noreferrer">weekly sales and coupon codes</a>, as well as ongoing promo codes at the bottom of the page.</p>
+
+<hr />
+
+<a name="b"></a>
 <p class="topic4">Prelaunch Offers</p>
 
 <p class="topic2">If you’re in the prelaunch stage of your Small Business or launching a new product or service, you can use prelaunch offers to drive traffic and peak interest, turning new customers into loyal customers.<br><br>
 
-Consider offering free gift cards in exchange for customers’ email addresses and time to fill out a brief survey. You can kick off this initiative on your social networks.</p><br>
+Consider offering free gift cards in exchange for customers’ email addresses and time to fill out a brief survey. You can kick off this initiative by manually reaching out to potential respondents on LinkedIn.</p>
 
+<hr />
+
+<a name="c"></a>
 <p class="topic4">Holiday & Seasonal Deals</p>
 
-<p class="topic2">Throughout the entire year there are national and commemorative holidays that provide opportunities to share relevant discounts and offers with customers.</p><br>
+<p class="topic2">Although Black Friday and Cyber Monday are among the favorites, the entire year is sprinkled with national and commemorative holidays that provide an opportunity to share relevant discounts and offers with customers. <a href="http://bluskincare.info/" target="_blank" rel="nofollow noopener noreferrer">Blu Skin Care</a> regularly makes use of holidays to promote offers to their visitors and past customers. They promote these in different ways: email, social media, markets, and on their website.</p>
 
+<hr />
+
+<a name="d"></a>
 <p class="topic4">Email/Newsletter Subscription Offer</p>
 
-<p class="topic2">Building an email list is important for successful online retailers. By providing an offer in exchange for a visitor's email address, you increase the chance of a conversion. Consider offering 10% off their first order for new subscribers to your email list. Used strategically, your list can be invaluable for increasing brand awareness, fostering customer loyalty, and meeting sales goals.</p><br>
+<p class="topic2">Building an email list is extremely important for online retailers. By providing an offer in exchange for visitors’ email addresses, you increase the chance of a conversion. Having their email address also provides you with an invaluable opportunity to build a relationship, foster customer loyalty, and market to them in the future.<br><br>
 
+Online retailer <a href="https://www.overstock.com/" target="_blank" rel="nofollow noopener noreferrer">Overstock.com</a> offers a coupon for 15% off your purchase for signing up to receive their newsletter.</p>
+
+<hr />
+
+<a name="e"></a>
+<p class="topic4">Social Media Incentives</p>
+
+<p class="topic2">One of the most challenging aspects of operating a new online store is getting the word out. Giving visitors and customers an incentive to share your store within their social circles can be an effective way to create inexpensive word-of-mouth. Consider offering customers $5 off their next purchase in exchange for them sharing about the brand and experience on your <a href="https://www.facebook.com/business/help/1968057156746246?id=939256796236247" target="_blank">Facebook Business page.</a></p>
+
+<hr />
+
+<a name="f"></a>
+<p class="topic4">Referral Promos</p>
+
+<p class="topic2">People are much more likely to purchase from you if referred by a friend or family member. Use this to your advantage and leverage offers to encourage referrals. You can choose to give a deal to the person referring, the person being referred, or both. Meal-delivery brands like <a href="https://www.blueapron.com/" target="_blank" rel="nofollow noopener noreferrer">Blue Apron</a> and <a href="https://www.hellofresh.com/pages/hero-discounts/" target="_blank">Hello Fresh</a> are doing some innovative things.</p>
+
+<hr />
+
+<a name="g"></a>
+<p class="topic4">First-Time Shopper Offer</p>
+
+<p class="topic2">Providing a first-timers offer could be just the nudge a first-time visitor needs to be converted to a paying customer. <a href="https://www.clearly.ca/" target="_blank" rel="nofollow noopener noreferrer">Clearly</a> provides all new visitors with a discount on prescription glasses, contact lenses, and free shipping. <a href="http://www.dodocase.com/" target="_blank" rel="nofollow noopener noreferrer">DODOcase</a>, an online manufacturer of iPad cases, offers discounts on your first purchase.</p>
+
+<hr />
+
+<a name="h"></a>
 <p class="topic4">Minimum Purchase Discount</p>
+<p class="topic2">An offer based on the total value of a shopping cart is an effective upselling tactic to encourage customers to spend more, increasing your average order size. You can offer minimum purchase discounts for specific products and services. If there are particular items you want customers to focus on, try adding a minimum purchase discount to incentivize your audience.<br><br>
 
-<p class="topic2">An offer based on the total value of a shopping cart is an effective upselling tactic to encourage customers to spend more. You can offer minimum purchase discounts for your products and services.</p><br>
+Check out popular online retailer <a href="http://www.nastygal.com/" target="_blank" rel="nofollow noopener noreferrer">Nasty Gal</a> for their current promotional offers.</p>
 
+<hr />
+
+<a name="i"></a>
 <p class="topic4">Exclusive Social Offers</p>
 
-<p class="topic2">Exclusive offers on your social networks can be a great way to build customer loyalty with those who follow you. This tactic also provides a reason for new people to follow and subscribe to your social channels, allowing you to market to them in the future.</p><br>
+<p class="topic2">Exclusive offers on your social networks can be a great way to build customer loyalty with those who follow you. Plus, this tactic provides a reason for new people to follow and subscribe to your social channels, which will allow you to market to them in the future as well.</p>
 
+<hr />
+
+<a name="j"></a>
+<p class="topic4">Customer Loyalty Offers</p>
+
+<p class="topic2">Rewarding customer loyalty can build an even stronger bond by providing discounts only to customers who already spend money with you. It can be as simple as sending your best customers a personal email with a discount or credit, using an automated email marketing app like <a href="https://www.klaviyo.com/" target="_blank">Klaviyo</a> to send email offers when someone makes a certain number of purchases from your store.</p>
+
+<hr />
+
+<a name="k"></a>
+
+<p class="topic4">Customer Loyalty Program Membership Incentives</p>
+
+<p class="topic2">Rewarding customers for joining your customer loyalty program is an ideal time to share a bonus incentive. <a href="http://www.biglots.com/" target="_blank" rel="nofollow noopener noreferrer">Big Lots</a> offers all kinds of incentives for joining their customer loyalty program. Customers can redeem the reward either online or in-store.</p>
+
+<hr />
+
+<a name="l"></a>
+<p class="topic4">Offers for Purchasing Online</p>
+
+<p class="topic2">If your goal is to drive online sales, consider incentivizing online purchases. <a href="https://www.dickssportinggoods.com/" target="_blank" rel="nofollow noopener noreferrer">Dick’s Sporting Goods</a> is currently incentivizing "Sign Up For Email and Get 10% Off".</p>
+
+<hr />
+
+<a name="m"></a>
 <p class="topic4">Coupons for Purchasing In-Store</p>
 
-<p class="topic2">Just as you can drive online sales with offers, you can also drive in-store sales. Use your email list as a marketing tool to send coupons to subscribers containing discounts for in-store purchases.</p><br>
+<p class="topic2">Just as you can drive online sales with offers, you can also drive in-store sales. This can be at your brick-and-mortar location, or at in-person events such as festivals, fairs, expos, trade shows, etc.<br><br>
 
+<a href="https://www.bedbathandbeyond.com/" target="_blank" rel="nofollow noopener noreferrer">Bed Bath & Beyond</a> are offering 20% off entire purchase when you buy online and pick up in store.</p>
+
+<hr />
+
+<a name="n"></a>
 <p class="topic4">Event Attendance Offers</p>
 
-<p class="topic2">If you host events, you can reward attendees with discounts or free gifts. This can help cultivate the relationship with engaged customers, increase customer loyalty, and encourage attendance for your next event.</p><br>
+<p class="topic2">If you host events, in-person or virtually, you can reward attendees with discounts or free gifts. These discounts can be given during the event or after the event. This helps to cultivate the relationship with engaged customers, increase customer loyalty, and encourage attendance for your next event.<br><br>
 
-<p class="topic4">You're Ready</p>
-<p class="topic2">We hope this guide inspires you to create some amazing discounts and special offers that will drive frequent and paying customers to your new SG MarketPlace Seller Page(s).</p>
+<a href="https://www.prana.com/" target="_blank" rel="nofollow noopener noreferrer">prAna</a>’s having an END OF SEASON SALE. 50-60% Off + Free Shipping. You'll need to read the fine print.</p>
+
+<hr />
+
+<a name="o"></a>
+<p class="topic4">Customer Milestone Discounts</p>
+
+<p class="topic2">These milestones could be personal to a customer &#151; a birthday or wedding anniversary. Other milestones can celebrate the relationship you’ve built with one another. Those would include the anniversary of the customer’s first purchase, spending a certain amount of money, making a certain number of purchases, or various engagements with your brand. Big Lots rewards customers on their birthdays with extra discounts and free gifts.</p>
+
+<hr />
+
+<a name="make"></a>
+<p class="topic4">Make the Most of Your Offers, Coupons & Discounts</p>
+
+<p class="topic2">If you start with a clear goal in mind, firm understanding of your brand, and willingness to experiment, you can effectively use offers to meet your objectives, build customer loyalty, and increase revenues.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
-<center>
-<div class="w3-container" style="width:100%;padding:0;margin:60px 0 0 0;">
-<div class="w3-container w3-card-4" style="width:100%;background-color:#222;padding:10px 0;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;">
-<div class="w3-threethird" style="margin:0;padding:0;">
-<p align="center" style="font-family:roboto;font-size:15px;color:#f5f5f5;letter-spacing:1px;text-shadow:0 0 1px #222;padding:0;margin:10px 0 0 0;">Spiral Group, Inc.</p>
-
-<div class="sharethis-inline-share-buttons" style="padding:0;margin:20px 0;">
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-<center>
-<div class="w3-threethird" style="margin:0;padding:0;">
-<div class="nab topnav1" style="width:100%;padding:0 0 5px 0;margin:0;">
-<a href="https://spiralgroup.github.io/themonster/demo-webpages-portal.html">Join Our MarketPlace</a>
-<a href="https://spiralgroup.github.io/themonster/privacy-policy.html">Privacy</a>
-<a onclick="ml_account('webforms', '1496266', 'a0d3i8', 'show')" style="cursor:pointer;">Subscribe</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-  <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
+<!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
 var sc_project=12123020; 
 var sc_invisible=1; 
