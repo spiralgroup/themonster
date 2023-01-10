@@ -255,19 +255,71 @@ left: 0 !important;
 
 .dropdown:hover .dropbtn {background-color: #fff;}
 
-.close1 {
- background-color: dodgerblue;
- font-family: roboto condensed;
- font-size: 18px;
-color: #222;
-text-shadow: 0 0 1px dodgerblue;
- letter-spacing: .5px;
- cursor: pointer;
- padding: 10px 0;
- width: 100%;
- margin: 0;
- background-color: dodgerblue;
-border: none;
+.accordion {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+background-color: #fff;
+padding: 18px 18px 14px 18px;
+margin: 0;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\022b6';
+  font-size: 20px;
+  color: #b3b300;
+  text-shadow: 1px 1px 1px #ccc;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 20px;
+}
+
+.panel {
+  padding: 0 20px;
+  margin: 0 0 9px 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px #ccc;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+@media all and (max-width: 768px) {
+  .accordion{
+  font-size: 22px;
+   padding: 14px 14px 10px 10px;
+   text-align: center;
+   }
+}
+
+@media all and (max-width: 768px) {
+.active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 10px;
+}
 }
 </style>
 </head>
@@ -418,14 +470,160 @@ border: none;
 
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
 <div id="about" class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
-<p class="topic2c">Order Now</p>
+<p class="topic2c">Catalog</p>
 
 <div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-threethird" style="padding:0;margin:0;">
-<div id="my-store-83192016"></div>
-<div>
-<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?83192016&data_platform=code&data_date=2022-12-31" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-83192016");</script>
+<center>
+<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
+<div class="row-padding" style="width:100%;margin:10px 0 0 0;">
+<div class="w3-third" style="padding:0 6px;margin:0;">
+<div class="w3-panel" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" src="https://user-images.githubusercontent.com/25410880/53689056-06832e00-3d02-11e9-88ad-569f6f25502c.png" style="width:100%;padding:0;margin:0 0 1px 0;border:none;border-radius:3px;text-decoration:none;"></div></div>
+
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 40px 0;">
+<div class="accordion">SG MarketPlace Seller Page</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0 0 20px 0;">
+<p class="topic">
+sell your products and services in our marketplace. no software or coding. we do all the work. $329 per year.</p>
+
+<a class="btn btn-primary btn-block" href="https://forms.gle/eeb3NQQWytd47nJc9" target="_blank" style="width:160px;color:#fff;font-size:16px;font-family:roboto;text-shadow:0 0 1px #333;background-color:#333;box-shadow:0 1px 2px 0 rgb(0 0 0 / 20%);padding:9px 20px;border-radius:5px;">Order Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 6px;margin:0;">
+<div class="w3-panel" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" src="https://user-images.githubusercontent.com/25410880/54868172-26c56c00-4d47-11e9-8c09-30b39d825117.png" style="width:100%;padding:0;margin:0 0 1px 0;border:none;border-radius:3px;text-decoration:none;"></div></div>
+
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 40px 0;">
+<div class="accordion">SG Business Listing Service</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0 0 20px 0;">
+<p class="topic">
+get listed in the top 5 online business directories. $99 for sg merchants. $139 for non-merchants.</p>
+
+<a class="btn btn-primary btn-block" href="https://forms.gle/QtUhcK2iLAmJEfy87" target="_blank" style="width:160px;color:#fff;font-size:16px;font-family:roboto;text-shadow:0 0 1px #333;background-color:#333;box-shadow:0 1px 2px 0 rgb(0 0 0 / 20%);padding:9px 20px;border-radius:5px;">Order Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 6px;margin:0;">
+<div class="w3-panel" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" src="https://user-images.githubusercontent.com/25410880/54868931-20d38900-4d4f-11e9-908c-b7ff3283d652.png" style="width:100%;padding:0;margin:0 0 1px 0;border:none;border-radius:3px;text-decoration:none;"></div></div>
+
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 40px 0;">
+<div class="accordion">Smart Promotion Ad&trade;</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0 0 20px 0;">
+<p class="topic">
+included free for 30 days when you become an sg merchant. $139 per month for ad agencies.</p>
+
+<a class="btn btn-primary btn-block" href="https://forms.gle/PtcikxzqSiuDoJbn9" target="_blank" style="width:160px;color:#fff;font-size:16px;font-family:roboto;text-shadow:0 0 1px #333;background-color:#333;box-shadow:0 1px 2px 0 rgb(0 0 0 / 20%);padding:9px 20px;border-radius:5px;">Order Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 6px;margin:0;">
+<div class="w3-panel" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" src="https://user-images.githubusercontent.com/25410880/55660956-c6f6a880-57bd-11e9-92ea-3116c397481c.png" style="width:100%;padding:0;margin:0 0 1px 0;border:none;border-radius:3px;text-decoration:none;"></div></div>
+
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 40px 0;">
+<div class="accordion">Scrolling Footer Logo Ad&trade;</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0 0 20px 0;">
+<p class="topic">
+knock out the competition. included free when you become an sg merchant. $1 a day for ad agencies.</p>
+
+<a class="btn btn-primary btn-block" href="https://forms.gle/MyXUta4ZCw9NSPGG7" target="_blank" style="width:160px;color:#fff;font-size:16px;font-family:roboto;text-shadow:0 0 1px #333;background-color:#333;box-shadow:0 1px 2px 0 rgb(0 0 0 / 20%);padding:9px 20px;border-radius:5px;">Order Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 6px;margin:0;">
+<div class="w3-panel" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" src="https://user-images.githubusercontent.com/25410880/61811348-2a045d80-adf6-11e9-8222-45b31c5b2a97.png" style="width:100%;padding:0;margin:0 0 1px 0;border:none;border-radius:3px;text-decoration:none;"></div></div>
+
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 40px 0;">
+<div class="accordion">Mystery Shopping Program</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0 0 20px 0;">
+<p class="topic">
+customized to fit your business needs. only $99. price does not reflect cost to conduct each shop.</p>
+
+<a class="btn btn-primary btn-block" href="https://forms.gle/Pws6ziA2daSAZuNR9" target="_blank" style="width:160px;color:#fff;font-size:16px;font-family:roboto;text-shadow:0 0 1px #333;background-color:#333;box-shadow:0 1px 2px 0 rgb(0 0 0 / 20%);padding:9px 20px;border-radius:5px;">Order Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-third" style="padding:0 6px;margin:0;">
+<div class="w3-panel" style="padding:0;margin:0;">
+<div class="column" style="padding:0;margin:0;">
+<img class="btn btn-primary btn-block" src="https://user-images.githubusercontent.com/25410880/65653603-c3084e00-dfca-11e9-8d83-60c832cc207e.png" style="width:100%;padding:0;margin:0 0 1px 0;border:none;border-radius:3px;text-decoration:none;"></div></div>
+
+<div class="w3-row" style="width:100%;margin:0;">
+<div class="w3-threethird" style="padding:0;margin:0 0 40px 0;">
+<div class="accordion">The Prestige</div>
+<div class="panel">
+
+<center>
+<div class="w3-threethird" style="margin:0;padding:0;">
+<div class="column" style="padding:10px;margin:0 0 20px 0;">
+<p class="topic">
+get your clients the scrolling footer logo ad and smart promotion ad. only $229 for ad agencies.</p>
+
+<a class="btn btn-primary btn-block" href="https://forms.gle/UVLJEFqTTa9Ur9GY9" target="_blank" style="width:160px;color:#fff;font-size:16px;font-family:roboto;text-shadow:0 0 1px #333;background-color:#333;box-shadow:0 1px 2px 0 rgb(0 0 0 / 20%);padding:9px 20px;border-radius:5px;">Order Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -478,6 +676,24 @@ border: none;
 </div>
 </div>
 </div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
