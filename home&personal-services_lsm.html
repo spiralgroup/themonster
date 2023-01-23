@@ -24,8 +24,174 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>
+$(document).ready(function(){
+    $('.bca-premium').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
 
 <style type="text/css">
+/* Slider1 */
+.slick-slide {
+    margin: 0;
+    padding: 0;
+    }
+.slick-slide img {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.slick-slider
+{
+    position: relative;
+     background-color: transparent;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+  .slick-slide img {
+  margin: 5px auto;
+  }
+}
+
+body, html {
+    max-width: 1200px !important;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f1f1f1;
+    scroll-behavior: smooth;
+ }
+  
+ .w3-modal {
+background-color: #fff;
+width: 100%;
+padding: 10px 0;
+margin: 0;
+z-index: 9999;
+}
+
+@media all and (max-width: 768px) {
+  .w3-modal {
+  padding: 5px;
+margin: 0;
+  }
+}
+
 body, html {
     max-width: 1200px !important;
     height: 100%;
@@ -213,6 +379,36 @@ margin: 0;
   }
   }
   
+   .topic4ca1 {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #222;
+text-align: center;
+letter-spacing: .75px;
+text-shadow: 0 0 1px #ccc;
+padding: 0;
+margin: 9px 0 0 0;
+}
+
+.themonster {
+font-family: roboto;
+font-size: 12px;
+letter-spacing: .5px;
+padding: 4px 0 7px 0;
+margin: 0;
+text-align: center;
+color: #222;
+text-shadow: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .themonster {
+  font-size: 14px;
+  margin: 0 0 2px 0;
+  padding: 0 0 7px 0;
+  
+  }
+  }
 .container-fluid2 {
 max-width: 1200px;
 left: 0 !important;
@@ -281,7 +477,7 @@ left: 0 !important;
 
 .dropdown:hover .dropbtn {background-color: #fff;}
 
-hr.style-one { border: 0; height: 4px; width: 85%; background-color: #fff; padding: 0; margin:60px 0; border-radius:5px;
+hr.style-one { border: 0; height: 4px; width: 85%; background-color: #222; padding: 0; margin:60px 0; border-radius:5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -378,6 +574,24 @@ hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opac
     width: 32px;
     height: 32px;
     opacity: 9;
+  }
+}
+
+.close {
+ font-family: ubuntu condensed;
+ font-size: 28px;
+ letter-spacing: .5px;
+ float: right;
+ color: #00ccff;
+ text-shadow: 0 1px 1px #ccc;
+ padding: 8px;
+ margin: 0;
+  opacity: .99;
+  }
+
+@media all and (max-width: 768px) {
+  .close {
+ float: right;
   }
 }
 </style>
@@ -536,8 +750,6 @@ hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opac
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
 <p class="topic2c">
 More Clients</p>
-
-<p id="service" class="topic3c">Join our marketplace for $329 per year.</p>
 </div>
 </div>
 
@@ -549,10 +761,12 @@ More Clients</p>
 </div>
 
 <div class="w3-half" style="margin:0;">
-<p class="topic3bb">
-When you have a home or personal services business, potential clients will want to know more. If they're educated consumers, they'll begin by conducting an online search to learn more about your services and quality of your work. Some may even require that you provide complete confidentiality, because the kind of services you provide are typically within their homes and personal. They'll probably want to read testimonials from actual clients, learn what makes you stand apart from competitors, and get your contact information before approaching you.<br><br>
+<p id="service" class="topic3bb">
+When you have a home or personal services business, potential clients will want to know more about you and the kind of services you provide. If they're educated consumers, they'll conduct an online search to learn more about you, the quality of your work, and reputation as a services provider.<br><br>
 
-Become an SG MarketPlace Merchant and we can help you stand apart from the competition by making sure your small business has the tools needed for success. Our goal is to ensure that you avoid getting distracted in asserting your online presence, so you can continue providing outstanding services to your clients.</p>
+Before procuring your services, some potential clients may want to know that you can provide them with complete confidentiality. After all, the kind of services you provide are typically within their homes and personal. They may also want to know what makes you stand apart from competitors.<br><br>
+
+Become an SG MarketPlace Merchant and we'll provide the tools your home or personal services business needs for success. More importantly, we know you're going to fall in love with our service, prices, ad products, small business solutions, and merchant agreement.</p>
 </div>
 </div>
 </div>
@@ -585,7 +799,7 @@ We'll equip your SG MarketPlace Seller Page with an online client intake form. I
 <hr class="style-three">
 
 <p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
-There are likely to be many businesses in your local community that target the same client segment with whom you can collaborate. This can enable both parties to extend their client reach, promote their brand, and deliver better services. Complementary businesses might include rehab centers, hospice agencies, or skilled home health agencies. While they may provide medical care, there is often a need for non-medical support services that your agency can fill – and vice versa.</p>
+There are likely to be many businesses in your local community that target the same client segment with whom you can collaborate. This can enable you both to extend client reach, promote your brands, and deliver better services. Think of the kind of local complementary businesses where there is a need for the services that your agency can fill – and vice versa.</p>
 </div>
 </div>
 
@@ -597,7 +811,86 @@ There are likely to be many businesses in your local community that target the s
 <hr class="style-three">
 
 <p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
-Our Smart Promotion Ads can help generate awareness about your home or personal services business and increase sales. When you become an SG MarketPlace Merchant, you'll receive a free Smart Promotion Ad for 30 days. <a href="https://spiralgroup.github.io/themonster/merchant-join.html" style="cursor:pointer;color:#222;text-shadow:0 0 1px #f1f1f1;">Click to discover</a> <u>all</u> the other wonderful features of our seller pages, and benefits of joining our marketplace.</p>
+Our Smart Promotion Ad&trade; can help generate more awareness about your home or personal services business and increase sales. Join our marketplace and receive a free SPA for 30 days. <a onclick="document.getElementById('id31').style.display='block'" style="cursor:pointer;color:#222;text-shadow:0 0 1px #f1f1f1;">Click here for a demo.</a>
+</div>
+</div>
+</div>
+
+<center>
+<div id="id31" class="w3-modal w3-animate-zoom" style="width:100%;padding:0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:95%;padding:0;margin:5px;border-radius:4px;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<a onclick="document.getElementById('id31').style.display='none'" href="#" class="close"><span class="glyphicon glyphicon-erase"></span></a>
+</div>
+
+<div class="w3-container w3-panel w3-card" style="background-color:#00ccff;width:100%;padding:0;margin:0 0 20px 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:7px;margin:0;">
+<div class="w3-row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/213936889-29d45971-50ba-4c69-b53d-4a5e3bc1a880.png" style="width:100%;border-radius:2px;padding:0;margin:0;">
+</div>
+
+<div class="w3-threequarter bca-premium" style="padding:1px 0 0 0;margin:0;"> 
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/53668901-234c3280-3c2a-11e9-9633-7b681385932d.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Pest Control</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;background-color:#00ccff;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Book Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/53668895-22b39c00-3c2a-11e9-81a3-b01745daddb5.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Appliance Repair</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;background-color:#00ccff;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Book Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/53665624-d152df00-3c20-11e9-9cae-e8831c85f398.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Cleaning Services</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;background-color:#00ccff;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Book Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/54096550-990e7780-4369-11e9-8cf4-807f472f6b75.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Music & Voice Lessons</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;background-color:#00ccff;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Book Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/54066954-d6e69100-41ed-11e9-8ea7-28aa05a6775e.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Personal Chef</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;background-color:#00ccff;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Book Now</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -627,7 +920,7 @@ Art lessons. Boxing lessons. Business, Career & Life coaching. Computer training
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0 0 20px 0;">
 
-<button class="w3-button w3-hover-shadow" style="background-color:#fff;padding:25px 30px;margin:10px 0 60px 0;border-radius:4px;"><a style="font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #fff;text-decoration:none;" href="https://forms.gle/eeb3NQQWytd47nJc9" target="_blank">MAKE THE PURCHASE</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#fff;padding:25px 30px;margin:10px 0 60px 0;border-radius:4px;"><a style="font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #fff;text-decoration:none;" href="https://forms.gle/eeb3NQQWytd47nJc9" target="_blank">JOIN NOW FOR ONLY $329 PER YEAR</a></button>
 </div>
 </div>
 </div>
