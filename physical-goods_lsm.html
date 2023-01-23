@@ -24,8 +24,174 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>
+$(document).ready(function(){
+    $('.bca-premium').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
 
 <style type="text/css">
+/* Slider1 */
+.slick-slide {
+    margin: 0;
+    padding: 0;
+    }
+.slick-slide img {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.slick-slider
+{
+    position: relative;
+     background-color: transparent;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    padding: 0;
+    }
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+   }
+.slick-track:before,
+.slick-track:after
+{display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}[dir='rtl'] .slick-slide
+{
+    float: left;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{ display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+  .slick-slide img {
+  margin: 5px auto;
+  }
+}
+
+body, html {
+    max-width: 1200px !important;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f1f1f1;
+    scroll-behavior: smooth;
+ }
+  
+ .w3-modal {
+background-color: #fff;
+width: 100%;
+padding: 10px 0;
+margin: 0;
+z-index: 9999;
+}
+
+@media all and (max-width: 768px) {
+  .w3-modal {
+  padding: 5px;
+margin: 0;
+  }
+}
+
 body, html {
     max-width: 1200px !important;
     height: 100%;
@@ -213,6 +379,37 @@ margin: 0;
   }
   }
   
+     .topic4ca1 {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #222;
+text-align: center;
+letter-spacing: .75px;
+text-shadow: 0 0 1px #ccc;
+padding: 0;
+margin: 9px 0 0 0;
+}
+
+.themonster {
+font-family: roboto;
+font-size: 12px;
+letter-spacing: .5px;
+padding: 4px 0 7px 0;
+margin: 0;
+text-align: center;
+color: #222;
+text-shadow: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .themonster {
+  font-size: 14px;
+  margin: 0 0 2px 0;
+  padding: 0 0 7px 0;
+  
+  }
+  }
+  
 .container-fluid2 {
 max-width: 1200px;
 left: 0 !important;
@@ -281,7 +478,7 @@ left: 0 !important;
 
 .dropdown:hover .dropbtn {background-color: #fff;}
 
-hr.style-one { border: 0; height: 4px; width: 85%; background-color: #fff; padding: 0; margin:60px 0; border-radius:5px;
+hr.style-one { border: 0; height: 4px; width: 85%; background-color: #222; padding: 0; margin:60px 0; border-radius:5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -378,6 +575,24 @@ hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opac
     width: 32px;
     height: 32px;
     opacity: 9;
+  }
+}
+
+.close {
+ font-family: ubuntu condensed;
+ font-size: 28px;
+ letter-spacing: .5px;
+ float: right;
+ color: #f2f2f2;
+ text-shadow: 0 1px 1px #ccc;
+ padding: 8px;
+ margin: 0;
+  opacity: .99;
+  }
+
+@media all and (max-width: 768px) {
+  .close {
+ float: right;
   }
 }
 </style>
@@ -536,8 +751,6 @@ hr.style-four { border: 0; height: 2px; width: 20%; background-color: #fff; opac
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:10px 0;">
 <p class="topic2c">
 Sell More</p>
-
-<p id="service" class="topic3c">Join our marketplace for $329 per year.</p>
 </div>
 </div>
 
@@ -549,14 +762,12 @@ Sell More</p>
 </div>
 
 <div class="w3-half" style="margin:0;">
-<p class="topic3bb">
-Small retailers need to discover new ways to compete. To stay competitive, they will have to establish and cultivate an eCommerce strategy that addresses multiple issues as they pertain to their business operations, training of staff, and customer service. Like competing on service quality and building customer loyalty through marketing campaigns that engage the local community. This includes shaping their employees into brand ambassadors for their small business.<br><br>
+<p id="service" class="topic3bb">
+Small retailers, do you need a new way to stay competitive? Do you have an eCommerce website that allows customers to order your affordable products online and conveniently shipped to their desired locations? Do you satisfy the consumer's desire to learn something new, as well as how to successfully integrate your products into their workspaces and homes?<br><br>
 
-These tactics can work to satisfy the consumer's desire to learn something new, as well as how to successfully integrate your products into their workspaces and homes.<br><br>
+Would you like an eCommerce website that allows shoppers to buy online and then retrieve those items from your physical non-residential location? Would you enjoy not having to utilize a DIY website builder in an effort to achieve your business goals? Are you aware that the term SEO, although a real thing, is merely a buzzword to keep small business owners buzzing?<br><br>
 
-SG MarketPlace does not provide or offer any shipping services for items featured on any seller page or in our ad products. If your small business has a physical non-residential location, we can add the BOPIS option (Buy Online, Pickup In-store) at checkout for your customers.
-
-</p>
+Become a merchant in our marketplace and we'll have you falling in love with our industry knowledge, ad products, service, and merchant agreement.</p>
 </div>
 </div>
 </div>
@@ -589,7 +800,7 @@ Order online and pick up in-store have become the norm. Offering these services 
 <hr class="style-three">
 
 <p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
-Receive our Amazing Deals Guide when you become an SG MarketPlace Merchant. It's packed with ideas on how to create amazing deals your customers will love. Online shoppers can take advantage of discount codes when making online purchases and sign up to receive special offers directly from your seller page.</p>
+Receive our Amazing Deals Guide when you become an SG MarketPlace Merchant. It contains discounting ideas relevant to online shoppers. When you decide on the kind of deals you want to offer, we can make it happen for you at online checkout. Shoppers can also sign up to receive your promotional offers directly from your seller page.</p>
 </div>
 </div>
 
@@ -601,7 +812,86 @@ Receive our Amazing Deals Guide when you become an SG MarketPlace Merchant. It's
 <hr class="style-three">
 
 <p class="topic3bb" style="color:#222;text-shadow:0 0 1px #f1f1f1;">
-Our Smart Promotion Ads can help generate awareness about your physical goods business and increase sales. When you become an SG MarketPlace Merchant, you'll receive a free Smart Promotion Ad for 30 days. <a href="https://spiralgroup.github.io/themonster/merchant-join.html" style="cursor:pointer;color:#222;text-shadow:0 0 1px #f1f1f1;">Click to discover</a> <u>all</u> the other wonderful features of our seller pages, and benefits of joining our marketplace.</p>
+Our Smart Promotion Ad&trade; can help generate awareness about your physical goods/retail business and increase sales. Join our marketplace and receive a free SPA for 30 days. Never worry about pay-per-click with any of our ad products. <a onclick="document.getElementById('id31').style.display='block'" style="cursor:pointer;color:#222;text-shadow:0 0 1px #f1f1f1;">Click here for demo.</a>
+</div>
+</div>
+</div>
+
+<center>
+<div id="id31" class="w3-modal w3-animate-zoom" style="width:100%;padding:0;margin:0;">
+<div class="w3-modal-content" style="background-color:transparent;width:95%;padding:0;margin:5px;border-radius:4px;">
+<div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
+<a onclick="document.getElementById('id31').style.display='none'" href="#" class="close"><span class="glyphicon glyphicon-erase"></span></a>
+</div>
+
+<div class="w3-container w3-panel w3-card" style="background-color:#ccc;width:100%;padding:0;margin:0 0 20px 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:7px;margin:0;">
+<div class="w3-row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/213936889-29d45971-50ba-4c69-b53d-4a5e3bc1a880.png" style="width:100%;border-radius:2px;padding:0;margin:0;">
+</div>
+
+<div class="w3-threequarter bca-premium" style="padding:1px 0 0 0;margin:0;"> 
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67868171-cbcbd280-fae8-11e9-8b43-0f595801c6b8.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Product One</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Buy Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/67866485-421b0580-fae6-11e9-8c5e-7edde7536e70.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Product Two</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Buy Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/54080890-ff828f80-42ae-11e9-95dc-56cbe148d5c6.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Product Three</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Buy Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/209445041-c89cf4e9-8790-4f25-bf57-b69bd2d468fd.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Product Four</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Buy Now</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-white" style="margin:0;border-radius:0 0 2px 2px;">
+<img src="https://user-images.githubusercontent.com/25410880/54082485-5c8c3e80-42cb-11e9-8a77-6982ea2fb668.png" style="width:100%;padding:0;">
+
+<p class="topic4ca1">
+Product Five</p>
+<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;">
+
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="#">$19.99 - Buy Now</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -625,7 +915,7 @@ Adult toys. Apparel for men, women, children. Handbags, luggage, travel bags. Je
 <div class="w3-row" style="width:100%;margin:0;">
 <div class="w3-threethird" style="margin:0 0 20px 0;">
 
-<button class="w3-button w3-hover-shadow" style="background-color:#fff;padding:25px 30px;margin:10px 0 60px 0;border-radius:4px;"><a style="font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #fff;text-decoration:none;" href="https://forms.gle/eeb3NQQWytd47nJc9" target="_blank">MAKE THE PURCHASE</a></button>
+<button class="w3-button w3-hover-shadow" style="background-color:#fff;padding:25px 30px;margin:10px 0 60px 0;border-radius:4px;"><a style="font-family:roboto condensed;font-size:20px;text-align:center;letter-spacing:.5px;color:#222;text-shadow:0 0 1px #fff;text-decoration:none;" href="https://forms.gle/eeb3NQQWytd47nJc9" target="_blank">JOIN NOW FOR ONLY $329 PER YEAR</a></button>
 </div>
 </div>
 </div>
