@@ -24,6 +24,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
 <script>
@@ -39,7 +40,7 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
             }
         }, {
             breakpoint: 520,
@@ -238,17 +239,15 @@ padding: 20px 0 0 0;
 }
 .topic {
 font-family: Yanone Kaffeesatz;
-font-size: 22px;
+font-size: 23px;
 color: #222;
 text-align: center;
 letter-spacing: .75px;
 text-shadow: 0 0 1px #ccc;
-padding: 15px 5px 10px 5px;
+padding: 15px 0 5px 0;
 margin: 0;
 }
 
-
-  
 .topic2c {
 font-family: Yanone Kaffeesatz;
 font-size: 120px;
@@ -266,21 +265,46 @@ padding: 0;
   }
   }
   
-   .topic3c {
-font-family: Yanone Kaffeesatz;
-font-size: 28px;
+  .topic1b { 
+ font-family: roboto condensed;
+font-size: 16px;
 color: #222;
-text-shadow: 0 0 1px #f1f1f1;
+text-shadow: 0 0 1px #ccc;
 text-align: center;
+margin: 0;
+padding: 0;
+}
+ 
+ @media screen and (max-width: 768px) {
+  .topic1b {
+   letter-spacing: 0;
+  }
+  }
+  .topic33 { 
+ font-family: Yanone Kaffeesatz;
+font-size: 18px;
+color: #222;
+text-shadow: 0 0 1px #fff;
 letter-spacing: .5px;
-margin: -40px 0 40px 0;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.topic3d {
+font-family: Yanone Kaffeesatz;
+font-size: 19px;
+color: #222;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .topic3c {
-   font-size: 26px;
-   letter-spacing: .75px;
-   margin: -20px 0 20px 0;
+  .topic3d {
+   font-size: 20px;
   }
   }
 .topic4 {
@@ -300,7 +324,7 @@ text-align: center;
   
   .topicsfla {
 font-family: Yanone Kaffeesatz;
-font-size: 150px;
+font-size: 120px;
 color: #fff !important;
 text-align: center;
 letter-spacing: 1px;
@@ -312,61 +336,6 @@ padding: 0 10px;
   .topicsfla {
    font-size: 85px;
    }
-  }
-  
-  .topicspa {
-font-size: 40px;
-margin: 20px 0 0 0;
-padding: 0 80px 0 0;
-font-family: Yanone Kaffeesatz;
-color: #fff;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #80c1ff;
-text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .topicspa {
-  font-size: 36px;
-   margin: -15px 0 0 0;
-   padding: 0;
-  }
-  }
-  
-  .topic3b1 {
-font-family: Yanone Kaffeesatz;
-font-size: 20px;
-color: #222;
-letter-spacing: .75px;
-text-shadow: 0 0 1px #80c1ff;
-text-align: center;
-padding: 0 80px 20px 0;
-margin: -10px 0 0 0;
-opacity: .49;
-}
-
-@media screen and (max-width: 768px) {
-  .topic3b1 {
-  font-size: 19px;
-  padding: 0 0 20px 0;
-  }
-  }
-  
-     .topic3b9 {
-  font-family: Yanone Kaffeesatz;
-  font-size: 23px;
-  color: #fff;
-  text-shadow: 0 0 1px #ccc;
-  letter-spacing: 1px;
-  margin: 0;
-  padding: 0 80px 0 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-  .topic3b9 {
-  font-size: 18px;
-  padding: 0 5px 10px 5px;
-  }
   }
   
   .topic4ca1 {
@@ -505,14 +474,14 @@ left: 0 !important;
 }
 
 .alert {
- padding: 0 0 30px 0;
- margin: 0 0 80px 0;
+ padding: 100px 0;
+ margin: 0;
  }
  
  @media all and (max-width: 768px) {
   .alert {
-margin: 0 0 30px 0;
-padding: 0 0 30px 0;
+margin: 80px 0 0 0;
+padding: 0;
   }
 }
 
@@ -579,6 +548,20 @@ margin: 0;
   }
 }
 
+.fa {
+  padding: 10px 20px 5px 15px;
+  font-size: 23px;
+  width: 24px;
+  float: center;
+   color: #222;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+  }
+
+.fa:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    }
 </style>
 </head>
 
@@ -600,7 +583,7 @@ margin: 0;
 
 <div class="col-sm-3" style="padding:0;margin:0;">
 <div class="dropdown">
-  <button class="dropbtn">Sample Business Listing</button> 
+  <button class="dropbtn"><a href="#listings" style="color:#b3b300;">Sample Business Listings</a></button> 
   <div class="dropdown-content">
     </div>
   </div>
@@ -725,24 +708,23 @@ margin: 0;
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:60px 0 0 0;">
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
 <div id="spa" class="w3-container" style="width:100%;padding:0;margin:0;">
 
-<div class="w3-row-padding" style="width:100%;margin:50px 0 0 0;">
+<div class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0;">
-<div class="alert" style="border:none;">
-<a href="#" class="close" data-dismiss="alert" aria-label="close"><span class="glyphicon glyphicon-erase"></span></a>
+<div class="alert">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">ad</a>
 
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px 4px 0 4px;border-radius:4px 4px 2px 2px;margin:0;">
 <a onclick="document.getElementById('id31').style.display='block'" style="cursor:pointer;">
 
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/99362370-0847a900-2879-11eb-941d-9411f6c76f13.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
 <p class="topic">Lagoona Restaurant & Bar</p>
-<p class="topic33">217-424-1311</p>
-<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 South Franklin Street<br>
-Decatur, IL 62523</a></p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-linkedin"></a>
 <a href="#" class="fa fa-instagram"></a>
@@ -753,23 +735,43 @@ Decatur, IL 62523</a></p>
 </div>
 
 <div class="w3-third" style="margin:0;">
-<div class="alert" style="border:none;">
-<a href="#" class="close" data-dismiss="alert" aria-label="close"><span class="glyphicon glyphicon-erase"></span></a>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="alert">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">ad</a>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px 4px 0 4px;border-radius:4px 4px 2px 2px;margin:0;">
 <a onclick="document.getElementById('id32').style.display='block'" style="cursor:pointer;">
+
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/209445041-c89cf4e9-8790-4f25-bf57-b69bd2d468fd.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
 <p class="topic">Monster Superstore</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0;">
-<div class="alert" style="border:none;">
-<a href="#" class="close" data-dismiss="alert" aria-label="close"><span class="glyphicon glyphicon-erase"></span></a>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="alert">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">ad</a>
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px 4px 0 4px;border-radius:4px 4px 2px 2px;margin:0;">
 <a onclick="document.getElementById('id33').style.display='block'" style="cursor:pointer;">
+
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/209445186-e4f12765-acde-4131-8dbe-63dd52c2818f.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
-<p class="topic">Monster Superstore</p>
+<p class="topic">Levinna Beauty Services</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
@@ -884,7 +886,7 @@ Beverages</p>
 
 <p class="topic4ca1">
 Product One</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all.html#shop">$19.99 - Order Online</a></p></div>
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all#shop">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -965,7 +967,7 @@ Product Six</p>
 
 <p class="topic4ca1">
 Kick-Boxing Lessons</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$20 Sessions - Book Now</a></p></div>
+<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$20 Per Session - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1021,40 +1023,63 @@ Brows & Lashes</p>
 </div>
 </div>
 
-<div class="w3-container" style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
-<p id="listings" class="topic2c"><a style="color:#fff;text-shadow:0 0 1px #f2f2f2;" href="https://spiralgroup.github.io/themonster/merchant-join.html">
-Get Listed</a></p>
+<div class="w3-container" style="background-color:#f2f2f2;width:100%;padding:0;margin:50px 0 0 0;">
+<p id="listings" class="topicsfla"><a style="color:#fff;text-shadow:0 0 1px #f2f2f2;" href="https://spiralgroup.github.io/themonster/merchant-join.html">
+Listings</a></p>
 <div class="w3-row-padding" style="background-color:transparent;margin:0;">
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-seller-page_all" target="_blank">
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56102964-1c7d3480-5ee5-11e9-8c1f-66e7c8d71edd.png" style="width:100%;border-radius:2px;"></a>
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/222293043-635dbbd3-9262-473c-bf48-0a1216a66894.png" style="width:100%;border-radius:2px;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">
-Decatur</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Monster Superstore</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
     
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-f&b-template.html" target="_blank">
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Lagoona Restaurant"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Argenta</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Levinna Beauty Services</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>   
    
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-f&b-template.html" target="_blank">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/222266674-e7e6917f-43ae-49fc-95e9-241e2dd51963.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Boody</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Lagoona Restaurant & Bar</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
@@ -1063,68 +1088,116 @@ Decatur</p>
 <center>
 <div class="w3-container" style="background-color:#f2f2f2;width:100%;padding:0;margin:0;">
 <div class="w3-row-padding" style="background-color:transparent;margin:0;">
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-services_template" target="_blank">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Blue Mound</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Kolo Systems</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
 
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-services_template" target="_blank">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Elwin</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Onyx Jewels</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
     
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-services_template" target="_blank">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190411-02278180-5fdf-11e9-9616-667c12cb08c0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Forsyth</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Fractore Global Consulting</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
     
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-services_template" target="_blank">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190416-0358ae80-5fdf-11e9-8a73-88210471f9bf.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Harristown</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Sky Rocket Labs</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
     
-<div class="w3-third" style="margin:0 0 10px 0;">
+<div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-services_template" target="_blank">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190430-06ec3580-5fdf-11e9-938c-17ac46789cc2.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Oakley</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Roadlink Auto Parts</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
 
 <div class="w3-third" style="margin:0 0 80px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<a href="https://spiralgroup.github.io/themonster/sample-services_template" target="_blank">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
-<div class="w3-content w3-panel" style="padding:10px 0 0 0;margin:0;">
-<p class="topic4">Oreana</p>
+<div class="w3-content w3-panel" style="padding:0;margin:0;">
+<p class="topic">Gifted Hands Massage Therapy</p>
+<p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
+
+<p>
+<a href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank" class="fa fa-map-marker" style="font-size:28px;color:dodgerblue;text-shadow:0 0 1px #ddd;"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-facebook"></a></p>
 </div>
 </div>
 </div>
@@ -1132,101 +1205,41 @@ Decatur</p>
 </div>
 </div>
 
-<div class="container w3-panel w3-white" style="width:100%;padding:0;border-radius:4px 4px 0 0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
-<div class="container w3-panel" style="width:100%;padding:4px 4px 0 4px;margin:0;">
-<div class="container w3-panel w3-card" style="background-color:#b3b300;width:100%;padding:10px 4px 0 4px;border-radius:3px 3px 0 0;margin:0;">
-<div class="w3-row" style="width:100%;margin:0;padding:0;">
-<div class="w3-threethird" style="margin:0;padding:0;">
-<p align="center" style="font-family:Yanone Kaffeesatz;font-size:38px;color:#fff;letter-spacing:1px;text-shadow:0 0 1px #b3b300;padding:0 0 10px 0;margin:0;"><a style="color:#fff;" href="https://www.spiralgroup.org">www.SpiralGroup.org</a></p>
-
-<div class="row-padding" style="background-color:#b3b300;margin:0 0 10px 0;">
-<div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0;">
-<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> MARKETING BY BUSINESS TYPE</p>
-<p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/automotive_lsm.html">Automotive Services</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/beauty-&-health_lsm.html">Beauty & Health</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/food-&-drink_lsm.html">Food & Beverage</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/home&personal-services_lsm.html">Home & Personal Services</a></p>
-<p style="margin-bottom:15px;"><a href="https://spiralgroup.github.io/themonster/physical-goods_lsm.html">Physical Goods</a></p>
-</div>    
-
-<div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
-<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> MARKETPLACE SHOPPERS</p>
-<p style="margin-top:15px;"><a href="https://forms.gle/dAAEBSJDPETmkWgr8" target="_blank">Shopper Sign Up</a></p>
-<p><a href="https://www.spiralgroup.org">Shop Our MarketPlace</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/gifts.html">Gift Ideas</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/community-outreach_free-ep-tool-kit.html">Community Outreach</a></p>
-<p style="margin-bottom:10px;"><a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a></p>
-</div>
-
-<div class="w3-third nab topnav1" style="background-color:#b3b300;padding:0 4px;margin:0 0 5px 0">
-<p class="w3-card-4 w3-round-small" style="background-color:#fff;font-family:roboto condensed;font-size:16px;color:#b3b300;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;"><i class="material-icons" style="color:#b3b300;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> LOCAL MERCHANT RESOURCES</p>
-<p style="margin-top:15px;"><a href="https://spiralgroup.github.io/themonster/merchant-join.html">Join SG MarketPlace</a></p>
-<p><a href="https://spiralgroup.github.io/themonster/share-the-magic.html">SG Local Ad Services&trade;</a></p>
-<p><a href="https://www.handbooks.io/#app" target="_blank">Employee Handbook Builder</a></p>
-<p><a href="https://forms.gle/oN71A3ND4d8yprXN8" target="_blank">Free Phone Consultation</a></p>
-<p style="margin-bottom:10px;"><a href="https://www.thebalancemoney.com/what-is-marketing-2296057" target="_blank">Defining Marketing by Laura Lake</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div class="w3-row" style="width:100%;margin:0;padding:0 3px;">
-<div class="w3-threethird" style="margin:0;padding:0 3px;">
-<p class="w3-round-small" style="background-color:#b3b300;font-family:roboto condensed;font-size:16px;color:#fff;letter-spacing:.5px;text-shadow:0 0 1px #b3b300;padding:8px 5px;margin:50px 0 10px 0;"><i class="material-icons" style="color:#fff;text-shadow:0 0 1px #ccc;font-size:20px;vertical-align:top;margin:0;padding:0;">verified_user</i> SHOP OUR LOCAL MERCHANTS</p>
+<center>
+<div class="w3-container" style="width:100%;padding:0;margin:0 0 5px 0;">
+<p class="topicsfla">Shop Local</p>
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
-
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;cursor:pointer;" alt="Game Day Barber Shop"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
 
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710680-0288a280-8aa4-11ea-8b91-257ee6afe641.png" style="border-radius:2px;cursor:pointer;" alt="Hamunaptra Cosmetics"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
 
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710685-05839300-8aa4-11ea-9851-6041c8349518.png" style="border-radius:2px;cursor:pointer;" alt="The Prestige Beauty Supplies"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
 
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710689-074d5680-8aa4-11ea-8058-8b3edc63c506.png" style="border-radius:2px;cursor:pointer;" alt="Stick It Tattoos & Piercings"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
 
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710696-07e5ed00-8aa4-11ea-9573-5612a851a547.png" style="border-radius:2px;cursor:pointer;" alt="Zambuka Night Club"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
 
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710698-087e8380-8aa4-11ea-9677-39a95541f02b.png" style="border-radius:2px;cursor:pointer;" alt="Onyx Business Systems"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
 
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="border-radius:2px;cursor:pointer;" alt="Levinna Purses & Bags"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
 
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710703-0a484700-8aa4-11ea-9366-51b1162290fd.png" style="border-radius:2px;cursor:pointer;" alt="Gortex Fitness Apparel"></a>
-<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:12px 0;border-radius:2px;border:none;">
+<button type="button" class="btn btn-primary btn-block w3-white" style="margin:0 auto;padding:10px 0 6px 0;border-radius:2px;border:none;">
 <a class="topic3d" href="#" style="text-decoration:none;">Your Ad Here</a></button></div>
-</div>
-</div>
-
-
-
-
-
-
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
