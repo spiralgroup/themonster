@@ -67,12 +67,12 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 2
             }
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 1
             }
         }]
     });
@@ -381,7 +381,7 @@ padding: 0 20px;
 
 @media screen and (max-width: 768px) {
   .topic2c {
-   font-size: 100px;
+   font-size: 90px;
    text-align: left;
   }
   }
@@ -438,11 +438,9 @@ font-family: Yanone Kaffeesatz;
 font-size: 20px;
 color: #222;
 letter-spacing: .75px;
-text-shadow: 0 0 1px #80c1ff;
 text-align: center;
-padding: 0 80px 20px 0;
+padding: 0 0 20px 0;
 margin: -10px 0 0 0;
-opacity: .49;
 }
 
 @media screen and (max-width: 768px) {
@@ -453,19 +451,19 @@ opacity: .49;
   }
   
      .topic3b9 {
-  font-family: Yanone Kaffeesatz;
-  font-size: 23px;
-  color: #fff;
-  text-shadow: 0 0 1px #ccc;
-  letter-spacing: 1px;
+  font-family: roboto condensed;
+  font-size: 22px;
+  color: #222;
+  text-shadow: 0 0 1px #fff;
+  letter-spacing: .05px;
   margin: 0;
-  padding: 0 80px 0 0;
+  padding: 0 30px 20px 30px;
   }
   
   @media screen and (max-width: 768px) {
   .topic3b9 {
   font-size: 18px;
-  padding: 0 5px 10px 5px;
+  padding: 0 0 20px 0;
   }
   }
   .topic3bb {
@@ -489,13 +487,12 @@ margin: 0;
   }
     
 .topicspa {
-font-size: 40px;
-margin: 20px 0 0 0;
-padding: 0 80px 0 0;
+font-size: 50px;
+margin: 50px 0 0 0;
+padding: 0;
 font-family: Yanone Kaffeesatz;
-color: #fff;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #80c1ff;
+color: #3399ff;
+letter-spacing: .5px;
 text-align: center;
 }
 
@@ -616,15 +613,15 @@ font-size: 19px;
     }
   }
   
-  .topic4ca1 {
+ .topic4ca1 {
 font-family: Yanone Kaffeesatz;
-font-size: 20px;
+font-size: 22px;
 color: #fff;
 text-align: center;
-letter-spacing: .75px;
-text-shadow: 0 0 1px #b3daff;
-padding: 0;
-margin: 9px 0 0 0;
+letter-spacing: 1.25px;
+text-shadow: 0 0 1px #80c1ff;
+padding: 0 0 6px 0;
+margin: 10px 0 0 0;
 }
 
  .topicpanel {
@@ -826,11 +823,11 @@ padding: 0 0 30px 0;
  
  .close {
  font-family: ubuntu condensed;
- font-size: 30px;
+ font-size: 35px;
  letter-spacing: .5px;
  float: left;
  color: #fff;
- text-shadow: 0 1px 1px #ccc;
+ text-shadow: 0 0 1px #222;
  padding: 8px;
  margin: -34px 0 0 0;
  opacity: .99;
@@ -839,8 +836,11 @@ padding: 0 0 30px 0;
 @media all and (max-width: 768px) {
   .close {
  float: right;
+  color: #ccc;
+ text-shadow: 0 0 1px #f2f2f2;
   }
 }
+
 .w3-modal {
 background-color: #fff;
 width: 100%;
@@ -854,22 +854,6 @@ z-index: 9999;
   padding: 5px;
 margin: 0;
   }
-}
-
-.close1 {
- background-color: transparent;
- font-family: Yanone Kaffeesatz;
- font-size: 17px;
-color: #fff;
-text-shadow: 0 0 1px #b3daff;
- letter-spacing: 1px;
- cursor: pointer;
- padding: 0;
- width: 100%;
- margin: 0;
- border: none;
- padding: 10px 0;
- text-align: center; 
 }
 
 .fa {
@@ -887,6 +871,10 @@ text-shadow: 0 0 1px #b3daff;
     text-decoration: none;
     }
     
+ .close2 {
+ font-family: Yanone Kaffeesatz;
+}
+
 </style>
 </head>
 
@@ -1137,7 +1125,7 @@ SG Local Ad Services&trade; are ideal for marketplace merchants looking to promo
 <div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter" style="margin:0 0 10px 0;padding:1px 2px;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px 2px 1px;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="width:100%;border-radius:4px;padding:0;margin:0;">
 </div>
 
@@ -1148,10 +1136,8 @@ SG Local Ad Services&trade; are ideal for marketplace merchants looking to promo
 
 <p class="topic4ca1">
 Meal One</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1160,10 +1146,8 @@ Meal One</p>
 
 <p class="topic4ca1">
 Meal Two</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1172,10 +1156,8 @@ Meal Two</p>
 
 <p class="topic4ca1">
 Meal Three</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1184,10 +1166,8 @@ Meal Three</p>
 
 <p class="topic4ca1">
 Meal Four</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1196,20 +1176,18 @@ Meal Four</p>
 
 <p class="topic4ca1">
 Meal Five</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:90%;padding:0;margin:0;">
-<hr class="style-one">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="col-sm-6" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:95%;padding:0;margin:100px 0 0 0;">
+<div class="w3-row" style="width:100%;">
+<div class="w3-half" style="padding:0 10px;">
 <p class="topicspa">
 Join Our MarketPlace</p>
 
@@ -1217,29 +1195,16 @@ Join Our MarketPlace</p>
 Create some amazing meal deals.</p>
 
 <p class="topic3b9">
-We showcase either four, five, or six of your savory menu items. You can even promote your restaurant's merchandise alongside menu items with this ad product. Diners arrive at your designated space in our marketplace when they interact with your Smart Promotion Ad.<br><br>
+We showcase either four, five, or six of your savory menu items. You can even promote your restaurant's merchandise alongside menu items with this ad product. Diners arrive at your designated space in our marketplace when they interact with your Smart Promotion Ad.</p>
 
-SPA included free for 30 days when you become an SG MarketPlace Merchant. Only $139 per month afterwards.</p> 
-</div>
-</div>
-
-<div class="col-sm-6 w3-card-4" style="background-color:#cce7ff;padding:10px;margin:0;border-radius:4px;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/95657923-c50d5400-0adc-11eb-8a8a-75a9a77b5550.gif" style="width:100%;padding:0;border-radius:4px;">
-</div>
-</div>
+<p class="topic3b9">SPA included free for 30 days when you become an SG MarketPlace Merchant. Only $139 per month afterwards.</p>
 </div>
 
-<p class="topic">Questions? Call us at 217-848-6332.</p>
+<div class="w3-half" style="padding:0 10px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/95657923-c50d5400-0adc-11eb-8a8a-75a9a77b5550.gif" style="width:100%;padding:0;border-radius:4px;">
 
-<hr class="style-three">
-
-<center>
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0;margin:0;">
-<button onclick="document.getElementById('id31').style.display='none'" class="close1">Close this ad.</button>
-</div>
-</div>
-</div>
+<p style="margin:0;">
+<button class="btn btn-primary btn-block w3-white" style="font-family:Yanone Kaffeesatz;font-size:18px;color:#222;text-shadow:0 0 1px #f2f2f2;letter-spacing:1px; margin:5px 0 3px 0;padding:10px 0 5px 0;border:none;" onclick="document.getElementById('id31').style.display='none'" class="close2">Close this window.</button></p>
 </div>
 </div>
 </div>
@@ -1247,10 +1212,10 @@ SPA included free for 30 days when you become an SG MarketPlace Merchant. Only $
 
 <center>
 <div id="id32" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card" style="background-color:#00ccff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter" style="margin:0 0 10px 0;padding:1px 2px;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px 2px 1px;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="width:100%;border-radius:4px;padding:0;margin:0;">
 </div>
 
@@ -1261,10 +1226,9 @@ SPA included free for 30 days when you become an SG MarketPlace Merchant. Only $
 
 <p class="topic4ca1">
 Product One</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
 
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1273,10 +1237,9 @@ Product One</p>
 
 <p class="topic4ca1">
 Product Two</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
 
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1285,10 +1248,8 @@ Product Two</p>
 
 <p class="topic4ca1">
 Product Three</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1297,10 +1258,8 @@ Product Three</p>
 
 <p class="topic4ca1">
 Product Four</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1309,10 +1268,8 @@ Product Four</p>
 
 <p class="topic4ca1">
 Product Five</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1321,20 +1278,18 @@ Product Five</p>
 
 <p class="topic4ca1">
 Product Six</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:90%;padding:0;margin:0;">
-<hr class="style-one">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="col-sm-6" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:95%;padding:0;margin:100px 0 0 0;">
+<div class="w3-row" style="width:100%;">
+<div class="w3-half" style="padding:0 10px;">
 <p class="topicspa">
 Join Our MarketPlace</p>
 
@@ -1342,27 +1297,16 @@ Join Our MarketPlace</p>
 Create some amazing deals.</p>
 
 <p class="topic3b9">
-We'll showcase either four, five, or six of your products. Shoppers arrive at your designated space in our marketplace where they can order online. And, if you have a non-residential physical location, we can even implement curbside pickup or BOPIS at checkout.<br><br>
+We'll showcase either four, five, or six of your products. Shoppers arrive at your designated space in our marketplace where they can order online. And, if you have a non-residential physical location, we can even implement curbside pickup and Buy Online Pickup In-store service method at checkout.<br><br>
 
 Smart Promotion Ad included free for 30 days when you become an SG Merchant. Only $139 per month afterwards.</p> 
 </div>
-</div>
 
-<div class="col-sm-6 w3-card-4" style="background-color:#00ccff;padding:10px;margin:0;border-radius:4px;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/96354588-dd154280-109d-11eb-9701-fbe32e33a616.gif" style="width:100%;padding:0;border-radius:4px;">
-</div>
-</div>
-</div>
+<div class="w3-half" style="padding:0 10px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/96354588-dd154280-109d-11eb-9701-fbe32e33a616.gif" style="width:100%;padding:0;border-radius:4px;">
 
-<p class="topic">Questions? Call us at 217-848-6332.</p>
-
-<hr class="style-three">
-
-<center>
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
-<button onclick="document.getElementById('id32').style.display='none'" class="close1">Close this ad.</button>
-</div>
+<p style="margin:0;">
+<button class="btn btn-primary btn-block w3-white" style="font-family:Yanone Kaffeesatz;font-size:18px;color:#222;text-shadow:0 0 1px #f2f2f2;letter-spacing:1px; margin:5px 0 3px 0;padding:10px 0 5px 0;border:none;" onclick="document.getElementById('id32').style.display='none'" class="close2">Close this window.</button></p>
 </div>
 </div>
 </div>
@@ -1372,10 +1316,10 @@ Smart Promotion Ad included free for 30 days when you become an SG Merchant. Onl
 
 <center>
 <div id="id33" class="w3-modal w3-animate-zoom">
-<div class="w3-modal-content w3-card" style="background-color:#00ccff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
 <div class="container w3-panel" style="width:100%;padding:0;margin:0;">
 <div class="row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter" style="margin:0 0 10px 0;padding:1px 2px;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px 2px 1px;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="width:100%;border-radius:4px;padding:0;margin:0;">
 </div>
 
@@ -1386,10 +1330,9 @@ Smart Promotion Ad included free for 30 days when you become an SG Merchant. Onl
 
 <p class="topic4ca1">
 Kick-Boxing Lessons</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
 
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$20 a Class - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$20 Per Session - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1398,10 +1341,9 @@ Kick-Boxing Lessons</p>
 
 <p class="topic4ca1">
 Blow-Out</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
 
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1410,10 +1352,8 @@ Blow-Out</p>
 
 <p class="topic4ca1">
 Full-Body Massage</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1422,10 +1362,8 @@ Full-Body Massage</p>
 
 <p class="topic4ca1">
 Mani-Pedi Combo</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1434,10 +1372,8 @@ Mani-Pedi Combo</p>
 
 <p class="topic4ca1">
 Full Makeover</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
@@ -1446,20 +1382,18 @@ Full Makeover</p>
 
 <p class="topic4ca1">
 Brows & Lashes</p>
-<hr class="style-one" style="height:2px;width:30%;margin:0 0 8px 0;opacity:0.5;">
-
-<p align="center" style="padding:0 0 6px 0;margin:0;">
-<a href="#" style="font-family:roboto;font-size:12px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
 <center>
-<div class="w3-container w3-panel" style="padding:0;margin:0;">
-<div class="w3-container w3-panel" style="width:90%;padding:0;margin:0;">
-<hr class="style-one">
-<div class="w3-row-padding" style="width:100%;margin:0;">
-<div class="col-sm-6" style="padding:0;margin:0;">
-<div class="column" style="padding:0;margin:0;">
+<div class="w3-container w3-panel" style="width:95%;padding:0;margin:100px 0 0 0;">
+<div class="w3-row" style="width:100%;">
+<div class="w3-half" style="padding:0 10px;">
 <p class="topicspa">
 Join Our MarketPlace</p>
 
@@ -1467,27 +1401,15 @@ Join Our MarketPlace</p>
 Create some amazing blow-out deals.</p>
 
 <p class="topic3b9">
-We showcase either four, five, or six of your services. When clients tap on one of your services, they're taken to your designated space in our marketplace where they can learn more and book online. Have merchandise for sale? Awesome. Promote it with your new SPA. You can even enroll your staff in the free <a href="https://www.dermalogica.com/pages/in-this-together" target="_blank" style="color:#fff;">Clean Touch Certification program, provided by Dermalogica.</a> Specifically developed for makeup artists and skin therapists.<br><br>
+We showcase either four, five, or six of your services. When clients tap on one of your services, they're taken to your designated space in our marketplace where they can learn more and book online. Have merchandise for sale? Awesome. Promote it with your new SPA. You can even enroll your staff in the free <a href="https://www.dermalogica.com/pages/in-this-together" target="_blank">Clean Touch Certification program, provided by Dermalogica.</a> Specifically developed for makeup artists and skin therapists.<br><br>
 
 SPA included free for 30 days when you become an SG MarketPlace Merchant. Only $139 per month afterwards.</p> 
 </div>
-</div>
+<div class="w3-half" style="padding:0 10px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/207981593-a4bc635e-d468-4261-a171-d538540b3156.gif" style="width:100%;padding:0;border-radius:4px;">
 
-<div class="col-sm-6 w3-card-4" style="background-color:#00ccff;padding:10px;margin:0;border-radius:4px;">
-<div class="column" style="padding:0;margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/207981593-a4bc635e-d468-4261-a171-d538540b3156.gif" style="width:100%;padding:0;border-radius:4px;">
-</div>
-</div>
-</div>
-
-<p class="topic">Questions? Call us at 217-848-6332.</p>
-
-<hr class="style-three">
-
-<center>
-<div class="w3-container w3-panel" style="background-color:transparent;width:100%;padding:0 5px;margin:0;">
-<button onclick="document.getElementById('id33').style.display='none'" class="close1">Close this ad.</button>
-</div>
+<p style="margin:0;">
+<button class="btn btn-primary btn-block w3-white" style="font-family:Yanone Kaffeesatz;font-size:18px;color:#222;text-shadow:0 0 1px #f2f2f2;letter-spacing:1px; margin:5px 0 3px 0;padding:10px 0 5px 0;border:none;" onclick="document.getElementById('id33').style.display='none'" class="close2">Close this window.</button></p>
 </div>
 </div>
 </div>
