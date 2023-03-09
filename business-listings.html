@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>Sample Business Listings Page. Join the SG MarketPlace. Spiral Group, Inc.</title>
+<title>Sample Business Listings Page &#124; SG Local Ad Services&trade; Spiral Group, Inc.</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msvalidate.01" content="1EE8370A497A752EC81D69364BE2C133" />
@@ -22,9 +22,11 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
 <script>
@@ -40,12 +42,12 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1
             }
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1
             }
         }]
     });
@@ -70,13 +72,37 @@ $(document).ready(function(){
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 1
             }
         }]
     });
 });
 </script>
 
+<script>
+$(document).ready(function(){
+    $('.business-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+</script>
 <style type="text/css">
 /* Slider1 */
 .slick-slide {
@@ -189,22 +215,19 @@ $(document).ready(function(){
     display: none;
 }
 
-@media all and (max-width: 768px) {
-  .slick-slide img {
-  margin: 5px auto;
-  }
-}
-
 body, html {
     max-width: 1200px !important;
     height: 100%;
     margin: 0 auto;
-    padding: 0;
-    background-color: #f1f1f1;
+    background-color: #f2f2f2;
     scroll-behavior: smooth;
- }
-  
- 
+ }  
+  .modal-backdrop.in {
+  background-color: #f2f2f2;
+  opacity: 1.0;
+  }
+}
+   
 .topnav1 {
 margin: 0;
 padding: 20px 0 0 0;
@@ -233,209 +256,6 @@ padding: 20px 0 0 0;
   padding: 0 0 2px 0;
   transition: 0.3s;
 }
-  
-* {
-    box-sizing: border-box;
-}
-.topic {
-font-family: Yanone Kaffeesatz;
-font-size: 23px;
-color: #222;
-text-align: center;
-letter-spacing: .75px;
-text-shadow: 0 0 1px #ccc;
-padding: 15px 0 5px 0;
-margin: 0;
-}
-
-.topic2c {
-font-family: Yanone Kaffeesatz;
-font-size: 120px;
-color: #fff !important;
-text-align: center;
-letter-spacing: 1px;
-margin: 0;
-padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic2c {
-   font-size: 100px;
-   padding: 0 10px;
-  }
-  }
-  
-  .topic1b { 
- font-family: roboto condensed;
-font-size: 16px;
-color: #222;
-text-shadow: 0 0 1px #ccc;
-text-align: center;
-margin: 0;
-padding: 0;
-}
- 
- @media screen and (max-width: 768px) {
-  .topic1b {
-   letter-spacing: 0;
-  }
-  }
-  .topic33 { 
- font-family: Yanone Kaffeesatz;
-font-size: 18px;
-color: #222;
-text-shadow: 0 0 1px #fff;
-letter-spacing: .5px;
-text-align: center;
-margin: 0;
-padding: 0;
-}
-.topic3d {
-font-family: Yanone Kaffeesatz;
-font-size: 19px;
-color: #222;
-letter-spacing: .5px;
-text-shadow: 0 0 1px #fff;
-text-align: center;
-text-decoration: none;
-padding: 0;
-margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .topic3d {
-   font-size: 20px;
-  }
-  }
-.topic4 {
-font-family: Yanone Kaffeesatz;
-font-size: 23px;
-color: #333;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #fff;
-text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .topic4 {
-   font-size: 20px;
-  }
-  }
-  
-  .topicsfla {
-font-family: Yanone Kaffeesatz;
-font-size: 120px;
-color: #fff !important;
-text-align: center;
-letter-spacing: 1px;
-margin: 0;
-padding: 0 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .topicsfla {
-   font-size: 85px;
-   }
-  }
-  
-  .topic4ca1 {
-font-family: Yanone Kaffeesatz;
-font-size: 19.5px;
-color: #222;
-text-align: center;
-letter-spacing: .75px;
-text-shadow: 0 0 1px #ccc;
-padding: 0 0 10px 0;
-margin: 10.5px 0 0 0;
-}
-
-.themonster {
-font-family: roboto;
-font-size: 12px;
-letter-spacing: .5px;
-padding: 4px 0 7px 0;
-margin: 0;
-text-align: center;
-color: #222;
-text-shadow: #ccc;
-}
-
-@media screen and (max-width: 768px) {
-  .themonster {
-  font-size: 14px;
-  margin: 0 0 2px 0;
-  padding: 0 0 7px 0;
-  }
-  }
-  
-.container-fluid2 {
-max-width: 1200px;
-left: 0 !important;
-}
-
-@media screen and (max-width: 768px) {
-  .container-fluid2 {
-  display: none;
-  width: 1% !important;
-  }
-  }
-  
-  div.example {
-  margin: 0;
-  background: transparent;
-  width: 100% !important;
-}
-
-@media screen and (min-width: 600px) {
-  div.example {
-    display: none;
-  }
-}  
-
-.dropbtn {
-  background-color: #fff;
-  color: #b3b300;
-  padding: 8px 15px;
-  font-family: roboto,sans-serif;
-  letter-spacing: .5px;
-  font-size: 12px;
-  border: 1px solid #f8f8f8;
-  border-radius: 2px;
-  margin: 0;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 190px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 2px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  font-family: roboto,sans-serif;
-  color: #b3b300;
-  font-size: 12px;
-  letter-spacing: .5px;
-  padding: 12px 16px;
-  text-decoration: none;
-  text-align: left;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #b3b300; color: #fff;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #fff;}
-
 
 .topnav7 {
   overflow: hidden;
@@ -463,8 +283,7 @@ left: 0 !important;
 }
 
 .active {
-  background-color: transparent;
-  color: #333 !important;
+  background-color: #f1f1f1;
 }
 
 .topnav7 .icon {
@@ -473,7 +292,238 @@ left: 0 !important;
   margin: 0 6px 0 6px;
 }
 
-.alert {
+.container-fluid1 {
+padding: 0;
+margin: 0;
+background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid1 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+  
+  div.example {
+  margin: 0;
+  background: transparent;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 600px) {
+  div.example {
+    display: none;
+  }
+}  
+
+div.example1 {
+  margin: 0;
+  background: transparent;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 600px) {
+  div.example1 {
+    display: none;
+  }
+}  
+
+
+* {
+    box-sizing: border-box;
+}
+
+ 
+ .topic1b { 
+ font-family: roboto condensed;
+font-size: 16px;
+color: #222;
+text-shadow: 0 0 1px #ccc;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+ 
+ @media screen and (max-width: 768px) {
+  .topic1b {
+   letter-spacing: 0;
+  }
+  }
+  
+.topicdemo {
+font-family: Yanone Kaffeesatz;
+font-size: 23px;
+color: #222;
+text-align: center;
+letter-spacing: .75px;
+text-shadow: 0 0 1px #ccc;
+padding: 15px 0 5px 0;
+margin: 0;
+}
+  
+.topic3b1 {
+font-family: Yanone Kaffeesatz;
+font-size: 20px;
+color: #222;
+letter-spacing: .75px;
+text-align: center;
+padding: 0 0 20px 0;
+margin: -10px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3b1 {
+  font-size: 19px;
+  padding: 0 0 20px 0;
+  }
+  }
+  
+     .topic3b9 {
+  font-family: roboto condensed;
+  font-size: 22px;
+  color: #222;
+  text-shadow: 0 0 1px #fff;
+  letter-spacing: .05px;
+  margin: 0;
+  padding: 0 30px 20px 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .topic3b9 {
+  font-size: 18px;
+  padding: 0 0 20px 0;
+  }
+  }
+
+.topicsfla {
+font-family: Yanone Kaffeesatz;
+font-size: 120px;
+color: #fff !important;
+text-align: center;
+letter-spacing: 1px;
+margin: 0;
+padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .topicsfla {
+   font-size: 85px;
+   }
+  }
+  
+.topicspa {
+font-size: 50px;
+margin: 50px 0 0 0;
+padding: 0;
+font-family: Yanone Kaffeesatz;
+color: #3399ff;
+letter-spacing: .5px;
+text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .topicspa {
+  font-size: 36px;
+   margin: -15px 0 0 0;
+   padding: 0;
+  }
+  }
+  
+ .topic3d {
+font-family: Yanone Kaffeesatz;
+font-size: 19px;
+color: #222;
+letter-spacing: .5px;
+text-shadow: 0 0 1px #fff;
+text-align: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topic3d {
+   font-size: 20px;
+  }
+  }
+
+.topic4ca1 {
+font-family: Yanone Kaffeesatz;
+font-size: 22px;
+color: #fff;
+text-align: center;
+letter-spacing: 1.25px;
+text-shadow: 0 0 1px #80c1ff;
+padding: 0 0 6px 0;
+margin: 10px 0 0 0;
+}
+ 
+.material-icons {
+   color: #b3b300;
+   text-shadow: 1px 1px 1px #ccc;
+   font-size: 58px;
+   margin: 100px 0 0 0;
+   padding: 0;
+   }
+  
+.container-fluid2 {
+max-width: 1200px;
+left: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid2 {
+  display: none;
+  width: 1% !important;
+  }
+  }
+   
+.dropbtn {
+  background-color: #fff;
+  color: #b3b300;
+  padding: 8px 15px;
+  font-family: roboto,sans-serif;
+  letter-spacing: .5px;
+  font-size: 12px;
+  border: 1px solid #f8f8f8;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 199px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: roboto,sans-serif;
+  color: #b3b300;
+  font-size: 12px;
+  letter-spacing: .5px;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #b3b300; color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #fff;}
+
+ .alert {
  padding: 100px 0;
  margin: 0;
  }
@@ -487,37 +537,23 @@ padding: 0;
 
 .close {
  font-family: ubuntu condensed;
- font-size: 30px;
+ font-size: 26px;
  letter-spacing: .5px;
  float: left;
- color: #fff;
+ color: #b3b300;
  text-shadow: 0 1px 1px #ccc;
  padding: 8px;
  margin: -34px 0 0 0;
- opacity: .99;
+ opacity: .79;
  }
 
 @media all and (max-width: 768px) {
   .close {
  float: right;
-  }
-}
-
-.close1 {
- font-family: ubuntu condensed;
- font-size: 24px;
- letter-spacing: .5px;
- float: right;
- color: #f2f2f2;
+ font-size: 28px;
+ color: #b3b300;
  text-shadow: 0 1px 1px #ccc;
- padding: 8px 8px 0 0;
- margin: 0;
- opacity: .99;
- }
-
-@media all and (max-width: 768px) {
-  .close1 {
- float: right;
+ opacity: .79;
   }
 }
 
@@ -536,18 +572,6 @@ margin: 0;
   }
 }
 
-.monster {
-margin: 0;
-padding: 1px 2px 1px 1px;
-}
-
-@media all and (max-width: 768px) {
-  .monster {
-  padding: 3px 0 2px 2px;
-margin: 0;
-  }
-}
-
 .fa {
   padding: 10px 20px 5px 15px;
   font-size: 23px;
@@ -562,6 +586,11 @@ margin: 0;
     opacity: 0.8;
     text-decoration: none;
     }
+    
+ .close2 {
+ font-family: Yanone Kaffeesatz;
+}
+
 </style>
 </head>
 
@@ -709,18 +738,17 @@ margin: 0;
 </div>
 
 <div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<div id="spa" class="w3-container" style="width:100%;padding:0;margin:0;">
+<div class="w3-container" style="width:100%;padding:0;margin:0;">
 
-<div class="w3-row-padding" style="width:100%;margin:0;">
+<div id="spa" class="w3-row-padding" style="width:100%;margin:0;">
 <div class="w3-third" style="margin:0;">
 <div class="alert">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">ad</a>
-
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px 4px 0 4px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px;border-radius:4px 4px 2px 2px;margin:0;">
 <a onclick="document.getElementById('id31').style.display='block'" style="cursor:pointer;">
 
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/99362370-0847a900-2879-11eb-941d-9411f6c76f13.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
-<p class="topic">Lagoona Restaurant & Bar</p>
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/208593268-20466f96-27a1-4031-a92f-dc14e9a50121.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<p class="topicdemo">Levinna Restaurant & Bar</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -735,13 +763,13 @@ margin: 0;
 </div>
 
 <div class="w3-third" style="margin:0;">
-<div class="alert">
+<div class="alert" style="border:none;">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">ad</a>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px 4px 0 4px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px;border-radius:4px 4px 2px 2px;margin:0;">
 <a onclick="document.getElementById('id32').style.display='block'" style="cursor:pointer;">
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/208592113-4c8c952e-e37f-4c0c-83b8-cfc4bfbc5177.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
 
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/209445041-c89cf4e9-8790-4f25-bf57-b69bd2d468fd.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
-<p class="topic">Monster Superstore</p>
+<p class="topicdemo">Levinna Superstore</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -756,13 +784,12 @@ margin: 0;
 </div>
 
 <div class="w3-third" style="margin:0;">
-<div class="alert">
+<div class="alert" style="border:none;">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">ad</a>
-<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px 4px 0 4px;border-radius:4px 4px 2px 2px;margin:0;">
+<div class="w3-container w3-panel w3-white" style="width:100%;padding:4px;border-radius:4px 4px 2px 2px;margin:0;">
 <a onclick="document.getElementById('id33').style.display='block'" style="cursor:pointer;">
-
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/209445186-e4f12765-acde-4131-8dbe-63dd52c2818f.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
-<p class="topic">Levinna Beauty Services</p>
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52520649-8268e980-2c20-11e9-84a2-5a0017178e22.png" style="width:100%;padding:0;margin:0;border-radius:2px;"></a>
+<p class="topicdemo">Levinna Beauty Services</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -775,253 +802,306 @@ margin: 0;
 </div>
 </div>
 </div>
-
-
-<center>
-<div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-</div>
-
-<center>
-<div id="id31" class="w3-modal w3-animate-zoom" style="width:100%;padding:0;margin:0;">
-<div class="w3-modal-content" style="background-color:transparent;width:95%;padding:0;margin:5px;border-radius:4px;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<a onclick="document.getElementById('id31').style.display='none'" href="#" class="close1">ad</a>
-</div>
-
-<div class="w3-container w3-panel w3-card" style="background-color:#f2f2f2;width:100%;padding:0;margin:0 0 5px 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 2px 0 0;margin:0;">
-<div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter monster">
-
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/222266679-c7451da5-dbe3-40e1-8258-3d23ffaa455d.png" style="width:100%;border-radius:3px;padding:0;margin:0;">
-</div>
-
-<div class="w3-threequarter bca-premium" style="padding:1px 0 0 0;margin:0;"> 
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column w3-white" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/209658299-8fd56bdc-ea31-48d8-ba84-b072667ec4c7.png" style="width:100%;padding:0;border-radius:3px 3px 2px 2px;">
-
-<p class="topic4ca1">
-Menu Item One</p>
-
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-f&b-template.html">$19.99 - Order Now</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column w3-white" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/209657979-21939678-8653-46fe-a31a-e28293e03be4.png" style="width:100%;padding:0;border-radius:3px 3px 2px 2px;">
-
-<p class="topic4ca1">
-Menu Item Two</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-f&b-template.html">$19.99 - Order Now</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column w3-white" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/204868961-aa8b40b7-be2f-45da-92fa-330ec3640392.png" style="width:100%;padding:0;border-radius:3px 3px 2px 2px;">
-
-<p class="topic4ca1">
-Menu Item Three</p>
-
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-f&b-template.html">$19.99 - Order Now</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column w3-white" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/204868636-f17b7ee1-d607-468c-ae53-5c642cfabfbb.png" style="width:100%;padding:0;border-radius:3px 3px 2px 2px;">
-
-<p class="topic4ca1">
-Menu Item Four</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-f&b-template.html">$19.99 - Order Now</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column w3-white" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/204868617-3b3c828e-9aba-476e-9f5b-a34ae9fb3569.png" style="width:100%;padding:0;border-radius:3px 3px 2px 2px;">
-
-<p class="topic4ca1">
-Menu Item Five</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-f&b-template.html">$19.99 - Order Now</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column w3-white" style="margin:0;">
-<img src="https://user-images.githubusercontent.com/25410880/209782609-6008b21b-e145-4e63-ae63-4e0f69d79820.png" style="width:100%;padding:0;border-radius:3px 3px 2px 2px;">
-
-<p class="topic4ca1">
-Beverages</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-f&b-template.html">$19.99 - Order Now</a></p></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 
 <center>
-<div id="id32" class="w3-modal w3-animate-zoom" style="width:100%;padding:0;margin:0;">
-<div class="w3-modal-content" style="background-color:transparent;width:95%;padding:0;margin:5px;border-radius:4px;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<a onclick="document.getElementById('id32').style.display='none'" href="#" class="close1">ad</a>
-</div>
-
-<div class="w3-container w3-panel w3-card" style="background-color:#f2f2f2;width:100%;padding:0;margin:0 0 5px 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 2px 0 0;margin:0;">
-<div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter monster">
-
-<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/222292915-b717d5b3-7692-42ba-bb66-362f96b44b23.png" style="width:100%;border-radius:4px;padding:0;margin:0;">
-</div>
-
-<div class="w3-threequarter bca-premium" style="padding:1px 0 0 0;margin:0;"> 
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
-<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;border-radius:2px;">
-
-<p class="topic4ca1">
-Product One</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all#shop">$19.99 - Order Online</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
-<img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;border-radius:2px;">
-
-<p class="topic4ca1">
-Product Two</p>
-
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all">$19.99 - Order Online</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
-<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;border-radius:2px;">
-
-<p class="topic4ca1">
-Product Three</p>
-
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all">$19.99 - Order Online</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
-<img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;border-radius:2px;">
-
-<p class="topic4ca1">
-Product Four</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all">$19.99 - Order Online</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
-<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;border-radius:2px;">
-
-<p class="topic4ca1">
-Product Five</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all">$19.99 - Order Online</a></p></div>
-</div>
-
-<div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
-<img src="https://user-images.githubusercontent.com/25410880/209445041-c89cf4e9-8790-4f25-bf57-b69bd2d468fd.png" style="width:100%;padding:0;border-radius:2px;">
-
-<p class="topic4ca1">
-Product Six</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-seller-page_all">$19.99 - Order Online</a></p></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<center>
-<div id="id33" class="w3-modal w3-animate-zoom" style="width:100%;padding:0;margin:0;">
-<div class="w3-modal-content" style="background-color:transparent;width:95%;padding:0;margin:5px;border-radius:4px;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 5px;margin:0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0;">
-<a onclick="document.getElementById('id33').style.display='none'" href="#" class="close1">ad</a>
-</div>
-
-<div class="w3-container w3-panel w3-card" style="background-color:#f2f2f2;width:100%;padding:0;margin:0 0 5px 0;">
-<div class="w3-container w3-panel" style="width:100%;padding:0 2px 0 0;margin:0;">
-<div class="w3-row" style="width:100%;padding:0;margin:0;">
-<div class="w3-quarter monster">
-
+<div id="id31" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px 2px 1px;">
 <img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="width:100%;border-radius:4px;padding:0;margin:0;">
 </div>
 
 <div class="w3-threequarter bca-premium" style="padding:1px 0 0 0;margin:0;"> 
 <div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
+<div class="column w3-blue" style="margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/99362331-f8c86000-2878-11eb-97d1-a4132e5eaff1.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Meal One</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-blue" style="margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/208593664-e6527382-6343-4905-910a-ca84c7609cf1.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Meal Two</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-blue" style="margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/99362370-0847a900-2879-11eb-941d-9411f6c76f13.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Meal Three</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-blue" style="margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/99362424-17c6f200-2879-11eb-8502-ece09423e2e6.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Meal Four</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column w3-blue" style="margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/99362288-e8b08080-2878-11eb-8b8d-0140f85ae174.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Meal Five</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="width:95%;padding:0;margin:100px 0 0 0;">
+<div class="w3-row" style="width:100%;">
+<div class="w3-half" style="padding:0 10px;">
+<p class="topicspa">
+Join Our MarketPlace</p>
+
+<p class="topic3b1">
+Create some amazing meal deals.</p>
+
+<p class="topic3b9">
+We showcase either four, five, or six of your savory menu items. You can even promote your restaurant's merchandise alongside menu items with this ad product. Diners arrive at your designated space in our marketplace when they interact with your Smart Promotion Ad.</p>
+
+<p class="topic3b9">SPA included free for 30 days when you become an SG MarketPlace Merchant. Only $139 per month afterwards.</p>
+</div>
+
+<div class="w3-half" style="padding:0 10px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/95657923-c50d5400-0adc-11eb-8a8a-75a9a77b5550.gif" style="width:100%;padding:0;border-radius:4px;">
+
+<p style="margin:0;">
+<button class="btn btn-primary btn-block w3-white" style="font-family:Yanone Kaffeesatz;font-size:18px;color:#222;text-shadow:0 0 1px #f2f2f2;letter-spacing:1px; margin:5px 0 3px 0;padding:10px 0 5px 0;border:none;" onclick="document.getElementById('id31').style.display='none'" class="close2">Close this window.</button></p>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="id32" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px 2px 1px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="width:100%;border-radius:4px;padding:0;margin:0;">
+</div>
+
+<div class="w3-threequarter bca-premium" style="padding:1px 0 0 0;margin:0;"> 
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864283-9fad5300-fae2-11e9-9005-b02c73fd5669.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Product One</p>
+
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864287-a045e980-fae2-11e9-942e-6340e0cfd8dd.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Product Two</p>
+
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/67863273-d6826980-fae0-11e9-9b24-10720c4d9392.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Product Three</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864925-a9838600-fae3-11e9-8b7b-b522790d9637.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Product Four</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/67864285-9fad5300-fae2-11e9-8fbd-9ff941c55f1c.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Product Five</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
+<img src="https://user-images.githubusercontent.com/25410880/209445041-c89cf4e9-8790-4f25-bf57-b69bd2d468fd.png" style="width:100%;padding:0;border-radius:2px;">
+
+<p class="topic4ca1">
+Product Six</p>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Order Online</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="width:95%;padding:0;margin:100px 0 0 0;">
+<div class="w3-row" style="width:100%;">
+<div class="w3-half" style="padding:0 10px;">
+<p class="topicspa">
+Join Our MarketPlace</p>
+
+<p class="topic3b1">
+Create some amazing deals.</p>
+
+<p class="topic3b9">
+We'll showcase either four, five, or six of your products. Shoppers arrive at your designated space in our marketplace where they can order online. And, if you have a non-residential physical location, we can even implement curbside pickup and Buy Online Pickup In-store service method at checkout.<br><br>
+
+Smart Promotion Ad included free for 30 days when you become an SG Merchant. Only $139 per month afterwards.</p> 
+</div>
+
+<div class="w3-half" style="padding:0 10px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/96354588-dd154280-109d-11eb-9701-fbe32e33a616.gif" style="width:100%;padding:0;border-radius:4px;">
+
+<p style="margin:0;">
+<button class="btn btn-primary btn-block w3-white" style="font-family:Yanone Kaffeesatz;font-size:18px;color:#222;text-shadow:0 0 1px #f2f2f2;letter-spacing:1px; margin:5px 0 3px 0;padding:10px 0 5px 0;border:none;" onclick="document.getElementById('id32').style.display='none'" class="close2">Close this window.</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div id="id33" class="w3-modal w3-animate-zoom">
+<div class="w3-modal-content w3-card" style="background-color:#80c1ff;width:95%;padding:3px 4px 3px 3px;border-radius:4px;">
+<div class="container w3-panel" style="width:100%;padding:0;margin:0;">
+<div class="row" style="width:100%;padding:0;margin:0;">
+<div class="w3-quarter" style="margin:0;padding:1px 2px 2px 1px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/80710705-0ae0dd80-8aa4-11ea-9c3d-633e348a9c36.png" style="width:100%;border-radius:4px;padding:0;margin:0;">
+</div>
+
+<div class="w3-threequarter bca-premium" style="padding:1px 0 0 0;margin:0;"> 
+<div class="slide" style="padding:0 2px;margin:0;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
 <img src="https://user-images.githubusercontent.com/25410880/54096939-403fde80-436b-11e9-9263-3d44edb16b7d.png" style="width:100%;padding:0;border-radius:2px;">
 
 <p class="topic4ca1">
 Kick-Boxing Lessons</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$20 Per Session - Book Now</a></p></div>
+
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$20 Per Session - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
 <img src="https://user-images.githubusercontent.com/25410880/53593485-b7949780-3b4d-11e9-8fde-d797cb2e44e0.png" style="width:100%;padding:0;border-radius:2px;">
 
 <p class="topic4ca1">
 Blow-Out</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$19.99 - Book Now</a></p></div>
+
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
 <img src="https://user-images.githubusercontent.com/25410880/53593491-b8c5c480-3b4d-11e9-8ff8-2dc2fdf7b772.png" style="width:100%;padding:0;border-radius:2px;">
 
 <p class="topic4ca1">
 Full-Body Massage</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
 <img src="https://user-images.githubusercontent.com/25410880/53593493-b9f6f180-3b4d-11e9-92fd-64c7127d4aa7.png" style="width:100%;padding:0;border-radius:2px;">
 
 <p class="topic4ca1">
 Mani-Pedi Combo</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
 <img src="https://user-images.githubusercontent.com/25410880/209445186-e4f12765-acde-4131-8dbe-63dd52c2818f.png" style="width:100%;padding:0;border-radius:2px;">
 
 <p class="topic4ca1">
 Full Makeover</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
 </div>
 
 <div class="slide" style="padding:0 2px;margin:0;">
-<div class="column" style="background-color:#fff;margin:0;border-radius:0 0 3px 3px;">
+<div class="column" style="background-color:#00b8e6;margin:0;border-radius:0 0 3px 3px;">
 <img src="https://user-images.githubusercontent.com/25410880/53594537-ec095300-3b4f-11e9-899a-797c3e00366a.png" style="width:100%;padding:0;border-radius:2px;">
 
 <p class="topic4ca1">
 Brows & Lashes</p>
-<p class="themonster"><a style="text-decoration:none;color:#222;text-shadow:0 0 1px #ccc;" href="https://spiralgroup.github.io/themonster/sample-services_template">$19.99 - Book Now</a></p></div>
+<p align="center" style="padding:0 0 7.5px 0;margin:0;">
+<a href="#" style="font-family:roboto;font-size:14px;color:#fff;letter-spacing:.5px;text-decoration:none;">$19.99 - Book Now</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<center>
+<div class="w3-container w3-panel" style="width:95%;padding:0;margin:100px 0 0 0;">
+<div class="w3-row" style="width:100%;">
+<div class="w3-half" style="padding:0 10px;">
+<p class="topicspa">
+Join Our MarketPlace</p>
+
+<p class="topic3b1">
+Create some amazing blow-out deals.</p>
+
+<p class="topic3b9">
+We showcase either four, five, or six of your services. When clients tap on one of your services, they're taken to your designated space in our marketplace where they can learn more and book online. Have merchandise for sale? Awesome. Promote it with your new SPA. You can even enroll your staff in the free <a href="https://www.dermalogica.com/pages/in-this-together" target="_blank">Clean Touch Certification program, provided by Dermalogica.</a> Specifically developed for makeup artists and skin therapists.<br><br>
+
+SPA included free for 30 days when you become an SG MarketPlace Merchant. Only $139 per month afterwards.</p> 
+</div>
+<div class="w3-half" style="padding:0 10px;">
+<img class="w3-card" src="https://user-images.githubusercontent.com/25410880/207981593-a4bc635e-d468-4261-a171-d538540b3156.gif" style="width:100%;padding:0;border-radius:4px;">
+
+<p style="margin:0;">
+<button class="btn btn-primary btn-block w3-white" style="font-family:Yanone Kaffeesatz;font-size:18px;color:#222;text-shadow:0 0 1px #f2f2f2;letter-spacing:1px; margin:5px 0 3px 0;padding:10px 0 5px 0;border:none;" onclick="document.getElementById('id33').style.display='none'" class="close2">Close this window.</button></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+
 
 <div class="w3-container" style="background-color:#f2f2f2;width:100%;padding:0;margin:50px 0 0 0;">
 <p id="listings" class="topicsfla"><a style="color:#fff;text-shadow:0 0 1px #f2f2f2;" href="https://spiralgroup.github.io/themonster/merchant-join.html">
@@ -1032,7 +1112,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/222293043-635dbbd3-9262-473c-bf48-0a1216a66894.png" style="width:100%;border-radius:2px;"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Monster Superstore</p>
+<p class="topicdemo">Monster Superstore</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1051,7 +1131,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190406-018eeb00-5fdf-11e9-9285-e41cf6ea6e8a.png" style="width:100%;border-radius:2px 2px 0 0;" alt="Lagoona Restaurant"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Levinna Beauty Services</p>
+<p class="topicdemo">Levinna Beauty Services</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1070,7 +1150,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/222266674-e7e6917f-43ae-49fc-95e9-241e2dd51963.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Lagoona Restaurant & Bar</p>
+<p class="topicdemo">Lagoona Restaurant & Bar</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1093,7 +1173,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190417-03f14500-5fdf-11e9-8fe7-87795fed7576.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Kolo Systems</p>
+<p class="topicdemo">Kolo Systems</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1112,7 +1192,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190410-02278180-5fdf-11e9-87c0-25e7797c58c1.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Onyx Jewels</p>
+<p class="topicdemo">Onyx Jewels</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1128,10 +1208,10 @@ Listings</a></p>
     
 <div class="w3-third" style="margin:0 0 30px 0;">
 <div class="column" style="padding:0;margin:0 0 15px 0;background-color:#fff;border-radius:2px;">
-<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190411-02278180-5fdf-11e9-9616-667c12cb08c0.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
+<img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190411-02278180-5fdf-11e9-9616-667c12cb08c0.png" style="width:100%;border-radius:2px 2px 0 0;">
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Fractore Global Consulting</p>
+<p class="topicdemo">Fractore Global Consulting</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1150,7 +1230,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190416-0358ae80-5fdf-11e9-8a73-88210471f9bf.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Sky Rocket Labs</p>
+<p class="topicdemo">Sky Rocket Labs</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1169,7 +1249,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/56190430-06ec3580-5fdf-11e9-938c-17ac46789cc2.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Roadlink Auto Parts</p>
+<p class="topicdemo">Roadlink Auto Parts</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1188,7 +1268,7 @@ Listings</a></p>
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/52408795-819d4f80-2a88-11e9-82f9-fa98aa7ec1f4.png" style="width:100%;border-radius:2px 2px 0 0;"></a>
 
 <div class="w3-content w3-panel" style="padding:0;margin:0;">
-<p class="topic">Gifted Hands Massage Therapy</p>
+<p class="topicdemo">Gifted Hands Massage Therapy</p>
 <p class="topic1b"><a style="text-decoration:none;color:#222;" href="https://goo.gl/maps/FhQXU9oQM2CmTKFb6" target="_blank">333 S. Franklin Street Decatur, IL 62523</a></p>
 
 <p>
@@ -1201,12 +1281,9 @@ Listings</a></p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 
 <center>
-<div class="w3-container" style="width:100%;padding:0;margin:0 0 5px 0;">
+<div class="w3-container" style="width:100%;padding:0 6px;margin:0 0 5px 0;">
 <p class="topicsfla">Shop Local</p>
 <div class="customer-logos slider" style="width:100%;padding:0;margin:0;">
 <div class="slide" style="margin:0;padding:0 2px;"><a rel="nofollow"><img src="https://user-images.githubusercontent.com/25410880/80710677-01577580-8aa4-11ea-8324-cd5b9c29fa7e.png" style="border-radius:2px;cursor:pointer;" alt="Game Day Barber Shop"></a>
