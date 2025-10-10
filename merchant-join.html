@@ -478,39 +478,6 @@ margin: 0;
    padding: 20px;
 }
 
-.accordion2 {
-font-family: Yanone Kaffeesatz;
-font-size: 20px;
-color: #b3b300;
-letter-spacing: 1px;
-text-shadow: 0 0 1px #fff;
-background-color: #fff;
-padding: 12px 18px;
-margin: 0;
-  width: 100%;
-  border-radius: 4px;
-  text-align: center;
-  border: none;
-  box-shadow: 0 0 4px #b3b300;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.accordion2:after {
-  content: '';
-  font-size: 20px;
-  color: #b3b300;
-  text-shadow: 1px 1px 1px #ccc;
-  }
-  
-  .accordion2:hover {
-  background-color: #fff;
-  border: none;
-   border-radius: 3px;
-   transition: 0.2s;
-   padding: 10px 20px;
-   text-decoration: none;
-}
 .panel {
   padding: 0 21px 0 40px;
   margin: 0 0 9.75px 0;
@@ -533,6 +500,96 @@ margin: 0;
 
 @media all and (max-width: 768px) {
 .active, .accordion:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 10px;
+}
+}
+
+.accordion2 {
+font-family: Yanone Kaffeesatz;
+font-size: 22px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+background-color: #fff;
+padding: 18px 18px 14px 18px;
+margin: 0;
+  width: 100%;
+  border-radius: 4px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion2:after {
+  content: '\022b6';
+  font-size: 20px;
+  color: #b3b300;
+  text-shadow: 1px 1px 1px #ccc;
+  float: right;
+}
+
+.active2, .accordion2:hover {
+  background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 15px;
+}
+
+
+.monsterrules {
+font-family: Yanone Kaffeesatz;
+font-size: 21px;
+color: #b3b300;
+letter-spacing: 1px;
+text-shadow: 0 0 1px #fff;
+text-decoration: none;
+background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   box-shadow: 0 0 4px #b3b300;
+   padding: 10px;
+}
+
+.monsterrules:hover {
+ background-color: #fff;
+  border: none;
+   border-radius: 3px;
+   transition: 0.2s;
+   padding: 15px;
+   text-decoration: none;
+}
+
+.active2:after {
+  content: "\2212";
+}
+
+.panel2 {
+  padding: 0 20px;
+  margin: 0 0 9px 0;
+  background-color: #fff;
+  max-height: 0;
+  border: none !important;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px #ccc;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+@media all and (max-width: 768px) {
+  .accordion2{
+  font-size: 22px;
+   padding: 14px 14px 10px 10px;
+   }
+}
+
+@media all and (max-width: 768px) {
+.active2, .accordion2:hover {
   background-color: #fff;
   border: none;
    border-radius: 3px;
@@ -714,7 +771,6 @@ text-shadow: 0 0 1px #b3daff;
 <script async src="https://cse.google.com/cse.js?cx=67677dea716ff49e6">
 </script>
 <div class="gcse-search" style="width:100%;padding:0;margin:0;"></div>
-</div>
 </div>
 </div>
 </div>
@@ -958,18 +1014,19 @@ Select Business Type</button></p>
 </div>
 </div>
 
-<div class="w3-container w3-panel" style="width:100%;padding:0 10px;margin:0">
+
+<div class="w3-container w3-panel" style="width:100%;padding:0;margin:0">
 <div class="row" style="width:100%;margin:0;padding:0;">
 <div class="w3-third" style="margin:0 0 40px 0;padding:0 6px;">
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:6px;border-radius:4px 4px 0 0;margin:0;">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/54055812-fdcba580-41a2-11e9-87e4-454e297cfa6f.png" style="width:100%;padding:0;margin:0;border-radius:3px;">
 </div>
-<div class="accordion">Automotive Parts & Services</div>
-<div class="panel">
+<div class="accordion2">Automotive Parts & Services</div>
+<div class="panel2">
 <p class="topicmonster">
-Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking (valet) services. Party bus rentals. Towing services. Windshield repair and replacement.</p><br>
+Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and car parts. Brake services. Car services and drivers. Car washes. Driving instruction. Luxury auto experiences. Oil changes. Parking services. Party bus rentals. Towing services. Windshield repair/replacement.</p><br>
 
-<p style="padding:0 0 10px 0;"><a class="accordion2" href="https://spiralgroup.github.io/themonster/automotive_lsm.html">Get Started</a></p>
+<p style="padding:0 0 10px 0"><a class="monsterrules" href="https://spiralgroup.github.io/themonster/automotive_lsm.html">Get Started</a></p>
 </div>
 </div>
 
@@ -977,12 +1034,12 @@ Airport transportation. Auto body repair. Auto detailing. Batteries, tires, and 
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:6px;border-radius:4px 4px 0 0;margin:0;">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/53593980-b9128f80-3b4e-11e9-98ec-b3e411224679.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
-<div class="accordion">Beauty & Health Services</div>
-<div class="panel">
+<div class="accordion2">Beauty & Health Services</div>
+<div class="panel2">
 <p class="topicmonster">
-Barbers and barber shops. Braids, weaves, and sew-ins. Cosmetic dentistry. Cuts, styles, and coloring. Face and skin care. Fitness centers. Hair removal. Lashes and brows. Makeup artistry. Makeup and cosmetics. Massage therapy. Nail services. Nutritionists. Salons and salon packages. Tattoos and piercings.</p><br>
+Barbers. Braids, weaves, sew-ins. Cosmetic dentistry. Cuts, styles, coloring. Face, skin care. Fitness centers. Hair removal. Lashes, brows. Makeup artistry. Makeup, cosmetics. Massage therapy. Nail services. Nutritionists. Salons, salon packages. Tattoos, piercings.</p><br>
 
-<p style="padding:0 0 10px 0;"><a class="accordion2" href="https://spiralgroup.github.io/themonster/beauty-&-health_lsm.html">Get Started</a></p>
+<p style="padding:0 0 10px 0;"><a class="monsterrules" href="https://spiralgroup.github.io/themonster/beauty-&-health_lsm.html">Get Started</a></p>
 </div>
 </div>
 
@@ -990,12 +1047,13 @@ Barbers and barber shops. Braids, weaves, and sew-ins. Cosmetic dentistry. Cuts,
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:6px;border-radius:4px 4px 0 0;margin:0;">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/54066955-d77f2780-41ed-11e9-80e0-2179b1bdf7fc.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
-<div class="accordion">Food & Beverage</div>
-<div class="panel">
+<div class="accordion2">Food & Beverage</div>
+<div class="panel2">
 <p class="topicmonster">
 Bakeries. Bars and pubs. Breweries. Cafes. Ethnic restaurants. Fast casual dining concepts. Fine dining & full-service restaurants. Gourmet cuisine. Grocers. Ice cream/frozen yogurt bars. Juice bars. Pizzerias. Prepared meals. Sandwich shops. Steak houses. Taprooms. Wine & spirits.</p><br>
 
-<p style="padding:0 0 10px 0;"><a class="accordion2" href="https://spiralgroup.github.io/themonster/food-&-drink_lsm.html">Get Started</a></p>
+<p style="padding:0 0 10px 0;"><a class="monsterrules" href="https://spiralgroup.github.io/themonster/food-&-drink_lsm.html">Get Started</a></p>
+</div>
 </div>
 </div>
 
@@ -1004,12 +1062,12 @@ Bakeries. Bars and pubs. Breweries. Cafes. Ethnic restaurants. Fast casual dinin
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:6px;border-radius:4px 4px 0 0;margin:0;">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/53668900-234c3280-3c2a-11e9-8cf1-b40e866e1d9e.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
-<div class="accordion">Home & Personal Services</div>
-<div class="panel">
+<div class="accordion2">Home & Personal Services</div>
+<div class="panel2">
 <p class="topicmonster">
 Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog-walking and other pet services. Duct cleaning. Flooring installation. General contractors. Gutter cleaning. Handymen. Home alarm installation. House-keeping services. HVAC technicians. <a href="https://spiralgroup.github.io/themonster/home&personal-services_lsm.html#concepts">Many other concepts supported.</a></p><br>
 
-<p style="padding:0 0 10px 0;"><a class="accordion2" href="https://spiralgroup.github.io/themonster/home&personal-services_lsm.html">Get Started</a></p>
+<p style="padding:0 0 10px 0;"><a class="monsterrules" href="https://spiralgroup.github.io/themonster/home&personal-services_lsm.html">Get Started</a></p>
 </div>
 </div>
 
@@ -1017,13 +1075,13 @@ Appliance repair. Cabinets and countertops. Carpet cleaning. Chimney sweeps. Dog
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:6px;border-radius:4px 4px 0 0;margin:0;">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/54082485-5c8c3e80-42cb-11e9-8a77-6982ea2fb668.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
-<div class="accordion">Physical Goods</div>
+<div class="accordion2">Physical Goods</div>
 
-<div class="panel">
+<div class="panel2">
 <p class="topicmonster">
 Adult toys. Apparel for men, women, children. Handbags, luggage, travel bags. Jewelry, watches. Novelty items. Perfumes, colognes. Personalized items. Etc. Sell in our marketplace and we'll have you falling in love with our professionalism, industry knowledge, digital ad products, and seller agreement.</p><br>
 
-<p style="padding:0 0 10px 0;"><a class="accordion2" href="https://spiralgroup.github.io/themonster/physical-goods_lsm.html">Get Started</a></p>
+<p style="padding:0 0 10px 0;"><a class="monsterrules" href="https://spiralgroup.github.io/themonster/physical-goods_lsm.html">Get Started</a></p>
 </div>
 </div>
 
@@ -1031,7 +1089,7 @@ Adult toys. Apparel for men, women, children. Handbags, luggage, travel bags. Je
 <div class="w3-container w3-panel w3-white" style="width:100%;padding:6px;border-radius:4px 4px 0 0;margin:0;">
 <img class="w3-hover-shadow" src="https://user-images.githubusercontent.com/25410880/222854654-705910ac-5d0b-44ef-993f-1f9a3026738f.png" style="width:100%;padding:0;margin:0;border-radius:2px;">
 </div>
-<div class="accordion"><a href="https://www.youtube.com/watch?v=r1N7PS_uogM" target="_blank" style="text-decoration:none;">Sell In SG MarketPlace Tutorial</a>
+<div class="accordion2"><a href="https://www.youtube.com/watch?v=r1N7PS_uogM" target="_blank" style="text-decoration:none;">Sell In SG MarketPlace Tutorial</a>
 </div>
 </div>
 </div>
@@ -1096,6 +1154,24 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
+<script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var panel2 = this.nextElementSibling;
+    if (panel2.style.maxHeight){
+      panel2.style.maxHeight = null;
+    } else {
+      panel2.style.maxHeight = panel2.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    
 
 <!-- Default Statcounter code for Spiral Group, Inc. https://spiralgroup.github.io/themonster/ -->
 <script type="text/javascript">
